@@ -1,14 +1,14 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10425
+// Function ID: 10426
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6648, 1374, 1074, 1076, 7628, 21, 576, 4836, 8226, 8238, 10257, 10261, 6583, 6603, 1241, 7624, 10206, 10262, 4693, 4528, 1115, 6961, 10473, 4678, 4832, 10499, 10504, 2]
+// Dependencies: [5, 19, 17, 6814, 1374, 1074, 1076, 7793, 21, 576, 4836, 8391, 8403, 10426, 10430, 6749, 6769, 1241, 7789, 10373, 10431, 4693, 4528, 1115, 7127, 10642, 4678, 4832, 10668, 10673, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10256 (PremiumGiftWishlistBanner)
+// Module 10425 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10261 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10430 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,13 +17,13 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_7 = fn(6648).WishlistRecommendationReason;
+let closure_7 = fn(6814).WishlistRecommendationReason;
 const PremiumConstants = fn(1374);
 ({ GiftingOrigin: closure_8, PremiumSubscriptionSKUToPremiumType: closure_9 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, SKUProductLines: closure_11 } = Constants);
 let closure_12 = fn(1076).CollectiblesMobileShopScreen;
-const UserProfileSections = fn(7628).UserProfileSections;
+const UserProfileSections = fn(7793).UserProfileSections;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;

@@ -1,13 +1,13 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16261
+// Function ID: 16262
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4836, 16086, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 16262, 4832, 1115, 2]
 // Exports: ForYouEmptyState
 
-// Module 16085 (ForYouEmptyState)
+// Module 16261 (ForYouEmptyState)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16086 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16262 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

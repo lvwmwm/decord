@@ -1,10 +1,10 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8238
+// Function ID: 8239
 // Name: useLegacyTextMigrationHighlight
 // Dependencies: [4835, 4836, 576, 504, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 8073 (useLegacyTextMigrationHighlight)
+// Module 8238 (useLegacyTextMigrationHighlight)
 import nativeDefault from "native" /* 576 */;
 import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 

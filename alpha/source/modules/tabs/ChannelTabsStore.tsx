@@ -1,13 +1,13 @@
-// Module ID: 10453
-// Function ID: 10454
+// Module ID: 10622
+// Function ID: 10623
 // Name: ChannelTabsStore
-// Dependencies: [32, 2099, 4655, 2052, 10454, 1365, 504, 573, 2]
+// Dependencies: [32, 2099, 4655, 2052, 10623, 1365, 504, 573, 2]
 
-// Module 10453 (ChannelTabsStore)
+// Module 10622 (ChannelTabsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import TabsExperimentDefault from "TabsExperiment" /* 10454 */;
+import TabsExperimentDefault from "TabsExperiment" /* 10623 */;
 import _slicedToArray from "module_32" /* 32 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;

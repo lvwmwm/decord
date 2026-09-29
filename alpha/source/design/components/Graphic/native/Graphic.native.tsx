@@ -1,12 +1,12 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9860
+// Function ID: 9861
 // Name: Graphic
-// Dependencies: [19, 17, 21, 4836, 5899, 4540, 4651, 2]
+// Dependencies: [19, 17, 21, 4836, 6065, 4540, 4651, 2]
 // Exports: Graphic
 
-// Module 9693 (Graphic)
+// Module 9860 (Graphic)
 import GraphicTypes from "GraphicTypes" /* 4651 */;
-import FastImageDefault from "FastImage" /* 5899 */;
+import FastImageDefault from "FastImage" /* 6065 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

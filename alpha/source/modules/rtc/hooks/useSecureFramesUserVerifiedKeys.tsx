@@ -1,12 +1,12 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15643
+// Function ID: 15644
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [9147, 504, 12, 2]
+// Dependencies: [9312, 504, 12, 2]
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 15468 (useSecureFramesUserVerifiedKeys)
+// Module 15643 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9312 */;
 
 const require = globalThis.__r;
 

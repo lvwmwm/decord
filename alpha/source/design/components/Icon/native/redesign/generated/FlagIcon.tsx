@@ -1,13 +1,13 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 8289
+// Function ID: 8290
 // Name: FlagIcon
-// Dependencies: [19, 21, 576, 4530, 8125, 2]
+// Dependencies: [19, 21, 576, 4530, 8290, 2]
 // Exports: FlagIcon
 
-// Module 8124 (FlagIcon)
+// Module 8289 (FlagIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod8125 from "module_8125" /* 8125 */;
+import _mod8290 from "module_8290" /* 8290 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FlagIcon = function FlagIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8125, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8290, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,25 +1,25 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16652
+// Function ID: 16653
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 7303, 21, 4836, 576, 16462, 4566, 16464, 12, 4832, 1115, 11821, 16465, 2]
+// Dependencies: [19, 17, 7468, 21, 4836, 576, 16651, 4566, 16653, 12, 4832, 1115, 11990, 16654, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 16463 (MediaGridPlaceholder)
+// Module 16652 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 11821 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16462 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16464 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11990 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 16651 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16653 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(7303);
+const SearchConstants = fn(7468);
 ({ MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire, SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

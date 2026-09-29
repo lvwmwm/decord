@@ -1,19 +1,19 @@
-// Module ID: 13077
-// Function ID: 13078
+// Module ID: 13247
+// Function ID: 13248
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 2067, 5750, 1074, 21, 4836, 576, 4767, 504, 4743, 9203, 6760, 6411, 5896, 4832, 9872, 1115, 13046, 2]
+// Dependencies: [19, 17, 2067, 5917, 1074, 21, 4836, 576, 4767, 504, 4743, 9368, 6926, 6577, 6062, 4832, 10039, 1115, 13216, 2]
 // Exports: default
 
-// Module 13077 (GuildBoostingGuildList)
+// Module 13247 (GuildBoostingGuildList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4743 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6577 */;
+import transitionToGuild from "transitionToGuild" /* 6926 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import SortedGuildStore from "SortedGuildStore" /* 5917 */;
 
 require = fn;
 function GuildBoostingGuildListItem(guildId) {
@@ -39,15 +39,15 @@ function GuildBoostingGuildListItem(guildId) {
       children: null
     };
     const obj3 = { guild: stateFromStores, size: null, style: null, selected: false };
-    const tmp2Result = tmp2(9203);
-    obj3.size = tmp5(5896).GuildIconSizes.LARGE;
+    const tmp2Result = tmp2(9368);
+    obj3.size = tmp5(6062).GuildIconSizes.LARGE;
     obj3.style = tmp.guildIcon;
-    const items1 = [closure_8(tmp2(5896), obj3), , ];
+    const items1 = [closure_8(tmp2(6062), obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: null };
     const obj5 = { variant: "text-md/bold", children: stateFromStores.name };
     const items2 = [closure_8(tmp5(4832).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: null };
-    const obj7 = { source: tmp2(9872), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    const obj7 = { source: tmp2(10039), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const items3 = [closure_8(closure_4, obj7), ];
     const obj8 = { variant: "text-xs/medium", children: null };
     const intl = tmp5(1115).intl;
@@ -59,10 +59,10 @@ function GuildBoostingGuildListItem(guildId) {
     obj4.children = items2;
     items1[1] = closure_9(closure_3, obj4);
     const obj10 = { guild: stateFromStores, theme: tmp4 };
-    items1[2] = closure_8(tmp2(13046), obj10);
+    items1[2] = closure_8(tmp2(13216), obj10);
     obj2.children = items1;
     tmp9 = closure_9(tmp2Result, obj2);
-    const tmp2Result2 = tmp2(5896);
+    const tmp2Result2 = tmp2(6062);
   }
   return tmp9;
 }

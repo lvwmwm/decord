@@ -1,9 +1,9 @@
-// Module ID: 5753
-// Function ID: 5754
+// Module ID: 5920
+// Function ID: 5921
 // Name: LegacyTokens
 // Dependencies: [17, 4836, 4685, 576, 4683, 2]
 
-// Module 5753 (LegacyTokens)
+// Module 5920 (LegacyTokens)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4683 */;

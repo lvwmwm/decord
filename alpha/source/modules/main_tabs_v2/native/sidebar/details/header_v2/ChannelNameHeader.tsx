@@ -1,18 +1,18 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16746
+// Function ID: 16747
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 2045, 2067, 4469, 4876, 1372, 1074, 21, 4836, 576, 504, 1177, 4989, 1485, 4847, 5435, 4832, 1115, 4981, 3651, 10371, 5335, 10357, 6583, 7624, 2]
+// Dependencies: [19, 17, 2045, 2067, 4469, 4876, 1372, 1074, 21, 4836, 576, 504, 1177, 4989, 1485, 4847, 5602, 4832, 1115, 4981, 3651, 10540, 5501, 10526, 6749, 7789, 2]
 
-// Module 16557 (ChannelNameHeader)
+// Module 16746 (ChannelNameHeader)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import _modDef3651 from "module_3651" /* 3651 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import ChannelUtils from "ChannelUtils" /* 4981 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10540 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -219,7 +219,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6583)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6749)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = noop.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -231,7 +231,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: null, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   const items1 = [closure_15().container, channel.containerStyle];
   obj.style = items1;
-  return closure_12(channel(5435).PressableOpacity, obj);
+  return closure_12(channel(5602).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);

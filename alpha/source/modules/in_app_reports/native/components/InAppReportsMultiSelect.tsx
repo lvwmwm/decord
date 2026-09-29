@@ -1,13 +1,13 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12646
+// Function ID: 12647
 // Name: InAppReportsMultiSelect
-// Dependencies: [19, 17, 21, 4836, 576, 5999, 5916, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6165, 6082, 2]
 // Exports: default
 
-// Module 12476 (InAppReportsMultiSelect)
+// Module 12646 (InAppReportsMultiSelect)
 import nativeDefault from "native" /* 576 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5916 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6082 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

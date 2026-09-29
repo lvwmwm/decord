@@ -1,17 +1,17 @@
-// Module ID: 9590
-// Function ID: 9591
+// Module ID: 9757
+// Function ID: 9758
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1074, 21, 4836, 4531, 576, 7909, 8176, 9591, 4986, 9593, 6720, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 4531, 576, 8074, 8341, 9758, 4986, 9760, 6886, 2]
 // Exports: usePreviewableMedia
 
-// Module 9590 (usePreviewableMedia)
+// Module 9757 (usePreviewableMedia)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 8176 */;
-import WaveformIcon from "WaveformIcon" /* 9591 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
+import inlineStyles from "inlineStyles" /* 8074 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 8341 */;
+import WaveformIcon from "WaveformIcon" /* 9758 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -98,7 +98,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = React5(tmp8(8176).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = React5(tmp8(8341).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -112,7 +112,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: null };
               obj6.color = nativeDefault.colors.ICON_SUBTLE;
-              obj5.icon = React5(tmp8(9593).FileIcon, obj6);
+              obj5.icon = React5(tmp8(9760).FileIcon, obj6);
               let str4 = null;
               if (isForward) {
                 str4 = "forward";

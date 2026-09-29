@@ -1,14 +1,14 @@
-// Module ID: 10197
-// Function ID: 10198
+// Module ID: 10364
+// Function ID: 10365
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 10128, 1374, 504, 10198, 10202, 10203, 4654, 2029, 2]
+// Dependencies: [32, 19, 10295, 1374, 504, 10365, 10369, 10370, 4654, 2029, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10197 (GiftingPromotionUtils)
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10202 */;
+// Module 10364 (GiftingPromotionUtils)
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10369 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import PromotionsStore from "PromotionsStore" /* 10295 */;
 
 const require = globalThis.__r;
 
@@ -180,7 +180,7 @@ export const combinePromotionStyles = function combinePromotionStyles(background
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
   const GiftPromotionReminderExperiment = GiftPromotionReminderExperiment2.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == PromotionsStore.getMarketingComponentByType(tmp(10203).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == PromotionsStore.getMarketingComponentByType(tmp(10370).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();

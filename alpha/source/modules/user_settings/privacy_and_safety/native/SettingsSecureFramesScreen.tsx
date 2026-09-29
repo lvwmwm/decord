@@ -1,16 +1,16 @@
-// Module ID: 15467
-// Function ID: 15468
+// Module ID: 15642
+// Function ID: 15643
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 15468, 4678, 7626, 6583, 7624, 5917, 1177, 1115, 5924, 4531, 1485, 15466, 4832, 8179, 9163, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 15643, 4678, 7791, 6749, 7789, 6083, 1177, 1115, 6090, 4531, 1485, 15641, 4832, 8344, 9328, 2]
 // Exports: default
 
-// Module 15467 (SettingsSecureFramesScreen)
+// Module 15642 (SettingsSecureFramesScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import UserActionCreators from "UserActionCreators" /* 7626 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9163 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import UserActionCreators from "UserActionCreators" /* 7791 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9328 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

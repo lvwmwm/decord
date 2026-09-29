@@ -1,10 +1,10 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11936
+// Function ID: 11937
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2101, 2045, 5023, 5024, 1074, 573, 1271, 11768, 1241, 4847, 11, 2]
+// Dependencies: [5, 2101, 2045, 5023, 5024, 1074, 573, 1271, 11937, 1241, 4847, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11767 (GuildOnboardingHomeActionCreators)
+// Module 11936 (GuildOnboardingHomeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;

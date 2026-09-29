@@ -1,23 +1,23 @@
-// Module ID: 6516
-// Function ID: 6517
+// Module ID: 6682
+// Function ID: 6683
 // Name: doGuildOnboarding
-// Dependencies: [5, 17, 4655, 6517, 6518, 1074, 6519, 4800, 5039, 5832, 6520, 1397, 1880, 6524, 6525, 6526, 6542, 1981, 1101, 2]
+// Dependencies: [5, 17, 4655, 6683, 6684, 1074, 6685, 4800, 5039, 5999, 6686, 1397, 1880, 6690, 6691, 6692, 6708, 1981, 1101, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 6516 (doGuildOnboarding)
+// Module 6682 (doGuildOnboarding)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1880 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import _mod6519 from "module_6519" /* 6519 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6526 */;
+import _mod6685 from "module_6685" /* 6685 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6692 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6683 */;
 
 require = fn;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod6519));
+  return JSON.parse(JSON.stringify(_mod6685));
 }
 let closure_13 = async function _doGuildOnboarding(arg0) {
   let guildId = arg0;
@@ -220,7 +220,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: dependencyMap[guildId],
       isFirstOpen: true
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(6542, dependencyMap.paths), {
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(6708, dependencyMap.paths), {
       guildId,
       backShouldLeaveGuild: true,
       onFinish() {
@@ -237,7 +237,7 @@ function openAndWaitForOnboarding(guildId) {
   });
 }
 const NativeModules = fn(17).NativeModules;
-let closure_7 = fn(6518).GUILD_ONBOARDING_MODAL_KEY;
+let closure_7 = fn(6684).GUILD_ONBOARDING_MODAL_KEY;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_8, Routes: closure_9 } = Constants);
 let closure_11 = {};

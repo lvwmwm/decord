@@ -1,9 +1,22 @@
 // Module ID: 12513
 // Function ID: 12514
-// Dependencies: [1121]
+// Dependencies: [12490]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12513
-import registerAsset from "module_1121" /* 1121 */;
+import _mod12490 from "module_12490" /* 12490 */;
 
+require = arg1;
+const dependencyMap = arg6;
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6fc18e0c40f0ce37259a8a45cc634c66", name: "WindowLaunchIcon", type: "png" });
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  if (arg0) {
+    const result = _mod12490.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const result1 = _mod12490.addNonEnumerableProperty(arg0, _sentryScope, arg1);
+  }
+};

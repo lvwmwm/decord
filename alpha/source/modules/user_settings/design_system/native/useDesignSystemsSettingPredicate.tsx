@@ -1,11 +1,11 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15530
+// Function ID: 15531
 // Name: useDesignSystemsSettingPredicate
-// Dependencies: [14378, 10451, 2]
+// Dependencies: [14553, 10620, 2]
 // Exports: useDesignSystemsSettingPredicate
 
-// Module 15355 (useDesignSystemsSettingPredicate)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14378 */;
+// Module 15530 (useDesignSystemsSettingPredicate)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14553 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemsSettingPredicate.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9728
-// Function ID: 9729
+// Module ID: 9895
+// Function ID: 9896
 // Name: MediaPostMultipleThumbnailActionSheet
-// Dependencies: [19, 17, 2042, 21, 4836, 576, 1613, 6571, 6045, 4832, 1115, 1177, 5281, 2]
+// Dependencies: [19, 17, 2042, 21, 4836, 576, 1613, 6737, 6211, 4832, 1115, 1177, 5447, 2]
 // Exports: default
 
-// Module 9728 (MediaPostMultipleThumbnailActionSheet)
+// Module 9895 (MediaPostMultipleThumbnailActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import noop from "module_19" /* 19 */;
@@ -66,9 +66,9 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   obj9.onPress = function onPress() {
     return markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
-  items2[5] = closure_5(markAsDismissed(5281).Button, obj9);
+  items2[5] = closure_5(markAsDismissed(5447).Button, obj9);
   obj3.children = items2;
-  obj2.children = closure_6(markAsDismissed(6045).BottomSheetScrollView, obj3);
+  obj2.children = closure_6(markAsDismissed(6211).BottomSheetScrollView, obj3);
   obj.children = closure_5(View, obj2);
-  return closure_5(markAsDismissed(6571).BottomSheet, obj);
+  return closure_5(markAsDismissed(6737).BottomSheet, obj);
 };

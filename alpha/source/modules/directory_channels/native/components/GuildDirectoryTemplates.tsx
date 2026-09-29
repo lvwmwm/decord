@@ -1,12 +1,12 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11975
+// Function ID: 11976
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 11788, 11793, 21, 4836, 11807, 1177, 11808, 1485, 1613, 11792, 4832, 1115, 5999, 6357, 2]
+// Dependencies: [19, 17, 11957, 11962, 21, 4836, 11976, 1177, 11977, 1485, 1613, 11961, 4832, 1115, 6165, 6523, 2]
 // Exports: default
 
-// Module 11806 (GuildDirectoryTemplates)
+// Module 11975 (GuildDirectoryTemplates)
 import native from "native" /* 1177 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 11808 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 11977 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -30,9 +30,9 @@ class GuildTemplatesItem {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const GuildDirectoryConstants = fn(11788);
+const GuildDirectoryConstants = fn(11957);
 ({ getHubGuildTemplatesMap: metroRequire, HubGuildTemplateId: closure_7 } = GuildDirectoryConstants);
-const GuildDirectoryCreate = fn(11793).GuildDirectoryCreate;
+const GuildDirectoryCreate = fn(11962).GuildDirectoryCreate;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);

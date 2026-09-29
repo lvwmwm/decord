@@ -1,22 +1,22 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14915
+// Function ID: 14916
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 5756, 14624, 21, 576, 4836, 14631, 14625, 4566, 5280, 7715, 14734, 1364, 14733, 14621, 14642, 5759, 7141, 14721, 14741, 6494, 5899, 4832, 5435, 1115, 2]
+// Dependencies: [19, 17, 5923, 14799, 21, 576, 4836, 14806, 14800, 4566, 5446, 7880, 14909, 1364, 14908, 14796, 14817, 5926, 7306, 14896, 14916, 6660, 6065, 4832, 5602, 1115, 2]
 
-// Module 14740 (QuestDockBountyHeader)
+// Module 14915 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14642 */;
+import spring from "spring" /* 5446 */;
+import QuestTypes from "QuestTypes" /* 5926 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7306 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14817 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const QuestConstants = fn(5756);
+const QuestConstants = fn(5923);
 ({ QuestDockMode: hasOwnProperty, QuestsExperimentLocations: metroRequire } = QuestConstants);
-const QuestDockConstants = fn(14624);
+const QuestDockConstants = fn(14799);
 ({ QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: closure_7 } = QuestDockConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

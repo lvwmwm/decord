@@ -1,10 +1,10 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11574
+// Function ID: 11575
 // Name: ModalFooter
 // Dependencies: [19, 17, 21, 4836, 2]
 // Exports: ModalFooter
 
-// Module 11405 (ModalFooter)
+// Module 11574 (ModalFooter)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

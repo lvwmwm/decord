@@ -1,14 +1,14 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12749
+// Function ID: 12750
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 1074, 21, 4836, 12456, 7158, 5374, 10342, 9366, 8535, 12580, 12581, 576, 12582, 7592, 5403, 4832, 11148, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 12627, 7323, 5540, 10511, 9533, 8700, 12750, 12751, 576, 12752, 7757, 5569, 4832, 11317, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 12579 (UserProfileActivityBadges)
+// Module 12749 (UserProfileActivityBadges)
 import nativeDefault from "native" /* 576 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7158 */;
-import utils from "utils" /* 7592 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12581 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7323 */;
+import utils from "utils" /* 7757 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12751 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -58,15 +58,15 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        let GameControllerIcon = tmp2(12456).HourglassIcon;
-      } else if (tmp10(7158)(activity)) {
-        GameControllerIcon = tmp2(5374).AppsIcon;
+        let GameControllerIcon = tmp2(12627).HourglassIcon;
+      } else if (tmp10(7323)(activity)) {
+        GameControllerIcon = tmp2(5540).AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
-        GameControllerIcon = tmp2(10342).TvIcon;
+        GameControllerIcon = tmp2(10511).TvIcon;
       } else if (activity.type === tmp6.LISTENING) {
-        GameControllerIcon = tmp2(9366).MusicIcon;
+        GameControllerIcon = tmp2(9533).MusicIcon;
       } else {
-        GameControllerIcon = tmp2(8535).GameControllerIcon;
+        GameControllerIcon = tmp2(8700).GameControllerIcon;
       }
       const obj2 = { style: tmp.container, children: null };
       const obj3 = { size: "xxs", color: tmp10(576).colors.TEXT_FEEDBACK_POSITIVE };
@@ -75,7 +75,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       const obj5 = { start, end, isCountDown: flag };
       obj4.entry = obj5;
       obj4.style = tmp.bold;
-      items[1] = hasOwnProperty(tmp2(12582).ActiveTimestamp, obj4);
+      items[1] = hasOwnProperty(tmp2(12752).ActiveTimestamp, obj4);
       obj2.children = items;
       return timestampProducer(View, obj2);
     }
@@ -91,7 +91,7 @@ export const PartyBadge = function PartyBadge(activity) {
       if (null != richGameStateBadgeText) {
         const obj = { style: tmp.container, children: null };
         const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const items = [hasOwnProperty(tmp9(5403).GroupIcon, obj2), ];
+        const items = [hasOwnProperty(tmp9(5569).GroupIcon, obj2), ];
         const obj3 = { variant: "text-sm/medium", color: "text-muted", children: richGameStateBadgeText };
         items[1] = hasOwnProperty(tmp9(4832).Text, obj3);
         obj.children = items;
@@ -114,7 +114,7 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj2 = { style: tmp.container, children: null };
     const obj3 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const items = [hasOwnProperty(tmp2(11148).TopicsIcon, obj3), ];
+    const items = [hasOwnProperty(tmp2(11317).TopicsIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = hasOwnProperty(tmp2(4832).Text, obj4);
     obj2.children = items;

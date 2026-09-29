@@ -1,20 +1,20 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 9134
+// Function ID: 9135
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 8829, 8830, 1074, 21, 1364, 4836, 576, 5836, 1177, 1613, 4566, 8970, 1094, 1115, 6575, 4837, 6073, 8972, 1479, 8856, 1110, 4540, 5269, 4685, 8973, 2]
+// Dependencies: [32, 19, 17, 8994, 8995, 1074, 21, 1364, 4836, 576, 6003, 1177, 1613, 4566, 9135, 1094, 1115, 6741, 4837, 6239, 9137, 1479, 9021, 1110, 4540, 5435, 4685, 9138, 2]
 // Exports: default
 
-// Module 8969 (FocusedControlsBottomControls)
+// Module 9134 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 8972 */;
-import CallPTTButton from "CallPTTButton" /* 8973 */;
+import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 9137 */;
+import CallPTTButton from "CallPTTButton" /* 9138 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import TextStyles from "TextStyles" /* 6003 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 const CallPTTButtonDefault = CallPTTButton;
@@ -63,7 +63,7 @@ function FocusedControlsExpanded(availableHeight) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = closure_18();
-  const canShowTooltip = positionY(8970).useCanShowTooltip(positionY(1094).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  const canShowTooltip = positionY(9135).useCanShowTooltip(positionY(1094).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(4566);
   const fn = function o() {
     return { opacity: 1 - Math.min(-1 * positionY.get() / c15, 1) };
@@ -98,7 +98,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: null };
   const obj4 = { style: tmp.aboveActionBarContainer, children: null };
   const animatedStyle = positionY(4566).useAnimatedStyle(fn);
-  const items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(6575).ActionSheetHeaderBar, {}), ];
+  const items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(6741).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   if (tmp4Result) {
     obj5 = { style: null, children: null };
@@ -634,9 +634,9 @@ class FocusedControlsBottomDrawer {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: closure_7, StyleSheet } = get_ActivityIndicator);
-const ChannelCallStore = fn(8829);
+const ChannelCallStore = fn(8994);
 ({ clearFocusTimer: closure_8, resetFocusTimer: closure_9 } = ChannelCallStore);
-const ChannelCallConstants = fn(8830);
+const ChannelCallConstants = fn(8995);
 ({ BOX_MODE_THRESHOLD_WIDTH: c10, BOX_MODE_ACTIONSHEET_HEIGHT: closure_11 } = ChannelCallConstants);
 const Constants = fn(1074);
 ({ ComponentActions: closure_12, Fonts } = Constants);

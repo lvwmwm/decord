@@ -1,9 +1,9 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 8302
+// Function ID: 8303
 // Name: GameUtils
 // Dependencies: [2]
 
-// Module 8137 (GameUtils)
+// Module 8302 (GameUtils)
 import size from "module_2" /* 2 */;
 
 let c0 = "not supported";

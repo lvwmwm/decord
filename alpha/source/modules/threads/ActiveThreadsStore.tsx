@@ -1,9 +1,9 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5986
+// Function ID: 5987
 // Name: ActiveThreadsStore
 // Dependencies: [2049, 2045, 12, 504, 11, 573, 2]
 
-// Module 5819 (ActiveThreadsStore)
+// Module 5986 (ActiveThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;

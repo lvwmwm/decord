@@ -1,21 +1,21 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15486
+// Function ID: 15487
 // Name: DevToolsComponentsTestingScreen
-// Dependencies: [32, 19, 17, 2099, 21, 4836, 576, 5060, 1979, 7569, 5919, 4832, 15312, 15315, 5281, 5279, 15316, 573, 2]
+// Dependencies: [32, 19, 17, 2099, 21, 4836, 576, 5060, 1979, 7734, 6085, 4832, 15487, 15490, 5447, 5445, 15491, 573, 2]
 // Exports: default
 
-// Module 15311 (DevToolsComponentsTestingScreen)
+// Module 15486 (DevToolsComponentsTestingScreen)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1979 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import Card from "Card" /* 5919 */;
-import ComponentStateContext from "ComponentStateContext" /* 7569 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 15312 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 15315 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 15316 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import Card from "Card" /* 6085 */;
+import ComponentStateContext from "ComponentStateContext" /* 7734 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 15487 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 15490 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 15491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
@@ -76,7 +76,7 @@ function Select(children) {
     obj6.onPress = function onPress() {
       return _undefined((arg0) => !arg0);
     };
-    items[3] = tmp7(tmp4(5281).Button, obj6);
+    items[3] = tmp7(tmp4(5447).Button, obj6);
     obj3.children = items;
     return tmp6(Card.Card, obj3);
   }

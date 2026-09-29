@@ -1,10 +1,10 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14302
+// Function ID: 14303
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4825, 1182, 1085, 21, 504, 4688, 6401, 14131, 4540, 9535, 4841, 2]
+// Dependencies: [19, 4825, 1182, 1085, 21, 504, 4688, 6567, 14303, 4540, 9702, 4841, 2]
 // Exports: RootThemeContextProvider
 
-// Module 14130 (RootThemeContextProvider)
+// Module 14302 (RootThemeContextProvider)
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -23,10 +23,10 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   ({ saturation, contrast } = stateFromStoresObject);
   const tmp4 = useColorThemeBackgroundDefault();
   const obj = manaTypeConsolidationExperiment(504);
-  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(6401).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  const obj2 = manaTypeConsolidationExperiment(6401);
+  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(6567).useManaTypeConsolidationExperiment("RootThemeContextProvider");
+  const obj2 = manaTypeConsolidationExperiment(6567);
   [][0] = manaTypeConsolidationExperiment;
-  const plainTextExperiment = manaTypeConsolidationExperiment(14131).usePlainTextExperiment("RootThemeContextProvider");
+  const plainTextExperiment = manaTypeConsolidationExperiment(14303).usePlainTextExperiment("RootThemeContextProvider");
   if (null == tmp4) {
     let num2 = 0;
     if (1 !== saturation) {
@@ -37,7 +37,7 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
       const obj4 = { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null };
       const obj5 = { enabled: plainTextExperiment, children: children.children };
       obj4.children = jsx(tmp(4841).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: children.children });
-      return jsx(tmp(9535).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
+      return jsx(tmp(9702).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
     } else {
       if (contrast > 1) {
         let REDUCED_CONTRAST_ENABLED = tmp(4540).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;

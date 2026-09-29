@@ -1,14 +1,14 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17359
+// Function ID: 17360
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1349, 21, 4836, 576, 17158, 6402, 7780, 17171, 5276, 4528, 1115, 8922, 8931, 5435, 4785, 4832, 8741, 2]
+// Dependencies: [32, 19, 17, 1349, 21, 4836, 576, 17347, 6568, 7945, 17360, 5442, 4528, 1115, 9087, 9096, 5602, 4785, 4832, 8906, 2]
 // Exports: default
 
-// Module 17170 (InteractionIframeModal)
+// Module 17359 (InteractionIframeModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17171 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17360 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -68,7 +68,7 @@ export default function InteractionIframeModal(children) {
       referrerPolicy: "origin",
       isPipOrGridMode: false,
       webViewKey: "flex",
-      ignoreSilentHardwareSwitch: "en-CH"
+      ignoreSilentHardwareSwitch: "fr-CA"
     };
     ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
     obj3.activityUrl = iframeModalState.iframeUrl;

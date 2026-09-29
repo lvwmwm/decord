@@ -1,15 +1,15 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8982
+// Function ID: 8983
 // Name: StageChannelRichPresenceUtils
-// Dependencies: [32, 502, 2045, 2067, 5733, 5726, 1074, 2]
+// Dependencies: [32, 502, 2045, 2067, 5900, 5893, 1074, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 8817 (StageChannelRichPresenceUtils)
+// Module 8982 (StageChannelRichPresenceUtils)
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5900 */;
 
 function unpackStageChannelParty(party) {
   if (null != party) {
@@ -30,7 +30,7 @@ function unpackStageChannelParty(party) {
     }
   }
 }
-const STAGE_APPLICATION_ID = fn(5726).STAGE_APPLICATION_ID;
+const STAGE_APPLICATION_ID = fn(5893).STAGE_APPLICATION_ID;
 const GuildFeatures = fn(1074).GuildFeatures;
 let c7 = "stage:";
 const size = fn(2);

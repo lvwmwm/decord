@@ -1,14 +1,14 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14906
+// Function ID: 14907
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 4825, 5756, 14624, 1074, 21, 4836, 14625, 4566, 5280, 6494, 14628, 14711, 7715, 1479, 1613, 504, 14623, 672, 14732, 1364, 10678, 5899, 7755, 5293, 2]
+// Dependencies: [32, 19, 17, 4825, 5923, 14799, 1074, 21, 4836, 14800, 4566, 5446, 6660, 14803, 14886, 7880, 1479, 1613, 504, 14798, 672, 14907, 1364, 10847, 6065, 7920, 5459, 2]
 
-// Module 14731 (QuestDockVideoBackground)
+// Module 14906 (QuestDockVideoBackground)
 import _modDef672 from "module_672" /* 672 */;
-import spring from "spring" /* 5280 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6494 */;
-import QuestDockUtils from "QuestDockUtils" /* 14623 */;
+import spring from "spring" /* 5446 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6660 */;
+import QuestDockUtils from "QuestDockUtils" /* 14798 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -17,7 +17,7 @@ require = fn;
 function QuestDockBackgroundMediaFade(arg0) {
   let activeQuestDockMode;
   ({ children, style } = arg0);
-  activeQuestDockMode = noop.useContext(activeQuestDockMode(14625).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = noop.useContext(activeQuestDockMode(14800).QuestDockGestureContext).activeQuestDockMode;
   const tmp = closure_17();
   const fn = function n() {
     let num = 0;
@@ -27,7 +27,7 @@ function QuestDockBackgroundMediaFade(arg0) {
     return { opacity: spring.withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) };
   };
   let obj = activeQuestDockMode(4566);
-  fn.__closure = { withSpring: activeQuestDockMode(5280).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  fn.__closure = { withSpring: activeQuestDockMode(5446).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__workletHash = 5908890006198;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
@@ -38,8 +38,8 @@ function QuestDockBackgroundMediaFade(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ AppState: hasOwnProperty, StyleSheet, View: metroRequire } = get_ActivityIndicator);
-const QuestDockMode = fn(5756).QuestDockMode;
-const QuestDockConstants = fn(14624);
+const QuestDockMode = fn(5923).QuestDockMode;
+const QuestDockConstants = fn(14799);
 ({ QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: closure_9, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: c10 } = QuestDockConstants);
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);

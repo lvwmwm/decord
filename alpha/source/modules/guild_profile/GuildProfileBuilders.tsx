@@ -1,15 +1,15 @@
-// Module ID: 5860
-// Function ID: 5861
+// Module ID: 6026
+// Function ID: 6027
 // Name: GuildProfileBuilders
-// Dependencies: [5771, 4483, 5861, 1370, 5862, 2]
+// Dependencies: [5938, 4483, 6027, 1370, 6028, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5860 (GuildProfileBuilders)
+// Module 6026 (GuildProfileBuilders)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import GuildProfileLimits from "GuildProfileLimits" /* 5861 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 5862 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
+import GuildProfileLimits from "GuildProfileLimits" /* 6027 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 6028 */;
 import size from "module_2" /* 2 */;
 
 function getEmoji(guildId) {

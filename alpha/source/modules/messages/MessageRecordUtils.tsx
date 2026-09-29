@@ -1,19 +1,19 @@
 // Module ID: 5058
 // Function ID: 5059
 // Name: MessageRecordUtils
-// Dependencies: [5059, 4480, 1386, 502, 4479, 1372, 1074, 5060, 4816, 5083, 11, 5088, 5089, 5195, 4421, 5196, 5198, 2]
+// Dependencies: [5059, 4480, 1386, 502, 4479, 1372, 1074, 5060, 4816, 5249, 11, 5254, 5255, 5361, 4421, 5362, 5364, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
 // Module 5058 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import findCodedLinksDefault from "findCodedLinks" /* 4816 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import isMessageMentioned from "isMessageMentioned" /* 5088 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5089 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5195 */;
-import EmbedUtils from "EmbedUtils" /* 5196 */;
-import StickersUtils from "StickersUtils" /* 5198 */;
+import useMessageAuthor from "useMessageAuthor" /* 5249 */;
+import isMessageMentioned from "isMessageMentioned" /* 5254 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5255 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5361 */;
+import EmbedUtils from "EmbedUtils" /* 5362 */;
+import StickersUtils from "StickersUtils" /* 5364 */;
 import InteractionRecord from "InteractionRecord" /* 5059 */;
 import MessageRecord_mod from "MessageRecord" /* 4480 */;
 import UserRecord from "UserRecord" /* 1386 */;

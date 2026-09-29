@@ -1,10 +1,10 @@
-// Module ID: 6746
-// Function ID: 6747
+// Module ID: 6912
+// Function ID: 6913
 // Name: NavigationHistoryStore
 // Dependencies: [2045, 504, 573, 4693, 4692, 4695, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 6746 (NavigationHistoryStore)
+// Module 6912 (NavigationHistoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;

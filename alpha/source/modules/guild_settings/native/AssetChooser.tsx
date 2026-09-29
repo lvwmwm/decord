@@ -1,14 +1,14 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17490
+// Function ID: 17491
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4540, 5450, 5435, 1115, 17302, 17303, 1177, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4540, 5617, 5602, 1115, 17491, 17492, 1177, 2]
 
-// Module 17301 (AssetChooser)
+// Module 17490 (AssetChooser)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5435 */;
-import _modDef17302 from "module_17302" /* 17302 */;
-import _modDef17303 from "module_17303" /* 17303 */;
+import Pressables from "Pressables" /* 5602 */;
+import _modDef17491 from "module_17491" /* 17491 */;
+import _modDef17492 from "module_17492" /* 17492 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -132,13 +132,13 @@ prototype["render"] = function render() {
   obj.disabled = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = _modDef17302;
+    tmp9 = _modDef17491;
   }
   const obj2 = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
   if (!disabled) {
     const obj3 = { style: tmp.uploadIconWrapper, children: null };
-    const obj4 = { style: tmp.uploadIcon, source: _modDef17303 };
+    const obj4 = { style: tmp.uploadIcon, source: _modDef17492 };
     obj3.children = tmp5(hasOwnProperty, obj4);
     tmp5Result = tmp5(React4, obj3);
   }

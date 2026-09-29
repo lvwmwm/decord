@@ -1,18 +1,18 @@
-// Module ID: 6421
-// Function ID: 6422
+// Module ID: 6587
+// Function ID: 6588
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6422, 5936, 4531, 6423, 1613, 1115, 12, 6456, 1486, 4767, 6462, 5943, 1232, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 6588, 6102, 4531, 6589, 1613, 1115, 12, 6622, 1486, 4767, 6628, 6109, 1232, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 6421 (Navigator)
+// Module 6587 (Navigator)
 import nativeDefault from "native" /* 576 */;
 import SentryInitUtils from "SentryInitUtils" /* 1232 */;
 import Link from "Link" /* 1486 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 6422 */;
-import NavigatorScreen from "NavigatorScreen" /* 6456 */;
-import useNavigationTheme from "useNavigationTheme" /* 6462 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import _mod6109 from "module_6109" /* 6109 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 6588 */;
+import NavigatorScreen from "NavigatorScreen" /* 6622 */;
+import useNavigationTheme from "useNavigationTheme" /* 6628 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -150,13 +150,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp3(6423).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(6589).CardStyleInterpolators.forHorizontalIOS;
       }
       obj.cardStyleInterpolator = fn2;
       if (disableHeaderAnimation) {
-        let fn3 = tmp3(6423).HeaderStyleInterpolators.forNoAnimation;
+        let fn3 = tmp3(6589).HeaderStyleInterpolators.forNoAnimation;
       } else if (tmp2) {
-        fn3 = tmp3(6423).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(6589).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           ({ current, next, layouts, direction } = arg0);
@@ -245,7 +245,7 @@ function WrappedNavigationStack(arg0) {
   const merged1 = Object.assign(merged);
   obj3.children = <NavigationStack initialRouteName={initialRouteName} />;
   obj5.children = jsx(Link.NavigationContainer, { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null });
-  obj4.children = jsx(_mod5943.HeaderBackContext.Provider, { value: "Array", children: 0 });
+  obj4.children = jsx(_mod6109.HeaderBackContext.Provider, { value: "Array", children: 0 });
   return jsx(Link.NavigationIndependentTree, { children: null });
 }
 get_ActivityIndicator = fn(17);

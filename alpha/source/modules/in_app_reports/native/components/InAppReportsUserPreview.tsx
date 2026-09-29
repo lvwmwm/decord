@@ -1,15 +1,15 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8281
+// Function ID: 8282
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4836, 576, 6400, 4683, 4832, 1115, 1177, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6566, 4683, 4832, 1115, 1177, 2]
 // Exports: default
 
-// Module 8116 (InAppReportsUserPreview)
+// Module 8281 (InAppReportsUserPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -51,7 +51,7 @@ export default function UserPreview(user) {
   const items2 = [tmp.userContainer, { borderColor: ColorUtils.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   obj5.style = items2;
   const hexWithOpacityResult = ColorUtils.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const items3 = [React3(native.Avatar, { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" }), ];
+  const items3 = [React3(native.Avatar, { size: native.AvatarSizes.LARGE_48, user, guildId: "r" }), ];
   const obj7 = { style: tmp.userProfileInfo, children: null };
   let tmp8Result = null != user.globalName;
   if (tmp8Result) {

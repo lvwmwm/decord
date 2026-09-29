@@ -1,10 +1,10 @@
-// Module ID: 5741
-// Function ID: 5742
+// Module ID: 5908
+// Function ID: 5909
 // Name: useGuildMemberDisplayRole
 // Dependencies: [2108, 2067, 4474, 504, 2]
 // Exports: default
 
-// Module 5741 (useGuildMemberDisplayRole)
+// Module 5908 (useGuildMemberDisplayRole)
 import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;

@@ -1,13 +1,13 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 13146
+// Function ID: 13147
 // Name: useReferralProgramBannerDetails
-// Dependencies: [19, 1372, 6872, 504, 7626, 2]
+// Dependencies: [19, 1372, 7038, 504, 7791, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12976 (useReferralProgramBannerDetails)
+// Module 13146 (useReferralProgramBannerDetails)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7038 */;
 
 const require = fn;
 const size = fn(2);

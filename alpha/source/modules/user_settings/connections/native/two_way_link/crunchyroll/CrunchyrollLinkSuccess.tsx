@@ -1,16 +1,16 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8744
+// Function ID: 8745
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 4836, 8538, 8580, 4832, 1115, 6544, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 8703, 8745, 4832, 1115, 6710, 5447, 2]
 // Exports: default
 
-// Module 8579 (CrunchyrollLinkSuccess)
+// Module 8744 (CrunchyrollLinkSuccess)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8538 */;
-import _modDef8580 from "module_8580" /* 8580 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8703 */;
+import _modDef8745 from "module_8745" /* 8745 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
   const obj2 = { style: twoWayLinkStyles.container, children: null };
   const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef8580, style: tmp.image }), , ];
+  const items = [hasOwnProperty(React3, { source: _modDef8745, style: tmp.image }), , ];
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = util.intl;
   obj5.children = intl.string(util.t.Fnvxvk);

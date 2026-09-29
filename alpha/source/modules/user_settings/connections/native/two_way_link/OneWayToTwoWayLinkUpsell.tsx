@@ -1,14 +1,14 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14677
+// Function ID: 14678
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1074, 2042, 21, 4836, 576, 5836, 1177, 10088, 4832, 5281, 1115, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 4836, 576, 6003, 1177, 10255, 4832, 5447, 1115, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 14502 (OneWayToTwoWayLinkUpsell)
+// Module 14677 (OneWayToTwoWayLinkUpsell)
 import nativeDefault from "native" /* 576 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10088 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10255 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5836 */;
+import TextStyles_mod from "TextStyles" /* 6003 */;
 
 const require = fn;
 function OneWayToTwoWayNewTag(markAsDismissed) {
@@ -67,7 +67,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   const intl = newIndicatorDismissibleContent(1115).intl;
   obj8.text = intl.string(newIndicatorDismissibleContent(1115).t.vD60Pv);
   obj8.onPress = onPress;
-  obj7.children = closure_6(newIndicatorDismissibleContent(5281).Button, obj8);
+  obj7.children = closure_6(newIndicatorDismissibleContent(5447).Button, obj8);
   items3[2] = closure_6(View, obj7);
   obj.children = items3;
   return closure_7(View, obj);

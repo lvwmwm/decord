@@ -1,12 +1,12 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13228
+// Function ID: 13229
 // Name: TopPattern
-// Dependencies: [19, 17, 21, 7679, 13059, 13060, 13061, 4685, 2]
+// Dependencies: [19, 17, 21, 7844, 13229, 13230, 13231, 4685, 2]
 // Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
-// Module 13058 (TopPattern)
+// Module 13228 (TopPattern)
 import shared from "shared" /* 4685 */;
-import _mod7679 from "module_7679" /* 7679 */;
+import _mod7844 from "module_7844" /* 7844 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
 
 export const getTopPatternSource = function getTopPatternSource(theme) {
-  return _mod7679.getIllustrationSource(theme, {
+  return _mod7844.getIllustrationSource(theme, {
     dark() {
-      return require("module_13059");
+      return require("module_13229");
     },
     darker() {
-      return require("module_13060");
+      return require("module_13230");
     },
     light() {
-      return require("module_13061");
+      return require("module_13231");
     }
   });
 };
 export const useTopPatternSource = function useTopPatternSource() {
   const obj = shared;
-  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13059");
+      return require("module_13229");
     },
     darker() {
-      return require("module_13060");
+      return require("module_13230");
     },
     light() {
-      return require("module_13061");
+      return require("module_13231");
     }
   });
 };
 export const TopPattern = function TopPattern(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13059");
+      return require("module_13229");
     },
     darker() {
-      return require("module_13060");
+      return require("module_13230");
     },
     light() {
-      return require("module_13061");
+      return require("module_13231");
     }
   });
   const merged = Object.assign(arg0);

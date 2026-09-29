@@ -1,10 +1,10 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17516
+// Function ID: 17517
 // Name: KeywordsRow
-// Dependencies: [19, 21, 5917, 4832, 1115, 4800, 17328, 1981, 2]
+// Dependencies: [19, 21, 6083, 4832, 1115, 4800, 17517, 1981, 2]
 // Exports: default
 
-// Module 17327 (KeywordsRow)
+// Module 17516 (KeywordsRow)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
@@ -38,7 +38,7 @@ export default function KeywordsRow(label) {
       obj4 = { type: tmp2, maxWordCount };
     }
     const merged = Object.assign(obj4);
-    obj.openLazy(asyncRequireImpl(17328, dependencyMap.paths), "AutomodKeywords", obj2);
+    obj.openLazy(asyncRequireImpl(17517, dependencyMap.paths), "AutomodKeywords", obj2);
   };
-  return keywords(label(5917).TableRow, obj);
+  return keywords(label(6083).TableRow, obj);
 };

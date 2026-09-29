@@ -1,30 +1,30 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14946
+// Function ID: 14947
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 4494, 21, 4836, 576, 14772, 4421, 1115, 5896, 1177, 4832, 14762, 5899, 14780, 6583, 6603, 8667, 5204, 5174, 4527, 4510, 5281, 6400, 14768, 14757, 14781, 14782, 504, 2]
+// Dependencies: [5, 32, 19, 17, 4494, 21, 4836, 576, 14947, 4421, 1115, 6062, 1177, 4832, 14937, 6065, 14955, 6749, 6769, 8832, 5370, 5340, 4527, 4510, 5447, 6566, 14943, 14932, 14956, 14957, 504, 2]
 // Exports: default
 
-// Module 14771 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 14946 (UserSettingsGuildRoleSubscriptionsCancel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GuildIconDefault from "GuildIcon" /* 5896 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14757 */;
-import FormSeparatorDefault from "FormSeparator" /* 14762 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 14768 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
-import _modDef14780 from "module_14780" /* 14780 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 14782 */;
+import GuildIconDefault from "GuildIcon" /* 6062 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14932 */;
+import FormSeparatorDefault from "FormSeparator" /* 14937 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 14943 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14947 */;
+import _modDef14955 from "module_14955" /* 14955 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 14957 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
-const FastAssetImageDefault = tmp5(14781);
+const FastAssetImageDefault = tmp5(14956);
 require = fn;
 function WhatYouLose(subscription) {
   ({ listingId, guild } = subscription);
@@ -61,7 +61,7 @@ function WhatYouLose(subscription) {
   const obj13 = { source: null, style: null };
   const formatToPlainStringResult = intl2.formatToPlainString(util.t.OVlNGT, { numEmojis: _slicedToArray(obj.useTierEmojiIds(listingId, guild.id), 1)[0].size, numChannels: _slicedToArray(obj2.useChannelBenefits(listingId), 1)[0].length, numIntangibles: _slicedToArray(obj3.useIntangibleBenefits(listingId), 1)[0].length });
   const obj10 = { variant: "text-sm/medium", color: "interactive-text-default", children: guild.name };
-  obj13.source = _modDef14780;
+  obj13.source = _modDef14955;
   obj13.style = tmp.cactus;
   items2[6] = closure_1_10(FastImageDefault, obj13);
   obj7.children = items2;
@@ -77,9 +77,9 @@ function CancelSubscriptionButtonFooter(guild) {
   const tmp = closure_13();
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
-  const analyticsLocations = subscription(6583)(subscription(6603).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  const tmp5 = subscription(6583);
-  const cancelSubscription1 = subscription(8667).useCancelSubscription(subscription.id, subscription.isACOM);
+  const analyticsLocations = subscription(6749)(subscription(6769).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  const tmp5 = subscription(6749);
+  const cancelSubscription1 = subscription(8832).useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription1.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
   const items = [guild.name, , , , , , , ];
@@ -120,7 +120,7 @@ function CancelSubscriptionButtonFooter(guild) {
             const intl2 = guild(1115).intl;
             const obj9 = { guildName: guild.name };
             obj6.title = intl2.formatToPlainString(guild(1115).t.sBs7sh, obj9);
-            const obj15 = tmp3(5204);
+            const obj15 = tmp3(5370);
             const _HermesInternal = HermesInternal;
             obj6.body = "You can resubscribe any time before " + tmp3(4421)(subscription.currentPeriodEnd).format(closure_1_12) + ".";
             const intl3 = guild(1115).intl;
@@ -152,7 +152,7 @@ function CancelSubscriptionButtonFooter(guild) {
               } else if (closure_129_1.isPurchasedViaDesktop) {
                 c4 = 4;
                 c5 = 1;
-                const obj13 = { value: tmp63(5174).cancelSubscription(closure_129_1.id, closure_129_4), done: false };
+                const obj13 = { value: tmp63(5340).cancelSubscription(closure_129_1.id, closure_129_4), done: false };
                 return obj13;
               } else {
                 const _Error = Error;
@@ -196,7 +196,7 @@ function CancelSubscriptionButtonFooter(guild) {
                 } else {
                   c4 = 5;
                   c5 = 1;
-                  const obj16 = { value: tmp63(5174).fetchSubscriptions(), done: false };
+                  const obj16 = { value: tmp63(5340).fetchSubscriptions(), done: false };
                   return obj16;
                 }
               } else if (arg0 === 1) {
@@ -248,7 +248,7 @@ function CancelSubscriptionButtonFooter(guild) {
   let intl = tmp10(1115).intl;
   obj3.text = intl.string(guild(1115).t.cM1H0K);
   obj3.onPress = callback;
-  obj2.children = closure_10(guild(5281).Button, obj3);
+  obj2.children = closure_10(guild(5447).Button, obj3);
   return closure_10(closure_7, obj2);
 }
 function Content(subscription) {

@@ -1,15 +1,15 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 7044
+// Function ID: 7045
 // Name: MessageRoundtripTrackerStore
-// Dependencies: [2045, 4754, 4885, 1074, 3, 6879, 1241, 7090, 504, 573, 2]
+// Dependencies: [2045, 4754, 4885, 1074, 3, 7045, 1241, 7255, 504, 573, 2]
 
-// Module 6878 (MessageRoundtripTrackerStore)
+// Module 7044 (MessageRoundtripTrackerStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NetStats from "NetStats" /* 6879 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7090 */;
+import NetStats from "NetStats" /* 7045 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7255 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import NetworkStore from "NetworkStore" /* 4885 */;

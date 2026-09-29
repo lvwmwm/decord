@@ -1,9 +1,9 @@
-// Module ID: 5725
-// Function ID: 5726
+// Module ID: 5892
+// Function ID: 5893
 // Name: GuildVerificationStore
 // Dependencies: [2063, 2108, 2102, 2067, 1372, 1074, 4455, 1385, 573, 11, 504, 2]
 
-// Module 5725 (GuildVerificationStore)
+// Module 5892 (GuildVerificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

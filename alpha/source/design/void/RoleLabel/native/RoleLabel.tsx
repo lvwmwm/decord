@@ -1,12 +1,12 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9900
+// Function ID: 9901
 // Name: RoleLabel
-// Dependencies: [19, 17, 4825, 21, 4836, 504, 1177, 8053, 2]
+// Dependencies: [19, 17, 4825, 21, 4836, 504, 1177, 8218, 2]
 // Exports: RoleLabel
 
-// Module 9733 (RoleLabel)
+// Module 9900 (RoleLabel)
 import initialize from "initialize" /* 504 */;
-import Form from "Form" /* 8053 */;
+import Form from "Form" /* 8218 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

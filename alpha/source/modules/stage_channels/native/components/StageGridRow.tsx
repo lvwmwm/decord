@@ -1,11 +1,11 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9682
+// Function ID: 9683
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4836, 9507, 5737, 5438, 9516, 9506, 2]
+// Dependencies: [19, 17, 21, 4836, 9674, 5904, 5605, 9683, 9673, 2]
 
-// Module 9515 (StageGridRow)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5438 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
+// Module 9682 (StageGridRow)
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5605 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5904 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,11 +26,11 @@ export default noop.memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(9507).StageTileSize.FULL;
+    THIRD = tmp2(9674).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(9507).StageTileSize.HALF;
+    THIRD = tmp2(9674).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(9507).StageTileSize.THIRD;
+    THIRD = tmp2(9674).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {
@@ -58,13 +58,13 @@ export default noop.memo((row) => {
       if (flag) {
         const obj2 = { participant: type, size: THIRD, channel };
         const _HermesInternal2 = HermesInternal;
-        let tmp5Result = tmp5(tmp6(9516), obj2, "stage-media-participant-" + type.id);
-        const tmp6Result = tmp6(9516);
+        let tmp5Result = tmp5(tmp6(9683), obj2, "stage-media-participant-" + type.id);
+        const tmp6Result = tmp6(9683);
       } else {
         const obj = { channel, participant: type, size: THIRD };
         const _HermesInternal = HermesInternal;
-        tmp5Result = tmp5(tmp6(9506), obj, "stage-user-participant-" + type.id);
-        const tmp6Result2 = tmp6(9506);
+        tmp5Result = tmp5(tmp6(9673), obj, "stage-user-participant-" + type.id);
+        const tmp6Result2 = tmp6(9673);
       }
       return tmp5Result;
     })

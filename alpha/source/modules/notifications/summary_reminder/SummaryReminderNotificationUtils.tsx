@@ -1,10 +1,10 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15241
+// Function ID: 15242
 // Name: SummaryReminderNotificationUtils
 // Dependencies: [4482, 1074, 2021, 1241, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 15066 (SummaryReminderNotificationUtils)
+// Module 15241 (SummaryReminderNotificationUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;

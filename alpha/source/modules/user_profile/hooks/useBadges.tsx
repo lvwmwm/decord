@@ -1,10 +1,10 @@
-// Module ID: 7688
-// Function ID: 7689
+// Module ID: 7853
+// Function ID: 7854
 // Name: useBadges
 // Dependencies: [4679, 1372, 2021, 563, 1115, 2]
 // Exports: default
 
-// Module 7688 (useBadges)
+// Module 7853 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;

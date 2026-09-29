@@ -1,9 +1,5 @@
 // Module ID: 5632
 // Function ID: 5633
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 5632
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "eee65ba7b1514e4ac5eb13df20b9cde9", name: "img_account_sync_reddit_light_and_dark", type: "svg" });

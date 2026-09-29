@@ -1,11 +1,11 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14197
+// Function ID: 14198
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [2044, 1372, 4739, 4458, 4988, 8776, 1370, 12, 2]
+// Dependencies: [2044, 1372, 4739, 4458, 4988, 8941, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14025 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 8776 */;
+// Module 14197 (activityInstanceConnectedParticipants)
+import transformUserDefault from "transformUser" /* 8941 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 

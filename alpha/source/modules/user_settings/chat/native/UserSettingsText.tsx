@@ -1,15 +1,15 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15187
+// Function ID: 15188
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1372, 4494, 1183, 1184, 1074, 21, 4836, 576, 1241, 2021, 8659, 4531, 504, 4488, 1485, 6411, 1177, 9860, 4832, 1115, 8053, 5279, 5999, 6621, 5997, 6000, 2]
+// Dependencies: [19, 17, 1372, 4494, 1183, 1184, 1074, 21, 4836, 576, 1241, 2021, 8824, 4531, 504, 4488, 1485, 6577, 1177, 10027, 4832, 1115, 8218, 5445, 6165, 6787, 6163, 6166, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15012 (UserSettingsText)
+// Module 15187 (UserSettingsText)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8659 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6577 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8824 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;

@@ -1,12 +1,12 @@
-// Module ID: 14101
-// Function ID: 14102
+// Module ID: 14273
+// Function ID: 14274
 // Name: getVolumeForSound
-// Dependencies: [1993, 5322, 2021, 2]
+// Dependencies: [1993, 5488, 2021, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 14101 (getVolumeForSound)
+// Module 14273 (getVolumeForSound)
 import UserSettings from "UserSettings" /* 2021 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5322 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5488 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;

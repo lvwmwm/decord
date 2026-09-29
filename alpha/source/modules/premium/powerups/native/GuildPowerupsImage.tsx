@@ -1,13 +1,13 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12190
+// Function ID: 12191
 // Name: GuildPowerupsImage
-// Dependencies: [4825, 21, 4836, 504, 1365, 8272, 5899, 2]
+// Dependencies: [4825, 21, 4836, 504, 1365, 8437, 6065, 2]
 // Exports: default
 
-// Module 12019 (GuildPowerupsImage)
+// Module 12190 (GuildPowerupsImage)
 import initialize from "initialize" /* 504 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8272 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8437 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

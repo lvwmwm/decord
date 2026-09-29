@@ -1,21 +1,21 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 17028
+// Function ID: 17029
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4825, 8939, 2045, 2044, 2005, 8502, 16842, 1074, 11756, 21, 1177, 4836, 576, 1613, 504, 1479, 16837, 10896, 4566, 16843, 4540, 4837, 5280, 16844, 16845, 1115, 6073, 4458, 16839, 8915, 2]
+// Dependencies: [19, 17, 4825, 9104, 2045, 2044, 2005, 8667, 17029, 1074, 11925, 21, 1177, 4836, 576, 1613, 504, 1479, 17024, 11065, 4566, 17030, 4540, 4837, 5446, 17031, 17032, 1115, 6239, 4458, 17026, 9080, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16841 (ActivityPanelPIPView)
+// Module 17028 (ActivityPanelPIPView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 8915 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10896 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 16839 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 16843 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9080 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11065 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17026 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17030 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 8939 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9104 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
@@ -256,12 +256,12 @@ class BaseActivityPanelPIPView {
 }
 const View = fn(17).View;
 const ActivityLayoutMode = fn(2005).ActivityLayoutMode;
-const ActivityPanelConstants = fn(8502);
+const ActivityPanelConstants = fn(8667);
 let ACTIVITY_PIP_SIZE = ActivityPanelConstants.ACTIVITY_PIP_SIZE;
 ({ ActivityPanelModes: closure_11, ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_12, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: map1, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: closure_14 } = ActivityPanelConstants);
-let closure_15 = fn(16842).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+let closure_15 = fn(17029).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const ThemeTypes = fn(1074).ThemeTypes;
-const PIP_WINDOW_OFFSET = fn(11756).PIP_WINDOW_OFFSET;
+const PIP_WINDOW_OFFSET = fn(11925).PIP_WINDOW_OFFSET;
 const jsx = fn(21).jsx;
 const REDUCED_MOTION_TIMING = { duration: 300 };
 const native = fn(1177);

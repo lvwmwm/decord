@@ -1,10 +1,10 @@
-// Module ID: 10777
-// Function ID: 10778
+// Module ID: 10946
+// Function ID: 10947
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2112, 2108, 2067, 6629, 1074, 1484, 21, 4836, 4531, 576, 4832, 1115, 10778, 504, 5719, 11, 10278, 5896, 10779, 1177, 7818, 6583, 7635, 10780, 4800, 4693, 1101, 6459, 4701, 1611, 7624, 10781, 5281, 6628, 2]
+// Dependencies: [19, 17, 2112, 2108, 2067, 6795, 1074, 1484, 21, 4836, 4531, 576, 4832, 1115, 10947, 504, 5886, 11, 10447, 6062, 10948, 1177, 7983, 6749, 7800, 10949, 4800, 4693, 1101, 6625, 4701, 1611, 7789, 10950, 5447, 6794, 2]
 // Exports: default
 
-// Module 10777 (UserProfileAboutMeCard)
+// Module 10946 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,17 +13,17 @@ import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import useToken from "useToken" /* 4531 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6628 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
-import BioTextDefault from "BioText" /* 10778 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 10779 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10781 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6794 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7983 */;
+import BioTextDefault from "BioText" /* 10947 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 10948 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10950 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
-const GuildIconDefault = tmp9(5896);
+const GuildIconDefault = tmp9(6062);
 require = fn;
 function Heading(children) {
   const themeType = children.themeType;
@@ -122,13 +122,13 @@ function MemberJoinDates(userId) {
     return member;
   });
   const obj3 = userId(504);
-  const obj4 = userId(5719);
+  const obj4 = userId(5886);
   const createdAtDate = obj4.getCreatedAtDate(SnowflakeUtilsDefault.extractTimestamp(userId), stateFromStores);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
-  const createdAtDate1 = userId(5719).getCreatedAtDate(joinedAt, stateFromStores);
+  const createdAtDate1 = userId(5886).getCreatedAtDate(joinedAt, stateFromStores);
   const obj7 = { themeType, children: null };
   const intl = tmp4(1115).intl;
   obj7.children = intl.string(userId(1115).t.a6XYD9);
@@ -136,7 +136,7 @@ function MemberJoinDates(userId) {
   const obj8 = { style: null, children: null };
   const items4 = [tmp.memberJoinDates, { columnGap }];
   obj8.style = items4;
-  const obj9 = { themeType, icon: closure_11(userId(10278).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  const obj9 = { themeType, icon: closure_11(userId(10447).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1115).intl;
   obj9.accessibilityLabel = intl2.formatToPlainString(userId(1115).t["9t7w53"], { date: createdAtDate });
   obj9.children = createdAtDate;
@@ -147,7 +147,7 @@ function MemberJoinDates(userId) {
     const obj11 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
     const items6 = [tmp15(tmp4(4832).Text, obj11), ];
     const obj12 = { themeType, icon: null, accessibilityLabel: null, children: null };
-    const obj13 = { guild: stateFromStores1, size: tmp4(5896).GuildIconSizes.XXSMALL };
+    const obj13 = { guild: stateFromStores1, size: tmp4(6062).GuildIconSizes.XXSMALL };
     obj12.icon = tmp15(GuildIconDefault, obj13);
     const intl3 = tmp4(1115).intl;
     const obj14 = { guildName: stateFromStores1.name, date: createdAtDate1 };
@@ -285,7 +285,7 @@ function BotSlashCommands(channel) {
   return tmp8Result;
 }
 const View = fn(17).View;
-const Constants = fn(6629);
+const Constants = fn(6795);
 ({ DIVIDER_DOT: closure_8, UserProfileThemeTypes } = Constants);
 const Routes = fn(1074).Routes;
 const AppLauncherRouteName = fn(1484).AppLauncherRouteName;

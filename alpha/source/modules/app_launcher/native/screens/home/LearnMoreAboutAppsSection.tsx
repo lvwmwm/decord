@@ -1,18 +1,18 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11746
+// Function ID: 11747
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4525, 2111, 1115, 11578, 8712, 4832, 5435, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 4525, 2111, 1115, 11747, 8877, 4832, 5602, 2]
 // Exports: default
 
-// Module 11577 (LearnMoreAboutAppsSection)
+// Module 11746 (LearnMoreAboutAppsSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11578 */;
+import Pressables from "Pressables" /* 5602 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8877 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11747 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

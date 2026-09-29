@@ -1,14 +1,14 @@
-// Module ID: 13109
-// Function ID: 13110
+// Module ID: 13279
+// Function ID: 13280
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4494, 6658, 21, 5287, 4832, 504, 6661, 10513, 6583, 10207, 5204, 1115, 4488, 10124, 5282, 13110, 2]
+// Dependencies: [5, 19, 17, 4494, 6824, 21, 5453, 4832, 504, 6827, 10682, 6749, 10374, 5370, 1115, 4488, 10291, 5448, 13280, 2]
 // Exports: default
 
-// Module 13109 (GiftPurchaseButton)
+// Module 13279 (GiftPurchaseButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import IAPStore from "IAPStore" /* 6658 */;
+import IAPStore from "IAPStore" /* 6824 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -60,14 +60,14 @@ export default function GiftPurchaseButton(style) {
     const premiumTypeFromPlanId = planId(4488).getPremiumTypeFromPlanId(closure_129_0);
     const premiumType = premiumTypeFromPlanId.premiumType;
     const planInterval = premiumTypeFromPlanId.planInterval;
-    planId(10124).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
+    planId(10291).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
     yield "HermesInternal";
     const obj7 = { title: null, body: null };
     const intl = planId(1115).intl;
     obj7.title = intl.string(planId(1115).t.R0RpRX);
     const intl2 = planId(1115).intl;
     obj7.body = intl2.string(planId(1115).t.CKsXk3);
-    tmp3(5204).show(obj7);
+    tmp3(5370).show(obj7);
   }), items3);
   const tmpResult = planId(recipientUserId[12]);
   obj3.children = jsx(planId(recipientUserId[17]).BaseTextButton, { textElement: analyticsLocation(recipientUserId[18])({ style: obj, basePlanId: planId, isCurrentPlan: tmp11, isGift: true, product: stateFromStores2 }), variant: str, size: "sm", onPress: callback, loading: stateFromStores1, disabled: !canPurchaseIAP, grow: true });

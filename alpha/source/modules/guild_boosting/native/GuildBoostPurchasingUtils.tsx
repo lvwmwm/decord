@@ -1,10 +1,10 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6989
+// Function ID: 6990
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4494, 1074, 1374, 5204, 1115, 1241, 5174, 6824, 6829, 6661, 6830, 6831, 4488, 2]
+// Dependencies: [5, 4494, 1074, 1374, 5370, 1115, 1241, 5340, 6990, 6995, 6827, 6996, 6997, 4488, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 6823 (GuildBoostPurchasingUtils)
+// Module 6989 (GuildBoostPurchasingUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
@@ -70,8 +70,8 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
                 const intl = closure_1_0(1115).intl;
                 obj2.title = intl.string(closure_1_0(1115).t["8P7MX0"]);
                 obj2.body = body;
-                closure_1_1(5204).show(obj2);
-                const obj = closure_1_1(5204);
+                closure_1_1(5370).show(obj2);
+                const obj = closure_1_1(5370);
                 closure_1_1(1241).track(constants.OPEN_MODAL, { type: closure_1_6.IOS_CANNOT_MANAGE_SUBSCRIPTION, source });
               })(externalManagementMessage, closure_130_0);
             } else {

@@ -1,22 +1,22 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12368
+// Function ID: 12369
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 5899, 12198, 4832, 1115, 5281, 1241, 4678, 7809, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 6065, 12369, 4832, 1115, 5447, 1241, 4678, 7974, 2]
 // Exports: default
 
-// Module 12197 (ContactSyncInviteFriends)
+// Module 12368 (ContactSyncInviteFriends)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef12198 from "module_12198" /* 12198 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import _modDef12369 from "module_12369" /* 12369 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const UserUtilsDefault = tmp(4678);
-const showShareActionSheet = tmp5(7809);
+const showShareActionSheet = tmp5(7974);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
@@ -37,7 +37,7 @@ export default function ContactSyncInviteFriends() {
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.art, source: null };
   let obj = require("initialize");
-  obj4.source = _modDef12198;
+  obj4.source = _modDef12369;
   const items1 = [closure_7(FastImageDefault, obj4), , ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = require("util").intl;

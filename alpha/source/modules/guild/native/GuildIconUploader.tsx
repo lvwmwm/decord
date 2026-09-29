@@ -1,16 +1,16 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11445
+// Function ID: 11446
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1182, 21, 4836, 576, 4540, 4685, 11277, 11278, 4832, 1115, 11279, 11280, 5435, 2]
+// Dependencies: [19, 17, 1182, 21, 4836, 576, 4540, 4685, 11446, 11447, 4832, 1115, 11448, 11449, 5602, 2]
 
-// Module 11276 (GuildIconUploader)
+// Module 11445 (GuildIconUploader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4685 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import _modDef11279 from "module_11279" /* 11279 */;
-import _modDef11280 from "module_11280" /* 11280 */;
+import Pressables from "Pressables" /* 5602 */;
+import _modDef11448 from "module_11448" /* 11448 */;
+import _modDef11449 from "module_11449" /* 11449 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -51,9 +51,9 @@ prototype["renderIcon"] = function renderIcon() {
     ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
     obj4.style = items1;
     if (obj6.isThemeDark(ThemeStore.theme)) {
-      let tmp13Result = tmp13(11277);
+      let tmp13Result = tmp13(11446);
     } else {
-      tmp13Result = tmp13(11278);
+      tmp13Result = tmp13(11447);
     }
     const obj = { source: tmp13Result };
     const items2 = [timestampProducer(React4, obj), ];
@@ -86,13 +86,13 @@ prototype["renderUpload"] = function renderUpload() {
     const obj6 = { tintColor: iconBackgroundColor };
     items1[1] = obj6;
     obj5.style = items1;
-    obj5.source = _modDef11279;
+    obj5.source = _modDef11448;
     obj4.children = tmp2(React4, obj5);
     obj2.children = tmp2(tmp3, obj4);
     let obj = obj2;
   } else {
     obj = { style: tmp.emptyIconWrapper, children: null };
-    const obj7 = { source: _modDef11280 };
+    const obj7 = { source: _modDef11449 };
     obj.children = tmp2(React4, obj7);
   }
   return timestampProducer(React3, obj);

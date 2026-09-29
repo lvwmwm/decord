@@ -1,17 +1,17 @@
-// Module ID: 6916
-// Function ID: 6917
+// Module ID: 7082
+// Function ID: 7083
 // Name: GuildMemberSafetyMembers
-// Dependencies: [1372, 4464, 6917, 6918, 6920, 6921, 6927, 4955, 2]
+// Dependencies: [1372, 4464, 7083, 7084, 7086, 7087, 7093, 4955, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 6916 (GuildMemberSafetyMembers)
+// Module 7082 (GuildMemberSafetyMembers)
 import SecondaryIndexMap from "SecondaryIndexMap" /* 4464 */;
 import _modDef4955 from "module_4955" /* 4955 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 6917 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 6918 */;
-import SortUtils from "SortUtils" /* 6920 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 6921 */;
-import isSpam from "isSpam" /* 6927 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7083 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7084 */;
+import SortUtils from "SortUtils" /* 7086 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7087 */;
+import isSpam from "isSpam" /* 7093 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -120,7 +120,7 @@ prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(
     const _Date = Date;
     const date = new Date(unusualDMActivityUntil);
     const time = date.getTime();
-    tmp9 = time >= closure_4 - tmp(6917).UNUSUAL_DM_COMPARISON_DELTA;
+    tmp9 = time >= closure_4 - tmp(7083).UNUSUAL_DM_COMPARISON_DELTA;
   }
   obj3.hasUnusualDmActivity = tmp9;
   obj3.hasUnusualAccountActivity = isSpam.isSpammer(userId);

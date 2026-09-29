@@ -1,12 +1,12 @@
-// Module ID: 7173
-// Function ID: 7174
+// Module ID: 7338
+// Function ID: 7339
 // Name: maybeConvertPrivateChannel
-// Dependencies: [2045, 6642, 4849, 2]
+// Dependencies: [2045, 6808, 4849, 2]
 // Exports: default
 
-// Module 7173 (maybeConvertPrivateChannel)
+// Module 7338 (maybeConvertPrivateChannel)
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6642 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6808 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;

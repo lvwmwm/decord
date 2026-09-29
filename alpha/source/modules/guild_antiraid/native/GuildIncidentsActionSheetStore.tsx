@@ -1,12 +1,12 @@
-// Module ID: 11308
-// Function ID: 11309
+// Module ID: 11477
+// Function ID: 11478
 // Name: GuildIncidentsActionSheetStore
-// Dependencies: [7459, 560, 1248, 2]
+// Dependencies: [7624, 560, 1248, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 11308 (GuildIncidentsActionSheetStore)
+// Module 11477 (GuildIncidentsActionSheetStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7459 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7624 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

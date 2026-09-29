@@ -1,14 +1,14 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 14940
+// Function ID: 14941
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 5836, 4832, 5435, 1177, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 6003, 4832, 5602, 1177, 2]
 // Exports: default
 
-// Module 14765 (LabeledDataBlock)
+// Module 14940 (LabeledDataBlock)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import TextStyles from "TextStyles" /* 6003 */;
 
 require = fn;
 const View = fn(17).View;
@@ -37,7 +37,7 @@ export default function LabeledDataBlock(arg0) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: null };
     const obj5 = { size: tmp5(1177).Icon.Sizes.SMALL, source: icon };
     obj4.children = tmp4(tmp5(1177).Icon, obj5);
-    tmp4Result = tmp4(tmp5(5435).PressableOpacity, obj4);
+    tmp4Result = tmp4(tmp5(5602).PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
   obj2.children = items1;

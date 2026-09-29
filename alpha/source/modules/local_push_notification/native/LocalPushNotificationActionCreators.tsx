@@ -1,19 +1,19 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17917
+// Function ID: 17918
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [8504, 1074, 2052, 6895, 573, 1231, 1241, 5832, 12443, 1981, 4847, 4763, 1101, 2]
+// Dependencies: [8669, 1074, 2052, 7061, 573, 1231, 1241, 5999, 12614, 1981, 4847, 4763, 1101, 2]
 // Exports: receiveLocalNotification
 
-// Module 17728 (LocalPushNotificationActionCreators)
+// Module 17917 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ChannelConstants from "ChannelConstants" /* 2052 */;
-import Constants2 from "Constants" /* 8504 */;
+import Constants2 from "Constants" /* 8669 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
-const GuildActionCreatorsDefault = tmp(5832);
+const GuildActionCreatorsDefault = tmp(5999);
 const LocalNotificationTypes = Constants2.LocalNotificationTypes;
 ({ AnalyticEvents: closure_4, Routes: hasOwnProperty } = Constants);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
@@ -21,7 +21,7 @@ let result = size.fileFinishedImporting("modules/local_push_notification/native/
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
   if (null != getData.getData) {
-    data(6895).trackAppOpened("notification");
+    data(7061).trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;
     function dispatch() {
@@ -41,8 +41,8 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
         const result = GuildActionCreatorsDefault.transitionToGuildSync(tmp4.guildId);
         const tmpResult = GuildActionCreatorsDefault;
       } else if (tmp8.CALL_RING === type) {
-        data(1981)(12443, tmp2.paths).then((result) => result.default(channelId.channelId));
-        const promise2 = data(1981)(12443, tmp2.paths);
+        data(1981)(12614, tmp2.paths).then((result) => result.default(channelId.channelId));
+        const promise2 = data(1981)(12614, tmp2.paths);
       } else if (tmp8.MESSAGE_SEND_FAILED === type) {
         data(1981)(4847, tmp2.paths).then((transitionToMessage) => {
           ({ channelId, messageId } = closure_1_0);
@@ -57,7 +57,7 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
         }
       }
     }
-    let obj2 = data(6895);
+    let obj2 = data(7061);
     if (obj.isDispatching()) {
       const _setImmediate = setImmediate;
       setImmediate(dispatch);

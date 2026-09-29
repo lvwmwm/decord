@@ -1,13 +1,13 @@
-// Module ID: 16386
-// Function ID: 16387
+// Module ID: 16570
+// Function ID: 16571
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 21, 4836, 576, 4800, 16260, 4832, 1115, 3715, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4800, 16440, 4832, 1115, 3715, 5447, 2]
 // Exports: default
 
-// Module 16386 (VibegrationsSettingsRequestCard)
+// Module 16570 (VibegrationsSettingsRequestCard)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16260 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16440 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsSettingsSheetDefault = VibegrationsSettingsSheet;
@@ -44,7 +44,7 @@ export default function VibegrationsSettingsRequestCard(projectId) {
     const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: null };
     const intl3 = tmp6(1115).intl;
     obj4.text = intl3.string(tmp8(3715)["KO2xN+"]);
-    items1[2] = tmp5(tmp6(5281).Button, obj4);
+    items1[2] = tmp5(tmp6(5447).Button, obj4);
     obj.children = items1;
     return closure_6(View, obj);
   }

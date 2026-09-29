@@ -1,11 +1,11 @@
-// Module ID: 9477
-// Function ID: 9478
+// Module ID: 9644
+// Function ID: 9645
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 1993, 504, 9104, 2]
+// Dependencies: [19, 1993, 504, 9269, 2]
 // Exports: default
 
-// Module 9477 (useMuteAwareLocalVolume)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
+// Module 9644 (useMuteAwareLocalVolume)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9269 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12895
+// Function ID: 12896
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 4836, 576, 8303, 5435, 1115, 8331, 6554, 6973, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8468, 5602, 1115, 8496, 6720, 7139, 4832, 2]
 // Exports: default
 
-// Module 12725 (ProductDetailsActionSheetVariants)
+// Module 12895 (ProductDetailsActionSheetVariants)
 import nativeDefault from "native" /* 576 */;
-import Pressables from "Pressables" /* 5435 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 6554 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8303 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8331 */;
+import Pressables from "Pressables" /* 5602 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 6720 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8468 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8496 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

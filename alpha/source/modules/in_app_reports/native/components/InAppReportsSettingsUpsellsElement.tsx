@@ -1,17 +1,17 @@
-// Module ID: 12475
-// Function ID: 12476
+// Module ID: 12645
+// Function ID: 12646
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 2045, 1074, 21, 4836, 576, 5298, 8093, 12468, 6798, 504, 8100, 5999, 1115, 4832, 6800, 5016, 2]
+// Dependencies: [32, 19, 17, 2045, 1074, 21, 4836, 576, 5464, 8258, 12638, 6964, 504, 8265, 6165, 1115, 4832, 6966, 5016, 2]
 // Exports: default
 
-// Module 12475 (InAppReportsSettingsUpsellsElement)
+// Module 12645 (InAppReportsSettingsUpsellsElement)
 import nativeDefault from "native" /* 576 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import SettingsIcon from "SettingsIcon" /* 6798 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8093 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12468 */;
+import useMountEffectDefault from "useMountEffect" /* 5464 */;
+import SettingsIcon from "SettingsIcon" /* 6964 */;
+import openUserSettings from "openUserSettings" /* 6966 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8258 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12638 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

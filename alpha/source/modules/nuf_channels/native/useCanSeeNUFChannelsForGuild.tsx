@@ -1,10 +1,10 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 16057
+// Function ID: 16058
 // Name: useCanSeeNUFChannelsForGuild
 // Dependencies: [2108, 2067, 1372, 1074, 4455, 504, 4678, 1385, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 15882 (useCanSeeNUFChannelsForGuild)
+// Module 16057 (useCanSeeNUFChannelsForGuild)
 import UserUtils from "UserUtils" /* 4678 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;

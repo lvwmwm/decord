@@ -1,17 +1,17 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11401
+// Function ID: 11402
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1375, 21, 4836, 576, 4685, 5435, 1115, 8219, 6551, 1397, 4486, 2]
+// Dependencies: [19, 17, 1375, 21, 4836, 576, 4685, 5602, 1115, 8384, 6717, 1397, 4486, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11232 (EmojiReactionRowButton)
+// Module 11401 (EmojiReactionRowButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import EmojiTypes from "EmojiTypes" /* 4486 */;
 import shared from "shared" /* 4685 */;
-import Pressables from "Pressables" /* 5435 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import ReactionIcon from "ReactionIcon" /* 8219 */;
+import Pressables from "Pressables" /* 5602 */;
+import EmojiDefault from "Emoji" /* 6717 */;
+import ReactionIcon from "ReactionIcon" /* 8384 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

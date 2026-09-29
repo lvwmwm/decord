@@ -1,13 +1,13 @@
-// Module ID: 8705
-// Function ID: 8706
+// Module ID: 8870
+// Function ID: 8871
 // Name: ShieldIcon
-// Dependencies: [19, 21, 576, 4530, 8704, 2]
+// Dependencies: [19, 21, 576, 4530, 8869, 2]
 // Exports: ShieldIcon
 
-// Module 8705 (ShieldIcon)
+// Module 8870 (ShieldIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod8704 from "module_8704" /* 8704 */;
+import _mod8869 from "module_8869" /* 8869 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ShieldIcon = function ShieldIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8704, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8869, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

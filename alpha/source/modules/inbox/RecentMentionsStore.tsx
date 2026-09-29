@@ -1,17 +1,17 @@
-// Module ID: 7051
-// Function ID: 7052
+// Module ID: 7216
+// Function ID: 7217
 // Name: RecentMentionsStore
-// Dependencies: [4480, 502, 2045, 5056, 4851, 4479, 4655, 5017, 1372, 1074, 510, 5058, 5046, 5088, 12, 4865, 6688, 7052, 504, 573, 2]
+// Dependencies: [4480, 502, 2045, 5056, 4851, 4479, 4655, 5017, 1372, 1074, 510, 5058, 5046, 5254, 12, 4865, 6854, 7217, 504, 573, 2]
 
-// Module 7051 (RecentMentionsStore)
+// Module 7216 (RecentMentionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TimeUtils from "TimeUtils" /* 4865 */;
 import AgeGateUtils from "AgeGateUtils" /* 5046 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import isMessageMentioned from "isMessageMentioned" /* 5088 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6688 */;
+import isMessageMentioned from "isMessageMentioned" /* 5254 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6854 */;
 import MessageRecord from "MessageRecord" /* 4480 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -96,7 +96,7 @@ function parseMessage(message, channelId) {
       }
       const id = AuthenticationStore.getId();
       if (!RelationshipStore.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7052)(message, id)) {
+        if (!tmp2(7217)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof MessageRecord)) {
             message = MessageStore.getMessage(message.channel_id, message.id);
@@ -107,15 +107,15 @@ function parseMessage(message, channelId) {
           }
           const obj = { message: tmp12, userId: id, suppressEveryone: !closure_23.everyoneFilter, suppressRoles: !closure_23.roleFilter };
           let tmp20 = null;
-          if (tmp2(5088)(obj)) {
+          if (tmp2(5254)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = ReadStateStore.ackMessageId(channel.id) !== tmp12.id;
             }
             if (tmp2ResultResult) {
               const obj3 = { message: tmp12, userId: id, suppressEveryone: UserGuildSettingsStore.isSuppressEveryoneEnabled(channel.getGuildId()), suppressRoles: UserGuildSettingsStore.isSuppressRolesEnabled(channel.getGuildId()) };
-              tmp2ResultResult = tmp2(5088)(obj3);
-              const tmp2Result = tmp2(5088);
+              tmp2ResultResult = tmp2(5254)(obj3);
+              const tmp2Result = tmp2(5254);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {

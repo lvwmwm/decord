@@ -1,10 +1,10 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16317
+// Function ID: 16318
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2045, 5200, 5199, 1074, 10320, 4829, 21, 4836, 576, 9065, 1115, 16142, 4528, 1479, 4688, 7297, 16143, 5437, 4652, 4540, 6402, 11189, 11201, 5281, 5039, 10444, 1370, 7095, 8608, 1255, 5440, 6876, 8610, 1613, 1364, 5943, 7288, 5936, 10447, 2]
+// Dependencies: [32, 5, 19, 17, 2045, 5366, 5365, 1074, 10489, 4829, 21, 4836, 576, 9230, 1115, 16318, 4528, 1479, 4688, 7462, 16319, 5604, 4652, 4540, 6568, 11358, 11370, 5447, 5039, 10613, 1370, 7260, 8773, 1255, 5607, 7042, 8775, 1613, 1364, 6109, 7453, 6102, 10616, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16141 (ICYMIShareModal)
+// Module 16317 (ICYMIShareModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
@@ -12,19 +12,19 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import native from "native" /* 4540 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7297 */;
-import ShareEventUtils from "ShareEventUtils" /* 9065 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11189 */;
-import ShareChatInputDefault from "ShareChatInput" /* 11201 */;
-import _modDef16143 from "module_16143" /* 16143 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5604 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
+import HeaderShared from "HeaderShared" /* 7453 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 7462 */;
+import ShareEventUtils from "ShareEventUtils" /* 9230 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11358 */;
+import ShareChatInputDefault from "ShareChatInput" /* 11370 */;
+import _modDef16319 from "module_16319" /* 16319 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5365 */;
 
 const require = globalThis.__r;
 
@@ -60,7 +60,7 @@ function Screenshot(setUri) {
   const obj5 = { style: tmp.base, children: null };
   const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj7 = { dark: null, light: null };
-  const tmp6 = _modDef16143;
+  const tmp6 = _modDef16319;
   obj7.dark = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7;
   obj7.light = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8;
   obj6.mixAmount = obj7;
@@ -111,7 +111,7 @@ function GravityShareFooter(arg0) {
     }
     obj5.onPress = tmp17;
     obj5.loading = isSending;
-    items2[1] = map1(tmp7(5281).Button, obj5);
+    items2[1] = map1(tmp7(5447).Button, obj5);
     obj3.children = items2;
     tmp14Result = closure_1_14(View, obj3);
   }
@@ -376,9 +376,9 @@ class ICYMIShareModal {
   }
 }
 const View = fn(17).View;
-const DraftType = fn(5200).DraftType;
+const DraftType = fn(5366).DraftType;
 const AbortCodes = fn(1074).AbortCodes;
-const UserRowModes = fn(10320).UserRowModes;
+const UserRowModes = fn(10489).UserRowModes;
 const MessageSendLocation = fn(4829).MessageSendLocation;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
@@ -450,7 +450,7 @@ export const GameShareModal = function GameShareModal(content) {
             const obj6 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: entry(16142).sendMessageWithEmbed(obj6), done: false };
+            const obj7 = { value: entry(16318).sendMessageWithEmbed(obj6), done: false };
             return obj7;
           }
         } else if (1 === tmp7) {

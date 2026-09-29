@@ -1,15 +1,15 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7638
+// Function ID: 7639
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5730, 2045, 4469, 1074, 1115, 2111, 7402, 11, 4983, 7404, 7406, 2]
+// Dependencies: [5897, 2045, 4469, 1074, 1115, 2111, 7567, 11, 4983, 7569, 7571, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7473 (StageRaiseHandSystemMessage)
+// Module 7638 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7567 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7569 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5897 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 
@@ -71,6 +71,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     }
   }
   obj3.ephemeralIndication = tmp10;
-  const merged = Object.assign(tmp6(7406)(roleStyle));
+  const merged = Object.assign(tmp6(7571)(roleStyle));
   return obj3;
 };

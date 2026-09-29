@@ -1,9 +1,9 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13434
+// Function ID: 13435
 // Name: GuildOfficialMessagesStore
 // Dependencies: [2045, 2108, 2067, 4479, 1372, 1074, 5058, 1385, 504, 573, 2]
 
-// Module 13264 (GuildOfficialMessagesStore)
+// Module 13434 (GuildOfficialMessagesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1385 */;

@@ -1,10 +1,10 @@
-// Module ID: 11900
-// Function ID: 11901
+// Module ID: 12071
+// Function ID: 12072
 // Name: FloatingChatInputContainer
 // Dependencies: [32, 19, 21, 4566, 4531, 576, 1627, 4703, 1611, 4837, 4840, 2]
 // Exports: default
 
-// Module 11900 (FloatingChatInputContainer)
+// Module 12071 (FloatingChatInputContainer)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import useKeyboardTypeDefault from "useKeyboardType" /* 4703 */;

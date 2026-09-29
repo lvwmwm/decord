@@ -1,9 +1,9 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12131
+// Function ID: 12132
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2049, 2045, 4467, 4469, 4851, 4479, 1372, 11444, 1074, 21, 11771, 504, 1370, 1115, 4989, 5016, 1101, 11, 11941, 2]
+// Dependencies: [19, 2049, 2045, 4467, 4469, 4851, 4479, 1372, 11613, 1074, 21, 11940, 504, 1370, 1115, 4989, 5016, 1101, 11, 12112, 2]
 
-// Module 11960 (ChatInputGuardReadonly)
+// Module 12131 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
@@ -25,7 +25,7 @@ function sortChannelsByLastMessageId(id, id2) {
 }
 const isTextChannel = fn(2049).isTextChannel;
 let closure_6 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
-const TextAreaCta = fn(11444).TextAreaCta;
+const TextAreaCta = fn(11613).TextAreaCta;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsx = fn(21).jsx;

@@ -1,16 +1,16 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14420
+// Function ID: 14421
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4479, 1372, 1074, 7847, 21, 4836, 576, 14245, 1115, 6800, 504, 6419, 5933, 5917, 5281, 2]
+// Dependencies: [19, 17, 4479, 1372, 1074, 8012, 21, 4836, 576, 14421, 1115, 6966, 504, 6585, 6099, 6083, 5447, 2]
 
-// Module 14244 (SettingsAccountHeader)
+// Module 14420 (SettingsAccountHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14245 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6099 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6585 */;
+import openUserSettings from "openUserSettings" /* 6966 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14421 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -28,7 +28,7 @@ function RestrictedAccountRedirect() {
 }
 const View = fn(17).View;
 const AnalyticsSections = fn(1074).AnalyticsSections;
-const SafetySettingsNoticeType = fn(7847).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8012).SafetySettingsNoticeType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);
@@ -62,8 +62,8 @@ export default noop.memo(() => {
       const obj10 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj10.onPress = callback;
-      obj9.trailing = React7(tmp2(5281).Button, obj10);
-      tmp14 = React7(tmp2(5917).TableRow, obj9);
+      obj9.trailing = React7(tmp2(5447).Button, obj10);
+      tmp14 = React7(tmp2(6083).TableRow, obj9);
     }
     items2[1] = tmp14;
     obj4.children = items2;

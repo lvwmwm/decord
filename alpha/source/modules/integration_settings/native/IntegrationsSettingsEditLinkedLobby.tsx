@@ -1,13 +1,13 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16862
+// Function ID: 16863
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1372, 21, 4836, 576, 4531, 1485, 6583, 6603, 6589, 4989, 504, 10395, 7624, 1115, 4832, 8053, 5279, 1177, 1397, 5999, 5917, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 4531, 1485, 6749, 6769, 6755, 4989, 504, 10564, 7789, 1115, 4832, 8218, 5445, 1177, 1397, 6165, 6083, 2]
 // Exports: default
 
-// Module 16674 (IntegrationsSettingsEditLinkedLobby)
+// Module 16862 (IntegrationsSettingsEditLinkedLobby)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

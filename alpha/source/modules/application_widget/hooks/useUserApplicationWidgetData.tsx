@@ -1,25 +1,25 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16451
+// Function ID: 16452
 // Name: useUserApplicationWidgetData
-// Dependencies: [32, 19, 5063, 8487, 7035, 8490, 8489, 504, 6589, 8488, 7632, 7047, 2]
+// Dependencies: [32, 19, 5063, 8652, 7200, 8655, 8654, 504, 6755, 8653, 7797, 7212, 2]
 // Exports: default
 
-// Module 16271 (useUserApplicationWidgetData)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 8488 */;
-import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 8489 */;
+// Module 16451 (useUserApplicationWidgetData)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7797 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 8653 */;
+import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 8654 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8487 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 8490 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8652 */;
+import UserProfileStore from "UserProfileStore" /* 7200 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 8655 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-fn(8487).FetchState;
-const FetchState = fn(8490).FetchState;
+fn(8652).FetchState;
+const FetchState = fn(8655).FetchState;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_widget/hooks/useUserApplicationWidgetData.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 15324
-// Function ID: 15325
+// Module ID: 15499
+// Function ID: 15500
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4479, 1372, 10905, 21, 4836, 576, 504, 10934, 10937, 1485, 9195, 7852, 10912, 8089, 4528, 1115, 4792, 4527, 5281, 10945, 8125, 5355, 8038, 4525, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 4479, 1372, 11074, 21, 4836, 576, 504, 11103, 11106, 1485, 9360, 8017, 11081, 8254, 4528, 1115, 4792, 4527, 5447, 11114, 8290, 5521, 8203, 4525, 4832, 2]
 // Exports: default
 
-// Module 15324 (TakeActionScreen)
+// Module 15499 (TakeActionScreen)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8017 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11081 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 let useState = fn(19).useState;
 const View = fn(17).View;
-const Constants = fn(10905);
+const Constants = fn(11074);
 ({ MODAL_LOCATION_CONTEXT_MOBILE: c10, NOFILTR_URL: closure_11, THROUGHLINE_URL: closure_12, REPORTED_USER_CONFIRMATION_TOAST_KEY: map1, TOAST_CHECKMARK_ICON_COLOR: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
@@ -101,7 +101,7 @@ export default function TakeActionButtons(senderId) {
             v1 = 1;
             dependencyMap = 1;
             const obj5 = {
-              value: tmp4(8089).submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
+              value: tmp4(8254).submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
                         dependencyMap(true);
                         const obj2 = { key, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                         const intl = closure_0(1115).intl;
@@ -125,9 +125,9 @@ export default function TakeActionButtons(senderId) {
           throw value;
         } else if (arg0 !== 2) {
           closure_128_6(false);
-          const result = v1(7852).showReportSuccessToast(closure_128_0, closure_128_1);
-          closure_128_3(tmp4(10912).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
-          const obj = v1(7852);
+          const result = v1(8017).showReportSuccessToast(closure_128_0, closure_128_1);
+          closure_128_3(tmp4(11081).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          const obj = v1(8017);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };

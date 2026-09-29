@@ -1,14 +1,14 @@
-// Module ID: 6665
-// Function ID: 6666
+// Module ID: 6831
+// Function ID: 6832
 // Name: safeTransitionTo
-// Dependencies: [5, 2067, 1074, 4990, 6666, 1101, 6667, 5204, 1115, 6694, 2619, 6734, 2]
+// Dependencies: [5, 2067, 1074, 4990, 6832, 1101, 6833, 5370, 1115, 6860, 2619, 6900, 2]
 // Exports: default
 
-// Module 6665 (safeTransitionTo)
+// Module 6831 (safeTransitionTo)
 import router_utils from "router_utils" /* 1101 */;
 import LinkUtils from "LinkUtils" /* 4990 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6666 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6667 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6832 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6833 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

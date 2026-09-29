@@ -1,15 +1,15 @@
-// Module ID: 7448
-// Function ID: 7449
+// Module ID: 7613
+// Function ID: 7614
 // Name: UserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [2045, 2067, 7446, 7447, 7402, 7404, 1115, 4728, 7406, 2]
+// Dependencies: [2045, 2067, 7611, 7612, 7567, 7569, 1115, 4728, 7571, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 7448 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 7446 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 7447 */;
+// Module 7613 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7567 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7569 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7571 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 7611 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 7612 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

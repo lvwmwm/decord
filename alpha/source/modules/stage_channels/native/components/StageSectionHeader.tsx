@@ -1,14 +1,14 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9680
+// Function ID: 9681
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4836, 576, 4566, 4837, 4832, 1177, 6579, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4566, 4837, 4832, 1177, 6745, 2]
 // Exports: default
 
-// Module 9513 (StageSectionHeader)
+// Module 9680 (StageSectionHeader)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import _modDef6579 from "module_6579" /* 6579 */;
+import _modDef6745 from "module_6745" /* 6745 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -63,7 +63,7 @@ export default function StageSectionHeader(collapsed) {
   let obj2 = { withTiming: collapsed(4837).withTiming, collapsed };
   const tmp7 = closure_5;
   const tmp8 = closure_3;
-  obj8.children = closure_6(tmp2(1177).Icon, { source: _modDef6579, style: tmp.collapseIcon });
+  obj8.children = closure_6(tmp2(1177).Icon, { source: _modDef6745, style: tmp.collapseIcon });
   obj7.children = closure_6(ReanimatedRexportDefault.View, obj8);
   items1[2] = closure_6(closure_4, obj7);
   obj4.children = items1;

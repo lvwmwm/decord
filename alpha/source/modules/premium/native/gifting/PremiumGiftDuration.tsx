@@ -1,15 +1,15 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10680
+// Function ID: 10681
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1374, 21, 4836, 576, 10162, 5917, 8055, 10216, 4548, 4832, 1115, 2]
+// Dependencies: [19, 17, 1374, 21, 4836, 576, 10329, 6083, 8220, 10383, 4548, 4832, 1115, 2]
 // Exports: default
 
-// Module 10511 (PremiumGiftDuration)
+// Module 10680 (PremiumGiftDuration)
 import nativeDefault from "native" /* 576 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import NativeGiftContext from "NativeGiftContext" /* 10162 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10216 */;
+import NativeGiftContext from "NativeGiftContext" /* 10329 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10383 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,9 +19,9 @@ function PremiumGiftDurationButton(arg0) {
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp4 = closure_9();
   if (selected) {
-    let RowButton = tmp(5917).TableRow;
+    let RowButton = tmp(6083).TableRow;
   } else {
-    RowButton = tmp(8055).RowButton;
+    RowButton = tmp(8220).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -102,7 +102,7 @@ const result = size.fileFinishedImporting("modules/premium/native/gifting/Premiu
 
 export default function PremiumGiftDuration() {
   const tmp = closure_11();
-  planInterval = planInterval(10162).useNativeGiftContext().planInterval;
+  planInterval = planInterval(10329).useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: null };
   const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };
   const intl = planInterval(1115).intl;

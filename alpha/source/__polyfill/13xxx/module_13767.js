@@ -1,12 +1,9 @@
 // Module ID: 13767
 // Function ID: 13768
-// Dependencies: [13768, 13769]
+// Dependencies: [13765]
 
 // Module 13767
-const require = globalThis.__r;
+import _mod13765 from "module_13765" /* 13765 */;
 
-const require = arg1;
-const dependencyMap = arg6;
 
-export const shouldPolyfill = require("module_13768").shouldPolyfill;
-export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;
+export default (arg0, arg1, arg2) => _mod13765(arg0, arg1, "<", arg2);

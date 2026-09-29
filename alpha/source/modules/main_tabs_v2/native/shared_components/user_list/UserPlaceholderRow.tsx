@@ -1,9 +1,9 @@
-// Module ID: 9284
-// Function ID: 9285
+// Module ID: 9451
+// Function ID: 9452
 // Name: UserPlaceholderRow
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 4566, 504, 4837, 4840, 2]
 
-// Module 9284 (UserPlaceholderRow)
+// Module 9451 (UserPlaceholderRow)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

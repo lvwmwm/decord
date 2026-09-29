@@ -1,18 +1,18 @@
-// Module ID: 5936
-// Function ID: 5937
+// Module ID: 6102
+// Function ID: 6103
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5937, 5940, 1486, 5942, 1115, 5943, 5992, 1364, 1613, 5994, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 6103, 6106, 1486, 6108, 1115, 6109, 6158, 1364, 1613, 6160, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5936 (NavigatorHeader)
+// Module 6102 (NavigatorHeader)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5937 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5940 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import NavigatorConstants from "NavigatorConstants" /* 5994 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6103 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6106 */;
+import _mod6109 from "module_6109" /* 6109 */;
+import XSmallIcon from "XSmallIcon" /* 6158 */;
+import NavigatorConstants from "NavigatorConstants" /* 6160 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -54,12 +54,12 @@ function CloseButton(onPress) {
     return timestampProducer(XSmallIcon.XSmallIcon, obj);
   };
   obj2.accessibilityLabel = stringResult;
-  return closure_6(require("module_5943").HeaderBackButton, obj2);
+  return closure_6(require("module_6109").HeaderBackButton, obj2);
 }
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  onPress(5942).useNavigatorBackPressHandler(() => {
+  onPress(6108).useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
     }
@@ -72,7 +72,7 @@ function CustomHeaderBackButton(onPress) {
   obj2.backImage = function backImage() {
     return closure_1_6(HeaderBackImage, {});
   };
-  return closure_6(onPress(5943).HeaderBackButton, obj2);
+  return closure_6(onPress(6109).HeaderBackButton, obj2);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -94,7 +94,7 @@ function HeaderTextButton(text) {
     tmp5 = text;
   }
   obj2.accessibilityLabel = tmp5;
-  return timestampProducer(_mod5943.HeaderBackButton, obj2);
+  return timestampProducer(_mod6109.HeaderBackButton, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);

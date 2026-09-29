@@ -1,10 +1,10 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13251
+// Function ID: 13252
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 6844, 2067, 4493, 4494, 6658, 13082, 1374, 1074, 6852, 4815, 21, 4836, 5836, 5753, 576, 5279, 13083, 4832, 1115, 4488, 13085, 13086, 13087, 13088, 13089, 13090, 8122, 4531, 504, 13091, 12877, 4767, 1177, 1241, 12915, 12916, 5917, 13092, 5889, 6073, 4685, 1365, 6829, 10126, 5204, 13093, 1981, 5999, 5293, 6830, 6661, 4503, 5039, 6832, 10173, 6583, 6675, 5910, 5298, 10270, 10167, 1485, 6837, 12928, 6603, 10168, 5174, 10979, 12891, 6824, 8666, 4500, 10269, 2]
+// Dependencies: [5, 32, 19, 17, 7010, 2067, 4493, 4494, 6824, 13252, 1374, 1074, 7018, 4815, 21, 4836, 6003, 5920, 576, 5445, 13253, 4832, 1115, 4488, 13255, 13256, 13257, 13258, 13259, 13260, 8287, 4531, 504, 13261, 13047, 4767, 1177, 1241, 13085, 13086, 6083, 13262, 6055, 6239, 4685, 1365, 6995, 10293, 5370, 13263, 1981, 6165, 5459, 6996, 6827, 4503, 5039, 6998, 10340, 6749, 6841, 6076, 5464, 10439, 10334, 1485, 7003, 13098, 6769, 10335, 5340, 11148, 13061, 6990, 8831, 4500, 10438, 2]
 // Exports: default
 
-// Module 13081 (PremiumPlanSelect)
+// Module 13251 (PremiumPlanSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,32 +13,32 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import PremiumSubscription from "PremiumSubscription" /* 4500 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5174 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import TextStylesDefault from "TextStyles" /* 5836 */;
-import ProductIds from "ProductIds" /* 6661 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6829 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10270 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 12915 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 12916 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13083 */;
-import _modDef13085 from "module_13085" /* 13085 */;
-import _modDef13086 from "module_13086" /* 13086 */;
-import _modDef13087 from "module_13087" /* 13087 */;
-import _modDef13088 from "module_13088" /* 13088 */;
-import _modDef13089 from "module_13089" /* 13089 */;
-import _modDef13090 from "module_13090" /* 13090 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5340 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import TextStylesDefault from "TextStyles" /* 6003 */;
+import ProductIds from "ProductIds" /* 6827 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6841 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6995 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8287 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10293 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10439 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13085 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13086 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13253 */;
+import _modDef13255 from "module_13255" /* 13255 */;
+import _modDef13256 from "module_13256" /* 13256 */;
+import _modDef13257 from "module_13257" /* 13257 */;
+import _modDef13258 from "module_13258" /* 13258 */;
+import _modDef13259 from "module_13259" /* 13259 */;
+import _modDef13260 from "module_13260" /* 13260 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import IAPStore from "IAPStore" /* 6658 */;
+import IAPStore from "IAPStore" /* 6824 */;
 
 const require = globalThis.__r;
 const PremiumUtilsDefault = PremiumUtils;
@@ -446,7 +446,7 @@ function PlanSection(showBoostOnlyLabels) {
   }, plan.productId));
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: showBoostOnlyLabels.label, hasIcons: true, children: mapped };
-    let tmp7Result = tmp7(shouldShowModernBoostFlow(5999).TableRowGroup, obj2);
+    let tmp7Result = tmp7(shouldShowModernBoostFlow(6165).TableRowGroup, obj2);
   } else {
     let obj3 = { children: mapped };
     tmp7Result = tmp7(closure_7, obj3);
@@ -629,8 +629,8 @@ function PlanSections(showCurrentPlan) {
         if (!tmp4) {
           let result = PremiumBundledPlansUtils.productsHaveSamePerks(productId.productId, tmp);
           if (result) {
-            result = productId.interval === tmp8(6829).getPremiumBundledItemsFromProductId(tmp).interval;
-            const tmp8Result = tmp8(6829);
+            result = productId.interval === tmp8(6995).getPremiumBundledItemsFromProductId(tmp).interval;
+            const tmp8Result = tmp8(6995);
           }
           tmp7 = result;
           tmp8 = require;
@@ -705,14 +705,14 @@ function PlanSections(showCurrentPlan) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const useNativeCheckoutStore = fn(6844).useNativeCheckoutStore;
-const PremiumPlanSelectStore = fn(13082);
+const useNativeCheckoutStore = fn(7010).useNativeCheckoutStore;
+const PremiumPlanSelectStore = fn(13252);
 ({ setIsPurchasing: closure_14, usePremiumPlanSelectStore: closure_15 } = PremiumPlanSelectStore);
 const PremiumConstants = fn(1374);
 ({ GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_16, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_17, PRICE_PLACEHOLDER: closure_18, PremiumSubscriptionSKUs: closure_19, PremiumTypes: closure_20, SubscriptionIntervalTypes: closure_21, SubscriptionPlans: closure_22 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_23, AnalyticsObjects: closure_24, AnalyticsObjectTypes: closure_25, Fonts, HorizontalGradient: closure_26, PaymentGateways: closure_27, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
-const ColorConstants = fn(6852);
+const ColorConstants = fn(7018);
 ({ getPremiumGradientColor: closure_28, Gradients: closure_29 } = ColorConstants);
 const ItemPurchaseType = fn(4815).ItemPurchaseType;
 const jsxProd = fn(21);
@@ -722,9 +722,9 @@ let obj = { header: null, row: null, rowDisabled: null, imgWumpusNitro: null, im
 let obj3 = {};
 let merged = Object.assign(TextStylesDefault(Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj3.marginTop = 16;
-obj3.color = fn(5753).DARK_WHITE_500_LIGHT_BLACK_500;
+obj3.color = fn(5920).DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj3;
-obj.row = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5753).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj.row = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5920).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.rowDisabled = { opacity: 0.5 };
 obj.imgWumpusNitro = { height: 40, width: 40 };
 obj.imgBoost = { height: 40, width: 40 };
@@ -732,14 +732,14 @@ obj.imgWumpusNitroBoost = { width: 32, height: 32 };
 obj.imgWumpusNitroClassic = { width: 40, height: 40 };
 obj.imgWumpusNitroClassicBoost = { width: 32, height: 32 };
 obj.imgWumpusNitroTier0 = { width: 40, height: 40 };
-let obj4 = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5753).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
-obj.rowText = { fontSize: 16, color: fn(5753).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj4 = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5920).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj.rowText = { fontSize: 16, color: fn(5920).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.rowPlanDescription = { marginLeft: 12, fontFamily: Fonts.PRIMARY_SEMIBOLD, lineHeight: 20 };
 obj.rowPlanDescriptionSubtext = { fontSize: 12, marginLeft: 5, fontFamily: Fonts.PRIMARY_MEDIUM, fontWeight: "400" };
 obj.rowPrice = { marginLeft: "auto" };
 obj.purchasingSpinner = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" };
 obj.container = { marginHorizontal: 14.5, paddingBottom: 10 };
-let obj5 = { fontSize: 16, color: fn(5753).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj5 = { fontSize: 16, color: fn(5920).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.currentPlanGradient = { marginTop: 20, borderRadius: nativeDefault.radii.sm };
 obj.currentPlanRow = { marginTop: 0.5, marginRight: 0.5, marginLeft: 0.5, marginBottom: 0.5 };
 obj.loadingSpinnerContainer = { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" };
@@ -754,7 +754,7 @@ obj.nitroBannerText = { textAlign: "center" };
 let obj8 = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.recommendedText = { color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_34 = createStyles.createStyles(obj);
-let closure_37 = { [_modDef13088]: "imgWumpusNitro", [_modDef13090]: "imgWumpusNitroBoost", [_modDef13087]: "imgWumpusNitroClassic", [_modDef13089]: "imgWumpusNitroClassicBoost", [_modDef13086]: "imgWumpusNitroTier0", [_modDef13085]: "imgBoost" };
+let closure_37 = { [_modDef13258]: "imgWumpusNitro", [_modDef13260]: "imgWumpusNitroBoost", [_modDef13257]: "imgWumpusNitroClassic", [_modDef13259]: "imgWumpusNitroClassicBoost", [_modDef13256]: "imgWumpusNitroTier0", [_modDef13255]: "imgBoost" };
 items = [
   {
     id: "premium",
@@ -999,7 +999,7 @@ let closure_45 = noop.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow,
           }
           obj13.orderId = id;
           obj13.onPurchaseComplete = function onPurchaseComplete(paymentGateway) {
-            closure_1(5204).close();
+            closure_1(5370).close();
             if (paymentGateway.paymentGateway === constants.APPLE_ADVANCED_COMMERCE) {
               premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
               if (null == premiumTypeSubscription) {
@@ -1008,7 +1008,7 @@ let closure_45 = noop.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow,
                 const obj2 = { tags: { source: "showPremiumActivatedAlert.nullSubscription" } };
                 const result = premiumTypeSubscription(4503).captureBillingException(error, obj2);
                 const obj4 = premiumTypeSubscription(4503);
-                tmp(5039).popWithKey(premiumTypeSubscription(6832).PREMIUM_KEY);
+                tmp(5039).popWithKey(premiumTypeSubscription(6998).PREMIUM_KEY);
                 if (closure_1_5.canGoBack()) {
                   obj7.goBack();
                 }
@@ -1021,8 +1021,8 @@ let closure_45 = noop.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow,
                       },
                   isDismissable: false
                 };
-                tmp(5204).openLazy(obj3);
-                const tmpResult2 = tmp(5204);
+                tmp(5370).openLazy(obj3);
+                const tmpResult2 = tmp(5370);
               }
             }
           };

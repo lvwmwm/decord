@@ -1,16 +1,16 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16584
+// Function ID: 16585
 // Name: VibegrationsNativeStatusStrip
-// Dependencies: [32, 19, 17, 13936, 21, 4836, 576, 16393, 13935, 13939, 1115, 4800, 16400, 5435, 3715, 16401, 4832, 4787, 2]
+// Dependencies: [32, 19, 17, 14105, 21, 4836, 576, 16578, 14104, 14108, 1115, 4800, 16585, 5602, 3715, 16586, 4832, 4787, 2]
 // Exports: default
 
-// Module 16399 (VibegrationsNativeStatusStrip)
+// Module 16584 (VibegrationsNativeStatusStrip)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsStatusLabels from "VibegrationsStatusLabels" /* 16393 */;
-import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 16400 */;
-import VibegrationsNativeTurnTimerDefault from "VibegrationsNativeTurnTimer" /* 16401 */;
+import VibegrationsStatusLabels from "VibegrationsStatusLabels" /* 16578 */;
+import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 16585 */;
+import VibegrationsNativeTurnTimerDefault from "VibegrationsNativeTurnTimer" /* 16586 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -96,7 +96,7 @@ function ThinkingIndicator(line) {
   return closure_8(ref2, obj);
 }
 const View = fn(17).View;
-const AI_LOADER_CYCLE_MS = fn(13936).AI_LOADER_CYCLE_MS;
+const AI_LOADER_CYCLE_MS = fn(14105).AI_LOADER_CYCLE_MS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);
@@ -122,13 +122,13 @@ export default function VibegrationsNativeStatusStrip(compacting) {
   ({ activity, projectUsage, connLabel, thinkingOpen } = compacting);
   ({ connFailed, controlling, onToggleThinking } = compacting);
   const tmp = closure_9();
-  const thinkingLabelResult = projectId(16393).thinkingLabel({ activity, compacting: compacting.compacting, recalling, controlling });
+  const thinkingLabelResult = projectId(16578).thinkingLabel({ activity, compacting: compacting.compacting, recalling, controlling });
   const intl = projectId(1115).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
   if (null != projectUsage) {
-    runesUsedLabelsResult = tmp2(16393).runesUsedLabels(projectUsage);
-    const tmp2Result = tmp2(16393);
+    runesUsedLabelsResult = tmp2(16578).runesUsedLabels(projectUsage);
+    const tmp2Result = tmp2(16578);
   }
   let tmp7 = null != activity;
   if (tmp7) {
@@ -150,7 +150,7 @@ export default function VibegrationsNativeStatusStrip(compacting) {
     ActionSheetActionCreators.showActionSheet(obj2);
   }, items);
   if (thinking) {
-    const tmp14 = thinkingLabelResult === projectId(16393).RECALLING_LINES[0];
+    const tmp14 = thinkingLabelResult === projectId(16578).RECALLING_LINES[0];
     let tmp15 = tmp8;
     if (!tmp8) {
       tmp15 = tmp14;
@@ -181,7 +181,7 @@ export default function VibegrationsNativeStatusStrip(compacting) {
     obj5.onPress = onToggleThinking;
     const obj7 = { line: stringResult, rotating: tmp14 };
     obj5.children = tmp12(ThinkingIndicator, obj7);
-    let tmp12Result = tmp12(tmp2(5435).PressableOpacity, obj5);
+    let tmp12Result = tmp12(tmp2(5602).PressableOpacity, obj5);
   } else {
     tmp12Result = null;
   }
@@ -216,7 +216,7 @@ export default function VibegrationsNativeStatusStrip(compacting) {
     const obj12 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
     items3[1] = tmp12(tmp2(4787).CircleInformationIcon, obj12);
     obj10.children = items3;
-    tmp10Result = tmp10(tmp2(5435).PressableOpacity, obj10);
+    tmp10Result = tmp10(tmp2(5602).PressableOpacity, obj10);
   }
   items2[2] = tmp10Result;
   obj2.children = items2;

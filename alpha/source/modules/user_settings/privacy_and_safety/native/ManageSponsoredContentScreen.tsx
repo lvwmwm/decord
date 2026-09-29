@@ -1,16 +1,16 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15654
+// Function ID: 15655
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1074, 21, 1186, 2157, 2021, 6621, 1115, 4836, 576, 5999, 2111, 2]
+// Dependencies: [19, 17, 1074, 21, 1186, 2157, 2021, 6787, 1115, 4836, 576, 6165, 2111, 2]
 // Exports: default
 
-// Module 15479 (ManageSponsoredContentScreen)
+// Module 15654 (ManageSponsoredContentScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import _modDef2157 from "module_2157" /* 2157 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,7 +38,7 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(6621).TableSwitchRow, obj);
+  return closure_5(adTopic(6787).TableSwitchRow, obj);
 }
 const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;

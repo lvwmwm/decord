@@ -1,15 +1,15 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 16106
+// Function ID: 16107
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5290, 15918, 21, 4836, 576, 4531, 4540, 5280, 4566, 6494, 15931, 15655, 15658, 1115, 4541, 15932, 5901, 8276, 2]
+// Dependencies: [19, 5456, 16094, 21, 4836, 576, 4531, 4540, 5446, 4566, 6660, 16107, 15830, 15833, 1115, 4541, 16108, 6067, 8441, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 15930 (GuildsBarAnimatedItemWrapper)
+// Module 16106 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useToken from "useToken" /* 4531 */;
 import native from "native" /* 4540 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -128,8 +128,8 @@ class UnreadIndicator {
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   return React6(UnreadIndicator, { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp }, arg0);
 }
-const IOS_POINTER_STYLE = fn(5290).IOS_POINTER_STYLE;
-const GuildsBarConstants = fn(15918);
+const IOS_POINTER_STYLE = fn(5456).IOS_POINTER_STYLE;
+const GuildsBarConstants = fn(16094);
 ({ GUILD_ITEM_HIT_SLOP: hasOwnProperty, GUILD_ITEM_INSET_LEFT: metroRequire, useGuildWrapperSize: closure_7 } = GuildsBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

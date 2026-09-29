@@ -1,15 +1,15 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15253
+// Function ID: 15254
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1372, 21, 4836, 8625, 5999, 1115, 15079, 12995, 504, 1970, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4836, 8790, 6165, 1115, 15254, 13165, 504, 1970, 2]
 // Exports: default
 
-// Module 15078 (AppIconRows)
+// Module 15253 (AppIconRows)
 import initialize from "initialize" /* 504 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
-import AppIconTypes from "AppIconTypes" /* 8625 */;
-import AppIconUtils from "AppIconUtils" /* 12995 */;
-import AppIconRowDefault from "AppIconRow" /* 15079 */;
+import AppIconTypes from "AppIconTypes" /* 8790 */;
+import AppIconUtils from "AppIconUtils" /* 13165 */;
+import AppIconRowDefault from "AppIconRow" /* 15254 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -45,7 +45,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return createElement(AppIconRowDefault, {});
     });
-    obj.children = closure_8(merged(5999).TableRowGroup, obj2);
+    obj.children = closure_8(merged(6165).TableRowGroup, obj2);
     return closure_8(View, obj);
   }
 }

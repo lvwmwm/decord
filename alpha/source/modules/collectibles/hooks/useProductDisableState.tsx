@@ -1,10 +1,10 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 8499
+// Function ID: 8500
 // Name: useProductDisableState
 // Dependencies: [4494, 504, 1077, 1115, 2]
 // Exports: useProductDisableState
 
-// Module 8334 (useProductDisableState)
+// Module 8499 (useProductDisableState)
 import initialize from "initialize" /* 504 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;

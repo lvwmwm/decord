@@ -1,15 +1,15 @@
-// Module ID: 6599
-// Function ID: 6600
+// Module ID: 6765
+// Function ID: 6766
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1074, 21, 4767, 5595, 1115, 6600, 6601, 1241, 5016, 1397, 4685, 1177, 4775, 6598, 2]
+// Dependencies: [5, 19, 1074, 21, 4767, 5762, 1115, 6766, 6767, 1241, 5016, 1397, 4685, 1177, 4775, 6764, 2]
 // Exports: default
 
-// Module 6599 (ProviderConnectionCard)
+// Module 6765 (ProviderConnectionCard)
 import native from "native" /* 1177 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import shared from "shared" /* 4685 */;
 import LinkIcon from "LinkIcon" /* 4775 */;
-import PlatformsDefault from "Platforms" /* 5595 */;
+import PlatformsDefault from "Platforms" /* 5762 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

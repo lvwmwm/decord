@@ -1,9 +1,9 @@
-// Module ID: 8571
-// Function ID: 8572
+// Module ID: 8736
+// Function ID: 8737
 // Name: CrunchyrollLinkModalActionCreators
-// Dependencies: [5039, 8572, 1981, 2]
+// Dependencies: [5039, 8737, 1981, 2]
 
-// Module 8571 (CrunchyrollLinkModalActionCreators)
+// Module 8736 (CrunchyrollLinkModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default {
   showModal(locationStack) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(8572, dependencyMap.paths), { locationStack }, c3);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(8737, dependencyMap.paths), { locationStack }, c3);
   },
   hideModal() {
     ModalActionCreatorsDefault.popWithKey(c3);

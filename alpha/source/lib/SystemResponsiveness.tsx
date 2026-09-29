@@ -1,9 +1,9 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13532
+// Function ID: 13533
 // Name: SystemResponsiveness
-// Dependencies: [7161, 4891, 12, 2]
+// Dependencies: [7326, 4891, 12, 2]
 
-// Module 13363 (SystemResponsiveness)
+// Module 13532 (SystemResponsiveness)
 import _modDef12 from "module_12" /* 12 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 14558
-// Function ID: 14559
+// Module ID: 14733
+// Function ID: 14734
 // Name: useBountyVideoProgressPersistence
-// Dependencies: [32, 19, 7115, 14555, 10744, 2]
+// Dependencies: [32, 19, 7280, 14730, 10913, 2]
 // Exports: useBountyVideoProgressPersistence
 
-// Module 14558 (useBountyVideoProgressPersistence)
-import BountyActionCreators from "BountyActionCreators" /* 10744 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 14555 */;
+// Module 14733 (useBountyVideoProgressPersistence)
+import BountyActionCreators from "BountyActionCreators" /* 10913 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 14730 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 7115 */;
+import BountyStore from "BountyStore" /* 7280 */;
 
 require = fn;
 let closure_5 = { timestampSec: 0, maxTimestampSec: 0, duration: 0 };

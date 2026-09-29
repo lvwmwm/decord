@@ -1,10 +1,10 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12710
+// Function ID: 12711
 // Name: useEntranceAnimation
 // Dependencies: [32, 19, 1177, 560, 1248, 4837, 4566, 2]
 // Exports: useEntranceAnimation
 
-// Module 12540 (useEntranceAnimation)
+// Module 12710 (useEntranceAnimation)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

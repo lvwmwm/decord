@@ -1,13 +1,13 @@
-// Module ID: 16412
-// Function ID: 16413
+// Module ID: 16597
+// Function ID: 16598
 // Name: VibegrationsDebugLabels
-// Dependencies: [1115, 3715, 16411, 2]
+// Dependencies: [1115, 3715, 16596, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog, modelCallOutcome
 
-// Module 16412 (VibegrationsDebugLabels)
+// Module 16597 (VibegrationsDebugLabels)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16411 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16596 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["error", "aborted", "length"]);

@@ -1,16 +1,16 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17591
+// Function ID: 17592
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2063, 2067, 1372, 9049, 1074, 21, 4836, 576, 504, 9048, 4832, 1115, 5281, 14326, 6461, 2]
+// Dependencies: [19, 17, 2063, 2067, 1372, 9214, 1074, 21, 4836, 576, 504, 9213, 4832, 1115, 5447, 14501, 6627, 2]
 // Exports: default
 
-// Module 17402 (GuildSettingsModalSecurity)
+// Module 17591 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 576 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
@@ -83,7 +83,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   }
   obj7.variant = str;
   obj7.onPress = callback;
-  obj6.children = closure_12(guildId(5281).Button, obj7);
+  obj6.children = closure_12(guildId(5447).Button, obj7);
   items4[1] = closure_12(closure_4, obj6);
   let hasItem;
   if (stateFromStores != null) {
@@ -104,7 +104,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   const obj10 = { style: tmp.center, children: null };
   let obj2 = guildId(504);
   const tmp15 = closure_14;
-  const items6 = [closure_12(closure_5, { source: stateFromStores(14326), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [closure_12(closure_5, { source: stateFromStores(14501), style: tmp.image, resizeMode: "contain" }), ];
   const obj12 = { style: tmp.infoWrapper, children: null };
   const obj13 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = tmp2(1115).intl;
@@ -114,7 +114,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj10.children = items6;
   items5[1] = closure_13(closure_4, obj10);
   obj3.children = items5;
-  const items7 = [closure_13(closure_4, obj3), closure_12(guildId(6461).NavScrim, {})];
+  const items7 = [closure_13(closure_4, obj3), closure_12(guildId(6627).NavScrim, {})];
   obj9.children = items7;
   return closure_13(tmp15, obj9);
 };

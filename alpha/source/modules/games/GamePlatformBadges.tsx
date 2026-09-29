@@ -1,11 +1,11 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 12051
+// Function ID: 12052
 // Name: GamePlatformBadges
-// Dependencies: [11879, 1115, 2]
+// Dependencies: [12050, 1115, 2]
 // Exports: getGamePlatformAvailabilityLabel, sortGamePlatformAvailability
 
-// Module 11880 (GamePlatformBadges)
-import GamePlatformAvailability from "GamePlatformAvailability" /* 11879 */;
+// Module 12051 (GamePlatformBadges)
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12050 */;
 import size from "module_2" /* 2 */;
 
 const items = [GamePlatformAvailability.GamePlatformAvailability.DESKTOP, GamePlatformAvailability.GamePlatformAvailability.MOBILE, GamePlatformAvailability.GamePlatformAvailability.CONSOLE];
@@ -16,10 +16,10 @@ export const getGamePlatformAvailabilityLabel = function getGamePlatformAvailabi
   if (GamePlatformAvailability.GamePlatformAvailability.DESKTOP === item) {
     const intl3 = tmp(1115).intl;
     return intl3.string(tmp(1115).t.KT6uCJ);
-  } else if (tmp(11879).GamePlatformAvailability.MOBILE === item) {
+  } else if (tmp(12050).GamePlatformAvailability.MOBILE === item) {
     const intl2 = tmp(1115).intl;
     return intl2.string(tmp(1115).t["0DvssQ"]);
-  } else if (tmp(11879).GamePlatformAvailability.CONSOLE === item) {
+  } else if (tmp(12050).GamePlatformAvailability.CONSOLE === item) {
     const intl = tmp(1115).intl;
     return intl.string(tmp(1115).t.RT9Ccb);
   }

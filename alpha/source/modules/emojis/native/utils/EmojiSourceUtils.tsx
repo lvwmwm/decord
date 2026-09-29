@@ -1,10 +1,10 @@
-// Module ID: 15710
-// Function ID: 15711
+// Module ID: 15885
+// Function ID: 15886
 // Name: EmojiSourceUtils
 // Dependencies: [5, 17, 4487, 1397, 2]
 // Exports: getEmojiSource
 
-// Module 15710 (EmojiSourceUtils)
+// Module 15885 (EmojiSourceUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

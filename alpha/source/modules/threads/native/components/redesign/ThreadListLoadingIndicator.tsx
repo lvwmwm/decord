@@ -1,10 +1,10 @@
-// Module ID: 16540
-// Function ID: 16541
+// Module ID: 16729
+// Function ID: 16730
 // Name: ThreadListLoadingIndicator
-// Dependencies: [19, 21, 4836, 8889, 2]
+// Dependencies: [19, 21, 4836, 9054, 2]
 
-// Module 16540 (ThreadListLoadingIndicator)
-import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 8889 */;
+// Module 16729 (ThreadListLoadingIndicator)
+import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 9054 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14377
+// Function ID: 14378
 // Name: MobileNitroPreviewDirectCheckoutExperiment
 // Dependencies: [1435, 2]
 // Exports: useMobileNitroPreviewDirectCheckoutEnabled
 
-// Module 14202 (MobileNitroPreviewDirectCheckoutExperiment)
+// Module 14377 (MobileNitroPreviewDirectCheckoutExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

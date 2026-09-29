@@ -1,15 +1,15 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 9650
+// Function ID: 9651
 // Name: SingleScreenshare
-// Dependencies: [19, 8829, 21, 4836, 576, 5298, 9484, 5037, 2]
+// Dependencies: [19, 8994, 21, 4836, 576, 5464, 9651, 5037, 2]
 // Exports: default
 
-// Module 9483 (SingleScreenshare)
+// Module 9650 (SingleScreenshare)
 import nativeDefault from "native" /* 576 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
 import noop from "module_19" /* 19 */;
 
-const ChannelCallStore = fn(8829);
+const ChannelCallStore = fn(8994);
 ({ resetFocus: c2, toggleFocus: c3 } = ChannelCallStore);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/video_calls/native/components
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(5298)(() => {
+  channel(5464)(() => {
     closure_1_2();
   });
   const obj = {
@@ -41,5 +41,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(9484), obj);
+  return tmp3(channel(9651), obj);
 };

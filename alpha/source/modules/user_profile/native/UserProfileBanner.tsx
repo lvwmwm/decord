@@ -1,11 +1,11 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7857
+// Function ID: 7858
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 2021, 7693, 1397, 7700, 5435, 1115, 7701, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 2021, 7858, 1397, 7865, 5602, 1115, 7866, 2]
 // Exports: default
 
-// Module 7692 (UserProfileBanner)
-import BannerDefault from "Banner" /* 7700 */;
+// Module 7857 (UserProfileBanner)
+import BannerDefault from "Banner" /* 7865 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

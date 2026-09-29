@@ -1,20 +1,20 @@
-// Module ID: 6507
-// Function ID: 6508
+// Module ID: 6673
+// Function ID: 6674
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4836, 576, 6039, 6032, 4533, 6508, 1115, 6042, 6356, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6205, 6198, 4533, 6674, 1115, 6208, 6522, 4832, 2]
 
-// Module 6507 (TextAreaField)
+// Module 6673 (TextAreaField)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4533 */;
-import useTextField from "useTextField" /* 6032 */;
-import InputFieldContainer from "InputFieldContainer" /* 6039 */;
+import useTextField from "useTextField" /* 6198 */;
+import InputFieldContainer from "InputFieldContainer" /* 6205 */;
 import noop from "module_19" /* 19 */;
 
 const util = prop(1115);
 const Text_Text = prop(4832);
-const NativeTextInput = prop(6042);
-const propsForNativeTextInput = prop(6356);
-const useCharacterLimitAnnouncement = prop(6508);
+const NativeTextInput = prop(6208);
+const propsForNativeTextInput = prop(6522);
+const useCharacterLimitAnnouncement = prop(6674);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);

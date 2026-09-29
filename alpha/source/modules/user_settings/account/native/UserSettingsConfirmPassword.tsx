@@ -1,16 +1,16 @@
-// Module ID: 6414
-// Function ID: 6415
+// Module ID: 6580
+// Function ID: 6581
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 6415, 504, 6416, 4735, 1231, 1115, 6419, 4832, 6023, 6360, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 6581, 504, 6582, 4735, 1231, 1115, 6585, 4832, 6189, 6526, 5447, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 6414 (UserSettingsConfirmPassword)
+// Module 6580 (UserSettingsConfirmPassword)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6023 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6189 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6581 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6582 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6585 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -206,7 +206,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
       tmp19Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp19Result = tmp19(tmp20(6360), obj9);
+        tmp19Result = tmp19(tmp20(6526), obj9);
       }
     }
     items3[3] = tmp19Result;
@@ -216,7 +216,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
     obj18.text = intl4.string(tmp3(1115).t.i4jeWR);
     obj18.onPress = handleSubmit;
     obj18.loading = tmp7;
-    obj10.children = closure_10(tmp3(5281).Button, obj18);
+    obj10.children = closure_10(tmp3(5447).Button, obj18);
     items3[4] = closure_10(closure_6, obj10);
     obj4.children = items3;
     items2[1] = closure_11(closure_6, obj4);

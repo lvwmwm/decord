@@ -1,10 +1,10 @@
-// Module ID: 5881
-// Function ID: 5882
+// Module ID: 6047
+// Function ID: 6048
 // Name: MemberVerificationModalActionCreators
-// Dependencies: [5882, 2]
+// Dependencies: [6048, 2]
 
-// Module 5881 (MemberVerificationModalActionCreators)
-import guild_member_verification_MemberVerificationModalActionCreators from "guild_member_verification/MemberVerificationModalActionCreators" /* 5882 */;
+// Module 6047 (MemberVerificationModalActionCreators)
+import guild_member_verification_MemberVerificationModalActionCreators from "guild_member_verification/MemberVerificationModalActionCreators" /* 6048 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/MemberVerificationModalActionCreators.tsx");

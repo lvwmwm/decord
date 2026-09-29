@@ -1,9 +1,9 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10497
+// Function ID: 10498
 // Name: UserRow
-// Dependencies: [19, 17, 4825, 5063, 7075, 2045, 4876, 4479, 10320, 1074, 21, 4836, 576, 4849, 38, 10329, 10330, 4527, 10331, 9195, 7076, 504, 1177, 4832, 4678, 10335, 6583, 7661, 1115, 10354, 4785, 4783, 5281, 2012, 7305, 5385, 7624, 1981, 7662, 10355, 8678, 5310, 7403, 5084, 9188, 10357, 8741, 10365, 9205, 10366, 5916, 10369, 5917, 2]
+// Dependencies: [19, 17, 4825, 5063, 7240, 2045, 4876, 4479, 10489, 1074, 21, 4836, 576, 4849, 38, 10498, 10499, 4527, 10500, 9360, 7241, 504, 1177, 4832, 4678, 10504, 6749, 7826, 1115, 10523, 4785, 4783, 5447, 2012, 7470, 5551, 7789, 1981, 7827, 10524, 8843, 5476, 7568, 5250, 9353, 10526, 8906, 10534, 9370, 10535, 6082, 10538, 6083, 2]
 
-// Module 10328 (UserRow)
+// Module 10497 (UserRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -15,21 +15,21 @@ import UserUtilsDefault from "UserUtils" /* 4678 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4783 */;
 import XLargeIcon from "XLargeIcon" /* 4785 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ChatIcon from "ChatIcon" /* 5385 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7076 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7305 */;
-import BoostGemIcon from "BoostGemIcon" /* 8678 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10330 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10331 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10335 */;
-import ActionButtonDefault from "ActionButton" /* 10354 */;
-import CrownIcon from "CrownIcon" /* 10355 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import ChatIcon from "ChatIcon" /* 5551 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7241 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7470 */;
+import BoostGemIcon from "BoostGemIcon" /* 8843 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10499 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10500 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10504 */;
+import ActionButtonDefault from "ActionButton" /* 10523 */;
+import CrownIcon from "CrownIcon" /* 10524 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7075 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7240 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
@@ -76,7 +76,7 @@ function UserRowSubLabel(arg0) {
   }
 }
 const View = fn(17).View;
-const UserRowModes = fn(10320).UserRowModes;
+const UserRowModes = fn(10489).UserRowModes;
 const Constants = fn(1074);
 ({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
 const jsxProd = fn(21);
@@ -188,7 +188,7 @@ export default noop.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "a" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       if (constants.PENDING_INCOMING === type) {
@@ -331,7 +331,7 @@ export default noop.memo(function UserRow(type) {
             channel = channel.getChannel(result);
             if (null != channel) {
               user(38)(channel.isPrivate(), "must be a DM");
-              const obj2 = user(10329)(channel, false);
+              const obj2 = user(10498)(channel, false);
               if (!obj2.inCall) {
                 obj2.onPress();
               }
@@ -381,7 +381,7 @@ export default noop.memo(function UserRow(type) {
         channel = channel.getChannel(result);
         if (null != channel) {
           user(38)(channel.isPrivate(), "must be a DM");
-          const obj2 = user(10329)(channel, false);
+          const obj2 = user(10498)(channel, false);
           if (!obj2.inCall) {
             obj2.onPress();
           }
@@ -441,8 +441,8 @@ export default noop.memo(function UserRow(type) {
   }, items7);
   const callback2 = flag2.useCallback(() => {
     if (null == onLongPress) {
-      asyncRequireImpl(7624, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(7624, dependencyMap.paths);
+      asyncRequireImpl(7789, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(7789, dependencyMap.paths);
     } else {
       tmp(user);
     }

@@ -1,10 +1,10 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14387
+// Function ID: 14388
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 2108, 1372, 1074, 1374, 21, 4836, 504, 6583, 6603, 7604, 14166, 7614, 4488, 7611, 8614, 4800, 14167, 1981, 14168, 14168, 7602, 5435, 1115, 7703, 14169, 2]
+// Dependencies: [19, 2108, 1372, 1074, 1374, 21, 4836, 504, 6749, 6769, 7769, 14341, 7779, 4488, 7776, 8779, 4800, 14342, 1981, 14343, 14343, 7767, 5602, 1115, 7868, 14344, 2]
 // Exports: default
 
-// Module 14211 (EditGuildIdentityAvatar)
+// Module 14387 (EditGuildIdentityAvatar)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;

@@ -1,16 +1,16 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8734
+// Function ID: 8735
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4836, 8538, 8554, 4832, 1115, 6544, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 8703, 8719, 4832, 1115, 6710, 5447, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 8569 (PlayStationLinkSuccess)
+// Module 8734 (PlayStationLinkSuccess)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8538 */;
-import _modDef8554 from "module_8554" /* 8554 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8703 */;
+import _modDef8719 from "module_8719" /* 8719 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
   const obj2 = { style: twoWayLinkStyles.container, children: null };
   const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const items = [timestampProducer(React4, { source: noop.useMemo(() => ({ uri: _modDef8554 }), []), style: tmp.image }), , ];
+  const items = [timestampProducer(React4, { source: noop.useMemo(() => ({ uri: _modDef8719 }), []), style: tmp.image }), , ];
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = util.intl;
   obj5.children = intl.string(util.t.e6SOl0);

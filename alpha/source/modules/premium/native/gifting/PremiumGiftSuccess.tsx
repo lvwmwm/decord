@@ -1,15 +1,15 @@
-// Module ID: 10537
-// Function ID: 10538
+// Module ID: 10706
+// Function ID: 10707
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 10128, 2042, 21, 4836, 576, 1613, 10162, 38, 10538, 10217, 10198, 504, 2031, 2029, 10539, 10540, 10541, 2]
+// Dependencies: [19, 17, 10295, 2042, 21, 4836, 576, 1613, 10329, 38, 10707, 10384, 10365, 504, 2031, 2029, 10708, 10709, 10710, 2]
 // Exports: default
 
-// Module 10537 (PremiumGiftSuccess)
+// Module 10706 (PremiumGiftSuccess)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import PromotionsStore from "PromotionsStore" /* 10295 */;
 
 const require = globalThis.__r;
 

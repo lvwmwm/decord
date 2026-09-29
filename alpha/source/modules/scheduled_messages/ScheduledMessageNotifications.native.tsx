@@ -1,16 +1,16 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7433
+// Function ID: 7434
 // Name: ScheduledMessageNotifications
-// Dependencies: [1074, 4528, 1115, 4795, 6034, 7265, 7269, 6603, 5203, 5039, 11694, 1981, 2]
+// Dependencies: [1074, 4528, 1115, 4795, 6200, 7430, 7434, 6769, 5369, 5039, 11863, 1981, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 7268 (ScheduledMessageNotifications)
+// Module 7433 (ScheduledMessageNotifications)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ClockIcon from "ClockIcon" /* 4795 */;
-import CircleXIcon from "CircleXIcon" /* 6034 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7265 */;
+import CircleXIcon from "CircleXIcon" /* 6200 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7430 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,9 +44,9 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
   if (code === AbortCodes.TOO_MANY_SCHEDULED_MESSAGES) {
     const scheduledMessagesLimit = ScheduledMessageUtils.getScheduledMessagesLimit("ScheduledMessagesCreateRoadblock");
     if (scheduledMessagesLimit.isUpgradable) {
-      const items = [tmp11(6603).SCHEDULED_MESSAGES_ROADBLOCK];
-      tmp11(7269)(items);
-      const tmp11Result = tmp11(7269);
+      const items = [tmp11(6769).SCHEDULED_MESSAGES_ROADBLOCK];
+      tmp11(7434)(items);
+      const tmp11Result = tmp11(7434);
     } else {
       const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
       const intl2 = tmp7(1115).intl;
@@ -61,8 +61,8 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
       obj2.onCancel = function onCancel() {
         return require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[10], paths.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
       };
-      tmp11(5203).show(obj2);
-      const tmp11Result2 = tmp11(5203);
+      tmp11(5369).show(obj2);
+      const tmp11Result2 = tmp11(5369);
     }
   } else {
     const body2 = body.body;

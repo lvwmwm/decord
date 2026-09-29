@@ -1,11 +1,11 @@
-// Module ID: 9596
-// Function ID: 9597
+// Module ID: 9763
+// Function ID: 9764
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4480, 6720, 2]
+// Dependencies: [19, 4480, 6886, 2]
 // Exports: useGetInitialMessagePreview
 
-// Module 9596 (useGetInitialMessagePreview)
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+// Module 9763 (useGetInitialMessagePreview)
+import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
 import noop from "module_19" /* 19 */;
 import MessageRecord from "MessageRecord" /* 4480 */;
 

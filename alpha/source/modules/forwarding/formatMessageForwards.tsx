@@ -1,14 +1,14 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7561
+// Function ID: 7562
 // Name: formatMessageForwards
-// Dependencies: [7397, 2045, 2067, 4469, 4479, 1372, 1397, 1115, 4512, 4989, 6720, 2]
+// Dependencies: [7562, 2045, 2067, 4469, 4479, 1372, 1397, 1115, 4512, 4989, 6886, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7396 (formatMessageForwards)
+// Module 7561 (formatMessageForwards)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import DateUtils from "DateUtils" /* 4512 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import BasicGuildStore from "BasicGuildStore" /* 7397 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
+import BasicGuildStore from "BasicGuildStore" /* 7562 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

@@ -1,10 +1,10 @@
-// Module ID: 9440
-// Function ID: 9441
+// Module ID: 9607
+// Function ID: 9608
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 1993, 5731, 1980, 1074, 5045, 21, 4836, 576, 4683, 1479, 504, 5451, 4891, 4541, 1115, 1177, 8053, 7726, 1364, 2]
+// Dependencies: [5, 32, 19, 17, 1993, 5898, 1980, 1074, 5045, 21, 4836, 576, 4683, 1479, 504, 5618, 4891, 4541, 1115, 1177, 8218, 7891, 1364, 2]
 // Exports: default
 
-// Module 9440 (VoiceSensitivity)
+// Module 9607 (VoiceSensitivity)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
@@ -13,7 +13,7 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SpeakingStore from "SpeakingStore" /* 5731 */;
+import SpeakingStore from "SpeakingStore" /* 5898 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 
 require = fn;
@@ -121,7 +121,7 @@ export default function VoiceSensitivity(auto) {
               closure_0 = tmp4;
               c1 = 1;
               c2 = 1;
-              const obj4 = { value: onThresholdChange(5451).hasPermission(constants.AUDIO, { showAuthorizationError: false }), done: false };
+              const obj4 = { value: onThresholdChange(5618).hasPermission(constants.AUDIO, { showAuthorizationError: false }), done: false };
               return obj4;
             }
           } else if (arg0 === 1) {

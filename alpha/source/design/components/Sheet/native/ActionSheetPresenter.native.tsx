@@ -1,10 +1,10 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 14113
+// Function ID: 14114
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 4521, 1074, 21, 8230, 1249, 4800, 5276, 6573, 5262, 504, 11916, 5210, 2]
+// Dependencies: [32, 19, 17, 4521, 1074, 21, 8395, 1249, 4800, 5442, 6739, 5428, 504, 12087, 5376, 2]
 // Exports: ActionSheetPresenter
 
-// Module 13944 (ActionSheetPresenter)
+// Module 14113 (ActionSheetPresenter)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -31,7 +31,7 @@ let closure_9 = noop.forwardRef((sheetKey, ref) => {
     ref2.current();
   }, []);
   const obj = { type: sheetKey(1249).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  transitionState(8230)(obj);
+  transitionState(8395)(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
       closure_1_2("visible");
@@ -60,9 +60,9 @@ let closure_9 = noop.forwardRef((sheetKey, ref) => {
     callback2();
     return true;
   }, items2);
-  transitionState(5276)(callback3);
-  const tmp5 = transitionState(8230);
-  return jsx(transitionState(6573).Provider, { value: memo, children: jsx(sheetKey(5262).Dialog, { dialogKey: sheetKey, onDismiss: callback2, zIndex, children: content }) });
+  transitionState(5442)(callback3);
+  const tmp5 = transitionState(8395);
+  return jsx(transitionState(6739).Provider, { value: memo, children: jsx(sheetKey(5428).Dialog, { dialogKey: sheetKey, onDismiss: callback2, zIndex, children: content }) });
 });
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
@@ -78,5 +78,5 @@ export const ActionSheetPresenter = function ActionSheetPresenter(appEntryKey) {
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
   const obj = appEntryKey(504);
-  return jsx(appEntryKey(11916).TransitionGroup, { style: StyleSheet.absoluteFill, component: appEntryKey(5210).TransitionGroupOverlayView, children: mapped });
+  return jsx(appEntryKey(12087).TransitionGroup, { style: StyleSheet.absoluteFill, component: appEntryKey(5376).TransitionGroupOverlayView, children: mapped });
 };

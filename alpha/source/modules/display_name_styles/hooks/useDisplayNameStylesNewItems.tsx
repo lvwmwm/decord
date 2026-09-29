@@ -1,12 +1,12 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 15061
+// Function ID: 15062
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 14887, 1390, 504, 14888, 2]
+// Dependencies: [19, 15062, 1390, 504, 15063, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14886 (useDisplayNameStylesNewItems)
+// Module 15061 (useDisplayNameStylesNewItems)
 import noop from "module_19" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 14887 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15062 */;
 
 const require = globalThis.__r;
 

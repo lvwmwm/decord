@@ -1,13 +1,13 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11831
+// Function ID: 11832
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 1074, 21, 6941, 5754, 4800, 11648, 11649, 10328, 4832, 4678, 11663, 5828, 11661, 10378, 5917, 2]
+// Dependencies: [32, 19, 1074, 21, 7107, 5921, 4800, 11817, 11818, 10497, 4832, 4678, 11832, 5995, 11830, 10547, 6083, 2]
 // Exports: default
 
-// Module 11662 (AppLauncherMentionableListActionSheet)
+// Module 11831 (AppLauncherMentionableListActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5754 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5921 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7107 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

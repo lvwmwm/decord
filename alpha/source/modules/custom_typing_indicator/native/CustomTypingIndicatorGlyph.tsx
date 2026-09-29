@@ -1,11 +1,11 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11632
+// Function ID: 11633
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4836, 1393, 1177, 576, 11464, 2]
+// Dependencies: [19, 17, 21, 4836, 1393, 1177, 576, 11633, 2]
 // Exports: default
 
-// Module 11463 (CustomTypingIndicatorGlyph)
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11464 */;
+// Module 11632 (CustomTypingIndicatorGlyph)
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11633 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

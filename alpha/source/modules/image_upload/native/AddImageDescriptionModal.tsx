@@ -1,16 +1,16 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10979
+// Function ID: 10980
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 5200, 5199, 21, 4836, 576, 504, 1479, 1485, 6402, 10608, 7288, 1115, 8608, 10809, 6506, 10385, 2]
+// Dependencies: [32, 19, 17, 5366, 5365, 21, 4836, 576, 504, 1479, 1485, 6568, 10777, 7453, 1115, 8773, 10978, 6672, 10554, 2]
 // Exports: default
 
-// Module 10810 (AddImageDescriptionModal)
+// Module 10979 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10385 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10554 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5365 */;
 
 require = fn;
 function AddDescription(id) {
@@ -70,9 +70,9 @@ function AddDescription(id) {
           const obj2 = {};
           const merged = Object.assign(dependencyMap);
           obj2.description = ref.current;
-          id(8608).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
-          const obj = id(8608);
-          id(10809).close();
+          id(8773).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
+          const obj = id(8773);
+          id(10978).close();
         });
         let merged = Object.assign(arg0);
         return renderHeaderTextButton({});
@@ -104,7 +104,7 @@ function AddDescription(id) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const DraftType = fn(5200).DraftType;
+const DraftType = fn(5366).DraftType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4836);

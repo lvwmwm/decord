@@ -1,9 +1,9 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7230
+// Function ID: 7231
 // Name: GuildsRequiringChannelSync
 // Dependencies: [2049, 502, 2045, 2108, 2102, 2067, 4469, 1074, 2052, 1085, 1086, 3, 2074, 4459, 1255, 1241, 1385, 2]
 
-// Module 7065 (GuildsRequiringChannelSync)
+// Module 7230 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;

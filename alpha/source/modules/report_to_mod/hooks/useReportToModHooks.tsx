@@ -1,16 +1,16 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11330
+// Function ID: 11331
 // Name: useReportToModHooks
-// Dependencies: [19, 2067, 5056, 504, 6684, 6708, 6694, 6876, 7626, 2]
+// Dependencies: [19, 2067, 5056, 504, 6850, 6874, 6860, 7042, 7791, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 11161 (useReportToModHooks)
+// Module 11330 (useReportToModHooks)
 import _mod19 from "module_19" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6684 */;
-import ReportToModUtils from "ReportToModUtils" /* 6694 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6708 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import UserActionCreators from "UserActionCreators" /* 7626 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6850 */;
+import ReportToModUtils from "ReportToModUtils" /* 6860 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6874 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
+import UserActionCreators from "UserActionCreators" /* 7791 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import size from "module_2" /* 2 */;

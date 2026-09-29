@@ -1,12 +1,12 @@
-// Module ID: 8800
-// Function ID: 8801
+// Module ID: 8965
+// Function ID: 8966
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [2045, 2067, 4469, 4855, 2005, 1074, 8801, 504, 1115, 2]
+// Dependencies: [2045, 2067, 4469, 4855, 2005, 1074, 8966, 504, 1115, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 8800 (getEmbeddedActivityLaunchability)
+// Module 8965 (getEmbeddedActivityLaunchability)
 import util from "util" /* 1115 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 8801 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 8966 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

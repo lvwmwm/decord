@@ -1,15 +1,15 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11359
+// Function ID: 11360
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4836, 576, 6402, 4566, 5280, 5284, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6568, 4566, 5446, 5450, 4832, 2]
 // Exports: default
 
-// Module 11190 (ShareFooterLayout)
+// Module 11359 (ShareFooterLayout)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

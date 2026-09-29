@@ -1,9 +1,9 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12704
+// Function ID: 12705
 // Name: MediaModalLoader
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4832, 1115, 12535, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 4832, 1115, 12705, 2]
 
-// Module 12534 (MediaModalLoader)
+// Module 12704 (MediaModalLoader)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 9649
+// Function ID: 9650
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4858, 502, 1074, 4857, 21, 1241, 5016, 504, 9483, 9485, 9486, 2]
+// Dependencies: [19, 4858, 502, 1074, 4857, 21, 1241, 5016, 504, 9650, 9652, 9653, 2]
 // Exports: ChannelCallSingleController
 
-// Module 9482 (ChannelCallSingleController)
+// Module 9649 (ChannelCallSingleController)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
 import noop from "module_19" /* 19 */;
@@ -36,13 +36,13 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 9483 : 9485);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 9650 : 9652);
       let obj2 = { participant: selectedParticipant, channel };
       <tmp18 participant={selectedParticipant} channel={channel} />;
     }
   } else if (tmp5.USER === type) {
     let obj = { participant: selectedParticipant, channel };
-    return jsx(channel(9486), { participant: selectedParticipant, channel });
+    return jsx(channel(9653), { participant: selectedParticipant, channel });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

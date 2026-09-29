@@ -1,10 +1,10 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14355
+// Function ID: 14356
 // Name: UserProfileEditTheme
-// Dependencies: [19, 17, 21, 4836, 576, 1092, 6625, 5435, 1115, 9713, 4832, 7631, 7673, 7589, 4955, 14152, 4800, 14181, 1981, 7365, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1092, 6791, 5602, 1115, 9880, 4832, 7796, 7838, 7754, 4955, 14324, 4800, 14356, 1981, 7530, 2]
 // Exports: default
 
-// Module 14180 (UserProfileEditTheme)
+// Module 14355 (UserProfileEditTheme)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import util from "util" /* 1115 */;
@@ -12,9 +12,9 @@ import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import _modDef4955 from "module_4955" /* 4955 */;
-import Pressables from "Pressables" /* 5435 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 6625 */;
-import PencilIcon from "PencilIcon" /* 9713 */;
+import Pressables from "Pressables" /* 5602 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 6791 */;
+import PencilIcon from "PencilIcon" /* 9880 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -63,19 +63,19 @@ export default function UserProfileEditTheme(pendingThemeColors) {
   if (flag === undefined) {
     flag = false;
   }
-  let f99168;
+  let f99493;
   let primaryColor;
   suggestedColors = undefined;
   const tmp = closure_6();
-  let tmp4 = f99168(primaryColor[11])(user.id, guildId);
-  f99168 = tmp4;
-  const tmp5 = f99168(primaryColor[12])({ user, displayProfile: tmp4, pendingThemeColors: pendingThemeColors.pendingThemeColors, isPreview: flag });
+  let tmp4 = f99493(primaryColor[11])(user.id, guildId);
+  f99493 = tmp4;
+  const tmp5 = f99493(primaryColor[12])({ user, displayProfile: tmp4, pendingThemeColors: pendingThemeColors.pendingThemeColors, isPreview: flag });
   primaryColor = tmp5.primaryColor;
   secondaryColor = tmp5.secondaryColor;
   if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(guildId, 80);
   }
-  suggestedColors = secondaryColor(primaryColor[13]).useAvatarColors(pendingAvatarSrc, f99168(tmp3[4]).unsafe_rawColors.PRIMARY_530, false);
+  suggestedColors = secondaryColor(primaryColor[13]).useAvatarColors(pendingAvatarSrc, f99493(tmp3[4]).unsafe_rawColors.PRIMARY_530, false);
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const obj2 = { style: tmp.container, children: null };
@@ -89,7 +89,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
         const intl = tmp6(tmp3[8]).intl;
         obj5.accessibilityLabel = intl.string(tmp6(tmp3[8]).t["+1H47t"]);
         obj5.onPress = function onPress() {
-          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14181, dependencyMap.paths), "Profile Theme", {
+          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14356, dependencyMap.paths), "Profile Theme", {
             onResetTheme() {
               themeColors = undefined;
               if (themeColors != null) {
@@ -114,12 +114,12 @@ export default function UserProfileEditTheme(pendingThemeColors) {
       const obj7 = { style: tmp.themeColorContainer, children: null };
       const obj8 = { onPress: null, color: null, label: null, accessibilityLabel: null };
       secondaryColor = primaryColor;
-      f99168 = (arg0) => {
+      f99493 = (arg0) => {
         if (arg0 !== primaryColor) {
           const items = [arg0, secondaryColor];
           let themeColors;
-          if (f99168 != null) {
-            themeColors = f99168.themeColors;
+          if (f99493 != null) {
+            themeColors = f99493.themeColors;
           }
           let tmp8;
           if (!tmp4(items, themeColors)) {
@@ -130,7 +130,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
         }
       };
       obj8.onPress = () => {
-        closure_1(primaryColor[15])({ color: secondaryColor, onSelect: f99168, suggestedColors });
+        closure_1(primaryColor[15])({ color: secondaryColor, onSelect: f99493, suggestedColors });
       };
       obj8.color = primaryColor;
       const intl2 = tmp6(tmp3[8]).intl;
@@ -140,12 +140,12 @@ export default function UserProfileEditTheme(pendingThemeColors) {
       obj8.accessibilityLabel = intl3.formatToPlainString(tmp6(tmp3[8]).t.v4X2kc, obj9);
       const items2 = [suggestedColors(ColorSwatch, obj8), ];
       const obj10 = { color: secondaryColor, onPress: null, label: null, accessibilityLabel: null };
-      f99168 = (primaryColor) => {
+      f99493 = (primaryColor) => {
         if (primaryColor !== secondaryColor) {
           const items = [primaryColor, primaryColor];
           let themeColors;
-          if (f99168 != null) {
-            themeColors = f99168.themeColors;
+          if (f99493 != null) {
+            themeColors = f99493.themeColors;
           }
           let tmp8;
           if (!tmp4(items, themeColors)) {
@@ -156,7 +156,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
         }
       };
       obj10.onPress = () => {
-        closure_1(primaryColor[15])({ color: secondaryColor, onSelect: f99168, suggestedColors });
+        closure_1(primaryColor[15])({ color: secondaryColor, onSelect: f99493, suggestedColors });
       };
       const intl4 = tmp6(tmp3[8]).intl;
       obj10.label = intl4.string(tmp6(tmp3[8]).t["8elvy6"]);

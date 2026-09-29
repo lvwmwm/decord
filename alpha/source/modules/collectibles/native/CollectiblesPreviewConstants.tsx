@@ -1,9 +1,9 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 8426
+// Function ID: 8427
 // Name: CollectiblesPreviewConstants
 // Dependencies: [2]
 
-// Module 8261 (CollectiblesPreviewConstants)
+// Module 8426 (CollectiblesPreviewConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");

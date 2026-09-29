@@ -1,15 +1,15 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8282
+// Function ID: 8283
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4836, 576, 6400, 7687, 7044, 8118, 7037, 8127, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6566, 7852, 7209, 8283, 7202, 8292, 4832, 1115, 2]
 // Exports: default
 
-// Module 8117 (InAppReportsWidgetPreviewElement)
+// Module 8282 (InAppReportsWidgetPreviewElement)
 import nativeDefault from "native" /* 576 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7044 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 8118 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7209 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7852 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 8283 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,10 +41,10 @@ export default function WidgetPreview(arg0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: null };
         const items1 = [tmp5.card, tmp.card];
         obj3.cardStyle = items1;
-        tmp6 = React4(tmp2(8127).WidgetSection, obj3);
+        tmp6 = React4(tmp2(8292).WidgetSection, obj3);
       }
     }
-    tmp2Result = tmp2(7037);
+    tmp2Result = tmp2(7202);
   }
   if (null === tmp6) {
     return null;

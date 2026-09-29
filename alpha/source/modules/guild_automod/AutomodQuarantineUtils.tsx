@@ -1,15 +1,15 @@
-// Module ID: 11350
-// Function ID: 11351
+// Module ID: 11519
+// Function ID: 11520
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9227, 502, 2108, 2067, 4469, 4655, 1074, 4455, 1084, 563, 4475, 1115, 9228, 9229, 6800, 2]
+// Dependencies: [19, 9392, 502, 2108, 2067, 4469, 4655, 1074, 4455, 1084, 563, 4475, 1115, 9393, 9394, 6966, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11350 (AutomodQuarantineUtils)
+// Module 11519 (AutomodQuarantineUtils)
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4475 */;
-import openUserSettings2 from "openUserSettings" /* 6800 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9229 */;
+import openUserSettings2 from "openUserSettings" /* 6966 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9394 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9227 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9392 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -48,7 +48,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "paddingHorizontal" };
+    const obj = { nick: "current", bio: "channel" };
     let guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

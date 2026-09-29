@@ -1,10 +1,10 @@
-// Module ID: 6601
-// Function ID: 6602
+// Module ID: 6767
+// Function ID: 6768
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 6602, 4525, 2]
+// Dependencies: [5, 19, 6768, 4525, 2]
 // Exports: useStartProviderConnection
 
-// Module 6601 (useStartProviderConnection)
+// Module 6767 (useStartProviderConnection)
 import LinkingDefault from "Linking" /* 4525 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

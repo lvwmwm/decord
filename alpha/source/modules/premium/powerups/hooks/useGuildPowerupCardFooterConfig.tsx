@@ -1,12 +1,12 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 12200
+// Function ID: 12201
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [2067, 4724, 1074, 11996, 504, 4727, 11992, 2]
+// Dependencies: [2067, 4724, 1074, 12167, 504, 4727, 12163, 2]
 // Exports: default
 
-// Module 12029 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 11992 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11996 */;
+// Module 12200 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12163 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12167 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;

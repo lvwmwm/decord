@@ -1,10 +1,10 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7961
+// Function ID: 7962
 // Name: ICYMITypes
 // Dependencies: [1074, 2]
 // Exports: typeToString
 
-// Module 7796 (ICYMITypes)
+// Module 7961 (ICYMITypes)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

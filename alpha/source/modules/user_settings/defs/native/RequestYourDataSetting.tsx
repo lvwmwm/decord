@@ -1,10 +1,10 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14569
+// Function ID: 14570
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1372, 7417, 1074, 21, 1243, 6405, 1248, 504, 4452, 14395, 1115, 4421, 11006, 14397, 2]
+// Dependencies: [17, 1372, 7582, 1074, 21, 1243, 6571, 1248, 504, 4452, 14570, 1115, 4421, 11175, 14572, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 14394 (RequestYourDataSetting)
+// Module 14569 (RequestYourDataSetting)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import initialize from "initialize" /* 504 */;
@@ -12,15 +12,15 @@ import util from "util" /* 1115 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import _mod4452 from "module_4452" /* 4452 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6405 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6571 */;
+import SettingsConstants from "SettingsConstants" /* 7582 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
 import identity from "module_1243" /* 1243 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
 import size from "module_2" /* 2 */;
 
-const HarvesterUtils = tmp(14395);
+const HarvesterUtils = tmp(14570);
 function useIsHarvestRequestDisabled() {
   const items = [UserStore];
   const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());

@@ -1,22 +1,22 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 11098
+// Function ID: 11099
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4479, 1372, 10376, 21, 504, 4678, 10912, 9195, 1115, 6389, 6387, 7371, 5999, 10930, 2]
+// Dependencies: [32, 19, 4479, 1372, 10545, 21, 504, 4678, 11081, 9360, 1115, 6555, 6553, 7536, 6165, 11099, 2]
 // Exports: default
 
-// Module 10929 (StrangerDangerMoreTipsModalActionItems)
+// Module 11098 (StrangerDangerMoreTipsModalActionItems)
 import util from "util" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
-import DenyIcon from "DenyIcon" /* 7371 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
+import DenyIcon from "DenyIcon" /* 7536 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11081 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SafetyWarningTypes = fn(10376).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10545).SafetyWarningTypes;
 let jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
@@ -80,9 +80,9 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     obj3.description = stringResult;
     obj3.onClick = first ? callback1 : callback;
     if (first) {
-      let EyeSlashIcon = tmp11(6389).EyeIcon;
+      let EyeSlashIcon = tmp11(6555).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6387).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6553).EyeSlashIcon;
     }
     obj3.icon = <EyeSlashIcon />;
     obj3.disabled = isBlocked;

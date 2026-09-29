@@ -1,13 +1,13 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17536
+// Function ID: 17537
 // Name: AuditLogActionCreators
-// Dependencies: [17342, 1074, 1271, 573, 2]
+// Dependencies: [17531, 1074, 1271, 573, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17347 (AuditLogActionCreators)
+// Module 17536 (AuditLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17342 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17531 */;
 
 require = fn;
 function makeRequest(arg0, arg1) {
@@ -111,7 +111,7 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       if (!tmp5) {
         if (null != guildId) {
           DispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          const obj2 = { userId: id, action: "Array", targetId: "text" };
+          const obj2 = { userId: id, action: "Array", targetId: "channel" };
           const tmp10Result = DispatcherDefault;
           nextPromise = makeRequest(guildId, obj2).then((body) => {
             ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);

@@ -1,13 +1,13 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 16001
+// Function ID: 16002
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1372, 2042, 21, 576, 6593, 9578, 5286, 4836, 563, 6583, 6603, 5919, 5435, 5992, 1177, 4832, 1115, 5281, 8197, 2]
+// Dependencies: [19, 17, 1372, 2042, 21, 576, 6759, 9745, 5452, 4836, 563, 6749, 6769, 6085, 5602, 6158, 1177, 4832, 1115, 5447, 8362, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15826 (AccountLinkBanner)
+// Module 16001 (AccountLinkBanner)
 import nativeDefault from "native" /* 576 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import ButtonConstants from "ButtonConstants" /* 5452 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9745 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -50,7 +50,7 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = closure_6(View, obj9);
     obj6.children = items3;
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: tmp2(tmp3[16]).AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: tmp2(tmp3[16]).AvatarSizes.LARGE_48, guildId: "r" };
     items2[2] = closure_6(tmp2(tmp3[16]).Avatar, obj10);
     obj4.children = items2;
     items1[1] = closure_7(View, obj4);
@@ -88,8 +88,8 @@ const PX_82 = nativeDefault.space.PX_8;
 const PX_12 = nativeDefault.space.PX_12;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_4 = nativeDefault.space.PX_4;
-const NORMAL = fn(6593).GameIconSizes.NORMAL;
-let closure_14 = fn(6593).GameIconImageSize[NORMAL];
+const NORMAL = fn(6759).GameIconSizes.NORMAL;
+let closure_14 = fn(6759).GameIconImageSize[NORMAL];
 let c15 = "heading-md/bold";
 let c16 = "text-sm/medium";
 const PX_162 = nativeDefault.space.PX_16;

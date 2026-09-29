@@ -1,18 +1,18 @@
-// Module ID: 15712
-// Function ID: 15713
+// Module ID: 15887
+// Function ID: 15888
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 2045, 1074, 21, 4836, 504, 4989, 14842, 9060, 1115, 7705, 10350, 2]
+// Dependencies: [19, 17, 2045, 1074, 21, 4836, 504, 4989, 15017, 9225, 1115, 7870, 10519, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 15712 (HappeningNowCardActivitySubtitle)
+// Module 15887 (HappeningNowCardActivitySubtitle)
 import util from "util" /* 1115 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
-import isStreamingDefault from "isStreaming" /* 7705 */;
-import HappeningNowCard from "HappeningNowCard" /* 14842 */;
+import isStreamingDefault from "isStreaming" /* 7870 */;
+import HappeningNowCard from "HappeningNowCard" /* 15017 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
-const getChannelA11yLabelDefault = tmp4(9060);
+const getChannelA11yLabelDefault = tmp4(9225);
 require = fn;
 const View = fn(17).View;
 const ActivityTypes = fn(1074).ActivityTypes;
@@ -34,7 +34,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     const obj3 = { channel: stateFromStores };
     tmp8 = getChannelA11yLabelDefault(obj3);
   }
-  obj2.children = jsx(voiceState(14842).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: useChannelNameDefault(stateFromStores) });
+  obj2.children = jsx(voiceState(15017).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: useChannelNameDefault(stateFromStores) });
   return <View style={tmp.cardDetails}>{null}</View>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
@@ -66,7 +66,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     tmp3 = null;
     if (null != name1) {
       if (!isStreamingDefault(activity)) {
-        if (tmp4(10350)(activity)) {
+        if (tmp4(10519)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

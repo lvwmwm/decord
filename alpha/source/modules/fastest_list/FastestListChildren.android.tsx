@@ -1,10 +1,10 @@
-// Module ID: 6488
-// Function ID: 6489
+// Module ID: 6654
+// Function ID: 6655
 // Name: FastestListChildren
-// Dependencies: [32, 19, 17, 21, 4836, 6489, 558, 6490, 6491, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 6655, 558, 6656, 6657, 2]
 
-// Module 6488 (FastestListChildren)
-import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6489 */;
+// Module 6654 (FastestListChildren)
+import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6655 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8496
+// Function ID: 8497
 // Name: useIsVariantColorLight
 // Dependencies: [19, 1092, 2]
 // Exports: default
 
-// Module 8331 (useIsVariantColorLight)
+// Module 8496 (useIsVariantColorLight)
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import noop from "module_19" /* 19 */;
 

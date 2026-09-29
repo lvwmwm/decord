@@ -1,13 +1,13 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9440
+// Function ID: 9441
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6946, 21, 4836, 504, 8981, 4800, 5209, 1115, 4832, 2]
+// Dependencies: [5, 19, 7112, 21, 4836, 504, 9146, 4800, 5375, 1115, 4832, 2]
 // Exports: default
 
-// Module 9273 (DeleteEventAlert)
+// Module 9440 (DeleteEventAlert)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7112 */;
 
 const require = globalThis.__r;
 
@@ -48,7 +48,7 @@ export default function DeleteEventAlert(eventException) {
             return obj4;
           } else {
             closure_0 = tmp4;
-            const obj8 = v1(8981);
+            const obj8 = v1(9146);
             if (GuildScheduledEventStore) {
               v1 = 2;
               dependencyMap = 1;

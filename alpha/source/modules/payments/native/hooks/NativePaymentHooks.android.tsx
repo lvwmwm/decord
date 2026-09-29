@@ -1,15 +1,15 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8832
+// Function ID: 8833
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 6658, 3, 504, 12, 8668, 4503, 2]
+// Dependencies: [5, 32, 19, 6824, 3, 504, 12, 8833, 4503, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useMobileStoreFront, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 8667 (NativePaymentHooks)
+// Module 8832 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 6658 */;
+import IAPStore from "IAPStore" /* 6824 */;
 
 const require = fn;
 function notSupported() {
@@ -73,7 +73,7 @@ function useGoogleSkuIds(memo1, arg1) {
                       ref = 1;
                       v2 = 2;
                       c5 = 1;
-                      const obj7 = { value: memo1(8668).loadInAppSkus(differenceResult), done: false };
+                      const obj7 = { value: memo1(8833).loadInAppSkus(differenceResult), done: false };
                       return obj7;
                     }
                   }

@@ -1,19 +1,18 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 9395
+// Function ID: 9396
 // Name: handleNSFWGuildInvite
-// Dependencies: [2067, 1074, 9231, 1364, 5039, 9232, 1981, 5735, 9235, 9236, 2]
+// Dependencies: [2067, 1074, 9396, 1364, 9397, 5902, 9399, 9400, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 9230 (handleNSFWGuildInvite)
+// Module 9395 (handleNSFWGuildInvite)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
-let closure_5 = fn(9231).TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_4 = fn(9396).TINY_BRONCO_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -54,18 +53,17 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
   }
   if (set.has(nsfw_level)) {
     if (null == GuildStore.getGuild(id)) {
-      if (obj7.isIOS()) {
-        const obj = { guildId: id };
-        ModalActionCreatorsDefault.pushLazy(tmp10(1981)(9232, tmp11.paths), obj);
+      if (obj6.isIOS()) {
+        const result = tmp9(9397).showNsfwGateGuildAlert(id);
         if (onCancel != null) {
           onCancel();
         }
         return true;
       } else {
-        if (tmp10Result.hasAgeGatedFeatures()) {
-          if (tmp10Result3.isTinyBroncoEnabled(closure_5)) {
+        if (tmp9Result4.hasAgeGatedFeatures()) {
+          if (tmp9Result5.isTinyBroncoEnabled(closure_4)) {
             c2 = false;
-            const obj2 = {
+            const obj = {
               onConfirm() {
                           c2 = true;
                           require();
@@ -78,19 +76,18 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
                           }
                         }
             };
-            const result = tmp10(9236).showNsfwServerInviteWarningAlert(obj2);
+            const result1 = tmp9(9400).showNsfwServerInviteWarningAlert(obj);
             return true;
           } else {
             return false;
           }
-          tmp10Result3 = tmp10(9235);
+          tmp9Result5 = tmp9(9399);
         } else {
           return false;
         }
-        tmp10Result = tmp10(5735);
+        tmp9Result4 = tmp9(5902);
       }
-      obj7 = PlatformUtils;
-      tmp11 = dependencyMap;
+      obj6 = PlatformUtils;
     }
   }
   return false;

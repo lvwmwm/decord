@@ -1,10 +1,10 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8895
+// Function ID: 8896
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2049, 4479, 1372, 21, 4836, 576, 4800, 8729, 1981, 1115, 4989, 8523, 4832, 1177, 8053, 2]
+// Dependencies: [5, 32, 19, 17, 2049, 4479, 1372, 21, 4836, 576, 4800, 8894, 1981, 1115, 4989, 8688, 4832, 1177, 8218, 2]
 // Exports: default
 
-// Module 8730 (WebhookGuildChannelSelector)
+// Module 8895 (WebhookGuildChannelSelector)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -64,8 +64,8 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         selectedChannelId(onChannelChange[10]).hideActionSheet(WebhookGuildChannelSelector);
       };
       obj2.selectedItem = selectedChannelId;
-      obj.openLazy(asyncRequireImpl(8729, dependencyMap.paths), WebhookGuildChannelSelector, obj2);
-      const tmp7 = asyncRequireImpl(8729, dependencyMap.paths);
+      obj.openLazy(asyncRequireImpl(8894, dependencyMap.paths), WebhookGuildChannelSelector, obj2);
+      const tmp7 = asyncRequireImpl(8894, dependencyMap.paths);
     }
   }, items);
   const effect = noop.useEffect(() => {

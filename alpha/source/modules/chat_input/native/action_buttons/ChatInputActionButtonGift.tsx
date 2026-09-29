@@ -1,22 +1,22 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11899
+// Function ID: 11900
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 4825, 10128, 11444, 2042, 21, 4836, 576, 504, 10203, 2011, 6806, 2029, 11731, 10496, 1115, 5293, 11721, 2031, 11732, 2]
+// Dependencies: [32, 19, 17, 4825, 10295, 11613, 2042, 21, 4836, 576, 504, 10370, 2011, 6972, 2029, 11900, 10665, 1115, 5459, 11890, 2031, 11901, 2]
 
-// Module 11730 (ChatInputActionButtonGift)
+// Module 11899 (ChatInputActionButtonGift)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import PromotionsStore from "PromotionsStore" /* 10295 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ChatInputActionType = fn(11444).ChatInputActionType;
+const ChatInputActionType = fn(11613).ChatInputActionType;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);

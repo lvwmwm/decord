@@ -1,14 +1,14 @@
-// Module ID: 14233
-// Function ID: 14234
+// Module ID: 14409
+// Function ID: 14410
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 14215, 21, 4836, 576, 6368, 1115, 1177, 1485, 1364, 14234, 6544, 14235, 4832, 5745, 5281, 2]
+// Dependencies: [32, 19, 17, 14391, 21, 4836, 576, 6534, 1115, 1177, 1485, 1364, 14410, 6710, 14411, 4832, 5912, 5447, 2]
 // Exports: default
 
-// Module 14233 (WebAuthnRegisterStep)
+// Module 14409 (WebAuthnRegisterStep)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6368 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6534 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -42,7 +42,7 @@ function AndroidPasskeyRadioGroup(onChange) {
   return React5(native.RadioGroup, obj4);
 }
 const View = fn(17).View;
-const WebAuthnScreens = fn(14215).WebAuthnScreens;
+const WebAuthnScreens = fn(14391).WebAuthnScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);
@@ -76,10 +76,10 @@ export default function WebAuthnRegisterStep() {
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError, setRegistering }), items2);
   const obj3 = navigation(1364);
-  const announceError = navigation(14234).useAnnounceError(tmp10);
+  const announceError = navigation(14410).useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: null };
   obj4 = { style: tmp4.centerFlex, children: null };
-  const items3 = [closure_7(navigation(14235).KeyImage, {}), , ];
+  const items3 = [closure_7(navigation(14411).KeyImage, {}), , ];
   obj5 = { style: tmp4.margin, variant: "text-md/normal", children: null };
   const intl = tmp(1115).intl;
   const string = intl.string;
@@ -114,7 +114,7 @@ export default function WebAuthnRegisterStep() {
     string2Result = string2(t2.oibaQa);
   }
   const obj8 = {
-    children: closure_7(navigation(5281).Button, {
+    children: closure_7(navigation(5447).Button, {
       text: string2Result,
       disabled: tmp7,
       loading: tmp7,
@@ -124,7 +124,7 @@ export default function WebAuthnRegisterStep() {
       size: "lg"
     })
   };
-  items4[2] = closure_7(navigation(5745).ButtonGroup, obj8);
+  items4[2] = closure_7(navigation(5912).ButtonGroup, obj8);
   rect.children = items4;
-  return closure_8(navigation(6544).SafeAreaPaddingView, rect);
+  return closure_8(navigation(6710).SafeAreaPaddingView, rect);
 };

@@ -1,15 +1,15 @@
-// Module ID: 15755
-// Function ID: 15756
+// Module ID: 15930
+// Function ID: 15931
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1074, 21, 1177, 9578, 4836, 576, 9580, 9190, 9191, 9193, 1241, 1397, 15756, 9138, 9140, 9134, 9136, 9569, 5340, 9258, 9204, 2]
+// Dependencies: [19, 17, 1074, 21, 1177, 9745, 4836, 576, 9747, 9355, 9356, 9358, 1241, 1397, 15931, 9303, 9305, 9299, 9301, 9736, 5506, 9425, 9369, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15755 (VoiceUserItem)
+// Module 15930 (VoiceUserItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9745 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ const createStyles = fn(4836);
 let obj = { voiceState: { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 5 }, disabled: { opacity: 0.5 }, voiceStateCollapsed: null, voiceStateIcon: null, legacyVoiceStateIcon: null, gameIcon: null };
 let size = { marginTop: 4, marginRight: 8, width: 32, height: 32, borderRadius: nativeDefault.radii.lg, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", overflow: "hidden" };
 obj.voiceStateCollapsed = size;
-const ChannelListLayout = fn(9580);
+const ChannelListLayout = fn(9747);
 let merged = Object.assign(ChannelListLayout.makeSizeStyle(14));
 obj.voiceStateIcon = { marginLeft: 6 };
 obj.legacyVoiceStateIcon = { tintColor: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };

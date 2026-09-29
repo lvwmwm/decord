@@ -1,15 +1,15 @@
-// Module ID: 6690
-// Function ID: 6691
+// Module ID: 6856
+// Function ID: 6857
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 2045, 1074, 2052, 6691, 6692, 504, 6693, 6722, 38, 6727, 6584, 6729, 6731, 5820, 2]
+// Dependencies: [109, 19, 2045, 1074, 2052, 6857, 6858, 504, 6859, 6888, 38, 6893, 6750, 6895, 6897, 5987, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 6690 (GameInvitesChannelUtils)
+// Module 6856 (GameInvitesChannelUtils)
 import _modDef38 from "module_38" /* 38 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5820 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6692 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 6722 */;
-import hasFlagDefault from "hasFlag" /* 6731 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5987 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6858 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 6888 */;
+import hasFlagDefault from "hasFlag" /* 6897 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -21,7 +21,7 @@ const useMemo = fn(19).useMemo;
 const Constants = fn(1074);
 ({ ActivityFlags: closure_7, ActivityTypes: closure_8, MAX_CHANNEL_NAME_LENGTH: closure_9 } = Constants);
 const ChannelFlags = fn(2052).ChannelFlags;
-const MAX_FORUM_POST_TAGS = fn(6691).MAX_FORUM_POST_TAGS;
+const MAX_FORUM_POST_TAGS = fn(6857).MAX_FORUM_POST_TAGS;
 let c12 = "No Mic";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");

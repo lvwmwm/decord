@@ -1,9 +1,9 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12453
+// Function ID: 12454
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4836, 4685, 1613, 12283, 12284, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 4685, 1613, 12454, 12455, 4832, 1115, 2]
 
-// Module 12282 (ForumChannelEmptyState)
+// Module 12453 (ForumChannelEmptyState)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import shared from "shared" /* 4685 */;
 import Text_Text from "Text/Text" /* 4832 */;
@@ -35,9 +35,9 @@ export default noop.memo((topViewHeight) => {
   const tmp7 = React3;
   const tmp9 = React4;
   if (obj3.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12283);
+    let tmp4Result = tmp4(12454);
   } else {
-    tmp4Result = tmp4(12284);
+    tmp4Result = tmp4(12455);
   }
   const items1 = [hasOwnProperty(tmp9, { source: tmp4Result, style: tmp.image }), , ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };

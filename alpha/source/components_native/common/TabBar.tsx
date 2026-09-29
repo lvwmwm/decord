@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 11001
+// Function ID: 11002
 // Name: TabBar
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 6073, 1115, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 6239, 1115, 2]
 // Exports: default
 
-// Module 10832 (TabBar)
+// Module 11001 (TabBar)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

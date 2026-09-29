@@ -1,16 +1,16 @@
-// Module ID: 6702
-// Function ID: 6703
+// Module ID: 6868
+// Function ID: 6869
 // Name: GuildSubscriptions
-// Dependencies: [1074, 2070, 6703, 6704, 6705, 2040, 12, 2]
+// Dependencies: [1074, 2070, 6869, 6870, 6871, 2040, 12, 2]
 
-// Module 6702 (GuildSubscriptions)
+// Module 6868 (GuildSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1074 */;
 import Timers from "Timers" /* 2040 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 6703 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6704 */;
-import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 6705 */;
+import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 6869 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6870 */;
+import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 6871 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

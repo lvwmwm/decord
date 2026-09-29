@@ -1,12 +1,12 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9216
+// Function ID: 9217
 // Name: GuildSettingsServerTagUtils
-// Dependencies: [2067, 4469, 1074, 9052, 7610, 2]
+// Dependencies: [2067, 4469, 1074, 9217, 7775, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9051 (GuildSettingsServerTagUtils)
-import GuildTagUtils from "GuildTagUtils" /* 7610 */;
-import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9052 */;
+// Module 9216 (GuildSettingsServerTagUtils)
+import GuildTagUtils from "GuildTagUtils" /* 7775 */;
+import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9217 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12933
-// Function ID: 12934
+// Module ID: 13103
+// Function ID: 13104
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 6814, 1074, 21, 4836, 576, 6593, 4488, 1115, 3199, 8678, 4832, 504, 12, 2]
+// Dependencies: [19, 17, 6980, 1074, 21, 4836, 576, 6759, 4488, 1115, 3199, 8843, 4832, 504, 12, 2]
 // Exports: default
 
-// Module 12933 (PremiumAccountCredit)
+// Module 13103 (PremiumAccountCredit)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 6814 */;
+import EntitlementStore from "EntitlementStore" /* 6980 */;
 
 const PremiumUtilsDefault = PremiumUtils;
 
@@ -71,14 +71,14 @@ function AccountCreditTier(arg0) {
   if (result1) {
     const obj8 = { style: tmp.boostIcon, children: null };
     const obj9 = { size: "md", color: tmp4(576).unsafe_rawColors.GUILD_BOOSTING_PINK };
-    obj8.children = tmp24(tmp2(8678).BoostGemIcon, obj9);
+    obj8.children = tmp24(tmp2(8843).BoostGemIcon, obj9);
     let tmp24Result = tmp24(tmp22, obj8);
     let tmp27 = tmp24;
   } else {
-    const obj10 = { size: tmp2(6593).GameIconSizes.SMALL, skuId: result };
-    tmp24Result = tmp24(tmp4(6593), obj10);
+    const obj10 = { size: tmp2(6759).GameIconSizes.SMALL, skuId: result };
+    tmp24Result = tmp24(tmp4(6759), obj10);
     tmp27 = tmp24;
-    const tmp4Result = tmp4(6593);
+    const tmp4Result = tmp4(6759);
   }
   const items1 = [tmp24Result, , ];
   const obj11 = { style: tmp.textContainer, children: null };
@@ -107,7 +107,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4836);
 let obj2 = { title: { marginBottom: 12 }, creditList: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, creditItem: { flexDirection: "row", alignItems: "center", padding: 16 }, boostIcon: null, textContainer: null, headerText: null, subText: null, timeText: null, divider: null, creditDescription: null };
-let size = { width: fn(6593).GameIconImageSize[fn(undefined, 6593).GameIconSizes.SMALL], height: fn(6593).GameIconImageSize[fn(undefined, 6593).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
+let size = { width: fn(6759).GameIconImageSize[fn(undefined, 6759).GameIconSizes.SMALL], height: fn(6759).GameIconImageSize[fn(undefined, 6759).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
 obj2.boostIcon = size;
 obj2.textContainer = { marginLeft: 16, marginRight: 16, flexDirection: "column", flex: 1 };
 obj2.headerText = { lineHeight: 20 };

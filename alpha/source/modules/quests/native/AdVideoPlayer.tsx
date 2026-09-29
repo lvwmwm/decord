@@ -1,18 +1,18 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14739
+// Function ID: 14740
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 1980, 1074, 21, 576, 7756, 4836, 672, 14551, 4566, 5280, 5284, 4837, 4840, 1110, 504, 1364, 1231, 1613, 1115, 5435, 14565, 14567, 14569, 14570, 9640, 7722, 7724, 14571, 14572, 2]
+// Dependencies: [32, 19, 17, 1980, 1074, 21, 576, 7921, 4836, 672, 14726, 4566, 5446, 5450, 4837, 4840, 1110, 504, 1364, 1231, 1613, 1115, 5602, 14740, 14742, 14744, 14745, 9807, 7887, 7889, 14746, 14747, 2]
 
-// Module 14564 (AdVideoPlayer)
+// Module 14739 (AdVideoPlayer)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import timing from "timing" /* 4837 */;
 import timingPresets from "timingPresets" /* 4840 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import _modDef7756 from "module_7756" /* 7756 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14551 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
+import _modDef7921 from "module_7921" /* 7921 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14726 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
@@ -28,7 +28,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
-const _isNativeReflectConstruct = noop.memo(_modDef7756);
+const _isNativeReflectConstruct = noop.memo(_modDef7921);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }
@@ -412,25 +412,25 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       flag = true;
     }
     if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-      if (tmp !== tmp2(14551).PlayerState.PAUSED) {
-        if (tmp !== tmp2(14551).PlayerState.LOADING) {
-          if (tmp === tmp2(14551).PlayerState.PLAYING) {
-            callback(tmp2(14551).PlayerState.PAUSED);
+      if (tmp !== tmp2(14726).PlayerState.PAUSED) {
+        if (tmp !== tmp2(14726).PlayerState.LOADING) {
+          if (tmp === tmp2(14726).PlayerState.PLAYING) {
+            callback(tmp2(14726).PlayerState.PAUSED);
             if (onPausePlayback != null) {
-              tmp16(tmp2(14551).PlaybackTriggerSource.USER_INTERACTION);
+              tmp16(tmp2(14726).PlaybackTriggerSource.USER_INTERACTION);
             }
           }
         }
       }
-      callback(tmp2(14551).PlayerState.PLAYING);
+      callback(tmp2(14726).PlayerState.PLAYING);
       if (onResumePlayback != null) {
-        tmp6(tmp2(14551).PlaybackTriggerSource.USER_INTERACTION);
+        tmp6(tmp2(14726).PlaybackTriggerSource.USER_INTERACTION);
       }
     }
     callback4(0);
     callback(AdsVideoTypes.PlayerState.PLAYING);
     if (onResumePlayback != null) {
-      tmp11(tmp2(14551).PlaybackTriggerSource.USER_INTERACTION);
+      tmp11(tmp2(14726).PlaybackTriggerSource.USER_INTERACTION);
     }
   }, items6);
   const items7 = [callback6];
@@ -441,9 +441,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     closure_37.current = false;
     if (first2 === AdsVideoTypes.PlayerState.PLAYING) {
       closure_37.current = true;
-      callback(tmp2(14551).PlayerState.PAUSED);
+      callback(tmp2(14726).PlayerState.PAUSED);
       if (onPausePlayback != null) {
-        tmp6(tmp2(14551).PlaybackTriggerSource.SYSTEM_INITIATED);
+        tmp6(tmp2(14726).PlaybackTriggerSource.SYSTEM_INITIATED);
       }
     }
   }, items8);
@@ -452,9 +452,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     if (ref5.current) {
       tmp.current = false;
       if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-        callback(tmp3(14551).PlayerState.PLAYING);
+        callback(tmp3(14726).PlayerState.PLAYING);
         if (onResumePlayback != null) {
-          tmp7(tmp3(14551).PlaybackTriggerSource.SYSTEM_INITIATED);
+          tmp7(tmp3(14726).PlaybackTriggerSource.SYSTEM_INITIATED);
         }
       }
     }

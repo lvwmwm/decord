@@ -1,10 +1,10 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10822
+// Function ID: 10823
 // Name: BadgeManagementExperiment
 // Dependencies: [1435, 2]
 // Exports: useIsBadgeManagementEnabled
 
-// Module 10653 (BadgeManagementExperiment)
+// Module 10822 (BadgeManagementExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

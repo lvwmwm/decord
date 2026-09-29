@@ -1,19 +1,19 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14271
+// Function ID: 14272
 // Name: SoundboardManager
-// Dependencies: [5, 1993, 2099, 5319, 3, 14100, 14101, 14102, 9357, 6756, 2]
+// Dependencies: [5, 1993, 2099, 5485, 3, 14272, 14273, 14274, 9524, 6922, 2]
 
-// Module 14099 (SoundboardManager)
+// Module 14271 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
-import SoundUtils from "SoundUtils" /* 9357 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 14101 */;
-import getSoundboardSoundURLDefault from "getSoundboardSoundURL" /* 14102 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6922 */;
+import SoundUtils from "SoundUtils" /* 9524 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 14273 */;
+import getSoundboardSoundURLDefault from "getSoundboardSoundURL" /* 14274 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SoundboardStore from "SoundboardStore" /* 5319 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 14100 */;
+import SoundboardStore from "SoundboardStore" /* 5485 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 14272 */;
 
 require = fn;
 let map = new Map();

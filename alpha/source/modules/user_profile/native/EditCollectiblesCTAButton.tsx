@@ -1,17 +1,17 @@
-// Module ID: 7617
-// Function ID: 7618
+// Module ID: 7782
+// Function ID: 7783
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 4825, 1076, 1609, 21, 4836, 1613, 504, 7618, 4566, 5280, 4488, 6974, 7619, 1115, 4801, 7620, 7621, 6961, 4800, 5281, 2]
+// Dependencies: [19, 4825, 1076, 1609, 21, 4836, 1613, 504, 7783, 4566, 5446, 4488, 7140, 7784, 1115, 4801, 7785, 7786, 7127, 4800, 5447, 2]
 
-// Module 7617 (EditCollectiblesCTAButton)
+// Module 7782 (EditCollectiblesCTAButton)
 import util from "util" /* 1115 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5280 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 7620 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7621 */;
+import spring from "spring" /* 5446 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7127 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 7785 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7786 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

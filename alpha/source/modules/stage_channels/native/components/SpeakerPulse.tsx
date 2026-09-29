@@ -1,10 +1,10 @@
-// Module ID: 13657
-// Function ID: 13658
+// Module ID: 13826
+// Function ID: 13827
 // Name: SpeakerPulse
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 504, 4566, 4837, 2]
 // Exports: default
 
-// Module 13657 (SpeakerPulse)
+// Module 13826 (SpeakerPulse)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

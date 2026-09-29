@@ -1,12 +1,12 @@
-// Module ID: 6397
-// Function ID: 6398
+// Module ID: 6563
+// Function ID: 6564
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4836, 576, 5936, 2]
+// Dependencies: [19, 21, 4836, 576, 6102, 2]
 // Exports: default
 
-// Module 6397 (AuthNavbarPlaceholder)
+// Module 6563 (AuthNavbarPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

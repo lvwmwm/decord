@@ -1,20 +1,20 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12651
+// Function ID: 12652
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5726, 1074, 21, 4836, 576, 4800, 9097, 8051, 1177, 1115, 4832, 5281, 7846, 2]
+// Dependencies: [19, 17, 5893, 1074, 21, 4836, 576, 4800, 9262, 8216, 1177, 1115, 4832, 5447, 8011, 2]
 // Exports: default
 
-// Module 12481 (EndStageActionSheet)
+// Module 12651 (EndStageActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8051 */;
-import CallsUtils from "CallsUtils" /* 9097 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8011 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8216 */;
+import CallsUtils from "CallsUtils" /* 9262 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(5726).EXPLICIT_END_STAGE_SHEET_KEY;
+let closure_4 = fn(5893).EXPLICIT_END_STAGE_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4836);
@@ -44,7 +44,7 @@ export default function EndStageActionSheet(channel) {
     ActionSheetActionCreatorsDefault.hideActionSheet(closure_4);
     CallsUtils.handleDisconnect(channel);
   };
-  obj5.children = closure_5(channel(5281).Button, obj6);
+  obj5.children = closure_5(channel(5447).Button, obj6);
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: null };
   const obj8 = { variant: "destructive", text: null, onPress: null };
@@ -55,7 +55,7 @@ export default function EndStageActionSheet(channel) {
     ActionSheetActionCreatorsDefault.hideActionSheet(closure_4);
     CallsUtils.handleDisconnect(channel);
   };
-  obj7.children = closure_5(channel(5281).Button, obj8);
+  obj7.children = closure_5(channel(5447).Button, obj8);
   items[3] = closure_5(View, obj7);
   obj2.children = items;
   obj.children = closure_6(View, obj2);

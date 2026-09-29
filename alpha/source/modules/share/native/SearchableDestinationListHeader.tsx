@@ -1,18 +1,18 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10615
+// Function ID: 10616
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4836, 576, 1613, 5943, 7288, 5936, 1364, 6364, 2]
+// Dependencies: [19, 21, 4836, 576, 1613, 6109, 7453, 6102, 1364, 6530, 2]
 // Exports: default
 
-// Module 10446 (SearchableDestinationListHeader)
+// Module 10615 (SearchableDestinationListHeader)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import _mod6109 from "module_6109" /* 6109 */;
+import HeaderShared from "HeaderShared" /* 7453 */;
 import noop from "module_19" /* 19 */;
 
-const useIsWindowLarge = tmp5(6364);
+const useIsWindowLarge = tmp5(6530);
 require = fn;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
@@ -51,5 +51,5 @@ export default function SearchableDestinationListHeader(arg0) {
     const tmp5Result = useIsWindowLarge;
   }
   obj.headerStatusBarHeight = num + nativeDefault.space.PX_8;
-  return tmp4(_mod5943.Header, obj);
+  return tmp4(_mod6109.Header, obj);
 };

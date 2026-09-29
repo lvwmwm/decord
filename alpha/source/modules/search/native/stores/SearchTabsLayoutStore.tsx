@@ -1,21 +1,20 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 12014
+// Function ID: 12015
 // Name: SearchTabsLayoutStore
-// Dependencies: [11846, 2045, 6699, 11850, 11851, 11852, 11822, 7303, 558, 11823, 11849, 11848, 504, 573, 2]
+// Dependencies: [12015, 2045, 6865, 12019, 12020, 12021, 11991, 7468, 558, 11992, 12018, 12017, 504, 573, 2]
 
-// Module 11845 (SearchTabsLayoutStore)
+// Module 12014 (SearchTabsLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchUtils from "SearchUtils" /* 11823 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
-import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11849 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
+import SearchUtils from "SearchUtils" /* 11992 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12015 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12018 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 6699 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11850 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 11851 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11852 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+import SearchMessageStore from "SearchMessageStore" /* 6865 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12019 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 12020 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12021 */;
+import SearchQueryStore from "SearchQueryStore" /* 11991 */;
 
 require = fn;
 function handleSearchQuery(searchContext) {
@@ -94,8 +93,8 @@ function computeLayoutForState(value) {
         const totalCount = SearchMessageStore.getTotalCount(SearchUtils.getSearchTabFetchId(searchContext, item, searchResultsQuery));
         let sum = null;
         if (null != totalCount) {
-          sum = totalCount + tmp8(11849).getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount > 0);
-          const tmp8Result = tmp8(11849);
+          sum = totalCount + tmp8(12018).getSmartSearchCitationsCount(tmp10, tmp11, totalCount > 0);
+          const tmp8Result = tmp8(12018);
         }
         acc[item] = sum;
         tmp10 = searchContext;
@@ -124,16 +123,21 @@ function computeLayoutForState(value) {
       } else if (found.every((item) => null != reduced[item])) {
         const found1 = found.filter((item) => {
           if (item === constants.MESSAGES) {
-            let tmp5 = 0 !== tmp3[constants.MESSAGES];
-            if (!tmp5) {
-              const intelligenceSearchStatus = IntelligenceSearchUtils.getIntelligenceSearchStatus(tmp, tmp2);
-              tmp5 = intelligenceSearchStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING;
+            flag = true;
+            if (0 === tmp3[constants.MESSAGES]) {
+              const smartSearchQuery = SmartSearchUtils.getSmartSearchQuery(tmp, tmp2);
+              let tmp8 = null != smartSearchQuery;
+              if (tmp8) {
+                const smartSearchStatus = tmp4(12018).getSmartSearchStatus(smartSearchQuery);
+                tmp8 = smartSearchStatus === tmp4(12017).SmartSearchStatus.LOADING;
+                const tmp4Result = tmp4(12018);
+              }
+              flag = tmp8;
             }
-            let tmp4 = tmp5;
           } else {
-            tmp4 = 0 !== tmp3[item];
+            flag = 0 !== tmp3[item];
           }
-          return tmp4;
+          return flag;
         });
         flag2 = false;
         visibleTabCounts = reduced;
@@ -194,7 +198,8 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-const SearchConstants = fn(7303);
+SmartSearchResultsStoreDefault;
+const SearchConstants = fn(7468);
 ({ SearchTabs: c10, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: closure_11, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_12 } = SearchConstants);
 let closure_13 = [];
 const map = new Map();
@@ -203,8 +208,8 @@ class SearchTabsLayoutStore extends Store {
 }
 const prototype = SearchTabsLayoutStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore, IntelligenceSearchStore);
-  const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, IntelligenceSearchStore];
+  this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore, SmartSearchResultsStore);
+  const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, SmartSearchResultsStore];
   this.syncWith(items, computeLayoutForAll);
 };
 prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {

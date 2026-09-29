@@ -1,13 +1,13 @@
-// Module ID: 14489
-// Function ID: 14490
+// Module ID: 14664
+// Function ID: 14665
 // Name: ConnectionsSetting
-// Dependencies: [1074, 11006, 1115, 14490, 14492, 2]
+// Dependencies: [1074, 11175, 1115, 14665, 14667, 2]
 
-// Module 14489 (ConnectionsSetting)
+// Module 14664 (ConnectionsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14490 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14665 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

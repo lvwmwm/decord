@@ -1,18 +1,18 @@
-// Module ID: 16320
-// Function ID: 16321
+// Module ID: 16499
+// Function ID: 16500
 // Name: FeedbackActionSheetV2
-// Dependencies: [32, 19, 17, 11121, 21, 4836, 576, 4800, 12, 7720, 5298, 5039, 11143, 1981, 1115, 4832, 11125, 5916, 5999, 5917, 5281, 1613, 6571, 6570, 6619, 6045, 2]
+// Dependencies: [32, 19, 17, 11290, 21, 4836, 576, 4800, 12, 7885, 5464, 5039, 11312, 1981, 1115, 4832, 11294, 6082, 6165, 6083, 5447, 1613, 6737, 6736, 6785, 6211, 2]
 // Exports: default
 
-// Module 16320 (FeedbackActionSheetV2)
+// Module 16499 (FeedbackActionSheetV2)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import usePreviousDefault from "usePrevious" /* 7720 */;
+import useMountEffectDefault from "useMountEffect" /* 5464 */;
+import usePreviousDefault from "usePrevious" /* 7885 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ function closeActionSheet() {
   ActionSheetActionCreatorsDefault.hideActionSheet();
 }
 const View = fn(17).View;
-const FeedbackRating = fn(11121).FeedbackRating;
+const FeedbackRating = fn(11290).FeedbackRating;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4836);
@@ -103,7 +103,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     dependencyMap();
   });
   const tmp6Result4 = _slicedToArray(ref.useState(false), 2);
-  const unmountEffect = optionsTree(5298).useUnmountEffect(() => {
+  const unmountEffect = optionsTree(5464).useUnmountEffect(() => {
     if (c16) {
       const obj3 = { rating: first2, category: null, reason: null, dontShowAgain: null };
       value = undefined;
@@ -140,8 +140,8 @@ export default function FeedbackActionSheetV2(optionsTree) {
         }
       }
       obj4.hideHelpdeskLink = hideHelpdeskLink;
-      obj2.pushLazy(asyncRequireImpl(11143, dependencyMap.paths), obj4);
-      const tmp11 = asyncRequireImpl(11143, dependencyMap.paths);
+      obj2.pushLazy(asyncRequireImpl(11312, dependencyMap.paths), obj4);
+      const tmp11 = asyncRequireImpl(11312, dependencyMap.paths);
     } else {
       let obj = { rating: first2, category: null, reason: null, dontShowAgain: null, feedback: "" };
       value2 = undefined;
@@ -204,7 +204,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     }
     const items2 = [tmp35, , ];
     const obj5 = { ratingOptions, selectedRating: first2, onChangeRating: callback };
-    items2[1] = closure_7(tmp3(11125), obj5);
+    items2[1] = closure_7(tmp3(11294), obj5);
     let tmp37Result = null;
     if (!hideDontShowAgainCheckbox) {
       const obj6 = { start: true, end: true, checked: first1, label: null, onPress: null };
@@ -213,7 +213,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       obj6.onPress = function onPress() {
         return closure_9(!first1);
       };
-      tmp37Result = tmp37(tmp20(5916).TableCheckboxRow, obj6);
+      tmp37Result = tmp37(tmp20(6082).TableCheckboxRow, obj6);
     }
     const obj7 = { children: null };
     items2[2] = tmp37Result;
@@ -230,7 +230,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
           hasIcons: false,
           children: first.map((label, index) => {
                   closure_0 = label;
-                  return closure_7(optionsTree(5917).TableRow, {
+                  return closure_7(optionsTree(6083).TableRow, {
                     label: label.label,
                     labelLineClamp: 2,
                     onPress() {
@@ -239,7 +239,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
                   }, index);
                 })
         };
-        obj9.children = closure_7(tmp20(5999).TableRowGroup, obj10);
+        obj9.children = closure_7(tmp20(6165).TableRowGroup, obj10);
         const items3 = [closure_7(closure_5, obj9), ];
         const obj11 = { variant: "secondary", size: "sm", text: null, onPress: null };
         const intl2 = tmp20(1115).intl;
@@ -247,7 +247,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         obj11.onPress = function onPress() {
           return closure_11(null);
         };
-        items3[1] = closure_7(tmp20(5281).Button, obj11);
+        items3[1] = closure_7(tmp20(5447).Button, obj11);
         obj8.children = items3;
         tmp33Result = closure_9(first1, obj8);
         problemsHeader = categoriesHeader;
@@ -262,7 +262,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       const problemOptions = first4.problemOptions;
       obj14.children = problemOptions.map((label, index) => {
         closure_0 = label;
-        return closure_7(optionsTree(5917).TableRow, {
+        return closure_7(optionsTree(6083).TableRow, {
           label: label.label,
           labelLineClamp: 2,
           onPress() {
@@ -270,7 +270,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
           }
         }, index);
       });
-      obj13.children = closure_7(tmp20(5999).TableRowGroup, obj14);
+      obj13.children = closure_7(tmp20(6165).TableRowGroup, obj14);
       const items4 = [closure_7(closure_5, obj13), ];
       const obj15 = { variant: "secondary", size: "sm", text: null, onPress: null };
       let intl = tmp20(1115).intl;
@@ -283,7 +283,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         }
         return tmp3;
       };
-      items4[1] = closure_7(tmp20(5281).Button, obj15);
+      items4[1] = closure_7(tmp20(5447).Button, obj15);
       obj12.children = items4;
       tmp33Result = closure_9(first1, obj12);
     }
@@ -305,13 +305,13 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp40Result = null;
   if (showHeaderCloseButton) {
     const obj18 = { onPress };
-    tmp40Result = tmp40(tmp20(6619).ActionSheetCloseButton, obj18);
+    tmp40Result = tmp40(tmp20(6785).ActionSheetCloseButton, obj18);
   }
   obj17.trailing = tmp40Result;
-  obj16.header = closure_7(optionsTree(6570).BottomSheetTitleHeader, obj17);
+  obj16.header = closure_7(optionsTree(6736).BottomSheetTitleHeader, obj17);
   const obj19 = { contentContainerStyle: null, children: tmp33Result };
   const items5 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
   obj19.contentContainerStyle = items5;
-  obj16.children = closure_7(optionsTree(6045).BottomSheetScrollView, obj19);
-  return closure_7(optionsTree(6571).BottomSheet, obj16);
+  obj16.children = closure_7(optionsTree(6211).BottomSheetScrollView, obj19);
+  return closure_7(optionsTree(6737).BottomSheet, obj16);
 };

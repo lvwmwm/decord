@@ -1,19 +1,19 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8508
+// Function ID: 8509
 // Name: GameProfileSimilarGames
-// Dependencies: [32, 19, 17, 8167, 8223, 21, 576, 4836, 8129, 8139, 8133, 1115, 8195, 4832, 8194, 8213, 8344, 1479, 8179, 8180, 2]
+// Dependencies: [32, 19, 17, 8332, 8388, 21, 576, 4836, 8294, 8304, 8298, 1115, 8360, 4832, 8359, 8378, 8509, 1479, 8344, 8345, 2]
 // Exports: default
 
-// Module 8343 (GameProfileSimilarGames)
+// Module 8508 (GameProfileSimilarGames)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import _mod8179 from "module_8179" /* 8179 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8195 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8213 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 8344 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8298 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8304 */;
+import _mod8344 from "module_8344" /* 8344 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8360 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8378 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 8509 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,8 +28,8 @@ function ListPadding() {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, Pressable: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let closure_8 = fn(8167).MOBILE_GAME_PROFILE_MAX_WIDTH;
-fn(8223).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+let closure_8 = fn(8332).MOBILE_GAME_PROFILE_MAX_WIDTH;
+fn(8388).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
@@ -144,7 +144,7 @@ let closure_20 = noop.memo((cardWidth) => {
   const obj = { style: tmp.container, headerStyle: tmp.header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: null };
   const obj2 = { contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => closure_2_10(closure_19, { animationDelayMs: arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS, cardWidth }, arg1)) };
   obj.children = closure_10(GameProfileSkeletonCardRowDefault, obj2);
-  return closure_10(cardWidth(8194).GameProfileSectionSkeleton, obj);
+  return closure_10(cardWidth(8359).GameProfileSectionSkeleton, obj);
 });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSimilarGames.tsx");
@@ -167,7 +167,7 @@ export default function GameProfileSimilarGames(arg0) {
     obj3.title = intl.string(util.t["6rLyQB"]);
     const obj5 = {
       horizontal: true,
-      renderScrollComponent: tmp2(8180),
+      renderScrollComponent: tmp2(8345),
       data: similarGames,
       renderItem(game) {
           return closure_2_10(closure_18, { game: game.item, trackAction, cardWidth });
@@ -179,8 +179,8 @@ export default function GameProfileSimilarGames(arg0) {
       decelerationRate: "fast",
       snapToInterval: result + PX_12
     };
-    obj3.children = closure_10(_mod8179.FlashList, obj5);
-    tmp7 = closure_10(tmp2(8194), obj3);
-    const tmp2Result = tmp2(8194);
+    obj3.children = closure_10(_mod8344.FlashList, obj5);
+    tmp7 = closure_10(tmp2(8359), obj3);
+    const tmp2Result = tmp2(8359);
   }
 };

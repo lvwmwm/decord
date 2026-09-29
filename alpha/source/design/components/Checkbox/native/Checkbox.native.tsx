@@ -1,14 +1,14 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8897
+// Function ID: 8898
 // Name: Checkbox
-// Dependencies: [17, 21, 4836, 4548, 1115, 5279, 5929, 4832, 2]
+// Dependencies: [17, 21, 4836, 4548, 1115, 5445, 6095, 4832, 2]
 // Exports: Checkbox
 
-// Module 8732 (Checkbox)
+// Module 8897 (Checkbox)
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import FormCheckbox from "FormCheckbox" /* 5929 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import FormCheckbox from "FormCheckbox" /* 6095 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;

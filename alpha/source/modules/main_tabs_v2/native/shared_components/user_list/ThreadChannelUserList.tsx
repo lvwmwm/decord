@@ -1,9 +1,9 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16708
+// Function ID: 16709
 // Name: ThreadChannelUserList
-// Dependencies: [19, 2045, 2108, 2067, 1372, 1074, 21, 6583, 504, 16520, 6470, 550, 6730, 4678, 7624, 10326, 2]
+// Dependencies: [19, 2045, 2108, 2067, 1372, 1074, 21, 6749, 504, 16709, 6636, 550, 6896, 4678, 7789, 10495, 2]
 
-// Module 16519 (ThreadChannelUserList)
+// Module 16708 (ThreadChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import noop from "module_19" /* 19 */;

@@ -1,13 +1,13 @@
-// Module ID: 7666
-// Function ID: 7667
+// Module ID: 7831
+// Function ID: 7832
 // Name: ProfileFrame
-// Dependencies: [19, 17, 7648, 7667, 21, 4566, 4836, 7668, 5899, 7669, 4837, 7670, 7671, 2]
+// Dependencies: [19, 17, 7813, 7832, 21, 4566, 4836, 7833, 6065, 7834, 4837, 7835, 7836, 2]
 // Exports: default
 
-// Module 7666 (ProfileFrame)
+// Module 7831 (ProfileFrame)
 import timing from "timing" /* 4837 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 7671 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 7836 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -126,9 +126,9 @@ function LiveProfileFrame(frame) {
   c10 = undefined;
   c11 = undefined;
   const tmp = c10();
-  closure_6 = frame(7669).useIsProfileFrameLayerPreloadEnabled("ProfileFrame");
-  let obj = frame(7669);
-  const settled = frame(7668).usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
+  closure_6 = frame(7834).useIsProfileFrameLayerPreloadEnabled("ProfileFrame");
+  let obj = frame(7834);
+  const settled = frame(7833).usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
     const layers = frame.layers;
@@ -141,7 +141,7 @@ function LiveProfileFrame(frame) {
       return result;
     });
   }, items);
-  const obj2 = frame(7668);
+  const obj2 = frame(7833);
   const obj3 = profileThemeType;
   let num = 0;
   if (settled) {
@@ -160,7 +160,7 @@ function LiveProfileFrame(frame) {
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
-        ({ overflowTop: c9, overflowBottom: c10, overflowHorizontal: c11 } = containerWidth(7670)(frame, containerWidth));
+        ({ overflowTop: c9, overflowBottom: c10, overflowHorizontal: c11 } = containerWidth(7835)(frame, containerWidth));
         const obj5 = { style: null, children: null };
         const items2 = [tmp.container, ];
         const obj6 = { opacity: sharedValue };
@@ -175,8 +175,8 @@ function LiveProfileFrame(frame) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_5 = fn(7648).useFramePreviewOverrideStore;
-const ProfileFrameConstants = fn(7667);
+let closure_5 = fn(7813).useFramePreviewOverrideStore;
+const ProfileFrameConstants = fn(7832);
 ({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: metroRequire, PROFILE_FRAME_Z_INDEX: closure_7 } = ProfileFrameConstants);
 const jsx = fn(21).jsx;
 let source = { duration: 150, easing: null };

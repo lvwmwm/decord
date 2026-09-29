@@ -1,12 +1,12 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9568
+// Function ID: 9569
 // Name: StageActionBar
-// Dependencies: [19, 17, 21, 4836, 5727, 9402, 8957, 8861, 9356, 5729, 9353, 9462, 2]
+// Dependencies: [19, 17, 21, 4836, 5894, 9569, 9122, 9026, 9523, 5896, 9520, 9629, 2]
 
-// Module 9401 (StageActionBar)
-import StageActionBarButtons from "StageActionBarButtons" /* 9353 */;
-import ChannelCallActionBar from "ChannelCallActionBar" /* 9402 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 9462 */;
+// Module 9568 (StageActionBar)
+import StageActionBarButtons from "StageActionBarButtons" /* 9520 */;
+import ChannelCallActionBar from "ChannelCallActionBar" /* 9569 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 9629 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,12 +41,12 @@ export default noop.memo((channel) => {
   const callback = noop.useCallback((isSmallSize) => {
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      let tmp4 = hasOwnProperty(tmp2(9402).DisconnectStreamButton, obj2);
+      let tmp4 = hasOwnProperty(tmp2(9569).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
-      if (actionBarPrimaryButton === tmp2(9402).ActionBarPrimaryButton.END_CALL) {
+      if (actionBarPrimaryButton === tmp2(9569).ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(9353).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(9520).DisconnectStageButton, obj);
       }
     }
     return tmp4;

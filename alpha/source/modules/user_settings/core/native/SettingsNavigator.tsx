@@ -1,22 +1,22 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16914
+// Function ID: 16915
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2112, 14249, 1074, 21, 7339, 4836, 576, 14955, 1177, 4832, 1486, 12997, 16727, 6416, 563, 6583, 6603, 14251, 6895, 14252, 6421, 13990, 4531, 5435, 1115, 16040, 16728, 14140, 16729, 38, 2]
+// Dependencies: [32, 19, 17, 2112, 14425, 1074, 21, 7504, 4836, 576, 15130, 1177, 4832, 1486, 13167, 16915, 6582, 563, 6749, 6769, 14427, 7061, 14428, 6587, 14162, 4531, 5602, 1115, 16216, 16916, 14312, 16917, 38, 2]
 
-// Module 16726 (SettingsNavigator)
+// Module 16914 (SettingsNavigator)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14251 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 14955 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16040 */;
+import Pressables from "Pressables" /* 5602 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6582 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14427 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 15130 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16216 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14425 */;
 
 const require = globalThis.__r;
 
@@ -51,7 +51,7 @@ const Constants = fn(1074);
 ({ AnalyticsPages: closure_8, UserSettingsSections: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const NativeStackNavigator = fn(7339);
+const NativeStackNavigator = fn(7504);
 let closure_12 = NativeStackNavigator.createNativeStackNavigator();
 const createStyles = fn(4836);
 let obj = { statusBarSpacer: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, headerContainer: null, headerContainerRow: null, headerTitleWithBadge: null, backIcon: null };

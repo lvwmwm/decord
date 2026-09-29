@@ -1,15 +1,15 @@
-// Module ID: 7364
-// Function ID: 7365
+// Module ID: 7529
+// Function ID: 7530
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4836, 5286, 4566, 5283, 5287, 5289, 5291, 2]
+// Dependencies: [19, 21, 4836, 5452, 4566, 5449, 5453, 5455, 5457, 2]
 
-// Module 7364 (BaseIconButton)
+// Module 7529 (BaseIconButton)
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import IconDefault from "Icon" /* 5283 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import ButtonHooks from "ButtonHooks" /* 5287 */;
-import Button_BaseButton from "Button/BaseButton" /* 5289 */;
-import ButtonPill from "ButtonPill" /* 5291 */;
+import IconDefault from "Icon" /* 5449 */;
+import ButtonConstants from "ButtonConstants" /* 5452 */;
+import ButtonHooks from "ButtonHooks" /* 5453 */;
+import Button_BaseButton from "Button/BaseButton" /* 5455 */;
+import ButtonPill from "ButtonPill" /* 5457 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -63,11 +63,11 @@ export const BaseIconButton = noop.forwardRef((variant, ref) => {
   const iconSizeStyles = ButtonHooks.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5286).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5452).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5286).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5452).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(5286).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const bound = Math.max((tmp4(5452).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
   const obj4 = {};
   const merged = Object.assign(variant);
   obj4.ref = ref;

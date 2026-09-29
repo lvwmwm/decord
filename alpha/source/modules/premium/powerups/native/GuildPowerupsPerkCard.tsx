@@ -1,18 +1,18 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12238
+// Function ID: 12239
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4836, 576, 4767, 4685, 6401, 12064, 12019, 5293, 4832, 12020, 1177, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4767, 4685, 6567, 12235, 12190, 5459, 4832, 12191, 1177, 1115, 2]
 // Exports: default
 
-// Module 12067 (GuildPowerupsPerkCard)
+// Module 12238 (GuildPowerupsPerkCard)
 import nativeDefault from "native" /* 576 */;
 import shared from "shared" /* 4685 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12020 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12064 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6567 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12191 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12235 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -56,8 +56,8 @@ export default function GuildPowerupsPerkCard(arg0) {
       imageUrl = "";
     }
     const obj5 = { imageUrl, isAnimated: isImageAnimated };
-    riveComponent = React4(tmp3(12019), obj5);
-    const tmp3Result2 = tmp3(12019);
+    riveComponent = React4(tmp3(12190), obj5);
+    const tmp3Result2 = tmp3(12190);
   }
   const items1 = [riveComponent, React4(LinearGradientDefault, { colors: tmp9, style: tmp2.gradient })];
   obj4.children = items1;

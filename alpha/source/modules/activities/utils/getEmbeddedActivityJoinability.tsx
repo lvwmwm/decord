@@ -1,12 +1,12 @@
-// Module ID: 8825
-// Function ID: 8826
+// Module ID: 8990
+// Function ID: 8991
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [2045, 2067, 4469, 1372, 4855, 1074, 8823, 4981, 8801, 504, 2]
+// Dependencies: [2045, 2067, 4469, 1372, 4855, 1074, 8988, 4981, 8966, 504, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 8825 (getEmbeddedActivityJoinability)
+// Module 8990 (getEmbeddedActivityJoinability)
 import ChannelUtils from "ChannelUtils" /* 4981 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 8823 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 8988 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

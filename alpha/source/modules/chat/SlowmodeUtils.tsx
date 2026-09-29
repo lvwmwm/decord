@@ -1,10 +1,10 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7266
+// Function ID: 7267
 // Name: SlowmodeUtils
 // Dependencies: [4469, 1074, 504, 1115, 1091, 4421, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 7101 (SlowmodeUtils)
+// Module 7266 (SlowmodeUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

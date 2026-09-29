@@ -1,16 +1,16 @@
-// Module ID: 10106
-// Function ID: 10107
+// Module ID: 10273
+// Function ID: 10274
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1480, 1609, 6572, 5045, 21, 4836, 576, 4566, 10107, 10110, 1482, 1613, 1479, 5994, 6045, 8853, 5463, 12, 10111, 10118, 10120, 9782, 10121, 5459, 6493, 1115, 2]
+// Dependencies: [32, 19, 17, 1480, 1609, 6738, 5045, 21, 4836, 576, 4566, 10274, 10277, 1482, 1613, 1479, 6160, 6211, 9018, 5630, 12, 10278, 10285, 10287, 9949, 10288, 5626, 6659, 1115, 2]
 
-// Module 10106 (MediaKeyboardList)
+// Module 10273 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10107 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 10111 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10118 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10120 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10274 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 10278 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10285 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10287 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1480 */;
@@ -21,7 +21,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
 let closure_7 = fn(1609).InAppCameraUsedCameraPreviewTypes;
-let closure_8 = fn(6572).ACTION_SHEET_START_HEIGHT_RATIO;
+let closure_8 = fn(6738).ACTION_SHEET_START_HEIGHT_RATIO;
 const NativePermissionStatus = fn(5045).NativePermissionStatus;
 const jsx = fn(21).jsx;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.PhotoLibraryHelper);

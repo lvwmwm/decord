@@ -1,15 +1,15 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17449
+// Function ID: 17450
 // Name: StaffMemberPreloader
-// Dependencies: [2067, 1372, 17261, 5832, 2]
+// Dependencies: [2067, 1372, 17450, 5999, 2]
 // Exports: preloadStaffMembers
 
-// Module 17260 (StaffMemberPreloader)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+// Module 17449 (StaffMemberPreloader)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const PRELOAD_SERVER_ID = fn(17261).PRELOAD_SERVER_ID;
+const PRELOAD_SERVER_ID = fn(17450).PRELOAD_SERVER_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
 

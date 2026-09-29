@@ -1,11 +1,11 @@
-// Module ID: 6490
-// Function ID: 6491
+// Module ID: 6656
+// Function ID: 6657
 // Name: getFastestListVisibleItemsWithErrorChecking
-// Dependencies: [6480, 2]
+// Dependencies: [6646, 2]
 // Exports: default
 
-// Module 6490 (getFastestListVisibleItemsWithErrorChecking)
-import FastestListLogger from "FastestListLogger" /* 6480 */;
+// Module 6656 (getFastestListVisibleItemsWithErrorChecking)
+import FastestListLogger from "FastestListLogger" /* 6646 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/fastest_list/utils/getFastestListVisibleItemsWithErrorChecking.native.tsx");

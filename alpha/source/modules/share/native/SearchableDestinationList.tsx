@@ -1,15 +1,15 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10616
+// Function ID: 10617
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1074, 10320, 21, 4836, 576, 10448, 6459, 10444, 9290, 7074, 1370, 6470, 9578, 10456, 10326, 10457, 1115, 5437, 6471, 2]
+// Dependencies: [32, 19, 17, 1074, 10489, 21, 4836, 576, 10617, 6625, 10613, 9457, 7239, 1370, 6636, 9745, 10625, 10495, 10626, 1115, 5604, 6637, 2]
 // Exports: default
 
-// Module 10447 (SearchableDestinationList)
+// Module 10616 (SearchableDestinationList)
 import nativeDefault from "native" /* 576 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import sortByMatchScore from "sortByMatchScore" /* 9290 */;
-import formatResults from "formatResults" /* 10444 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6625 */;
+import sortByMatchScore from "sortByMatchScore" /* 9457 */;
+import formatResults from "formatResults" /* 10613 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10625 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Keyboard: metroRequire } = get_ActivityIndicator);
 const NOOP = fn(1074).NOOP;
-const UserRowModes = fn(10320).UserRowModes;
+const UserRowModes = fn(10489).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4836);
@@ -187,8 +187,8 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const callback5 = obj.useCallback((arg0, arg1) => {
     ({ type, record } = results[arg1]);
     if (type !== sortByMatchScore.AutocompleterResultTypes.HEADER) {
-      const tmp2Result = tmp2(10444);
-      const destinationKeyResult = tmp2Result.destinationKey(tmp2(10444).getDestinationIdFromResult(tmp));
+      const tmp2Result = tmp2(10613);
+      const destinationKeyResult = tmp2Result.destinationKey(tmp2(10613).getDestinationIdFromResult(tmp));
       let tmp6;
       if (getRowIsUnavailable != null) {
         tmp6 = getRowIsUnavailable(record);
@@ -232,16 +232,16 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         tmp16 = obj2;
       }
       const merged = Object.assign(tmp16);
-      if (tmp2(9290).AutocompleterResultTypes.USER === type) {
+      if (tmp2(9457).AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: null };
         const obj3 = {};
         const merged1 = Object.assign(obj);
         obj3.user = record;
-        obj3.type = tmp2(7074).getRelationshipType(record.id);
+        obj3.type = tmp2(7239).getRelationshipType(record.id);
         obj3.onPress = callback3;
         element.props = obj3;
         return element;
-      } else if (tmp2(9290).AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (tmp2(9457).AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: null };
         const obj4 = {};
         const merged2 = Object.assign(obj);
@@ -250,8 +250,8 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element1.props = obj4;
         return element1;
       } else {
-        if (tmp2(9290).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (tmp2(9290).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (tmp2(9457).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (tmp2(9457).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             return tmp2(1370).assertNever(type);
           }
         }
@@ -263,7 +263,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element2.props = obj5;
         return element2;
       }
-      const tmp2Result4 = tmp2(10444);
+      const tmp2Result4 = tmp2(10613);
     }
     arr = results;
   }, items8);

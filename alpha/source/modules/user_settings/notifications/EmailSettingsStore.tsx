@@ -1,9 +1,9 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13456
+// Function ID: 13457
 // Name: EmailSettingsStore
 // Dependencies: [504, 573, 2]
 
-// Module 13286 (EmailSettingsStore)
+// Module 13456 (EmailSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

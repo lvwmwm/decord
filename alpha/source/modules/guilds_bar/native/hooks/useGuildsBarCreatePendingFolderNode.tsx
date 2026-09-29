@@ -1,15 +1,15 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16170
+// Function ID: 16171
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4656, 5751, 504, 9225, 15995, 5853, 5752, 1115, 2]
+// Dependencies: [19, 4656, 5918, 504, 9390, 16171, 6019, 5919, 1115, 2]
 // Exports: default
 
-// Module 15994 (useGuildsBarCreatePendingFolderNode)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5853 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9225 */;
+// Module 16170 (useGuildsBarCreatePendingFolderNode)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6019 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9390 */;
 import noop from "module_19" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5751 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5918 */;
 
 const require = fn;
 const size = fn(2);
@@ -29,15 +29,15 @@ export default function useGuildsBarCreatePendingFolderNode() {
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: tmp2(15995).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
+    const obj3 = { folderId: tmp2(16171).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
     const intl = tmp2(1115).intl;
     obj3.folderName = intl.string(tmp2(1115).t["scsU+l"]);
     obj3.expanded = stateFromStores1;
     obj3.guildIds = arr2;
-    const folderNode = tmp2(5752).createFolderNode(obj3);
+    const folderNode = tmp2(5919).createFolderNode(obj3);
     for (const item10054 of arr2) {
       let children = folderNode.children;
-      let obj5 = stateFromStores(5752);
+      let obj5 = stateFromStores(5919);
       let arr = children.push(obj5.createGuildNode(item10054, folderNode.id));
       continue;
     }

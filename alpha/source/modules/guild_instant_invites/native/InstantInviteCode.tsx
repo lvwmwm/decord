@@ -1,16 +1,16 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10571
+// Function ID: 10572
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 2049, 4479, 1372, 21, 4836, 576, 5335, 5394, 5279, 4832, 4989, 4795, 1115, 10391, 2]
+// Dependencies: [19, 17, 2049, 4479, 1372, 21, 4836, 576, 5501, 5560, 5445, 4832, 4989, 4795, 1115, 10560, 2]
 // Exports: default
 
-// Module 10402 (InstantInviteCode)
+// Module 10571 (InstantInviteCode)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import CountDownDefault from "CountDown" /* 10391 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
+import CountDownDefault from "CountDown" /* 10560 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -81,7 +81,7 @@ export default function InstantInviteCode(invite) {
   const tmp = closure_10();
   items1[1] = closure_8(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj2.children = items1;
-  obj.children = closure_9(invite(5279).Stack, obj2);
+  obj.children = closure_9(invite(5445).Stack, obj2);
   return closure_8(View, obj);
 };
 export { InstantInviteDetails };

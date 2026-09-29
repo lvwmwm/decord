@@ -1,10 +1,10 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16590
+// Function ID: 16591
 // Name: VibegrationsConjureTipCoachmark
-// Dependencies: [19, 1115, 3715, 10589, 2]
+// Dependencies: [19, 1115, 3715, 10758, 2]
 // Exports: default
 
-// Module 16405 (VibegrationsConjureTipCoachmark)
+// Module 16590 (VibegrationsConjureTipCoachmark)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import noop from "module_19" /* 19 */;
@@ -35,6 +35,6 @@ export default function VibegrationsConjureTipCoachmark(visible) {
     obj.onDismiss = onDismiss;
     return obj;
   }, items);
-  const coachmark = visible(10589).useCoachmark(visible.targetRef, memo);
+  const coachmark = visible(10758).useCoachmark(visible.targetRef, memo);
   return null;
 };

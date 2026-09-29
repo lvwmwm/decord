@@ -1,15 +1,15 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14351
+// Function ID: 14352
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 10653, 6583, 6806, 2029, 4800, 14177, 1981, 14175, 1115, 4832, 10659, 10652, 2]
+// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 10822, 6749, 6972, 2029, 4800, 14352, 1981, 14350, 1115, 4832, 10828, 10821, 2]
 // Exports: default
 
-// Module 14176 (UserProfileBadgesEditButton)
+// Module 14351 (UserProfileBadgesEditButton)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10652 */;
-import BadgeUtils from "BadgeUtils" /* 10659 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10821 */;
+import BadgeUtils from "BadgeUtils" /* 10828 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,7 +61,7 @@ export default function UserProfileBadgesEditButton(arg0) {
   closure_5 = tmp8;
   const items2 = [analyticsLocations, tmp8, tmp6[1]];
   onPress = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14177, dependencyMap.paths), "Customize Badges", { analyticsLocations });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14352, dependencyMap.paths), "Customize Badges", { analyticsLocations });
     if (closure_5) {
       closure_4(ContentDismissActionType.TAKE_ACTION);
     }

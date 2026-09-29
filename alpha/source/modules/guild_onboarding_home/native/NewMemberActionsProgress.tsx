@@ -1,12 +1,12 @@
-// Module ID: 15842
-// Function ID: 15843
+// Module ID: 16017
+// Function ID: 16018
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 2108, 5023, 5024, 2052, 4455, 21, 4836, 576, 5293, 563, 1385, 5435, 1101, 4832, 1115, 1177, 9396, 2]
+// Dependencies: [19, 17, 2108, 5023, 5024, 2052, 4455, 21, 4836, 576, 5459, 563, 1385, 5602, 1101, 4832, 1115, 1177, 9563, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15842 (NewMemberActionsProgress)
+// Module 16017 (NewMemberActionsProgress)
 import nativeDefault from "native" /* 576 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;

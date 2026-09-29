@@ -1,13 +1,13 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10500
+// Function ID: 10501
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1074, 4735, 5203, 1115, 1271, 4685, 2]
+// Dependencies: [5, 1074, 4735, 5369, 1115, 1271, 4685, 2]
 
-// Module 10331 (GameRelationshipActionCreators)
+// Module 10500 (GameRelationshipActionCreators)
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4685 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

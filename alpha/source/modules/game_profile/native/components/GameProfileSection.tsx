@@ -1,13 +1,13 @@
-// Module ID: 8194
-// Function ID: 8195
+// Module ID: 8359
+// Function ID: 8360
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 4836, 576, 8195, 4832, 5281, 1115, 6630, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8360, 4832, 5447, 1115, 6796, 2]
 // Exports: GameProfileSectionSkeleton, default
 
-// Module 8194 (GameProfileSection)
+// Module 8359 (GameProfileSection)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8195 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8360 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -42,9 +42,9 @@ export default function GameProfileSection(onPressViewAll) {
     const obj3 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end", onPress: null };
     const intl = tmp5(1115).intl;
     obj3.text = intl.string(tmp5(1115).t.budhsM);
-    obj3.icon = tmp4(tmp5(6630).ChevronSmallRightIcon, { size: "sm" });
+    obj3.icon = tmp4(tmp5(6796).ChevronSmallRightIcon, { size: "sm" });
     obj3.onPress = onPressViewAll;
-    tmp4Result = tmp4(tmp5(5281).Button, obj3);
+    tmp4Result = tmp4(tmp5(5447).Button, obj3);
   }
   items2[1] = tmp4Result;
   obj2.children = items2;

@@ -1,17 +1,17 @@
-// Module ID: 5835
-// Function ID: 5836
+// Module ID: 6002
+// Function ID: 6003
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1074, 21, 4836, 5836, 576, 5300, 1177, 1115, 4832, 2]
+// Dependencies: [19, 1074, 21, 4836, 6003, 576, 5466, 1177, 1115, 4832, 2]
 // Exports: default
 
-// Module 5835 (QuarantineModeInfoAlert)
+// Module 6002 (QuarantineModeInfoAlert)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
+import common_AlertDefault from "common/Alert" /* 5466 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import TextStyles from "TextStyles" /* 6003 */;
 
 require = fn;
 const jsxProd = fn(21);

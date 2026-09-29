@@ -1,24 +1,24 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17511
+// Function ID: 17512
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 17306, 17308, 11341, 21, 4836, 576, 1485, 16655, 2021, 17309, 5209, 1115, 5936, 6795, 8053, 5279, 4832, 6024, 6621, 17323, 17334, 17337, 5999, 5917, 11346, 4527, 4735, 6610, 6461, 2]
+// Dependencies: [5, 32, 19, 17495, 17497, 11510, 21, 4836, 576, 1485, 16843, 2021, 17498, 5375, 1115, 6102, 6961, 8218, 5445, 4832, 6190, 6787, 17512, 17523, 17526, 6165, 6083, 11515, 4527, 4735, 6776, 6627, 2]
 // Exports: default
 
-// Module 17322 (GuildSettingsAutomodRule)
+// Module 17511 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17498 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useAutomodRulesList = fn(17306).useAutomodRulesList;
-const GuildSettingsAutomodRuleStore = fn(17308);
+const useAutomodRulesList = fn(17495).useAutomodRulesList;
+const GuildSettingsAutomodRuleStore = fn(17497);
 ({ useAutomodEditingRuleActions: closure_7, useAutomodEditingRuleState: closure_8 } = GuildSettingsAutomodRuleStore);
-const MAX_RULE_NAME_LENGTH = fn(11341).MAX_RULE_NAME_LENGTH;
+const MAX_RULE_NAME_LENGTH = fn(11510).MAX_RULE_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 let c13 = "automod-delete-rule";
@@ -328,7 +328,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                         let v0 = 1;
                         c5 = 2;
                         c6 = 1;
-                        const obj6 = { value: closure_0(11346).deleteAutomodRule(id, closure_0), done: false };
+                        const obj6 = { value: closure_0(11515).deleteAutomodRule(id, closure_0), done: false };
                         return obj6;
                       }
                     } else if (1 === tmp7) {

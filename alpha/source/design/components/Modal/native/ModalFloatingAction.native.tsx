@@ -1,13 +1,13 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 10627
+// Function ID: 10628
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 4836, 4566, 4550, 1613, 5280, 5284, 5293, 672, 10459, 2]
+// Dependencies: [19, 17, 21, 4836, 4566, 4550, 1613, 5446, 5450, 5459, 672, 10628, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 10458 (ModalFloatingAction)
+// Module 10627 (ModalFloatingAction)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

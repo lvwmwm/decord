@@ -1,11 +1,11 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11159
+// Function ID: 11160
 // Name: GiftModalEmojis
-// Dependencies: [32, 19, 17, 21, 4836, 4487, 6551, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 4487, 6717, 2]
 // Exports: default
 
-// Module 10990 (GiftModalEmojis)
-import EmojiDefault from "Emoji" /* 6551 */;
+// Module 11159 (GiftModalEmojis)
+import EmojiDefault from "Emoji" /* 6717 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

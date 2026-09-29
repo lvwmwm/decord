@@ -1,11 +1,11 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8836
+// Function ID: 8837
 // Name: getTrialCtaOverride
-// Dependencies: [8672, 4488, 2]
+// Dependencies: [8837, 4488, 2]
 // Exports: getTrialCtaOverride
 
-// Module 8671 (getTrialCtaOverride)
-import ReferralTrialCtaExperiment from "ReferralTrialCtaExperiment" /* 8672 */;
+// Module 8836 (getTrialCtaOverride)
+import ReferralTrialCtaExperiment from "ReferralTrialCtaExperiment" /* 8837 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/getTrialCtaOverride.tsx");

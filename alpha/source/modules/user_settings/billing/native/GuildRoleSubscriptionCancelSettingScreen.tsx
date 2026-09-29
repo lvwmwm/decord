@@ -1,12 +1,12 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14945
+// Function ID: 14946
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 6415, 14771, 2]
+// Dependencies: [19, 21, 6581, 14946, 2]
 // Exports: default
 
-// Module 14770 (GuildRoleSubscriptionCancelSettingScreen)
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
-import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 14771 */;
+// Module 14945 (GuildRoleSubscriptionCancelSettingScreen)
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6581 */;
+import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 14946 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

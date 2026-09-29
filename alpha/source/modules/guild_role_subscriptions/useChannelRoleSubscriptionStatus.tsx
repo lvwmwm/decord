@@ -1,10 +1,10 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5480
+// Function ID: 5481
 // Name: useChannelRoleSubscriptionStatus
 // Dependencies: [2100, 2045, 4469, 1074, 504, 2]
 // Exports: default
 
-// Module 5314 (useChannelRoleSubscriptionStatus)
+// Module 5480 (useChannelRoleSubscriptionStatus)
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

@@ -1,9 +1,9 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 8005
+// Function ID: 8006
 // Name: GuildInviteFlags
 // Dependencies: [2]
 
-// Module 7840 (GuildInviteFlags)
+// Module 8005 (GuildInviteFlags)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 4, 16]) };

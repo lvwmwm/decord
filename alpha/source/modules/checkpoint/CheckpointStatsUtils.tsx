@@ -1,10 +1,10 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15418
+// Function ID: 15419
 // Name: CheckpointStatsUtils
 // Dependencies: [1386, 2059, 2]
 // Exports: statsFromServer
 
-// Module 15243 (CheckpointStatsUtils)
+// Module 15418 (CheckpointStatsUtils)
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 import UserRecord from "UserRecord" /* 1386 */;
 

@@ -1,9 +1,35 @@
 // Module ID: 14092
 // Function ID: 14093
-// Dependencies: [1121]
+// Dependencies: [14075]
+// Exports: default
 
 // Module 14092
-import registerAsset from "module_1121" /* 1121 */;
+import emptyPromise from "emptyPromise" /* 14075 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "ace4c89a8bfdf8264b175190674b9348", name: "ic_call_status_unknown_24px", type: "png" });
+export default () => (arg0) => {
+  const result = emptyPromise.assertHasLoggerPlugin(arg0);
+  closure_0 = arg0;
+  return {
+    onConnect() {
+      console.log = () => {
+        const items = [...arguments];
+        log(...items);
+        const items1 = [...items];
+        log.log.apply(items1);
+      };
+      console.warn = () => {
+        const items = [...arguments];
+        warn(...items);
+        log.warn(items[0]);
+      };
+      console.debug = () => {
+        const items = [...arguments];
+        debug(...items);
+        log.debug(items[0]);
+      };
+    }
+  };
+};

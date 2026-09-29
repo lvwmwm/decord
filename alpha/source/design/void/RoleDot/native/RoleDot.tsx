@@ -1,16 +1,16 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13834
+// Function ID: 13835
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 5288, 5310, 5293, 1370, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1364, 5454, 5476, 5459, 1370, 2]
 // Exports: RoleDot
 
-// Module 13665 (RoleDot)
+// Module 13834 (RoleDot)
 import nativeDefault from "native" /* 576 */;
-import useFontScale from "useFontScale" /* 5288 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5310 */;
+import useFontScale from "useFontScale" /* 5454 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5476 */;
 import noop from "module_19" /* 19 */;
 
-const LinearGradientDefault = tmp5(5293);
+const LinearGradientDefault = tmp5(5459);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);

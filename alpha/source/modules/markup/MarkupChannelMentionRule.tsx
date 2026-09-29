@@ -1,18 +1,18 @@
-// Module ID: 5313
-// Function ID: 5314
+// Module ID: 5479
+// Function ID: 5480
 // Name: MarkupChannelMentionRule
-// Dependencies: [2100, 2045, 2067, 4469, 4479, 1372, 1074, 2011, 1397, 1115, 5314, 4981, 4989, 5315, 4990, 5312, 1930, 2]
+// Dependencies: [2100, 2045, 2067, 4469, 4479, 1372, 1074, 2011, 1397, 1115, 5480, 4981, 4989, 5481, 4990, 5478, 1930, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5313 (MarkupChannelMentionRule)
+// Module 5479 (MarkupChannelMentionRule)
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef1930 from "module_1930" /* 1930 */;
 import StringUtils from "StringUtils" /* 2011 */;
 import ChannelUtils from "ChannelUtils" /* 4981 */;
 import LinkUtils from "LinkUtils" /* 4990 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5312 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5314 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5478 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5480 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -55,8 +55,8 @@ function getChannel(id, arr) {
     obj5.isDm = channel.isPrivate();
     obj5.isForumPost = channel.isForumPost();
     const tmpResult = tmp(4989);
-    obj5.isMentionable = tmp(5315).isChannelTypeMentionable(channel.type);
-    const tmpResult3 = tmp(5315);
+    obj5.isMentionable = tmp(5481).isChannelTypeMentionable(channel.type);
+    const tmpResult3 = tmp(5481);
     obj5.canViewChannel = tmp(4990).canViewChannel(channel);
     obj5.roleSubscriptionGated = isSubscriptionGated;
     obj5.iconType = str;

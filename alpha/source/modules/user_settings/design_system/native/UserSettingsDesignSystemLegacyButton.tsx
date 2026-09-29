@@ -1,15 +1,15 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15539
+// Function ID: 15540
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1177, 4832, 5281, 4836, 576, 5279, 8053, 2]
+// Dependencies: [19, 17, 21, 1177, 4832, 5447, 4836, 576, 5445, 8218, 2]
 // Exports: default
 
-// Module 15364 (UserSettingsDesignSystemLegacyButton)
+// Module 15539 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import Form from "Form" /* 8053 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import Form from "Form" /* 8218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -72,7 +72,7 @@ function ComparisonRow(entry) {
 
         }
     };
-    items5[1] = tmp9(tmp4(5281).Button, obj7);
+    items5[1] = tmp9(tmp4(5447).Button, obj7);
     obj6.children = items5;
     let tmp9Result = tmp7(tmp8, obj6);
   } else {

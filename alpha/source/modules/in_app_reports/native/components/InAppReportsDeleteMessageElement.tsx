@@ -1,12 +1,12 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12643
+// Function ID: 12644
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5056, 1074, 21, 504, 5016, 6876, 12468, 1115, 4790, 2]
+// Dependencies: [32, 19, 5056, 1074, 21, 504, 5016, 7042, 12638, 1115, 4790, 2]
 // Exports: default
 
-// Module 12473 (InAppReportsDeleteMessageElement)
+// Module 12643 (InAppReportsDeleteMessageElement)
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import MessageStore from "MessageStore" /* 5056 */;
@@ -48,5 +48,5 @@ export default function DeleteMessageElement(message) {
   obj2.disabled = tmp[0];
   obj2.onPress = callback;
   obj2.icon = jsx(message(4790).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12468), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  return jsx(reportId(12638), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 };

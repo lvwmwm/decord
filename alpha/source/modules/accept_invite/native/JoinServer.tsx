@@ -1,17 +1,17 @@
-// Module ID: 6398
-// Function ID: 6399
+// Module ID: 6564
+// Function ID: 6565
 // Name: JoinServer
-// Dependencies: [19, 17, 6399, 21, 4836, 576, 6400, 4832, 1115, 6402, 1485, 1479, 6023, 5281, 2]
+// Dependencies: [19, 17, 6565, 21, 4836, 576, 6566, 4832, 1115, 6568, 1485, 1479, 6189, 5447, 2]
 // Exports: default
 
-// Module 6398 (JoinServer)
+// Module 6564 (JoinServer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6023 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6189 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,7 +40,7 @@ class OrSeparator {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(6399);
+const CreateGuildConstants = fn(6565);
 ({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: metroRequire, CreateGuildModalStates: closure_7 } = CreateGuildConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
@@ -133,7 +133,7 @@ export default function JoinServer(arg0) {
   obj13.loading = submitting;
   obj13.disabled = submitting;
   obj13.onPress = onDone;
-  items5[1] = closure_8(navigation(5281).Button, obj13);
+  items5[1] = closure_8(navigation(5447).Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1115).intl;
@@ -141,7 +141,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1115).intl;
   obj14.accessibilityLabel = intl9.string(navigation(1115).t["MOqX/G"]);
   obj14.onPress = callback;
-  items5[3] = closure_8(navigation(5281).Button, obj14);
+  items5[3] = closure_8(navigation(5447).Button, obj14);
   obj11.children = items5;
   items4[1] = closure_9(closure_10, obj11);
   obj2.children = items4;

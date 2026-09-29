@@ -1,15 +1,15 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17700
+// Function ID: 17701
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4836, 576, 5899, 5909, 4832, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6065, 6075, 4832, 5447, 2]
 // Exports: default
 
-// Module 17511 (WarningNotice)
+// Module 17700 (WarningNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef5909 from "module_5909" /* 5909 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import _modDef6075 from "module_6075" /* 6075 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,7 +36,7 @@ export default function WarningNotice(arg0) {
   ({ container: arr[1], containerYellow: arr[2] } = tmp);
   obj.style = items;
   const obj2 = { style: tmp.horizontalContainer, children: null };
-  const obj3 = { style: tmp.alertIcon, source: _modDef5909 };
+  const obj3 = { style: tmp.alertIcon, source: _modDef6075 };
   const items1 = [React4(FastImageDefault, obj3), ];
   const obj4 = { style: null, variant: "text-sm/medium", color: "interactive-text-active", children: notice };
   const items2 = [, ];

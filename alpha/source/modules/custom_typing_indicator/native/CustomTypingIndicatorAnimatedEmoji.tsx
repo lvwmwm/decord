@@ -1,10 +1,10 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11633
+// Function ID: 11634
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1980, 1074, 21, 4836, 4550, 2021, 4566, 504, 1380, 4837, 6551, 1397, 2]
+// Dependencies: [32, 19, 1980, 1074, 21, 4836, 4550, 2021, 4566, 504, 1380, 4837, 6717, 1397, 2]
 // Exports: default
 
-// Module 11464 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11633 (CustomTypingIndicatorAnimatedEmoji)
 import user from "user" /* 1380 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

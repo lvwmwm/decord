@@ -1,10 +1,10 @@
-// Module ID: 7499
-// Function ID: 7500
+// Module ID: 7664
+// Function ID: 7665
 // Name: ReferralProgramUtils
-// Dependencies: [1220, 6872, 2042, 1091, 1115, 4654, 2029, 11, 2031, 7500, 504, 2]
+// Dependencies: [1220, 7038, 2042, 1091, 1115, 4654, 2029, 11, 2031, 7665, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralIncentivePopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7499 (ReferralProgramUtils)
+// Module 7664 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
@@ -12,7 +12,7 @@ import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7038 */;
 
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
@@ -84,8 +84,8 @@ export const markReferralIncentivePopoverSeen = function markReferralIncentivePo
   const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_INCENTIVE_POPOVER);
 };
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = stateFromStores1(7500).useIsEligibleSenderForReferralProgram(false);
-  let obj = stateFromStores1(7500);
+  let isEligibleSenderForReferralProgram = stateFromStores1(7665).useIsEligibleSenderForReferralProgram(false);
+  let obj = stateFromStores1(7665);
   const items = [ReferralTrialStore];
   const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => ReferralTrialStore.getReferralsRemaining());
   const obj2 = stateFromStores1(504);

@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14643
+// Function ID: 14644
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1074, 21, 4836, 576, 9543, 5917, 4832, 1115, 2487, 14429, 1485, 5999, 2]
+// Dependencies: [17, 1074, 21, 4836, 576, 9710, 6083, 4832, 1115, 2487, 14604, 1485, 6165, 2]
 // Exports: default
 
-// Module 14468 (FamilyCenterParentalControlsScreenTime)
+// Module 14643 (FamilyCenterParentalControlsScreenTime)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
@@ -21,10 +21,10 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  const scheduleRuleDateRange = rule(9543).getScheduleRuleDateRange(rule);
-  let obj = rule(9543);
-  const obj2 = rule(9543);
-  const obj3 = { label: scheduleRuleDateRange, subLabel: rule(9543).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const scheduleRuleDateRange = rule(9710).getScheduleRuleDateRange(rule);
+  let obj = rule(9710);
+  const obj2 = rule(9710);
+  const obj3 = { label: scheduleRuleDateRange, subLabel: rule(9710).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
   const intl = rule(1115).intl;
   const string = intl.string;
   const tmp4 = _modDef2487;
@@ -45,7 +45,7 @@ function ScheduleRuleRow(rule) {
     };
   }
   obj3.onPress = fn;
-  return closure_5(rule(5917).TableRow, obj3);
+  return closure_5(rule(6083).TableRow, obj3);
 }
 const View = _mod17.View;
 const UserSettingsSections = Constants.UserSettingsSections;

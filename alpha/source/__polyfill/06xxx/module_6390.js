@@ -1,9 +1,31 @@
 // Module ID: 6390
 // Function ID: 6391
-// Dependencies: [1121]
+// Dependencies: [19, 6234]
+// Exports: useBoundingClientRect
 
 // Module 6390
-import registerAsset from "module_1121" /* 1121 */;
+import _mod19 from "module_19" /* 19 */;
 
+const useLayoutEffect = _mod19.useLayoutEffect;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1b06201c0ce237bba30c4db64f994263", name: "EyeIcon", type: "png" });
+export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  if (obj.isFabricInstalled()) {
+    useLayoutEffect(() => {
+      if (closure_0) {
+        if (tmp.current) {
+          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
+            if (typeof tmp.current.getBoundingClientRect === "function") {
+              const current2 = tmp.current;
+              closure_1(current2.getBoundingClientRect());
+            }
+          } else {
+            const current = tmp.current;
+            closure_1(current.unstable_getBoundingClientRect());
+          }
+        }
+      }
+    });
+  }
+};

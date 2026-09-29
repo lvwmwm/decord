@@ -1,10 +1,10 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 6098
+// Function ID: 6099
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 4783, 5281, 4658, 5933, 5039, 6463, 1981, 6466, 6502, 6379, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 4783, 5447, 4658, 6099, 5039, 6629, 1981, 6632, 6668, 6545, 2]
 // Exports: default
 
-// Module 5932 (IdentityVerificationField)
+// Module 6098 (IdentityVerificationField)
 import nativeDefault from "native" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import Text_Text from "Text/Text" /* 4832 */;
@@ -40,7 +40,7 @@ function BaseIdentityVerificationField(icon) {
     const intl = tmp7(1115).intl;
     obj6.text = intl.string(tmp7(1115).t["13ofGu"]);
     obj6.onPress = onPress;
-    obj5.children = tmp6(tmp7(5281).Button, obj6);
+    obj5.children = tmp6(tmp7(5447).Button, obj6);
   }
   items[2] = React4(View, obj5);
   obj.children = items;
@@ -83,11 +83,11 @@ export default function IdentityVerificationField(arg0) {
       stringResult1 = intl.string(tmp(1115).t.mhv8BM);
     }
     if (tmp(4658).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(6502).EnvelopeIcon;
+      let EnvelopeIcon = tmp(6668).EnvelopeIcon;
     } else if (tmp(4658).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(6379).MobilePhoneIcon;
+      EnvelopeIcon = tmp(6545).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(6502).EnvelopeIcon;
+      EnvelopeIcon = tmp(6668).EnvelopeIcon;
     }
     if (tmp(4658).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {

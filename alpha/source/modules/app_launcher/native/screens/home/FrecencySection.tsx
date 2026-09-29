@@ -1,10 +1,10 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11703
+// Function ID: 11704
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 2044, 11535, 1074, 21, 4836, 576, 8590, 1370, 6589, 11536, 10785, 504, 8712, 5016, 4566, 4837, 1115, 8742, 11537, 11533, 1979, 8370, 11538, 4832, 7358, 10615, 5435, 11539, 6943, 5899, 11542, 2]
+// Dependencies: [32, 19, 17, 2044, 11704, 1074, 21, 4836, 576, 8755, 1370, 6755, 11705, 10954, 504, 8877, 5016, 4566, 4837, 1115, 8907, 11706, 11702, 1979, 8535, 11707, 4832, 7523, 10784, 5602, 11708, 7109, 6065, 11711, 2]
 // Exports: default
 
-// Module 11534 (FrecencySection)
+// Module 11703 (FrecencySection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
@@ -12,15 +12,15 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import timing from "timing" /* 4837 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 10615 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11536 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11537 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8755 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8877 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 10784 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11705 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11706 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import FrecencySectionStore from "FrecencySectionStore" /* 11535 */;
+import FrecencySectionStore from "FrecencySectionStore" /* 11704 */;
 
 const require = globalThis.__r;
 
@@ -110,7 +110,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = app(11533).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(11702).getAppLauncherIconSource(app.section.application);
     let obj = { style: disabled ? tmp.appContainerDisabled : tmp.appContainer, disabled, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
     const application = app.section.application;
     let name;
@@ -131,18 +131,18 @@ function FrecentApp(app) {
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_11(onAppSelected(5899), obj2);
+      tmp3 = closure_11(onAppSelected(6065), obj2);
     }
     const items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_11(app(11542).SubmittingOverlay, obj3);
+    items[1] = closure_11(app(11711).SubmittingOverlay, obj3);
     obj.children = items;
-    return closure_12(app(5435).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(5602).PressableOpacity, obj, app.applicationId);
   }
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const FrecencySectionSelection = fn(11535).FrecencySectionSelection;
+const FrecencySectionSelection = fn(11704).FrecencySectionSelection;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -228,12 +228,12 @@ export default function FrecencySection(loading) {
         }
         let obj2 = { num: length, section_name: null, location: null };
         if (tmp7 === tmp8.APPS) {
-          let RECENT_COMMANDS = tmp5(8712).AppLauncherSectionName.RECENT_APPS;
+          let RECENT_COMMANDS = tmp5(8877).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(8712).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(8877).AppLauncherSectionName.RECENT_COMMANDS;
         }
         obj2.section_name = RECENT_COMMANDS;
-        HOME = tmp5(8712).AppLauncherLocations.HOME;
+        HOME = tmp5(8877).AppLauncherLocations.HOME;
         obj2.location = HOME;
         obj2 = AppAnalyticsUtils.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_SEEN, obj2);
         tmp7 = first1;

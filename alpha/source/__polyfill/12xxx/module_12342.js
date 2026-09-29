@@ -1,22 +1,9 @@
 // Module ID: 12342
 // Function ID: 12343
-// Dependencies: [12319]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [1121]
 
 // Module 12342
-import _mod12319 from "module_12319" /* 12319 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
-};
-export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  if (arg0) {
-    const result = _mod12319.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const result1 = _mod12319.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" });

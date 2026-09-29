@@ -1,10 +1,10 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9173
+// Function ID: 9174
 // Name: StageChannelUpsellCardStore
 // Dependencies: [2051, 1243, 510, 1248, 4452, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 9008 (StageChannelUpsellCardStore)
+// Module 9173 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;

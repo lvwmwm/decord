@@ -1,10 +1,10 @@
-// Module ID: 13655
-// Function ID: 13656
+// Module ID: 13824
+// Function ID: 13825
 // Name: useFlashListAnimationDisabler
 // Dependencies: [19, 4566, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 13655 (useFlashListAnimationDisabler)
+// Module 13824 (useFlashListAnimationDisabler)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
 

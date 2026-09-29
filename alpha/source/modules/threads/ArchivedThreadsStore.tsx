@@ -1,17 +1,17 @@
-// Module ID: 7185
-// Function ID: 7186
+// Module ID: 7350
+// Function ID: 7351
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 2049, 2045, 4851, 4471, 2054, 7186, 12, 2056, 11, 6725, 504, 573, 2]
+// Dependencies: [32, 2049, 2045, 4851, 4471, 2054, 7351, 12, 2056, 11, 6891, 504, 573, 2]
 
-// Module 7185 (ArchivedThreadsStore)
+// Module 7350 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2056 */;
-import ForumUtils from "ForumUtils" /* 6725 */;
-import tracking_Tracking from "tracking/Tracking" /* 7186 */;
+import ForumUtils from "ForumUtils" /* 6891 */;
+import tracking_Tracking from "tracking/Tracking" /* 7351 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;

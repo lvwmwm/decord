@@ -1,44 +1,24 @@
 // Module ID: 13911
 // Function ID: 13912
-// Dependencies: []
-// Exports: default
+// Dependencies: [13901, 13904]
+// Exports: LookupSupportedLocales
 
 // Module 13911
+import _mod13901 from "module_13901" /* 13901 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 13904 */;
 
-export default () => (startTimer) => {
-  closure_0 = startTimer;
-  startTimer = startTimer.startTimer;
-  return {
-    features: {
-      benchmark(title) {
-        const items = [];
-        closure_2 = items();
-        function step(title) {
-          let num = 0;
-          if (0 !== items.length) {
-            num = arr[arr.length - 1].time;
-          }
-          const tmp = closure_2();
-          items.push({ title, time: tmp, delta: tmp - num });
-        }
-        items.push({ title, time: 0, delta: 0 });
-        function stop(title) {
-          if (typeof step === "function") {
-            let num = 0;
-            if (0 !== items.length) {
-              num = arr[arr.length - 1].time;
-            }
-            const tmp3 = closure_2();
-            const obj = { title, time: tmp3, delta: tmp3 - num };
-            items.push(obj);
-            const obj2 = { title, steps: items };
-            title.send("benchmark.report", obj2);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return { step, stop, last: stop };
-      }
+require = arg1;
+const dependencyMap = arg6;
+
+export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod13901.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
-  };
+  }
+  return items;
 };

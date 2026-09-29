@@ -1,40 +1,11 @@
 // Module ID: 6442
 // Function ID: 6443
-// Dependencies: [19, 17, 21, 5211]
+// Dependencies: []
 
 // Module 6442
-import noop from "module_19" /* 19 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-try {
-  let closure_0 = fn(5211);
-  exports.MaybeScreenContainer = (enabled) => {
-    const merged = Object.assign(enabled, Object.assign({ enabled: 0 }));
-    if (null != closure_0) {
-      const obj2 = { enabled: enabled.enabled };
-      const merged1 = Object.assign(merged);
-      let tmp8 = <tmp2.ScreenContainer enabled={arg0.enabled} />;
-    } else {
-      const obj = {};
-      const merged2 = Object.assign(merged);
-      tmp8 = <View />;
-    }
-    return tmp8;
-  };
-  exports.MaybeScreen = (arg0) => {
-    ({ enabled, active } = arg0);
-    const merged = Object.assign(arg0, Object.assign({ enabled: 0, active: 0 }));
-    if (null != closure_0) {
-      const obj2 = { enabled, activityState: active };
-      const merged1 = Object.assign(merged);
-      let tmp8 = <tmp2.Screen enabled={enabled} activityState={active} />;
-    } else {
-      const obj = {};
-      const merged2 = Object.assign(merged);
-      tmp8 = <View />;
-    }
-    return tmp8;
-  };
-} catch (err) {
-}
+export default function _arrayWithHoles(arg0) {
+  if (Array.isArray(arg0)) {
+    return arg0;
+  }
+};

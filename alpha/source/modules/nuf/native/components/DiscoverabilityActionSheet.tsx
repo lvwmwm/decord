@@ -1,16 +1,16 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12436
+// Function ID: 12437
 // Name: DiscoverabilityActionSheet
-// Dependencies: [19, 17, 12174, 1074, 21, 4836, 576, 8053, 1115, 4832, 12177, 6618, 2]
+// Dependencies: [19, 17, 12345, 1074, 21, 4836, 576, 8218, 1115, 4832, 12348, 6784, 2]
 // Exports: default
 
-// Module 12265 (DiscoverabilityActionSheet)
+// Module 12436 (DiscoverabilityActionSheet)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ContactSyncModalStore = fn(12174);
+const ContactSyncModalStore = fn(12345);
 ({ useContactSyncModalStore: closure_4, setAllowSync: hasOwnProperty, setAllowPhone: metroRequire, setAllowEmail: closure_7 } = ContactSyncModalStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

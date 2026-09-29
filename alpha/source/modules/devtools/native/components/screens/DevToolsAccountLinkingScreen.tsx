@@ -1,19 +1,19 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15502
+// Function ID: 15503
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [32, 19, 17, 5063, 6528, 2067, 4655, 21, 4836, 576, 504, 6591, 1613, 6589, 6586, 5999, 5917, 4832, 6024, 5281, 2]
+// Dependencies: [32, 19, 17, 5063, 6694, 2067, 4655, 21, 4836, 576, 504, 6757, 1613, 6755, 6752, 6165, 6083, 4832, 6190, 5447, 2]
 // Exports: default
 
-// Module 15327 (DevToolsAccountLinkingScreen)
+// Module 15502 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 6586 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6589 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6591 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 6752 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6755 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6757 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6694 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 
@@ -56,8 +56,8 @@ export default function DevToolsAccountLinkingScreen() {
   const obj3 = value(504);
   let found = useGetOrFetchApplicationsDefault(gameApplicationIds).filter((item) => null != item);
   const arr4 = useGetOrFetchApplicationsDefault(gameApplicationIds);
-  getOrFetchApplication = value(6589).useGetOrFetchApplication(value);
-  const tmp8Result = value(6589);
+  getOrFetchApplication = value(6755).useGetOrFetchApplication(value);
+  const tmp8Result = value(6755);
   const items2 = [ApplicationStore];
   const stateFromStoresArray = value(504).useStateFromStoresArray(items2, () => {
     let found;
@@ -140,16 +140,16 @@ export default function DevToolsAccountLinkingScreen() {
         return closure_1_12(first(dependencyMap[16]).TableRow, obj, name.id);
       });
     } else {
-      mapped1 = tmp18(tmp8(5917).TableRow, { label: "No official games" });
+      mapped1 = tmp18(tmp8(6083).TableRow, { label: "No official games" });
     }
   } else {
-    obj6.children = tmp18(tmp8(5917).TableRow, { label: "No guild selected" });
-    const items6 = [tmp18(tmp8(5999).TableRowGroup, obj6), , , ];
+    obj6.children = tmp18(tmp8(6083).TableRow, { label: "No guild selected" });
+    const items6 = [tmp18(tmp8(6165).TableRowGroup, obj6), , , ];
     const obj7 = { style: null, children: null };
     const obj8 = { padding: tmp2(576).space.PX_12 };
     obj7.style = obj8;
     const obj9 = { label: "Application ID", value, onChange: tmp7 };
-    obj7.children = tmp18(tmp8(6024).TextInput, obj9);
+    obj7.children = tmp18(tmp8(6190).TextInput, obj9);
     const items7 = [tmp18(closure_7, obj7), , ];
     if (null != getOrFetchApplication) {
       str = getOrFetchApplication.name;
@@ -158,13 +158,13 @@ export default function DevToolsAccountLinkingScreen() {
     const obj11 = { label: null };
     let _HermesInternal = HermesInternal;
     obj11.label = "Name: " + str;
-    items7[1] = tmp18(tmp8(5917).TableRow, obj11);
+    items7[1] = tmp18(tmp8(6083).TableRow, obj11);
     const obj12 = { label: null };
     const _HermesInternal2 = HermesInternal;
     obj12.label = "Linked Games: " + str2;
-    items7[2] = tmp18(tmp8(5917).TableRow, obj12);
+    items7[2] = tmp18(tmp8(6083).TableRow, obj12);
     obj10.children = items7;
-    items6[1] = tmp16(tmp8(5999).TableRowGroup, obj10);
+    items6[1] = tmp16(tmp8(6165).TableRowGroup, obj10);
     let str6 = "text-feedback-critical";
     if (debug.hasConnectionEntrypointUrl) {
       str6 = "text-feedback-positive";
@@ -177,7 +177,7 @@ export default function DevToolsAccountLinkingScreen() {
     const obj14 = { label: "Connection Entrypoint URL", trailing: null };
     obj13.children = str7;
     obj14.trailing = tmp18(tmp8(4832).Text, obj13);
-    const items8 = [tmp18(tmp8(5917).TableRow, obj14), , ];
+    const items8 = [tmp18(tmp8(6083).TableRow, obj14), , ];
     let str8 = "text-muted";
     if (hasAlreadyLinked) {
       str8 = "text-feedback-positive";
@@ -191,7 +191,7 @@ export default function DevToolsAccountLinkingScreen() {
     const obj17 = { label: "Already Linked", trailing: null };
     obj15.children = str9;
     obj17.trailing = tmp18(tmp8(4832).Text, obj15);
-    items8[1] = tmp18(tmp8(5917).TableRow, obj17);
+    items8[1] = tmp18(tmp8(6083).TableRow, obj17);
     const obj18 = { style: tmp.buttonRow, children: null };
     const obj19 = {
       disabled: !tmp11.canStartAuthorization,
@@ -201,13 +201,13 @@ export default function DevToolsAccountLinkingScreen() {
       variant: "primary",
       text: "Start Authorization"
     };
-    const items9 = [tmp18(tmp8(5281).Button, obj19), ];
+    const items9 = [tmp18(tmp8(5447).Button, obj19), ];
     const obj20 = { disabled: !tmp15, onPress: callback, variant: "critical-primary", text: "Deauthorize" };
-    items9[1] = tmp18(tmp8(5281).Button, obj20);
+    items9[1] = tmp18(tmp8(5447).Button, obj20);
     obj18.children = items9;
     items8[2] = tmp16(closure_7, obj18);
     obj16.children = items8;
-    items6[2] = tmp16(tmp8(5999).TableRowGroup, obj16);
+    items6[2] = tmp16(tmp8(6165).TableRowGroup, obj16);
     let prop;
     if (connectionApp != null) {
       prop = connectionApp.applicationAccountLinkBenefitConfig;
@@ -235,9 +235,9 @@ export default function DevToolsAccountLinkingScreen() {
       const obj26 = { label: null };
       const _HermesInternal3 = HermesInternal;
       obj26.label = "Reward: " + str10;
-      items10[1] = tmp18(tmp8(5917).TableRow, obj26);
+      items10[1] = tmp18(tmp8(6083).TableRow, obj26);
       obj25.children = items10;
-      tmp16Result = tmp16(tmp8(5999).TableRowGroup, obj25);
+      tmp16Result = tmp16(tmp8(6165).TableRowGroup, obj25);
     }
     items6[3] = tmp16Result;
     obj4.children = items6;

@@ -1,12 +1,12 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 14474
+// Function ID: 14475
 // Name: SettingsAccountStandingScreen
-// Dependencies: [21, 14300, 2]
+// Dependencies: [21, 14475, 2]
 // Exports: default
 
-// Module 14299 (SettingsAccountStandingScreen)
+// Module 14474 (SettingsAccountStandingScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 14300 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 14475 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

@@ -1,16 +1,16 @@
-// Module ID: 10221
-// Function ID: 10222
+// Module ID: 10390
+// Function ID: 10391
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4836, 576, 6583, 8230, 1249, 10214, 4832, 1115, 2583, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6749, 8395, 1249, 10381, 4832, 1115, 2583, 2]
 // Exports: default
 
-// Module 10221 (GiftingBadgeProgressBanner)
+// Module 10390 (GiftingBadgeProgressBanner)
 import nativeDefault from "native" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import _modDef2583 from "module_2583" /* 2583 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6749 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8395 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -47,7 +47,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10214), obj4);
+    tmp10Result = tmp10(tmp2(10381), obj4);
   }
   obj3.children = tmp10Result;
   const items2 = [React4(View, obj3), ];

@@ -1,13 +1,13 @@
-// Module ID: 13635
-// Function ID: 13636
+// Module ID: 13804
+// Function ID: 13805
 // Name: IconPill
-// Dependencies: [19, 17, 1085, 21, 4836, 576, 5283, 8072, 2]
+// Dependencies: [19, 17, 1085, 21, 4836, 576, 5449, 8237, 2]
 // Exports: default
 
-// Module 13635 (IconPill)
+// Module 13804 (IconPill)
 import nativeDefault from "native" /* 576 */;
-import IconDefault from "Icon" /* 5283 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8072 */;
+import IconDefault from "Icon" /* 5449 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8237 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

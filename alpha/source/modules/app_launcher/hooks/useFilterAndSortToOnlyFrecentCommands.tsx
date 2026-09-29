@@ -1,12 +1,12 @@
-// Module ID: 11630
-// Function ID: 11631
+// Module ID: 11799
+// Function ID: 11800
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 8593, 11510, 8600, 2]
+// Dependencies: [19, 8758, 11679, 8765, 2]
 // Exports: default
 
-// Module 11630 (useFilterAndSortToOnlyFrecentCommands)
+// Module 11799 (useFilterAndSortToOnlyFrecentCommands)
 import noop from "module_19" /* 19 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 8593 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 8758 */;
 
 const require = fn;
 const size = fn(2);

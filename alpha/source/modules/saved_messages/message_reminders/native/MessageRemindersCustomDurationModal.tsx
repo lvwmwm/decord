@@ -1,17 +1,17 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11382
+// Function ID: 11383
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1613, 1876, 4800, 8995, 1981, 1115, 5943, 7288, 1364, 5936, 5435, 4832, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1613, 1876, 4800, 9160, 1981, 1115, 6109, 7453, 1364, 6102, 5602, 4832, 2]
 
-// Module 11213 (MessageRemindersCustomDurationModal)
+// Module 11382 (MessageRemindersCustomDurationModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
+import Pressables from "Pressables" /* 5602 */;
+import HeaderShared from "HeaderShared" /* 7453 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -68,7 +68,7 @@ export default noop.memo((onClose) => {
     obj3.maximumDate = toDateResult;
     obj3.mode = date;
     obj3.onSubmit = onSubmit;
-    obj2.openLazy(asyncRequireImpl(8995, dependencyMap.paths), "DatePicker", obj3);
+    obj2.openLazy(asyncRequireImpl(9160, dependencyMap.paths), "DatePicker", obj3);
   }
   const tmp = onPress();
   [first, onSubmit] = first.useState(onClose.defaultValue);
@@ -105,7 +105,7 @@ export default noop.memo((onClose) => {
   }
   obj3.headerStatusBarHeight = num + createReminder(576).space.PX_8;
   obj5 = onClose(1364);
-  obj3.headerLeft = onClose(5936).getHeaderCloseButton(onClose);
+  obj3.headerLeft = onClose(6102).getHeaderCloseButton(onClose);
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
   obj3.headerRight = function headerRight() {
     const obj = { accessibilityRole: "button", disabled: null != error, onPress, children: null };
@@ -119,7 +119,7 @@ export default noop.memo((onClose) => {
     obj.children = React5(Text_Text.Text, obj2);
     return React5(Pressables.PressableOpacity, obj);
   };
-  const items1 = [error(onClose(5943).Header, obj3), ];
+  const items1 = [error(onClose(6109).Header, obj3), ];
   const obj6 = { style: tmp.container, children: null };
   const obj7 = { children: null };
   const obj8 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: null };
@@ -135,7 +135,7 @@ export default noop.memo((onClose) => {
   };
   obj9.style = tmp.inputContainer;
   obj9.children = error(onClose(4832).Text, { variant: "text-md/medium", children: formatResult });
-  items2[1] = error(onClose(5435).PressableOpacity, obj9);
+  items2[1] = error(onClose(5602).PressableOpacity, obj9);
   obj7.children = items2;
   const items3 = [handleOpenDatePicker(onSubmit, obj7), ];
   const obj10 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: null };
@@ -151,7 +151,7 @@ export default noop.memo((onClose) => {
   };
   obj11.style = tmp.inputContainer;
   obj11.children = error(onClose(4832).Text, { variant: "text-md/medium", children: formatResult1 });
-  items4[1] = error(onClose(5435).PressableOpacity, obj11);
+  items4[1] = error(onClose(5602).PressableOpacity, obj11);
   let tmp10Result = null != error;
   if (tmp10Result) {
     const obj12 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };

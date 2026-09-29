@@ -1,25 +1,25 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17896
+// Function ID: 17897
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 6957, 1372, 6958, 21, 4836, 576, 17698, 17697, 11395, 5298, 17235, 14416, 8105, 504, 14414, 17708, 17692, 4528, 1115, 2781, 4800, 14415, 1981, 17701, 11405, 5279, 17709, 10459, 17710, 4832, 2487, 14417, 2]
+// Dependencies: [5, 32, 19, 17, 7123, 1372, 7124, 21, 4836, 576, 17887, 17886, 11564, 5464, 17424, 14591, 8270, 504, 14589, 17897, 17881, 4528, 1115, 2781, 4800, 14590, 1981, 17890, 11574, 5445, 17898, 10628, 17899, 4832, 2487, 14592, 2]
 // Exports: default
 
-// Module 17707 (ParentalConsentConnectionScreen)
+// Module 17896 (ParentalConsentConnectionScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef2781 from "module_2781" /* 2781 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14414 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14589 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7123 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_9 = fn(6958).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+let closure_9 = fn(7124).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let c12 = "https://support.discord.com/hc/articles/14155060633623";
@@ -198,7 +198,7 @@ export default function ParentalConsentConnectionScreen() {
     obj2.title = intl.string(_modDef2781.dMMSA0);
     const intl2 = util.intl;
     obj2.body = intl2.format(_modDef2781["6GaRTu"], { link });
-    obj.openLazy(asyncRequireImpl(14415, dependencyMap.paths), closure_9, obj2);
+    obj.openLazy(asyncRequireImpl(14590, dependencyMap.paths), closure_9, obj2);
   }, items7);
   let obj4 = { title: null, subtitle: null, subtitleColor: "text-muted", submitting: null, footer: null, children: null };
   const tmp14Result = tmp14(noop.useState(false), 2);

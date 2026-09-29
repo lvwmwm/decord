@@ -1,14 +1,14 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14616
+// Function ID: 14617
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4836, 576, 7618, 14429, 14438, 14440, 4678, 14439, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7783, 14604, 14613, 14615, 4678, 14614, 4832, 2]
 // Exports: default
 
-// Module 14441 (FamilyCenterActivityGiftRow)
+// Module 14616 (FamilyCenterActivityGiftRow)
 import nativeDefault from "native" /* 576 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7618 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14429 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14438 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7783 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14604 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14613 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -53,16 +53,16 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj3.offeredAt = offeredAt;
     obj3.claimedAt = claimedAt;
     const obj4 = { style: tmp.container, children: null };
-    const giftSubtext = tmp5(14440).getGiftSubtext(obj3);
+    const giftSubtext = tmp5(14615).getGiftSubtext(obj3);
     const obj5 = { displayName, product: null, isSubscription: null, subscriptionPlanId: null };
-    const tmp5Result = tmp5(14440);
+    const tmp5Result = tmp5(14615);
     if (product == null) {
       product = null;
     }
     obj5.product = product;
     obj5.isSubscription = isSubscription;
     obj5.subscriptionPlanId = subscriptionPlanId;
-    const items = [React4(tmp2(14439), obj5), ];
+    const items = [React4(tmp2(14614), obj5), ];
     const obj6 = { style: tmp.textContainer, children: null };
     const obj7 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
     const items1 = [React4(tmp5(4832).Text, obj7), ];

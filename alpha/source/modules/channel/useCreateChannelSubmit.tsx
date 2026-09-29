@@ -1,11 +1,11 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9178
+// Function ID: 9179
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1074, 1979, 1086, 9014, 4685, 1115, 2]
+// Dependencies: [5, 32, 19, 1074, 1979, 1086, 9179, 4685, 1115, 2]
 // Exports: default
 
-// Module 9013 (useCreateChannelSubmit)
-import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9014 */;
+// Module 9178 (useCreateChannelSubmit)
+import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9179 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

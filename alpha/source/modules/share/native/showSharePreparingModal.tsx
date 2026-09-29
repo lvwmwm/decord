@@ -1,13 +1,13 @@
-// Module ID: 7814
-// Function ID: 7815
+// Module ID: 7979
+// Function ID: 7980
 // Name: showSharePreparingModal
-// Dependencies: [7812, 5039, 7815, 1981, 2]
+// Dependencies: [7977, 5039, 7980, 1981, 2]
 // Exports: showSharePreparingModal
 
-// Module 7814 (showSharePreparingModal)
+// Module 7979 (showSharePreparingModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 7812 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 7977 */;
 import size from "module_2" /* 2 */;
 
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
@@ -29,7 +29,7 @@ export const showSharePreparingModal = function showSharePreparingModal(onCancel
         }
       }
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7815, dependencyMap.paths), {
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7980, dependencyMap.paths), {
       onCancel() {
         if (!_true) {
           _true = true;

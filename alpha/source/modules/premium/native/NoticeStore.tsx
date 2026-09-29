@@ -1,14 +1,14 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13436
+// Function ID: 13437
 // Name: NoticeStore
-// Dependencies: [6870, 1374, 1074, 510, 4421, 504, 573, 2]
+// Dependencies: [7036, 1374, 1074, 510, 4421, 504, 573, 2]
 
-// Module 13266 (NoticeStore)
+// Module 13436 (NoticeStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import UserOfferStore from "UserOfferStore" /* 6870 */;
+import UserOfferStore from "UserOfferStore" /* 7036 */;
 
 require = fn;
 function clearDismissUntil(arg0) {

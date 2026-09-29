@@ -1,22 +1,22 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17551
+// Function ID: 17552
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 2067, 17363, 21, 12, 9797, 4836, 576, 1115, 5776, 4728, 504, 8952, 4832, 17365, 17369, 1177, 17370, 5889, 6461, 1485, 5936, 2]
+// Dependencies: [32, 19, 17, 2067, 17552, 21, 12, 9964, 4836, 576, 1115, 5943, 4728, 504, 9117, 4832, 17554, 17558, 1177, 17559, 6055, 6627, 1485, 6102, 2]
 // Exports: computeSectionItem, default
 
-// Module 17362 (GuildSettingsModalEmoji)
+// Module 17551 (GuildSettingsModalEmoji)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5776 */;
-import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17365 */;
-import HeaderRow from "HeaderRow" /* 17369 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17370 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5943 */;
+import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17554 */;
+import HeaderRow from "HeaderRow" /* 17558 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17559 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17363 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17552 */;
 import apply_mod from "module_12" /* 12 */;
 
 const require = globalThis.__r;
@@ -184,7 +184,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let apply = apply_mod;
-let closure_12 = apply.throttle(fn(9797).fetchEmoji, 1000);
+let closure_12 = apply.throttle(fn(9964).fetchEmoji, 1000);
 const createStyles = fn(4836);
 let obj = { loadingContainer: { flex: 1, paddingTop: 40 }, emptyState: { paddingTop: 30 }, list: { paddingHorizontal: nativeDefault.space.PX_12 }, section: null, titleContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12 };

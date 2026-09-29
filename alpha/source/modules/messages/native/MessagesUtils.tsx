@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10991
+// Function ID: 10992
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 8843, 7013, 2045, 2108, 5725, 5056, 4885, 4469, 4851, 1372, 7375, 1074, 4986, 5060, 1979, 6715, 7183, 5364, 4456, 4528, 1115, 10823, 10824, 1970, 7182, 4481, 4801, 4802, 5881, 7184, 7186, 5016, 6610, 4981, 11, 4527, 10840, 9, 12, 1364, 1611, 10845, 1241, 10841, 6876, 5759, 4763, 10683, 10846, 6941, 2]
+// Dependencies: [32, 5, 9008, 7178, 2045, 2108, 5892, 5056, 4885, 4469, 4851, 1372, 7540, 1074, 4986, 5060, 1979, 6881, 7348, 5530, 4456, 4528, 1115, 10992, 10993, 1970, 7347, 4481, 4801, 4802, 6047, 7349, 7351, 5016, 6776, 4981, 11, 4527, 11009, 9, 12, 1364, 1611, 11014, 1241, 11010, 7042, 5926, 4763, 10852, 11015, 7107, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 10822 (messages/MessagesUtils)
+// Module 10991 (messages/MessagesUtils)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -20,25 +20,25 @@ import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
 import InteractionComponentUtils from "InteractionComponentUtils" /* 5060 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 5364 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6715 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7183 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
-import tracking_Tracking from "tracking/Tracking" /* 7186 */;
-import QuestActionCreators from "QuestActionCreators" /* 10683 */;
-import computeScrollData from "computeScrollData" /* 10840 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10841 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10845 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10846 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 5530 */;
+import QuestTypes from "QuestTypes" /* 5926 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6881 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7107 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7348 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7349 */;
+import tracking_Tracking from "tracking/Tracking" /* 7351 */;
+import QuestActionCreators from "QuestActionCreators" /* 10852 */;
+import computeScrollData from "computeScrollData" /* 11009 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 11010 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11014 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 11015 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7013 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7178 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5725 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5892 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import NetworkStore from "NetworkStore" /* 4885 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
@@ -202,8 +202,8 @@ function parseVoiceStateChannelIdSummary(prop) {
   }
   return map;
 }
-let closure_5 = fn(8843).updateShouldShowJumpToPresentButton;
-const RowGeneratorConstants = fn(7375);
+let closure_5 = fn(9008).updateShouldShowJumpToPresentButton;
+const RowGeneratorConstants = fn(7540);
 ({ RowType: closure_15, Changeset: closure_16 } = RowGeneratorConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_17, MessageEmbedTypes: closure_18, MessageTypes: closure_19, Permissions: closure_20, MAX_MESSAGES_PER_CHANNEL: closure_21 } = Constants);
@@ -393,7 +393,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       stringResult = string(t.X2L3Oa);
     }
     const obj3 = { key: "ARCHIVED_POST_REACTIONS_DISABLED_TOAST", content: stringResult, icon: null };
-    tmp36Result = tmp36(10823);
+    tmp36Result = tmp36(10992);
     obj3.icon = tmp36Result;
     t = obj15.open(obj3);
     isForumPostResult = channel.isForumPost();
@@ -401,24 +401,24 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     if (flag) {
       if (true === !reaction.me_burst) {
         if (!tmp12Result.isPremium(currentUser)) {
-          return tmp12(10824).handleOutOfSuperReactions();
+          return tmp12(10993).handleOutOfSuperReactions();
         }
         tmp12Result = tmp12(1970);
       }
     }
-    const ReactionTypes = tmp12(7182).ReactionTypes;
+    const ReactionTypes = tmp12(7347).ReactionTypes;
     if (tmp12Result10.isMeReaction(reaction.me, reaction.me_burst, tmp23)) {
       const result2 = tmp12(4801).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
       const tmp12Result11 = tmp12(4801);
       const obj4 = { channelId: channel.id, messageId, emoji: reaction.emoji, location: MESSAGE, options: null };
       const obj5 = { burst: flag };
       obj4.options = obj5;
-      tmp12(7183).removeReaction(obj4);
+      tmp12(7348).removeReaction(obj4);
     } else {
       if (!result) {
         if (channel.isPrivate()) {
           if (!result1) {
-            const tmp12Result13 = tmp12(7183);
+            const tmp12Result13 = tmp12(7348);
             const obj6 = { burst: flag };
             tmp12Result13.addReaction(channel.id, messageId, reaction.emoji, MESSAGE, obj6);
             if (!flag) {
@@ -431,14 +431,14 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       if (result) {
         const guildId1 = channel.getGuildId();
         if (null != guildId1) {
-          return tmp12(5881).openMemberVerificationModal(guildId1);
+          return tmp12(6047).openMemberVerificationModal(guildId1);
         }
       }
     }
     tmp12Result10 = tmp12(4481);
     tmp23 = flag ? ReactionTypes.BURST : ReactionTypes.NORMAL;
   } else {
-    const tmp12Result16 = tmp12(10824);
+    const tmp12Result16 = tmp12(10993);
     const obj7 = { burst: flag };
     const result4 = tmp12Result16.handleAddNewReactions(channel, messageId, MESSAGE, obj7);
   }
@@ -475,7 +475,7 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
   const obj = { postId: id, location };
   const result1 = HapticUtils.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
   if (null == channel) {
-    const tmp4Result8 = tmp4(6610);
+    const tmp4Result8 = tmp4(6776);
     let result2;
     if (true === flag) {
       result2 = SnowflakeUtilsDefault.castChannelIdAsMessageId(id);
@@ -484,7 +484,7 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
     tmp4Result8.copy(tmp4(4981).getChannelPermalink(guildId, id, result2));
     const tmp4Result9 = tmp4(4981);
   } else {
-    const tmp4Result10 = tmp4(6610);
+    const tmp4Result10 = tmp4(6776);
     tmp4Result10.copy(tmp4(4981).getChannelLinkToCopy(channel, channel1));
     const tmp4Result11 = tmp4(4981);
   }

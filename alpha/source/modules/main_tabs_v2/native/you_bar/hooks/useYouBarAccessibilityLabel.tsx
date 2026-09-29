@@ -1,20 +1,20 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16181
+// Function ID: 16182
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4858, 2045, 4469, 4876, 4479, 5591, 4855, 1074, 4678, 2021, 10339, 7610, 504, 10337, 10338, 10345, 1115, 10347, 2]
+// Dependencies: [4858, 2045, 4469, 4876, 4479, 5758, 4855, 1074, 4678, 2021, 10508, 7775, 504, 10506, 10507, 10514, 1115, 10516, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 16005 (useYouBarAccessibilityLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10337 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10338 */;
-import isGameActivityDefault from "isGameActivity" /* 10345 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10347 */;
+// Module 16181 (useYouBarAccessibilityLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10506 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10507 */;
+import isGameActivityDefault from "isGameActivity" /* 10514 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10516 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5758 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 const require = globalThis.__r;

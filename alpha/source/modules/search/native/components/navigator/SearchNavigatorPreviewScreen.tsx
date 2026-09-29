@@ -1,11 +1,11 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16871
+// Function ID: 16872
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1074, 21, 4836, 1485, 1488, 11841, 16640, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 1485, 1488, 12010, 16828, 2]
 // Exports: default
 
-// Module 16683 (SearchNavigatorPreviewScreen)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
+// Module 16871 (SearchNavigatorPreviewScreen)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12010 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

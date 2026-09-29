@@ -1,10 +1,10 @@
-// Module ID: 13664
-// Function ID: 13665
+// Module ID: 13833
+// Function ID: 13834
 // Name: LiveTag
 // Dependencies: [19, 17, 21, 4836, 576, 1364, 4832, 1115, 2]
 // Exports: default
 
-// Module 13664 (LiveTag)
+// Module 13833 (LiveTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;

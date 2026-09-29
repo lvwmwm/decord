@@ -1,10 +1,10 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9386
+// Function ID: 9387
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 4836, 576, 1397, 4487, 6551, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1397, 4487, 6717, 4832, 2]
 // Exports: default
 
-// Module 9221 (GuildProfileTraits)
+// Module 9386 (GuildProfileTraits)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
@@ -25,7 +25,7 @@ function TraitEmoji(emoji) {
     }
     const tmp5 = importDefault;
     const obj6 = { src: emojiURL, name: EmojiUtilsDefault.isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
-    return hasOwnProperty(tmp5(6551), obj6);
+    return hasOwnProperty(tmp5(6717), obj6);
   }
 }
 function GuildProfileTraitView(trait) {

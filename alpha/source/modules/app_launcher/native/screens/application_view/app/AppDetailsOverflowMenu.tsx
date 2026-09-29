@@ -1,12 +1,12 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11784
+// Function ID: 11785
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 8590, 8721, 1115, 10774, 2021, 6610, 4527, 10092, 7358, 7363, 7366, 2]
+// Dependencies: [19, 21, 8755, 8886, 1115, 10943, 2021, 6776, 4527, 10259, 7523, 7528, 7531, 2]
 // Exports: default
 
-// Module 11615 (AppDetailsOverflowMenu)
+// Module 11784 (AppDetailsOverflowMenu)
 import ToastUtils from "ToastUtils" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

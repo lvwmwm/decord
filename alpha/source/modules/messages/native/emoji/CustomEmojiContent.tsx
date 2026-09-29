@@ -1,22 +1,22 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9966
+// Function ID: 9967
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5772, 4655, 1372, 1074, 21, 4836, 576, 4488, 1241, 8695, 4800, 9792, 504, 6583, 5776, 4486, 4461, 9748, 6609, 2021, 9800, 6800, 9793, 9698, 9704, 4832, 1115, 9797, 4528, 9801, 1981, 7365, 1177, 5281, 5899, 9802, 8053, 9803, 9804, 2]
+// Dependencies: [19, 17, 5939, 4655, 1372, 1074, 21, 4836, 576, 4488, 1241, 8860, 4800, 9959, 504, 6749, 5943, 4486, 4461, 9915, 6775, 2021, 9967, 6966, 9960, 9865, 9871, 4832, 1115, 9964, 4528, 9968, 1981, 7530, 1177, 5447, 6065, 9969, 8218, 9970, 9971, 2]
 // Exports: default
 
-// Module 9799 (CustomEmojiContent)
+// Module 9966 (CustomEmojiContent)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5776 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9797 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9802 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5943 */;
+import openUserSettings from "openUserSettings" /* 6966 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8860 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9964 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9969 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5772 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5939 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -300,7 +300,7 @@ export default function CustomEmojiContent(emojiNode) {
     if (setting) {
       const obj22 = { accessibilityLabel: null, style: null, onPress: null, children: null };
       function handleOpenEmojiOptionsMenu() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9801, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9968, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
       }
       const intl3 = tmp2(tmp3[28]).intl;
       obj22.accessibilityLabel = intl3.string(tmp2(tmp3[28]).t.PdRCRg);

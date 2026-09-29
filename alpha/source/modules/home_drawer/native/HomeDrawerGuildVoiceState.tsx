@@ -1,17 +1,17 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 16132
+// Function ID: 16133
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4467, 4479, 5017, 4860, 1074, 21, 4836, 576, 12601, 1177, 4832, 1115, 9522, 5899, 5293, 15955, 504, 12, 13254, 2]
+// Dependencies: [19, 17, 4467, 4479, 5017, 4860, 1074, 21, 4836, 576, 12771, 1177, 4832, 1115, 9689, 6065, 5459, 16131, 504, 12, 13424, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 15956 (HomeDrawerGuildVoiceState)
+// Module 16132 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9522 */;
-import AvatarPile from "AvatarPile" /* 12601 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9689 */;
+import AvatarPile from "AvatarPile" /* 12771 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
@@ -100,11 +100,11 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj6 = { style: tmp.streamPreview, source: null };
       const obj7 = { uri: previewUrl };
       obj6.source = obj7;
-      const items1 = [tmp7(tmp3(5899), obj6), , , , ];
+      const items1 = [tmp7(tmp3(6065), obj6), , , , ];
       const obj8 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
-      items1[1] = tmp7(tmp3(5293), obj8);
+      items1[1] = tmp7(tmp3(5459), obj8);
       const obj9 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
-      items1[2] = tmp7(tmp3(5293), obj9);
+      items1[2] = tmp7(tmp3(5459), obj9);
       const obj10 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = tmp7(tmp8, obj10);
       items1[4] = tmp7(LiveTag, {});

@@ -1,10 +1,10 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9785
+// Function ID: 9786
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 4678, 4566, 4837, 4840, 4832, 1115, 1177, 9619, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 4678, 4566, 4837, 4840, 4832, 1115, 1177, 9786, 2]
 // Exports: default
 
-// Module 9618 (NotificationSettingsMockMessage)
+// Module 9785 (NotificationSettingsMockMessage)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
 import timingPresets from "timingPresets" /* 4840 */;
@@ -88,7 +88,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj9 = { style: tmp.cardContent, children: null };
   const obj10 = { children: null };
   const obj3 = { withTiming: require("timing").withTiming, opacity: sharedValue, timingStandard: require("timingPresets").timingStandard };
-  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(9619), size: require("native").AvatarSizes.LARGE_48 });
+  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(9786), size: require("native").AvatarSizes.LARGE_48 });
   const items4 = [tmp12(View, obj10), ];
   const obj12 = { style: tmp.cardMessage, children: null };
   const obj13 = { variant: "text-sm/semibold", children: null };

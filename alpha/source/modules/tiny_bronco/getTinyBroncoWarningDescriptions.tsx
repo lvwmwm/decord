@@ -1,13 +1,13 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 9402
+// Function ID: 9403
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [9231, 1115, 9235, 3071, 2]
+// Dependencies: [9396, 1115, 9399, 3071, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 13308 (getTinyBroncoWarningDescriptions)
+// Module 9402 (getTinyBroncoWarningDescriptions)
 import util from "util" /* 1115 */;
 import _modDef3071 from "module_3071" /* 3071 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9396 */;
 import size from "module_2" /* 2 */;
 
 ({ TINY_BRONCO_CHANNEL_LOCATION: c3, TINY_BRONCO_SERVER_LOCATION: closure_4 } = TinyBroncoConstants);

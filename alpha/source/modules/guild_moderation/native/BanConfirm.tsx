@@ -1,13 +1,13 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11499
+// Function ID: 11500
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 2067, 1372, 21, 1115, 1091, 4836, 576, 6402, 10608, 504, 5832, 11331, 4832, 4678, 5997, 6000, 6506, 5281, 2]
+// Dependencies: [32, 19, 17, 2067, 1372, 21, 1115, 1091, 4836, 576, 6568, 10777, 504, 5999, 11500, 4832, 4678, 6163, 6166, 6672, 5447, 2]
 
-// Module 11330 (BanConfirm)
+// Module 11499 (BanConfirm)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;

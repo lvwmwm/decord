@@ -1,12 +1,12 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10816
+// Function ID: 10817
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7035, 1372, 504, 7048, 2]
+// Dependencies: [7200, 1372, 504, 7213, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 10647 (useTieredTenureBadgeForUser)
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7048 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
+// Module 10816 (useTieredTenureBadgeForUser)
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7213 */;
+import UserProfileStore from "UserProfileStore" /* 7200 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

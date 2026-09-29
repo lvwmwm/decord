@@ -1,12 +1,12 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9430
+// Function ID: 9431
 // Name: GuildEventCard
-// Dependencies: [19, 17, 4859, 6946, 2051, 21, 4836, 576, 9062, 5745, 504, 8982, 5919, 7858, 9087, 2]
+// Dependencies: [19, 17, 4859, 7112, 2051, 21, 4836, 576, 9227, 5912, 504, 9147, 6085, 8023, 9252, 2]
 
-// Module 9263 (GuildEventCard)
+// Module 9430 (GuildEventCard)
 import nativeDefault from "native" /* 576 */;
-import ButtonGroup from "ButtonGroup" /* 5745 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 9062 */;
+import ButtonGroup from "ButtonGroup" /* 5912 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 9227 */;
 import noop from "module_19" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
@@ -22,7 +22,7 @@ function GuildEventCardControls(onCloseAction) {
   let tmp6Result = primaryActionButtonType === GuildEventCardComponents.PrimaryActionType.START;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(9062).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(9227).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = React5(GuildEventCardComponents.GuildEventShareAction, { event });
@@ -30,7 +30,7 @@ function GuildEventCardControls(onCloseAction) {
   return React6(ButtonGroup.ButtonGroup, obj2);
 }
 const View = fn(17).View;
-let closure_5 = fn(6946).isGuildScheduledEventActive;
+let closure_5 = fn(7112).isGuildScheduledEventActive;
 fn(2051).AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

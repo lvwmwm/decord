@@ -1,11 +1,11 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 12259
+// Function ID: 12260
 // Name: ProgressCircle
-// Dependencies: [19, 17, 21, 4836, 4540, 576, 7909, 2]
+// Dependencies: [19, 17, 21, 4836, 4540, 576, 8074, 2]
 
-// Module 12088 (ProgressCircle)
+// Module 12259 (ProgressCircle)
 import nativeDefault from "native" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
+import inlineStyles from "inlineStyles" /* 8074 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

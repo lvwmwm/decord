@@ -1,16 +1,16 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16718
+// Function ID: 16719
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2112, 7303, 21, 4836, 11841, 5919, 4832, 1115, 2]
+// Dependencies: [19, 2112, 7468, 21, 4836, 12010, 6085, 4832, 1115, 2]
 // Exports: default
 
-// Module 16529 (SearchHistoricalIndexingHeader)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
+// Module 16718 (SearchHistoricalIndexingHeader)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12010 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 
 const require = fn;
-const SearchConstants = fn(7303);
+const SearchConstants = fn(7468);
 ({ SearchTabs: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = SearchConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);

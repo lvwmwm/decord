@@ -1,17 +1,17 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 15067
+// Function ID: 15068
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1390, 1074, 21, 1389, 4836, 576, 10360, 1391, 558, 14893, 4801, 14894, 1241, 4800, 6571, 14890, 5281, 1115, 14174, 9713, 2]
+// Dependencies: [32, 19, 17, 1390, 1074, 21, 1389, 4836, 576, 10529, 1391, 558, 15068, 4801, 15069, 1241, 4800, 6737, 15065, 5447, 1115, 14349, 9880, 2]
 // Exports: default
 
-// Module 14892 (DisplayNameStylesGummyColorPickerSheet)
+// Module 15067 (DisplayNameStylesGummyColorPickerSheet)
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameStylesUtils2 from "DisplayNameStylesUtils" /* 1389 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 14894 */;
+import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 15069 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -59,7 +59,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   const tmp = closure_12();
   dependencyMap = tmp;
   let tmp5 = selectedColors.length > 0;
-  const displayNameStylesEffectConfig = selectedColors(10360).useDisplayNameStylesEffectConfig(selectedColors(1391).DisplayNameEffect.GUMMY);
+  const displayNameStylesEffectConfig = selectedColors(10529).useDisplayNameStylesEffectConfig(selectedColors(1391).DisplayNameEffect.GUMMY);
   if (tmp5) {
     tmp5 = !dependencyMap.some((item) => discord_common_shallowEqual.areArraysShallowEqual(item, selectedColors));
   }
@@ -79,9 +79,9 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     }
     return gummyColors;
   });
-  let obj = selectedColors(10360);
+  let obj = selectedColors(10529);
   const tmp11 = onSelectColors;
-  const tmp12Result = onSelectColors(14893)(selectedColors(1391).DisplayNameEffect.GUMMY);
+  const tmp12Result = onSelectColors(15068)(selectedColors(1391).DisplayNameEffect.GUMMY);
   const findIndexResult = tmp12Result.findIndex((colors) => discord_common_shallowEqual.areArraysShallowEqual(colors.colors, first1));
   c8 = findIndexResult;
   let items = [initialColor];
@@ -114,13 +114,13 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   }, items1);
   let obj2 = { header: null, children: null };
   let obj3 = { title: displayNameStylesEffectConfig.name, trailing: null };
-  const tmp12 = onSelectColors(14893);
+  const tmp12 = onSelectColors(15068);
   const obj4 = { variant: "primary", size: "sm", text: null, onPress: null };
   const intl = tmp2(1115).intl;
   obj4.text = intl.string(selectedColors(1115).t.XqMe3N);
   obj4.onPress = callback2;
-  obj3.trailing = closure_9(selectedColors(5281).Button, obj4);
-  obj2.header = closure_9(onSelectColors(14890), obj3);
+  obj3.trailing = closure_9(selectedColors(5447).Button, obj4);
+  obj2.header = closure_9(onSelectColors(15065), obj3);
   const obj5 = { style: tmp.body, children: null };
   const obj6 = { style: null, children: null };
   const items2 = [, ];
@@ -141,13 +141,13 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     let tmp18Result = tmp18(tmp21, obj9);
   } else {
     const obj10 = { colors: first1 };
-    tmp18Result = tmp18(tmp11(14174), obj10);
+    tmp18Result = tmp18(tmp11(14349), obj10);
   }
   const items4 = [tmp18Result, ];
   const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: null };
-  const tmp19 = onSelectColors(14890);
+  const tmp19 = onSelectColors(15065);
   const tmp22 = first1;
-  obj11.children = closure_9(closure_5, { style: tmp.customIconScrim, children: closure_9(selectedColors(9713).PencilIcon, { color: "white", size: "sm" }) });
+  obj11.children = closure_9(closure_5, { style: tmp.customIconScrim, children: closure_9(selectedColors(9880).PencilIcon, { color: "white", size: "sm" }) });
   items4[1] = closure_9(closure_5, obj11);
   obj8.children = items4;
   obj7.children = closure_10(tmp22, obj8);
@@ -181,8 +181,8 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   const intl3 = tmp2(1115).intl;
   obj13.text = intl3.string(selectedColors(1115).t.yBZMsQ);
   obj13.onPress = callback1;
-  items6[1] = closure_9(selectedColors(5281).Button, obj13);
+  items6[1] = closure_9(selectedColors(5447).Button, obj13);
   obj5.children = items6;
   obj2.children = closure_10(closure_5, obj5);
-  return closure_9(selectedColors(6571).BottomSheet, obj2);
+  return closure_9(selectedColors(6737).BottomSheet, obj2);
 };

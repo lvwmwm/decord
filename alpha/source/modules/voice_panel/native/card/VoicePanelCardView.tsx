@@ -1,24 +1,24 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 17142
+// Function ID: 17143
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 4852, 11755, 11753, 16913, 11758, 4857, 21, 16956, 4566, 8853, 11754, 4531, 576, 11759, 10456, 5280, 16916, 5898, 6494, 5234, 16906, 504, 12, 4541, 1115, 4540, 2]
+// Dependencies: [32, 19, 17, 4852, 11924, 11922, 17100, 11927, 4857, 21, 17143, 4566, 9018, 11923, 4531, 576, 11928, 10625, 5446, 17103, 6064, 6660, 5400, 17093, 504, 12, 4541, 1115, 4540, 2]
 
-// Module 16955 (VoicePanelCardView)
+// Module 17142 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 4540 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import Suspender from "Suspender" /* 5234 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6494 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11759 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 16956 */;
+import Suspender from "Suspender" /* 5400 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6660 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11928 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 17143 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
-const spring = tmp23(5280);
-const roundToNearestPixelDefault = tmp3(10456);
+const spring = tmp23(5446);
+const roundToNearestPixelDefault = tmp3(10625);
 require = fn;
 function getCardKey(type) {
   return "" + type.type + "-" + type.id;
@@ -162,11 +162,11 @@ function CardContentFreezer(children) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VoicePanelConstants = fn(11755);
+const VoicePanelConstants = fn(11924);
 ({ LAYOUT_PHYSICS: closure_8, VoicePanelModes: closure_9, UI_SHOW_HIDE_PHYSICS, VOICE_PANEL_CHUNK_DIVISOR } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(16913).VoicePanelPIPModes;
-const EDGE_GUTTER = fn(11758).EDGE_GUTTER;
+const VoicePanelControlsModes = fn(11922).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(17100).VoicePanelPIPModes;
+const EDGE_GUTTER = fn(11927).EDGE_GUTTER;
 const isUserParticipant = fn(4857).isUserParticipant;
 const jsx = fn(21).jsx;
 let SCALE_PHYSICS = {};

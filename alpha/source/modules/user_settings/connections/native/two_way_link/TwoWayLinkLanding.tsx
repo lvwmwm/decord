@@ -1,14 +1,14 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8702
+// Function ID: 8703
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 5593, 21, 4836, 8538, 504, 4832, 5917, 1115, 6544, 5279, 5281, 2]
+// Dependencies: [19, 17, 5760, 21, 4836, 8703, 504, 4832, 6083, 1115, 6710, 5445, 5447, 2]
 // Exports: TwoWayLinkLanding
 
-// Module 8537 (TwoWayLinkLanding)
+// Module 8702 (TwoWayLinkLanding)
 import Text_Text from "Text/Text" /* 4832 */;
-import TableRow from "TableRow" /* 5917 */;
+import TableRow from "TableRow" /* 6083 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5760 */;
 
 const require = globalThis.__r;
 

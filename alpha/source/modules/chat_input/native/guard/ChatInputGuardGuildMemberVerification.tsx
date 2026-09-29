@@ -1,23 +1,23 @@
-// Module ID: 11949
-// Function ID: 11950
+// Module ID: 12120
+// Function ID: 12121
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 17, 4825, 11444, 1074, 21, 4836, 5857, 4658, 11950, 1115, 5016, 5839, 11951, 5992, 5881, 504, 11941, 5841, 11952, 2]
+// Dependencies: [19, 17, 4825, 11613, 1074, 21, 4836, 6023, 4658, 12121, 1115, 5016, 6005, 12122, 6158, 6047, 504, 12112, 6007, 12123, 2]
 
-// Module 11949 (ChatInputGuardGuildMemberVerification)
+// Module 12120 (ChatInputGuardGuildMemberVerification)
 import util from "util" /* 1115 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5839 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5881 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
-import _modDef11950 from "module_11950" /* 11950 */;
-import _modDef11951 from "module_11951" /* 11951 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6005 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6047 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12112 */;
+import _modDef12121 from "module_12121" /* 12121 */;
+import _modDef12122 from "module_12122" /* 12122 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
-const LottieAnimationViewDefault = tmp14(5841);
+const LottieAnimationViewDefault = tmp14(6007);
 require = fn;
 const Image = fn(17).Image;
-const TextAreaCta = fn(11444).TextAreaCta;
+const TextAreaCta = fn(11613).TextAreaCta;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
@@ -28,13 +28,13 @@ let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInp
 export default noop.memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = closure_8();
-  const currentUserGuildJoinRequest = guildId(5857).useCurrentUserGuildJoinRequest(guildId);
+  const currentUserGuildJoinRequest = guildId(6023).useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
   if (guildId(4658).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp8 = _modDef11950;
+    let tmp8 = _modDef12121;
     const intl3 = tmp2(1115).intl;
     let stringResult = intl3.string(tmp2(1115).t.lk30cY);
     let fn = function _() {
@@ -43,7 +43,7 @@ export default noop.memo(function ChatInputGuardGuildMemberVerification(guildId)
       const result = MemberVerificationAlertActionCreators.openMemberVerificationRejectedAlert({ guildId, canWithdraw: false });
     };
   } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp8 = _modDef11951;
+    tmp8 = _modDef12122;
     const intl2 = tmp2(1115).intl;
     stringResult = intl2.string(tmp2(1115).t["5iLvSx"]);
     fn = function _() {
@@ -54,7 +54,7 @@ export default noop.memo(function ChatInputGuardGuildMemberVerification(guildId)
       obj4.subtitleText = intl.string(util.t["13tjTU"]);
       const result = MemberVerificationAlertActionCreators.openMemberVerificationCancelPendingAlert(obj4);
     };
-    const tmp7 = jsx(tmp2(5992).XSmallIcon, {});
+    const tmp7 = jsx(tmp2(6158).XSmallIcon, {});
   } else {
     let intl = tmp2(1115).intl;
     stringResult = intl.string(tmp2(1115).t.rEBKvg);
@@ -64,7 +64,7 @@ export default noop.memo(function ChatInputGuardGuildMemberVerification(guildId)
       const result = MemberVerificationModalActionCreators.openMemberVerificationModal(guildId);
     };
   }
-  let obj = guildId(5857);
+  let obj = guildId(6023);
   const items = [AccessibilityStore];
   const stateFromStores = guildId(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp2Result = guildId(504);
@@ -72,7 +72,7 @@ export default noop.memo(function ChatInputGuardGuildMemberVerification(guildId)
     let obj2 = { style: tmp.noticeIcon, source: tmp8 };
     let tmp13Result = tmp13(Image, obj2);
   } else {
-    const obj3 = { style: tmp.lottieAnimation, source: tmp2(11952), autoPlay: !stateFromStores };
+    const obj3 = { style: tmp.lottieAnimation, source: tmp2(12123), autoPlay: !stateFromStores };
     tmp13Result = tmp13(LottieAnimationViewDefault, obj3);
     const tmp14Result = LottieAnimationViewDefault;
   }

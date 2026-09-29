@@ -1,11 +1,11 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 12004
+// Function ID: 12005
 // Name: SearchQueryTagManager
-// Dependencies: [7303, 7302, 2]
+// Dependencies: [7468, 7467, 2]
 
-// Module 11835 (SearchQueryTagManager)
-import TrackingConstants from "TrackingConstants" /* 7302 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+// Module 12004 (SearchQueryTagManager)
+import TrackingConstants from "TrackingConstants" /* 7467 */;
+import SearchConstants from "SearchConstants" /* 7468 */;
 import size from "module_2" /* 2 */;
 
 function isComplete(type) {

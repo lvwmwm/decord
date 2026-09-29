@@ -1,16 +1,16 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14868
+// Function ID: 14869
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 4836, 4683, 576, 4531, 4767, 4686, 5293, 5976, 2]
+// Dependencies: [19, 17, 21, 4836, 4683, 576, 4531, 4767, 4686, 5459, 6142, 2]
 // Exports: default
 
-// Module 14693 (PremiumRewardGradient)
+// Module 14868 (PremiumRewardGradient)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import design_shared from "design/shared" /* 4686 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import _modDef5976 from "module_5976" /* 5976 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import _modDef6142 from "module_6142" /* 6142 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -73,7 +73,7 @@ function PremiumRewardGlowGradient(arg0) {
   }
   const obj5 = { style: items2, maskElement: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 }), children: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: memo, start, end }) };
   items2[1] = glowLight;
-  const items3 = [timestampProducer(_modDef5976, obj5), children];
+  const items3 = [timestampProducer(_modDef6142, obj5), children];
   obj4.children = items3;
   return tmp9(tmp10, obj4);
 }

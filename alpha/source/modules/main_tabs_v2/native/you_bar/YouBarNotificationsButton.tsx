@@ -1,23 +1,23 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16206
+// Function ID: 16207
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11155, 14627, 21, 4836, 576, 16031, 4566, 5280, 7275, 504, 4801, 7284, 7285, 1115, 9067, 16029, 7363, 1177, 4693, 2]
+// Dependencies: [19, 17, 11324, 14802, 21, 4836, 576, 16207, 4566, 5446, 7440, 504, 4801, 7449, 7450, 1115, 9232, 16205, 7528, 1177, 4693, 2]
 
-// Module 16030 (YouBarNotificationsButton)
+// Module 16206 (YouBarNotificationsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5280 */;
-import showForLaterModal from "showForLaterModal" /* 7284 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7285 */;
+import spring from "spring" /* 5446 */;
+import showForLaterModal from "showForLaterModal" /* 7449 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7450 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11155 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11324 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(14627);
+const YouBarConstants = fn(14802);
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: closure_7, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

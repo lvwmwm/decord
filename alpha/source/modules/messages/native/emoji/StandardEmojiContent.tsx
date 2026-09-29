@@ -1,20 +1,20 @@
-// Module ID: 9791
-// Function ID: 9792
+// Module ID: 9958
+// Function ID: 9959
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 4655, 21, 4836, 576, 9792, 4487, 5899, 4832, 9793, 4483, 9748, 9795, 1115, 8053, 5281, 9797, 2]
+// Dependencies: [19, 17, 4655, 21, 4836, 576, 9959, 4487, 6065, 4832, 9960, 4483, 9915, 9962, 1115, 8218, 5447, 9964, 2]
 // Exports: default
 
-// Module 9791 (StandardEmojiContent)
+// Module 9958 (StandardEmojiContent)
 import nativeDefault from "native" /* 576 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9792 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9797 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9959 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9964 */;
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 
 const Text_Text = tmp2(4832);
-const FastImageDefault = tmp5(5899);
+const FastImageDefault = tmp5(6065);
 require = fn;
 function Emoji(surrogate) {
   surrogate = surrogate.surrogate;

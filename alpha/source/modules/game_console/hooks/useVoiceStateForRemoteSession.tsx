@@ -1,10 +1,10 @@
-// Module ID: 8962
-// Function ID: 8963
+// Module ID: 9127
+// Function ID: 9128
 // Name: useVoiceStateForRemoteSession
 // Dependencies: [502, 4855, 4853, 504, 2]
 // Exports: default
 
-// Module 8962 (useVoiceStateForRemoteSession)
+// Module 9127 (useVoiceStateForRemoteSession)
 import initialize from "initialize" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;

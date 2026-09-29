@@ -1,10 +1,10 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12467
+// Function ID: 12468
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4825, 2005, 21, 4836, 504, 4566, 4837, 1177, 1115, 5281, 2]
+// Dependencies: [19, 17, 4825, 2005, 21, 4836, 504, 4566, 4837, 1177, 1115, 5447, 2]
 // Exports: default
 
-// Module 12296 (ActivitiesPrivateChannelCallTooltip)
+// Module 12467 (ActivitiesPrivateChannelCallTooltip)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
@@ -74,7 +74,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = tmp2(1115).intl;
   obj7.text = intl3.string(num(1115).t["NX+WJN"]);
   obj7.onPress = onClosePress.onClosePress;
-  obj6.children = jsx(num(5281).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj6.children = jsx(num(5447).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj4.children = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj3.children = jsx(num(1177).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: null, label: null, title: null, children: null });
   return jsx(ReanimatedRexportDefault.View, { style: null, children: null });

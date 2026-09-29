@@ -1,15 +1,15 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11672
+// Function ID: 11673
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 2052, 21, 4836, 6693, 11485, 11495, 11504, 11507, 2]
+// Dependencies: [32, 19, 17, 2052, 21, 4836, 6859, 11654, 11664, 11673, 11676, 2]
 // Exports: default
 
-// Module 11503 (ForumPostList)
-import ForumTagHooks from "ForumTagHooks" /* 6693 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11485 */;
-import ForumPostAppliedTags from "ForumPostAppliedTags" /* 11495 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11504 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11507 */;
+// Module 11672 (ForumPostList)
+import ForumTagHooks from "ForumTagHooks" /* 6859 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11654 */;
+import ForumPostAppliedTags from "ForumPostAppliedTags" /* 11664 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 11673 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 11676 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

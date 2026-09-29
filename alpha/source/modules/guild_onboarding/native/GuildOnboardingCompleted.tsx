@@ -1,21 +1,21 @@
-// Module ID: 6604
-// Function ID: 6605
+// Module ID: 6770
+// Function ID: 6771
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4825, 2102, 2067, 1372, 6521, 21, 4836, 576, 1485, 504, 6548, 4540, 6605, 1397, 1880, 1370, 5266, 4566, 4837, 5899, 6544, 4832, 1115, 1177, 6606, 5896, 4421, 6631, 5281, 2]
+// Dependencies: [19, 17, 4825, 2102, 2067, 1372, 6687, 21, 4836, 576, 1485, 504, 6714, 4540, 6771, 1397, 1880, 1370, 5432, 4566, 4837, 6065, 6710, 4832, 1115, 1177, 6772, 6062, 4421, 6797, 5447, 2]
 // Exports: default
 
-// Module 6604 (GuildOnboardingCompleted)
+// Module 6770 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 6606 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 6772 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6687 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

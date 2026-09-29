@@ -1,10 +1,10 @@
-// Module ID: 5283
-// Function ID: 5284
+// Module ID: 5449
+// Function ID: 5450
 // Name: Icon
 // Dependencies: [19, 17, 21, 4836, 576, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 5283 (Icon)
+// Module 5449 (Icon)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15793
+// Function ID: 15794
 // Name: NativeAuthenticationModule
 // Dependencies: [17, 2]
 
-// Module 15618 (NativeAuthenticationModule)
+// Module 15793 (NativeAuthenticationModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 16488
-// Function ID: 16489
+// Module ID: 16676
+// Function ID: 16677
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 4836, 576, 1177, 4832, 4678, 4989, 10371, 5402, 1115, 5335, 5919, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1177, 4832, 4678, 4989, 10540, 5568, 1115, 5501, 6085, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 16488 (SearchListCard)
+// Module 16676 (SearchListCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import ForumIcon from "ForumIcon" /* 5402 */;
-import Card from "Card" /* 5919 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
+import ForumIcon from "ForumIcon" /* 5568 */;
+import Card from "Card" /* 6085 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10540 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

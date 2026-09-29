@@ -1,16 +1,16 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 6722
+// Function ID: 6723
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 5771, 6521, 1375, 21, 4836, 563, 6551, 1397, 1177, 1115, 4832, 6557, 1613, 4800, 6570, 6571, 6045, 5281, 2]
+// Dependencies: [19, 17, 5938, 6687, 1375, 21, 4836, 563, 6717, 1397, 1177, 1115, 4832, 6723, 1613, 4800, 6736, 6737, 6211, 5447, 2]
 // Exports: default
 
-// Module 6556 (DropdownOptionsActionSheet)
+// Module 6722 (DropdownOptionsActionSheet)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6687 */;
 
 require = fn;
 function DropdownOptionRow(option) {
@@ -119,7 +119,7 @@ export default function DropdownOptionsActionSheet(arg0) {
     const obj3 = { title: null };
     const intl = tmp3(1115).intl;
     obj3.title = intl.string(tmp3(1115).t.E2ICbC);
-    const obj4 = { scrollable: true, header: closure_8(tmp3(6570).BottomSheetTitleHeader, obj3), children: null };
+    const obj4 = { scrollable: true, header: closure_8(tmp3(6736).BottomSheetTitleHeader, obj3), children: null };
     const obj5 = { contentContainerStyle: null, children: null };
     const obj6 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj5.contentContainerStyle = obj6;
@@ -133,10 +133,10 @@ export default function DropdownOptionsActionSheet(arg0) {
     const obj9 = { onPress: tmp5, text: null, grow: true };
     const intl3 = tmp3(1115).intl;
     obj9.text = intl3.string(tmp3(1115).t.cpT0Cq);
-    obj8.children = closure_8(tmp3(5281).Button, obj9);
+    obj8.children = closure_8(tmp3(5447).Button, obj9);
     items2[1] = closure_8(responses, obj8);
     obj5.children = items2;
-    obj4.children = closure_9(tmp3(6045).BottomSheetScrollView, obj5);
-    return closure_8(tmp3(6571).BottomSheet, obj4);
+    obj4.children = closure_9(tmp3(6211).BottomSheetScrollView, obj5);
+    return closure_8(tmp3(6737).BottomSheet, obj4);
   }
 };

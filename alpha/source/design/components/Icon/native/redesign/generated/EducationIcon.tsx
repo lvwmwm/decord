@@ -1,13 +1,13 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 11120
+// Function ID: 11121
 // Name: EducationIcon
-// Dependencies: [19, 21, 576, 4530, 10950, 2]
+// Dependencies: [19, 21, 576, 4530, 11119, 2]
 // Exports: EducationIcon
 
-// Module 10951 (EducationIcon)
+// Module 11120 (EducationIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod10950 from "module_10950" /* 10950 */;
+import _mod11119 from "module_11119" /* 11119 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EducationIcon = function EducationIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10950, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11119, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

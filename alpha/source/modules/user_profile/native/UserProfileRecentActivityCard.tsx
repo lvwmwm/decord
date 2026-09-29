@@ -1,28 +1,28 @@
-// Module ID: 12655
-// Function ID: 12656
+// Module ID: 12825
+// Function ID: 12826
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 12582, 7592, 12587, 4836, 576, 7789, 4540, 8021, 4685, 5899, 1397, 2011, 4832, 12573, 6583, 6603, 12594, 12595, 8128, 8139, 5435, 1115, 2]
+// Dependencies: [19, 17, 21, 12752, 7757, 12757, 4836, 576, 7954, 4540, 8186, 4685, 6065, 1397, 2011, 4832, 12743, 6749, 6769, 12764, 12765, 8293, 8304, 5602, 1115, 2]
 // Exports: default
 
-// Module 12655 (UserProfileRecentActivityCard)
+// Module 12825 (UserProfileRecentActivityCard)
 import nativeDefault from "native" /* 576 */;
 import StringUtils from "StringUtils" /* 2011 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import utils from "utils" /* 7592 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12573 */;
-import BadgesAll from "Badges" /* 12582 */;
-import TrendingType from "TrendingType" /* 12587 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12594 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12595 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6749 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import utils from "utils" /* 7757 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 7954 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8304 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12743 */;
+import BadgesAll from "Badges" /* 12752 */;
+import TrendingType from "TrendingType" /* 12757 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12764 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12765 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-const useOpenGameProfileModalDefault = tmp4(8128);
+const useOpenGameProfileModalDefault = tmp4(8293);
 require = fn;
 function GamingEntryBadges(entry) {
   entry = entry.entry;
@@ -66,8 +66,8 @@ let obj = {
     return true;
   }
 };
-items[1] = { Badge: BadgesAll.NewGameBadge, predicate: fn(7592).isEntryNew };
-let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: fn(7592).isEntryNew };
+items[1] = { Badge: BadgesAll.NewGameBadge, predicate: fn(7757).isEntryNew };
+let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: fn(7757).isEntryNew };
 items[2] = {
   Badge: BadgesAll.StreakBadge,
   predicate(entry) {
@@ -170,7 +170,7 @@ let closure_11 = noop.memo((poster) => {
     const tmp2Result = tmp2(4685);
     const colors = nativeDefault.colors;
     obj3.color = tmp2(4685).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-    obj3 = tmp11(tmp2(8021).UnknownGameIcon, obj3);
+    obj3 = tmp11(tmp2(8186).UnknownGameIcon, obj3);
     obj2.children = obj3;
     timestampProducer(tmp12, obj2);
     const isThemeDarkResult = tmp2(4685).isThemeDark(obj.useThemeContext().theme);
@@ -195,7 +195,7 @@ let closure_11 = noop.memo((poster) => {
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: null };
       const obj7 = { source: null, alt: null, style: null };
-      const tmp6Result = tmp6(5899);
+      const tmp6Result = tmp6(6065);
       obj7.source = tmp2(1397).makeSource(smallImage.src);
       obj7.alt = smallImage.alt;
       obj7.style = tmp.smallImage;
@@ -309,11 +309,11 @@ export default function UserProfileRecentActivityCard(style) {
         } else {
           obj8 = { title: "r" };
         }
-        tmpResult6 = tmp(7789);
+        tmpResult6 = tmp(7954);
       }
-      tmpResult5 = tmp(7789);
+      tmpResult5 = tmp(7954);
     }
-    tmpResult4 = tmp(7789);
+    tmpResult4 = tmp(7954);
   }
   ({ title, subtitle } = obj8);
   let str;
@@ -336,7 +336,7 @@ export default function UserProfileRecentActivityCard(style) {
     const obj11 = { gameName: str };
     obj10.accessibilityLabel = intl.formatToPlainString(tmp(1115).t["9sZWVp"], obj11);
     obj10.children = tmp20;
-    tmp19Result = tmp19(tmp(5435).PressableOpacity, obj10);
+    tmp19Result = tmp19(tmp(5602).PressableOpacity, obj10);
   }
   obj9.children = tmp19Result;
   return timestampProducer(useAnalyticsLocations.AnalyticsLocationProvider, obj9);

@@ -1,20 +1,20 @@
-// Module ID: 6813
-// Function ID: 6814
+// Module ID: 6979
+// Function ID: 6980
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1372, 4494, 6814, 1074, 1374, 4421, 38, 4503, 4488, 504, 5298, 6820, 12, 2]
+// Dependencies: [32, 19, 1372, 4494, 6980, 1074, 1374, 4421, 38, 4503, 4488, 504, 5464, 6986, 12, 2]
 // Exports: default
 
-// Module 6813 (useFractionalPremiumInfo)
+// Module 6979 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import BillingUtils from "BillingUtils" /* 4503 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 6820 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 6986 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import EntitlementStore from "EntitlementStore" /* 6814 */;
+import EntitlementStore from "EntitlementStore" /* 6980 */;
 
 const require = globalThis.__r;
 

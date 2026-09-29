@@ -1,14 +1,14 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14247
+// Function ID: 14248
 // Name: commands/activities
-// Dependencies: [5, 4739, 1074, 5045, 7787, 14042, 8770, 9275, 14033, 5451, 5462, 8782, 4736, 2]
+// Dependencies: [5, 4739, 1074, 5045, 7952, 14214, 8935, 9442, 14205, 5618, 5629, 8947, 4736, 2]
 
-// Module 14075 (commands/activities)
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14042 */;
+// Module 14247 (commands/activities)
+import RPCErrorDefault from "RPCError" /* 8935 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14214 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const instant_invite_InstantInviteUtils = tmp(9275);
+const instant_invite_InstantInviteUtils = tmp(9442);
 require = fn;
 let Constants = fn(4739);
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = Constants);
@@ -18,7 +18,7 @@ const NativePermissionTypes = fn(5045).NativePermissionTypes;
 let obj = {};
 let obj2 = { scope: null, handler: null };
 let obj3 = {};
-const items = [fn(7787).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
+const items = [fn(7952).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
 obj3[RPC_SCOPE_CONFIG.ANY] = items;
 obj2.scope = obj3;
 obj2.handler = function handler(socket) {
@@ -38,7 +38,7 @@ obj2.handler = function handler(socket) {
 obj[RPCCommands.OPEN_INVITE_DIALOG] = obj2;
 let obj4 = { scope: null, handler: null };
 let obj5 = {};
-const items1 = [fn(7787).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
+const items1 = [fn(7952).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
 obj5[RPC_SCOPE_CONFIG.ANY] = items1;
 obj4.scope = obj5;
 obj4.handler = function handler(socket) {
@@ -76,10 +76,10 @@ obj4.handler = function handler(socket) {
             closure_128_0 = id;
             if (null == id) {
               const obj4 = { errorCode: constants.INVALID_COMMAND };
-              const tmp62 = new tmp2(8770)(obj4, "No application.");
+              const tmp62 = new tmp2(8935)(obj4, "No application.");
               throw tmp62;
             } else {
-              const tmp91 = tmp2(14033)(tmp87);
+              const tmp91 = tmp2(14205)(tmp87);
               let id1;
               if (tmp91 != null) {
                 id1 = tmp91.id;
@@ -87,10 +87,10 @@ obj4.handler = function handler(socket) {
               closure_128_1 = id1;
               if (null == id1) {
                 const obj5 = { errorCode: constants.UNKNOWN_ERROR };
-                const tmp54 = new tmp2(8770)(obj5, "Unable to find selected channel");
+                const tmp54 = new tmp2(8935)(obj5, "Unable to find selected channel");
                 throw tmp54;
               } else {
-                const permission = tmp2(5451).requestPermission(constants2.PHOTOS);
+                const permission = tmp2(5618).requestPermission(constants2.PHOTOS);
                 dependencyMap = 1;
                 c3 = 1;
                 const obj6 = {
@@ -114,11 +114,11 @@ obj4.handler = function handler(socket) {
           } else if (value) {
             dependencyMap = 2;
             c3 = 1;
-            const obj8 = { value: tmp85(5462).launchImageLibraryAsync({ mediaType: "photo", includeBase64: false, selectionLimit: 1 }), done: false };
+            const obj8 = { value: tmp85(5629).launchImageLibraryAsync({ mediaType: "photo", includeBase64: false, selectionLimit: 1 }), done: false };
             return obj8;
           } else {
             const obj9 = { errorCode: constants.UNKNOWN_ERROR };
-            const tmp42 = new tmp85(8770)(obj9, "Missing photo permissions");
+            const tmp42 = new tmp85(8935)(obj9, "Missing photo permissions");
             throw tmp42;
           }
         } else if (2 === tmp6) {
@@ -133,13 +133,13 @@ obj4.handler = function handler(socket) {
             closure_128_2 = value.assets[0];
             if (null == closure_128_2) {
               const obj11 = { errorCode: constants.UNKNOWN_ERROR };
-              const tmp36 = new tmp2(8770)(obj11, "No image selected");
+              const tmp36 = new tmp2(8935)(obj11, "No image selected");
               throw tmp36;
             } else {
               const obj13 = { name: closure_128_2.fileName, type: closure_128_2.type, uri: closure_128_2.uri };
               dependencyMap = 3;
               c3 = 1;
-              const obj14 = { value: tmp3(8782).uploadImageAttachment(closure_128_0, closure_128_1, obj13), done: false };
+              const obj14 = { value: tmp3(8947).uploadImageAttachment(closure_128_0, closure_128_1, obj13), done: false };
               return obj14;
             }
           }
@@ -164,7 +164,7 @@ obj4.handler = function handler(socket) {
           }
           const obj17 = { errorCode: constants.UNKNOWN_ERROR };
           const _JSON = JSON;
-          const tmp202 = new tmp2(8770)(obj17, JSON.stringify(closure_128_3));
+          const tmp202 = new tmp2(8935)(obj17, JSON.stringify(closure_128_3));
           throw tmp202;
         }
       } catch (tmp64) {

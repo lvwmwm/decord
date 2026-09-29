@@ -1,21 +1,21 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16879
+// Function ID: 16880
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2067, 5305, 21, 4836, 576, 504, 8719, 8599, 8714, 6402, 6470, 9578, 1115, 4832, 16692, 6471, 6476, 2]
+// Dependencies: [32, 19, 17, 2067, 5471, 21, 4836, 576, 504, 8884, 8764, 8879, 6568, 6636, 9745, 1115, 4832, 16880, 6637, 6642, 2]
 // Exports: default
 
-// Module 16691 (ContextMenuCommandRootScreen)
+// Module 16879 (ContextMenuCommandRootScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import executeCommandDefault from "executeCommand" /* 8714 */;
+import executeCommandDefault from "executeCommand" /* 8879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const View = fn(17).View;
-const ApplicationCommandConstants = fn(5305);
+const ApplicationCommandConstants = fn(5471);
 ({ CONTEXT_MENU_COMMANDS_QUERY_LIMIT: closure_8, BuiltInSectionId: closure_9 } = ApplicationCommandConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);

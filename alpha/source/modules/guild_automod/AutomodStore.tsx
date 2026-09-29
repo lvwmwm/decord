@@ -1,12 +1,12 @@
-// Module ID: 17306
-// Function ID: 17307
+// Module ID: 17495
+// Function ID: 17496
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 11341, 1074, 1243, 17307, 1248, 11346, 4735, 4452, 2]
+// Dependencies: [32, 5, 19, 11510, 1074, 1243, 17496, 1248, 11515, 4735, 4452, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 17306 (AutomodStore)
+// Module 17495 (AutomodStore)
 import _mod4452 from "module_4452" /* 4452 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 17307 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 17496 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 require = fn;
-const AutomodTriggerType = fn(11341).AutomodTriggerType;
+const AutomodTriggerType = fn(11510).AutomodTriggerType;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 let closure_7 = {};
 const identity = fn(1243);

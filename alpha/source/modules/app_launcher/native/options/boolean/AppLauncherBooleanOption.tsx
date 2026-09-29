@@ -1,12 +1,12 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11828
+// Function ID: 11829
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4836, 576, 8053, 2]
+// Dependencies: [32, 19, 21, 4836, 576, 8218, 2]
 // Exports: default
 
-// Module 11659 (AppLauncherBooleanOption)
+// Module 11828 (AppLauncherBooleanOption)
 import nativeDefault from "native" /* 576 */;
-import Form from "Form" /* 8053 */;
+import Form from "Form" /* 8218 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

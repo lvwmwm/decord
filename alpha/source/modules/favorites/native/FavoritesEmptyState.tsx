@@ -1,17 +1,17 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16751
+// Function ID: 16752
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4836, 576, 9685, 10439, 4800, 9689, 1981, 9688, 9694, 5279, 4832, 1115, 3361, 5281, 12269, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9852, 10608, 4800, 9856, 1981, 9855, 9861, 5445, 4832, 1115, 3361, 5447, 12440, 2]
 // Exports: default
 
-// Module 16562 (FavoritesEmptyState)
+// Module 16751 (FavoritesEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3361 from "module_3361" /* 3361 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 9694 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 9861 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export default function FavoritesEmptyState() {
     const obj6 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1115).intl;
     obj6.text = intl4.string(tmp9(3361)["6kk0gM"]);
-    obj6.icon = tmp8(tmp2(12269).PlusMediumIcon, {});
+    obj6.icon = tmp8(tmp2(12440).PlusMediumIcon, {});
     obj6.onPress = callback;
     let obj7 = obj6;
   } else {

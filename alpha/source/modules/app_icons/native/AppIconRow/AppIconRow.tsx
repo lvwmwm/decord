@@ -1,16 +1,16 @@
-// Module ID: 15079
-// Function ID: 15080
+// Module ID: 15254
+// Function ID: 15255
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1115, 4836, 576, 8625, 12, 4548, 5917, 15076, 6001, 2]
+// Dependencies: [32, 19, 21, 1115, 4836, 576, 8790, 12, 4548, 6083, 15251, 6167, 2]
 // Exports: default
 
-// Module 15079 (AppIconRow)
+// Module 15254 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
-import AppIconTypes from "AppIconTypes" /* 8625 */;
-import AppIconDefault from "AppIcon" /* 15076 */;
+import AppIconTypes from "AppIconTypes" /* 8790 */;
+import AppIconDefault from "AppIcon" /* 15251 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -84,9 +84,9 @@ export default function AppIconRow(arg0) {
         let tmp10Result2 = null;
       }
       obj2.trailing = tmp10Result2;
-      tmp10Result = tmp10(tmp3(5917).TableRow, obj2, id);
+      tmp10Result = tmp10(tmp3(6083).TableRow, obj2, id);
     }
     const obj4 = { selected: tmp7 };
-    tmp10Result2 = tmp10(tmp3(6001).FormRadio, obj4);
+    tmp10Result2 = tmp10(tmp3(6167).FormRadio, obj4);
   }
 };

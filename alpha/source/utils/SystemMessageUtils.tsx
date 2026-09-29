@@ -1,23 +1,23 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7593
+// Function ID: 7594
 // Name: SystemMessageUtils
-// Dependencies: [32, 4480, 502, 2045, 2067, 4479, 1372, 1074, 1115, 11, 7429, 7433, 4988, 4989, 7434, 7436, 5083, 5058, 7437, 7438, 6936, 4457, 7439, 2]
+// Dependencies: [32, 4480, 502, 2045, 2067, 4479, 1372, 1074, 1115, 11, 7594, 7598, 4988, 4989, 7599, 7601, 5249, 5058, 7602, 7603, 7102, 4457, 7604, 2]
 
-// Module 7428 (SystemMessageUtils)
+// Module 7593 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4457 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import MarkupParser from "MarkupParser" /* 7429 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7433 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7434 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7436 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7437 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7438 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7439 */;
+import useMessageAuthor from "useMessageAuthor" /* 5249 */;
+import MarkupParser from "MarkupParser" /* 7594 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7598 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7599 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7601 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7602 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7603 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import MessageRecord from "MessageRecord" /* 4480 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -219,18 +219,18 @@ export default {
                       if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
                         const intl6 = tmp45(1115).intl;
                         const obj23 = { guildName: guild.name };
-                        astToStringResult6 = tmp45(7429).astToString(intl6.formatToParts(tmp45(1115).t.wt3ZUM, obj23));
-                        const tmp45Result = tmp45(7429);
-                      } else if (tmp45(7433).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
+                        astToStringResult6 = tmp45(7594).astToString(intl6.formatToParts(tmp45(1115).t.wt3ZUM, obj23));
+                        const tmp45Result = tmp45(7594);
+                      } else if (tmp45(7598).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
                         const intl5 = tmp45(1115).intl;
                         const obj28 = { guildName: guild.name };
-                        astToStringResult6 = tmp45(7429).astToString(intl5.formatToParts(tmp45(1115).t.AkqI0g, obj28));
-                        const tmp45Result3 = tmp45(7429);
+                        astToStringResult6 = tmp45(7594).astToString(intl5.formatToParts(tmp45(1115).t.AkqI0g, obj28));
+                        const tmp45Result3 = tmp45(7594);
                       } else {
                         const intl4 = tmp45(1115).intl;
                         const obj35 = { guildName: guild.name };
-                        astToStringResult6 = tmp45(7429).astToString(intl4.formatToParts(tmp45(1115).t["a+lJKl"], obj35));
-                        const tmp45Result4 = tmp45(7429);
+                        astToStringResult6 = tmp45(7594).astToString(intl4.formatToParts(tmp45(1115).t["a+lJKl"], obj35));
+                        const tmp45Result4 = tmp45(7594);
                       }
                     }
                   }
@@ -305,7 +305,7 @@ export default {
                 } else {
                   const guildId = isForumPost.getGuildId();
                   const obj42 = { username: null, previousUsername: null };
-                  const tmp10Result2 = tmp10(7439);
+                  const tmp10Result2 = tmp10(7604);
                   obj42.username = tmp6(4988).getName(guildId, channel_id, guildSpaceLeaderboardMessage.subject);
                   let str = "";
                   if (null != guildSpaceLeaderboardMessage.previousLeader) {

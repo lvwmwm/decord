@@ -1,13 +1,13 @@
-// Module ID: 9622
-// Function ID: 9623
+// Module ID: 9789
+// Function ID: 9790
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5017, 1074, 5018, 1084, 21, 9607, 9621, 1115, 9608, 6540, 6535, 2]
+// Dependencies: [19, 5017, 1074, 5018, 1084, 21, 9774, 9788, 1115, 9775, 6706, 6701, 2]
 // Exports: default
 
-// Module 9622 (NotificationSettingsMessageNotificationChannelActionSheet)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9608 */;
+// Module 9789 (NotificationSettingsMessageNotificationChannelActionSheet)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6701 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6706 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9775 */;
 import noop from "module_19" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
@@ -51,5 +51,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     obj4.label = NotificationLabel.notifications(message_notifications);
     const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(obj4);
   };
-  return tmp4(unread(9621), obj2);
+  return tmp4(unread(9788), obj2);
 };

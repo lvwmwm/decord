@@ -1,14 +1,14 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7920
+// Function ID: 7921
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4836, 576, 7756, 4540, 7707, 6459, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 7921, 4540, 7872, 6625, 1115, 2]
 // Exports: createVideoControls
 
-// Module 7755 (common/Video)
+// Module 7920 (common/Video)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import openMediaModal from "openMediaModal" /* 7707 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6625 */;
+import openMediaModal from "openMediaModal" /* 7872 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

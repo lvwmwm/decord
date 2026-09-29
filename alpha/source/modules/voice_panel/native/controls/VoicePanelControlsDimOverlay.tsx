@@ -1,20 +1,20 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17218
+// Function ID: 17219
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 13930, 11755, 11753, 21, 11754, 4566, 16996, 5280, 13928, 5267, 2]
+// Dependencies: [19, 14099, 11924, 11922, 21, 11923, 4566, 17183, 5446, 14097, 5433, 2]
 
-// Module 17031 (VoicePanelControlsDimOverlay)
+// Module 17218 (VoicePanelControlsDimOverlay)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 13928 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 16996 */;
+import spring from "spring" /* 5446 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14097 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17183 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(13930).BACKDROP_OPAQUE_MAX_OPACITY;
-const VoicePanelConstants = fn(11755);
+let closure_4 = fn(14099).BACKDROP_OPAQUE_MAX_OPACITY;
+const VoicePanelConstants = fn(11924);
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(11922).VoicePanelControlsModes;
 const jsx = fn(21).jsx;
 const __initData = { code: "function VoicePanelControlsDimOverlayTsx1(){const{windowDimensions,getDrawerSpec,safeArea,controlsSpecs,VoicePanelControlsModes,mode,VoicePanelModes,interpolate,wrapperSpecs,BACKDROP_OPAQUE_MAX_OPACITY}=this.__closure;const{height:height}=windowDimensions.get();const{minHeight:minHeight,maxHeight:maxHeight}=getDrawerSpec(height,safeArea.get().top);if(controlsSpecs.get().mode!==VoicePanelControlsModes.DRAWER||mode.get()!==VoicePanelModes.PANEL){return 0;}return interpolate(wrapperSpecs.get().height,[minHeight,maxHeight],[0,BACKDROP_OPAQUE_MAX_OPACITY],'clamp');}" };
 const __initData2 = { code: "function VoicePanelControlsDimOverlayTsx2(){const{overlayOpacity}=this.__closure;return overlayOpacity.get()>=0.35;}" };

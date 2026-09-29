@@ -1,9 +1,9 @@
-// Module ID: 5884
-// Function ID: 5885
+// Module ID: 6050
+// Function ID: 6051
 // Name: MemberVerificationFormStore
 // Dependencies: [504, 12, 4658, 573, 2]
 
-// Module 5884 (MemberVerificationFormStore)
+// Module 6050 (MemberVerificationFormStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,10 +1,10 @@
-// Module ID: 10316
-// Function ID: 10317
+// Module ID: 10485
+// Function ID: 10486
 // Name: LockedRecipientField
 // Dependencies: [19, 17, 21, 4836, 576, 1177, 4832, 4678, 2]
 // Exports: default
 
-// Module 10316 (LockedRecipientField)
+// Module 10485 (LockedRecipientField)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;

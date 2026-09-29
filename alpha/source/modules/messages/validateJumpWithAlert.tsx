@@ -1,13 +1,13 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 13033
+// Function ID: 13034
 // Name: validateJumpWithAlert
-// Dependencies: [2045, 4469, 4479, 1074, 5203, 1115, 6927, 2]
+// Dependencies: [2045, 4469, 4479, 1074, 5369, 1115, 7093, 2]
 // Exports: default
 
-// Module 12863 (validateJumpWithAlert)
+// Module 13033 (validateJumpWithAlert)
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import isSpam from "isSpam" /* 6927 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import isSpam from "isSpam" /* 7093 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

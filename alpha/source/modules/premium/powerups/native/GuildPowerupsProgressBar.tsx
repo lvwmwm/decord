@@ -1,18 +1,18 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 16027
+// Function ID: 16028
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 15853, 2067, 21, 576, 4566, 5293, 4836, 563, 15854, 15855, 4837, 11975, 6603, 1115, 2519, 8370, 4832, 6630, 2]
+// Dependencies: [19, 17, 16028, 2067, 21, 576, 4566, 5459, 4836, 563, 16029, 16030, 4837, 12146, 6769, 1115, 2519, 8535, 4832, 6796, 2]
 // Exports: default
 
-// Module 15852 (GuildPowerupsProgressBar)
+// Module 16027 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 11975 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 15855 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12146 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 16030 */;
 import noop from "module_19" /* 19 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 15853 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 16028 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 

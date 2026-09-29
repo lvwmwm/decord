@@ -1,15 +1,15 @@
-// Module ID: 6540
-// Function ID: 6541
+// Module ID: 6706
+// Function ID: 6707
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 5017, 1074, 4482, 1084, 573, 6535, 6537, 11, 4685, 1115, 1385, 1271, 2]
+// Dependencies: [5, 5017, 1074, 4482, 1084, 573, 6701, 6703, 11, 4685, 1115, 1385, 1271, 2]
 
-// Module 6540 (NotificationSettingsModalActionCreators)
+// Module 6706 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4685 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6537 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6701 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6703 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 5471
-// Function ID: 5472
+// Module ID: 5638
+// Function ID: 5639
 // Name: ImageConversionDecision
-// Dependencies: [1364, 5472, 2]
+// Dependencies: [1364, 5639, 2]
 // Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 5471 (ImageConversionDecision)
+// Module 5638 (ImageConversionDecision)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import IosImageTypesManagerDefault from "IosImageTypesManager" /* 5472 */;
+import IosImageTypesManagerDefault from "IosImageTypesManager" /* 5639 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
@@ -92,13 +92,13 @@ export const shouldConvertToJPG = function shouldConvertToJPG(str, arr, arg2, ar
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = tmp14(5472).getSupportedExtensions();
+              const supportedExtensions = tmp14(5639).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const tmp14Result = tmp14(5472);
+              const tmp14Result = tmp14(5639);
             }
             obj2 = IosImageTypesManagerDefault;
             tmp14 = importDefault;

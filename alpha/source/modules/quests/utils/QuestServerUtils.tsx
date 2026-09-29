@@ -1,13 +1,13 @@
-// Module ID: 7123
-// Function ID: 7124
+// Module ID: 7288
+// Function ID: 7289
 // Name: QuestServerUtils
-// Dependencies: [32, 5021, 7124, 7121, 2]
+// Dependencies: [32, 5021, 7289, 7286, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
-// Module 7123 (QuestServerUtils)
+// Module 7288 (QuestServerUtils)
 import _mod5021 from "module_5021" /* 5021 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7121 */;
-import Quest from "Quest" /* 7124 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7286 */;
+import Quest from "Quest" /* 7289 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -60,7 +60,7 @@ function _questsEntitlementFromServer(skuId) {
       obj3.reward = obj4;
       obj2.questRewards = obj3;
       tmp2 = obj2;
-    } else if (tmp3(7121).QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (tmp3(7286).QuestRewardTypes.REWARD_CODE === tag) {
       const obj5 = { tag: quest_rewards.reward.tag, rewardCode: null };
       const obj6 = { userId: null, questId: null, code: null, platform: null, claimedAt: null, tier: null };
       ({ user_id: obj8.userId, quest_id: obj8.questId, code: obj8.code, platform: obj8.platform, claimed_at: obj8.claimedAt, tier } = quest_rewards.reward.reward_code);

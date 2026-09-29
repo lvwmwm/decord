@@ -1,16 +1,16 @@
-// Module ID: 17588
-// Function ID: 17589
+// Module ID: 17777
+// Function ID: 17778
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 14750, 21, 4836, 14785, 1177, 9396, 4832, 4483, 14778, 4989, 5335, 1115, 2]
+// Dependencies: [19, 17, 14925, 21, 4836, 14960, 1177, 9563, 4832, 4483, 14953, 4989, 5501, 1115, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 17588 (GuildRoleSubscriptionBenefitPreview)
+// Module 17777 (GuildRoleSubscriptionBenefitPreview)
 import native from "native" /* 1177 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef9396 from "module_9396" /* 9396 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 14778 */;
-import EmojiIconDefault from "EmojiIcon" /* 14785 */;
+import _modDef9563 from "module_9563" /* 9563 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 14953 */;
+import EmojiIconDefault from "EmojiIcon" /* 14960 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function BaseBenefitRow(isInteractive) {
   items[1] = hasOwnProperty(View, obj3);
   let tmp4Result = true === flag;
   if (tmp4Result) {
-    const obj4 = { source: _modDef9396 };
+    const obj4 = { source: _modDef9563 };
     tmp4Result = hasOwnProperty(native.Icon, obj4);
   }
   items[2] = tmp4Result;
@@ -64,8 +64,8 @@ function ChannelBenefitRow(benefit) {
   const channelWithTemplateFallback = GuildRoleSubscriptionTierTemplatesUtils.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    channelIcon = tmp2(5335).getChannelIcon(channelWithTemplateFallback);
-    const tmp2Result = tmp2(5335);
+    channelIcon = tmp2(5501).getChannelIcon(channelWithTemplateFallback);
+    const tmp2Result = tmp2(5501);
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -101,7 +101,7 @@ function EmojiBenefitRow(benefit) {
   return timestampProducer(BaseBenefitRow, obj);
 }
 const View = fn(17).View;
-const constants = fn(14750).GuildRoleSubscriptionBenefitTypes;
+const constants = fn(14925).GuildRoleSubscriptionBenefitTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4836);

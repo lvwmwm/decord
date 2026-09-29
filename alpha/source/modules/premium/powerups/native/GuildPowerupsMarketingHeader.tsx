@@ -1,16 +1,16 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13286
+// Function ID: 13287
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4723, 21, 4836, 576, 672, 4832, 13117, 11984, 12009, 1115, 2519, 13118, 2]
+// Dependencies: [19, 17, 4723, 21, 4836, 576, 672, 4832, 13287, 12155, 12180, 1115, 2519, 13288, 2]
 // Exports: default
 
-// Module 13116 (GuildPowerupsMarketingHeader)
+// Module 13286 (GuildPowerupsMarketingHeader)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 11984 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12009 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13117 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12155 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12180 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13287 */;
 import noop from "module_19" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
 
@@ -61,7 +61,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(13118)(arr);
+          let first = tmp2(13288)(arr);
           if (1 === first.length) {
             const obj3 = { powerup: null };
             first = first[0];

@@ -1,9 +1,9 @@
 // Module ID: 13584
 // Function ID: 13585
-// Dependencies: [13573]
+// Dependencies: [1121]
 
 // Module 13584
-import _mod13573 from "module_13573" /* 13573 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => _mod13573(arg0, arg1, arg2) <= 0;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/build_overrides/native/images", width: 60, height: 46, scales: [2, 3], hash: "43446a28e1d529de720e6c778c814b1c", name: "code-illustration-dark", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 16082
+// Function ID: 16083
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2067, 4655, 1074, 21, 4836, 576, 4832, 12205, 15906, 1115, 5279, 5281, 1486, 563, 8230, 1249, 2070, 4694, 5438, 14629, 2]
+// Dependencies: [32, 19, 17, 502, 2067, 4655, 1074, 21, 4836, 576, 4832, 12376, 16083, 1115, 5445, 5447, 1486, 563, 8395, 1249, 2070, 4694, 5605, 14804, 2]
 
-// Module 15905 (GuildsEmpty)
+// Module 16082 (GuildsEmpty)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12205 */;
-import _modDef15906 from "module_15906" /* 15906 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12376 */;
+import _modDef16083 from "module_16083" /* 16083 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -129,7 +129,7 @@ export default noop.memo(function GuildsEmpty(arg0) {
   let obj2 = navigation(563);
   obj3.type = navigation(1249).ImpressionTypes.VIEW;
   obj3.name = navigation(1249).ImpressionNames.GUILDS_EMPTY_NUX;
-  selectedGuildId(8230)(obj3);
+  selectedGuildId(8395)(obj3);
   const items1 = [tmp6, navigation];
   const effect = noop.useEffect(() => {
     if (null != selectedGuildId) {
@@ -165,9 +165,9 @@ export default noop.memo(function GuildsEmpty(arg0) {
       obj2 = navigation;
     }
   }, items1);
-  const tmp7 = selectedGuildId(8230);
-  const isScreenLandscape = navigation(5438).useIsScreenLandscape();
-  navigation(14629);
+  const tmp7 = selectedGuildId(8395);
+  const isScreenLandscape = navigation(5605).useIsScreenLandscape();
+  navigation(14804);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: null, children: null };

@@ -1,15 +1,15 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10936
+// Function ID: 10937
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 4836, 576, 10667, 4832, 1115, 10766, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 10836, 4832, 1115, 10935, 2]
 // Exports: default
 
-// Module 10767 (BadgeProgressSection)
+// Module 10936 (BadgeProgressSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10667 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10766 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10836 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

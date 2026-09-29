@@ -1,17 +1,17 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7178
+// Function ID: 7179
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7014, 7018, 2045, 5056, 1074, 1439, 5058, 7020, 504, 573, 2]
+// Dependencies: [32, 7179, 7184, 2045, 5056, 1074, 1439, 5058, 7185, 504, 573, 2]
 
-// Module 7013 (ReferencedMessageStore)
+// Module 7178 (ReferencedMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1439 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7185 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
-import ConversationsStore from "ConversationsStore" /* 7018 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7179 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7184 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MessageStore from "MessageStore" /* 5056 */;
 
@@ -50,7 +50,7 @@ function processMessage(message) {
       } else {
         message = MessageStore.getMessage(message_reference.channel_id, message_id);
         if (message == null) {
-          message = ConversationsStore.getMessage(message_reference.channel_id, message_id);
+          message = ChannelConversationsStore.getMessage(message_reference.channel_id, message_id);
         }
         if (message == null) {
           message = ConversationPreviewStore.getMessage(message_id);
@@ -270,7 +270,7 @@ class ReferencedMessageStore extends Store {
 }
 const prototype3 = ReferencedMessageStore.prototype;
 prototype3["initialize"] = function initialize() {
-  this.waitFor(MessageStore, ChannelStore, ConversationsStore, ConversationPreviewStore);
+  this.waitFor(MessageStore, ChannelStore, ChannelConversationsStore, ConversationPreviewStore);
 };
 prototype3["getMessageByReference"] = function getMessageByReference(messageReference) {
   value = undefined;
@@ -308,15 +308,15 @@ const referencedMessageStore = new ReferencedMessageStore(DispatcherDefault, {
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
   SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(messages) {
+  SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(messages) {
     return anyChanged(messages.messages, (arg0) => processMessage(arg0));
   },
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(messages) {
+  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(messages) {
     messages = messages.messages;
     return anyChanged(messages.concat(messages.messageReferences), (arg0) => processMessage(arg0));
   },
-  CONVERSATIONS_FETCH_SUCCESS: function handleConversationsFetchSuccess(rawConversations) {
+  CHANNEL_CONVERSATIONS_FETCH_SUCCESS: function handleChannelConversationsFetchSuccess(rawConversations) {
     return anyChanged(rawConversations.rawConversations, (messages) => {
       messages = messages.messages;
       if (messages == null) {

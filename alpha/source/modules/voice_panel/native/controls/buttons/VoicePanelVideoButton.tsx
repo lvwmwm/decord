@@ -1,20 +1,20 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17207
+// Function ID: 17208
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 8844, 2045, 2067, 1993, 4469, 4861, 21, 11754, 17008, 504, 7139, 12837, 5205, 12839, 1115, 17021, 9097, 8863, 17009, 12857, 4622, 9569, 12620, 2]
+// Dependencies: [19, 17, 9009, 2045, 2067, 1993, 4469, 4861, 21, 11923, 17195, 504, 7304, 13007, 5371, 13009, 1115, 17208, 9262, 9028, 17196, 13027, 4622, 9736, 12790, 2]
 // Exports: default
 
-// Module 17020 (VoicePanelVideoButton)
+// Module 17207 (VoicePanelVideoButton)
 import util from "util" /* 1115 */;
 import CameraRive from "CameraRive" /* 4622 */;
-import useAlertStore from "useAlertStore" /* 5205 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7139 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 8863 */;
-import CallsUtils from "CallsUtils" /* 9097 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12839 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17021 */;
+import useAlertStore from "useAlertStore" /* 5371 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7304 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 9028 */;
+import CallsUtils from "CallsUtils" /* 9262 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13009 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17208 */;
 import noop from "module_19" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8844 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9009 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -31,9 +31,9 @@ function VideoButtonRive(arg0) {
   }
   obj2.defaultViewModelInstance = str;
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(9569).VideoIcon;
+    let VideoSlashIcon = tmp3(9736).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(12620).VideoSlashIcon;
+    VideoSlashIcon = tmp3(12790).VideoSlashIcon;
   }
   obj2.fallback = <VideoSlashIcon color={color} />;
   obj.children = jsx(CameraRive.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });

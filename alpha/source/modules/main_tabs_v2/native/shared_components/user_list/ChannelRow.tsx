@@ -1,16 +1,16 @@
-// Module ID: 10373
-// Function ID: 10374
+// Module ID: 10542
+// Function ID: 10543
 // Name: ChannelRow
-// Dependencies: [19, 17, 2045, 2067, 4851, 4479, 1372, 10320, 5018, 21, 4836, 576, 504, 4989, 10374, 10465, 5402, 5394, 4832, 4512, 4421, 5916, 5917, 2]
+// Dependencies: [19, 17, 2045, 2067, 4851, 4479, 1372, 10489, 5018, 21, 4836, 576, 504, 4989, 10543, 10634, 5568, 5560, 4832, 4512, 4421, 6082, 6083, 2]
 
-// Module 10373 (ChannelRow)
+// Module 10542 (ChannelRow)
 import nativeDefault from "native" /* 576 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
-import GuildIconWithChannelType from "GuildIconWithChannelType" /* 10465 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10543 */;
+import GuildIconWithChannelType from "GuildIconWithChannelType" /* 10634 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -20,7 +20,7 @@ import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const UserRowModes = fn(10320).UserRowModes;
+const UserRowModes = fn(10489).UserRowModes;
 const ReadStateTypes = fn(5018).ReadStateTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
@@ -127,9 +127,9 @@ export default noop.memo(function ChannelRow(channel) {
         }
       }
       if (channel.isForumPost()) {
-        let TextIcon = tmp3(5402).ForumIcon;
+        let TextIcon = tmp3(5568).ForumIcon;
       } else {
-        TextIcon = tmp3(5394).TextIcon;
+        TextIcon = tmp3(5560).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: null };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };

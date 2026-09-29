@@ -1,20 +1,20 @@
-// Module ID: 17275
-// Function ID: 17276
+// Module ID: 17464
+// Function ID: 17465
 // Name: DeprecatedModalManager
-// Dependencies: [9049, 502, 9276, 17276, 2037, 1074, 4693, 4692, 5041, 6007, 17277, 17278, 17286, 6539, 17287, 17620, 17622, 2]
+// Dependencies: [9214, 502, 9443, 17465, 2037, 1074, 4693, 4692, 5041, 6173, 17466, 17467, 17475, 6705, 17476, 17809, 17811, 2]
 
-// Module 17275 (DeprecatedModalManager)
+// Module 17464 (DeprecatedModalManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 5041 */;
-import VerificationUtilsDefault from "VerificationUtils" /* 6007 */;
-import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 17277 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import VerificationUtilsDefault from "VerificationUtils" /* 6173 */;
+import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 17466 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17276 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9443 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17465 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 function handlePushedModal(modal) {

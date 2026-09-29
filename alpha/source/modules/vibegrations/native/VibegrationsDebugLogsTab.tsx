@@ -1,18 +1,18 @@
-// Module ID: 16409
-// Function ID: 16410
+// Module ID: 16594
+// Function ID: 16595
 // Name: VibegrationsDebugLogsTab
-// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16410, 10615, 6630, 4832, 16411, 1115, 3715, 5435, 5919, 1613, 504, 9083, 16412, 9084, 6471, 16413, 16414, 8179, 2]
+// Dependencies: [32, 19, 17, 8660, 21, 4836, 576, 16595, 10784, 6796, 4832, 16596, 1115, 3715, 5602, 6085, 1613, 504, 9248, 16597, 9249, 6637, 16598, 16599, 8344, 2]
 // Exports: default
 
-// Module 16409 (VibegrationsDebugLogsTab)
+// Module 16594 (VibegrationsDebugLogsTab)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsDebugJson from "VibegrationsDebugJson" /* 16410 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16411 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 16412 */;
+import VibegrationsDebugJson from "VibegrationsDebugJson" /* 16595 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16596 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 16597 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8660 */;
 
 require = fn;
 function keyOf(key) {
@@ -44,15 +44,15 @@ let closure_11 = noop.memo((entry) => {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    let ChevronSmallRightIcon = tmp3(10615).ChevronSmallDownIcon;
+    let ChevronSmallRightIcon = tmp3(10784).ChevronSmallDownIcon;
     let tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(6630).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(6796).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   const obj = { style: tmp.row, children: null };
   const obj2 = { style: tmp.rowHead, children: null };
-  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(16411).formatClockTime(entry.ts) };
+  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(16596).formatClockTime(entry.ts) };
   const items1 = [closure_7(tmp6(4832).Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
@@ -113,13 +113,13 @@ let closure_11 = noop.memo((entry) => {
     obj11.children = items5;
     items4[1] = tmp7(tmp6(4832).Text, obj11);
     obj8.children = items4;
-    items3[1] = tmp7(tmp6(5435).PressableOpacity, obj8);
+    items3[1] = tmp7(tmp6(5602).PressableOpacity, obj8);
     let tmp9Result6 = null;
     if (expanded) {
       const obj13 = { variant: "primary", children: null };
       const obj14 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.pretty };
       obj13.children = tmp9(tmp6(4832).Text, obj14);
-      tmp9Result6 = tmp9(tmp6(5919).Card, obj13);
+      tmp9Result6 = tmp9(tmp6(6085).Card, obj13);
     }
     const obj15 = { children: null };
     items3[2] = tmp9Result6;

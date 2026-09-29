@@ -1,31 +1,11 @@
 // Module ID: 6224
 // Function ID: 6225
-// Dependencies: [19, 6068]
-// Exports: useBoundingClientRect
+// Dependencies: [19]
 
 // Module 6224
 import _mod19 from "module_19" /* 19 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
+const context = _mod19.createContext(null);
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  if (obj.isFabricInstalled()) {
-    useLayoutEffect(() => {
-      if (closure_0) {
-        if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof tmp.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
-      }
-    });
-  }
-};
+export const BottomSheetModalContext = context;
+export const BottomSheetModalProvider = context.Provider;

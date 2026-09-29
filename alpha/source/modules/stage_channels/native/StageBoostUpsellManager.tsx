@@ -1,19 +1,19 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17445
+// Function ID: 17446
 // Name: StageBoostUpsellManager
-// Dependencies: [4521, 2045, 4469, 2099, 5726, 6539, 4800, 5729, 9103, 2053, 5742, 1981, 2]
+// Dependencies: [4521, 2045, 4469, 2099, 5893, 6705, 4800, 5896, 9268, 2053, 5909, 1981, 2]
 
-// Module 17256 (StageBoostUpsellManager)
+// Module 17445 (StageBoostUpsellManager)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import StageMediaHooks from "StageMediaHooks" /* 5729 */;
+import StageMediaHooks from "StageMediaHooks" /* 5896 */;
 import ActionSheetStore from "ActionSheetStore" /* 4521 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5726).STAGE_BOOSTING_SHEET_KEY;
+const STAGE_BOOSTING_SHEET_KEY = fn(5893).STAGE_BOOSTING_SHEET_KEY;
 let c8 = false;
 class StageBoostUpsellManager extends tmp2 {
   constructor() {
@@ -47,11 +47,11 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
               if (PermissionStore.can(tmp5(2053).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 const obj2 = { channel };
-                ActionSheetActionCreatorsDefault.openLazy(tmp5(1981)(5742, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+                ActionSheetActionCreatorsDefault.openLazy(tmp5(1981)(5909, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
                 c8 = true;
               }
             }
-            tmp5Result = tmp5(9103);
+            tmp5Result = tmp5(9268);
           }
           obj = StageMediaHooks;
           tmp6 = dependencyMap;

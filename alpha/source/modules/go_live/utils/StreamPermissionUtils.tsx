@@ -1,13 +1,13 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 7304
+// Function ID: 7305
 // Name: StreamPermissionUtils
-// Dependencies: [4853, 2049, 4467, 2067, 4469, 4855, 1074, 5728, 4981, 5046, 504, 2]
+// Dependencies: [4853, 2049, 4467, 2067, 4469, 4855, 1074, 5895, 4981, 5046, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 7139 (StreamPermissionUtils)
+// Module 7304 (StreamPermissionUtils)
 import ChannelUtils from "ChannelUtils" /* 4981 */;
 import AgeGateUtils from "AgeGateUtils" /* 5046 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5728 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5895 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

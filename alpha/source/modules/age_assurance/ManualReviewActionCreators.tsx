@@ -1,14 +1,14 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8212
+// Function ID: 8213
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1074, 7847, 1091, 1271, 573, 7867, 7859, 7852, 2]
+// Dependencies: [5, 502, 1074, 8012, 1091, 1271, 573, 8032, 8024, 8017, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8047 (ManualReviewActionCreators)
+// Module 8212 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8032 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -156,7 +156,7 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
   }
 };
 const Endpoints = fn(1074).Endpoints;
-const SafetyToastType = fn(7847).SafetyToastType;
+const SafetyToastType = fn(8012).SafetyToastType;
 const ManualReviewStatus = { IN_PROGRESS: "in_progress", SUBMITTED: "submitted", DECIDED_TEEN: "decided_teen" };
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let c11 = false;

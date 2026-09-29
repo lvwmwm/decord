@@ -1,12 +1,12 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12705
+// Function ID: 12706
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1364, 4531, 12520, 4566, 5269, 5395, 4832, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1364, 4531, 12690, 4566, 5435, 5561, 4832, 1115, 2]
 
-// Module 12535 (MediaModalSpoilerOverlay)
+// Module 12705 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12520 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12690 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -47,12 +47,12 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
       const tmpResult = tmp(1364);
     }
     const obj4 = { blurTheme: str, android_fallbackColor: token, style: absoluteFill.absoluteFill };
-    const items1 = [timestampProducer(tmp3(5269), obj4), ];
+    const items1 = [timestampProducer(tmp3(5435), obj4), ];
     let obj5 = { style: items2.spoilerOverlayContainer, children: null };
     const obj6 = { style: null, children: null };
     if (source.obscure) {
       obj6.style = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5395).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5561).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1115).intl;
       stringResult = intl2.string(tmp(1115).t.SpxcUR);
@@ -74,6 +74,6 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
     items1[1] = obj5;
     obj3.children = items1;
     React5(tmp3(4566).View, obj3);
-    const tmp3Result = tmp3(5269);
+    const tmp3Result = tmp3(5435);
   }
 });

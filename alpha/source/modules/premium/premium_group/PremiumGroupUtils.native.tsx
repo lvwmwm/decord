@@ -1,10 +1,10 @@
-// Module ID: 7493
-// Function ID: 7494
+// Module ID: 7658
+// Function ID: 7659
 // Name: PremiumGroupUtils
-// Dependencies: [1372, 4502, 4678, 1115, 3199, 2, 7494]
+// Dependencies: [1372, 4502, 4678, 1115, 3199, 2, 7659]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7493 (PremiumGroupUtils)
+// Module 7658 (PremiumGroupUtils)
 import util from "util" /* 1115 */;
 import _modDef3199 from "module_3199" /* 3199 */;
 import UserUtils from "UserUtils" /* 4678 */;
@@ -15,8 +15,8 @@ const PremiumGroupConstants = fn(4502);
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
-for (const key10025 in require("module_7494")) {
-  arg5[key10025] = require("module_7494")[key10025];
+for (const key10025 in require("module_7659")) {
+  arg5[key10025] = require("module_7659")[key10025];
   continue;
 }
 

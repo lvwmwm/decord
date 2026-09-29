@@ -1,11 +1,11 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9151
+// Function ID: 9152
 // Name: EditGuildEventStepContainer
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6402, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 6568, 2]
 
-// Module 8986 (EditGuildEventStepContainer)
+// Module 9151 (EditGuildEventStepContainer)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

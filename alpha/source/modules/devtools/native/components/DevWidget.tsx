@@ -1,19 +1,19 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 15724
+// Function ID: 15725
 // Name: DevWidget
-// Dependencies: [19, 7132, 574, 21, 4836, 576, 4566, 10895, 11515, 6073, 5280, 5284, 5435, 14139, 15131, 15550, 15130, 2]
+// Dependencies: [19, 7297, 574, 21, 4836, 576, 4566, 11064, 11684, 6239, 5446, 5450, 5602, 14311, 15306, 15725, 15305, 2]
 // Exports: default
 
-// Module 15549 (DevWidget)
+// Module 15724 (DevWidget)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import Pressables from "Pressables" /* 5435 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15131 */;
-import VEVOODefault from "VEVOO" /* 15550 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
+import Pressables from "Pressables" /* 5602 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15306 */;
+import VEVOODefault from "VEVOO" /* 15725 */;
 import noop from "module_19" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7132 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7297 */;
 
 const require = globalThis.__r;
 

@@ -1,10 +1,10 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13450
+// Function ID: 13451
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2045, 1372, 13281, 1074, 21, 4836, 576, 4832, 4988, 1115, 504, 1370, 1177, 11303, 10371, 4792, 4787, 1241, 6618, 10916, 5999, 5917, 5281, 4800, 13282, 4849, 2]
+// Dependencies: [19, 17, 2045, 1372, 13451, 1074, 21, 4836, 576, 4832, 4988, 1115, 504, 1370, 1177, 11472, 10540, 4792, 4787, 1241, 6784, 11085, 6165, 6083, 5447, 4800, 13452, 4849, 2]
 // Exports: default
 
-// Module 13280 (BlockedUserInGdmActionSheet)
+// Module 13450 (BlockedUserInGdmActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -12,8 +12,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import Text_Text from "Text/Text" /* 4832 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import TableRow from "TableRow" /* 5917 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13282 */;
+import TableRow from "TableRow" /* 6083 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13452 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -92,11 +92,11 @@ function UserCalloutAvatars(userIds) {
       obj3.size = REFRESH_MEDIUM_32;
       let tmp6 = closure_11(tmp(1177).Avatar, obj3);
     } else {
-      tmp6 = closure_11(tmp(11303).UserIcon, {});
+      tmp6 = closure_11(tmp(11472).UserIcon, {});
     }
   } else {
     const obj4 = { users: found, size: tmp(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-    return closure_11(tmp(10371).FacepileGroupDMAvatar, obj4);
+    return closure_11(tmp(10540).FacepileGroupDMAvatar, obj4);
   }
 }
 function BlockedUserInGDMDescription(arg0) {
@@ -138,7 +138,7 @@ function BlockedUserInGDMDescription(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SharedSpaceWarningConstants = fn(13281);
+const SharedSpaceWarningConstants = fn(13451);
 ({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = SharedSpaceWarningConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

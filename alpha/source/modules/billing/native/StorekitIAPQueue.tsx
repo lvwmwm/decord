@@ -1,10 +1,10 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 10702
+// Function ID: 10703
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5051, 6656, 10514, 2]
+// Dependencies: [5, 17, 5051, 6822, 10683, 2]
 
-// Module 10533 (StorekitIAPQueue)
-import utils_PriceUtils from "utils/PriceUtils" /* 6656 */;
+// Module 10702 (StorekitIAPQueue)
+import utils_PriceUtils from "utils/PriceUtils" /* 6822 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

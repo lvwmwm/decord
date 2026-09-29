@@ -1,14 +1,14 @@
-// Module ID: 8754
-// Function ID: 8755
+// Module ID: 8919
+// Function ID: 8920
 // Name: FramesManager
-// Dependencies: [8499, 1074, 4739, 6539, 8755, 8501, 1241, 573, 2]
+// Dependencies: [8664, 1074, 4739, 6705, 8920, 8666, 1241, 573, 2]
 
-// Module 8754 (FramesManager)
+// Module 8919 (FramesManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8666 */;
+import FramesStore from "FramesStore" /* 8664 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -24,14 +24,14 @@ class FramesManager extends tmp3 {
           },
       FRAME_LAUNCH(arg0) {
             ({ applicationId, analyticsContext } = arg0);
-            const result = applyArgumentsResult(8755).trackFrameSessionStart(applicationId, analyticsContext);
+            const result = applyArgumentsResult(8920).trackFrameSessionStart(applicationId, analyticsContext);
           },
       FRAME_LAUNCH_FAIL(arg0) {
             ({ applicationId, error, analyticsContext } = arg0);
-            const result = applyArgumentsResult(8755).trackFrameSessionStartFailed(applicationId, error, analyticsContext);
+            const result = applyArgumentsResult(8920).trackFrameSessionStartFailed(applicationId, error, analyticsContext);
           },
       FRAME_STOP(applicationId) {
-            applyArgumentsResult(8755).trackFrameSessionEnd(applicationId.applicationId);
+            applyArgumentsResult(8920).trackFrameSessionEnd(applicationId.applicationId);
           },
       VOICE_CHANNEL_SELECT(arg0) {
             const result = applyArgumentsResult.handleVoiceChannelSelect(arg0);

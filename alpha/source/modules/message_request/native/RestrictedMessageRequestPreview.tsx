@@ -1,10 +1,10 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 16906
+// Function ID: 16907
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2045, 5056, 1372, 21, 4836, 576, 1613, 504, 16719, 16721, 11932, 2]
+// Dependencies: [32, 19, 17, 2045, 5056, 1372, 21, 4836, 576, 1613, 504, 16907, 16909, 12103, 2]
 // Exports: default
 
-// Module 16718 (RestrictedMessageRequestPreview)
+// Module 16906 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -105,9 +105,9 @@ export default function RestrictedMessageRequestPreview(channelId) {
         }
       };
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [closure_10(tmp2(16719), obj6), ];
+      const items8 = [closure_10(tmp2(16907), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(tmp2(16721), obj7);
+      items8[1] = closure_10(tmp2(16909), obj7);
       obj5.children = items8;
       const items9 = [closure_11(closure_5, obj5), ];
       const obj8 = { style: null, children: null };
@@ -116,7 +116,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
       items10[1] = obj9;
       obj8.style = items10;
       const obj10 = { channel: stateFromStores };
-      obj8.children = closure_10(tmp2(11932), obj10);
+      obj8.children = closure_10(tmp2(12103), obj10);
       items9[1] = closure_10(first1, obj8);
       obj4.children = items9;
       tmp13Result = tmp13(tmp14, obj4);

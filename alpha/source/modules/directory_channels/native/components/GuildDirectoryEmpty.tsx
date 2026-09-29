@@ -1,13 +1,13 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12441
+// Function ID: 12442
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 4467, 1074, 21, 4836, 576, 1613, 504, 11790, 12271, 1177, 1115, 4832, 8053, 11791, 12272, 9275, 12273, 2]
+// Dependencies: [19, 17, 4467, 1074, 21, 4836, 576, 1613, 504, 11959, 12442, 1177, 1115, 4832, 8218, 11960, 12443, 9442, 12444, 2]
 // Exports: default
 
-// Module 12270 (GuildDirectoryEmpty)
+// Module 12441 (GuildDirectoryEmpty)
 import nativeDefault from "native" /* 576 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11791 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9442 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11960 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 
@@ -37,12 +37,12 @@ export default function GuildDirectoryEmpty(guild) {
   const obj = guild(504);
   const obj3 = { contentContainerStyle: null, children: null };
   const items1 = [tmp.container, ];
-  const obj2 = guild(11790);
+  const obj2 = guild(11959);
   items1[1] = { paddingBottom: channel(1613)().bottom + 16 };
   obj3.contentContainerStyle = items1;
   const obj5 = { source: null, style: null };
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  obj5.source = channel(12271);
+  obj5.source = channel(12442);
   obj5.style = tmp.header;
   const items2 = [closure_7(closure_3, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: null };
@@ -60,12 +60,12 @@ export default function GuildDirectoryEmpty(guild) {
       onPress() {
           return GuildDirectoryAddModalActionCreatorsDefault.open({ directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id });
         },
-      iconSource: tmp2(12272),
+      iconSource: tmp2(12443),
       title: null
     };
     const intl3 = tmp4(1115).intl;
     obj9.title = intl3.string(tmp4(1115).t.hyK15i);
-    tmp8Result = tmp8(tmp4(8053).FormCTA, obj9);
+    tmp8Result = tmp8(tmp4(8218).FormCTA, obj9);
   }
   items2[3] = tmp8Result;
   const obj10 = {
@@ -73,12 +73,12 @@ export default function GuildDirectoryEmpty(guild) {
     onPress() {
       return instant_invite_InstantInviteUtils.handleOpenInviteActionsheet(guild, channel.id, closure_2, constants.HUB_EMPTY_STATE);
     },
-    iconSource: channel(12273),
+    iconSource: channel(12444),
     title: null
   };
   const intl4 = tmp4(1115).intl;
   obj10.title = intl4.string(guild(1115).t.L4bwJ9);
-  items2[4] = closure_7(guild(8053).FormCTA, obj10);
+  items2[4] = closure_7(guild(8218).FormCTA, obj10);
   obj3.children = items2;
   return closure_8(closure_4, obj3);
 };

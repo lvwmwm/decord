@@ -1,23 +1,23 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16487
+// Function ID: 16488
 // Name: VibegrationsRestorePointsSheet
-// Dependencies: [32, 19, 17, 12642, 21, 4836, 576, 4512, 4421, 1613, 16308, 5209, 1115, 3715, 9083, 4800, 8995, 1981, 4832, 5999, 7055, 5917, 6618, 6570, 6045, 9084, 6024, 5281, 2]
+// Dependencies: [32, 19, 17, 12812, 21, 4836, 576, 4512, 4421, 1613, 16488, 5375, 1115, 3715, 9248, 4800, 9160, 1981, 4832, 6165, 7220, 6083, 6784, 6736, 6211, 9249, 6190, 5447, 2]
 // Exports: default
 
-// Module 16307 (VibegrationsRestorePointsSheet)
+// Module 16487 (VibegrationsRestorePointsSheet)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsRestorePanelOp from "VibegrationsRestorePanelOp" /* 16308 */;
+import VibegrationsRestorePanelOp from "VibegrationsRestorePanelOp" /* 16488 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VibegrationsConnectionStore = fn(12642);
+const VibegrationsConnectionStore = fn(12812);
 ({ createDatabaseRestorePoint: closure_7, fetchDatabaseRestorePoints: closure_8, fetchDatabaseRestoreWindow: closure_9, restoreDatabaseToPoint: c10, restoreDatabaseToTimestamp: closure_11 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
@@ -156,7 +156,7 @@ export default function VibegrationsRestorePointsSheet(projectId) {
           closure_1_13();
         } else if ("expired" === ok.code) {
           const intl3 = closure_0(1115).intl;
-          const obj = { days: closure_0(16308).RESTORE_WINDOW_DAYS };
+          const obj = { days: closure_0(16488).RESTORE_WINDOW_DAYS };
           closure_1_16(closure_1_3, "danger", intl3.formatToPlainString(installScope(3715).PeVYaC, obj));
           closure_1_13();
         } else if ("unconfirmed" === ok.code) {
@@ -217,7 +217,7 @@ export default function VibegrationsRestorePointsSheet(projectId) {
     if ("date" === mode) {
       str = "VibegrationsRestoreDate";
     }
-    obj.openLazy(asyncRequireImpl(8995, dependencyMap.paths), str, { mode, title, startDate, minimumDate: minimumDate[0], maximumDate: minimumDate[1], onSubmit }, "stack");
+    obj.openLazy(asyncRequireImpl(9160, dependencyMap.paths), str, { mode, title, startDate, minimumDate: minimumDate[0], maximumDate: minimumDate[1], onSubmit }, "stack");
   }, items6);
   const items7 = [prop, num, callback5, first2];
   const callback6 = obj.useCallback(() => {

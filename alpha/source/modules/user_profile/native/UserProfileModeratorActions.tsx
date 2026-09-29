@@ -1,26 +1,26 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 12792
+// Function ID: 12793
 // Name: UserProfileModeratorActions
-// Dependencies: [19, 5733, 2045, 4467, 2108, 2067, 4469, 4855, 1074, 4455, 21, 4836, 576, 5917, 7635, 4800, 10338, 504, 6687, 11313, 2053, 8706, 4989, 4983, 4981, 4474, 1115, 9374, 7846, 9376, 8053, 5415, 10872, 1981, 5832, 6798, 5039, 11314, 1385, 11240, 4456, 11332, 11318, 9140, 9465, 9136, 12026, 7307, 4773, 11334, 8736, 11336, 12623, 12117, 7184, 6628, 5999, 2]
+// Dependencies: [19, 5900, 2045, 4467, 2108, 2067, 4469, 4855, 1074, 4455, 21, 4836, 576, 6083, 7800, 4800, 10507, 504, 6853, 11482, 2053, 8871, 4989, 4983, 4981, 4474, 1115, 9541, 8011, 9543, 8218, 5581, 11041, 1981, 5999, 6964, 5039, 11483, 1385, 11409, 4456, 11501, 11487, 9305, 9632, 9301, 12197, 7472, 4773, 11503, 8901, 11505, 12793, 12288, 7349, 6794, 6165, 2]
 // Exports: default
 
-// Module 12622 (UserProfileModeratorActions)
+// Module 12792 (UserProfileModeratorActions)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import TableRow from "TableRow" /* 5917 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 11313 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11318 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11334 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11336 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12117 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
+import TableRow from "TableRow" /* 6083 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8011 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 11482 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11487 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11503 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11505 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12288 */;
 import noop from "module_19" /* 19 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5900 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
@@ -308,7 +308,7 @@ export default function UserProfileModeratorActions(user) {
           obj2.onSelect = function onSelect(id) {
             return guildId(showUserProfile[34]).setChannel(id2.id, id.id, id.id);
           };
-          obj.openLazy(asyncRequireImpl(10872, dependencyMap.paths), "ChannelPicker", obj2, "stack");
+          obj.openLazy(asyncRequireImpl(11041, dependencyMap.paths), "ChannelPicker", obj2, "stack");
         };
         items7.push(<ModeratorActionRow key="move-to-channel" label={null} hint={null} sublabel={null} icon={null} onPress={null} />);
       }
@@ -337,7 +337,7 @@ export default function UserProfileModeratorActions(user) {
         obj11.onPress = function onPress() {
           trackUserProfileAction({ action: "PRESS_MANAGE_USER" });
           hideActionSheet();
-          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11314, dependencyMap.paths), {
+          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11483, dependencyMap.paths), {
             userId: user.id,
             guildId: stateFromStores.id,
             onClose() {

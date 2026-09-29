@@ -1,17 +1,17 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16777
+// Function ID: 16778
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4836, 576, 12190, 4832, 1115, 12177, 5281, 12173, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 12361, 4832, 1115, 12348, 5447, 12344, 2]
 // Exports: default
 
-// Module 16591 (AddFriendsContactSyncEmptyState)
+// Module 16777 (AddFriendsContactSyncEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import _modDef12190 from "module_12190" /* 12190 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12344 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12348 */;
+import _modDef12361 from "module_12361" /* 12361 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/c
 export default function AddFriendsContactSyncEmptyState() {
   const tmp = closure_7();
   const obj = { style: tmp.content, children: null };
-  const items = [hasOwnProperty(React4, { resizeMode: "contain", style: tmp.headerImage, source: _modDef12190 }), , , ];
+  const items = [hasOwnProperty(React4, { resizeMode: "contain", style: tmp.headerImage, source: _modDef12361 }), , , ];
   const obj3 = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["/G+nci"]);
@@ -45,7 +45,7 @@ export default function AddFriendsContactSyncEmptyState() {
   const obj4 = { style: tmp.subtitle, children: null };
   const obj5 = { style: tmp.subtitleText, variant: "text-sm/medium", children: null };
   const intl2 = util.intl;
-  const obj2 = { resizeMode: "contain", style: tmp.headerImage, source: _modDef12190 };
+  const obj2 = { resizeMode: "contain", style: tmp.headerImage, source: _modDef12361 };
   obj5.children = intl2.format(util.t.OXdOPf, { learnMoreHook: ContactSyncUtils.handleOpenLearnMoreLink });
   obj4.children = hasOwnProperty(Text_Text.Text, obj5);
   items[2] = hasOwnProperty(React3, obj4);

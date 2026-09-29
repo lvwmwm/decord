@@ -1,10 +1,10 @@
-// Module ID: 10338
-// Function ID: 10339
+// Module ID: 10507
+// Function ID: 10508
 // Name: useUserVoiceActivity
 // Dependencies: [2045, 4469, 4855, 1085, 504, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 10338 (useUserVoiceActivity)
+// Module 10507 (useUserVoiceActivity)
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
@@ -79,7 +79,7 @@ function getVisibleUserVoiceActivity(arg0, arg1) {
 }
 const Permissions = fn(1085).Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "paddingHorizontal" });
+let closure_7 = Object.freeze({ voiceState: "current", voiceChannel: "channel" });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 

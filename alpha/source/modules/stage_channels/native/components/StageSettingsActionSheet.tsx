@@ -1,16 +1,16 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8246
+// Function ID: 8247
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4852, 2045, 4469, 2050, 5726, 1074, 21, 4836, 576, 4800, 504, 2053, 5734, 6618, 8053, 1115, 1177, 8082, 7842, 8083, 6800, 8084, 8085, 8087, 8088, 8089, 2]
+// Dependencies: [19, 17, 4852, 2045, 4469, 2050, 5893, 1074, 21, 4836, 576, 4800, 504, 2053, 5901, 6784, 8218, 1115, 1177, 8247, 8007, 8248, 6966, 8249, 8250, 8252, 8253, 8254, 2]
 // Exports: default
 
-// Module 8081 (StageSettingsActionSheet)
+// Module 8246 (StageSettingsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2053 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7842 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8085 */;
-import ReportModals from "ReportModals" /* 8089 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8007 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8250 */;
+import ReportModals from "ReportModals" /* 8254 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -19,7 +19,7 @@ import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
 require = fn;
 const View = fn(17).View;
-const STAGE_SETTINGS_SHEET_KEY = fn(5726).STAGE_SETTINGS_SHEET_KEY;
+const STAGE_SETTINGS_SHEET_KEY = fn(5893).STAGE_SETTINGS_SHEET_KEY;
 const Constants = fn(1074);
 ({ ChannelSettingsSections: c10, UserSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);

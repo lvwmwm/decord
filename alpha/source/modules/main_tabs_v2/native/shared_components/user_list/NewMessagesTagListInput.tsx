@@ -1,14 +1,14 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 12023
+// Function ID: 12024
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1372, 21, 4836, 576, 1364, 1370, 10323, 9036, 5435, 1115, 11855, 10774, 4832, 4541, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 1364, 1370, 10492, 9201, 5602, 1115, 12024, 10943, 4832, 4541, 2]
 
-// Module 11854 (NewMessagesTagListInput)
+// Module 12023 (NewMessagesTagListInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10323 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10492 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

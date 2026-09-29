@@ -1,12 +1,12 @@
-// Module ID: 7816
-// Function ID: 7817
+// Module ID: 7981
+// Function ID: 7982
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4836, 5994, 1613, 2]
+// Dependencies: [19, 17, 21, 4836, 6160, 1613, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 7816 (MediaModalOverlayHeaderWrapper)
+// Module 7981 (MediaModalOverlayHeaderWrapper)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import NavigatorConstants from "NavigatorConstants" /* 5994 */;
+import NavigatorConstants from "NavigatorConstants" /* 6160 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

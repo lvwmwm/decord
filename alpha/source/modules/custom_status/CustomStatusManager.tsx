@@ -1,12 +1,12 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17310
+// Function ID: 17311
 // Name: CustomStatusManager
-// Dependencies: [5591, 1074, 2040, 6539, 2021, 9551, 2026, 1217, 9550, 2]
+// Dependencies: [5758, 1074, 2040, 6705, 2021, 9718, 2026, 1217, 9717, 2]
 
-// Module 17121 (CustomStatusManager)
-import setUserStatusDefault from "setUserStatus" /* 9551 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17310 (CustomStatusManager)
+import setUserStatusDefault from "setUserStatus" /* 9718 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5758 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 let require = fn;
 const Constants = fn(1074);
@@ -137,9 +137,9 @@ const prototype = function CustomStatusManager() {
             closure_1_0(dependencyMap[8]).setFocusMode(false);
           }, true);
         } else {
-          applyArgumentsResult(9550).setFocusMode(false);
+          applyArgumentsResult(9717).setFocusMode(false);
           timeout1.stop();
-          const tmpResult = applyArgumentsResult(9550);
+          const tmpResult = applyArgumentsResult(9717);
         }
       }
     }

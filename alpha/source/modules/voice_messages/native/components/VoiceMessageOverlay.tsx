@@ -1,18 +1,18 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12313
+// Function ID: 12314
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4825, 2045, 11442, 11443, 1074, 11444, 21, 4566, 1177, 4832, 12, 7909, 4836, 576, 5753, 504, 4531, 5898, 1115, 4837, 5383, 9712, 12143, 6402, 11900, 5266, 5275, 1110, 11352, 8919, 11743, 12144, 7363, 4791, 11738, 11721, 4777, 9465, 2]
+// Dependencies: [32, 19, 17, 4825, 2045, 11611, 11612, 1074, 11613, 21, 4566, 1177, 4832, 12, 8074, 4836, 576, 5920, 504, 4531, 6064, 1115, 4837, 5549, 9879, 12314, 6568, 12071, 5432, 5441, 1110, 11521, 9084, 11912, 12315, 7528, 4791, 11907, 11890, 4777, 9632, 2]
 
-// Module 12142 (VoiceMessageOverlay)
+// Module 12313 (VoiceMessageOverlay)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5275 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
-import useRefValueDefault from "useRefValue" /* 5898 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5441 */;
+import LegacyTokens from "LegacyTokens" /* 5920 */;
+import useRefValueDefault from "useRefValue" /* 6064 */;
+import inlineStyles from "inlineStyles" /* 8074 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -235,10 +235,10 @@ function LockPill(safeAreaBottom) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, AppState: metroRequire } = get_ActivityIndicator);
-const useVoiceMessagesUIStore = fn(11442).useVoiceMessagesUIStore;
-const VoiceMessageAnimationState = fn(11443).VoiceMessageAnimationState;
+const useVoiceMessagesUIStore = fn(11611).useVoiceMessagesUIStore;
+const VoiceMessageAnimationState = fn(11612).VoiceMessageAnimationState;
 const ComponentActionsKeyed = fn(1074).ComponentActionsKeyed;
-const CHAT_INPUT_HEIGHT = fn(11444).CHAT_INPUT_HEIGHT;
+const CHAT_INPUT_HEIGHT = fn(11613).CHAT_INPUT_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;

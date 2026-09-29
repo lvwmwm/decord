@@ -1,20 +1,20 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14305
+// Function ID: 14306
 // Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10969, 21, 4836, 504, 11267, 5281, 1115, 4540, 1231, 573, 1177, 9304, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 11138, 21, 4836, 504, 11436, 5447, 1115, 4540, 1231, 573, 1177, 9471, 4832, 2]
 
-// Module 14133 (ErrorBoundary)
+// Module 14305 (ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import AppCrash from "AppCrash" /* 9304 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import AppCrash from "AppCrash" /* 9471 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10969 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11138 */;
 
 require = fn;
 function MaybeClearBuildOverride() {
@@ -62,7 +62,7 @@ function MaybeClearBuildOverride() {
       }
       return applyArgumentsResult;
     };
-    return closure_9(tmp2(5281).Button, obj2);
+    return closure_9(tmp2(5447).Button, obj2);
   }
   obj = require("initialize");
 }

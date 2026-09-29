@@ -1,0 +1,18 @@
+// Module ID: 15610
+// Function ID: 15611
+// Name: uniqBy
+// Dependencies: [7192, 584]
+
+// Module 15610 (uniqBy)
+import baseIteratee from "baseIteratee" /* 584 */;
+import baseUniq from "baseUniq" /* 7192 */;
+
+
+export default function uniqBy(arg0, arg1) {
+  if (arg0) {
+    if (arg0.length) {
+      baseUniq(arg0, baseIteratee(arg1, 2));
+    }
+    return [];
+  }
+};

@@ -1,15 +1,15 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11547
+// Function ID: 11548
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4836, 576, 7867, 4683, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8032, 4683, 4832, 1115, 2]
 // Exports: default
 
-// Module 11378 (AppealIngestionPolicySummary)
+// Module 11547 (AppealIngestionPolicySummary)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8032 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

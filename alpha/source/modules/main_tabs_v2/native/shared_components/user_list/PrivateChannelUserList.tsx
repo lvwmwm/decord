@@ -1,15 +1,15 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11837
+// Function ID: 11838
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2045, 4479, 1372, 1074, 21, 6583, 504, 12, 1370, 11084, 11087, 11086, 4531, 576, 11669, 1115, 8122, 11670, 7624, 10326, 2]
+// Dependencies: [32, 19, 17, 2045, 4479, 1372, 1074, 21, 6749, 504, 12, 1370, 11253, 11256, 11255, 4531, 576, 11838, 1115, 8287, 11839, 7789, 10495, 2]
 
-// Module 11668 (PrivateChannelUserList)
+// Module 11837 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11670 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8287 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11839 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

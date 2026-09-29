@@ -1,15 +1,15 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14973
+// Function ID: 14974
 // Name: SoundboardVolumeSetting
-// Dependencies: [7417, 11006, 1115, 6762, 6756, 6603, 2]
+// Dependencies: [7582, 11175, 1115, 6928, 6922, 6769, 2]
 
-// Module 14798 (SoundboardVolumeSetting)
+// Module 14973 (SoundboardVolumeSetting)
 import util from "util" /* 1115 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
-import SoundboardUtils from "SoundboardUtils" /* 6762 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6922 */;
+import SoundboardUtils from "SoundboardUtils" /* 6928 */;
+import SettingsConstants from "SettingsConstants" /* 7582 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
 import size from "module_2" /* 2 */;
 
 const volumeSlider = SettingBuilders.createVolumeSlider({

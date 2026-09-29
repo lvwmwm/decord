@@ -1,16 +1,16 @@
-// Module ID: 10435
-// Function ID: 10436
+// Module ID: 10604
+// Function ID: 10605
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [10376, 504, 2]
+// Dependencies: [10545, 504, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 10435 (useInappropriateConversationWarningsForChannel)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10376 */;
+// Module 10604 (useInappropriateConversationWarningsForChannel)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10545 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const SafetyWarningTypes = fn(10376).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10545).SafetyWarningTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationWarningsForChannel.tsx");
 

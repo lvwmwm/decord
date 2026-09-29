@@ -1,15 +1,9 @@
 // Module ID: 13847
 // Function ID: 13848
-// Dependencies: [13795, 13814, 13804]
+// Dependencies: [1121]
 
 // Module 13847
-import _mod13795 from "module_13795" /* 13795 */;
-import _mod13804 from "module_13804" /* 13804 */;
-import all from "module_13814" /* 13814 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let closure_0 = _mod13795(Function.toString);
-if (!all(_mod13804.inspectSource)) {
-  _mod13804.inspectSource = (arg0) => closure_0(arg0);
-}
 
-export default _mod13804.inspectSource;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/intl/messages", scales: [1], hash: "63e33176376de6242ac97dac005c5fb6", name: "untranslated.compiled.messages", type: "jsona" });

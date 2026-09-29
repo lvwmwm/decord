@@ -1,9 +1,9 @@
-// Module ID: 12647
-// Function ID: 12648
+// Module ID: 12817
+// Function ID: 12818
 // Name: VibegrationsWebSocket
 // Dependencies: [2]
 
-// Module 12647 (VibegrationsWebSocket)
+// Module 12817 (VibegrationsWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWebSocket.tsx");
@@ -45,15 +45,15 @@ prototype["open"] = function open(ticket) {
     }
   });
 };
-prototype["sendUserMessage"] = function sendUserMessage(content, nonce, attachment_ids, project_name, template_id) {
+prototype["sendUserMessage"] = function sendUserMessage(content, nonce, attachment_ids, project_name) {
   const self = this;
   if (null != this.socket) {
     const _WebSocket = WebSocket;
     if (self.socket.readyState === WebSocket.OPEN) {
       const socket = self.socket;
       const _JSON = JSON;
-      const obj = { type: "user_message", content, nonce, attachment_ids, project_name, template_id };
-      socket.send(JSON.stringify(obj));
+      const obj2 = { type: "user_message", content, nonce, attachment_ids, project_name, template_id: tmp, remix: tmp2, clarification_answers: tmp3 };
+      socket.send(JSON.stringify(obj2));
     }
   }
   const error = new Error("WebSocket not open");

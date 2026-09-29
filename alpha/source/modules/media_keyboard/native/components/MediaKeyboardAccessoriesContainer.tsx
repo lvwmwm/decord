@@ -1,13 +1,13 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16477
+// Function ID: 16478
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [19, 17, 8966, 21, 1364, 4836, 4566, 504, 2]
+// Dependencies: [19, 17, 9131, 21, 1364, 4836, 4566, 504, 2]
 // Exports: default
 
-// Module 16297 (MediaKeyboardAccessoriesContainer)
+// Module 16477 (MediaKeyboardAccessoriesContainer)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 8966 */;
+import NativeMenuStore from "NativeMenuStore" /* 9131 */;
 
 require = fn;
 const jsx = fn(21).jsx;

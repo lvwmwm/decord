@@ -1,15 +1,15 @@
-// Module ID: 5999
-// Function ID: 6000
+// Module ID: 6165
+// Function ID: 6166
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 4531, 5914, 5918, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 4531, 6080, 6084, 2]
 // Exports: TableRowGroup
 
-// Module 5999 (TableRowGroup)
+// Module 6165 (TableRowGroup)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TableRowDivider from "TableRowDivider" /* 5914 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5918 */;
+import TableRowDivider from "TableRowDivider" /* 6080 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 6084 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

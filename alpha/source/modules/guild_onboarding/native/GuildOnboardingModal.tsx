@@ -1,19 +1,19 @@
-// Module ID: 6542
-// Function ID: 6543
+// Module ID: 6708
+// Function ID: 6709
 // Name: GuildOnboardingModal
-// Dependencies: [19, 5884, 2045, 2067, 2099, 6521, 6518, 1074, 21, 1101, 6543, 5936, 6580, 6527, 6604, 6545, 504, 6526, 5859, 6421, 1115, 2]
+// Dependencies: [19, 6050, 2045, 2067, 2099, 6687, 6684, 1074, 21, 1101, 6709, 6102, 6746, 6693, 6770, 6711, 504, 6692, 6025, 6587, 1115, 2]
 // Exports: default
 
-// Module 6542 (GuildOnboardingModal)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5859 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6526 */;
+// Module 6708 (GuildOnboardingModal)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6025 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6692 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5884 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6050 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6687 */;
 
 require = fn;
 function headerTitle() {
@@ -22,7 +22,7 @@ function headerTitle() {
 function headerRight() {
   return null;
 }
-let closure_9 = fn(6518).GuildOnboardingModalStates;
+let closure_9 = fn(6684).GuildOnboardingModalStates;
 const Constants = fn(1074);
 ({ GuildFeatures: c10, Routes: closure_11 } = Constants);
 const jsx = fn(21).jsx;

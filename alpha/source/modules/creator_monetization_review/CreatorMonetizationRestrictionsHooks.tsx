@@ -1,12 +1,12 @@
-// Module ID: 6671
-// Function ID: 6672
+// Module ID: 6837
+// Function ID: 6838
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4462, 2067, 1074, 6672, 6673, 504, 4461, 2]
+// Dependencies: [19, 4462, 2067, 1074, 6838, 6839, 504, 4461, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 6671 (CreatorMonetizationRestrictionsHooks)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6672 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6673 */;
+// Module 6837 (CreatorMonetizationRestrictionsHooks)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6838 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6839 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
 import GuildStore from "GuildStore" /* 2067 */;

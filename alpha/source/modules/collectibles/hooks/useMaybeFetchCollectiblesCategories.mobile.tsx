@@ -1,11 +1,11 @@
-// Module ID: 10200
-// Function ID: 10201
-// Dependencies: [4835, 504, 10201, 2]
+// Module ID: 10367
+// Function ID: 10368
+// Dependencies: [4835, 504, 10368, 2]
 // Exports: default
 
-// Module 10200
+// Module 10367
 import initialize from "initialize" /* 504 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 10201 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 10368 */;
 import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 
 require = fn;

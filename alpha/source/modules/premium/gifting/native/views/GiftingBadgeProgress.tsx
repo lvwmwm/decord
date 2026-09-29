@@ -1,14 +1,14 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 10666
+// Function ID: 10667
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 7637, 21, 4836, 576, 10208, 10214, 4832, 1115, 2583, 2]
+// Dependencies: [19, 17, 7802, 21, 4836, 576, 10375, 10381, 4832, 1115, 2583, 2]
 // Exports: default
 
-// Module 10497 (GiftingBadgeProgress)
+// Module 10666 (GiftingBadgeProgress)
 import nativeDefault from "native" /* 576 */;
 import _modDef2583 from "module_2583" /* 2583 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10214 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10375 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10381 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ function GiftingBadgeProgressBar(percent) {
   return hasOwnProperty(View, obj);
 }
 const View = fn(17).View;
-let closure_4 = fn(7637).getSingleRequirementThreshold;
+let closure_4 = fn(7802).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4836);

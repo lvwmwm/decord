@@ -1,16 +1,16 @@
-// Module ID: 8849
-// Function ID: 8850
+// Module ID: 9014
+// Function ID: 9015
 // Name: VideoSpeakerStore
-// Dependencies: [4858, 502, 1993, 5731, 4852, 4857, 4888, 12, 504, 573, 2]
+// Dependencies: [4858, 502, 1993, 5898, 4852, 4857, 4888, 12, 504, 573, 2]
 
-// Module 8849 (VideoSpeakerStore)
+// Module 9014 (VideoSpeakerStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SpeakingStore from "SpeakingStore" /* 5731 */;
+import SpeakingStore from "SpeakingStore" /* 5898 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import apply from "module_12" /* 12 */;
 

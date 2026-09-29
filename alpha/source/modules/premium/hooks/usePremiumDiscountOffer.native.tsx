@@ -1,9 +1,9 @@
-// Module ID: 10170
-// Function ID: 10171
+// Module ID: 10337
+// Function ID: 10338
 // Name: hooks/usePremiumDiscountOffer
-// Dependencies: [2, 7504]
+// Dependencies: [2, 7669]
 
-// Module 10170 (hooks/usePremiumDiscountOffer)
+// Module 10337 (hooks/usePremiumDiscountOffer)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

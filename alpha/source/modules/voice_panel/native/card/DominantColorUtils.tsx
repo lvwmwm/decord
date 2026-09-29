@@ -1,10 +1,10 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8454
+// Function ID: 8455
 // Name: DominantColorUtils
 // Dependencies: [32, 19, 17, 1439, 4683, 576, 558, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 8289 (DominantColorUtils)
+// Module 8454 (DominantColorUtils)
 import nativeDefault from "native" /* 576 */;
 import privDefault from "priv" /* 1439 */;
 import _slicedToArray from "module_32" /* 32 */;

@@ -1,20 +1,20 @@
-// Module ID: 10910
-// Function ID: 10911
+// Module ID: 11079
+// Function ID: 11080
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10376, 10911, 1074, 1084, 21, 4836, 576, 10912, 10913, 5039, 9601, 7852, 4525, 10914, 1115, 10917, 1981, 4832, 10924, 2]
+// Dependencies: [19, 10545, 11080, 1074, 1084, 21, 4836, 576, 11081, 11082, 5039, 9768, 8017, 4525, 11083, 1115, 11086, 1981, 4832, 11093, 2]
 
-// Module 10910 (LikelyAtoWarningBanner)
+// Module 11079 (LikelyAtoWarningBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9601 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10913 */;
-import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 10924 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8017 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9768 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11081 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11082 */;
+import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 11093 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -76,7 +76,7 @@ class LikelyAtoWarningBanner {
       let obj = ModalActionCreatorsDefault;
       const intl = util.intl;
       obj2.description = intl.string(util.t["/uid3p"]);
-      const tmp = asyncRequireImpl(10917, dependencyMap.paths);
+      const tmp = asyncRequireImpl(11086, dependencyMap.paths);
       obj2.safetyTips = hasOwnProperty().map((children, index) => {
         const obj = { children: null };
         const items = [closure_1_10(channelId(4832).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title }, index), closure_1_10(channelId(4832).Text, { variant: "text-xs/medium", color: "text-subtle", children: children.description }, index)];
@@ -118,8 +118,8 @@ class LikelyAtoWarningBanner {
     return jsx(tmp3, obj);
   }
 }
-const SafetyWarningTypes = fn(10376).SafetyWarningTypes;
-const Constants = fn(10911);
+const SafetyWarningTypes = fn(10545).SafetyWarningTypes;
+const Constants = fn(11080);
 ({ getLikelyAtoMoreTips: hasOwnProperty, LIKELY_ATO_MORE_TIPS_MODAL_KEY: metroRequire, LEARN_MORE_HC_ARTICLE: closure_7 } = Constants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const MuteUntilSeconds = fn(1084).MuteUntilSeconds;

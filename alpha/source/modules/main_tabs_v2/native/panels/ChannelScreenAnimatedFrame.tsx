@@ -1,14 +1,14 @@
-// Module ID: 15634
-// Function ID: 15635
+// Module ID: 15809
+// Function ID: 15810
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 4836, 576, 4566, 4837, 1177, 15632, 7297, 6544, 2]
+// Dependencies: [19, 21, 4836, 576, 4566, 4837, 1177, 15807, 7462, 6710, 2]
 // Exports: default
 
-// Module 15634 (ChannelScreenAnimatedFrame)
+// Module 15809 (ChannelScreenAnimatedFrame)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4837 */;
-import PanelsConfig from "PanelsConfig" /* 15632 */;
+import PanelsConfig from "PanelsConfig" /* 15807 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

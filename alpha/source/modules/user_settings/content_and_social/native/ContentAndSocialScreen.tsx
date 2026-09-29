@@ -1,24 +1,24 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15659
+// Function ID: 15660
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 7417, 1074, 21, 4836, 576, 1115, 2111, 15485, 14351, 12177, 15490, 6719, 11006, 14349, 14247, 15491, 4832, 2]
+// Dependencies: [32, 19, 17, 7582, 1074, 21, 4836, 576, 1115, 2111, 15660, 14526, 12348, 15665, 6885, 11175, 14524, 14423, 15666, 4832, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15484 (ContentAndSocialScreen)
+// Module 15659 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15491 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12348 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15666 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const MobileUserSettings = fn(7417).MobileUserSettings;
+const MobileUserSettings = fn(7582).MobileUserSettings;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
@@ -120,7 +120,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp9 = items6;
     if (!allServersOptionSelected) {
       const items11 = [];
-      HermesBuiltin.arraySpread(tmp2(15485).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
+      HermesBuiltin.arraySpread(tmp2(15660).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
       tmp9 = items11;
       const arraySpreadResult = HermesBuiltin.arraySpread(items6, 0);
     }
@@ -128,7 +128,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp15;
     if (tmp7) {
       if (tmp8) {
-        tmp15 = React7(tmp2(14351).MessageRequestsNotice, {});
+        tmp15 = React7(tmp2(14526).MessageRequestsNotice, {});
       }
     }
     obj14.subLabel = tmp15;
@@ -215,7 +215,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     const tmp2Result = tmp2(2111);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React7(tmp2(14247), obj);
+    tmp7 = React7(tmp2(14423), obj);
   }
   return tmp7;
 };

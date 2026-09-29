@@ -1,16 +1,16 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 14152
+// Function ID: 14153
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4566, 4836, 7360, 576, 7359, 5280, 5284, 5283, 4832, 2]
+// Dependencies: [19, 17, 21, 4566, 4836, 7525, 576, 7524, 5446, 5450, 5449, 4832, 2]
 // Exports: ContextMenuItem
 
-// Module 13983 (ContextMenuItem)
+// Module 14152 (ContextMenuItem)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import ContextMenuState from "ContextMenuState" /* 7359 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 7360 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
+import ContextMenuState from "ContextMenuState" /* 7524 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 7525 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -82,15 +82,15 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
         const measureResult = ReanimatedRexport2.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(7359).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(7524).INDEX_BOUNDS_OFFSET;
           value = itemMeasurements.get();
-          value[result + tmp2(7359).INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
+          value[result + tmp2(7524).INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();
-          value4[result + tmp2(7359).INDEX_BOUNDS_PAGE_Y_OFFSET] = pageY;
+          value4[result + tmp2(7524).INDEX_BOUNDS_PAGE_Y_OFFSET] = pageY;
           const value5 = itemMeasurements.get();
-          value5[result + tmp2(7359).INDEX_BOUNDS_WIDTH_OFFSET] = width;
+          value5[result + tmp2(7524).INDEX_BOUNDS_WIDTH_OFFSET] = width;
           const value6 = itemMeasurements.get();
-          value6[result + tmp2(7359).INDEX_BOUNDS_HEIGHT_OFFSET] = height;
+          value6[result + tmp2(7524).INDEX_BOUNDS_HEIGHT_OFFSET] = height;
         }
       }
     }

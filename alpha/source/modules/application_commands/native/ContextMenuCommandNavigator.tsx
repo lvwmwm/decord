@@ -1,13 +1,13 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16878
+// Function ID: 16879
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 7339, 4836, 576, 6895, 6421, 1613, 7288, 1115, 16691, 16693, 2]
+// Dependencies: [19, 17, 21, 7504, 4836, 576, 7061, 6587, 1613, 7453, 1115, 16879, 16881, 2]
 // Exports: default
 
-// Module 16690 (ContextMenuCommandNavigator)
+// Module 16878 (ContextMenuCommandNavigator)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
+import HeaderShared from "HeaderShared" /* 7453 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const NativeStackNavigator = fn(7339);
+const NativeStackNavigator = fn(7504);
 const Screen = NativeStackNavigator.createNativeStackNavigator();
 const createStyles = fn(4836);
 let obj3 = { container: { flex: 1 }, content: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/application_commands/native/C
 export default function ContextMenuCommandNavigator() {
   const tmp = closure_8();
   _require = tmp;
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(6895).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(7061).trackAppUIViewed(), []);
   importDefault = require("Navigator").useAccessibilityNativeStackOptions();
   const rect = useSafeAreaInsetsDefault();
   let obj2 = { style: null, children: null };
@@ -65,7 +65,7 @@ export default function ContextMenuCommandNavigator() {
   obj5.title = intl.string(require("util").t.PHjkRE);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(16691).default;
+    return closure_0(16879).default;
   };
   const items1 = [
     closure_5(Screen, obj4),
@@ -80,7 +80,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return closure_0(16693).default;
+        return closure_0(16881).default;
       }
     })
   ];

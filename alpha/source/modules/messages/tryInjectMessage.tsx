@@ -1,13 +1,13 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11604
+// Function ID: 11605
 // Name: tryInjectMessage
-// Dependencies: [502, 1074, 7171, 5058, 1385, 11436, 11437, 2]
+// Dependencies: [502, 1074, 7336, 5058, 1385, 11605, 11606, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 11435 (tryInjectMessage)
+// Module 11604 (tryInjectMessage)
 import FlagUtils from "FlagUtils" /* 1385 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import createMessageDefault from "createMessage" /* 7171 */;
+import createMessageDefault from "createMessage" /* 7336 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -40,7 +40,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, id
                 num = 0;
               }
               tmp4 = null;
-              if (!tmpResult.hasFlag(num, tmp(11436).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
+              if (!tmpResult.hasFlag(num, tmp(11605).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
                 tmp4 = null;
                 if (!obj.has(id2.id)) {
                   const obj4 = { channelId: id2.id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: id.author, flags: tmp3.EPHEMERAL, state: constants2.SENT };
@@ -55,10 +55,10 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, id
                     num2 = 0;
                   }
                   const tmpResult4 = tmp(1385);
-                  const setFlagResult = tmp(1385).setFlag(num2, tmp(11436).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const result1 = tmp6(11437).updatePrivateChannelRecipientFlags(id2.id, setFlagResult);
+                  const setFlagResult = tmp(1385).setFlag(num2, tmp(11605).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+                  const result1 = tmp6(11606).updatePrivateChannelRecipientFlags(id2.id, setFlagResult);
                   tmp4 = messageRecord1;
-                  const tmp6Result = tmp6(11437);
+                  const tmp6Result = tmp6(11606);
                 }
               }
               tmpResult = tmp(1385);

@@ -1,11 +1,11 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16434
+// Function ID: 16435
 // Name: VibegrationsRemix
-// Dependencies: [5, 12642, 8496, 3715, 1115, 2]
+// Dependencies: [5, 12812, 8661, 3715, 1115, 2]
 // Exports: remixVibegrationsProjectInto
 
-// Module 16254 (VibegrationsRemix)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
+// Module 16434 (VibegrationsRemix)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8661 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -101,7 +101,7 @@ let closure_9 = async function _remixVibegrationsProjectInto(arg0, guild_id) {
               c5 = 0;
               closure_131_5(closure_130_1);
               const intl2 = closure_131_0(closure_131_2[4]).intl;
-              closure_131_7(closure_130_1, intl2.string(closure_131_1(closure_131_2[3]).so1WC7));
+              closure_131_7(closure_130_1, intl2.string(closure_131_1(closure_131_2[3]).so1WC7), undefined, { remix: true });
               const obj11 = { ok: true, projectId: closure_130_1 };
               c7 = 3;
               const obj12 = { value: obj11, done: true };
@@ -136,7 +136,7 @@ let closure_9 = async function _remixVibegrationsProjectInto(arg0, guild_id) {
     }
   })();
 };
-const VibegrationsConnectionStore = fn(12642);
+const VibegrationsConnectionStore = fn(12812);
 ({ VibegrationsRemixError: closure_4, ensureConnection: hasOwnProperty, remixProjectWorkspace: metroRequire, sendUserMessage: closure_7 } = VibegrationsConnectionStore);
 let c8 = " (Remix)";
 const size = fn(2);

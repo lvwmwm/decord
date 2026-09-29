@@ -1,10 +1,10 @@
-// Module ID: 6382
-// Function ID: 6383
+// Module ID: 6548
+// Function ID: 6549
 // Name: PhoneOrEmailUtils
 // Dependencies: [2]
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 6382 (PhoneOrEmailUtils)
+// Module 6548 (PhoneOrEmailUtils)
 import size from "module_2" /* 2 */;
 
 const PhoneOrEmailSelectorForceMode = { PHONE: "phone", EMAIL: "email" };

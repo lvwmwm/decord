@@ -1,12 +1,12 @@
-// Module ID: 9242
-// Function ID: 9243
+// Module ID: 9409
+// Function ID: 9410
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1074, 9243, 9250, 4800, 9251, 1981, 1249, 9255, 2]
+// Dependencies: [5, 1074, 9410, 9417, 4800, 9418, 1981, 1249, 9422, 2]
 // Exports: beginConsoleTransfer
 
-// Module 9242 (beginConsoleTransfer)
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9243 */;
-import transferToXboxDefault from "transferToXbox" /* 9255 */;
+// Module 9409 (beginConsoleTransfer)
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9410 */;
+import transferToXboxDefault from "transferToXbox" /* 9422 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

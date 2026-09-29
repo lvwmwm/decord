@@ -1,9 +1,9 @@
 // Module ID: 13580
 // Function ID: 13581
-// Dependencies: [13573]
+// Dependencies: [1121]
 
 // Module 13580
-import _mod13573 from "module_13573" /* 13573 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => _mod13573(arg0, arg1, arg2) < 0;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 108, scales: [1, 2, 3], hash: "3ec4fb1a4fcdb736c4c87e7591f26daf", name: "img_remote_auth_succeeded", type: "png" });

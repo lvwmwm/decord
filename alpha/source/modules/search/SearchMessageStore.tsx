@@ -1,9 +1,9 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6865
+// Function ID: 6866
 // Name: SearchMessageStore
 // Dependencies: [502, 2045, 4479, 1074, 4735, 5058, 4481, 504, 573, 2]
 
-// Module 6699 (SearchMessageStore)
+// Module 6865 (SearchMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;

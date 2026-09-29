@@ -1,15 +1,15 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 16989
+// Function ID: 16990
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4836, 7293, 15970, 576, 16801, 4531, 16803, 4566, 5280, 2]
+// Dependencies: [19, 17, 21, 4836, 7458, 16146, 576, 16988, 4531, 16990, 4566, 5446, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 16802 (SimpleGuildContainer)
+// Module 16989 (SimpleGuildContainer)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 7293 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 15970 */;
-import CutoutImageDefault from "CutoutImage" /* 16803 */;
+import spring from "spring" /* 5446 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 7458 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16146 */;
+import CutoutImageDefault from "CutoutImage" /* 16990 */;
 import noop from "module_19" /* 19 */;
 
 const GuildsBarActivityIndicatorDefault = GuildsBarActivityIndicator;

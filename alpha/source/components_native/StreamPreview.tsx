@@ -1,15 +1,15 @@
-// Module ID: 9519
-// Function ID: 9520
+// Module ID: 9686
+// Function ID: 9687
 // Name: StreamPreview
-// Dependencies: [19, 17, 1182, 21, 4836, 576, 4540, 4685, 9520, 9521, 1115, 5435, 9522, 504, 2]
+// Dependencies: [19, 17, 1182, 21, 4836, 576, 4540, 4685, 9687, 9688, 1115, 5602, 9689, 504, 2]
 // Exports: default
 
-// Module 9519 (StreamPreview)
+// Module 9686 (StreamPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5435 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9522 */;
+import Pressables from "Pressables" /* 5602 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9689 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -38,9 +38,9 @@ DefaultFallback.prototype["render"] = function render() {
   const obj = { style: tmp.wrapper, children: null };
   const obj2 = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(9520);
+    let tmp6Result = tmp6(9687);
   } else {
-    tmp6Result = tmp6(9521);
+    tmp6Result = tmp6(9688);
   }
   obj2.source = tmp6Result;
   obj.children = timestampProducer(React3, obj2);

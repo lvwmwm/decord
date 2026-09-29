@@ -1,10 +1,10 @@
-// Module ID: 9503
-// Function ID: 9504
+// Module ID: 9670
+// Function ID: 9671
 // Name: StageChannelBackground
 // Dependencies: [19, 17, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 9503 (StageChannelBackground)
+// Module 9670 (StageChannelBackground)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

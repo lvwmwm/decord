@@ -1,12 +1,12 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8558
+// Function ID: 8559
 // Name: resolvedValues
-// Dependencies: [8394, 8395, 2]
+// Dependencies: [8559, 8560, 2]
 // Exports: bindResolveFieldValue
 
-// Module 8393 (resolvedValues)
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8394 */;
-import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 8395 */;
+// Module 8558 (resolvedValues)
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8559 */;
+import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 8560 */;
 import size from "module_2" /* 2 */;
 
 function resolveFieldValue(image, items, applicationAssets) {
@@ -45,18 +45,18 @@ function resolveFieldValue(image, items, applicationAssets) {
       }
     }
     return tmp10;
-  } else if (image.value_type === tmp19(8395).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
+  } else if (image.value_type === tmp19(8560).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
     let tmp6 = null;
-    if (image.presentation_type === tmp19(8394).ApplicationWidgetFieldPresentationType.TEXT) {
+    if (image.presentation_type === tmp19(8559).ApplicationWidgetFieldPresentationType.TEXT) {
       tmp6 = null;
       if (items.includes(obj.STRING)) {
-        const obj5 = { type: tmp7.STRING, value: image.value, presentationType: tmp19(8394).ApplicationWidgetFieldPresentationType.TEXT };
+        const obj5 = { type: tmp7.STRING, value: image.value, presentationType: tmp19(8559).ApplicationWidgetFieldPresentationType.TEXT };
         tmp6 = obj5;
       }
       tmp7 = obj;
     }
     return tmp6;
-  } else if (image.value_type === tmp19(8395).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
+  } else if (image.value_type === tmp19(8560).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     if (items.includes(obj.MEDIA)) {
       const found = applicationAssets.find((key) => key.key === image.value);
       let tmp5 = null;
@@ -64,7 +64,7 @@ function resolveFieldValue(image, items, applicationAssets) {
         obj = { type: tmp3.MEDIA, media: null, presentationType: null };
         const size = { url: tmp2(found), width: found.metadata.width, height: found.metadata.height };
         obj.media = size;
-        obj.presentationType = tmp19(8394).ApplicationWidgetFieldPresentationType.IMAGE;
+        obj.presentationType = tmp19(8559).ApplicationWidgetFieldPresentationType.IMAGE;
         tmp5 = obj;
       }
       return tmp5;

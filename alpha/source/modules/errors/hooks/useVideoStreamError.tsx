@@ -1,13 +1,13 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 9038
+// Function ID: 9039
 // Name: useVideoStreamError
-// Dependencies: [502, 8874, 4861, 504, 8875, 2]
+// Dependencies: [502, 9039, 4861, 504, 9040, 2]
 // Exports: default, useVideoStreamErrorContext
 
-// Module 8873 (useVideoStreamError)
-import AVError from "AVError" /* 8875 */;
+// Module 9038 (useVideoStreamError)
+import AVError from "AVError" /* 9040 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 8874 */;
+import AVErrorStore from "AVErrorStore" /* 9039 */;
 
 const require = globalThis.__r;
 

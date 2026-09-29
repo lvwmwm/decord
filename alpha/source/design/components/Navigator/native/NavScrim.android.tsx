@@ -1,11 +1,11 @@
-// Module ID: 6461
-// Function ID: 6462
+// Module ID: 6627
+// Function ID: 6628
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 4836, 576, 6402, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6568, 2]
 
-// Module 6461 (NavScrim)
+// Module 6627 (NavScrim)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);

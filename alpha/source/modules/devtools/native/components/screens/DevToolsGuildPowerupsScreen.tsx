@@ -1,22 +1,22 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15478
+// Function ID: 15479
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1220, 12058, 2067, 4655, 15304, 1074, 21, 4836, 576, 1271, 4421, 4732, 11984, 15172, 6621, 11990, 2026, 2029, 1613, 504, 4832, 5999, 5917, 2]
+// Dependencies: [5, 19, 17, 1220, 12229, 2067, 4655, 15479, 1074, 21, 4836, 576, 1271, 4421, 4732, 12155, 15347, 6787, 12161, 2026, 2029, 1613, 504, 4832, 6165, 6083, 2]
 // Exports: default
 
-// Module 15303 (DevToolsGuildPowerupsScreen)
+// Module 15478 (DevToolsGuildPowerupsScreen)
 import nativeDefault from "native" /* 576 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 11990 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15172 */;
+import TableSwitchRow from "TableSwitchRow" /* 6787 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12161 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15347 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12058 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12229 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 
@@ -155,19 +155,19 @@ function GuildDCSwitchRow(dc) {
   const items = [dc, guildId];
   const callback = noop.useCallback((arg0) => {
     if (arg0) {
-      const result = tmp(11990).markContentAsDismissed(dc, guildId, false);
-      const tmpResult = tmp(11990);
+      const result = tmp(12161).markContentAsDismissed(dc, guildId, false);
+      const tmpResult = tmp(12161);
     } else {
       const result1 = tmp(2026).removeDismissedRecurringContent(dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION);
       const tmpResult2 = tmp(2026);
       const result2 = GuildDismissibleContentUtils.unmarkContentAsDismissed(dc, guildId);
     }
   }, items);
-  return closure_18(dc(6621).TableSwitchRow, { label: closure_15(dc), value: dc.isDismissed, onValueChange: callback });
+  return closure_18(dc(6787).TableSwitchRow, { label: closure_15(dc), value: dc.isDismissed, onValueChange: callback });
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DevToolsGuildPowerupsConstants = fn(15304);
+const DevToolsGuildPowerupsConstants = fn(15479);
 ({ GUILD_DCS: closure_11, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
 const Endpoints = fn(1074).Endpoints;
 const jsxProd = fn(21);
@@ -254,8 +254,8 @@ export default function DevToolsGuildPowerupsScreen() {
           return stateFromStores(closure_2[15]).guildPowerupsResetNotifications();
         }
     };
-    obj8.children = closure_18(tmp5(5917).TableRow, obj9);
-    const items6 = [closure_18(tmp5(5999).TableRowGroup, obj8), , , , , , ];
+    obj8.children = closure_18(tmp5(6083).TableRow, obj9);
+    const items6 = [closure_18(tmp5(6165).TableRowGroup, obj8), , , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: null };
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
@@ -263,24 +263,24 @@ export default function DevToolsGuildPowerupsScreen() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    const items7 = [closure_18(tmp5(5917).TableRow, obj11), ];
+    const items7 = [closure_18(tmp5(6083).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_18(tmp5(5917).TableRow, obj12);
+    items7[1] = closure_18(tmp5(6083).TableRow, obj12);
     obj10.children = items7;
-    items6[1] = closure_19(tmp5(5999).TableRowGroup, obj10);
+    items6[1] = closure_19(tmp5(6165).TableRowGroup, obj10);
     const obj13 = { title: "User Level DCs", hasIcons: false, children: closure_13.map((dc) => closure_1_18(UserDCSwitchRow, { dc }, dc)) };
-    items6[2] = closure_18(tmp5(5999).TableRowGroup, obj13);
+    items6[2] = closure_18(tmp5(6165).TableRowGroup, obj13);
     const obj14 = { title: "Guild Level DCs", hasIcons: false, children: closure_11.map((dc) => collapsedCategories(GuildDCSwitchRow, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[3] = closure_18(tmp5(5999).TableRowGroup, obj14);
+    items6[3] = closure_18(tmp5(6165).TableRowGroup, obj14);
     const obj15 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: closure_12.map((dc) => collapsedCategories(GuildDCSwitchRow, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[4] = closure_18(tmp5(5999).TableRowGroup, obj15);
+    items6[4] = closure_18(tmp5(6165).TableRowGroup, obj15);
     const obj16 = { title: "Vanity URL Powerup DCs", hasIcons: false, children: closure_14.map((dc) => closure_1_18(UserDCSwitchRow, { dc }, dc)) };
-    items6[5] = closure_18(tmp5(5999).TableRowGroup, obj16);
+    items6[5] = closure_18(tmp5(6165).TableRowGroup, obj16);
     const obj17 = { title: "System Messages", hasIcons: false, children: null };
     const obj18 = {
       label: "Send Powerups System Message",
@@ -297,8 +297,8 @@ export default function DevToolsGuildPowerupsScreen() {
           })(stateFromStores);
         }
     };
-    obj17.children = closure_18(tmp5(5917).TableRow, obj18);
-    items6[6] = closure_18(tmp5(5999).TableRowGroup, obj17);
+    obj17.children = closure_18(tmp5(6083).TableRow, obj18);
+    items6[6] = closure_18(tmp5(6165).TableRowGroup, obj17);
     obj6.children = items6;
     tmp16Result = tmp16(closure_5, obj6);
   }

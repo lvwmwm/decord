@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 8349
+// Function ID: 8350
 // Name: GameProfileReviewUtils
 // Dependencies: [2020, 1115, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8184 (GameProfileReviewUtils)
+// Module 8349 (GameProfileReviewUtils)
 import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
 import size from "module_2" /* 2 */;
 

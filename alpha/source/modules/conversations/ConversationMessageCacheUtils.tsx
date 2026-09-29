@@ -1,10 +1,10 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7182
+// Function ID: 7183
 // Name: ConversationMessageCacheUtils
 // Dependencies: [502, 4479, 5058, 4481, 2]
 // Exports: applyHydratedMessages, applyReaction, applyRelationshipFlags, removeHydratedMessage, replaceHydratedMessage
 
-// Module 7017 (ConversationMessageCacheUtils)
+// Module 7182 (ConversationMessageCacheUtils)
 import ReactionUtils from "ReactionUtils" /* 4481 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

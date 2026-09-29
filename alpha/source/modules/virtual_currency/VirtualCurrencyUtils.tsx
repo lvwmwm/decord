@@ -1,10 +1,10 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10853
+// Function ID: 10854
 // Name: VirtualCurrencyUtils
 // Dependencies: [1074, 1076, 2042, 1374, 4654, 2029, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 10684 (VirtualCurrencyUtils)
+// Module 10853 (VirtualCurrencyUtils)
 import Constants from "Constants" /* 1074 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;

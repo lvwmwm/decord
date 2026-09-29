@@ -1,20 +1,20 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13691
+// Function ID: 13692
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5771, 1182, 1372, 1074, 21, 4836, 576, 504, 1479, 4531, 4488, 6583, 6603, 4800, 8614, 4685, 13523, 1115, 5435, 1177, 9775, 4801, 4802, 4527, 5899, 6552, 6553, 1397, 2]
+// Dependencies: [32, 19, 17, 5938, 1182, 1372, 1074, 21, 4836, 576, 504, 1479, 4531, 4488, 6749, 6769, 4800, 8779, 4685, 13692, 1115, 5602, 1177, 9942, 4801, 4802, 4527, 6065, 6718, 6719, 1397, 2]
 // Exports: default
 
-// Module 13522 (GuildActionSheetEmojiSection)
+// Module 13691 (GuildActionSheetEmojiSection)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8614 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8779 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
 

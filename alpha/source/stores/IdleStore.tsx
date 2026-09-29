@@ -1,9 +1,9 @@
-// Module ID: 5722
-// Function ID: 5723
+// Module ID: 5889
+// Function ID: 5890
 // Name: IdleStore
-// Dependencies: [502, 1074, 4861, 1364, 2021, 1091, 573, 4450, 5723, 551, 504, 2]
+// Dependencies: [502, 1074, 4861, 1364, 2021, 1091, 573, 4450, 5890, 551, 504, 2]
 
-// Module 5722 (IdleStore)
+// Module 5889 (IdleStore)
 import initializeDefault from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -11,7 +11,7 @@ import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import DiscordNativeDefault from "DiscordNative" /* 4450 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;

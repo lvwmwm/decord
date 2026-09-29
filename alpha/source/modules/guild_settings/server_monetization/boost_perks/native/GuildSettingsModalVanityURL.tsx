@@ -1,23 +1,23 @@
-// Module ID: 17444
-// Function ID: 17445
+// Module ID: 17633
+// Function ID: 17634
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 17445, 2067, 9049, 1074, 21, 4836, 576, 5936, 6795, 1115, 17446, 7178, 4832, 17291, 6024, 17447, 1485, 504, 6461, 2]
+// Dependencies: [19, 17, 17634, 2067, 9214, 1074, 21, 4836, 576, 6102, 6961, 1115, 17635, 7343, 4832, 17480, 6190, 17636, 1485, 504, 6627, 2]
 // Exports: default
 
-// Module 17444 (GuildSettingsModalVanityURL)
+// Module 17633 (GuildSettingsModalVanityURL)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TextInput from "TextInput" /* 6024 */;
-import HeaderActionButton from "HeaderActionButton" /* 6795 */;
-import getInviteURLDefault from "getInviteURL" /* 7178 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 17291 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 17446 */;
-import _modDef17447 from "module_17447" /* 17447 */;
+import TextInput from "TextInput" /* 6190 */;
+import HeaderActionButton from "HeaderActionButton" /* 6961 */;
+import getInviteURLDefault from "getInviteURL" /* 7343 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 17480 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 17635 */;
+import _modDef17636 from "module_17636" /* 17636 */;
 import noop from "module_19" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 17445 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 17634 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -96,8 +96,8 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
     if (submitting) {
       let fn = () => null;
     } else if (isEditing) {
-      fn = self(5936).getHeaderConditionalBackButton(this.handleCancel);
-      let obj = self(5936);
+      fn = self(6102).getHeaderConditionalBackButton(this.handleCancel);
+      let obj = self(6102);
     }
     let obj2 = { headerLeft: fn, headerRight: null };
     if (submitting) {
@@ -187,7 +187,7 @@ prototype["render"] = function render() {
     obj5.children = items1;
     const items3 = [closure_1_10(React3, obj5), ];
     const obj12 = { style: styles.center, children: null };
-    const obj13 = { source: _modDef17447, style: styles.image, resizeMode: "contain" };
+    const obj13 = { source: _modDef17636, style: styles.image, resizeMode: "contain" };
     obj12.children = React7(React4, obj13);
     items3[1] = React7(React3, obj12);
     obj4.children = items3;
@@ -224,7 +224,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   if (null != stateFromStores) {
     const obj5 = { children: null };
     const obj6 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp8, errorDetails: tmp9, navigation, styles: tmp, contentContainerStyle: guildId.contentContainerStyle };
-    const items3 = [closure_9(GuildSettingsModalVanityURL, obj6), closure_9(tmp2(6461).NavScrim, {})];
+    const items3 = [closure_9(GuildSettingsModalVanityURL, obj6), closure_9(tmp2(6627).NavScrim, {})];
     obj5.children = items3;
     tmp10 = closure_10(closure_11, obj5);
   }

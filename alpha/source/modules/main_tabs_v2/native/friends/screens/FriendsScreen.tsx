@@ -1,22 +1,22 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16760
+// Function ID: 16761
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7071, 4479, 21, 4836, 576, 1485, 6583, 6603, 1613, 504, 16575, 1876, 7624, 16576, 16579, 16081, 4777, 1115, 5917, 10457, 14645, 5281, 10321, 11375, 2]
+// Dependencies: [19, 17, 7236, 4479, 21, 4836, 576, 1485, 6749, 6769, 1613, 504, 16761, 1876, 7789, 16762, 16765, 16257, 4777, 1115, 6083, 10626, 14820, 5447, 10490, 11544, 2]
 // Exports: default
 
-// Module 16574 (FriendsScreen)
+// Module 16760 (FriendsScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import SendMessageIcon from "SendMessageIcon" /* 4777 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TableRow from "TableRow" /* 5917 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import NoResultsDefault from "NoResults" /* 10457 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 14645 */;
-import _modDef16081 from "module_16081" /* 16081 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import TableRow from "TableRow" /* 6083 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import NoResultsDefault from "NoResults" /* 10626 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 14820 */;
+import _modDef16257 from "module_16257" /* 16257 */;
 import noop from "module_19" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7236 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const require = globalThis.__r;
@@ -84,7 +84,7 @@ export default function FriendsScreen() {
     }
     const items = [];
     if (tmp2) {
-      const obj = { icon: _modDef16081, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
+      const obj = { icon: _modDef16257, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
       const intl = util.intl;
       obj.label = intl.string(util.t.fyA115);
       const intl2 = util.intl;
@@ -127,7 +127,7 @@ export default function FriendsScreen() {
       let v1IEawz = require;
       let obj9 = dependencyMap;
       let obj7 = { start: true, end: true, icon: null, trailing: null, label: null, subLabel: null, onPress: null };
-      const obj8 = { source: _modDef16081 };
+      const obj8 = { source: _modDef16257 };
       obj7.icon = React5(TableRow.TableRow.Icon, obj8);
       obj7.trailing = React5(TableRow.TableRow.Arrow, {});
       const intl5 = util.intl;

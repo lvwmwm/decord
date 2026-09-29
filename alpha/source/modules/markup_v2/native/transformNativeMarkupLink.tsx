@@ -1,13 +1,13 @@
-// Module ID: 7560
-// Function ID: 7561
+// Module ID: 7725
+// Function ID: 7726
 // Name: transformNativeMarkupLink
-// Dependencies: [5302, 5308, 5313, 7558, 7561, 5316, 2]
+// Dependencies: [5468, 5474, 5479, 7723, 7726, 5482, 2]
 // Exports: transformNativeLink
 
-// Module 7560 (transformNativeMarkupLink)
-import MarkupTypes from "MarkupTypes" /* 5302 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5308 */;
-import ChannelLinkUrls from "ChannelLinkUrls" /* 7561 */;
+// Module 7725 (transformNativeMarkupLink)
+import MarkupTypes from "MarkupTypes" /* 5468 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5474 */;
+import ChannelLinkUrls from "ChannelLinkUrls" /* 7726 */;
 import size from "module_2" /* 2 */;
 
 function stripCredentialsForDisplay(url) {
@@ -33,45 +33,45 @@ export const transformNativeLink = function transformNativeLink(value, channelId
   }
   const parseChannelLinkUrlResult = ChannelLinkUrls.parseChannelLinkUrl(url);
   if (null != parseChannelLinkUrlResult) {
-    const guildIdFromChannelId = tmp4(5313).getGuildIdFromChannelId(channelId.channelId);
+    const guildIdFromChannelId = tmp4(5479).getGuildIdFromChannelId(channelId.channelId);
     channelId = parseChannelLinkUrlResult.parentChannelId;
-    const tmp4Result = tmp4(5313);
-    let channel = tmp4(5313).getChannel(parseChannelLinkUrlResult.channelId, null);
+    const tmp4Result = tmp4(5479);
+    let channel = tmp4(5479).getChannel(parseChannelLinkUrlResult.channelId, null);
     if (channel == null) {
       let channel1 = null;
       if (null != channelId) {
-        channel1 = tmp4(5313).getChannel(channelId, null);
-        const tmp4Result8 = tmp4(5313);
+        channel1 = tmp4(5479).getChannel(channelId, null);
+        const tmp4Result8 = tmp4(5479);
       }
       channel = channel1;
     }
     if (null == channel) {
-      const tmp4Result9 = tmp4(5313);
+      const tmp4Result9 = tmp4(5479);
       const guildId = parseChannelLinkUrlResult.guildId;
       if (channelId == null) {
         channelId = parseChannelLinkUrlResult.channelId;
       }
       let handleUnknownChannelResult = tmp4Result9.handleUnknownChannel(guildId, channelId, parseChannelLinkUrlResult.messageId, guildIdFromChannelId, url);
     } else {
-      const tmp4Result10 = tmp4(5313);
+      const tmp4Result10 = tmp4(5479);
       handleUnknownChannelResult = tmp4Result10.parseChannel(channel, parseChannelLinkUrlResult.messageId, guildIdFromChannelId, url);
     }
-    const tmp4Result7 = tmp4(5313);
-    return tmp4(7558).applyChannelMentionIcons(handleUnknownChannelResult);
+    const tmp4Result7 = tmp4(5479);
+    return tmp4(7723).applyChannelMentionIcons(handleUnknownChannelResult);
   } else {
-    const matchAttachmentUrlResult = tmp4(5316).matchAttachmentUrl(url);
+    const matchAttachmentUrlResult = tmp4(5482).matchAttachmentUrl(url);
     if (null != matchAttachmentUrlResult) {
       const name = matchAttachmentUrlResult.name;
-      const obj3 = { type: tmp4(5302).AST_KEY.ATTACHMENT_LINK, content: null, attachmentUrl: null, attachmentName: null };
-      const obj4 = { type: tmp4(5302).AST_KEY.TEXT, content: name };
+      const obj3 = { type: tmp4(5468).AST_KEY.ATTACHMENT_LINK, content: null, attachmentUrl: null, attachmentName: null };
+      const obj4 = { type: tmp4(5468).AST_KEY.TEXT, content: name };
       const items = [obj4];
       obj3.content = items;
       obj3.attachmentUrl = url;
       obj3.attachmentName = name;
       let obj5 = obj3;
     } else {
-      obj5 = { type: tmp4(5302).AST_KEY.LINK, content: null, target: null, title: "a" };
-      const obj6 = { type: tmp4(5302).AST_KEY.TEXT, content: stripCredentialsForDisplay(url) };
+      obj5 = { type: tmp4(5468).AST_KEY.LINK, content: null, target: null, title: "a" };
+      const obj6 = { type: tmp4(5468).AST_KEY.TEXT, content: stripCredentialsForDisplay(url) };
       const items1 = [obj6];
       obj5.content = items1;
       obj5.target = url;

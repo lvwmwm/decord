@@ -1,13 +1,13 @@
-// Module ID: 9017
-// Function ID: 9018
+// Module ID: 9182
+// Function ID: 9183
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 9018, 573, 4849, 2]
+// Dependencies: [5, 9183, 573, 4849, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 9017 (ChannelSettingsPermissionsActionCreators)
+// Module 9182 (ChannelSettingsPermissionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9018 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9183 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

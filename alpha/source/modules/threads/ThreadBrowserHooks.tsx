@@ -1,27 +1,27 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12448
+// Function ID: 12449
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12278, 2045, 4469, 4851, 5819, 7185, 4471, 1085, 7200, 504, 12, 1370, 11, 7184, 7324, 2]
+// Dependencies: [32, 19, 12449, 2045, 4469, 4851, 5986, 7350, 4471, 1085, 7365, 504, 12, 1370, 11, 7349, 7489, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 12277 (ThreadBrowserHooks)
+// Module 12448 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7324 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7349 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7489 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5819 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7185 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5986 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7350 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(12278).useShouldShowResolvedFlagsForChannel;
+let closure_5 = fn(12449).useShouldShowResolvedFlagsForChannel;
 const Permissions = fn(1085).Permissions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");

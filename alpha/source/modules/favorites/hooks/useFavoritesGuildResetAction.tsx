@@ -1,14 +1,14 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15946
+// Function ID: 15947
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4655, 1074, 2021, 9685, 2070, 1101, 9684, 1115, 3361, 2]
+// Dependencies: [19, 4655, 1074, 2021, 9852, 2070, 1101, 9851, 1115, 3361, 2]
 // Exports: default
 
-// Module 15771 (useFavoritesGuildResetAction)
+// Module 15946 (useFavoritesGuildResetAction)
 import UserSettings from "UserSettings" /* 2021 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import _modDef3361 from "module_3361" /* 3361 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 9851 */;
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 

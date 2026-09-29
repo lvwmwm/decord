@@ -1,10 +1,10 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8345
+// Function ID: 8346
 // Name: GameProfileHorizontalScrollView
-// Dependencies: [19, 17, 21, 6073, 2]
+// Dependencies: [19, 17, 21, 6239, 2]
 
-// Module 8180 (GameProfileHorizontalScrollView)
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+// Module 8345 (GameProfileHorizontalScrollView)
+import LegacyBaseButton from "LegacyBaseButton" /* 6239 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

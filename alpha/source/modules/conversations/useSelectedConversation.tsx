@@ -1,13 +1,13 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7514
+// Function ID: 7515
 // Name: useSelectedConversation
-// Dependencies: [7014, 7018, 504, 7350, 2]
+// Dependencies: [7179, 7184, 504, 7515, 2]
 // Exports: default
 
-// Module 7349 (useSelectedConversation)
-import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7350 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
-import ConversationsStore from "ConversationsStore" /* 7018 */;
+// Module 7514 (useSelectedConversation)
+import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7515 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7179 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7184 */;
 
 const require = globalThis.__r;
 
@@ -17,10 +17,10 @@ const result = size.fileFinishedImporting("modules/conversations/useSelectedConv
 
 export default function useSelectedConversation(arg0) {
   _require = arg0;
-  const items = [ConversationsStore, ConversationPreviewStore];
+  const items = [ChannelConversationsStore, ConversationPreviewStore];
   const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
-    const selectedConversationId = ConversationsStore.getSelectedConversationId(closure_0);
+    const selectedConversationId = ChannelConversationsStore.getSelectedConversationId(closure_0);
     let tmp4;
     if (null != selectedConversationId) {
       tmp4 = resolveSelectedConversationDefault(tmp, ConversationPreviewStore, tmp2, selectedConversationId);

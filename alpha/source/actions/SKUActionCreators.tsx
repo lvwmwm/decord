@@ -1,20 +1,20 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10445
+// Function ID: 10446
 // Name: SKUActionCreators
-// Dependencies: [5, 8248, 5822, 1074, 573, 5092, 1271, 4511, 8319, 7008, 4735, 4510, 4503, 5174, 5192, 1370, 2]
+// Dependencies: [5, 8413, 5989, 1074, 573, 5258, 1271, 4511, 8484, 7173, 4735, 4510, 4503, 5340, 5358, 1370, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10276 (SKUActionCreators)
+// Module 10445 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import BillingUtils from "BillingUtils" /* 4503 */;
-import StoreUtils from "StoreUtils" /* 5092 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5192 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7008 */;
-import TestModeUtils from "TestModeUtils" /* 8319 */;
+import StoreUtils from "StoreUtils" /* 5258 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5358 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7173 */;
+import TestModeUtils from "TestModeUtils" /* 8484 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8248 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8413 */;
+import SKUStore from "SKUStore" /* 5989 */;
 
 require = fn;
 let closure_8 = async function _fetchSKU(arg0, value) {
@@ -530,14 +530,14 @@ let closure_14 = async function _orderSKU(sku_id, payment_source_id, request_gat
             obj4.location_facet = obj10;
             if (closure_3) {
               const obj11 = { is_gift: true, gift_customization: null };
-              ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp48);
+              ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp47);
               obj11.gift_customization = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
               obj4.gifting_facet = obj11;
               const obj12 = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
             }
             const HTTP = HTTPUtils.HTTP;
             const request = { url: constants.ORDER_CREATE, body: obj4, rejectWithError: null };
-            tmp48 = closure_4;
+            tmp47 = closure_4;
             request.rejectWithError = HTTPUtils.rejectWithMigratedError();
             c9 = 2;
             c10 = 1;
@@ -548,8 +548,7 @@ let closure_14 = async function _orderSKU(sku_id, payment_source_id, request_gat
           c8 = 0;
           closure_133_2 = closure_7;
           closure_134_1(closure_134_2[4]).dispatch({ type: "ORDER_CREATE_FAIL" });
-          const _HermesInternal = HermesInternal;
-          const billingError = new closure_134_0(closure_134_2[10]).BillingError("Failed to create order: " + closure_133_2);
+          const billingError = new closure_134_0(closure_134_2[10]).BillingError(closure_133_2);
           throw billingError;
         } else if (arg0 === 1) {
           c10 = 3;

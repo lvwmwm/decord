@@ -1,10 +1,10 @@
-// Module ID: 6644
-// Function ID: 6645
+// Module ID: 6810
+// Function ID: 6811
 // Name: useIsNewMember
 // Dependencies: [2101, 2108, 4455, 1385, 1091, 504, 2]
 // Exports: default, getIsNewMember
 
-// Module 6644 (useIsNewMember)
+// Module 6810 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1091 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import ImpersonateStore from "ImpersonateStore" /* 2101 */;

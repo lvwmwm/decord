@@ -1,10 +1,10 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11737
+// Function ID: 11738
 // Name: ActivityShelfBadge
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 1177, 1979, 4832, 1115, 2]
 // Exports: default
 
-// Module 11568 (ActivityShelfBadge)
+// Module 11737 (ActivityShelfBadge)
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1979 */;
 import noop from "module_19" /* 19 */;

@@ -1,15 +1,15 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12840
+// Function ID: 12841
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4836, 6589, 1115, 12125, 6628, 4832, 2]
+// Dependencies: [19, 21, 4836, 6755, 1115, 12296, 6794, 4832, 2]
 // Exports: default
 
-// Module 12670 (UserProfileGameFriendsCard)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6589 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12125 */;
+// Module 12840 (UserProfileGameFriendsCard)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6755 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12296 */;
 import noop from "module_19" /* 19 */;
 
-const UserProfileCardDefault = tmp2(6628);
+const UserProfileCardDefault = tmp2(6794);
 const require = fn;
 let jsx = fn(21).jsx;
 const createStyles = fn(4836);

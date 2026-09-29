@@ -1,13 +1,13 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16808
+// Function ID: 16809
 // Name: useOwnsAnyBadge
-// Dependencies: [1372, 7637, 504, 7631, 7688, 2]
+// Dependencies: [1372, 7802, 504, 7796, 7853, 2]
 // Exports: default
 
-// Module 16620 (useOwnsAnyBadge)
-import useBadgesDefault from "useBadges" /* 7688 */;
+// Module 16808 (useOwnsAnyBadge)
+import useBadgesDefault from "useBadges" /* 7853 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7802 */;
 
 const require = fn;
 const size = fn(2);

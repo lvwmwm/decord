@@ -1,12 +1,12 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 12128
+// Function ID: 12129
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 2108, 4455, 21, 504, 4475, 11340, 1115, 11941, 11958, 2]
+// Dependencies: [19, 502, 2108, 4455, 21, 504, 4475, 11509, 1115, 12112, 12129, 2]
 
-// Module 11957 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 12128 (ChatInputGuardAutomodUserProfileQuarantine)
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4475 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11340 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11509 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12112 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
@@ -54,7 +54,7 @@ export default noop.memo(function ChatInputGuardAutomodUserProfileQuarantine(gui
   const obj3 = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
   const obj2 = guildId(4475);
   tmp6 = GuildMemberFlags;
-  obj3.icon = jsx(guildId(11958).ChatXIcon, {});
+  obj3.icon = jsx(guildId(12129).ChatXIcon, {});
   obj3.message = stringResult1;
   return jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
 });

@@ -1,18 +1,18 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 9168
+// Function ID: 9169
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 2051, 21, 4836, 576, 1613, 8982, 8979, 1876, 8981, 4541, 1115, 8983, 9004, 8985, 9005, 9057, 9058, 6421, 2]
+// Dependencies: [5, 32, 19, 17, 2051, 21, 4836, 576, 1613, 9147, 9144, 1876, 9146, 4541, 1115, 9148, 9169, 9150, 9170, 9222, 9223, 6587, 2]
 
-// Module 9003 (EditGuildEventModal)
+// Module 9168 (EditGuildEventModal)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8981 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8982 */;
-import EntityUtils from "EntityUtils" /* 8983 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9004 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9005 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9057 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9058 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9146 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9147 */;
+import EntityUtils from "EntityUtils" /* 9148 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9169 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9170 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9222 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9223 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,15 +1,15 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12689
+// Function ID: 12690
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 7740, 21, 12520, 4531, 576, 4566, 5269, 1364, 4836, 5899, 7713, 4567, 6493, 2]
+// Dependencies: [32, 19, 17, 7905, 21, 12690, 4531, 576, 4566, 5435, 1364, 4836, 6065, 7878, 4567, 6659, 2]
 // Exports: default
 
-// Module 12519 (MediaViewerThumbnails)
+// Module 12689 (MediaViewerThumbnails)
 import useToken from "useToken" /* 4531 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4567 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12520 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12690 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,7 +26,7 @@ function ObscuredView(source) {
       const items = [absoluteFill.absoluteFill, tmp5];
       obj2.style = items;
       const tmp11 = absoluteFill;
-      const tmp7Result = tmp7(5269);
+      const tmp7Result = tmp7(5435);
       let str = "light";
       if (tmpResult.isAndroid()) {
         str = "dark";
@@ -43,7 +43,7 @@ function ObscuredView(source) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const Constants = fn(7740);
+const Constants = fn(7905);
 ({ THUMBNAIL_WIDTH_MARGIN: closure_7, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

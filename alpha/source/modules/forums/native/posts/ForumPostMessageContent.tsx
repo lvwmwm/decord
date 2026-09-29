@@ -1,12 +1,12 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11674
+// Function ID: 11675
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4836, 11506, 4832, 2]
+// Dependencies: [19, 21, 4836, 11675, 4832, 2]
 // Exports: default
 
-// Module 11505 (ForumPostMessageContent)
+// Module 11674 (ForumPostMessageContent)
 import Text_Text from "Text/Text" /* 4832 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11506 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11675 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

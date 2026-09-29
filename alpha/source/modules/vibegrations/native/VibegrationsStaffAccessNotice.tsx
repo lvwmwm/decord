@@ -1,10 +1,10 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16447
+// Function ID: 16448
 // Name: VibegrationsStaffAccessNotice
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 16268, 1101, 4525, 5919, 4787, 4832, 1115, 3715, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 16448, 1101, 4525, 6085, 4787, 4832, 1115, 3715, 2]
 // Exports: default
 
-// Module 16267 (VibegrationsStaffAccessNotice)
+// Module 16447 (VibegrationsStaffAccessNotice)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import _modDef3715 from "module_3715" /* 3715 */;
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/vibegrations/native/Vibegrati
 
 export default function VibegrationsStaffAccessNotice() {
   const tmp = closure_8();
-  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16268).useVibegrationsStaffAccessTarget();
+  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16448).useVibegrationsStaffAccessTarget();
   [][0] = vibegrationsStaffAccessTarget;
   let tmp6 = null;
   if (null != vibegrationsStaffAccessTarget) {
@@ -34,12 +34,12 @@ export default function VibegrationsStaffAccessNotice() {
     const items = [closure_6(tmp2(4787).CircleInformationIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-default", style: tmp.copy, children: null };
     const intl = tmp2(1115).intl;
-    const obj6 = { channel: tmp2(16268).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
+    const obj6 = { channel: tmp2(16448).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
     obj5.children = intl.format(_modDef3715["4BsHmp"], obj6);
     items[1] = closure_6(tmp2(4832).Text, obj5);
     obj3.children = items;
     obj2.children = closure_7(View, obj3);
-    tmp6 = closure_6(tmp2(5919).Card, obj2);
+    tmp6 = closure_6(tmp2(6085).Card, obj2);
   }
   return tmp6;
 };

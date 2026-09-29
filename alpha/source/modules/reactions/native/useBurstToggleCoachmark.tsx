@@ -1,13 +1,13 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10757
+// Function ID: 10758
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1372, 2042, 21, 2029, 4836, 576, 8676, 504, 4488, 6806, 1115, 10589, 2]
+// Dependencies: [32, 19, 17, 1372, 2042, 21, 2029, 4836, 576, 8841, 504, 4488, 6972, 1115, 10758, 2]
 // Exports: default
 
-// Module 10588 (useBurstToggleCoachmark)
+// Module 10757 (useBurstToggleCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 8676 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 8841 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -40,7 +40,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     items2 = [];
   }
   obj2 = first(4488);
-  const tmp5 = _slicedToArray(first(6806).useSelectedDismissibleContent(items2), 2);
+  const tmp5 = _slicedToArray(first(6972).useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   closure_1 = tmp7;
   const items3 = [first, tmp5[1]];
@@ -59,7 +59,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     obj.visible = first === closure_9;
     return obj;
   }, items3);
-  const tmpResult = first(6806);
-  const coachmark = first(10589).useCoachmark(targetRef, memo);
+  const tmpResult = first(6972);
+  const coachmark = first(10758).useCoachmark(targetRef, memo);
   return tmp5[1];
 };

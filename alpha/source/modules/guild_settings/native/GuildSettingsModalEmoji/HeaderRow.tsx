@@ -1,17 +1,17 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17558
+// Function ID: 17559
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 17363, 1074, 1375, 21, 4836, 576, 8952, 9797, 1241, 1115, 1255, 5450, 5281, 4832, 504, 2]
+// Dependencies: [5, 32, 19, 17, 17552, 1074, 1375, 21, 4836, 576, 9117, 9964, 1241, 1115, 1255, 5617, 5447, 4832, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 17369 (HeaderRow)
+// Module 17558 (HeaderRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17363 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17552 */;
 
 require = fn;
 function HeaderRow(guild) {
@@ -91,10 +91,10 @@ function HeaderRow(guild) {
               if (null != base64) {
                 upload = function upload(image, originalMd5, roles) {
                   const combined = "emoji_" + closure_1 + 1;
-                  let obj = closure_1_0(9797);
+                  let obj = closure_1_0(9964);
                   let obj2 = { guildId: image.id, image, name: combined, roles, originalMd5 };
-                  const uploadEmojiResult = closure_1_0(9797).uploadEmoji({ guildId: image.id, image, name: combined, roles, originalMd5 });
-                  closure_1_0(9797).uploadEmoji({ guildId: image.id, image, name: combined, roles, originalMd5 }).then(() => closure_2_1(1241).track(constants.EMOJI_UPLOAD_COMPLETED, { guild_id: image.id, upload_id })).catch((error) => {
+                  const uploadEmojiResult = closure_1_0(9964).uploadEmoji({ guildId: image.id, image, name: combined, roles, originalMd5 });
+                  closure_1_0(9964).uploadEmoji({ guildId: image.id, image, name: combined, roles, originalMd5 }).then(() => closure_2_1(1241).track(constants.EMOJI_UPLOAD_COMPLETED, { guild_id: image.id, upload_id })).catch((error) => {
                     const body = error.body;
                     if (null == body) {
                       if (null != undefined) {
@@ -166,10 +166,10 @@ function HeaderRow(guild) {
   const tmp4 = _slicedToArray(noop.useState(null), 2);
   [c6, c7] = noop.useState("");
   const tmp6 = _slicedToArray(noop.useState(""), 2);
-  let canCreateExpressions = guild(8952).useManageResourcePermissions(guild).canCreateExpressions;
+  let canCreateExpressions = guild(9117).useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1115).intl;
   let obj2 = { id: null, text: null };
-  let obj = guild(8952);
+  let obj = guild(9117);
   obj2.id = "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1;
   obj2.text = intl.string(guild(1115).t.N2qTQ3);
   let items = [obj2, , , ];
@@ -213,7 +213,7 @@ function HeaderRow(guild) {
     const intl5 = tmp7(1115).intl;
     obj8.text = intl5.string(tmp7(1115).t["DU0dy/"]);
     obj8.disabled = uploadDisabled;
-    canCreateExpressions = tmp13(tmp7(5281).Button, obj8);
+    canCreateExpressions = tmp13(tmp7(5447).Button, obj8);
   }
   const items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;

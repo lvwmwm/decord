@@ -1,19 +1,19 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 8412
+// Function ID: 8413
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4490, 6653, 8248, 8249, 8250, 1074, 1091, 573, 1271, 4736, 6652, 2]
+// Dependencies: [5, 4490, 6819, 8413, 8414, 8415, 1074, 1091, 573, 1271, 4736, 6818, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8247 (StorefrontActionCreators)
+// Module 8412 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import BillingInfoStore from "BillingInfoStore" /* 4490 */;
-import SKUPricesStore from "SKUPricesStore" /* 6653 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8248 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8249 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8250 */;
+import SKUPricesStore from "SKUPricesStore" /* 6819 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8413 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8414 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8415 */;
 
 require = fn;
 function shouldFetchStorefrontPromotions(arg0) {

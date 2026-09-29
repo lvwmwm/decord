@@ -1,10 +1,10 @@
-// Module ID: 6422
-// Function ID: 6423
+// Module ID: 6588
+// Function ID: 6589
 // Name: useNavigatorShouldCrossfade
 // Dependencies: [19, 1364, 4550, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 6422 (useNavigatorShouldCrossfade)
+// Module 6588 (useNavigatorShouldCrossfade)
 import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4550 */;
 import noop from "module_19" /* 19 */;
 

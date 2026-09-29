@@ -1,10 +1,10 @@
-// Module ID: 6946
-// Function ID: 6947
+// Module ID: 7112
+// Function ID: 7113
 // Name: GuildScheduledEventStore
 // Dependencies: [502, 2108, 2051, 4464, 12, 11, 504, 573, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6946 (GuildScheduledEventStore)
+// Module 7112 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

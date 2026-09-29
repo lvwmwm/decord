@@ -1,9 +1,9 @@
-// Module ID: 7871
-// Function ID: 7872
+// Module ID: 8036
+// Function ID: 8037
 // Name: ModalContent
 // Dependencies: [19, 17, 21, 4836, 2]
 
-// Module 7871 (ModalContent)
+// Module 8036 (ModalContent)
 import noop from "module_19" /* 19 */;
 
 const ScrollView = fn(17).ScrollView;

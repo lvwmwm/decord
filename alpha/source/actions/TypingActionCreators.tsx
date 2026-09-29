@@ -1,9 +1,9 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11641
+// Function ID: 11642
 // Name: TypingActionCreators
 // Dependencies: [573, 2]
 
-// Module 11472 (TypingActionCreators)
+// Module 11641 (TypingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

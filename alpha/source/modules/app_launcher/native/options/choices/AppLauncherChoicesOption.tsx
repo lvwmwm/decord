@@ -1,10 +1,10 @@
-// Module ID: 11646
-// Function ID: 11647
+// Module ID: 11815
+// Function ID: 11816
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 4836, 576, 1876, 4800, 11647, 1981, 11651, 8053, 4832, 2]
+// Dependencies: [32, 19, 21, 4836, 576, 1876, 4800, 11816, 1981, 11820, 8218, 4832, 2]
 // Exports: default
 
-// Module 11646 (AppLauncherChoicesOption)
+// Module 11815 (AppLauncherChoicesOption)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -67,7 +67,7 @@ export default function AppLauncherChoicesOption(option) {
       onSelect(choice);
     };
     obj3.onDismiss = onDismissChoicesSheet;
-    obj2.openLazy(asyncRequireImpl(11647, dependencyMap.paths), "AppLauncherChoicesActionSheet", obj3);
+    obj2.openLazy(asyncRequireImpl(11816, dependencyMap.paths), "AppLauncherChoicesActionSheet", obj3);
   }, items);
   let tmp = closure_6();
   const animationDelayedAutoFocus = option(onSelect[9]).useAnimationDelayedAutoFocus(autoFocus, callback);

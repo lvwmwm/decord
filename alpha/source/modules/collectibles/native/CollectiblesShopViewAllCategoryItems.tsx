@@ -1,14 +1,14 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15637
+// Function ID: 15638
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [19, 17, 1076, 1074, 21, 4836, 576, 10544, 6583, 6603, 1613, 14604, 4566, 5280, 1241, 7009, 8229, 10282, 15463, 15464, 15443, 1115, 2]
+// Dependencies: [19, 17, 1076, 1074, 21, 4836, 576, 10713, 6749, 6769, 1613, 14779, 4566, 5446, 1241, 7174, 8394, 10451, 15638, 15639, 15618, 1115, 2]
 
-// Module 15462 (CollectiblesShopViewAllCategoryItems)
+// Module 15637 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import spring from "spring" /* 5280 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7009 */;
+import spring from "spring" /* 5446 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7174 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

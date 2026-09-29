@@ -1,13 +1,13 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11701
+// Function ID: 11702
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4836, 576, 11533, 5899, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 11702, 6065, 2]
 // Exports: default
 
-// Module 11532 (ApplicationsImage)
+// Module 11701 (ApplicationsImage)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11533 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11702 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 7017
+// Function ID: 7018
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1374, 6852, 21, 4836, 6853, 6854, 4488, 5293, 1094, 5899, 6855, 6856, 6857, 6858, 8688, 10179, 8693, 2]
+// Dependencies: [19, 17, 1374, 7018, 21, 4836, 7019, 7020, 4488, 5459, 1094, 6065, 7021, 7022, 7023, 7024, 8853, 10346, 8858, 2]
 // Exports: default
 
-// Module 6851 (PremiumPlanActionSheetHeader)
+// Module 7017 (PremiumPlanActionSheetHeader)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
 import noop from "module_19" /* 19 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const PremiumConstants = fn(1374);
 ({ PremiumTypes: closure_4, SubscriptionIntervalTypes: hasOwnProperty } = PremiumConstants);
-const getPremiumGradientColor = fn(6852).getPremiumGradientColor;
+const getPremiumGradientColor = fn(7018).getPremiumGradientColor;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);
@@ -56,12 +56,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   obj2.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
   if (TIER_0.TIER_0 === premiumType) {
-    let tmp13Result = tmp13(6853);
+    let tmp13Result = tmp13(7019);
   } else {
     tmp13Result = null;
     if (tmp15.TIER_1 !== premiumType) {
       if (tmp15.TIER_2 === premiumType) {
-        tmp13Result = tmp13(6854);
+        tmp13Result = tmp13(7020);
       }
     }
   }
@@ -69,35 +69,35 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const items = [tmp13Result, , ];
     const obj3 = { style: tmp.logoContainer, children: null };
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result8 = tmp13(6855);
+      let tmp13Result8 = tmp13(7021);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result8 = tmp13(6856);
+      tmp13Result8 = tmp13(7022);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result8 = tmp13(6857);
+      tmp13Result8 = tmp13(7023);
     }
     const obj4 = { source: tmp13Result8, resizeMode: "contain" };
-    const items1 = [React5(tmp13(5899), obj4), , ];
+    const items1 = [React5(tmp13(6065), obj4), , ];
     let tmp22Result = null;
     if (tmp2) {
       const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-      tmp22Result = tmp22(tmp6(6858).PremiumPill, obj5);
+      tmp22Result = tmp22(tmp6(7024).PremiumPill, obj5);
     }
     items1[1] = tmp22Result;
     let tmp22Result2 = null;
     if (tmp10) {
       const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-      tmp22Result2 = tmp22(tmp6(6858).PremiumPill, obj6);
+      tmp22Result2 = tmp22(tmp6(7024).PremiumPill, obj6);
     }
     items1[2] = tmp22Result2;
     obj3.children = items1;
     items[1] = tmp12(View, obj3);
-    const tmp13Result7 = tmp13(5899);
+    const tmp13Result7 = tmp13(6065);
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result10 = tmp13(8688);
+      let tmp13Result10 = tmp13(8853);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result10 = tmp13(10179);
+      tmp13Result10 = tmp13(10346);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result10 = tmp13(8693);
+      tmp13Result10 = tmp13(8858);
     }
     const obj7 = { source: tmp13Result10, style: null, resizeMode: "contain" };
     const items2 = [tmp.imgWumpus, ];
@@ -114,20 +114,20 @@ export default function PremiumPlanActionSheetHeader(arg0) {
       return tmp12(tmp14, obj2);
     }
     imgWumpusBottom = tmp.imgWumpusBottom;
-    tmp13Result9 = tmp13(5899);
+    tmp13Result9 = tmp13(6065);
   } else {
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result12 = tmp13(6853);
+      let tmp13Result12 = tmp13(7019);
     } else {
       tmp13Result12 = null;
       if (tmp15.TIER_1 !== premiumType) {
         if (tmp15.TIER_2 === premiumType) {
-          tmp13Result12 = tmp13(6854);
+          tmp13Result12 = tmp13(7020);
         }
       }
     }
     const obj8 = { source: tmp13Result12 };
-    React5(tmp13(5899), obj8);
-    const tmp13Result11 = tmp13(5899);
+    React5(tmp13(6065), obj8);
+    const tmp13Result11 = tmp13(6065);
   }
 };

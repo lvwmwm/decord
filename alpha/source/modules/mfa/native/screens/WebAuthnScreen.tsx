@@ -1,20 +1,20 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15403
+// Function ID: 15404
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 4836, 576, 6017, 1115, 1177, 1364, 1271, 6370, 15229, 14235, 6368, 15232, 2]
+// Dependencies: [32, 19, 21, 4836, 576, 6183, 1115, 1177, 1364, 1271, 6536, 15404, 14411, 6534, 15407, 2]
 // Exports: default
 
-// Module 15228 (WebAuthnScreen)
+// Module 15403 (WebAuthnScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6017 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6368 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15229 */;
+import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6183 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6534 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 15404 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const buttonDefault = tmp15(15232);
+const buttonDefault = tmp15(15407);
 require = fn;
 function AndroidAuthRadioGroup(setAuthenticator) {
   setAuthenticator = setAuthenticator.setAuthenticator;
@@ -78,9 +78,9 @@ export default function WebAuthnScreen(arg0) {
         const intl = tmp(1115).intl;
         dependencyMap(intl.string(tmp(1115).t.xSCvBf));
       } else {
-        const result = tmp(6370).captureWebAuthnException(error, {});
+        const result = tmp(6536).captureWebAuthnException(error, {});
         dependencyMap(error.message);
-        const tmpResult = tmp(6370);
+        const tmpResult = tmp(6536);
       }
     }).finally(() => _undefined(false));
   }, items1);
@@ -90,7 +90,7 @@ export default function WebAuthnScreen(arg0) {
   obj3.headerText = intl.string(finish(1115).t.saHocI);
   const intl2 = tmp5(1115).intl;
   obj3.subtitle = intl2.string(finish(1115).t.YpMrqM);
-  obj3.headerImage = challenge(finish(14235).KeyImage, {});
+  obj3.headerImage = challenge(finish(14411).KeyImage, {});
   let shouldDisplayAndroidFidoSelector = NativeCeremoniesDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj4 = { authenticatorSelection, setAuthenticator: tmpResult[1], inProgress: null };

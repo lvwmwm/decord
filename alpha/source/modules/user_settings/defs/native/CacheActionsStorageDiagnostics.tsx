@@ -1,10 +1,10 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15300
+// Function ID: 15301
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 15124, 4528, 4787, 1115, 5279, 4832, 5281, 2]
+// Dependencies: [5, 32, 19, 21, 15299, 4528, 4787, 1115, 5445, 4832, 5447, 2]
 // Exports: default
 
-// Module 15125 (CacheActionsStorageDiagnostics)
+// Module 15300 (CacheActionsStorageDiagnostics)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -149,7 +149,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
     }
     return applyArgumentsResult;
   };
-  items[1] = closure_6(onBusyChange(5281).Button, obj3);
+  items[1] = closure_6(onBusyChange(5447).Button, obj3);
   obj.children = items;
-  return closure_7(onBusyChange(5279).Stack, obj);
+  return closure_7(onBusyChange(5445).Stack, obj);
 };

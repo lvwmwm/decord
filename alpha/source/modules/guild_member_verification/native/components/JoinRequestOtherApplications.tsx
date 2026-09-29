@@ -1,14 +1,14 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16408
+// Function ID: 16409
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4836, 576, 4658, 4792, 6034, 16233, 4832, 1115, 16229, 4512, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4658, 4792, 6200, 16409, 4832, 1115, 16405, 4512, 2]
 
-// Module 16232 (JoinRequestOtherApplications)
+// Module 16408 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 576 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16405 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ function ApplicationStatusIcon(status) {
     return timestampProducer(tmp(4792).CircleCheckIcon, obj2);
   } else if (tmp(4658).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    return timestampProducer(tmp(6034).CircleXIcon, obj);
+    return timestampProducer(tmp(6200).CircleXIcon, obj);
   } else {
     return null;
   }

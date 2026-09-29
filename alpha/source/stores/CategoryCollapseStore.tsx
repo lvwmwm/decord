@@ -1,16 +1,16 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6704
+// Function ID: 6705
 // Name: CategoryCollapseStore
-// Dependencies: [1220, 2045, 5201, 4467, 1074, 1186, 1370, 2070, 504, 573, 2]
+// Dependencies: [1220, 2045, 5367, 4467, 1074, 1186, 1370, 2070, 504, 573, 2]
 
-// Module 6538 (CategoryCollapseStore)
+// Module 6704 (CategoryCollapseStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5201 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5367 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 
 require = fn;

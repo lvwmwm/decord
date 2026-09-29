@@ -1,11 +1,11 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11621
+// Function ID: 11622
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 4836, 5279, 5899, 4832, 1115, 11453, 2]
+// Dependencies: [19, 17, 21, 4836, 5445, 6065, 4832, 1115, 11622, 2]
 // Exports: default
 
-// Module 11452 (CustomTypingIndicatorDynamicAsset)
-import FastImageDefault from "FastImage" /* 5899 */;
+// Module 11621 (CustomTypingIndicatorDynamicAsset)
+import FastImageDefault from "FastImage" /* 6065 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

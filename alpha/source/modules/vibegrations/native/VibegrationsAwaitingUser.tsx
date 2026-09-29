@@ -1,10 +1,10 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16569
+// Function ID: 16570
 // Name: vibegrations/VibegrationsAwaitingUser
 // Dependencies: [19, 4825, 21, 576, 4836, 504, 4566, 4837, 2]
 // Exports: VibegrationsAwaitingPulseRing
 
-// Module 16385 (vibegrations/VibegrationsAwaitingUser)
+// Module 16569 (vibegrations/VibegrationsAwaitingUser)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

@@ -1,10 +1,10 @@
-// Module ID: 12485
-// Function ID: 12486
+// Module ID: 12655
+// Function ID: 12656
 // Name: shouldShowVoiceChannelChangeConfirmation
 // Dependencies: [4853, 1184, 502, 2067, 4855, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12485 (shouldShowVoiceChannelChangeConfirmation)
+// Module 12655 (shouldShowVoiceChannelChangeConfirmation)
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

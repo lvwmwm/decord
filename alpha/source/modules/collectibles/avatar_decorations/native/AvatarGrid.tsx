@@ -1,10 +1,10 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 12919
+// Function ID: 12920
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4825, 4876, 21, 4836, 576, 504, 1177, 7693, 2]
+// Dependencies: [19, 17, 4825, 4876, 21, 4836, 576, 504, 1177, 7858, 2]
 // Exports: default
 
-// Module 12749 (AvatarGrid)
+// Module 12919 (AvatarGrid)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
@@ -35,7 +35,7 @@ function GridAvatar(user) {
   obj3.size = size;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: null };
-    const tmp2Result = tmp2(7693);
+    const tmp2Result = tmp2(7858);
     obj4.source = tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1);
     const merged = Object.assign(obj3);
     let obj5 = obj4;

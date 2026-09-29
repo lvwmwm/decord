@@ -1,10 +1,10 @@
-// Module ID: 7359
-// Function ID: 7360
+// Module ID: 7524
+// Function ID: 7525
 // Name: ContextMenuState
 // Dependencies: [19, 560, 1248, 4566, 4801, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState
 
-// Module 7359 (ContextMenuState)
+// Module 7524 (ContextMenuState)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import HapticUtils from "HapticUtils" /* 4801 */;

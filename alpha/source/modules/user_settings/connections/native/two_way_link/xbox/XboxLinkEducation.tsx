@@ -1,17 +1,17 @@
-// Module ID: 8553
-// Function ID: 8554
+// Module ID: 8718
+// Function ID: 8719
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1074, 21, 4836, 8538, 2111, 8554, 4832, 1115, 6544, 5281, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 8703, 2111, 8719, 4832, 1115, 6710, 5447, 2]
 // Exports: default
 
-// Module 8553 (XboxLinkEducation)
+// Module 8718 (XboxLinkEducation)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8538 */;
-import _modDef8554 from "module_8554" /* 8554 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8703 */;
+import _modDef8719 from "module_8719" /* 8719 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ export default function XboxLinkEducation(onClose) {
   const articleURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   const obj3 = { style: twoWayLinkStyles.container, children: null };
   const obj4 = { style: twoWayLinkStyles.content, children: null };
-  const items = [React5(React4, { source: noop.useMemo(() => ({ uri: _modDef8554 }), []), style: tmp.image }), , ];
+  const items = [React5(React4, { source: noop.useMemo(() => ({ uri: _modDef8719 }), []), style: tmp.image }), , ];
   const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = util.intl;
   obj6.children = intl.string(util.t.jHytat);

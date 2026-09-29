@@ -1,11 +1,11 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11763
+// Function ID: 11764
 // Name: HomeEmptyState
-// Dependencies: [19, 21, 7909, 2]
+// Dependencies: [19, 21, 8074, 2]
 // Exports: default
 
-// Module 11594 (HomeEmptyState)
-import inlineStyles from "inlineStyles" /* 7909 */;
+// Module 11763 (HomeEmptyState)
+import inlineStyles from "inlineStyles" /* 8074 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

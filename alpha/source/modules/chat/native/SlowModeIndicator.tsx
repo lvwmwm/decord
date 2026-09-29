@@ -1,15 +1,15 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11634
+// Function ID: 11635
 // Name: SlowModeIndicator
-// Dependencies: [19, 7100, 21, 4836, 576, 504, 7101, 4528, 11100, 5435, 4832, 2]
+// Dependencies: [19, 7265, 21, 4836, 576, 504, 7266, 4528, 11269, 5602, 4832, 2]
 
-// Module 11465 (SlowModeIndicator)
+// Module 11634 (SlowModeIndicator)
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7101 */;
-import TimerIcon from "TimerIcon" /* 11100 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7266 */;
+import TimerIcon from "TimerIcon" /* 11269 */;
 import noop from "module_19" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7100 */;
+import SlowmodeStore from "SlowmodeStore" /* 7265 */;
 
 require = fn;
 const jsxProd = fn(21);

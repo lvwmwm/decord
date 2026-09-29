@@ -1,9 +1,9 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8917
+// Function ID: 8918
 // Name: NativeAppLifecycleModule
 // Dependencies: [17, 2]
 
-// Module 8752 (NativeAppLifecycleModule)
+// Module 8917 (NativeAppLifecycleModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

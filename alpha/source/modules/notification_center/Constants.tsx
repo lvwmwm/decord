@@ -1,9 +1,9 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16239
+// Function ID: 16240
 // Name: Constants
 // Dependencies: [2]
 
-// Module 16063 (Constants)
+// Module 16239 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notification_center/Constants.tsx");

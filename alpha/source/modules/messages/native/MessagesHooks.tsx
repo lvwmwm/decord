@@ -1,20 +1,20 @@
-// Module ID: 11012
-// Function ID: 11013
+// Module ID: 11181
+// Function ID: 11182
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10850, 8843, 5201, 2067, 4876, 504, 12, 558, 6584, 1370, 7154, 11013, 10822, 11014, 2]
+// Dependencies: [32, 19, 17, 11019, 9008, 5367, 2067, 4876, 504, 12, 558, 6750, 1370, 7319, 11182, 10991, 11183, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11012 (MessagesHooks)
+// Module 11181 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6584 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7154 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10822 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11014 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6750 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7319 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10991 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11183 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10850 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5201 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11019 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5367 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 
 require = fn;
 const findNodeHandle = fn(17).findNodeHandle;
-let closure_7 = fn(8843).updateShouldShowJumpToPresentButton;
+let closure_7 = fn(9008).updateShouldShowJumpToPresentButton;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");
 
@@ -112,7 +112,7 @@ export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChanne
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11013);
+            let tmp4Result = tmp4(11182);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

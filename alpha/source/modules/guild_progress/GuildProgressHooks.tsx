@@ -1,19 +1,19 @@
-// Module ID: 11965
-// Function ID: 11966
+// Module ID: 12136
+// Function ID: 12137
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2045, 4467, 4754, 2067, 11966, 5056, 4469, 1074, 504, 9064, 11, 12, 6688, 2]
+// Dependencies: [19, 502, 2045, 4467, 4754, 2067, 12137, 5056, 4469, 1074, 504, 9229, 11, 12, 6854, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 11965 (GuildProgressHooks)
+// Module 12136 (GuildProgressHooks)
 import _modDef12 from "module_12" /* 12 */;
-import canViewInviteModal from "canViewInviteModal" /* 9064 */;
+import canViewInviteModal from "canViewInviteModal" /* 9229 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import LayerStore from "LayerStore" /* 11966 */;
+import LayerStore from "LayerStore" /* 12137 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 

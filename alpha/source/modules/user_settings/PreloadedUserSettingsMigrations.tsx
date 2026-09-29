@@ -1,16 +1,16 @@
-// Module ID: 14016
-// Function ID: 14017
+// Module ID: 14188
+// Function ID: 14189
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [2045, 1074, 1186, 2028, 6634, 510, 1222, 504, 1217, 2029, 6941, 2]
+// Dependencies: [2045, 1074, 1186, 2028, 6800, 510, 1222, 504, 1217, 2029, 7107, 2]
 
-// Module 14016 (PreloadedUserSettingsMigrations)
+// Module 14188 (PreloadedUserSettingsMigrations)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import wrappers from "wrappers" /* 1217 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import HotspotStore2 from "HotspotStore" /* 6634 */;
+import HotspotStore2 from "HotspotStore" /* 6800 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
@@ -655,7 +655,7 @@ let items = [
           Storage2.remove("lastChangeLogId");
           return false;
         }
-        tmpResult = tmp(6941);
+        tmpResult = tmp(7107);
       }
     },
     cleanup() {

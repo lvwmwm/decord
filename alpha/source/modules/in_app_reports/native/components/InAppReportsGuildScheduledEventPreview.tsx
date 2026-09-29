@@ -1,12 +1,12 @@
-// Module ID: 12463
-// Function ID: 12464
+// Module ID: 12633
+// Function ID: 12634
 // Name: InAppReportsGuildScheduledEventPreview
-// Dependencies: [19, 17, 2067, 21, 4836, 576, 504, 4683, 4832, 1115, 5896, 2]
+// Dependencies: [19, 17, 2067, 21, 4836, 576, 504, 4683, 4832, 1115, 6062, 2]
 // Exports: default
 
-// Module 12463 (InAppReportsGuildScheduledEventPreview)
+// Module 12633 (InAppReportsGuildScheduledEventPreview)
 import nativeDefault from "native" /* 576 */;
-import GuildIconDefault from "GuildIcon" /* 5896 */;
+import GuildIconDefault from "GuildIcon" /* 6062 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -47,7 +47,7 @@ export default function GuildScheduledEventPreview(event) {
     const obj6 = { style: tmp.guildInfo, children: null };
     const obj7 = { guild: stateFromStores, size: null, selected: false };
     const hexWithOpacityResult = tmp2(4683).hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj7.size = tmp2(5896).GuildIconSizes.XXSMALL;
+    obj7.size = tmp2(6062).GuildIconSizes.XXSMALL;
     const items3 = [closure_5(GuildIconDefault, obj7), ];
     const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
     items3[1] = closure_5(tmp2(4832).Text, obj8);

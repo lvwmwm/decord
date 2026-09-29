@@ -1,18 +1,18 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12879
+// Function ID: 12880
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1076, 21, 4836, 576, 5293, 7623, 10571, 10789, 12710, 12711, 1974, 1077, 12712, 12715, 2]
+// Dependencies: [19, 17, 1076, 21, 4836, 576, 5459, 7788, 10740, 10958, 12880, 12881, 1974, 1077, 12882, 12885, 2]
 // Exports: IndividualProductPreview
 
-// Module 12709 (IndividualProductPreview)
+// Module 12879 (IndividualProductPreview)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import useCurrentUser from "useCurrentUser" /* 7623 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10571 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10789 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12710 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12711 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import useCurrentUser from "useCurrentUser" /* 7788 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10740 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10958 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12880 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12881 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -113,11 +113,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1974).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(1077).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = React5(tmp(12712).FractionalNitroPreview, {});
+      let tmp5 = React5(tmp(12882).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = React5(tmp(12715).OrbBadgePreview, {});
+        tmp5 = React5(tmp(12885).OrbBadgePreview, {});
       }
     }
     return tmp5;

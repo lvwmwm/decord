@@ -1,13 +1,13 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10710
+// Function ID: 10711
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 21, 4836, 576, 10162, 1485, 10204, 10508, 10125, 10542, 10219, 1115, 2551, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 10329, 1485, 10371, 10677, 10292, 10711, 10387, 1115, 2551, 5447, 2]
 // Exports: default
 
-// Module 10541 (PremiumGiftingPromotionSuccessActions)
+// Module 10710 (PremiumGiftingPromotionSuccessActions)
 import nativeDefault from "native" /* 576 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10125 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10542 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10292 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10711 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

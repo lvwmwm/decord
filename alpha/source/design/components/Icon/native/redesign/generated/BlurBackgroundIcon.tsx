@@ -1,13 +1,13 @@
-// Module ID: 9458
-// Function ID: 9459
+// Module ID: 9625
+// Function ID: 9626
 // Name: BlurBackgroundIcon
-// Dependencies: [19, 21, 576, 4530, 9459, 2]
+// Dependencies: [19, 21, 576, 4530, 9626, 2]
 // Exports: BlurBackgroundIcon
 
-// Module 9458 (BlurBackgroundIcon)
+// Module 9625 (BlurBackgroundIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod9459 from "module_9459" /* 9459 */;
+import _mod9626 from "module_9626" /* 9626 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BlurBackgroundIcon = function BlurBackgroundIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9459, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9626, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

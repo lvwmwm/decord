@@ -1,17 +1,17 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16404
+// Function ID: 16405
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5854, 21, 4836, 576, 4678, 4832, 16229, 1397, 5917, 1177, 1613, 16234, 4658, 16235, 504, 1115, 8179, 7678, 6461, 2]
+// Dependencies: [19, 17, 6020, 21, 4836, 576, 4678, 4832, 16405, 1397, 6083, 1177, 1613, 16410, 4658, 16411, 504, 1115, 8344, 7843, 6627, 2]
 
-// Module 16228 (GuildSettingsModalMemberApplications)
+// Module 16404 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16405 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5854 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6020 */;
 
 const require = globalThis.__r;
 
@@ -64,7 +64,7 @@ let closure_12 = noop.memo((joinRequest) => {
       obj2.onPress = tmp;
       obj2.start = start;
       obj2.end = end;
-      return closure_7(joinRequest(5917).TableRow, obj2);
+      return closure_7(joinRequest(6083).TableRow, obj2);
     }
   }
 });

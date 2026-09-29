@@ -1,10 +1,10 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15638
+// Function ID: 15639
 // Name: CollectiblesProgressiveImage
 // Dependencies: [19, 17, 21, 4566, 4837, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 15463 (CollectiblesProgressiveImage)
+// Module 15638 (CollectiblesProgressiveImage)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;

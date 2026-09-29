@@ -1,13 +1,13 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16613
+// Function ID: 16614
 // Name: VibegrationsChannelChatToasts
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 4678, 5919, 1177, 4832, 16429, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1115, 4678, 6085, 1177, 4832, 16614, 2]
 // Exports: default
 
-// Module 16428 (VibegrationsChannelChatToasts)
+// Module 16613 (VibegrationsChannelChatToasts)
 import nativeDefault from "native" /* 576 */;
 import UserUtils from "UserUtils" /* 4678 */;
-import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16429 */;
+import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16614 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ function ChatToast(message) {
     const obj2 = { style: tmp.opaque, children: null };
     const callback = noop.useCallback(() => onOpenChat(message), items);
     const obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: null };
-    const obj4 = { size: tmp2(1177).AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+    const obj4 = { size: tmp2(1177).AvatarSizes.SMALL, user: message.author, guildId: "r" };
     const items1 = [hasOwnProperty(tmp2(1177).Avatar, obj4), ];
     const obj5 = { style: tmp.body, children: null };
     const obj6 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
@@ -32,7 +32,7 @@ function ChatToast(message) {
     obj5.children = items2;
     items1[1] = timestampProducer(View, obj5);
     obj3.children = items1;
-    obj2.children = timestampProducer(tmp2(5919).Card, obj3);
+    obj2.children = timestampProducer(tmp2(6085).Card, obj3);
     return hasOwnProperty(View, obj2);
   } else if (message.stickerItems.length > 0) {
     const intl2 = tmp2(1115).intl;

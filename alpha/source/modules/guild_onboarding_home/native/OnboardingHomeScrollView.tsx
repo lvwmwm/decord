@@ -1,10 +1,10 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16378
+// Function ID: 16379
 // Name: OnboardingHomeScrollView
 // Dependencies: [19, 17, 21, 4836, 576, 1613, 2]
 // Exports: default
 
-// Module 16202 (OnboardingHomeScrollView)
+// Module 16378 (OnboardingHomeScrollView)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import noop from "module_19" /* 19 */;

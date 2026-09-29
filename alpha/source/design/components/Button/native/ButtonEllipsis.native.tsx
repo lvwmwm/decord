@@ -1,10 +1,10 @@
-// Module ID: 5297
-// Function ID: 5298
+// Module ID: 5463
+// Function ID: 5464
 // Name: ButtonEllipsis
-// Dependencies: [19, 21, 4566, 4836, 576, 4837, 5287, 5298, 2]
+// Dependencies: [19, 21, 4566, 4836, 576, 4837, 5453, 5464, 2]
 // Exports: Ellipsis
 
-// Module 5297 (ButtonEllipsis)
+// Module 5463 (ButtonEllipsis)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

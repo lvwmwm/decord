@@ -1,16 +1,16 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11481
+// Function ID: 11482
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 2108, 2067, 4469, 1372, 1074, 21, 4836, 504, 11313, 8706, 4988, 4800, 6620, 1115, 6798, 5039, 11314, 1981, 11311, 4456, 11332, 11318, 4773, 11334, 8736, 11336, 6571, 6570, 11338, 5999, 2]
+// Dependencies: [19, 2108, 2067, 4469, 1372, 1074, 21, 4836, 504, 11482, 8871, 4988, 4800, 6786, 1115, 6964, 5039, 11483, 1981, 11480, 4456, 11501, 11487, 4773, 11503, 8901, 11505, 6737, 6736, 11507, 6165, 2]
 
-// Module 11312 (ModerateUserActionSheet)
+// Module 11481 (ModerateUserActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8706 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 11313 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11318 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11334 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11336 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8871 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 11482 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11487 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11503 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11505 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -106,7 +106,7 @@ export default noop.memo((user) => {
         obj2.icon = closure_9(tmp2(tmp3[13]).ActionSheetRow.Icon, obj3);
         obj2.onPress = function onPress() {
           hideActionSheet();
-          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11314, dependencyMap.paths), {
+          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11483, dependencyMap.paths), {
             userId: user.id,
             guildId: guild.id,
             onClose() {

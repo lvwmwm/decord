@@ -1,10 +1,10 @@
-// Module ID: 12640
-// Function ID: 12641
+// Module ID: 12810
+// Function ID: 12811
 // Name: VibegrationsCustomWidget
-// Dependencies: [2067, 504, 1435, 5370, 2]
+// Dependencies: [2067, 504, 1435, 5536, 2]
 // Exports: composeVibegrationsCustomWidgetPrompt, useCanConjureVibegrationsCustomWidget
 
-// Module 12640 (VibegrationsCustomWidget)
+// Module 12810 (VibegrationsCustomWidget)
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
@@ -14,10 +14,10 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCustomWidget.tsx");
 
 export const VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
-export const useCanConjureVibegrationsCustomWidget = function useCanConjureVibegrationsCustomWidget(UserProfileContent, isMobileGameCollectionExperimentEnabled) {
+export const useCanConjureVibegrationsCustomWidget = function useCanConjureVibegrationsCustomWidget(UserProfileContent, arg1) {
   _require = UserProfileContent;
-  let flag = isMobileGameCollectionExperimentEnabled;
-  if (isMobileGameCollectionExperimentEnabled === undefined) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
   const items = [GuildStore, require("ApexExperiment").ApexExperimentStore];

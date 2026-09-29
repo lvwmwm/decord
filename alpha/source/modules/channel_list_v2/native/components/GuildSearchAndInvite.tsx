@@ -1,21 +1,21 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 11949
+// Function ID: 11950
 // Name: GuildSearchAndInvite
-// Dependencies: [19, 17, 2045, 4467, 2067, 2099, 9577, 1074, 21, 4836, 576, 11781, 1981, 5205, 1485, 11782, 6383, 11783, 11821, 5922, 7363, 9491, 1115, 9077, 5281, 6473, 4566, 11859, 504, 9278, 9275, 11860, 11861, 11863, 2]
+// Dependencies: [19, 17, 2045, 4467, 2067, 2099, 9744, 1074, 21, 4836, 576, 11950, 1981, 5371, 1485, 11951, 6549, 11952, 11990, 6088, 7528, 9658, 1115, 9242, 5447, 6639, 4566, 12030, 504, 9445, 9442, 12031, 12032, 12034, 2]
 
-// Module 11780 (GuildSearchAndInvite)
+// Module 11949 (GuildSearchAndInvite)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useAlertStore from "useAlertStore" /* 5205 */;
-import useStableCallbackDefault from "useStableCallback" /* 6383 */;
-import IconButton from "IconButton" /* 7363 */;
-import _modDef9077 from "module_9077" /* 9077 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9278 */;
-import _modDef9491 from "module_9491" /* 9491 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11783 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 11863 */;
+import useAlertStore from "useAlertStore" /* 5371 */;
+import useStableCallbackDefault from "useStableCallback" /* 6549 */;
+import IconButton from "IconButton" /* 7528 */;
+import _modDef9242 from "module_9242" /* 9242 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9442 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9445 */;
+import _modDef9658 from "module_9658" /* 9658 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11952 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11990 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 12034 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
@@ -72,7 +72,7 @@ function GuildSearchAndInvite(guildId) {
   const memo = onInvitePress.useMemo(() => {
     let tmp = null;
     if (canInvite) {
-      const obj = { variant: "secondary", size: "sm", icon: _modDef9491, onPress: onInvitePress, onPressDisabled: handleInviteDisabledPress, accessibilityLabel: null, disabled: null, maxFontSizeMultiplier: 2 };
+      const obj = { variant: "secondary", size: "sm", icon: _modDef9658, onPress: onInvitePress, onPressDisabled: handleInviteDisabledPress, accessibilityLabel: null, disabled: null, maxFontSizeMultiplier: 2 };
       const intl = util.intl;
       obj.accessibilityLabel = intl.string(util.t.VINpSK);
       obj.disabled = invitesDisabled;
@@ -110,7 +110,7 @@ function GuildSearchAndInvite(guildId) {
   return closure_13(onEventsPress, tmp14);
 }
 const View = fn(17).View;
-const SEARCH_BAR_MARGIN_BOTTOM = fn(9577).SEARCH_BAR_MARGIN_BOTTOM;
+const SEARCH_BAR_MARGIN_BOTTOM = fn(9744).SEARCH_BAR_MARGIN_BOTTOM;
 const Constants = fn(1074);
 ({ GuildFeatures: c10, InstantInviteSources: closure_11 } = Constants);
 const jsxProd = fn(21);
@@ -153,8 +153,8 @@ export default noop.memo(function ConnectedGuildSearchAndInviteInner(guild) {
     const channels = GuildChannelStore.getChannels(guild.id);
     const result = instant_invite_InstantInviteUtils.handleOpenInviteActionsheet(guild, channelId, channels, constants2.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11860).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11860);
+  const shouldShowInvitesDisabledNotif = guild(12031).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(12031);
   const tmp5 = useEventsButtonPropsDefault(guild);
   const obj3 = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {

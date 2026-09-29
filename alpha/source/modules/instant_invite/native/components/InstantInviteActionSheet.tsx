@@ -1,22 +1,22 @@
-// Module ID: 9283
-// Function ID: 9284
+// Module ID: 9450
+// Function ID: 9451
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2050, 9276, 2067, 4469, 7155, 1074, 21, 4836, 576, 9284, 1613, 6583, 6603, 6589, 504, 4818, 7178, 9275, 4800, 7624, 9285, 1186, 9287, 6571, 6570, 1115, 1177, 9304, 9308, 9310, 6471, 9302, 9346, 9347, 2]
+// Dependencies: [32, 19, 17, 2050, 9443, 2067, 4469, 7320, 1074, 21, 4836, 576, 9451, 1613, 6749, 6769, 6755, 504, 4818, 7343, 9442, 4800, 7789, 9452, 1186, 9454, 6737, 6736, 1115, 1177, 9471, 9475, 9477, 6637, 9469, 9513, 9514, 2]
 // Exports: default
 
-// Module 9283 (InstantInviteActionSheet)
+// Module 9450 (InstantInviteActionSheet)
 import nativeDefault from "native" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 4818 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9284 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9285 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9442 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9451 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9452 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9443 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 
@@ -39,7 +39,7 @@ function Loading() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const InviteTargetTypes = fn(7155).InviteTargetTypes;
+const InviteTargetTypes = fn(7320).InviteTargetTypes;
 const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);

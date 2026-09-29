@@ -1,10 +1,10 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 17016
+// Function ID: 17017
 // Name: useExternalPipParticipant
 // Dependencies: [32, 19, 4852, 502, 1993, 4859, 4857, 504, 2]
 // Exports: default
 
-// Module 16829 (useExternalPipParticipant)
+// Module 17016 (useExternalPipParticipant)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
@@ -241,7 +241,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "channel" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "channelId" };
   }, items4);
   closure_129_4 = selectedParticipantSpeaking;
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];

@@ -1,16 +1,16 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10988
+// Function ID: 10989
 // Name: AvailableForumTag
-// Dependencies: [19, 5771, 1375, 21, 4836, 576, 504, 10091, 8370, 6551, 1397, 4832, 2]
+// Dependencies: [19, 5938, 1375, 21, 4836, 576, 504, 10258, 8535, 6717, 1397, 4832, 2]
 // Exports: default
 
-// Module 10819 (AvailableForumTag)
+// Module 10988 (AvailableForumTag)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import native from "native" /* 8370 */;
+import EmojiDefault from "Emoji" /* 6717 */;
+import native from "native" /* 8535 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
 
 const require = globalThis.__r;
 

@@ -1,24 +1,24 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11527
+// Function ID: 11528
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2112, 7881, 7868, 1074, 21, 4836, 576, 4832, 7869, 1115, 504, 3103, 9203, 4525, 8705, 5917, 5281, 11359, 11361, 7880, 7861, 1241, 11362, 5179, 5184, 11364, 6544, 11369, 7867, 2]
+// Dependencies: [19, 17, 2112, 8046, 8033, 1074, 21, 4836, 576, 4832, 8034, 1115, 504, 3103, 9368, 4525, 8870, 6083, 5447, 11528, 11530, 8045, 8026, 1241, 11531, 5345, 5350, 11533, 6710, 11538, 8032, 2]
 // Exports: default
 
-// Module 11358 (ClassificationDetail)
+// Module 11527 (ClassificationDetail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef3103 from "module_3103" /* 3103 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import MetricEvents from "MetricEvents" /* 5184 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TableRow from "TableRow" /* 5917 */;
-import SafetyHubModels from "SafetyHubModels" /* 7869 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
+import MetricEvents from "MetricEvents" /* 5350 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import TableRow from "TableRow" /* 6083 */;
+import SafetyHubModels from "SafetyHubModels" /* 8034 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9368 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
-import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import SafetyHubStore from "SafetyHubStore" /* 8046 */;
 
 require = fn;
 function ClassificationHeader(classificationTypeText) {
@@ -210,7 +210,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2.style = items;
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: null };
   const tmp2 = TouchableHitBoxDefault;
-  obj3.children = closure_13(policyExplainerLink(8705).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
+  obj3.children = closure_13(policyExplainerLink(8870).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
   const items1 = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -294,7 +294,7 @@ function ClassificationDetailFooter(onClose) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(7868);
+const SafetyHubConstants = fn(8033);
 ({ SafetyHubAnalyticsActionSource: closure_9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: closure_11 } = SafetyHubConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -448,18 +448,18 @@ export default function ConnectedClassificationDetail(classificationId) {
         ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
         AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
         if (hasItem1) {
-          tmp(11362).openV2(tmp3, onClose);
-          const tmpResult = tmp(11362);
+          tmp(11531).openV2(tmp3, onClose);
+          const tmpResult = tmp(11531);
         } else if (hasItem) {
-          tmp(11362).open(tmp3, onClose);
-          const tmpResult5 = tmp(11362);
+          tmp(11531).open(tmp3, onClose);
+          const tmpResult5 = tmp(11531);
         } else if (isAppealEligible) {
           const obj4 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
-          tmp(5179).increment(obj4);
-          const tmpResult6 = tmp(5179);
+          tmp(5345).increment(obj4);
+          const tmpResult6 = tmp(5345);
           const obj5 = { classificationId: tmp3 };
-          tmp(11364).open(obj5);
-          const tmpResult7 = tmp(11364);
+          tmp(11533).open(obj5);
+          const tmpResult7 = tmp(11533);
         } else {
           tmp(4525).openURL(constants.APPEALS_LINK);
           const tmpResult8 = tmp(4525);

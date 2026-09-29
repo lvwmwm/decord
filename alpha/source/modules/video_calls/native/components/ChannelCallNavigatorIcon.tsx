@@ -1,13 +1,13 @@
-// Module ID: 9381
-// Function ID: 9382
+// Module ID: 9548
+// Function ID: 9549
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 8829, 1074, 21, 4836, 576, 5435, 4685, 5269, 1177, 2]
+// Dependencies: [19, 17, 8994, 1074, 21, 4836, 576, 5602, 4685, 5435, 1177, 2]
 // Exports: default
 
-// Module 9381 (ChannelCallNavigatorIcon)
+// Module 9548 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5269 */;
-import Pressables from "Pressables" /* 5435 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5435 */;
+import Pressables from "Pressables" /* 5602 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
-const resetFocusTimer = fn(8829).resetFocusTimer;
+const resetFocusTimer = fn(8994).resetFocusTimer;
 const Constants = fn(1074);
 ({ ThemeTypes: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);

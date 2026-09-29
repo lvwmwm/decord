@@ -1,16 +1,16 @@
-// Module ID: 8586
-// Function ID: 8587
+// Module ID: 8751
+// Function ID: 8752
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 4836, 576, 1397, 8505, 4769, 1115, 8587, 5899, 4832, 8589, 5999, 5917, 1177, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1397, 8670, 4769, 1115, 8752, 6065, 4832, 8754, 6165, 6083, 1177, 2]
 // Exports: default
 
-// Module 8586 (IntegrationTypeSelector)
+// Module 8751 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserPlusIcon from "UserPlusIcon" /* 4769 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import ServerIcon from "ServerIcon" /* 8587 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8670 */;
+import ServerIcon from "ServerIcon" /* 8752 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

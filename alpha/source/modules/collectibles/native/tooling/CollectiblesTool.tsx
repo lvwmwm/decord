@@ -1,22 +1,22 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15494
+// Function ID: 15495
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10163, 1372, 6962, 6977, 7648, 1074, 1374, 21, 4836, 576, 8226, 4832, 5282, 10976, 563, 10198, 15320, 1177, 10542, 2]
+// Dependencies: [32, 19, 17, 10330, 1372, 7128, 7143, 7813, 1074, 1374, 21, 4836, 576, 8391, 4832, 5448, 11145, 563, 10365, 15495, 1177, 10711, 2]
 // Exports: default
 
-// Module 15319 (CollectiblesTool)
+// Module 15494 (CollectiblesTool)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import BaseTextButton from "BaseTextButton" /* 5282 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8226 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10542 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10976 */;
+import BaseTextButton from "BaseTextButton" /* 5448 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8391 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10711 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11145 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10163 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10330 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7143 */;
 
 const require = globalThis.__r;
 
@@ -122,7 +122,7 @@ function FramePreviewOverrideSection() {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_11 = fn(7648).useFramePreviewOverrideStore;
+let closure_11 = fn(7813).useFramePreviewOverrideStore;
 const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const PremiumGiftStyles = fn(1374).PremiumGiftStyles;
 const jsxProd = fn(21);

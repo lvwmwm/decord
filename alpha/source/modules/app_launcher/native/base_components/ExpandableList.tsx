@@ -1,13 +1,13 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11759
+// Function ID: 11760
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4836, 7720, 4566, 4837, 4840, 5917, 1115, 4832, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 7885, 4566, 4837, 4840, 6083, 1115, 4832, 2]
 // Exports: default
 
-// Module 11590 (ExpandableList)
+// Module 11759 (ExpandableList)
 import timing from "timing" /* 4837 */;
 import timingPresets from "timingPresets" /* 4840 */;
-import usePreviousDefault from "usePrevious" /* 7720 */;
+import usePreviousDefault from "usePrevious" /* 7885 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -205,7 +205,7 @@ export default function ExpandableList(onExpand) {
         tmp4(obj);
       }
     };
-    obj12 = tmp16(tmp9(5917).TableRow, obj12);
+    obj12 = tmp16(tmp9(6083).TableRow, obj12);
     obj14.children = obj12;
     tmp16(tmp17, obj14);
   }

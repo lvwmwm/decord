@@ -1,20 +1,20 @@
-// Module ID: 9803
-// Function ID: 9804
+// Module ID: 9970
+// Function ID: 9971
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 5897, 21, 4836, 576, 5896, 1397, 5899, 4832, 1115, 5435, 9802, 5902, 1177, 2]
+// Dependencies: [19, 17, 6063, 21, 4836, 576, 6062, 1397, 6065, 4832, 1115, 5602, 9969, 6068, 1177, 2]
 
-// Module 9803 (ExpressionGuildDetails)
+// Module 9970 (ExpressionGuildDetails)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import GuildIconDefault from "GuildIcon" /* 5896 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9802 */;
+import GuildIconDefault from "GuildIcon" /* 6062 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9969 */;
 import noop from "module_19" /* 19 */;
 
-const GuildBadgeDefault = tmp8(5902);
+const GuildBadgeDefault = tmp8(6068);
 require = fn;
 const View = fn(17).View;
-const React4 = fn(5897).ExpressionSourceGuildRecord;
+const React4 = fn(6063).ExpressionSourceGuildRecord;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4836);

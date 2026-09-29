@@ -1,28 +1,28 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 17161
+// Function ID: 17162
 // Name: ActivityShelfItem
-// Dependencies: [19, 1074, 1181, 21, 4836, 576, 4683, 11623, 11539, 5901, 16972, 1880, 8765, 6943, 8933, 8319, 5435, 4540, 16971, 11568, 1177, 16975, 16973, 4988, 12294, 4832, 11628, 1115, 2]
+// Dependencies: [19, 1074, 1181, 21, 4836, 576, 4683, 11792, 11708, 6067, 17159, 1880, 8930, 7109, 9098, 8484, 5602, 4540, 17158, 11737, 1177, 17162, 17160, 4988, 12465, 4832, 11797, 1115, 2]
 // Exports: default
 
-// Module 16974 (ActivityShelfItem)
+// Module 17161 (ActivityShelfItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1880 */;
 import native2 from "native" /* 4540 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import Pressables from "Pressables" /* 5435 */;
-import NativeViewDefault from "NativeView" /* 5901 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import TestModeUtils from "TestModeUtils" /* 8319 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 8933 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11539 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11623 */;
-import _modDef12294 from "module_12294" /* 12294 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 16971 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 16972 */;
-import useActivityUsersDefault from "useActivityUsers" /* 16973 */;
+import Pressables from "Pressables" /* 5602 */;
+import NativeViewDefault from "NativeView" /* 6067 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7109 */;
+import TestModeUtils from "TestModeUtils" /* 8484 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8930 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9098 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11708 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11792 */;
+import _modDef12465 from "module_12465" /* 12465 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17158 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17159 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17160 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
@@ -33,14 +33,14 @@ function ActivityActionOverlay(arg0) {
   ({ applicationId, activityItem, launchingComponentId } = arg0);
   ({ id, name } = activityItem.application);
   if (useActivityShelfItem.ActivityAction.JOIN !== action) {
-    if (tmp4(11539).ActivityAction.LEAVE !== action) {
+    if (tmp4(11708).ActivityAction.LEAVE !== action) {
       return null;
     }
   }
-  let tmp8 = action === tmp4(11539).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(11708).ActivityAction.LEAVE;
   if (tmp8) {
     const obj = { style: tmp3.ongoingActivityJoinedContainer };
-    tmp8 = timestampProducer(tmp(5901), obj);
+    tmp8 = timestampProducer(tmp(6067), obj);
   }
   const items = [tmp8, ];
   let id1;
@@ -73,15 +73,15 @@ function ParticipantsText(arg0) {
   const tmp6 = React6;
   const tmp2Result = NativeViewDefault;
   const tmp8 = timestampProducer;
-  const items1 = [timestampProducer(native.Icon, { source: _modDef12294, size: native.Icon.Sizes.EXTRA_SMALL, color: "white" }), ];
+  const items1 = [timestampProducer(native.Icon, { source: _modDef12465, size: native.Icon.Sizes.EXTRA_SMALL, color: "white" }), ];
   const obj4 = { lineClamp: 1, style: tmp.participantsText, variant: "text-xxs/medium", color: "text-overlay-light", children: null };
   if (action === useActivityShelfItem.ActivityAction.START) {
     let num2 = activityItem.application.maxParticipants;
     if (num2 == null) {
       num2 = 0;
     }
-    let itemSubtitleForMaxPlayersShort = tmp9(11628).getItemSubtitleForMaxPlayersShort(num2);
-    const tmp9Result = tmp9(11628);
+    let itemSubtitleForMaxPlayersShort = tmp9(11797).getItemSubtitleForMaxPlayersShort(num2);
+    const tmp9Result = tmp9(11797);
   } else {
     itemSubtitleForMaxPlayersShort = name;
     if (arr.length > 1) {
@@ -135,7 +135,7 @@ export default function ActivityShelfItem(arg0) {
   let tmp10 = useEmbeddedActivityBackgroundDefault({ applicationId: activityItem.application.id, size: result, names: ["embedded_background"] });
   let tmp11 = !disableBadges;
   if (!disableBadges) {
-    const items = [tmp8(11539).ActivityAction.LEAVE, tmp8(11539).ActivityAction.JOIN];
+    const items = [tmp8(11708).ActivityAction.LEAVE, tmp8(11708).ActivityAction.JOIN];
     tmp11 = !items.includes(activityAction);
   }
   const obj2 = { applicationId: activityItem.application.id, size: result, names: ["embedded_background"] };
@@ -160,7 +160,7 @@ export default function ActivityShelfItem(arg0) {
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(11568), obj8);
+    tmp15Result = tmp15(tmp3(11737), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -168,16 +168,16 @@ export default function ActivityShelfItem(arg0) {
     tmp15Result3 = null;
     if (isTestModeForApplication) {
       const obj9 = { style: tmp.developerIconContainer, children: null };
-      const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(16975), color: tmp.developerIconColor.color };
+      const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(17162), color: tmp.developerIconColor.color };
       obj9.children = tmp15(tmp8(1177).Icon, obj10);
-      tmp15Result3 = tmp15(tmp3(5901), obj9);
-      const tmp3Result4 = tmp3(5901);
+      tmp15Result3 = tmp15(tmp3(6067), obj9);
+      const tmp3Result4 = tmp3(6067);
     }
   }
   items3[2] = tmp15Result3;
   obj4.children = items3;
   const items4 = [React6(native2.ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(11539).ActivityAction.START;
+  let tmp15Result4 = activityAction === tmp8(11708).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: null, guildId: null, activityItem: null };
     let id1;

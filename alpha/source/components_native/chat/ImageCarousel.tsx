@@ -1,10 +1,10 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10261
+// Function ID: 10262
 // Name: ImageCarousel
-// Dependencies: [19, 17, 5200, 5199, 10095, 21, 4836, 576, 4566, 4837, 1177, 5280, 38, 5440, 504, 10096, 9657, 10815, 7691, 4832, 1115, 7722, 6389, 5435, 6359, 1479, 8608, 10098, 2]
+// Dependencies: [19, 17, 5366, 5365, 10262, 21, 4836, 576, 4566, 4837, 1177, 5446, 38, 5607, 504, 10263, 9824, 10984, 7856, 4832, 1115, 7887, 6555, 5602, 6525, 1479, 8773, 10265, 2]
 // Exports: useTileEntranceAnimatedStyle
 
-// Module 10094 (ImageCarousel)
+// Module 10261 (ImageCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -12,16 +12,16 @@ import useWindowDimensions from "useWindowDimensions" /* 1479 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
-import Upload from "Upload" /* 5440 */;
-import EyeIcon from "EyeIcon" /* 6389 */;
-import PlayIcon from "PlayIcon" /* 7722 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 9657 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10096 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10098 */;
+import spring from "spring" /* 5446 */;
+import Upload from "Upload" /* 5607 */;
+import EyeIcon from "EyeIcon" /* 6555 */;
+import PlayIcon from "PlayIcon" /* 7887 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8773 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 9824 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10263 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10265 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5365 */;
 
 require = fn;
 function Tile(onEdit) {
@@ -157,7 +157,7 @@ function Tile(onEdit) {
     let tmp6Result = null;
     if (isThumbnail) {
       const obj2 = { style: tmp5.footerRightContainer, children: null };
-      const obj3 = { source: tmp3(10815), size: native.Icon.Sizes.SMALL_14 };
+      const obj3 = { source: tmp3(10984), size: native.Icon.Sizes.SMALL_14 };
       obj2.children = tmp6(native.Icon, obj3);
       tmp6Result = tmp6(React4, obj2);
     }
@@ -166,7 +166,7 @@ function Tile(onEdit) {
     let tmp6Result5 = null;
     if (stateFromStores) {
       const obj5 = { style: tmp5.spoilerOverlay };
-      tmp6Result5 = tmp6(tmp3(7691), obj5);
+      tmp6Result5 = tmp6(tmp3(7856), obj5);
     }
     const items2 = [tmp6Result5, , ];
     let tmp6Result6 = null;
@@ -276,8 +276,8 @@ function CustomScrollView(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5200).DraftType;
-const ImageCarouselConstants = fn(10095);
+const DraftType = fn(5366).DraftType;
+const ImageCarouselConstants = fn(10262);
 const IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN = ImageCarouselConstants.IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN;
 const IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING;
 let closure_10 = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_HEIGHT;
@@ -397,7 +397,7 @@ export const useTileEntranceAnimatedStyle = function useTileEntranceAnimatedStyl
     return obj;
   };
   const obj2 = sharedValue(4566);
-  fn.__closure = { withTiming: sharedValue(4837).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1177).STANDARD_EASING, withSpring: sharedValue(5280).withSpring };
+  fn.__closure = { withTiming: sharedValue(4837).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1177).STANDARD_EASING, withSpring: sharedValue(5446).withSpring };
   fn.__workletHash = 14458898683767;
   fn.__initData = __initData;
   return obj2.useAnimatedStyle(fn);

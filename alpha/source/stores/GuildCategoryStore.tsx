@@ -1,12 +1,12 @@
-// Module ID: 6532
-// Function ID: 6533
+// Module ID: 6698
+// Function ID: 6699
 // Name: GuildCategoryStore
-// Dependencies: [2048, 502, 2045, 4467, 2067, 1074, 6533, 504, 573, 2]
+// Dependencies: [2048, 502, 2045, 4467, 2067, 1074, 6699, 504, 573, 2]
 
-// Module 6532 (GuildCategoryStore)
+// Module 6698 (GuildCategoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6699 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

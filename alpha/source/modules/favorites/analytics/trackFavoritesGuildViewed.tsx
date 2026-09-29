@@ -1,14 +1,14 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16755
+// Function ID: 16756
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1372, 2048, 1074, 1374, 9685, 1970, 1241, 9696, 2]
+// Dependencies: [1372, 2048, 1074, 1374, 9852, 1970, 1241, 9863, 2]
 // Exports: default
 
-// Module 16566 (trackFavoritesGuildViewed)
+// Module 16755 (trackFavoritesGuildViewed)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1970 */;
-import FavoritesHooks from "FavoritesHooks" /* 9685 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 9696 */;
+import FavoritesHooks from "FavoritesHooks" /* 9852 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 9863 */;
 import UserStore from "UserStore" /* 1372 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9254
-// Function ID: 9255
+// Module ID: 9421
+// Function ID: 9422
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4836, 576, 4787, 6028, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4787, 6194, 4832, 2]
 // Exports: default
 
-// Module 9254 (InfoBox)
+// Module 9421 (InfoBox)
 import nativeDefault from "native" /* 576 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6028 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6194 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

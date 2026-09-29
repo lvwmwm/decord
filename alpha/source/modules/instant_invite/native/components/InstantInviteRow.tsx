@@ -1,24 +1,24 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9515
+// Function ID: 9516
 // Name: InstantInviteRow
-// Dependencies: [19, 17, 2045, 9276, 2067, 9288, 1372, 9349, 7155, 21, 4836, 576, 504, 4989, 9277, 9350, 5435, 1177, 9094, 4678, 1115, 1397, 2011, 4832, 5917, 9351, 2]
+// Dependencies: [19, 17, 2045, 9443, 2067, 9455, 1372, 9516, 7320, 21, 4836, 576, 504, 4989, 9444, 9517, 5602, 1177, 9259, 4678, 1115, 1397, 2011, 4832, 6083, 9518, 2]
 
-// Module 9348 (InstantInviteRow)
+// Module 9515 (InstantInviteRow)
 import nativeDefault from "native" /* 576 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9277 */;
-import InviteQueueDefault from "InviteQueue" /* 9350 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 9444 */;
+import InviteQueueDefault from "InviteQueue" /* 9517 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9443 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9288 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9455 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const InstantInviteSendStateStore = fn(9349);
+const InstantInviteSendStateStore = fn(9516);
 ({ setSendState: closure_9, useInstantInviteSendStates: c10 } = InstantInviteSendStateStore);
-const InviteSendStates = fn(7155).InviteSendStates;
+const InviteSendStates = fn(7320).InviteSendStates;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
 let obj = { acronym: null };
@@ -135,17 +135,17 @@ export default noop.memo(function InstantInviteRow(row) {
           React7(tmp, id, InviteSendStates.SENDING);
           const type = row.type;
           if (InstantInviteUtils.RowTypes.FRIEND !== type) {
-            if (tmp7(9277).RowTypes.DM !== type) {
-              if (tmp7(9277).RowTypes.GROUP_DM === type) {
+            if (tmp7(9444).RowTypes.DM !== type) {
+              if (tmp7(9444).RowTypes.GROUP_DM === type) {
                 if (null != tmp) {
-                  const obj2 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
+                  const obj2 = { inviteKey: tmp, type: tmp7(9517).InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
                   const obj3 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
                   obj2.inviteAnalyticsMetadata = obj3;
                   InviteQueueDefault.enqueue(obj2, handleSendState);
                 }
-              } else if (tmp7(9277).RowTypes.CHANNEL === type) {
+              } else if (tmp7(9444).RowTypes.CHANNEL === type) {
                 if (null != tmp) {
-                  const obj5 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
+                  const obj5 = { inviteKey: tmp, type: tmp7(9517).InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
                   const obj6 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
                   obj5.inviteAnalyticsMetadata = obj6;
                   InviteQueueDefault.enqueue(obj5, handleSendState);
@@ -154,7 +154,7 @@ export default noop.memo(function InstantInviteRow(row) {
             }
           }
           if (null != tmp) {
-            const obj8 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.USER, user: UserStore.getUser(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
+            const obj8 = { inviteKey: tmp, type: tmp7(9517).InvitePropertiesType.USER, user: UserStore.getUser(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
             const obj9 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
             obj8.inviteAnalyticsMetadata = obj9;
             InviteQueueDefault.enqueue(obj8, handleSendState);

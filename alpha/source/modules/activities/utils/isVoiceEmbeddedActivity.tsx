@@ -1,10 +1,10 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8968
+// Function ID: 8969
 // Name: isVoiceEmbeddedActivity
 // Dependencies: [502, 2045, 2099, 4855, 1095, 2]
 // Exports: default
 
-// Module 8803 (isVoiceEmbeddedActivity)
+// Module 8968 (isVoiceEmbeddedActivity)
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

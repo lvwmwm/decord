@@ -1,14 +1,14 @@
-// Module ID: 11067
-// Function ID: 11068
+// Module ID: 11236
+// Function ID: 11237
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4836, 6571, 4832, 1115, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 6737, 4832, 1115, 5447, 2]
 // Exports: default
 
-// Module 11067 (LeaveConnectionRoleActionSheet)
+// Module 11236 (LeaveConnectionRoleActionSheet)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

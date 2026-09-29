@@ -1,14 +1,14 @@
-// Module ID: 10125
-// Function ID: 10126
+// Module ID: 10292
+// Function ID: 10293
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1372, 21, 10126, 4836, 576, 504, 8238, 1115, 5936, 10127, 10506, 10509, 10537, 2583, 10494, 10124, 6603, 6583, 5910, 1255, 5039, 4501, 10285, 10162, 10791, 6421, 2]
+// Dependencies: [32, 19, 1372, 21, 10293, 4836, 576, 504, 8403, 1115, 6102, 10294, 10675, 10678, 10706, 2583, 10663, 10291, 6769, 6749, 6076, 1255, 5039, 4501, 10454, 10329, 10960, 6587, 2]
 // Exports: default
 
-// Module 10125 (PremiumGiftModal)
+// Module 10292 (PremiumGiftModal)
 import nativeDefault from "native" /* 576 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10127 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10293 */;
+import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10294 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -16,7 +16,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 const jsx = fn(21).jsx;
 const PremiumGiftScreens = { PLAN_SELECT: "PremiumGiftPlanSelect", REWARD_SELECT: "GiftingSKUSelect", CUSTOMIZATION: "PremiumGiftCustomization", SUCCESS: "PremiumGiftSuccess", GIFTING_BADGE: "GiftingBadgePostPurchase" };
-let obj2 = { [PLAN_SELECT]: fn(10126).PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: fn(10126).PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: fn(10126).PaymentFlowStep.PLAN_SELECT, [SUCCESS]: fn(10126).PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: fn(10126).PaymentFlowStep.CONFIRM };
+let obj2 = { [PLAN_SELECT]: fn(10293).PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: fn(10293).PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: fn(10293).PaymentFlowStep.PLAN_SELECT, [SUCCESS]: fn(10293).PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: fn(10293).PaymentFlowStep.CONFIRM };
 ({ PLAN_SELECT, REWARD_SELECT, CUSTOMIZATION, SUCCESS, GIFTING_BADGE } = PremiumGiftScreens);
 const createStyles = fn(4836);
 let obj4 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" } };
@@ -160,9 +160,9 @@ export default function PremiumGiftModal(analyticsLocations) {
         currentProgress: currentProgress.currentProgress,
         onSendGift() {
           obj2 = { analyticsLocations: null };
-          const items = [analyticsLocations(6603).GIFTING_BADGE_POST_PURCHASE];
+          const items = [analyticsLocations(6769).GIFTING_BADGE_POST_PURCHASE];
           obj2.analyticsLocations = items;
-          analyticsLocation(10124).openGiftModal(obj2);
+          analyticsLocation(10291).openGiftModal(obj2);
         }
       });
     };

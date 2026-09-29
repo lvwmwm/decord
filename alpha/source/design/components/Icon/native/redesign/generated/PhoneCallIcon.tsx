@@ -1,13 +1,13 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7470
+// Function ID: 7471
 // Name: PhoneCallIcon
-// Dependencies: [19, 21, 576, 4530, 7306, 2]
+// Dependencies: [19, 21, 576, 4530, 7471, 2]
 // Exports: PhoneCallIcon
 
-// Module 7305 (PhoneCallIcon)
+// Module 7470 (PhoneCallIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod7306 from "module_7306" /* 7306 */;
+import _mod7471 from "module_7471" /* 7471 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PhoneCallIcon = function PhoneCallIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7306, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod7471, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,36 +1,36 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17832
+// Function ID: 17833
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 4521, 4852, 7301, 5044, 2049, 2045, 2099, 11040, 1980, 7116, 7146, 1074, 7122, 6539, 1439, 4821, 5759, 5763, 10712, 9549, 4692, 1094, 1095, 5205, 7141, 4693, 2]
+// Dependencies: [32, 4521, 4852, 7466, 5044, 2049, 2045, 2099, 11209, 1980, 7281, 7311, 1074, 7287, 6705, 1439, 4821, 5926, 5930, 10881, 9716, 4692, 1094, 1095, 5371, 7306, 4693, 2]
 
-// Module 17643 (QuestMobileEmbedVisibilityManager)
+// Module 17832 (QuestMobileEmbedVisibilityManager)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import privDefault from "priv" /* 1439 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import useAlertStore2 from "useAlertStore" /* 5205 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import AdCreativeType from "AdCreativeType" /* 5763 */;
-import getQuestLogger from "getQuestLogger" /* 7122 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 10712 */;
+import useAlertStore2 from "useAlertStore" /* 5371 */;
+import QuestTypes from "QuestTypes" /* 5926 */;
+import AdCreativeType from "AdCreativeType" /* 5930 */;
+import getQuestLogger from "getQuestLogger" /* 7287 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7306 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 10881 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ActionSheetStore from "ActionSheetStore" /* 4521 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import VoicePanelStore from "VoicePanelStore" /* 5044 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import AlertStore from "AlertStore" /* 11040 */;
+import AlertStore from "AlertStore" /* 11209 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import QuestStore from "QuestStore" /* 7281 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
-const ChannelDetailsStore = fn(7301);
+const ChannelDetailsStore = fn(7466);
 ({ useChannelDetailsStore: closure_7, getIsChannelDetailsSearchActive: closure_8 } = ChannelDetailsStore);
 const isTextChannel = fn(2049).isTextChannel;
-let closure_16 = fn(7146).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
+let closure_16 = fn(7311).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
 const MessageStates = fn(1074).MessageStates;
 function log() {
   if (questLogger == null) {
@@ -205,15 +205,15 @@ class QuestMobileEmbedVisibilityManager extends tmp3 {
         continue;
       }
     };
-    applyArgumentsResult.getCacheKey = function getCacheKey(merged) {
-      return merged.channelId + ":" + merged.messageId + ":" + merged.questId;
+    applyArgumentsResult.getCacheKey = function getCacheKey(channelId) {
+      return channelId.channelId + ":" + channelId.messageId + ":" + channelId.questId;
     };
     applyArgumentsResult.parseCacheKey = function parseCacheKey(nextResult) {
       const tmp = _slicedToArray(nextResult.split(":"), 3);
       return { channelId: tmp[0], messageId: tmp[1], questId: tmp[2] };
     };
     applyArgumentsResult.isOnChannelNavigationRoute = function isOnChannelNavigationRoute() {
-      let isChannelFocusedResult = applyArgumentsResult(9549).isChannelFocused();
+      let isChannelFocusedResult = applyArgumentsResult(9716).isChannelFocused();
       applyArgumentsResult(4692);
       if (isChannelFocusedResult) {
         isChannelFocusedResult = "channel" === tmp3;
@@ -260,7 +260,7 @@ class QuestMobileEmbedVisibilityManager extends tmp3 {
             return false;
           } else {
             if (null == AlertStore.getAlert()) {
-              const useAlertStore = tmp3(5205).useAlertStore;
+              const useAlertStore = tmp3(5371).useAlertStore;
               if (useAlertStore.getState().alerts.length <= 0) {
                 const tmp14 = type === tmp3(1095).ChannelTypes.GUILD_VOICE && chatOpen;
                 let result = null != type;

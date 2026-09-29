@@ -1,10 +1,10 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8395
+// Function ID: 8396
 // Name: useTrackImpression
-// Dependencies: [19, 2045, 2099, 4655, 1242, 1249, 1241, 573, 5016, 1331, 5040, 5298, 2]
+// Dependencies: [19, 2045, 2099, 4655, 1242, 1249, 1241, 573, 5016, 1331, 5040, 5464, 2]
 // Exports: default
 
-// Module 8230 (useTrackImpression)
+// Module 8395 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
@@ -84,7 +84,7 @@ export default function useTrackImpression(arg0, arg1, current) {
   noop = undefined;
   noop = noop.useRef(undefined);
   noop.useRef(undefined);
-  obj(5298)(() => {
+  obj(5464)(() => {
     if (obj.trackOnInitialLoad) {
       const tmp6 = _modDef1331(ref.current, closure_0);
       if (!tmp6) {

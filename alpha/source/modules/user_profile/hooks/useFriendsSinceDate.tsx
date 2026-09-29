@@ -1,10 +1,10 @@
-// Module ID: 10779
-// Function ID: 10780
+// Module ID: 10948
+// Function ID: 10949
 // Name: useFriendsSinceDate
-// Dependencies: [2112, 4479, 1074, 563, 5719, 2]
+// Dependencies: [2112, 4479, 1074, 563, 5886, 2]
 // Exports: useFriendsSinceDate
 
-// Module 10779 (useFriendsSinceDate)
+// Module 10948 (useFriendsSinceDate)
 import LocaleStore from "LocaleStore" /* 2112 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 

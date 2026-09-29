@@ -1,11 +1,11 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17354
+// Function ID: 17355
 // Name: RadioGroupActionComponent
-// Dependencies: [19, 21, 7569, 4566, 5280, 5284, 5997, 6000, 5917, 5992, 1115, 2]
+// Dependencies: [19, 21, 7734, 4566, 5446, 5450, 6163, 6166, 6083, 6158, 1115, 2]
 
-// Module 17165 (RadioGroupActionComponent)
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+// Module 17354 (RadioGroupActionComponent)
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 12090
+// Function ID: 12091
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4825, 1074, 21, 1177, 4566, 5280, 4540, 4837, 504, 11884, 11920, 11921, 8614, 2]
+// Dependencies: [32, 19, 4825, 1074, 21, 1177, 4566, 5446, 4540, 4837, 504, 12055, 12091, 12092, 8779, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 11919 (EmojiSuggestionBarUtils)
+// Module 12090 (EmojiSuggestionBarUtils)
 import native from "native" /* 4540 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;

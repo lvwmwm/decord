@@ -1,10 +1,10 @@
-// Module ID: 9502
-// Function ID: 9503
+// Module ID: 9669
+// Function ID: 9670
 // Name: StageChannelAnimationUtils
-// Dependencies: [4566, 8959, 8957, 1613, 4837, 2]
+// Dependencies: [4566, 9124, 9122, 1613, 4837, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 9502 (StageChannelAnimationUtils)
+// Module 9669 (StageChannelAnimationUtils)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import size from "module_2" /* 2 */;

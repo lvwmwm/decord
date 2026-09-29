@@ -1,10 +1,10 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8892
+// Function ID: 8893
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 4836, 1115, 6034, 576, 4792, 4832, 5910, 8517, 8505, 7787, 2]
+// Dependencies: [19, 17, 21, 4836, 1115, 6200, 576, 4792, 4832, 6076, 8682, 8670, 7952, 2]
 // Exports: default
 
-// Module 8727 (AuthorizeScopes)
+// Module 8892 (AuthorizeScopes)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
@@ -33,7 +33,7 @@ function Scope(arg0) {
   const obj2 = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: null };
   if (isFake) {
     const obj3 = { style: tmp.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    let tmp10Result = tmp10(tmp6(6034).CircleXIcon, obj3);
+    let tmp10Result = tmp10(tmp6(6200).CircleXIcon, obj3);
   } else {
     const obj4 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
     tmp10Result = tmp10(tmp6(4792).CircleCheckIcon, obj4);
@@ -84,9 +84,9 @@ export default function AuthorizeScopes(accountScopes) {
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(8505).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(8670).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(7787).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(7952).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: tmp.scopesContainer, children: null };
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: null };
@@ -97,7 +97,7 @@ export default function AuthorizeScopes(accountScopes) {
     const obj4 = { style: tmp.scopes, children: null };
     const mapped = accountScopes.map((item) => {
       closure_0 = item;
-      const scopeNames = accountScopes(8517).getScopeNames(item, closure_0);
+      const scopeNames = accountScopes(8682).getScopeNames(item, closure_0);
       return scopeNames.map((text, index) => {
         const obj = { text, error: null };
         let tmp3;

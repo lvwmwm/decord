@@ -1,10 +1,10 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13224
+// Function ID: 13225
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4502, 21, 4836, 576, 4800, 13055, 1981, 1115, 3199, 4832, 2]
+// Dependencies: [17, 4502, 21, 4836, 576, 4800, 13225, 1981, 1115, 3199, 4832, 2]
 // Exports: default
 
-// Module 13054 (BoostingUnavailablePill)
+// Module 13224 (BoostingUnavailablePill)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -21,7 +21,7 @@ function handlePress() {
   const obj2 = { aboutText: null };
   const obj = ActionSheetActionCreatorsDefault;
   const intl = util.intl;
-  const tmp = asyncRequireImpl(13055, dependencyMap.paths);
+  const tmp = asyncRequireImpl(13225, dependencyMap.paths);
   obj2.aboutText = intl.formatToPlainString(_modDef3199["5xN/C1"], { premiumGroupProductName: closure_5() });
   obj.openLazy(tmp, "PremiumGroupEducationActionSheet", obj2);
 }

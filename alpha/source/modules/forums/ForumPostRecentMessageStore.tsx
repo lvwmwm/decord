@@ -1,9 +1,9 @@
-// Module ID: 6726
-// Function ID: 6727
+// Module ID: 6892
+// Function ID: 6893
 // Name: ForumPostRecentMessageStore
 // Dependencies: [2045, 1372, 11, 5058, 1370, 504, 573, 2]
 
-// Module 6726 (ForumPostRecentMessageStore)
+// Module 6892 (ForumPostRecentMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

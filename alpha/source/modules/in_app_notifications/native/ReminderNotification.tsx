@@ -1,24 +1,24 @@
-// Module ID: 10860
-// Function ID: 10861
+// Module ID: 11029
+// Function ID: 11030
 // Name: ReminderNotification
-// Dependencies: [19, 17, 2045, 2067, 9555, 1074, 21, 4836, 1177, 4795, 576, 9554, 9634, 504, 1095, 9632, 9566, 9568, 7304, 38, 1115, 5039, 7284, 7285, 1241, 9630, 2]
+// Dependencies: [19, 17, 2045, 2067, 9722, 1074, 21, 4836, 1177, 4795, 576, 9721, 9801, 504, 1095, 9799, 9733, 9735, 7469, 38, 1115, 5039, 7449, 7450, 1241, 9797, 2]
 
-// Module 10860 (ReminderNotification)
+// Module 11029 (ReminderNotification)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ClockIcon from "ClockIcon" /* 4795 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import showForLaterModal from "showForLaterModal" /* 7284 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7285 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 9566 */;
-import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 9632 */;
+import showForLaterModal from "showForLaterModal" /* 7449 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7450 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 9733 */;
+import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 9799 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
-const MediaPreviewRightAccessory = tmp2(9634);
+const MediaPreviewRightAccessory = tmp2(9801);
 require = fn;
 function NotificationAvatar(arg0) {
   ({ user, guildId } = arg0);
@@ -41,15 +41,15 @@ function NotificationBody(channel) {
   const items1 = [ChannelStore];
   const stateFromStores1 = channel(504).useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
   const obj2 = channel(504);
-  const hasPreviewableMedia = channel(9554).useHasPreviewableMedia(message);
+  const hasPreviewableMedia = channel(9721).useHasPreviewableMedia(message);
   const tmp6 = channel.type === channel(1095).ChannelTypes.DM;
   let num = 1;
   if (tmp6) {
     num = closure_8;
   }
-  obj3 = channel(9554);
+  obj3 = channel(9721);
   let tmp10 = null;
-  const messagePreviewTextVariant = channel(9554).getMessagePreviewTextVariant();
+  const messagePreviewTextVariant = channel(9721).getMessagePreviewTextVariant();
   if (!tmp6) {
     const obj4 = { channel, parentChannel: stateFromStores1, guild: stateFromStores, author: null };
     tmp10 = closure_10(MessageNotificationHeaderDefault, obj4);
@@ -57,8 +57,8 @@ function NotificationBody(channel) {
   const items2 = [tmp10, ];
   if (!hasPreviewableMedia) {
     if (null == message.poll) {
-      const obj5 = { channel, message, color: "text-default", layout: tmp(7304).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
-      let tmp14 = closure_10(tmp(9568).ChannelRowPreview, obj5);
+      const obj5 = { channel, message, color: "text-default", layout: tmp(7469).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      let tmp14 = closure_10(tmp(9735).ChannelRowPreview, obj5);
     }
     const obj6 = { children: null };
     items2[1] = tmp14;
@@ -68,7 +68,7 @@ function NotificationBody(channel) {
   tmp14 = closure_10(MessagePreviewTextDefault, { message, lineClamp: num, showMessageAuthor: true, maxHeight });
 }
 const View = fn(17).View;
-const InAppNotificationConstants = fn(9555);
+const InAppNotificationConstants = fn(9722);
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: closure_7, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_8, RIGHT_ACCESSORY_LEFT_MARGIN } = InAppNotificationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -111,5 +111,5 @@ export default noop.memo(function ReminderNotification(notification) {
   }, items);
   let obj = { user: notification.author, guildId: channel.guild_id };
   const tmp2 = closure_10(NotificationAvatar, { user: notification.author, guildId: channel.guild_id });
-  return closure_10(notification(9630).NotificationPressable, { icon: closure_10(NotificationAvatar, { user: notification.author, guildId: channel.guild_id }), header: memo, onPress: callback, notification, rightAccessory: closure_10(closure_16, { message }), children: closure_10(NotificationBody, { channel, message }) });
+  return closure_10(notification(9797).NotificationPressable, { icon: closure_10(NotificationAvatar, { user: notification.author, guildId: channel.guild_id }), header: memo, onPress: callback, notification, rightAccessory: closure_10(closure_16, { message }), children: closure_10(NotificationBody, { channel, message }) });
 });

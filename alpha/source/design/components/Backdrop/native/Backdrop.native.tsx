@@ -1,10 +1,10 @@
-// Module ID: 5267
-// Function ID: 5268
+// Module ID: 5433
+// Function ID: 5434
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 4540, 1613, 4566, 5268, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1115, 4540, 1613, 4566, 5434, 2]
 // Exports: Backdrop
 
-// Module 5267 (Backdrop)
+// Module 5433 (Backdrop)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;

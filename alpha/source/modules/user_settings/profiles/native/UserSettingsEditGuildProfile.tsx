@@ -1,16 +1,16 @@
-// Module ID: 14203
-// Function ID: 14204
+// Module ID: 14379
+// Function ID: 14380
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 7605, 1372, 21, 4836, 576, 6583, 6603, 504, 14204, 9229, 7632, 14206, 5917, 5896, 10384, 4800, 14208, 1981, 14209, 2]
+// Dependencies: [19, 17, 7770, 1372, 21, 4836, 576, 6749, 6769, 504, 14380, 9394, 7797, 14382, 6083, 6062, 10553, 4800, 14384, 1981, 14385, 2]
 // Exports: default
 
-// Module 14203 (UserSettingsEditGuildProfile)
+// Module 14379 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9229 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10384 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7797 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9394 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10553 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7770 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

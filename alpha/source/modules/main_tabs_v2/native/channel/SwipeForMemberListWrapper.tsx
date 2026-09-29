@@ -1,10 +1,10 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16620
+// Function ID: 16621
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 7301, 7289, 1074, 21, 3, 4836, 576, 5016, 15635, 4695, 4566, 5298, 4767, 6459, 4701, 11020, 1110, 15631, 7715, 15643, 12305, 4693, 4692, 5276, 1486, 16173, 15636, 15641, 15638, 6073, 16436, 16437, 16168, 5437, 6577, 16438, 2]
+// Dependencies: [32, 19, 17, 7466, 7454, 1074, 21, 3, 4836, 576, 5016, 15810, 4695, 4566, 5464, 4767, 6625, 4701, 11189, 1110, 15806, 7880, 15818, 12476, 4693, 4692, 5442, 1486, 16349, 15811, 15816, 15813, 6239, 16621, 16622, 16344, 5604, 6743, 16623, 2]
 // Exports: default
 
-// Module 16435 (SwipeForMemberListWrapper)
+// Module 16620 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import useChatLayout from "useChatLayout" /* 4695 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15643 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15818 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,9 +21,9 @@ require = fn;
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 const View = get_ActivityIndicator.View;
-const ChannelDetailsStore = fn(7301);
+const ChannelDetailsStore = fn(7466);
 ({ getIsChannelDetailsSearchActive: closure_7, setIsChannelDetailsSearchActive: closure_8 } = ChannelDetailsStore);
-const ONYX_BORDER_WIDTH = fn(7289).ONYX_BORDER_WIDTH;
+const ONYX_BORDER_WIDTH = fn(7454).ONYX_BORDER_WIDTH;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, ComponentActions: closure_11, ThemeTypes: closure_12 } = Constants);
 const jsxProd = fn(21);

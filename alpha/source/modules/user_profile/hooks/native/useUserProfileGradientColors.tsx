@@ -1,11 +1,11 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7850
+// Function ID: 7851
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4825, 504, 4540, 6605, 7675, 2]
+// Dependencies: [19, 4825, 504, 4540, 6771, 7840, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 7685 (useUserProfileGradientColors)
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7675 */;
+// Module 7850 (useUserProfileGradientColors)
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7840 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

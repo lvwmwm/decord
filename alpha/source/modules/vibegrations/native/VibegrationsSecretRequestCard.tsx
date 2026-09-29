@@ -1,13 +1,13 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16567
+// Function ID: 16568
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4836, 576, 4800, 16384, 6377, 16385, 4832, 1115, 3715, 13978, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4800, 16568, 6543, 16569, 4832, 1115, 3715, 14147, 5447, 2]
 // Exports: default
 
-// Module 16383 (VibegrationsSecretRequestCard)
+// Module 16567 (VibegrationsSecretRequestCard)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 16384 */;
+import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 16568 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsSecretsSheetDefault = VibegrationsSecretsSheet;
@@ -48,7 +48,7 @@ export default function VibegrationsSecretRequestCard(projectId) {
   items2[1] = cardAwaiting;
   let tmp6 = null;
   if (null != awaiting) {
-    tmp6 = closure_5(projectId(16385).VibegrationsAwaitingPulseRing, {});
+    tmp6 = closure_5(projectId(16569).VibegrationsAwaitingPulseRing, {});
   }
   const items3 = [tmp6, , , , ];
   let str = "text-muted";
@@ -76,11 +76,11 @@ export default function VibegrationsSecretRequestCard(projectId) {
     const intl3 = tmp11(1115).intl;
     obj4.label = intl3.string(tmp13(3715)["/e28TK"]);
     obj4.items = memo;
-    items3[3] = tmp10(tmp11(13978).TagGroup, obj4);
+    items3[3] = tmp10(tmp11(14147).TagGroup, obj4);
     const obj5 = { variant: "primary", size: "sm", onPress: callback, text: null };
     const intl4 = tmp11(1115).intl;
     obj5.text = intl4.string(tmp13(3715)["gVV+HX"]);
-    items3[4] = tmp10(tmp11(5281).Button, obj5);
+    items3[4] = tmp10(tmp11(5447).Button, obj5);
     obj.children = items3;
     return closure_6(View, obj);
   }

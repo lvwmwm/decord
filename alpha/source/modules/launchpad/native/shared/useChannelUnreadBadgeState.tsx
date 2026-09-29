@@ -1,11 +1,11 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 16156
+// Function ID: 16157
 // Name: useChannelUnreadBadgeState
-// Dependencies: [6952, 4851, 5017, 504, 6955, 2]
+// Dependencies: [7118, 4851, 5017, 504, 7121, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 15980 (useChannelUnreadBadgeState)
-import NewChannelsStore from "NewChannelsStore" /* 6952 */;
+// Module 16156 (useChannelUnreadBadgeState)
+import NewChannelsStore from "NewChannelsStore" /* 7118 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 

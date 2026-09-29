@@ -1,19 +1,19 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17289
+// Function ID: 17290
 // Name: VoicePermissionManager
-// Dependencies: [5733, 4856, 502, 2045, 1993, 4859, 1074, 5045, 5451, 17101, 4983, 6539, 2]
+// Dependencies: [5900, 4856, 502, 2045, 1993, 4859, 1074, 5045, 5618, 17290, 4983, 6705, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 17100 (VoicePermissionManager)
+// Module 17289 (VoicePermissionManager)
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5451 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5618 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5900 */;
 import VoiceStateRecord from "VoiceStateRecord" /* 4856 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 const InputModes = fn(1074).InputModes;
@@ -71,8 +71,8 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceSta
                   }
                 });
                 if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {
-                  const permission3 = tmp13(5451).requestPermission(tmp14.INPUT_MONITORING);
-                  const tmp13Result = tmp13(5451);
+                  const permission3 = tmp13(5618).requestPermission(tmp14.INPUT_MONITORING);
+                  const tmp13Result = tmp13(5618);
                 }
                 tmp13 = importDefault;
                 tmp14 = constants2;

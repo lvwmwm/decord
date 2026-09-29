@@ -1,13 +1,13 @@
-// Module ID: 8098
-// Function ID: 8099
+// Module ID: 8263
+// Function ID: 8264
 // Name: Arrow
-// Dependencies: [19, 21, 4836, 576, 1177, 8099, 2]
+// Dependencies: [19, 21, 4836, 576, 1177, 8264, 2]
 // Exports: default
 
-// Module 8098 (Arrow)
+// Module 8263 (Arrow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import _modDef8099 from "module_8099" /* 8099 */;
+import _modDef8264 from "module_8264" /* 8264 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,5 +20,5 @@ const result = size.fileFinishedImporting("modules/in_app_reports/native/compone
 
 export default function Arrow() {
   const tmp = closure_4();
-  return jsx(native.Icon, { source: _modDef8099, size: native.Icon.Sizes.MEDIUM, style: closure_4().tintColor });
+  return jsx(native.Icon, { source: _modDef8264, size: native.Icon.Sizes.MEDIUM, style: closure_4().tintColor });
 };

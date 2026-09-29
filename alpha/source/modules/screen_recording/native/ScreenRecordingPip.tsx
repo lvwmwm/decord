@@ -1,14 +1,14 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15730
+// Function ID: 15731
 // Name: ScreenRecordingPip
-// Dependencies: [32, 19, 17, 15556, 21, 4836, 576, 4566, 10895, 11515, 6073, 5280, 5284, 4800, 15560, 1981, 15550, 5435, 4832, 5281, 4783, 15561, 2]
+// Dependencies: [32, 19, 17, 15731, 21, 4836, 576, 4566, 11064, 11684, 6239, 5446, 5450, 4800, 15735, 1981, 15725, 5602, 4832, 5447, 4783, 15736, 2]
 // Exports: default
 
-// Module 15555 (ScreenRecordingPip)
+// Module 15730 (ScreenRecordingPip)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -205,7 +205,7 @@ function ScreenRecordingPip(surveyConfig) {
   }
 }
 const View = fn(17).View;
-const useScreenRecordingStore = fn(15556).useScreenRecordingStore;
+const useScreenRecordingStore = fn(15731).useScreenRecordingStore;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 let c10 = 100;

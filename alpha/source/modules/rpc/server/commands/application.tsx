@@ -1,16 +1,16 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14200
+// Function ID: 14201
 // Name: application
-// Dependencies: [5063, 4739, 1074, 8773, 8775, 14029, 8321, 8770, 8755, 1241, 1271, 8319, 2]
+// Dependencies: [5063, 4739, 1074, 8938, 8940, 14201, 8486, 8935, 8920, 1241, 1271, 8484, 2]
 
-// Module 14028 (application)
+// Module 14200 (application)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TestModeUtils from "TestModeUtils" /* 8319 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
-import RPCHelpers from "RPCHelpers" /* 8775 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
+import TestModeUtils from "TestModeUtils" /* 8484 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8486 */;
+import RPCErrorDefault from "RPCError" /* 8935 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8938 */;
+import RPCHelpers from "RPCHelpers" /* 8940 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14201 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 
 require = fn;
@@ -42,7 +42,7 @@ export default {
       }
       const application = ApplicationStore.getApplication(id);
       if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-        const activeAnalyticsSessionIDs = tmp(8755).getActiveAnalyticsSessionIDs(id);
+        const activeAnalyticsSessionIDs = tmp(8920).getActiveAnalyticsSessionIDs(id);
         const obj4 = { activity_application_id: id, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
         let type;
         if (obj3 != null) {
@@ -55,14 +55,14 @@ export default {
           prop = activeAnalyticsSessionIDs.activityUserSessionId;
         }
         obj4.activity_user_session_id = prop;
-        const tmpResult2 = tmp(8755);
+        const tmpResult2 = tmp(8920);
         const obj5 = {};
         const merged = Object.assign(obj4);
         const merged1 = Object.assign(event_properties);
         tmp5(1241).track(args.event_name, obj5);
       } else {
         const obj6 = { errorCode: constants2.INVALID_COMMAND };
-        const tmp12 = new tmp5(8770)(obj6, "This application cannot access this API");
+        const tmp12 = new tmp5(8935)(obj6, "This application cannot access this API");
         throw tmp12;
       }
       tmpResult = ApplicationFlagUtils;

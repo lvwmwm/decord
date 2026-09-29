@@ -1,10 +1,10 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7430
+// Function ID: 7431
 // Name: ScheduledMessageUtils
-// Dependencies: [32, 4469, 1372, 1074, 1374, 7266, 3, 38, 1435, 7097, 1385, 1241, 504, 4421, 1115, 11, 1970, 5058, 7267, 1370, 2]
+// Dependencies: [32, 4469, 1372, 1074, 1374, 7431, 3, 38, 1435, 7262, 1385, 1241, 504, 4421, 1115, 11, 1970, 5058, 7432, 1370, 2]
 // Exports: canSendScheduledMessagesInChannel, canUseScheduledMessages, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getPresetScheduledTimes, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanSendScheduledMessagesInChannel, useCanUseScheduledMessages, useScheduledMessagesLimit
 
-// Module 7265 (ScheduledMessageUtils)
+// Module 7430 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1115 */;
@@ -13,8 +13,8 @@ import FlagUtils from "FlagUtils" /* 1385 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7097 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7267 */;
+import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7262 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7432 */;
 import _slicedToArray from "module_32" /* 32 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -26,7 +26,7 @@ require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, MessageFlags: closure_7, Permissions: closure_8 } = Constants);
 const PremiumTypes = fn(1374).PremiumTypes;
-const ScheduledMessagesConstants = fn(7266);
+const ScheduledMessagesConstants = fn(7431);
 ({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_11, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: map1 } = ScheduledMessagesConstants);
 class ScheduledMessagesConfig {
   constructor(arg0, arg1) {
@@ -296,27 +296,27 @@ export const getMessageForState = function getMessageForState(state) {
     const intl6 = tmp(1115).intl;
     obj.stateMessage = intl6.string(tmp(1115).t.Fn6Odn);
     return obj;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
+  } else if (tmp(7432).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
     const obj2 = { isError: true, stateMessage: null };
     const intl5 = tmp(1115).intl;
     obj2.stateMessage = intl5.string(tmp(1115).t.v5O2dK);
     return obj2;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
+  } else if (tmp(7432).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
     const obj3 = { isError: true, stateMessage: null };
     const intl4 = tmp(1115).intl;
     obj3.stateMessage = intl4.string(tmp(1115).t.j8uIfG);
     return obj3;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
+  } else if (tmp(7432).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
     const obj4 = { isError: true, stateMessage: null };
     const intl3 = tmp(1115).intl;
     obj4.stateMessage = intl3.string(tmp(1115).t["w6zHX/"]);
     return obj4;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
+  } else if (tmp(7432).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
     const obj5 = { isError: true, stateMessage: null };
     const intl2 = tmp(1115).intl;
     obj5.stateMessage = intl2.string(tmp(1115).t.pflV7z);
     return obj5;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
+  } else if (tmp(7432).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
     const obj6 = { isError: true, stateMessage: null };
     const intl = tmp(1115).intl;
     obj6.stateMessage = intl.string(tmp(1115).t.j8uIfG);

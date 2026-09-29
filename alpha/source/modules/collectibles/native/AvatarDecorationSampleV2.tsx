@@ -1,14 +1,14 @@
-// Module ID: 8273
-// Function ID: 8274
+// Module ID: 8438
+// Function ID: 8439
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4836, 576, 38, 1974, 8274, 8275, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 38, 1974, 8439, 8440, 2]
 // Exports: default
 
-// Module 8273 (AvatarDecorationSampleV2)
+// Module 8438 (AvatarDecorationSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8275 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8440 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ export default function AvatarDecorationSampleV2(arg0) {
   const obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(8274);
+    avatarSource = tmp2(8439);
   }
   const obj2 = { children: null };
   obj.source = avatarSource;

@@ -1,9 +1,9 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11332
+// Function ID: 11333
 // Name: SendMessageOptionsStore
 // Dependencies: [4829, 504, 573, 2]
 
-// Module 11163 (SendMessageOptionsStore)
+// Module 11332 (SendMessageOptionsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MessageConstants from "MessageConstants" /* 4829 */;

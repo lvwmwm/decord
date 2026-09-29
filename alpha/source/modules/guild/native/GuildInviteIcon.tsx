@@ -1,14 +1,14 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 12327
+// Function ID: 12328
 // Name: GuildInviteIcon
-// Dependencies: [19, 17, 21, 4836, 576, 4540, 12157, 1115, 1397, 5899, 2011, 1177, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4540, 12328, 1115, 1397, 6065, 2011, 1177, 2]
 
-// Module 12156 (GuildInviteIcon)
+// Module 12327 (GuildInviteIcon)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import StylesheetUtils from "StylesheetUtils" /* 12157 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import StylesheetUtils from "StylesheetUtils" /* 12328 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

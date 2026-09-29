@@ -1,10 +1,10 @@
-// Module ID: 11699
-// Function ID: 11700
+// Module ID: 11868
+// Function ID: 11869
 // Name: ForLaterCardStatusHeader
 // Dependencies: [17, 21, 4836, 576, 4832, 2]
 // Exports: ForLaterCardStatusHeader
 
-// Module 11699 (ForLaterCardStatusHeader)
+// Module 11868 (ForLaterCardStatusHeader)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;

@@ -1,13 +1,13 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 7476
+// Function ID: 7477
 // Name: ForumPostUnreadCountStore
-// Dependencies: [5819, 2045, 4851, 504, 38, 573, 2]
+// Dependencies: [5986, 2045, 4851, 504, 38, 573, 2]
 
-// Module 7311 (ForumPostUnreadCountStore)
+// Module 7476 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5819 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5986 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 

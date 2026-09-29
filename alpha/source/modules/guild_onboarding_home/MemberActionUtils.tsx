@@ -1,11 +1,11 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11940
+// Function ID: 11941
 // Name: MemberActionUtils
-// Dependencies: [2108, 5023, 5024, 4455, 6644, 563, 1385, 2]
+// Dependencies: [2108, 5023, 5024, 4455, 6810, 563, 1385, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11771 (MemberActionUtils)
-import useIsNewMemberDefault from "useIsNewMember" /* 6644 */;
+// Module 11940 (MemberActionUtils)
+import useIsNewMemberDefault from "useIsNewMember" /* 6810 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5024 */;

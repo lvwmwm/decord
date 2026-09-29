@@ -1,20 +1,20 @@
-// Module ID: 9630
-// Function ID: 9631
+// Module ID: 9797
+// Function ID: 9798
 // Name: Notification
-// Dependencies: [19, 9555, 1074, 21, 4836, 576, 9554, 9597, 4566, 5280, 4837, 5016, 5435, 9631, 9633, 2]
+// Dependencies: [19, 9722, 1074, 21, 4836, 576, 9721, 9764, 4566, 5446, 4837, 5016, 5602, 9798, 9800, 2]
 // Exports: NotificationPressable
 
-// Module 9630 (Notification)
+// Module 9797 (Notification)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import spring from "spring" /* 5280 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
+import spring from "spring" /* 5446 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9721 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const InAppNotificationConstants = fn(9555);
+const InAppNotificationConstants = fn(9722);
 ({ MIN_SWIPE_VELOCITY: closure_4, STARTED_SWIPE_THRESHOLD: hasOwnProperty, NOTIFICATION_MAX_WIDTH } = InAppNotificationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

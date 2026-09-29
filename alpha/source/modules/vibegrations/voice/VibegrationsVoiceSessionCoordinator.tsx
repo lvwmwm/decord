@@ -1,15 +1,15 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14192
+// Function ID: 14193
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14021, 8499, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8770, 13371, 1255, 9104, 14022, 14023, 2]
+// Dependencies: [14193, 8664, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8935, 13540, 1255, 9269, 14194, 14195, 2]
 
-// Module 14020 (VibegrationsVoiceSessionCoordinator)
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13371 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14023 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14021 */;
-import FramesStore from "FramesStore" /* 8499 */;
+// Module 14192 (VibegrationsVoiceSessionCoordinator)
+import RPCErrorDefault from "RPCError" /* 8935 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9269 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13540 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14195 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14193 */;
+import FramesStore from "FramesStore" /* 8664 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
@@ -122,52 +122,69 @@ prototype["getParticipants"] = function getParticipants(arg0) {
 };
 prototype["start"] = function start(id) {
   const self = this;
-  ({ frameId, applicationId } = this.validateFrame(id));
+  ({ frameId, applicationId, channelId } = this.validateFrame(id));
   const connectedRTCConnection = this.getConnectedRTCConnection();
   if (connectedRTCConnection != null) {
     const mediaEngineConnectionId = connectedRTCConnection.getMediaEngineConnectionId();
   }
   if (null != connectedRTCConnection) {
     if (null != mediaEngineConnectionId) {
-      const sessions2 = self.sessions;
-      value = sessions2.get(frameId);
-      if (null != value) {
-        self.releaseSession(value);
-      }
-      let focusSequence;
-      if (value != null) {
-        focusSequence = value.focusSequence;
-      }
-      if (focusSequence == null) {
-        let num = 0;
-        if (FrameVisibilityStore.isFrameVisible(frameId)) {
-          const sum = self.focusSequence + 1;
-          self.focusSequence = sum;
-          num = sum;
-        }
-        focusSequence = num;
-      }
-      const obj = { id: obj2(1255).v4(), socketId: id.id, frameId, applicationId, channelId: connectedRTCConnection.channelId, rtcConnectionId: connectedRTCConnection.getRTCConnectionId(), mediaEngineConnectionId, spatialEnabled: false, focusSequence, backgrounded: !FrameVisibilityStore.isFrameVisible(frameId), pooled: FrameVisibilityStore.isFramePooled(frameId), sources: [], appliedUserIds: null, updateTimer: null };
-      const _Set = Set;
-      const set = new Set();
-      obj.appliedUserIds = set;
-      if (self.hasMediaEngineConnection(obj)) {
-        const sessions = self.sessions;
-        const result = sessions.set(frameId, obj);
-        if (self.unsubscribeFrameLifecycle == null) {
-          self.unsubscribeFrameLifecycle = obj4.subscribe(self.handleFrameLifecycleChange);
-        }
-        return obj;
+      if (channelId !== connectedRTCConnection.channelId) {
+        const obj = { errorCode: RPCErrors.UNAUTHORIZED_FOR_APPLICATION };
+        const tmp28 = new RPCErrorDefault(obj, "Only an app running in your voice channel can start a voice session");
+        throw tmp28;
       } else {
-        obj2 = { errorCode: RPCErrors.INVALID_CHANNEL };
-        const tmp19 = new RPCErrorDefault(obj2, "The voice connection is unavailable");
-        throw tmp19;
+        const sessions2 = self.sessions;
+        value = sessions2.get(frameId);
+        if (null != value) {
+          self.releaseSession(value);
+        }
+        let focusSequence;
+        if (value != null) {
+          focusSequence = value.focusSequence;
+        }
+        if (focusSequence == null) {
+          let num = 0;
+          if (FrameVisibilityStore.isFrameVisible(frameId)) {
+            const sum = self.focusSequence + 1;
+            self.focusSequence = sum;
+            num = sum;
+          }
+          focusSequence = num;
+        }
+        obj2 = { id: null, socketId: null, frameId: null, applicationId: null, channelId: null, rtcConnectionId: null, mediaEngineConnectionId: null, spatialEnabled: false, focusSequence: null, backgrounded: null, pooled: null, sources: null, appliedUserIds: null, updateTimer: null };
+        obj2.id = obj2(1255).v4();
+        obj2.socketId = id.id;
+        obj2.frameId = frameId;
+        obj2.applicationId = applicationId;
+        obj2.channelId = connectedRTCConnection.channelId;
+        obj2.rtcConnectionId = connectedRTCConnection.getRTCConnectionId();
+        obj2.mediaEngineConnectionId = mediaEngineConnectionId;
+        obj2.focusSequence = focusSequence;
+        obj2.backgrounded = !FrameVisibilityStore.isFrameVisible(frameId);
+        obj2.pooled = FrameVisibilityStore.isFramePooled(frameId);
+        obj2.sources = [];
+        const _Set = Set;
+        const set = new Set();
+        obj2.appliedUserIds = set;
+        if (self.hasMediaEngineConnection(obj2)) {
+          const sessions = self.sessions;
+          const result = sessions.set(frameId, obj2);
+          if (self.unsubscribeFrameLifecycle == null) {
+            self.unsubscribeFrameLifecycle = obj4.subscribe(self.handleFrameLifecycleChange);
+          }
+          return obj2;
+        } else {
+          const obj5 = { errorCode: RPCErrors.INVALID_CHANNEL };
+          const tmp19 = new RPCErrorDefault(obj5, "The voice connection is unavailable");
+          throw tmp19;
+        }
+        const obj3 = obj2(1255);
+        obj4 = FrameVisibilityStore;
       }
-      const obj3 = obj2(1255);
-      obj4 = FrameVisibilityStore;
     }
   }
-  const obj5 = { errorCode: RPCErrors.INVALID_CHANNEL };
+  const obj6 = { errorCode: RPCErrors.INVALID_CHANNEL };
   const validateFrameResult = this.validateFrame(id);
   throw new RPCErrorDefault({ errorCode: RPCErrors.INVALID_CHANNEL }, "Join a voice channel before starting a voice session");
 };
@@ -294,7 +311,7 @@ prototype["update"] = function update(id, id, arg2, arr) {
             if (!set.has(user_id)) {
               obj.add(user_id);
               obj2 = { userId: user_id, position: null };
-              obj2.position = obj2(14022).toListenerRelativePosition(closure_0, user_id.position);
+              obj2.position = obj2(14194).toListenerRelativePosition(closure_0, user_id.position);
               return obj2;
             }
             obj = set;
@@ -564,11 +581,13 @@ prototype["cancelPendingUpdate"] = function cancelPendingUpdate(updateTimer) {
 };
 prototype["validateFrame"] = function validateFrame(id) {
   const tmp3 = validateEmbeddedAppFrameDefault(id);
+  ({ applicationId, channelId } = tmp3);
   const frameByIframeId = FramesStore.getFrameByIframeId(tmp3.iframeId);
   if (null != frameByIframeId) {
-    if (frameByIframeId.applicationId === tmp3.applicationId) {
-      const obj = { frameId: null, applicationId: null };
+    if (frameByIframeId.applicationId === applicationId) {
+      const obj = { frameId: null, applicationId: null, channelId: null };
       ({ id: obj.frameId, applicationId: obj.applicationId } = frameByIframeId);
+      obj.channelId = channelId;
       return obj;
     }
   }

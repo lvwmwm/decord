@@ -1,17 +1,17 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7760
+// Function ID: 7761
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 7596, 1074, 38, 3, 1271, 573, 1432, 2]
+// Dependencies: [32, 5, 7761, 1074, 38, 3, 1271, 573, 1432, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7595 (ApplicationAssetUtils)
+// Module 7760 (ApplicationAssetUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7596 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7761 */;
 
 require = fn;
 function updateAssets() {

@@ -1,20 +1,20 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 8328
+// Function ID: 8329
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4836, 576, 8136, 4525, 1613, 6618, 6045, 4832, 1115, 5281, 4800, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8301, 4525, 1613, 6784, 6211, 4832, 1115, 5447, 4800, 2]
 // Exports: default
 
-// Module 8163 (GameProfileStoreLinksActionSheet)
+// Module 8328 (GameProfileStoreLinksActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8136 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import BottomSheetModal from "BottomSheetModal" /* 6211 */;
+import ActionSheet from "ActionSheet" /* 6784 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8301 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

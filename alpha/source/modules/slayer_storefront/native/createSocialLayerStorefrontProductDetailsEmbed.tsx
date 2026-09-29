@@ -1,23 +1,23 @@
-// Module ID: 11024
-// Function ID: 11025
+// Module ID: 11193
+// Function ID: 11194
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 5063, 5822, 7155, 7387, 1115, 11025, 6652, 6647, 3585, 4821, 11026, 504, 1370, 6589, 2]
+// Dependencies: [19, 5063, 5989, 7320, 7552, 1115, 11194, 6818, 6813, 3585, 4821, 11195, 504, 1370, 6755, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedApplications
 
-// Module 11024 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11193 (createSocialLayerStorefrontProductDetailsEmbed)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
-import StorefrontUtils from "StorefrontUtils" /* 6652 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6813 */;
+import StorefrontUtils from "StorefrontUtils" /* 6818 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7552 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import SKUStore from "SKUStore" /* 5989 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const InviteTypes = fn(7155).InviteTypes;
+const InviteTypes = fn(7320).InviteTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
@@ -51,7 +51,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11025)(application)) {
+        if (tmp(11194)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = StorefrontUtils.isSlayerSkuAvailableOnThisPlatform(value);
             const str4 = SlayerStorefrontUtils.getCardImageURL(value);
@@ -137,5 +137,5 @@ export const useFetchSocialLayerStorefrontProductDetailsEmbedApplications = func
     const items = [...new Set(found.map((applicationId) => applicationId.applicationId))];
     return items;
   }, items2);
-  memo(6589)(stateFromStoresArray);
+  memo(6755)(stateFromStoresArray);
 };

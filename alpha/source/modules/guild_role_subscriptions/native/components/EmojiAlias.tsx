@@ -1,10 +1,10 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17763
+// Function ID: 17764
 // Name: EmojiAlias
 // Dependencies: [19, 17, 21, 4836, 4832, 2]
 // Exports: default
 
-// Module 17574 (EmojiAlias)
+// Module 17763 (EmojiAlias)
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;
 

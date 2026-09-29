@@ -1,122 +1,197 @@
 // Module ID: 9162
 // Function ID: 9163
-// Dependencies: []
-// Exports: byteLength, fromByteArray, toByteArray
+// Dependencies: [19, 17, 21, 9163, 9167]
 
 // Module 9162
-const dependencyMap = [];
-const dependencyMap2 = [];
-let closure_2 = typeof Uint8Array !== "undefined" ? Uint8Array : Array;
+import colorToHex from "colorToHex" /* 9167 */;
+import noop from "module_19" /* 19 */;
 
-export const byteLength = function byteLength(arr) {
-  if (0 < arr.length % 4) {
-    const _Error = Error;
-    const error = new Error("Invalid string. Length must be a multiple of 4");
-    throw error;
-  } else {
-    let index = arr.indexOf("=");
-    if (-1 === index) {
-      index = length;
-    }
-    const items = [index, ];
-    let num2 = 0;
-    if (index !== length) {
-      num2 = 4 - index % 4;
-    }
-    items[1] = num2;
-    return 3 * (items[0] + items[1]) / 4 - items[1];
-  }
-};
-export const toByteArray = function toByteArray(arr) {
-  if (0 < arr.length % 4) {
-    const _Error = Error;
-    const error = new Error("Invalid string. Length must be a multiple of 4");
-    throw error;
-  } else {
-    let index = arr.indexOf("=");
-    if (-1 === index) {
-      index = length;
-    }
-    const items = [index, ];
-    let num = 0;
-    if (index !== length) {
-      num = 4 - index % 4;
-    }
-    items[1] = num;
-    [tmp2, tmp3] = items;
-    const tmp7 = new closure_2(3 * (tmp2 + tmp3) / 4 - tmp3);
-    let diff = tmp2;
-    if (tmp3 > 0) {
-      diff = tmp2 - 4;
-    }
-    let num11 = 0;
-    let num12 = 0;
-    let num13 = 0;
-    let num14 = 0;
-    if (0 < diff) {
-      do {
-        let tmp11 = dependencyMap2[arr.charCodeAt(arr, num12)] << 18;
-        let tmp12 = dependencyMap2[arr.charCodeAt(arr, num12 + 1)] << 12;
-        let tmp13 = dependencyMap2[arr.charCodeAt(arr, num12 + 2)] << 6;
-        let tmp14 = tmp11 | tmp12 | tmp13 | dependencyMap2[arr.charCodeAt(arr, num12 + 3)];
-        let sum = num11 + 1;
-        tmp7[num11] = tmp14 >> 16 & 255;
-        let sum1 = sum + 1;
-        tmp7[sum] = tmp14 >> 8 & 255;
-        num11 = sum1 + 1;
-        tmp7[sum1] = 255 & tmp14;
-        num12 = num12 + 4;
-        num13 = num11;
-        num14 = num12;
-      } while (num12 < diff);
-    }
-    let sum2 = num13;
-    if (2 === tmp3) {
-      sum2 = num13 + 1;
-      tmp7[num13] = 255 & (dependencyMap2[arr.charCodeAt(arr, num14)] << 2 | dependencyMap2[arr.charCodeAt(arr, num14 + 1)] >> 4);
-      const tmp19 = dependencyMap2[arr.charCodeAt(arr, num14)] << 2;
-    }
-    if (1 === tmp3) {
-      const tmp21 = dependencyMap2[arr.charCodeAt(arr, num14)] << 10;
-      const tmp23 = tmp21 | dependencyMap2[arr.charCodeAt(arr, num14 + 1)] << 4 | dependencyMap2[arr.charCodeAt(arr, num14 + 2)] >> 2;
-      tmp7[sum2] = tmp23 >> 8 & 255;
-      tmp7[sum2 + 1] = 255 & tmp23;
-      const tmp22 = dependencyMap2[arr.charCodeAt(arr, num14 + 1)] << 4;
-    }
-    return tmp7;
-  }
-};
-export const fromByteArray = function fromByteArray(arg0) {
-  let sum;
-  const result = length % 3;
-  const items = [];
-  const diff = length - result;
-  let num = 0;
-  if (0 < diff) {
-    do {
-      sum = num + 16383;
-      let sum2 = num;
-      let tmp5 = sum;
-      if (diff < sum) {
-        tmp5 = diff;
+require = fn;
+get_ActivityIndicator = fn(17);
+({ Appearance: c2, Platform, Text } = get_ActivityIndicator);
+const jsx = fn(21).jsx;
+const DatePickerAndroid = fn(9163).DatePickerAndroid;
+function getTheme(arg0) {
+
+}
+function getDividerColor(arg0) {
+
+}
+function getTextColor(arg0) {
+
+}
+function getButtonColor(arg0) {
+
+}
+function getTitle(arg0) {
+
+}
+
+export default noop.memo((theme) => {
+  const obj = {};
+  const merged = Object.assign(theme);
+  colorToHex;
+  if (typeof getTextColor === "function") {
+    if (typeof getTheme === "function") {
+      if (theme.theme) {
+        let str = theme.theme;
+      } else {
+        str = "auto";
+        if (React2) {
+          const colorScheme = obj2.getColorScheme();
+          let tmp11;
+          if (null !== colorScheme) {
+            tmp11 = colorScheme;
+          }
+          str = tmp11;
+        }
+        obj2 = React2;
       }
-      let items1 = [];
-      if (sum2 < tmp5) {
-        do {
-          let sum1 = (arg0[sum2] << 16 & 16711680) + (arg0[sum2 + 1] << 8 & 65280) + (255 & arg0[sum2 + 2]);
-          let arr = items1.push(dependencyMap[sum1 >> 18 & 63] + dependencyMap[sum1 >> 12 & 63] + dependencyMap[sum1 >> 6 & 63] + dependencyMap[63 & sum1]);
-          sum2 = sum2 + 3;
-        } while (sum2 < tmp5);
+      let str2 = "white";
+      let str4 = "white";
+      if ("dark" !== str) {
+        let str6;
+        if ("light" === str) {
+          str6 = "black";
+        }
+        str4 = str6;
       }
-      let arr2 = items.push(items1.join(""));
-      num = sum;
-    } while (sum < diff);
+      obj.textColor = tmp7(str4);
+      tmp4(9167);
+      if (typeof getDividerColor === "function") {
+        if (theme.dividerColor) {
+          let dividerColor = theme.dividerColor;
+        } else if (typeof tmp8 === "function") {
+          if (theme.theme) {
+            let str7 = theme.theme;
+          } else {
+            str7 = "auto";
+            if (React2) {
+              const colorScheme1 = obj3.getColorScheme();
+              let tmp17;
+              if (null !== colorScheme1) {
+                tmp17 = colorScheme1;
+              }
+              str7 = tmp17;
+            }
+            obj3 = React2;
+          }
+          dividerColor = str2;
+          if ("dark" !== str7) {
+            let str9;
+            if ("light" === str7) {
+              str9 = "black";
+            }
+            dividerColor = str9;
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+        obj.dividerColor = tmp13(dividerColor);
+        tmp4(9167);
+        if (typeof getButtonColor === "function") {
+          if (theme.buttonColor) {
+            str2 = theme.buttonColor;
+          } else if (typeof tmp8 === "function") {
+            if (theme.theme) {
+              let str10 = theme.theme;
+            } else {
+              str10 = "auto";
+              if (React2) {
+                const colorScheme2 = obj4.getColorScheme();
+                let tmp23;
+                if (null !== colorScheme2) {
+                  tmp23 = colorScheme2;
+                }
+                str10 = tmp23;
+              }
+              obj4 = React2;
+            }
+            if ("dark" !== str10) {
+              let str12;
+              if ("light" === str10) {
+                str12 = "black";
+              }
+              str2 = str12;
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+          obj.buttonColor = tmp19(str2);
+          if (typeof tmp8 === "function") {
+            if (theme.theme) {
+              let str13 = theme.theme;
+            } else {
+              str13 = "auto";
+              if (React2) {
+                const colorScheme3 = obj5.getColorScheme();
+                let tmp26;
+                if (null !== colorScheme3) {
+                  tmp26 = colorScheme3;
+                }
+                str13 = tmp26;
+              }
+              obj5 = React2;
+            }
+            obj.theme = str13;
+            if (typeof getTitle === "function") {
+              let title = theme.title;
+              let str14 = "";
+              let str15 = "";
+              if (null !== title) {
+                if (!title) {
+                  let str16 = "Select date";
+                  if ("time" === tmp28) {
+                    str16 = "Select time";
+                  }
+                  title = str16;
+                }
+                str15 = title;
+              }
+              obj.title = str15;
+              let str18 = "Confirm";
+              if (theme.confirmText) {
+                str18 = theme.confirmText;
+              }
+              obj.confirmText = str18;
+              let str19 = "Cancel";
+              if (theme.cancelText) {
+                str19 = theme.cancelText;
+              }
+              obj.cancelText = str19;
+              let num = 1;
+              if (theme.minuteInterval) {
+                num = theme.minuteInterval;
+              }
+              obj.minuteInterval = num;
+              let str20 = "datetime";
+              if (theme.mode) {
+                str20 = theme.mode;
+              }
+              obj.mode = str20;
+              if (null != theme.timeZoneOffsetInMinutes) {
+                str14 = theme.timeZoneOffsetInMinutes.toString();
+              }
+              obj.timeZoneOffsetInMinutes = str14;
+              return tmp(tmp2, obj);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
-  if (1 === result) {
-    items.push(`${closure_0[arg0[length - 1] >> 2]}${closure_0[arg0[length - 1] << 4 & 63]}==`);
-  } else if (2 === result) {
-    const sum3 = (arg0[length - 2] << 8) + arg0[length - 1];
-    items.push(`${closure_0[tmp13 >> 10]}${closure_0[tmp13 >> 4 & 63]}${closure_0[tmp13 << 2 & 63]}=`);
-  }
-  return items.join("");
-};
+  tmp = jsx;
+  tmp2 = DatePickerAndroid;
+});

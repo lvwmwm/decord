@@ -1,17 +1,17 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13202
+// Function ID: 13203
 // Name: Footer
-// Dependencies: [19, 17, 21, 4836, 13033, 6603, 4832, 1115, 5281, 5899, 13034, 2]
+// Dependencies: [19, 17, 21, 4836, 13203, 6769, 4832, 1115, 5447, 6065, 13204, 2]
 // Exports: default
 
-// Module 13032 (Footer)
+// Module 13202 (Footer)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13033 */;
-import _modDef13034 from "module_13034" /* 13034 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13203 */;
+import _modDef13204 from "module_13204" /* 13204 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -51,7 +51,7 @@ export default function Footer(showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
   const tmp2Result = FastImageDefault;
-  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: _modDef13034 });
+  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: _modDef13204 });
   obj.children = items2;
   return timestampProducer(View, obj);
 };

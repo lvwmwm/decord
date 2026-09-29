@@ -1,9 +1,9 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5532
+// Function ID: 5533
 // Name: MemberVerificationConstants
 // Dependencies: [4658, 2]
 
-// Module 5366 (MemberVerificationConstants)
+// Module 5532 (MemberVerificationConstants)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import size from "module_2" /* 2 */;
 

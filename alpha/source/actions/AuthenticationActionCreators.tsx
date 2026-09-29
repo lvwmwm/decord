@@ -1,9 +1,9 @@
-// Module ID: 6010
-// Function ID: 6011
+// Module ID: 6176
+// Function ID: 6177
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 6011, 502, 6012, 1074, 6013, 3, 4830, 573, 4693, 1101, 5039, 5029, 1249, 1271, 4735, 6014, 6015, 510, 1100, 2]
+// Dependencies: [5, 6177, 502, 6178, 1074, 6179, 3, 4830, 573, 4693, 1101, 5039, 5029, 1249, 1271, 4735, 6180, 6181, 510, 1100, 2]
 
-// Module 6010 (AuthenticationActionCreators)
+// Module 6176 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
@@ -15,7 +15,7 @@ import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4830 *
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6012 */;
+import ConsentStore from "ConsentStore" /* 6178 */;
 
 const require = globalThis.__r;
 
@@ -54,10 +54,10 @@ function handleLogout(source, CHANNELResult) {
     tmp12 = require;
   }
 }
-const setPromoEmailConsentState = fn(6011).setPromoEmailConsentState;
+const setPromoEmailConsentState = fn(6177).setPromoEmailConsentState;
 const Constants = fn(1074);
 ({ Endpoints: closure_9, DEVICE_TOKEN: c10, DEVICE_VOIP_TOKEN: closure_11, AbortCodes: closure_12, Routes: map1 } = Constants);
-const PushNotificationConstants = fn(6013);
+const PushNotificationConstants = fn(6179);
 ({ DEVICE_PUSH_VOIP_PROVIDER: closure_14, getDevicePushProvider: closure_15 } = PushNotificationConstants);
 const logger = new LoggerDefault("AuthenticationActionCreators");
 const PasswordResetResult = { MFA: "MFA", SUCCESS: "SUCCESS" };
@@ -269,7 +269,7 @@ export default {
               obj17 = importDefault;
               c4 = 2;
               c5 = 1;
-              const obj5 = { value: closure_0(6014).fetchWebAuthnPasswordlessChallenge(), done: false };
+              const obj5 = { value: closure_0(6180).fetchWebAuthnPasswordlessChallenge(), done: false };
               return obj5;
             }
           } else if (1 === tmp8) {
@@ -331,7 +331,7 @@ export default {
               if (tmp16) {
                 c4 = 6;
                 c5 = 1;
-                const obj15 = { value: tmp3(6015).signalUnknownCredential(closure_128_3), done: false };
+                const obj15 = { value: tmp3(6181).signalUnknownCredential(closure_128_3), done: false };
                 return obj15;
               }
             } else if (5 === tmp8) {

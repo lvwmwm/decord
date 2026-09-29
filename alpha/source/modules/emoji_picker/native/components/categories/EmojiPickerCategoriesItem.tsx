@@ -1,9 +1,9 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9976
+// Function ID: 9977
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 5775, 1074, 21, 4836, 576, 4566, 4837, 4840, 5435, 5896, 9810, 5409, 2]
+// Dependencies: [32, 19, 17, 5942, 1074, 21, 4836, 576, 4566, 4837, 4840, 5602, 6062, 9977, 5575, 2]
 
-// Module 9809 (EmojiPickerCategoriesItem)
+// Module 9976 (EmojiPickerCategoriesItem)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
@@ -13,7 +13,7 @@ import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let EmojiCategoryTypes = fn(5775).EmojiCategoryTypes;
+let EmojiCategoryTypes = fn(5942).EmojiCategoryTypes;
 const Constants = fn(1074);
 ({ CATEGORY_ICON_RIPPLE_CONFIG: closure_7, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);
 const jsxProd = fn(21);

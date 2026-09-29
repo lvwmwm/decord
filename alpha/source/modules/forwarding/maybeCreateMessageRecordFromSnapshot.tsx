@@ -1,11 +1,11 @@
-// Module ID: 8215
-// Function ID: 8216
+// Module ID: 8380
+// Function ID: 8381
 // Name: maybeCreateMessageRecordFromSnapshot
-// Dependencies: [6720, 2]
+// Dependencies: [6886, 2]
 // Exports: default
 
-// Module 8215 (maybeCreateMessageRecordFromSnapshot)
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+// Module 8380 (maybeCreateMessageRecordFromSnapshot)
+import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forwarding/maybeCreateMessageRecordFromSnapshot.tsx");

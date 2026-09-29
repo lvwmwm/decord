@@ -1,14 +1,14 @@
-// Module ID: 12638
-// Function ID: 12639
+// Module ID: 12808
+// Function ID: 12809
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2042, 21, 4836, 576, 7687, 10088, 2029, 4787, 4832, 1115, 5435, 5992, 2]
+// Dependencies: [19, 17, 2042, 21, 4836, 576, 7852, 10255, 2029, 4787, 4832, 1115, 5602, 6158, 2]
 // Exports: default
 
-// Module 12638 (UserProfileWidgetsBoardEditNotice)
+// Module 12808 (UserProfileWidgetsBoardEditNotice)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10088 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7852 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10255 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -52,8 +52,8 @@ export default function UserProfileWidgetsBoardEditNotice() {
         return markAsDismissed(constants.USER_DISMISS);
       };
       obj5.style = closure_0.closeButton;
-      obj5.children = hasOwnProperty(tmp(5992).XSmallIcon, { size: "sm" });
-      items1[2] = hasOwnProperty(tmp(5435).PressableOpacity, obj5);
+      obj5.children = hasOwnProperty(tmp(6158).XSmallIcon, { size: "sm" });
+      items1[2] = hasOwnProperty(tmp(5602).PressableOpacity, obj5);
       obj.children = items1;
       tmp3 = timestampProducer(View, obj);
     }

@@ -1,17 +1,17 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15836
+// Function ID: 15837
 // Name: MessageRequestsButton
-// Dependencies: [19, 17, 6640, 6641, 21, 4836, 504, 15662, 5281, 1115, 7363, 12830, 9338, 2]
+// Dependencies: [19, 17, 6806, 6807, 21, 4836, 504, 15837, 5447, 1115, 7528, 13000, 9505, 2]
 // Exports: default
 
-// Module 15661 (MessageRequestsButton)
+// Module 15836 (MessageRequestsButton)
 import initialize from "initialize" /* 504 */;
-import _modDef9338 from "module_9338" /* 9338 */;
-import IconActionButtonDefault from "IconActionButton" /* 12830 */;
-import _mod15662 from "module_15662" /* 15662 */;
+import _modDef9505 from "module_9505" /* 9505 */;
+import IconActionButtonDefault from "IconActionButton" /* 13000 */;
+import _mod15837 from "module_15837" /* 15837 */;
 import noop from "module_19" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6640 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6641 */;
+import MessageRequestStore from "MessageRequestStore" /* 6806 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6807 */;
 
 require = fn;
 function MessageRequestAnimation(color) {
@@ -31,7 +31,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return React5(_mod15662.MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return React5(_mod15837.MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -67,7 +67,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1115).intl;
       obj4.accessibilityLabel = intl3.string(tmp3(1115).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = React5(tmp3(5281).Button, obj4);
+      let tmp21 = React5(tmp3(5447).Button, obj4);
       let tmp16 = React5;
     } else {
       tmp16 = React5;
@@ -75,13 +75,13 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1115).intl;
       obj5.accessibilityLabel = intl2.string(tmp3(1115).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = React5(tmp3(7363).IconButton, obj5);
+      tmp21 = React5(tmp3(7528).IconButton, obj5);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(12830).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(13000).ButtonBadge, { badgePosition: "right" })];
     obj3.children = items2;
     return React6(View, obj3);
   } else {
-    const obj6 = { source: _modDef9338, IconComponent: MessageRequestAnimation, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
+    const obj6 = { source: _modDef9505, IconComponent: MessageRequestAnimation, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
     const intl = tmp3(1115).intl;
     obj6.accessibilityLabel = intl.string(tmp3(1115).t.e7GWjQ);
     let str2;

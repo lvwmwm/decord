@@ -1,13 +1,13 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11688
+// Function ID: 11689
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 8592, 2045, 2042, 4654, 2029, 504, 11520, 11525, 6806, 2]
+// Dependencies: [32, 8757, 2045, 2042, 4654, 2029, 504, 11689, 11694, 6972, 2]
 // Exports: default
 
-// Module 11519 (useAppLauncherOnboardingContent)
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11525 */;
+// Module 11688 (useAppLauncherOnboardingContent)
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11694 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8592 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8757 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
@@ -47,7 +47,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
         result = result1;
       }
       obj4.fetchesShelf = !result;
-      const activityApplications = tmp(11520).useActivityApplications(obj4);
+      const activityApplications = tmp(11689).useActivityApplications(obj4);
       let flag = false;
       for (const item10042 of activityApplications) {
         if (null != stateFromStores.getEntry(item10042.id)) {
@@ -65,6 +65,6 @@ export default function useAppLauncherOnboardingContent(channelId) {
     }
   }
   let obj2 = channelId(504);
-  let tmp7 = _slicedToArray(channelId(6806).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let tmp7 = _slicedToArray(channelId(6972).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   return { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
 };

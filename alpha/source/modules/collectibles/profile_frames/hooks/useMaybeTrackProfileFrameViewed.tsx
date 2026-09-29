@@ -1,13 +1,13 @@
-// Module ID: 7658
-// Function ID: 7659
+// Module ID: 7823
+// Function ID: 7824
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 6962, 563, 7636, 2]
+// Dependencies: [19, 7128, 563, 7801, 2]
 // Exports: default
 
-// Module 7658 (useMaybeTrackProfileFrameViewed)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7636 */;
+// Module 7823 (useMaybeTrackProfileFrameViewed)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7801 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
 import size from "module_2" /* 2 */;
 
 ({ useEffect: c2, useRef: c3 } = noop);

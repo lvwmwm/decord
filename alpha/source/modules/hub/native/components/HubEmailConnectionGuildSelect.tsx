@@ -1,19 +1,19 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12424
+// Function ID: 12425
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12233, 21, 4836, 576, 8053, 5896, 2059, 4832, 1115, 1613, 5281, 1177, 1485, 6795, 6472, 12246, 4735, 12241, 2]
+// Dependencies: [5, 32, 19, 17, 12404, 21, 4836, 576, 8218, 6062, 2059, 4832, 1115, 1613, 5447, 1177, 1485, 6961, 6638, 12417, 4735, 12412, 2]
 // Exports: default
 
-// Module 12253 (HubEmailConnectionGuildSelect)
+// Module 12424 (HubEmailConnectionGuildSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import GuildIconDefault from "GuildIcon" /* 5896 */;
-import Form from "Form" /* 8053 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import GuildIconDefault from "GuildIcon" /* 6062 */;
+import Form from "Form" /* 8218 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -75,7 +75,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12233).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12404).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);
@@ -170,7 +170,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   c3 = 2;
                   c4 = 3;
                   v3 = 1;
-                  const obj5 = { value: email(12246).sendVerificationEmail(email, true, id), done: false };
+                  const obj5 = { value: email(12417).sendVerificationEmail(email, true, id), done: false };
                   return obj5;
                 }
               } else if (1 === tmp8) {

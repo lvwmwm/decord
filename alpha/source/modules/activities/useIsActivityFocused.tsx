@@ -1,11 +1,11 @@
-// Module ID: 8838
-// Function ID: 8839
+// Module ID: 9003
+// Function ID: 9004
 // Name: useIsActivityFocused
-// Dependencies: [4852, 2044, 8805, 504, 2]
+// Dependencies: [4852, 2044, 8970, 504, 2]
 // Exports: default, isActivityFocused
 
-// Module 8838 (useIsActivityFocused)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8805 */;
+// Module 9003 (useIsActivityFocused)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8970 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 

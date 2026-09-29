@@ -1,12 +1,12 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 16119
+// Function ID: 16120
 // Name: GuildsBarPendingGuildFolder
-// Dependencies: [19, 4655, 1074, 21, 15930, 9225, 504, 15923, 4566, 4801, 5832, 1115, 15929, 12456, 2]
+// Dependencies: [19, 4655, 1074, 21, 16106, 9390, 504, 16099, 4566, 4801, 5999, 1115, 16105, 12627, 2]
 
-// Module 15943 (GuildsBarPendingGuildFolder)
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9225 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 15923 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 15930 */;
+// Module 16119 (GuildsBarPendingGuildFolder)
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9390 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16099 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16106 */;
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 
@@ -19,9 +19,9 @@ let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPend
 export default noop.memo(function GuildsBarPendingGuildFolder(id) {
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(15930);
+  let obj = id(16106);
   importDefault = usePendingFolderGuildIdsDefault();
-  const guildsBarAnimatedWrapperStyles = id(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
+  const guildsBarAnimatedWrapperStyles = id(16106).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [SelectedGuildStore];
   const items1 = [id];
   const stateFromStores = id(504).useStateFromStores(items, () => {
@@ -55,10 +55,10 @@ export default noop.memo(function GuildsBarPendingGuildFolder(id) {
     onPress() {
       const result = id(4801).triggerHapticFeedback(id(4801).HapticFeedbackTypes.IMPACT_LIGHT);
       const obj = id(4801);
-      const result1 = closure_1(5832).toggleGuildFolderExpand(closure_1_0);
+      const result1 = closure_1(5999).toggleGuildFolderExpand(closure_1_0);
     }
   }), items2);
-  const obj4 = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "apply", config: "<string:4076863906>", externalChildren: "<string:2113929792>", children: "<string:33554987>" };
+  const obj4 = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "channel", config: null, externalChildren: null, children: null };
   const obj3 = id(4566);
   obj4.id = "" + id;
   obj4.accessibilityActions = accessibilityActions;
@@ -72,9 +72,9 @@ export default noop.memo(function GuildsBarPendingGuildFolder(id) {
   let tmp8Result = null;
   if (expanded) {
     const obj5 = { folderId: id, totalItems: childNodes.length };
-    tmp8Result = tmp8(tmp(15929).GuildsBarGuildFolderBG, obj5);
+    tmp8Result = tmp8(tmp(16105).GuildsBarGuildFolderBG, obj5);
   }
   obj4.externalChildren = tmp8Result;
-  obj4.children = jsx(id(12456).HourglassIcon, {});
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "apply", config: "<string:4076863906>", externalChildren: "<string:2113929792>", children: "<string:33554987>" });
+  obj4.children = jsx(id(12627).HourglassIcon, {});
+  return jsx(GuildsBarAnimatedItemWrapperDefault, { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "channel", config: null, externalChildren: null, children: null });
 });

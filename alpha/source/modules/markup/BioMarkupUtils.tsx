@@ -1,16 +1,16 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8887
+// Function ID: 8888
 // Name: BioMarkupUtils
-// Dependencies: [5303, 5304, 4824, 1439, 7429, 4823, 1930, 12, 2]
+// Dependencies: [5469, 5470, 4824, 1439, 7594, 4823, 1930, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 8722 (BioMarkupUtils)
+// Module 8887 (BioMarkupUtils)
 import privDefault from "priv" /* 1439 */;
 import _modDef1930 from "module_1930" /* 1930 */;
 import MarkupReactRulesDefault from "MarkupReactRules" /* 4824 */;
-import MarkupRulesDefault from "MarkupRules" /* 5304 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5303 */;
-import MarkupParser_mod from "MarkupParser" /* 7429 */;
+import MarkupRulesDefault from "MarkupRules" /* 5470 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5469 */;
+import MarkupParser_mod from "MarkupParser" /* 7594 */;
 import MarkupUtils from "MarkupUtils" /* 4823 */;
 import apply from "module_12" /* 12 */;
 

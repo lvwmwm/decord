@@ -1,10 +1,10 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13483
+// Function ID: 13484
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1115, 13315, 13316, 4566, 4837, 13317, 13318, 13319, 13320, 5919, 5394, 4832, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1115, 13484, 13485, 4566, 4837, 13486, 13487, 13488, 13489, 6085, 5560, 4832, 2]
 // Exports: default
 
-// Module 13314 (NUFChannelIllustration)
+// Module 13483 (NUFChannelIllustration)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
@@ -55,7 +55,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1115).intl;
       obj.name = intl2.string(closure_1_0(1115).t["9m/HsX"]);
-      obj.avatar = closure_1_1(13315);
+      obj.avatar = closure_1_1(13484);
       obj.message = intl.string(closure_1_0(1115).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -66,7 +66,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1115).intl;
       obj.name = intl2.string(closure_1_0(1115).t["AW1kM+"]);
-      obj.avatar = closure_1_1(13316);
+      obj.avatar = closure_1_1(13485);
       obj.message = intl.string(closure_1_0(1115).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -102,22 +102,22 @@ export default function NUFChannelIllustration() {
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { source: null, style: null };
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  obj6.source = first(13317);
+  obj6.source = first(13486);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj6.style = items2;
   const items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(13318), style: null };
+  const obj7 = { source: first(13487), style: null };
   const items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   obj7.style = items4;
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(13319), style: null };
+  const obj8 = { source: first(13488), style: null };
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   obj8.style = items5;
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(13320), style: null };
+  const obj9 = { source: first(13489), style: null };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   obj9.style = items6;

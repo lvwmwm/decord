@@ -1,11 +1,11 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9540
+// Function ID: 9541
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 2045, 1074, 504, 4474, 7846, 2]
+// Dependencies: [32, 19, 2045, 1074, 504, 4474, 8011, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 9373 (useRequestToSpeakPermission)
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
+// Module 9540 (useRequestToSpeakPermission)
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8011 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

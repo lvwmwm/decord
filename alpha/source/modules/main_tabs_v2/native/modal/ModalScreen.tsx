@@ -1,13 +1,13 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16882
+// Function ID: 16883
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1074, 21, 4836, 576, 5039, 8230, 1249, 6895, 1613, 16695, 1364, 16292, 2]
+// Dependencies: [109, 19, 17, 1074, 21, 4836, 576, 5039, 8395, 1249, 7061, 1613, 16883, 1364, 16472, 2]
 // Exports: default
 
-// Module 16694 (modal/ModalScreen)
+// Module 16882 (modal/ModalScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8395 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -64,7 +64,7 @@ export default function Modal(route) {
     }
     return currentResult;
   }, []);
-  const layoutEffect = obj2.useLayoutEffect(() => modal(6895).trackAppUIViewed("ModalScreen"), []);
+  const layoutEffect = obj2.useLayoutEffect(() => modal(7061).trackAppUIViewed("ModalScreen"), []);
   ({ left, right } = useSafeAreaInsetsDefault());
   const tmp13 = useSafeAreaInsetsDefault();
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -91,10 +91,10 @@ export default function Modal(route) {
   const items2 = [<modal.modal />, ];
   const tmp14 = closure_10;
   const tmp15 = closure_6;
-  tmp7Result = modal(16695);
+  tmp7Result = modal(16883);
   let isIOSResult = modal(1364).isIOS();
   if (isIOSResult) {
-    isIOSResult = closure_9(tmp7(16292).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = closure_9(tmp7(16472).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj4.children = items2;

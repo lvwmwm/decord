@@ -1,10 +1,10 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 7162
+// Function ID: 7163
 // Name: FeedBlockRecord
-// Dependencies: [6992, 2]
+// Dependencies: [7158, 2]
 
-// Module 6996 (FeedBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 6992 */;
+// Module 7162 (FeedBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7158 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function FeedBlockRecord(arg0) {

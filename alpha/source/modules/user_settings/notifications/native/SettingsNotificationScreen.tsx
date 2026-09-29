@@ -1,18 +1,18 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15206
+// Function ID: 15207
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15032, 7417, 21, 4836, 576, 6401, 11904, 15033, 15034, 4832, 1115, 5919, 6028, 11006, 15035, 15036, 14247, 2]
+// Dependencies: [19, 17, 15207, 7582, 21, 4836, 576, 6567, 12075, 15208, 15209, 4832, 1115, 6085, 6194, 11175, 15210, 15211, 14423, 2]
 
-// Module 15031 (SettingsNotificationScreen)
+// Module 15206 (SettingsNotificationScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
-import SettingLayoutDefault from "SettingLayout" /* 14247 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15033 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15034 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15035 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6567 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12075 */;
+import SettingLayoutDefault from "SettingLayout" /* 14423 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15208 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15209 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15210 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ function SystemNotificationsSubLabel() {
     const obj7 = { border: "none", shadow: "none", children: null };
     const obj8 = { style: tmp.cardContent, children: null };
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const items1 = [React5(tmp2(6028).CircleErrorIcon, obj9), ];
+    const items1 = [React5(tmp2(6194).CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: null };
     const obj11 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1115).intl;
@@ -50,15 +50,15 @@ function SystemNotificationsSubLabel() {
     items1[1] = React5(View, obj10);
     obj8.children = items1;
     obj7.children = tmp8(View, obj8);
-    obj6.children = React5(tmp2(5919).Card, obj7);
+    obj6.children = React5(tmp2(6085).Card, obj7);
     showReactivationPrompt = React5(View, obj6);
   }
   children[1] = showReactivationPrompt;
   return React6(React7, { children });
 }
 const View = fn(17).View;
-let closure_5 = fn(15032).initializeAndroidNotificationSettingsStore;
-const MobileUserSettings = fn(7417).MobileUserSettings;
+let closure_5 = fn(15207).initializeAndroidNotificationSettingsStore;
+const MobileUserSettings = fn(7582).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4836);

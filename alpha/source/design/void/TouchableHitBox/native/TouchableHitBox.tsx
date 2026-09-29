@@ -1,12 +1,12 @@
-// Module ID: 9203
-// Function ID: 9204
+// Module ID: 9368
+// Function ID: 9369
 // Name: TouchableHitBox
-// Dependencies: [19, 17, 21, 4836, 576, 4540, 1177, 5435, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4540, 1177, 5602, 2]
 
-// Module 9203 (TouchableHitBox)
+// Module 9368 (TouchableHitBox)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5435 */;
+import Pressables from "Pressables" /* 5602 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

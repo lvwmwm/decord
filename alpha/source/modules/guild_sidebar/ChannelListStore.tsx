@@ -1,25 +1,25 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 7111
+// Function ID: 7112
 // Name: ChannelListStore
-// Dependencies: [2044, 2100, 6946, 5818, 4471, 1220, 502, 6538, 2045, 6947, 4469, 4851, 2099, 5017, 1084, 6948, 12, 1370, 4458, 11, 504, 573, 2]
+// Dependencies: [2044, 2100, 7112, 5985, 4471, 1220, 502, 6704, 2045, 7113, 4469, 4851, 2099, 5017, 1084, 7114, 12, 1370, 4458, 11, 504, 573, 2]
 
-// Module 6945 (ChannelListStore)
+// Module 7111 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
-import ChannelListStateDefault from "ChannelListState" /* 6948 */;
+import ChannelListStateDefault from "ChannelListState" /* 7114 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5818 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7112 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5985 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6538 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6704 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 6947 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7113 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;

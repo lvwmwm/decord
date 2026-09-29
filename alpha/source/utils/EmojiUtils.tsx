@@ -1,7 +1,7 @@
 // Module ID: 4487
 // Function ID: 4488
 // Name: EmojiUtils
-// Dependencies: [5, 2049, 4469, 1372, 1074, 1375, 4486, 4488, 5776, 4461, 7202, 1476, 1397, 2]
+// Dependencies: [5, 2049, 4469, 1372, 1074, 1375, 4486, 4488, 5943, 4461, 7367, 1476, 1397, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
 // Module 4487 (EmojiUtils)
@@ -9,7 +9,7 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ImageUtils from "ImageUtils" /* 1476 */;
 import EmojiTypes from "EmojiTypes" /* 4486 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7202 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7367 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -113,14 +113,14 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
                   if (!tmp3Result4.isPurchasableRoleSubscriptionEmoji(emoji)) {
                     PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                   }
-                  tmp3Result4 = tmp3(5776);
+                  tmp3Result4 = tmp3(5943);
                 }
                 obj3 = PremiumUtilsDefault;
               }
             }
             return PREMIUM_LOCKED;
           }
-          tmp3Result = tmp3(5776);
+          tmp3Result = tmp3(5943);
         }
       }
     }

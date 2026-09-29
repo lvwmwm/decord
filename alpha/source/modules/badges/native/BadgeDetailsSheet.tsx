@@ -1,22 +1,22 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10832
+// Function ID: 10833
 // Name: BadgeDetailsSheet
-// Dependencies: [19, 17, 4825, 1372, 7637, 1074, 6572, 21, 4836, 576, 4787, 4832, 504, 10664, 10665, 10666, 10659, 10667, 2011, 1376, 10668, 10677, 10765, 4800, 10662, 10655, 6800, 1115, 10766, 10767, 5281, 10768, 1613, 7642, 10660, 6571, 6045, 2]
+// Dependencies: [19, 17, 4825, 1372, 7802, 1074, 6738, 21, 4836, 576, 4787, 4832, 504, 10833, 10834, 10835, 10828, 10836, 2011, 1376, 10837, 10846, 10934, 4800, 10831, 10824, 6966, 1115, 10935, 10936, 5447, 10937, 1613, 7807, 10829, 6737, 6211, 2]
 // Exports: default
 
-// Module 10663 (BadgeDetailsSheet)
+// Module 10832 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 576 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10655 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10662 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 10765 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7807 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10824 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10831 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 10934 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7802 */;
 
 require = fn;
 function BadgeAccessoryLine(segments) {
@@ -320,7 +320,7 @@ function BadgeDetailsSheetContent(badge) {
 get_ActivityIndicator = fn(17);
 ({ Platform, View: closure_4 } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-let closure_9 = fn(6572).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_9 = fn(6738).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 const createStyles = fn(4836);

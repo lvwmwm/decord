@@ -1,9 +1,66 @@
 // Module ID: 10412
 // Function ID: 10413
-// Dependencies: [1121]
+// Dependencies: [19]
+// Exports: useAutoPlay
 
 // Module 10412
-import registerAsset from "module_1121" /* 1121 */;
+import noop from "module_19" /* 19 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 256, height: 128, scales: [2, 3], hash: "fe7e2c7efcbe72663147a76476794c5c", name: "img_invite_empty_dark", type: "png" });
+export const useAutoPlay = function useAutoPlay(autoPlay) {
+  autoPlay = autoPlay.autoPlay;
+  closure_0 = tmp;
+  const autoPlayReverse = autoPlay.autoPlayReverse;
+  closure_1 = tmp2;
+  const autoPlayInterval = autoPlay.autoPlayInterval;
+  const prev = iter.prev;
+  const next = iter.next;
+  noop.useRef();
+  noop.useRef(!(undefined !== autoPlay && autoPlay));
+  const items = [undefined !== autoPlayReverse && autoPlayReverse, autoPlayInterval, prev, next];
+  const callback = noop.useCallback(() => {
+    if (!ref2.current) {
+      if (ref.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp.current);
+      }
+      const _setTimeout = setTimeout;
+      ref.current = setTimeout(() => {
+        if (closure_1_1) {
+          const obj2 = { onFinished };
+          prev(obj2);
+        } else {
+          const obj = { onFinished };
+          next(obj);
+        }
+      }, autoPlayInterval);
+    }
+  }, items);
+  const items1 = [undefined !== autoPlay && autoPlay];
+  const pause = noop.useCallback(() => {
+    if (closure_0) {
+      if (ref.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp.current);
+      }
+      closure_6.current = true;
+    }
+  }, items1);
+  const items2 = [callback, undefined !== autoPlay && autoPlay];
+  const start = noop.useCallback(() => {
+    if (closure_0) {
+      closure_6.current = false;
+      callback();
+    }
+  }, items2);
+  const items3 = [pause, start, undefined !== autoPlay && autoPlay];
+  const effect = noop.useEffect(() => {
+    if (closure_0) {
+      start();
+    } else {
+      pause();
+    }
+    return pause;
+  }, items3);
+  return { pause, start };
+};

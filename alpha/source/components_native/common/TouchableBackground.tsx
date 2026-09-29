@@ -1,10 +1,10 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 12040
+// Function ID: 12041
 // Name: TouchableBackground
 // Dependencies: [32, 19, 17, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 11869 (TouchableBackground)
+// Module 12040 (TouchableBackground)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

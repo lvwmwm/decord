@@ -1,10 +1,10 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 17080
+// Function ID: 17081
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4825, 1182, 16885, 6572, 1479, 504, 4685, 2026, 6756, 2]
+// Dependencies: [5, 19, 4825, 1182, 17072, 6738, 1479, 504, 4685, 2026, 6922, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16893 (SoundboardHooks)
+// Module 17080 (SoundboardHooks)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -12,9 +12,9 @@ import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = fn;
-const SoundboardStyleConstants = fn(16885);
+const SoundboardStyleConstants = fn(17072);
 ({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SoundboardStyleConstants);
-const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6738).ACTION_SHEET_MAX_WIDTH;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
@@ -58,7 +58,7 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
               const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
               c1 = 1;
               c0 = 1;
-              const obj5 = { value: shouldFetch(6756).maybeFetchSoundboardSounds(), done: false };
+              const obj5 = { value: shouldFetch(6922).maybeFetchSoundboardSounds(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {

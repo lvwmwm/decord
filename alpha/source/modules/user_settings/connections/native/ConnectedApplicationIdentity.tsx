@@ -1,25 +1,25 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14673
+// Function ID: 14674
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4836, 14499, 1115, 1177, 4832, 9254, 5203, 14477, 5300, 1397, 5283, 8488, 7363, 9184, 5918, 5917, 6621, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 14674, 1115, 1177, 4832, 9421, 5369, 14652, 5466, 1397, 5449, 8653, 7528, 9349, 6084, 6083, 6787, 2]
 // Exports: default
 
-// Module 14498 (ConnectedApplicationIdentity)
+// Module 14673 (ConnectedApplicationIdentity)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import Icon from "Icon" /* 5283 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
-import InfoBoxDefault from "InfoBox" /* 9254 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import Icon from "Icon" /* 5449 */;
+import common_AlertDefault from "common/Alert" /* 5466 */;
+import InfoBoxDefault from "InfoBox" /* 9421 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const IconDefault = tmp(5283);
+const IconDefault = tmp(5449);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);

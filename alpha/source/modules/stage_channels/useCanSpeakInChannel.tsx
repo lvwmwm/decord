@@ -1,10 +1,10 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 9026
+// Function ID: 9027
 // Name: useCanSpeakInChannel
 // Dependencies: [502, 504, 4983, 2]
 // Exports: default
 
-// Module 8861 (useCanSpeakInChannel)
+// Module 9026 (useCanSpeakInChannel)
 import initialize from "initialize" /* 504 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

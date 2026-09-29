@@ -1,10 +1,10 @@
-// Module ID: 8963
-// Function ID: 8964
+// Module ID: 9128
+// Function ID: 9129
 // Name: VoicePanelUtils
 // Dependencies: [2045, 4859, 5044, 563, 2]
 // Exports: useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 8963 (VoicePanelUtils)
+// Module 9128 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;

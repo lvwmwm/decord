@@ -1,17 +1,17 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12988
+// Function ID: 12989
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1074, 7868, 4421, 1115, 7388, 8049, 2]
+// Dependencies: [17, 1074, 8033, 4421, 1115, 7553, 8214, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12818 (SafetyPolicyNoticeEmbed)
+// Module 12988 (SafetyPolicyNoticeEmbed)
 import _mod17 from "module_17" /* 17 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7388 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7868 */;
-import _modDef8049 from "module_8049" /* 8049 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7553 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8033 */;
+import _modDef8214 from "module_8214" /* 8214 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -59,7 +59,7 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             const obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, ctaText: null, classificationId: null };
             const intl = util.intl;
             obj.titleText = intl.string(util.t["4CxGXi"]);
-            obj.titleIcon = renderer_EmbedUtils.getAssetUriForEmbed(Image.resolveAssetSource(_modDef8049));
+            obj.titleIcon = renderer_EmbedUtils.getAssetUriForEmbed(Image.resolveAssetSource(_modDef8214));
             const intl2 = util.intl;
             const obj3 = { daysAgo: null };
             const obj4 = _modDef4421();

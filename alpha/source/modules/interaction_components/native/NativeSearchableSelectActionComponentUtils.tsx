@@ -1,15 +1,15 @@
-// Module ID: 7579
-// Function ID: 7580
+// Module ID: 7744
+// Function ID: 7745
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [2045, 2102, 2067, 1372, 1074, 5067, 1370, 1400, 6608, 7580, 1092, 576, 7581, 5335, 2]
+// Dependencies: [2045, 2102, 2067, 1372, 1074, 5067, 1370, 1400, 6774, 7745, 1092, 576, 7746, 5501, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 7579 (NativeSearchableSelectActionComponentUtils)
+// Module 7744 (NativeSearchableSelectActionComponentUtils)
 import nativeDefault from "native" /* 576 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5067 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import _modDef7580 from "module_7580" /* 7580 */;
-import _modDef7581 from "module_7581" /* 7581 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
+import _modDef7745 from "module_7745" /* 7745 */;
+import _modDef7746 from "module_7746" /* 7746 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -50,13 +50,13 @@ export const transformSearchableSelectOptions = function transformSearchableSele
         if (null != tmp14) {
           let roleIconData = null;
           if (tmpResult7.canGuildUseRoleIcons(tmp14, role)) {
-            roleIconData = tmp(6608).getRoleIconData(role);
-            const tmpResult8 = tmp(6608);
+            roleIconData = tmp(6774).getRoleIconData(role);
+            const tmpResult8 = tmp(6774);
           }
           if (null == roleIconData) {
             const obj2 = {};
             const merged1 = Object.assign(type);
-            obj2.iconSrc = tmp(1400).ensureAvatarSource(_modDef7580).uri;
+            obj2.iconSrc = tmp(1400).ensureAvatarSource(_modDef7745).uri;
             if (null != role.colorString) {
               let hex2intResult = tmp(1092).hex2int(role.colorString);
               const tmpResult10 = tmp(1092);
@@ -82,7 +82,7 @@ export const transformSearchableSelectOptions = function transformSearchableSele
               tmp18 = obj5;
             }
           }
-          tmpResult7 = tmp(6608);
+          tmpResult7 = tmp(6774);
         }
       }
       return tmp18;
@@ -96,10 +96,10 @@ export const transformSearchableSelectOptions = function transformSearchableSele
         let tmpResult11 = tmp(1400);
         let hex2int = tmpResult11.ensureAvatarSource;
         if (channel.type === constants.GUILD_CATEGORY) {
-          let channelIconWithGuild = _modDef7581;
+          let channelIconWithGuild = _modDef7746;
         } else {
-          channelIconWithGuild = tmp(5335).getChannelIconWithGuild(channel, tmp4);
-          const tmpResult12 = tmp(5335);
+          channelIconWithGuild = tmp(5501).getChannelIconWithGuild(channel, tmp4);
+          const tmpResult12 = tmp(5501);
         }
         obj6.iconSrc = hex2int(channelIconWithGuild).uri;
         tmpResult11 = tmp(1092);
@@ -115,7 +115,7 @@ export const transformSearchableSelectOptions = function transformSearchableSele
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = _modDef7581;
+    let channelIconWithGuild = _modDef7746;
   } else {
     channelIconWithGuild = utils_ChannelUtils.getChannelIconWithGuild(channel, guild);
   }

@@ -1,12 +1,12 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10496
+// Function ID: 10497
 // Name: useFastestListTableRowPlaceholderConfig
-// Dependencies: [19, 4836, 576, 1177, 5753, 6483, 2]
+// Dependencies: [19, 4836, 576, 1177, 5920, 6649, 2]
 // Exports: default
 
-// Module 10327 (useFastestListTableRowPlaceholderConfig)
+// Module 10496 (useFastestListTableRowPlaceholderConfig)
 import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6483 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6649 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ obj2.placeholderAvatar = size;
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 obj2.placeholderUsername = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const obj4 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-obj2.placeholderDivider = { backgroundColor: fn(5753).DIVIDER_BACKGROUND };
+obj2.placeholderDivider = { backgroundColor: fn(5920).DIVIDER_BACKGROUND };
 const styles = createStyles.createStyles(obj2);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx");

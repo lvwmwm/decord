@@ -1,16 +1,16 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 7774
+// Function ID: 7775
 // Name: UserProfileSettingsActionCreators
-// Dependencies: [2108, 1372, 7035, 4955, 7610, 573, 2]
+// Dependencies: [2108, 1372, 7200, 4955, 7775, 573, 2]
 // Exports: setPendingChanges
 
-// Module 7609 (UserProfileSettingsActionCreators)
+// Module 7774 (UserProfileSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef4955 from "module_4955" /* 4955 */;
-import GuildTagUtils from "GuildTagUtils" /* 7610 */;
+import GuildTagUtils from "GuildTagUtils" /* 7775 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
+import UserProfileStore from "UserProfileStore" /* 7200 */;
 
 require = fn;
 const size = fn(2);

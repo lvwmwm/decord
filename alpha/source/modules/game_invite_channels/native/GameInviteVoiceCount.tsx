@@ -1,10 +1,10 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11677
+// Function ID: 11678
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 4860, 21, 4836, 504, 5415, 576, 4832, 2]
+// Dependencies: [19, 17, 4860, 21, 4836, 504, 5581, 576, 4832, 2]
 // Exports: default
 
-// Module 11508 (GameInviteVoiceCount)
+// Module 11677 (GameInviteVoiceCount)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
@@ -28,7 +28,7 @@ export default function GameInviteVoiceCount(channel) {
   if (0 !== stateFromStores) {
     const obj2 = { style: tmp.container, children: null };
     const obj3 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const items2 = [closure_5(tmp2(5415).VoiceNormalIcon, obj3), ];
+    const items2 = [closure_5(tmp2(5581).VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
     items2[1] = closure_5(tmp2(4832).Text, obj4);
     obj2.children = items2;

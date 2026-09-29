@@ -1,13 +1,13 @@
-// Module ID: 14232
-// Function ID: 14233
+// Module ID: 14408
+// Function ID: 14409
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 21, 4836, 576, 1485, 5936, 8053, 1115, 1177, 5281, 6014, 4528, 10115, 4792, 2]
+// Dependencies: [32, 19, 21, 4836, 576, 1485, 6102, 8218, 1115, 1177, 5447, 6180, 4528, 10282, 4792, 2]
 // Exports: default
 
-// Module 14232 (WebAuthnEditStep)
+// Module 14408 (WebAuthnEditStep)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6014 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6180 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,7 +51,7 @@ export default function EditCredentialModal(credential) {
   obj3.placeholder = credential.name;
   obj3.disabled = tmp6;
   obj3.clearButtonVisibility = credential(1177).ClearButtonVisibility.WITH_CONTENT;
-  const items1 = [closure_5(credential(8053).FormInput, obj3), closure_5(credential(8053).FormDivider, {}), ];
+  const items1 = [closure_5(credential(8218).FormInput, obj3), closure_5(credential(8218).FormDivider, {}), ];
   const obj4 = {
     onPress() {
       _undefined(true);
@@ -61,7 +61,7 @@ export default function EditCredentialModal(credential) {
         const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
         const intl = credential(1115).intl;
         obj2.content = intl.string(credential(1115).t.IV13mH);
-        obj2.icon = navigation(10115);
+        obj2.icon = navigation(10282);
         obj2.IconComponent = credential(4792).CircleCheckIcon;
         navigation(4528).open(obj2);
         closure_1_1.popToTop();
@@ -70,7 +70,7 @@ export default function EditCredentialModal(credential) {
         const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
         const intl = credential(1115).intl;
         obj2.content = intl.string(credential(1115).t.IV13mH);
-        obj2.icon = navigation(10115);
+        obj2.icon = navigation(10282);
         obj2.IconComponent = credential(4792).CircleCheckIcon;
         navigation(4528).open(obj2);
         closure_1_1.popToTop();
@@ -94,7 +94,7 @@ export default function EditCredentialModal(credential) {
   obj4.loading = tmp6;
   const intl2 = tmp2(1115).intl;
   obj4.text = intl2.string(credential(1115).t["7asiR3"]);
-  items1[2] = closure_5(credential(5281).Button, obj4);
+  items1[2] = closure_5(credential(5447).Button, obj4);
   obj2.children = items1;
-  return closure_6(credential(8053).Form, obj2);
+  return closure_6(credential(8218).Form, obj2);
 };

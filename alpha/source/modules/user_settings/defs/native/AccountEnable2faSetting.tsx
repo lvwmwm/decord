@@ -1,23 +1,23 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14489
+// Function ID: 14490
 // Name: AccountEnable2faSetting
-// Dependencies: [1372, 7417, 14242, 14315, 5203, 1115, 11006, 2]
+// Dependencies: [1372, 7582, 14418, 14490, 5369, 1115, 11175, 2]
 
-// Module 14314 (AccountEnable2faSetting)
+// Module 14489 (AccountEnable2faSetting)
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14315 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14418 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14490 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SettingBuilders = fn(11006);
+const SettingBuilders = fn(11175);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.cDgKte);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: fn(7582).MobileUserSettings.ACCOUNT,
   onPress: function onAccountEnable2FASettingPress() {
     const currentUser = UserStore.getCurrentUser();
     let verified;

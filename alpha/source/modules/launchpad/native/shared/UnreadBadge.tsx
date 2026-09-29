@@ -1,19 +1,19 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 16995
+// Function ID: 16996
 // Name: UnreadBadge
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 16479, 5288, 7294, 2]
+// Dependencies: [19, 17, 9744, 5018, 21, 4836, 16667, 5454, 7459, 2]
 
-// Module 16808 (UnreadBadge)
-import useFontScale from "useFontScale" /* 5288 */;
-import Badge from "Badge" /* 7294 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
+// Module 16995 (UnreadBadge)
+import useFontScale from "useFontScale" /* 5454 */;
+import Badge from "Badge" /* 7459 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16667 */;
 import noop from "module_19" /* 19 */;
 
 const BadgeDefault = Badge;
 
 require = fn;
 const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(9577).MUTED_OPACITY_CONTENT;
+const MUTED_OPACITY_CONTENT = fn(9744).MUTED_OPACITY_CONTENT;
 const UnreadSetting = fn(5018).UnreadSetting;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);

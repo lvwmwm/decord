@@ -1,11 +1,11 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8357
+// Function ID: 8358
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4836, 8139, 1115, 4832, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 8304, 1115, 4832, 2]
 // Exports: default
 
-// Module 8192 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
+// Module 8357 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8304 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

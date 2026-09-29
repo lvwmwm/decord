@@ -1,13 +1,13 @@
-// Module ID: 15664
-// Function ID: 15665
+// Module ID: 15839
+// Function ID: 15840
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4876, 4851, 4479, 2099, 5017, 1372, 1074, 21, 4836, 576, 504, 15665, 7662, 1364, 4849, 4847, 10374, 5435, 9060, 8281, 15666, 7304, 8277, 15667, 7705, 15668, 2]
+// Dependencies: [19, 17, 4876, 4851, 4479, 2099, 5017, 1372, 1074, 21, 4836, 576, 504, 15840, 7827, 1364, 4849, 4847, 10543, 5602, 9225, 8446, 15841, 7469, 8442, 15842, 7870, 15843, 2]
 
-// Module 15664 (MessagesItemChannelBase)
+// Module 15839 (MessagesItemChannelBase)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10543 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
@@ -75,7 +75,7 @@ export default noop.memo(function MessagesItemChannelBase(channel) {
       const obj2 = { status: PresenceStore.getStatus(obj.getRecipientId()), activities };
       let obj3 = obj2;
     } else {
-      obj3 = { status: "Array", activities: "paddingHorizontal" };
+      obj3 = { status: "current", activities: "channel" };
     }
     return obj3;
   });

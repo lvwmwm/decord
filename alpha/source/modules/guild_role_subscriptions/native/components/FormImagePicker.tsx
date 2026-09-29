@@ -1,15 +1,15 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17747
+// Function ID: 17748
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 4836, 576, 5450, 1432, 9203, 1115, 5899, 17559, 9713, 4832, 5281, 2]
+// Dependencies: [5, 19, 17, 21, 4836, 576, 5617, 1432, 9368, 1115, 6065, 17748, 9880, 4832, 5447, 2]
 // Exports: default
 
-// Module 17558 (FormImagePicker)
+// Module 17747 (FormImagePicker)
 import nativeDefault from "native" /* 576 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5450 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5617 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9368 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -220,7 +220,7 @@ export default function FormImagePicker(children) {
   const obj2 = { style: tmp2.buttonColumn, children: null };
   const items = [
     closure_6(tmp6(4832).Text, { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description }),
-    closure_6(tmp6(5281).Button, {
+    closure_6(tmp6(5447).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

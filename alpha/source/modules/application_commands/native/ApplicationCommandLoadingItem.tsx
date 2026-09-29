@@ -1,17 +1,17 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 12063
+// Function ID: 12064
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 9726, 21, 4836, 576, 5288, 2]
+// Dependencies: [19, 17, 9893, 21, 4836, 576, 5454, 2]
 // Exports: default
 
-// Module 11892 (ApplicationCommandLoadingItem)
+// Module 12063 (ApplicationCommandLoadingItem)
 import nativeDefault from "native" /* 576 */;
-import useFontScale from "useFontScale" /* 5288 */;
+import useFontScale from "useFontScale" /* 5454 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(9726).AUTOCOMPLETE_ROW_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(9893).AUTOCOMPLETE_ROW_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = 16;

@@ -1,14 +1,14 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10937
+// Function ID: 10938
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 10659, 10766, 5409, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 10828, 10935, 5575, 2]
 // Exports: default
 
-// Module 10768 (BadgeTierGrid)
+// Module 10937 (BadgeTierGrid)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import BadgeUtils from "BadgeUtils" /* 10659 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10766 */;
+import BadgeUtils from "BadgeUtils" /* 10828 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -105,7 +105,7 @@ export default function BadgeTierGrid(badge) {
       let tmp15 = !owned;
       if (!owned) {
         const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-        tmp15 = React4(tmp2(5409).LockIcon, obj7);
+        tmp15 = React4(tmp2(5575).LockIcon, obj7);
       }
       const items3 = [tmp15, ];
       let str2 = "text-muted";

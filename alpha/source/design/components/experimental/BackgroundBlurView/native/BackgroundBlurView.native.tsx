@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8221
+// Function ID: 8222
 // Name: BackgroundBlurView
-// Dependencies: [19, 17, 21, 4836, 8057, 2]
+// Dependencies: [19, 17, 21, 4836, 8222, 2]
 
-// Module 8056 (BackgroundBlurView)
-import BackgroundBlurFill from "BackgroundBlurFill" /* 8057 */;
+// Module 8221 (BackgroundBlurView)
+import BackgroundBlurFill from "BackgroundBlurFill" /* 8222 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

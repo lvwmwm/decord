@@ -1,15 +1,15 @@
-// Module ID: 8911
-// Function ID: 8912
+// Module ID: 9076
+// Function ID: 9077
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2044, 1372, 1074, 1181, 2005, 21, 1177, 4836, 576, 504, 1370, 6589, 4988, 4678, 8912, 6583, 6603, 8895, 1115, 8825, 8826, 8914, 8824, 5435, 8915, 8932, 4832, 5282, 4540, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 1372, 1074, 1181, 2005, 21, 1177, 4836, 576, 504, 1370, 6755, 4988, 4678, 9077, 6749, 6769, 9060, 1115, 8990, 8991, 9079, 8989, 5602, 9080, 9097, 4832, 5448, 4540, 2]
 // Exports: default
 
-// Module 8911 (ActivityTile)
+// Module 9076 (ActivityTile)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import native2 from "native" /* 4540 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 8824 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 8989 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -68,7 +68,7 @@ function ActivityTileInner(participant) {
               const obj4 = { applicationId: tmp23.applicationId, activityChannelId: id.id, locationObject: _location.location, analyticsLocations };
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: v1(8826)(obj4), done: false };
+              const obj5 = { value: v1(8991)(obj4), done: false };
               return obj5;
             } else {
               dependencyMap = 3;
@@ -79,8 +79,8 @@ function ActivityTileInner(participant) {
           dependencyMap = 3;
           throw value;
         } else if (arg0 !== 2) {
-          const result = tmp2(8914).setOrientationLockState(closure_128_3);
-          const obj = tmp2(8914);
+          const result = tmp2(9079).setOrientationLockState(closure_128_3);
+          const obj = tmp2(9079);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };

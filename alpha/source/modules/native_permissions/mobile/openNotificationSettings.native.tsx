@@ -1,11 +1,11 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8914
+// Function ID: 8915
 // Name: openNotificationSettings
-// Dependencies: [5460, 2]
+// Dependencies: [5627, 2]
 // Exports: default
 
-// Module 8749 (openNotificationSettings)
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5460 */;
+// Module 8914 (openNotificationSettings)
+import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5627 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");

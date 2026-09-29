@@ -1,25 +1,25 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17625
+// Function ID: 17626
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 6549, 1074, 21, 4836, 576, 4528, 5909, 1115, 17414, 6729, 504, 5203, 9048, 1177, 1241, 4800, 17415, 1981, 10404, 7363, 6034, 6471, 4787, 4832, 5917, 10774, 2]
+// Dependencies: [32, 19, 17, 6715, 1074, 21, 4836, 576, 4528, 6075, 1115, 17603, 6895, 504, 5369, 9213, 1177, 1241, 4800, 17604, 1981, 10573, 7528, 6200, 6637, 4787, 4832, 6083, 10943, 2]
 // Exports: default
 
-// Module 17436 (GuildSettingsRoleMembers)
+// Module 17625 (GuildSettingsRoleMembers)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import _modDef5909 from "module_5909" /* 5909 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
+import _modDef6075 from "module_6075" /* 6075 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6549 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6715 */;
 
 require = fn;
 function onMembersLoadFail() {
-  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef5909, content: null };
+  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef6075, content: null };
   const intl = util.intl;
   obj2.content = intl.string(util.t.fEptJP);
   ToastActionCreatorsDefault.open(obj2);
@@ -87,7 +87,7 @@ export default function GuildSettingsRoleMembers(guild) {
           const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
           const intl = name(1115).intl;
           obj2.content = intl.string(name(1115).t.fEptJP);
-          obj2.icon = found(5909);
+          obj2.icon = found(6075);
           found(4528).open(obj2);
         });
       };
@@ -101,7 +101,7 @@ export default function GuildSettingsRoleMembers(guild) {
   const callback1 = found.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Add Role Members", location_page: "Role Settings", location_section: "Members" });
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequireImpl(17415, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
+    obj2.openLazy(asyncRequireImpl(17604, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
   }, items3);
   closure_6 = found.useCallback((item) => {
     item = item.item;

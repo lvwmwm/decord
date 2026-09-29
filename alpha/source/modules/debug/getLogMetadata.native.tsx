@@ -1,10 +1,10 @@
-// Module ID: 9655
-// Function ID: 9656
+// Module ID: 9822
+// Function ID: 9823
 // Name: getLogMetadata
 // Dependencies: [1363, 4812, 2]
 // Exports: default
 
-// Module 9655 (getLogMetadata)
+// Module 9822 (getLogMetadata)
 import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
 import DeviceUtils from "DeviceUtils" /* 4812 */;
 import size from "module_2" /* 2 */;

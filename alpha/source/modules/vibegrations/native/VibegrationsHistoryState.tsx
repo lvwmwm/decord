@@ -1,10 +1,10 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16598
+// Function ID: 16599
 // Name: VibegrationsHistoryState
 // Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 3715, 2]
 // Exports: VibegrationsHistoryNotice, VibegrationsHistoryPlaceholder
 
-// Module 16413 (VibegrationsHistoryState)
+// Module 16598 (VibegrationsHistoryState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;

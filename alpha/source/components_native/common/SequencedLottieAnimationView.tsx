@@ -1,10 +1,10 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13334
+// Function ID: 13335
 // Name: SequencedLottieAnimationView
-// Dependencies: [109, 19, 17, 21, 5842, 2]
+// Dependencies: [109, 19, 17, 21, 6008, 2]
 
-// Module 13164 (SequencedLottieAnimationView)
-import _modDef5842 from "module_5842" /* 5842 */;
+// Module 13334 (SequencedLottieAnimationView)
+import _modDef6008 from "module_6008" /* 6008 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -80,7 +80,7 @@ prototype["render"] = function render() {
   const tmp = _objectWithoutProperties(props, closure_2);
   const merged = Object.assign(tmp);
   ({ handleSetRef: obj3.ref, handleComplete: obj3.onAnimationFinish } = this);
-  obj2.children = jsx(_modDef5842, { source, style: null });
+  obj2.children = jsx(_modDef6008, { source, style: null });
   return <View style={null}>{null}</View>;
 };
 SequencedLottieAnimationView.defaultProps = { autoPlay: true };

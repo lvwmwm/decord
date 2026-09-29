@@ -1,15 +1,15 @@
-// Module ID: 13887
-// Function ID: 13888
+// Module ID: 14056
+// Function ID: 14057
 // Name: ShareStore
-// Dependencies: [502, 2045, 2067, 2099, 4655, 1372, 1074, 1370, 7810, 1249, 1241, 504, 573, 2]
+// Dependencies: [502, 2045, 2067, 2099, 4655, 1372, 1074, 1370, 7975, 1249, 1241, 504, 573, 2]
 
-// Module 13887 (ShareStore)
+// Module 14056 (ShareStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 7810 */;
+import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 7975 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;

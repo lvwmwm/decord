@@ -1,20 +1,20 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16168
+// Function ID: 16169
 // Name: UnreadBars
-// Dependencies: [19, 17, 4825, 1074, 21, 4836, 5836, 576, 4683, 4540, 4801, 4802, 1177, 1115, 504, 11916, 2]
+// Dependencies: [19, 17, 4825, 1074, 21, 4836, 6003, 576, 4683, 4540, 4801, 4802, 1177, 1115, 504, 12087, 2]
 // Exports: default
 
-// Module 15992 (UnreadBars)
+// Module 16168 (UnreadBars)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import TransitionGroup from "TransitionGroup" /* 11916 */;
+import TransitionGroup from "TransitionGroup" /* 12087 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import TextStyles from "TextStyles" /* 6003 */;
 
 const require = globalThis.__r;
 

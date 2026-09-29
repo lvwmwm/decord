@@ -1,20 +1,20 @@
-// Module ID: 5291
-// Function ID: 5292
+// Module ID: 5457
+// Function ID: 5458
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5286, 4836, 576, 5287, 4540, 4531, 5292, 5293, 4566, 4685, 5297, 4550, 5280, 5284, 2]
+// Dependencies: [32, 19, 17, 21, 5452, 4836, 576, 5453, 4540, 4531, 5458, 5459, 4566, 4685, 5463, 4550, 5446, 5450, 2]
 // Exports: ButtonPill
 
-// Module 5291 (ButtonPill)
+// Module 5457 (ButtonPill)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import native from "native" /* 4540 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import ButtonConstants2 from "ButtonConstants" /* 5286 */;
-import ButtonHooks from "ButtonHooks" /* 5287 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import ButtonEllipsis from "ButtonEllipsis" /* 5297 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
+import ButtonConstants2 from "ButtonConstants" /* 5452 */;
+import ButtonHooks from "ButtonHooks" /* 5453 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import ButtonEllipsis from "ButtonEllipsis" /* 5463 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -37,7 +37,7 @@ function PillWrapper(expressivePressState) {
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = React5(tmp(5292).ButtonShine, obj7);
+    tmp7 = React5(tmp(5458).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
@@ -230,11 +230,11 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       if (tmp3) {
         num2 = -1 * num;
       }
-      const obj3 = { translateY: tmp(5280).withSpring(num2, tmp(5284).SUBTLE_SPRING) };
+      const obj3 = { translateY: tmp(5446).withSpring(num2, tmp(5450).SUBTLE_SPRING) };
       const items1 = [obj3];
       obj2.transform = items1;
       tmp6 = obj2;
-      const tmpResult2 = tmp(5280);
+      const tmpResult2 = tmp(5446);
     }
     return tmp6;
   };
@@ -267,11 +267,11 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       if (!tmp3) {
         num2 = num;
       }
-      const obj3 = { translateY: tmp(5280).withSpring(num2, tmp(5284).SUBTLE_SPRING) };
+      const obj3 = { translateY: tmp(5446).withSpring(num2, tmp(5450).SUBTLE_SPRING) };
       const items1 = [obj3];
       obj2.transform = items1;
       tmp5 = obj2;
-      const tmpResult2 = tmp(5280);
+      const tmpResult2 = tmp(5446);
     }
     return tmp5;
   };
@@ -287,12 +287,12 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 let c10 = 300;
-let ButtonConstants = fn(5286);
-const paddingVertical = ButtonConstants.getButtonPadding(fn(5286).SMALL_BUTTON_HEIGHT, fn(5286).SMALL_BUTTON_ICON_SIZE);
-ButtonConstants = fn(5286);
-const paddingVertical2 = ButtonConstants.getButtonPadding(fn(5286).MEDIUM_BUTTON_HEIGHT, fn(5286).MEDIUM_BUTTON_ICON_SIZE);
-ButtonConstants = fn(5286);
-const paddingVertical3 = ButtonConstants.getButtonPadding(fn(5286).LARGE_BUTTON_HEIGHT, fn(5286).LARGE_BUTTON_ICON_SIZE);
+let ButtonConstants = fn(5452);
+const paddingVertical = ButtonConstants.getButtonPadding(fn(5452).SMALL_BUTTON_HEIGHT, fn(5452).SMALL_BUTTON_ICON_SIZE);
+ButtonConstants = fn(5452);
+const paddingVertical2 = ButtonConstants.getButtonPadding(fn(5452).MEDIUM_BUTTON_HEIGHT, fn(5452).MEDIUM_BUTTON_ICON_SIZE);
+ButtonConstants = fn(5452);
+const paddingVertical3 = ButtonConstants.getButtonPadding(fn(5452).LARGE_BUTTON_HEIGHT, fn(5452).LARGE_BUTTON_ICON_SIZE);
 const createStyles = fn(4836);
 const value = createStyles.createStyles((arg0, arg1) => {
   if ("sm" === arg1) {

@@ -1,14 +1,14 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9685
+// Function ID: 9686
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 4853, 4858, 502, 2045, 2067, 4469, 4855, 1074, 21, 4836, 4683, 576, 4981, 504, 1115, 5723, 4978, 5038, 5037, 4888, 5298, 9519, 4832, 2]
+// Dependencies: [19, 17, 4853, 4858, 502, 2045, 2067, 4469, 4855, 1074, 21, 4836, 4683, 576, 4981, 504, 1115, 5890, 4978, 5038, 5037, 4888, 5464, 9686, 4832, 2]
 // Exports: default
 
-// Module 9518 (TouchableStreamPreview)
+// Module 9685 (TouchableStreamPreview)
 import nativeDefault from "native" /* 576 */;
 import StreamActionCreators from "StreamActionCreators" /* 4978 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;

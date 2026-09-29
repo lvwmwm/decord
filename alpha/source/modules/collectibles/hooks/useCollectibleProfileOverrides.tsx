@@ -1,18 +1,18 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12874
+// Function ID: 12875
 // Name: useCollectibleProfileOverrides
-// Dependencies: [19, 6967, 6968, 6969, 7616, 1974, 2]
+// Dependencies: [19, 7133, 7134, 7135, 7781, 1974, 2]
 // Exports: useCollectibleProfileOverrides
 
-// Module 12704 (useCollectibleProfileOverrides)
+// Module 12874 (useCollectibleProfileOverrides)
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import useShopProductItems from "useShopProductItems" /* 7616 */;
+import useShopProductItems from "useShopProductItems" /* 7781 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const isAvatarDecorationRecord = fn(6967).isAvatarDecorationRecord;
-const isProfileEffectRecord = fn(6968).isProfileEffectRecord;
-const isProfileFrameRecord = fn(6969).isProfileFrameRecord;
+const isAvatarDecorationRecord = fn(7133).isAvatarDecorationRecord;
+const isProfileEffectRecord = fn(7134).isProfileEffectRecord;
+const isProfileFrameRecord = fn(7135).isProfileFrameRecord;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useCollectibleProfileOverrides.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8654
+// Function ID: 8655
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 8490, 2021, 504, 1370, 8491, 2]
+// Dependencies: [19, 8655, 2021, 504, 1370, 8656, 2]
 // Exports: default
 
-// Module 8489 (useApplicationWidgetConfigs)
+// Module 8654 (useApplicationWidgetConfigs)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 8491 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 8656 */;
 import noop from "module_19" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 8490 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 8655 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FetchState = fn(8490).FetchState;
+const FetchState = fn(8655).FetchState;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetConfigs.tsx");
 

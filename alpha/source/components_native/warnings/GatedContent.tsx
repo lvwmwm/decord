@@ -1,12 +1,12 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12334
+// Function ID: 12335
 // Name: GatedContent
-// Dependencies: [19, 21, 4836, 576, 7861, 5281, 5279, 4832, 5745, 2]
+// Dependencies: [19, 21, 4836, 576, 8026, 5447, 5445, 4832, 5912, 2]
 // Exports: default
 
-// Module 12163 (GatedContent)
+// Module 12334 (GatedContent)
 import nativeDefault from "native" /* 576 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8026 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

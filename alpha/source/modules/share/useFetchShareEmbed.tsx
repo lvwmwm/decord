@@ -1,10 +1,10 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13614
+// Function ID: 13615
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1366, 11354, 1248, 2]
+// Dependencies: [5, 32, 19, 1366, 11523, 1248, 2]
 // Exports: default
 
-// Module 13445 (useFetchShareEmbed)
+// Module 13614 (useFetchShareEmbed)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -65,7 +65,7 @@ export default function useFetchShareEmbed(arg0) {
                   const items = [current];
                   c4 = 3;
                   c5 = 1;
-                  const obj10 = { value: current(11354).unfurlEmbedUrl(items), done: false };
+                  const obj10 = { value: current(11523).unfurlEmbedUrl(items), done: false };
                   return obj10;
                 } else {
                   c5 = 3;

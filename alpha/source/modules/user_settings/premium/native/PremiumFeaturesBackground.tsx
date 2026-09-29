@@ -1,17 +1,17 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 8459
+// Function ID: 8460
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 6852, 1374, 21, 4836, 576, 672, 5293, 1094, 2]
+// Dependencies: [19, 7018, 1374, 21, 4836, 576, 672, 5459, 1094, 2]
 // Exports: default
 
-// Module 8294 (PremiumFeaturesBackground)
+// Module 8459 (PremiumFeaturesBackground)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const Gradients = fn(6852).Gradients;
+const Gradients = fn(7018).Gradients;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);

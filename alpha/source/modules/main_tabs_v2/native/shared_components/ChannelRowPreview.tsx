@@ -1,28 +1,28 @@
-// Module ID: 9568
-// Function ID: 9569
+// Module ID: 9735
+// Function ID: 9736
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 4479, 21, 5401, 9569, 9366, 9571, 4775, 9573, 7305, 7307, 5288, 9575, 9553, 9580, 9578, 4832, 4767, 4836, 576, 4531, 2021, 7374, 8112, 7583, 7378, 504, 2]
+// Dependencies: [19, 17, 4479, 21, 5567, 9736, 9533, 9738, 4775, 9740, 7470, 7472, 5454, 9742, 9720, 9747, 9745, 4832, 4767, 4836, 576, 4531, 2021, 7539, 8277, 7748, 7543, 504, 2]
 
-// Module 9568 (ChannelRowPreview)
+// Module 9735 (ChannelRowPreview)
 import UserSettings from "UserSettings" /* 2021 */;
 import useToken from "useToken" /* 4531 */;
 import LinkIcon from "LinkIcon" /* 4775 */;
 import createStyles from "createStyles" /* 4836 */;
-import useFontScale from "useFontScale" /* 5288 */;
-import ImageIcon from "ImageIcon" /* 5401 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7305 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7307 */;
-import RowGeneratorDefault from "RowGenerator" /* 7374 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7378 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7583 */;
-import MusicIcon from "MusicIcon" /* 9366 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 9553 */;
-import VideoIcon from "VideoIcon" /* 9569 */;
-import AttachmentIcon from "AttachmentIcon" /* 9571 */;
-import StickerIcon from "StickerIcon" /* 9573 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 9575 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
-import ChannelListLayout from "ChannelListLayout" /* 9580 */;
+import useFontScale from "useFontScale" /* 5454 */;
+import ImageIcon from "ImageIcon" /* 5567 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7470 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7472 */;
+import RowGeneratorDefault from "RowGenerator" /* 7539 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7543 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7748 */;
+import MusicIcon from "MusicIcon" /* 9533 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 9720 */;
+import VideoIcon from "VideoIcon" /* 9736 */;
+import AttachmentIcon from "AttachmentIcon" /* 9738 */;
+import StickerIcon from "StickerIcon" /* 9740 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 9742 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9745 */;
+import ChannelListLayout from "ChannelListLayout" /* 9747 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 

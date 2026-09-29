@@ -1,10 +1,10 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7986
+// Function ID: 7987
 // Name: MaskedLinkStoreMethodsAdditional
 // Dependencies: [2]
 // Exports: getHostname, getProtocol
 
-// Module 7821 (MaskedLinkStoreMethodsAdditional)
+// Module 7986 (MaskedLinkStoreMethodsAdditional)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("stores/MaskedLinkStoreMethodsAdditional.native.tsx");

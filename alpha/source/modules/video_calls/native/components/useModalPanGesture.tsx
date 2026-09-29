@@ -1,13 +1,13 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12613
+// Function ID: 12614
 // Name: useModalPanGesture
-// Dependencies: [4566, 6073, 5280, 5039, 2]
+// Dependencies: [4566, 6239, 5446, 5039, 2]
 // Exports: default
 
-// Module 12442 (useModalPanGesture)
+// Module 12613 (useModalPanGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { code: "function useModalPanGestureTsx1({velocityY:velocityY}){const{translateY,thresholdTranslate,thresholdVelocity,withSpring,height,runOnJS,ModalActionCreators,onClose,onEnd}=this.__closure;const config={damping:15,mass:1,stiffness:250,overshootClamping:true,restSpeedThreshold:0.001,restDisplacementThreshold:0.001,velocity:velocityY};if(translateY.get()>=thresholdTranslate||velocityY>=thresholdVelocity){translateY.set(withSpring(height,config,'respect-motion-settings',function(){runOnJS(ModalActionCreators.pop)();}));if(onClose!=null){runOnJS(onClose)();}}else{translateY.set(withSpring(0,config));}if(onEnd!=null){runOnJS(onEnd)();}}" };

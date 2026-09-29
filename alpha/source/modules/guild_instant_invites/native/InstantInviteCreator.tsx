@@ -1,13 +1,13 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10572
+// Function ID: 10573
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 4836, 5279, 576, 1177, 10404, 2]
+// Dependencies: [19, 17, 21, 4836, 5445, 576, 1177, 10573, 2]
 
-// Module 10403 (InstantInviteCreator)
+// Module 10572 (InstantInviteCreator)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10404 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10573 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

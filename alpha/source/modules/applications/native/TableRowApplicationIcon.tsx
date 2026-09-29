@@ -1,13 +1,13 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9188
+// Function ID: 9189
 // Name: TableRowApplicationIcon
-// Dependencies: [19, 21, 4836, 576, 5899, 1397, 2]
+// Dependencies: [19, 21, 4836, 576, 6065, 1397, 2]
 // Exports: default
 
-// Module 9023 (TableRowApplicationIcon)
+// Module 9188 (TableRowApplicationIcon)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5899 */;
+import FastImageDefault from "FastImage" /* 6065 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

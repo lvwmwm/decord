@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8490
+// Function ID: 8491
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4815, 4510, 4503, 6664, 2]
+// Dependencies: [5, 32, 19, 4815, 4510, 4503, 6830, 2]
 // Exports: useOrderSigning
 
-// Module 8325 (useOrderSigning)
+// Module 8490 (useOrderSigning)
 import BillingUtils from "BillingUtils" /* 4503 */;
 import BillingErrorDefault from "BillingError" /* 4510 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

@@ -1,25 +1,25 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16814
+// Function ID: 16815
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13266, 1074, 6852, 1374, 21, 1091, 4836, 576, 16627, 1241, 1115, 4421, 563, 6867, 6859, 16625, 2111, 4832, 4488, 5435, 1177, 8122, 5293, 6628, 2]
+// Dependencies: [19, 17, 13436, 1074, 7018, 1374, 21, 1091, 4836, 576, 16815, 1241, 1115, 4421, 563, 7033, 7025, 16813, 2111, 4832, 4488, 5602, 1177, 8287, 5459, 6794, 2]
 // Exports: default
 
-// Module 16626 (YouExpiringTrialOfferCard)
+// Module 16814 (YouExpiringTrialOfferCard)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import useCountdownDefault from "useCountdown" /* 6859 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 16627 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import useCountdownDefault from "useCountdown" /* 7025 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 16815 */;
 import noop from "module_19" /* 19 */;
-import NoticeStore from "NoticeStore" /* 13266 */;
+import NoticeStore from "NoticeStore" /* 13436 */;
 
 const require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, HelpdeskArticles: closure_7, HorizontalGradient: closure_8, NoticeTypes: closure_9 } = Constants);
-const Gradients = fn(6852).Gradients;
+const Gradients = fn(7018).Gradients;
 let closure_11 = fn(1374).PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
@@ -42,9 +42,9 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = navigateToPremium(563).useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
   let obj2 = navigateToPremium(563);
-  const premiumTrialOffer = navigateToPremium(6867).usePremiumTrialOffer();
+  const premiumTrialOffer = navigateToPremium(7033).usePremiumTrialOffer();
   let num = 0;
-  const obj3 = navigateToPremium(6867);
+  const obj3 = navigateToPremium(7033);
   if (null != premiumTrialOffer) {
     num = 0;
     if (null != premiumTrialOffer.expiresAt) {
@@ -53,7 +53,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = useCountdownDefault(num, closure_15);
-  shouldShowExpiringTrialOfferCard = navigateToPremium(16625).useShouldShowExpiringTrialOfferCard();
+  shouldShowExpiringTrialOfferCard = navigateToPremium(16813).useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
     let tmp = shouldShowExpiringTrialOfferCard;
@@ -129,7 +129,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         };
         const size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         obj11.children = closure_12(tmp4(1177).CloseIcon, size);
-        items2[1] = closure_12(tmp4(5435).PressableOpacity, obj11);
+        items2[1] = closure_12(tmp4(5602).PressableOpacity, obj11);
         const obj12 = { style: tmp3.primaryCTA, text: null, onPress: null, renderIcon: null, renderLinearGradient: null };
         const intl5 = tmp4(1115).intl;
         obj12.text = intl5.string(tmp4(1115).t.J61px0);
@@ -164,12 +164,12 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj9.children = items2;
         const tmp4Result2 = tmp4(4488);
         const obj13 = { style: navigateToPremium.style, children: tmp13(tmp14, obj9) };
-        return closure_12(tmp(6628), obj13);
+        return closure_12(tmp(6794), obj13);
       }
     }
     return null;
   } else {
     return null;
   }
-  const tmp4Result = navigateToPremium(16625);
+  const tmp4Result = navigateToPremium(16813);
 };

@@ -1,10 +1,10 @@
-// Module ID: 5840
-// Function ID: 5841
+// Module ID: 6006
+// Function ID: 6007
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4825, 2067, 21, 4836, 504, 5300, 1115, 5841, 5847, 4832, 2]
+// Dependencies: [19, 17, 4825, 2067, 21, 4836, 504, 5466, 1115, 6007, 6013, 4832, 2]
 // Exports: default
 
-// Module 5840 (MemberVerificationAlertSuccess)
+// Module 6006 (MemberVerificationAlertSuccess)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import GuildStore from "GuildStore" /* 2067 */;

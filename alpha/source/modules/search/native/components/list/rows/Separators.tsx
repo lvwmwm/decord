@@ -1,14 +1,14 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16654
+// Function ID: 16655
 // Name: Separators
-// Dependencies: [19, 17, 7303, 21, 4836, 2]
+// Dependencies: [19, 17, 7468, 21, 4836, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 16465 (Separators)
+// Module 16654 (Separators)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
-const SearchConstants = fn(7303);
+const SearchConstants = fn(7468);
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = SearchConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);

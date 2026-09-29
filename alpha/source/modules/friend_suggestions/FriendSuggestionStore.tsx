@@ -1,15 +1,15 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7240
+// Function ID: 7241
 // Name: FriendSuggestionStore
-// Dependencies: [1386, 1372, 12, 7076, 7077, 504, 573, 2]
+// Dependencies: [1386, 1372, 12, 7241, 7242, 504, 573, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7075 (FriendSuggestionStore)
+// Module 7240 (FriendSuggestionStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7076 */;
-import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7077 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7241 */;
+import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7242 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import UserStore from "UserStore" /* 1372 */;
 

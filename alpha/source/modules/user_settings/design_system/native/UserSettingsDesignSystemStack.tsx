@@ -1,14 +1,14 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15570
+// Function ID: 15571
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 4836, 576, 5279, 5919, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5445, 6085, 4832, 2]
 // Exports: default
 
-// Module 15395 (UserSettingsDesignSystemStack)
+// Module 15570 (UserSettingsDesignSystemStack)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import Card from "Card" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import Card from "Card" /* 6085 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

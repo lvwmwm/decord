@@ -1,17 +1,17 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10756
+// Function ID: 10757
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4825, 2042, 21, 4566, 504, 4531, 576, 4837, 5280, 4836, 10588, 1115, 8676, 2]
+// Dependencies: [19, 17, 4825, 2042, 21, 4566, 504, 4531, 576, 4837, 5446, 4836, 10757, 1115, 8841, 2]
 // Exports: default
 
-// Module 10587 (BurstReactionToggle)
+// Module 10756 (BurstReactionToggle)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 8676 */;
+import spring from "spring" /* 5446 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 8841 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
@@ -48,7 +48,7 @@ export default function BurstReactionToggle(arg0) {
     tmp7 = tmp2;
   }
   const ref = noop.useRef(null);
-  importDefault = tmp7(10588)(ref);
+  importDefault = tmp7(10757)(ref);
   closure_129_1 = undefined;
   closure_129_2 = undefined;
   closure_129_3 = undefined;

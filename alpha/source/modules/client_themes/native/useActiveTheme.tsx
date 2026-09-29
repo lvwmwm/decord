@@ -1,10 +1,10 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 7464
+// Function ID: 7465
 // Name: useActiveTheme
 // Dependencies: [1184, 4653, 1227, 1185, 504, 4691, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 7299 (useActiveTheme)
+// Module 7464 (useActiveTheme)
 import initialize from "initialize" /* 504 */;
 import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4691 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;

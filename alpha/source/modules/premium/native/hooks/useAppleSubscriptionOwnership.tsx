@@ -1,15 +1,15 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 13095
+// Function ID: 13096
 // Name: useAppleSubscriptionOwnership
-// Dependencies: [32, 19, 12926, 1980, 6658, 1074, 504, 1364, 12927, 2]
+// Dependencies: [32, 19, 13096, 1980, 6824, 1074, 504, 1364, 13097, 2]
 // Exports: useAppleSubscriptionOwnership
 
-// Module 12925 (useAppleSubscriptionOwnership)
+// Module 13095 (useAppleSubscriptionOwnership)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplePurchasesStore from "ApplePurchasesStore" /* 12926 */;
+import ApplePurchasesStore from "ApplePurchasesStore" /* 13096 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import IAPStore from "IAPStore" /* 6658 */;
+import IAPStore from "IAPStore" /* 6824 */;
 
 const require = fn;
 const AppStates = fn(1074).AppStates;

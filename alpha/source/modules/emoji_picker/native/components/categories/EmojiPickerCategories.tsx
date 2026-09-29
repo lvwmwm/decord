@@ -1,19 +1,19 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9975
+// Function ID: 9976
 // Name: EmojiPickerCategories
-// Dependencies: [19, 5775, 1074, 1218, 21, 4836, 576, 4566, 1241, 4801, 4802, 9809, 9819, 6073, 9820, 6476, 9821, 9822, 2]
+// Dependencies: [19, 5942, 1074, 1218, 21, 4836, 576, 4566, 1241, 4801, 4802, 9976, 9986, 6239, 9987, 6642, 9988, 9989, 2]
 
-// Module 9808 (EmojiPickerCategories)
+// Module 9975 (EmojiPickerCategories)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9809 */;
+import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9976 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const EmojiCategoryTypes = fn(5775).EmojiCategoryTypes;
+const EmojiCategoryTypes = fn(5942).EmojiCategoryTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsPages: metroRequire, CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT } = Constants);
 let ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;

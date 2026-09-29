@@ -1,14 +1,14 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12905
+// Function ID: 12906
 // Name: useCanGiftProduct
-// Dependencies: [7623, 6974, 6973, 4488, 1974, 4501, 2]
+// Dependencies: [7788, 7140, 7139, 4488, 1974, 4501, 2]
 // Exports: useCanGiftProduct
 
-// Module 12735 (useCanGiftProduct)
+// Module 12905 (useCanGiftProduct)
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import useCurrentUser from "useCurrentUser" /* 7623 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7139 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7140 */;
+import useCurrentUser from "useCurrentUser" /* 7788 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
@@ -35,8 +35,8 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     if (result3 != null) {
       currency = result3.currency;
     }
-    result = tmp(6974).shouldHideGiftingForCurrency(currency);
-    const tmpResult = tmp(6974);
+    result = tmp(7140).shouldHideGiftingForCurrency(currency);
+    const tmpResult = tmp(7140);
   }
   if (!result) {
     result = !tmp(4501).isCollectibleGiftingSupported();

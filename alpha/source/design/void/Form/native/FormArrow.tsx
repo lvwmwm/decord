@@ -1,14 +1,14 @@
-// Module ID: 6562
-// Function ID: 6563
+// Module ID: 6728
+// Function ID: 6729
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 1177, 6563, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 1177, 6729, 2]
 // Exports: default
 
-// Module 6562 (FormArrow)
+// Module 6728 (FormArrow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef6563 from "module_6563" /* 6563 */;
+import _modDef6729 from "module_6729" /* 6729 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ export default function FormArrow(arg0) {
     const obj4 = { style: null, source: null, size: null };
     const items1 = [tmp.icon, style];
     obj4.style = items1;
-    obj4.source = _modDef6563;
+    obj4.source = _modDef6729;
     obj4.size = native.Icon.Sizes.MEDIUM;
     items[1] = React4(native.Icon, obj4);
     obj2.children = items;
@@ -40,7 +40,7 @@ export default function FormArrow(arg0) {
     const obj = { style: null, source: null, size: null };
     const items2 = [tmp.icon, style];
     obj.style = items2;
-    obj.source = _modDef6563;
+    obj.source = _modDef6729;
     obj.size = native.Icon.Sizes.MEDIUM;
     tmp6 = React4(native.Icon, obj);
   }

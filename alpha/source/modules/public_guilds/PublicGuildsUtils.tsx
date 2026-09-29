@@ -1,15 +1,15 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7643
+// Function ID: 7644
 // Name: PublicGuildsUtils
-// Dependencies: [7479, 1074, 7480, 7481, 1241, 5016, 2]
+// Dependencies: [7644, 1074, 7645, 7646, 1241, 5016, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 7478 (PublicGuildsUtils)
+// Module 7643 (PublicGuildsUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import isCrosspostDefault from "isCrosspost" /* 7480 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 7479 */;
+import isCrosspostDefault from "isCrosspost" /* 7645 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 7644 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return require("module_7481");
+  return require("module_7646");
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
   const obj = AnalyticsUtilsDefault;

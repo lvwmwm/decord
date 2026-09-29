@@ -1,12 +1,12 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7462
+// Function ID: 7463
 // Name: ClientThemesOverrides
-// Dependencies: [19, 4836, 4652, 7298, 2]
+// Dependencies: [19, 4836, 4652, 7463, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 7297 (ClientThemesOverrides)
+// Module 7462 (ClientThemesOverrides)
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7298 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7463 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

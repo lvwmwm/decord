@@ -1,15 +1,15 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10558
+// Function ID: 10559
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 5450, 5896, 1397, 10390, 5435, 1115, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 5617, 6062, 1397, 10559, 5602, 1115, 2]
 // Exports: default
 
-// Module 10389 (IconUploader)
+// Module 10558 (IconUploader)
 import util from "util" /* 1115 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import Pressables from "Pressables" /* 5435 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import _modDef10390 from "module_10390" /* 10390 */;
+import Pressables from "Pressables" /* 5602 */;
+import GuildIcon from "GuildIcon" /* 6062 */;
+import _modDef10559 from "module_10559" /* 10559 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -128,7 +128,7 @@ export default function IconUploader(disabled) {
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    let obj5 = { style: tmp.uploadIcon, source: _modDef10390 };
+    let obj5 = { style: tmp.uploadIcon, source: _modDef10559 };
     tmp16 = closure_8(closure_6, obj5);
   }
   items1[1] = tmp16;

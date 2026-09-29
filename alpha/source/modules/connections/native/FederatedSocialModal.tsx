@@ -1,24 +1,24 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8749
+// Function ID: 8750
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1074, 21, 4836, 5595, 1115, 5718, 4525, 8585, 6544, 4832, 6023, 1177, 5281, 5936, 6421, 2]
+// Dependencies: [5, 32, 19, 1074, 21, 4836, 5762, 1115, 5885, 4525, 8750, 6710, 4832, 6189, 1177, 5447, 6102, 6587, 2]
 // Exports: default
 
-// Module 8584 (FederatedSocialModal)
+// Module 8749 (FederatedSocialModal)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import PlatformsDefault from "Platforms" /* 5595 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import FederatedSocialUtils from "FederatedSocialUtils" /* 8585 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import PlatformsDefault from "Platforms" /* 5762 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import FederatedSocialUtils from "FederatedSocialUtils" /* 8750 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const FreeFormInputGroupDefault = tmp6(6023);
+const FreeFormInputGroupDefault = tmp6(6189);
 require = fn;
 const WebBrowserType = fn(1074).WebBrowserType;
 const jsxProd = fn(21);

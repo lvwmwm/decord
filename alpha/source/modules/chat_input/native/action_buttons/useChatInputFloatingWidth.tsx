@@ -1,16 +1,16 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11910
+// Function ID: 11911
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 11444, 4566, 4837, 2]
+// Dependencies: [19, 11613, 4566, 4837, 2]
 // Exports: default
 
-// Module 11741 (useChatInputFloatingWidth)
+// Module 11910 (useChatInputFloatingWidth)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(11444).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
+let closure_3 = fn(11613).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");

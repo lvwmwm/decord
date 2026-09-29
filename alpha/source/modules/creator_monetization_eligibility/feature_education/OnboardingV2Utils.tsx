@@ -1,13 +1,13 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 16058
+// Function ID: 16059
 // Name: OnboardingV2Utils
-// Dependencies: [2063, 2067, 1372, 1074, 504, 6678, 2]
+// Dependencies: [2063, 2067, 1372, 1074, 504, 6844, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15883 (OnboardingV2Utils)
+// Module 16058 (OnboardingV2Utils)
 import Constants from "Constants" /* 1074 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6678 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6844 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;

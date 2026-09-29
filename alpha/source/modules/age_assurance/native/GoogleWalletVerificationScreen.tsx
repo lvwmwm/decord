@@ -1,11 +1,11 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8187
+// Function ID: 8188
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1485, 5048, 7891, 7867, 5179, 5184, 1115, 3039, 7870, 7871, 5279, 4832, 5745, 5281, 7861, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1485, 5048, 8056, 8032, 5345, 5350, 1115, 3039, 8035, 8036, 5445, 4832, 5912, 5447, 8026, 2]
 // Exports: default
 
-// Module 8022 (GoogleWalletVerificationScreen)
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+// Module 8187 (GoogleWalletVerificationScreen)
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8026 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

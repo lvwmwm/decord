@@ -1,25 +1,25 @@
-// Module ID: 10921
-// Function ID: 10922
+// Module ID: 11090
+// Function ID: 11091
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10376, 10905, 21, 4836, 576, 563, 10913, 4528, 1115, 8704, 8705, 10912, 4832, 1177, 10922, 10923, 2]
+// Dependencies: [19, 17, 10545, 11074, 21, 4836, 576, 563, 11082, 4528, 1115, 8869, 8870, 11081, 4832, 1177, 11091, 11092, 2]
 // Exports: default
 
-// Module 10921 (WasThisHelpfulSection)
+// Module 11090 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import ShieldIcon from "ShieldIcon" /* 8705 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10913 */;
+import ShieldIcon from "ShieldIcon" /* 8870 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11081 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11082 */;
 import noop from "module_19" /* 19 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10376 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10545 */;
 
-const _modDef8704 = tmp6(8704);
+const _modDef8869 = tmp6(8869);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_7 = fn(10376).SafetyWarningFeedbackTypes;
-const Constants = fn(10905);
+let closure_7 = fn(10545).SafetyWarningFeedbackTypes;
+const Constants = fn(11074);
 ({ DOWNVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: closure_8, TOAST_SHIELD_ICON_COLOR: closure_9, UPVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: c10, FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -72,7 +72,7 @@ export default function WasThisHelpfulSection(channelId) {
     const obj3 = { key: feedbackType === constants.UPVOTE ? closure_2_10 : React6, content: null, icon: null, IconComponent: null, iconColor: null, containerStyle: null, recolorLegacyIcon: true };
     const intl = tmp(1115).intl;
     obj3.content = intl.string(util.t["gd/Yqs"]);
-    obj3.icon = _modDef8704;
+    obj3.icon = _modDef8869;
     obj3.IconComponent = ShieldIcon.ShieldIcon;
     obj3.iconColor = iconColor;
     obj3.containerStyle = toastContainer.toastContainer;

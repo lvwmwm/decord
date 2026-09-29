@@ -1,10 +1,10 @@
-// Module ID: 8593
-// Function ID: 8594
+// Module ID: 8758
+// Function ID: 8759
 // Name: ApplicationCommandFrecencyStore
-// Dependencies: [1220, 5305, 1349, 1084, 4873, 12, 504, 573, 2]
+// Dependencies: [1220, 5471, 1349, 1084, 4873, 12, 504, 573, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 8593 (ApplicationCommandFrecencyStore)
+// Module 8758 (ApplicationCommandFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -29,7 +29,7 @@ function handleUserSettingsProtoStoreChange() {
     return obj;
   }), global.pendingUsages);
 }
-const ApplicationCommandConstants = fn(5305);
+const ApplicationCommandConstants = fn(5471);
 ({ DISCOVERY_COMMAND_FRECENCY_GATEWAY_LIMIT: c3, SUB_COMMAND_KEY_SEPARATOR: closure_4 } = ApplicationCommandConstants);
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
 let global = { pendingUsages: [] };

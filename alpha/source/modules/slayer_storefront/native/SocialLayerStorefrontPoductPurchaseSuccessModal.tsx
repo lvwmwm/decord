@@ -1,10 +1,10 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 10640
+// Function ID: 10641
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 718, 19, 17, 4825, 5822, 6650, 1074, 21, 4836, 576, 4566, 5280, 4837, 4801, 1479, 504, 5438, 6647, 4832, 5281, 1115, 5293, 6544, 5943, 5992, 8288, 6589, 6586, 10472, 6603, 1241, 5298, 10262, 3585, 8197, 4678, 2]
+// Dependencies: [32, 718, 19, 17, 4825, 5989, 6816, 1074, 21, 4836, 576, 4566, 5446, 4837, 4801, 1479, 504, 5605, 6813, 4832, 5447, 1115, 5459, 6710, 6109, 6158, 8453, 6755, 6752, 10641, 6769, 1241, 5464, 10431, 3585, 8362, 4678, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 10471 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 10640 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -13,16 +13,16 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10262 */;
+import spring from "spring" /* 5446 */;
+import XSmallIcon from "XSmallIcon" /* 6158 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6813 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10431 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _toArray from "_toArray" /* 718 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import SKUStore from "SKUStore" /* 5989 */;
 
 const require = globalThis.__r;
 
@@ -311,7 +311,7 @@ function PurchaseSuccessModalBase(sku) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, ScrollView: closure_7, View: closure_8 } = get_ActivityIndicator);
-const numDays = fn(6650).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
+const numDays = fn(6816).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, HorizontalGradient: map1, VerticalGradient: closure_14 } = Constants);
 const jsxProd = fn(21);

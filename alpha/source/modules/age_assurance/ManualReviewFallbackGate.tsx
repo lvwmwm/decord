@@ -1,12 +1,12 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 8051
+// Function ID: 8052
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 7887, 7867, 7888, 573, 7889, 2]
+// Dependencies: [5, 8052, 8032, 8053, 573, 8054, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 7886 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7888 */;
+// Module 8051 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 8032 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8053 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

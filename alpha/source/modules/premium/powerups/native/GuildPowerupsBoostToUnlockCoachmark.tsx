@@ -1,11 +1,11 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15978
+// Function ID: 15979
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 11991, 15804, 2]
+// Dependencies: [19, 12162, 15979, 2]
 // Exports: default
 
-// Module 15803 (GuildPowerupsBoostToUnlockCoachmark)
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 11991 */;
+// Module 15978 (GuildPowerupsBoostToUnlockCoachmark)
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12162 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,6 +18,6 @@ export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
   const items = [powerup, markAsDismissed];
   ({ guildId, targetRef } = powerup);
   const memo = noop.useMemo(() => ({ type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed }), items);
-  markAsDismissed(15804)(targetRef, guildId, memo);
+  markAsDismissed(15979)(targetRef, guildId, memo);
   return null;
 };

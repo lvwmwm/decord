@@ -1,13 +1,13 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12666
+// Function ID: 12667
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 12497, 1074, 12499, 1271, 573, 2]
+// Dependencies: [5, 12667, 1074, 12669, 1271, 573, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12496 (CustomActivityLinkUtils)
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12499 */;
+// Module 12666 (CustomActivityLinkUtils)
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12669 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12497 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12667 */;
 
 require = fn;
 function fetchCustomActivityLink() {

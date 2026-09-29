@@ -1,18 +1,18 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13268
+// Function ID: 13269
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 5753, 6571, 6570, 1115, 4832, 4823, 4767, 12962, 13099, 5204, 13100, 1981, 12960, 5281, 4800, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 5920, 6737, 6736, 1115, 4832, 4823, 4767, 13132, 13269, 5370, 13270, 1981, 13130, 5447, 4800, 2]
 // Exports: default
 
-// Module 13098 (OutboundPromotionCard)
+// Module 13268 (OutboundPromotionCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6736 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -35,7 +35,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);
 let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1074).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
-let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5753).DARK_BLACK_500_LIGHT_PRIMARY_100 };
+let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5920).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 obj2.imageContainer = size;
 obj2.image = { width: 28, height: 28, resizeMode: "contain" };
 obj2.title = { lineHeight: 20 };

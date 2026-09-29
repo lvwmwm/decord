@@ -1,10 +1,10 @@
-// Module ID: 8921
-// Function ID: 8922
+// Module ID: 9086
+// Function ID: 9087
 // Name: useDispatchOpenActivity
 // Dependencies: [19, 573, 2]
 // Exports: default
 
-// Module 8921 (useDispatchOpenActivity)
+// Module 9086 (useDispatchOpenActivity)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
 

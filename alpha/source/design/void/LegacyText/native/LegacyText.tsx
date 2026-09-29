@@ -1,10 +1,10 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8237
+// Function ID: 8238
 // Name: LegacyText/LegacyText
-// Dependencies: [19, 17, 1074, 21, 4836, 8073, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 8238, 2]
 
-// Module 8072 (LegacyText/LegacyText)
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8073 */;
+// Module 8237 (LegacyText/LegacyText)
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8238 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

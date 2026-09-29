@@ -1,14 +1,14 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 8329
+// Function ID: 8330
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4836, 576, 8165, 5395, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8330, 5561, 4832, 1115, 2]
 // Exports: default
 
-// Module 8164 (ObscuredSurface)
+// Module 8329 (ObscuredSurface)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5395 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8165 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5561 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8330 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

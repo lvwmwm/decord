@@ -1,12 +1,12 @@
-// Module ID: 10164
-// Function ID: 10165
+// Module ID: 10331
+// Function ID: 10332
 // Name: useGiftOptionsSyncDebounce
-// Dependencies: [19, 5910, 12, 2]
+// Dependencies: [19, 6076, 12, 2]
 // Exports: default
 
-// Module 10164 (useGiftOptionsSyncDebounce)
+// Module 10331 (useGiftOptionsSyncDebounce)
 import _modDef12 from "module_12" /* 12 */;
-import useInitialValueDefault from "useInitialValue" /* 5910 */;
+import useInitialValueDefault from "useInitialValue" /* 6076 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

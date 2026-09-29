@@ -1,10 +1,10 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14236
+// Function ID: 14237
 // Name: validateScope
 // Dependencies: [4739, 2]
 // Exports: default
 
-// Module 14064 (validateScope)
+// Module 14236 (validateScope)
 import Constants from "Constants" /* 4739 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17504
+// Function ID: 17505
 // Name: BaseActionInfo
-// Dependencies: [2045, 4479, 1372, 11341, 2110, 1115, 4989, 2]
+// Dependencies: [2045, 4479, 1372, 11510, 2110, 1115, 4989, 2]
 // Exports: getBaseActionInfo
 
-// Module 17315 (BaseActionInfo)
+// Module 17504 (BaseActionInfo)
 import util from "util" /* 1115 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -12,7 +12,7 @@ import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const Constants = fn(11341);
+const Constants = fn(11510);
 ({ AutomodActionType: hasOwnProperty, AutomodTriggerType: metroRequire } = Constants);
 const getFriendlyDurationString = fn(2110).getFriendlyDurationString;
 const size = fn(2);

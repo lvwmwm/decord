@@ -1,27 +1,27 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9601
+// Function ID: 9602
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 9435, 9436, 21, 4836, 5999, 9437, 9438, 5279, 9439, 9441, 4832, 1115, 9445, 9446, 9448, 9456, 6544, 2]
+// Dependencies: [19, 17, 9602, 9603, 21, 4836, 6165, 9604, 9605, 5445, 9606, 9608, 4832, 1115, 9612, 9613, 9615, 9623, 6710, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 9434 (UserSettingsVoice)
+// Module 9601 (UserSettingsVoice)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9437 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9438 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 9439 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 9445 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9446 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 9448 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9604 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9605 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 9606 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 9612 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9613 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 9615 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isMobileOverlaySupported = fn(9435).isMobileOverlaySupported;
-const guideURL = fn(9436).USER_SETTINGS_VOICE_GUILD_URL;
+const isMobileOverlaySupported = fn(9602).isMobileOverlaySupported;
+const guideURL = fn(9603).USER_SETTINGS_VOICE_GUILD_URL;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4836);
@@ -36,7 +36,7 @@ export default function UserSettingsVoice() {
   const obj2 = { style: tmp.container, children: null };
   const items = [timestampProducer(UserSettingsVoiceInputOptionsDefault, {}), , , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp5(tmp2(9441), {});
+    nonContextualStreamOutputPresent = tmp5(tmp2(9608), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
@@ -54,8 +54,8 @@ export default function UserSettingsVoice() {
     const obj5 = { title: null };
     const intl2 = tmp8(1115).intl;
     obj5.title = intl2.string(tmp8(1115).t.lZTUPs);
-    tmp5Result = tmp5(tmp2(9456), obj5);
-    const tmp2Result = tmp2(9456);
+    tmp5Result = tmp5(tmp2(9623), obj5);
+    const tmp2Result = tmp2(9623);
   }
   const obj6 = { spacing: 24, children: null };
   items[6] = tmp5Result;

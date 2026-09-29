@@ -1,16 +1,16 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8276
+// Function ID: 8277
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4836, 576, 7374, 4683, 4832, 1115, 8112, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7539, 4683, 4832, 1115, 8277, 2]
 // Exports: default
 
-// Module 8111 (InAppReportsMessagePreview)
+// Module 8276 (InAppReportsMessagePreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import RowGeneratorDefault from "RowGenerator" /* 7374 */;
-import ChatItemDefault from "ChatItem" /* 8112 */;
+import RowGeneratorDefault from "RowGenerator" /* 7539 */;
+import ChatItemDefault from "ChatItem" /* 8277 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

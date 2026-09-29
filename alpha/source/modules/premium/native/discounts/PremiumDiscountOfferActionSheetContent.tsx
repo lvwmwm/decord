@@ -1,21 +1,21 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16944
+// Function ID: 16945
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1374, 21, 4836, 576, 11303, 1115, 8724, 5388, 5442, 4488, 15289, 4832, 15291, 5281, 8122, 2]
+// Dependencies: [19, 17, 1374, 21, 4836, 576, 11472, 1115, 8889, 5554, 5609, 4488, 15464, 4832, 15466, 5447, 8287, 2]
 
-// Module 16757 (PremiumDiscountOfferActionSheetContent)
+// Module 16944 (PremiumDiscountOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FolderIcon from "FolderIcon" /* 5388 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5442 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 8724 */;
-import UserIcon from "UserIcon" /* 11303 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15289 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15291 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import FolderIcon from "FolderIcon" /* 5554 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5609 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8287 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 8889 */;
+import UserIcon from "UserIcon" /* 11472 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15464 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15466 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

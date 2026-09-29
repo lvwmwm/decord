@@ -1,10 +1,10 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11670
+// Function ID: 11671
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4836, 576, 7310, 11461, 11502, 4566, 1177, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7475, 11630, 11671, 4566, 1177, 4832, 2]
 // Exports: default
 
-// Module 11501 (ForumPostTypingUsers)
+// Module 11670 (ForumPostTypingUsers)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;

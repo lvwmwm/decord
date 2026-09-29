@@ -1,14 +1,14 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16889
+// Function ID: 16890
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4479, 1074, 21, 4836, 5836, 576, 12091, 504, 1241, 1115, 7313, 5198, 1177, 2]
+// Dependencies: [19, 17, 4479, 1074, 21, 4836, 6003, 576, 12262, 504, 1241, 1115, 7478, 5364, 1177, 2]
 
-// Module 16701 (MessageRequestPreview)
+// Module 16889 (MessageRequestPreview)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
-import TextStyles_mod from "TextStyles" /* 5836 */;
+import TextStyles_mod from "TextStyles" /* 6003 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -34,10 +34,10 @@ const result = size.fileFinishedImporting("modules/message_request/native/Messag
 export default noop.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const tmp = closure_9();
-  const messageRequestPreview = channel(12091).useMessageRequestPreview(channel);
+  const messageRequestPreview = channel(12262).useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  let obj = channel(12091);
+  let obj = channel(12262);
   const items = [RelationshipStore];
   const items1 = [message];
   const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
@@ -91,7 +91,7 @@ export default noop.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7313)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7478)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -128,7 +128,7 @@ export default noop.memo(function MessageRequestPreview(channel) {
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(5198);
+        tmp2Result = tmp2(5364);
       } else {
         const intl = tmp2(1115).intl;
         stringResult = intl.string(tmp2(1115).t["0KfDxM"]);

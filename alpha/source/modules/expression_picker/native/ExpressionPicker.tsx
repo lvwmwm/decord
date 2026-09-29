@@ -1,13 +1,13 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 9906
+// Function ID: 9907
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1218, 1074, 1375, 21, 4836, 576, 9740, 9741, 9083, 1483, 1611, 5016, 9743, 9746, 5266, 9084, 9747, 9825, 9847, 2]
+// Dependencies: [19, 17, 1218, 1074, 1375, 21, 4836, 576, 9907, 9908, 9248, 1483, 1611, 5016, 9910, 9913, 5432, 9249, 9914, 9992, 10014, 2]
 
-// Module 9739 (ExpressionPicker)
+// Module 9906 (ExpressionPicker)
 import nativeDefault from "native" /* 576 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9741 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9743 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9908 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9910 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

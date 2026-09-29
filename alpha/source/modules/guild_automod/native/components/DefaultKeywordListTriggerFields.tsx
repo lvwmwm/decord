@@ -1,14 +1,14 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17514
+// Function ID: 17515
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 11341, 21, 5999, 1115, 17326, 5916, 17327, 2]
+// Dependencies: [19, 11510, 21, 6165, 1115, 17515, 6082, 17516, 2]
 // Exports: default
 
-// Module 17325 (DefaultKeywordListTriggerFields)
+// Module 17514 (DefaultKeywordListTriggerFields)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const maxWordCount = fn(11341).MAX_KEYWORDS_PER_ALLOWLIST_DEFAULT_KEYWORD_RULE;
+const maxWordCount = fn(11510).MAX_KEYWORDS_PER_ALLOWLIST_DEFAULT_KEYWORD_RULE;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const size = fn(2);

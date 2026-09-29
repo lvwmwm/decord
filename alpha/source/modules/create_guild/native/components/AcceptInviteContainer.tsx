@@ -1,12 +1,12 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12401
+// Function ID: 12402
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2108, 2067, 4817, 1074, 4455, 21, 4836, 576, 1485, 504, 5936, 1385, 6516, 1981, 7154, 8976, 6734, 7826, 9230, 12231, 6544, 4540, 2]
+// Dependencies: [5, 19, 2108, 2067, 4817, 1074, 4455, 21, 4836, 576, 1485, 504, 6102, 1385, 6682, 1981, 7319, 9141, 6900, 7991, 9395, 12402, 6710, 4540, 2]
 // Exports: default
 
-// Module 12230 (AcceptInviteContainer)
+// Module 12401 (AcceptInviteContainer)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;

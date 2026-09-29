@@ -1,15 +1,15 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16670
+// Function ID: 16671
 // Name: renderChannelContent
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 16479, 5373, 16483, 4832, 5409, 8048, 15750, 2]
+// Dependencies: [19, 17, 9744, 5018, 21, 4836, 1364, 16667, 5539, 16671, 4832, 5575, 8213, 15925, 2]
 // Exports: default
 
-// Module 16482 (renderChannelContent)
+// Module 16670 (renderChannelContent)
 import Text_Text from "Text/Text" /* 4832 */;
-import LockIcon from "LockIcon" /* 5409 */;
-import WarningIcon from "WarningIcon" /* 8048 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16483 */;
+import LockIcon from "LockIcon" /* 5575 */;
+import WarningIcon from "WarningIcon" /* 8213 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16667 */;
+import ChannelTitleDefault from "ChannelTitle" /* 16671 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function ChannelContent(arg0) {
   let tmp9Result5 = null != channel;
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(5373)(channel);
+      locked = tmp2(5539)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -90,7 +90,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(15750), obj12);
+      isSubscriptionGated = tmp9(tmp2(15925), obj12);
     }
     items3[2] = isSubscriptionGated;
     obj8.children = items3;
@@ -152,7 +152,7 @@ function ChannelContent(arg0) {
   return React5(View, obj2);
 }
 const View = fn(17).View;
-const SUBTITLE_OPACITY_NORMAL = fn(9577).SUBTITLE_OPACITY_NORMAL;
+const SUBTITLE_OPACITY_NORMAL = fn(9744).SUBTITLE_OPACITY_NORMAL;
 const UnreadSetting = fn(5018).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

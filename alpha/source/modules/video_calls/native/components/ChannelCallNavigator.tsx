@@ -1,16 +1,16 @@
-// Module ID: 8938
-// Function ID: 8939
+// Module ID: 9103
+// Function ID: 9104
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 8939, 8830, 1074, 8507, 21, 4836, 1479, 8867, 4566, 8940, 9536, 8833, 5046, 5039, 8513, 1981, 1110, 9394, 12162, 4688, 8965, 1364, 4540, 4718, 6421, 2]
+// Dependencies: [5, 32, 19, 17, 9104, 8995, 1074, 8672, 21, 4836, 1479, 9032, 4566, 9105, 9703, 8998, 5046, 5039, 8678, 1981, 1110, 9561, 12333, 4688, 9130, 1364, 4540, 4718, 6587, 2]
 // Exports: default
 
-// Module 8938 (ChannelCallNavigator)
+// Module 9103 (ChannelCallNavigator)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4718 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 8939 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9104 */;
 
 require = fn;
 function CallWithVoiceChat(channel) {
@@ -106,7 +106,7 @@ function CallWithVoiceChat(channel) {
   let tmp16 = null;
   if (channel.isGuildStageVoice()) {
     const obj6 = { channel };
-    tmp16 = closure_12(tmp2(8940), obj6);
+    tmp16 = closure_12(tmp2(9105), obj6);
   }
   const items1 = [tmp16, ];
   const obj7 = { pointerEvents: "box-none", style: null };
@@ -119,7 +119,7 @@ function CallWithVoiceChat(channel) {
   let tmp18Result = null;
   if (tmp11[0]) {
     const obj9 = { channel };
-    tmp18Result = tmp18(tmp2(9536), obj9);
+    tmp18Result = tmp18(tmp2(9703), obj9);
   }
   obj8.children = tmp18Result;
   items3[1] = closure_12(closure_6, obj8);
@@ -130,7 +130,7 @@ function MainCallScreen(channel) {
   channel = channel.channel;
   let isConnectedToVoiceChannel;
   const tmp = closure_14();
-  isConnectedToVoiceChannel = isConnectedToVoiceChannel(8833).useIsConnectedToVoiceChannel(channel);
+  isConnectedToVoiceChannel = isConnectedToVoiceChannel(8998).useIsConnectedToVoiceChannel(channel);
   const id = noop.useId();
   const items = [isConnectedToVoiceChannel, id];
   const effect = noop.useEffect(() => {
@@ -141,7 +141,7 @@ function MainCallScreen(channel) {
       const safeAreaDisableLock = state.requestSafeAreaDisableLock({ key, lockEnabled: false });
     };
   }, items);
-  let obj = isConnectedToVoiceChannel(8833);
+  let obj = isConnectedToVoiceChannel(8998);
   const isChannelContentGated = isConnectedToVoiceChannel(5046).useIsChannelContentGated(channel);
   const effect1 = noop.useEffect(() => {
     function dismissOAuthModal() {
@@ -228,13 +228,13 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(9394);
+  isConnectedToVoiceChannel(9561);
   if (isChannelContentGated) {
     let obj3 = { onReturnToSafety: id(5039).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    let tmp14Result2 = closure_12(id(12162), obj3);
+    let tmp14Result2 = closure_12(id(12333), obj3);
     let tmp11 = closure_12;
-    const tmp20 = id(12162);
+    const tmp20 = id(12333);
   } else {
     if (!tmp10) {
       if (!channel.isVocalThread()) {
@@ -247,7 +247,7 @@ function MainCallScreen(channel) {
     let tmp14Result = null;
     if (channel.isGuildStageVoice()) {
       let obj7 = { channel };
-      tmp14Result = tmp14(id(8940), obj7);
+      tmp14Result = tmp14(id(9105), obj7);
     }
     obj5.children = tmp14Result;
     tmp14Result2 = tmp14(closure_6, obj5);
@@ -255,16 +255,16 @@ function MainCallScreen(channel) {
   }
   let obj2 = isConnectedToVoiceChannel(5046);
   const tmp21 = id(4688)();
-  const tmp22 = id(8965);
+  const tmp22 = id(9130);
   const tmp2Result = isConnectedToVoiceChannel(1364);
   const tmp23 = isConnectedToVoiceChannel(1364).isAndroid() || !isConnectedToVoiceChannel;
   return tmp11(tmp22, { forceHide: isConnectedToVoiceChannel(1364).isAndroid() || !isConnectedToVoiceChannel, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(4540).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) });
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const ChannelCallScreens = fn(8830).ChannelCallScreens;
+const ChannelCallScreens = fn(8995).ChannelCallScreens;
 const ComponentActions = fn(1074).ComponentActions;
-let closure_11 = fn(8507).OAUTH2_AUTHORIZE_MODAL_KEY;
+let closure_11 = fn(8672).OAUTH2_AUTHORIZE_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const createStyles = fn(4836);
@@ -310,6 +310,6 @@ export default function ChannelCallNavigator(channel) {
     },
     initialRouteName: ChannelCallScreens.MAIN_CALL_SCREEN
   };
-  obj.children = closure_12(channel(6421).Navigator, obj2);
+  obj.children = closure_12(channel(6587).Navigator, obj2);
   return closure_12(GuildThemeGuildIdOverrideContextDefault.Provider, obj);
 };

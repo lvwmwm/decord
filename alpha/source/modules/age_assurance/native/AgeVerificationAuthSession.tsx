@@ -1,10 +1,10 @@
-// Module ID: 7876
-// Function ID: 7877
+// Module ID: 8041
+// Function ID: 8042
 // Name: AgeVerificationAuthSession
 // Dependencies: [5, 3, 560, 4799, 1364, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 7876 (AgeVerificationAuthSession)
+// Module 8041 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4799 */;

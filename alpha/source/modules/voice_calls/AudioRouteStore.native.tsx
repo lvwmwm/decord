@@ -1,14 +1,14 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 9263
+// Function ID: 9264
 // Name: AudioRouteStore
-// Dependencies: [17, 4859, 9099, 1364, 9100, 504, 573, 2]
+// Dependencies: [17, 4859, 9264, 1364, 9265, 504, 573, 2]
 
-// Module 9098 (AudioRouteStore)
+// Module 9263 (AudioRouteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 9099 */;
-import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9100 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 9264 */;
+import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9265 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12406
+// Function ID: 12407
 // Name: InviteError
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4685, 4767, 12236, 12237, 12238, 1115, 4832, 5281, 1397, 1177, 12239, 5896, 2111, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 4685, 4767, 12407, 12408, 12409, 1115, 4832, 5447, 1397, 1177, 12410, 6062, 2111, 2]
 // Exports: default
 
-// Module 12235 (InviteError)
+// Module 12406 (InviteError)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,10 +13,10 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import shared from "shared" /* 4685 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12238 */;
-import _modDef12239 from "module_12239" /* 12239 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import GuildIcon from "GuildIcon" /* 6062 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12409 */;
+import _modDef12410 from "module_12410" /* 12410 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -25,7 +25,7 @@ require = fn;
 function InviteErrorBase(invite) {
   ({ onPressClose: require, inviteError } = invite);
   const tmp = closure_11();
-  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12236 : 12237);
+  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12407 : 12408);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
@@ -83,7 +83,7 @@ function InviteDisabledError(onPressClose) {
     const obj4 = { children: null };
     const obj5 = { style: tmp.disabledView, children: null };
     const guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 64, canAnimate: false });
-    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12239 };
+    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12410 };
     const items = [React6(native.Icon, obj6), ];
     const obj7 = { style: tmp.guildIcon, icon: guildIconURL, size: null };
     const obj3 = { id: null, icon: null, size: 64, canAnimate: false };

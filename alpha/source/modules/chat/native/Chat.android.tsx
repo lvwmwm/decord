@@ -1,14 +1,14 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11542
+// Function ID: 11543
 // Name: Chat
-// Dependencies: [19, 4825, 21, 4836, 6073, 11374, 11375, 504, 10842, 2]
+// Dependencies: [19, 4825, 21, 4836, 6239, 11543, 11544, 504, 11011, 2]
 
-// Module 11373 (Chat)
+// Module 11542 (Chat)
 import initialize from "initialize" /* 504 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 10842 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11374 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11375 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6239 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 11011 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11543 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11544 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

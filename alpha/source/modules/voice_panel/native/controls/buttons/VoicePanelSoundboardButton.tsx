@@ -1,14 +1,14 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17209
+// Function ID: 17210
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 4836, 576, 11754, 17008, 17023, 17009, 1115, 5901, 12024, 2]
+// Dependencies: [19, 21, 4836, 576, 11923, 17195, 17210, 17196, 1115, 6067, 12195, 2]
 // Exports: default
 
-// Module 17022 (VoicePanelSoundboardButton)
+// Module 17209 (VoicePanelSoundboardButton)
 import nativeDefault from "native" /* 576 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17008 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17023 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11923 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17195 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17210 */;
 import noop from "module_19" /* 19 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
@@ -46,15 +46,15 @@ export default function SoundboardButton(arg0) {
     const obj3 = { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor };
     items[1] = obj3;
     obj2.style = items;
-    const items1 = [React4(tmp(5901), obj2), ];
+    const items1 = [React4(tmp(6067), obj2), ];
     const obj4 = { style: tmp3.iconContainer, children: null };
-    const tmpResult = tmp(17009);
+    const tmpResult = tmp(17196);
     const obj5 = { color };
-    obj4.children = React4(tmp4(12024).SoundboardIcon, obj5);
-    items1[1] = React4(tmp(5901), obj4);
+    obj4.children = React4(tmp4(12195).SoundboardIcon, obj5);
+    items1[1] = React4(tmp(6067), obj4);
     element.children = items1;
     tmp8 = hasOwnProperty(tmpResult, element);
-    const tmpResult2 = tmp(5901);
+    const tmpResult2 = tmp(6067);
   }
   return tmp8;
 };

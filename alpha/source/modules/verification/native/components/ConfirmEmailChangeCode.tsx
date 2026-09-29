@@ -1,16 +1,16 @@
-// Module ID: 6021
-// Function ID: 6022
+// Module ID: 6187
+// Function ID: 6188
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5935, 21, 1485, 1094, 6022, 6019, 1115, 2]
+// Dependencies: [5, 19, 6101, 21, 1485, 1094, 6188, 6185, 1115, 2]
 // Exports: default
 
-// Module 6021 (ConfirmEmailChangeCode)
+// Module 6187 (ConfirmEmailChangeCode)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const setEmailToken = fn(5935).setEmailToken;
+const setEmailToken = fn(6101).setEmailToken;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
@@ -101,5 +101,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj2.headerText = intl.string(isChangeEmail(1115).t["2x/2Uo"]);
   const intl2 = isChangeEmail(1115).intl;
   obj2.confirmButtonText = intl2.string(isChangeEmail(1115).t.PDTjLN);
-  return jsx(navigation(6022), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(6188), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

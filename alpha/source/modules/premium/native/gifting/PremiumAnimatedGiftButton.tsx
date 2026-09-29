@@ -1,10 +1,10 @@
-// Module ID: 11731
-// Function ID: 11732
+// Module ID: 11900
+// Function ID: 11901
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4825, 21, 4836, 576, 4531, 504, 1364, 4566, 5435, 5841, 2]
+// Dependencies: [19, 4825, 21, 4836, 576, 4531, 504, 1364, 4566, 5602, 6007, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11731 (PremiumAnimatedGiftButton)
+// Module 11900 (PremiumAnimatedGiftButton)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import noop from "module_19" /* 19 */;
@@ -84,7 +84,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   const merged = Object.assign(accessibilityState);
   obj6.accessibilityState = { disabled };
   const merged1 = Object.assign(arg0);
-  obj6.children = jsx(tmp3(5841), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj6.children = jsx(tmp3(6007), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
   obj5.children = jsx(require("Pressables").PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
   return jsx(stateFromStores(4566).View, { exiting: FadeOut, children: null });
 };

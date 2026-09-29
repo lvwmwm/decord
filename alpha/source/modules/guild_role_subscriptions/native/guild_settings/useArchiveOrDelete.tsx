@@ -1,13 +1,13 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17754
+// Function ID: 17755
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 14757, 14772, 1115, 5204, 1177, 38, 4527, 2]
+// Dependencies: [5, 32, 19, 14932, 14947, 1115, 5370, 1177, 38, 4527, 2]
 // Exports: default
 
-// Module 17565 (useArchiveOrDelete)
+// Module 17754 (useArchiveOrDelete)
 import util from "util" /* 1115 */;
 import ToastUtilsAll from "ToastUtils" /* 4527 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14947 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 
@@ -52,7 +52,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
             const obj4 = { title, body, confirmText, confirmColor: tmp2(1177).ButtonColors.RED };
             v2 = 1;
             c2 = 1;
-            const obj5 = { value: v2(5204).confirm(obj4), done: false };
+            const obj5 = { value: v2(5370).confirm(obj4), done: false };
             return obj5;
           }
         } else {

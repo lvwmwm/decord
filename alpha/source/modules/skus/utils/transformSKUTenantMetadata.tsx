@@ -1,10 +1,10 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5993
+// Function ID: 5994
 // Name: transformSKUTenantMetadata
 // Dependencies: [1974, 2]
 // Exports: default
 
-// Module 5826 (transformSKUTenantMetadata)
+// Module 5993 (transformSKUTenantMetadata)
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import size from "module_2" /* 2 */;
 

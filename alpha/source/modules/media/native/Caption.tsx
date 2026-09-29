@@ -1,10 +1,10 @@
-// Module ID: 10114
-// Function ID: 10115
+// Module ID: 10281
+// Function ID: 10282
 // Name: Caption
 // Dependencies: [17, 1074, 21, 4836, 576, 4683, 1177, 2]
 // Exports: Caption
 
-// Module 10114 (Caption)
+// Module 10281 (Caption)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;

@@ -1,16 +1,16 @@
-// Module ID: 5917
-// Function ID: 5918
+// Module ID: 6083
+// Function ID: 6084
 // Name: TableRow
-// Dependencies: [19, 17, 21, 4836, 576, 5918, 4531, 5919, 5914, 5923, 5924, 5926, 5288, 1364, 5927, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6084, 4531, 6085, 6080, 6089, 6090, 6092, 5454, 1364, 6093, 4832, 2]
 
-// Module 5917 (TableRow)
+// Module 6083 (TableRow)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useToken from "useToken" /* 4531 */;
-import useFontScale from "useFontScale" /* 5288 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5918 */;
-import Card from "Card" /* 5919 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 5926 */;
+import useFontScale from "useFontScale" /* 5454 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 6084 */;
+import Card from "Card" /* 6085 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 6092 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -282,9 +282,9 @@ let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
   obj2.dragHandle = { marginEnd: 8 };
   return obj2;
 });
-TableRow.Icon = fn(5923).TableRowIcon;
-TableRow.Arrow = fn(5924).TableRowArrow;
-TableRow.TrailingText = fn(5926).TableRowTrailingText;
+TableRow.Icon = fn(6089).TableRowIcon;
+TableRow.Arrow = fn(6090).TableRowArrow;
+TableRow.TrailingText = fn(6092).TableRowTrailingText;
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
 

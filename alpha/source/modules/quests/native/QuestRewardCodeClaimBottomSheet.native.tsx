@@ -1,19 +1,19 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 10916
+// Function ID: 10917
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7116, 5756, 21, 4836, 576, 1613, 504, 10748, 4528, 1115, 5909, 4800, 10694, 6610, 4779, 10750, 6571, 6570, 4832, 4823, 5999, 5917, 5281, 10753, 2]
+// Dependencies: [19, 17, 7281, 5923, 21, 4836, 576, 1613, 504, 10917, 4528, 1115, 6075, 4800, 10863, 6776, 4779, 10919, 6737, 6736, 4832, 4823, 6165, 6083, 5447, 10922, 2]
 // Exports: default
 
-// Module 10747 (QuestRewardCodeClaimBottomSheet)
+// Module 10916 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import _modDef5909 from "module_5909" /* 5909 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
+import _modDef6075 from "module_6075" /* 6075 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10863 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7116 */;
+import QuestStore from "QuestStore" /* 7281 */;
 
 const require = globalThis.__r;
 
@@ -41,7 +41,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
       const obj2 = { key: "CLAIM_QUEST_REWARD_ERROR", content: null, icon: null };
       const intl = util.intl;
       obj2.content = intl.string(util.t.CKsXk3);
-      obj2.icon = _modDef5909;
+      obj2.icon = _modDef6075;
       ToastActionCreatorsDefault.open(obj2);
       ActionSheetActionCreatorsDefault.hideActionSheet();
     }
@@ -202,7 +202,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const REWARD_CODE_PLACEHOLDER = fn(5756).REWARD_CODE_PLACEHOLDER;
+const REWARD_CODE_PLACEHOLDER = fn(5923).REWARD_CODE_PLACEHOLDER;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4836);

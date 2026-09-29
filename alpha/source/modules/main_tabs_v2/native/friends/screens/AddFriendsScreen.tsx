@@ -1,23 +1,23 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16771
+// Function ID: 16772
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7071, 4479, 1372, 12196, 1074, 12175, 21, 4836, 576, 12173, 7826, 4527, 1115, 7178, 12177, 1364, 6583, 6603, 6470, 16586, 5298, 1241, 7624, 563, 12, 4678, 15679, 6589, 5437, 9310, 5889, 10326, 5917, 4529, 5404, 16587, 16588, 16590, 16591, 2]
+// Dependencies: [32, 5, 19, 17, 7236, 4479, 1372, 12367, 1074, 12346, 21, 4836, 576, 12344, 7991, 4527, 1115, 7343, 12348, 1364, 6749, 6769, 6636, 16772, 5464, 1241, 7789, 563, 12, 4678, 15854, 6755, 5604, 9477, 6055, 10495, 6083, 4529, 5570, 16773, 16774, 16776, 16777, 2]
 // Exports: default
 
-// Module 16585 (AddFriendsScreen)
+// Module 16771 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7826 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 16588 */;
-import ContactSuggestionRow from "ContactSuggestionRow" /* 16590 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7991 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12344 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12348 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 16774 */;
+import ContactSuggestionRow from "ContactSuggestionRow" /* 16776 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7236 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -63,10 +63,10 @@ function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const Sections = fn(12196).Sections;
+const Sections = fn(12367).Sections;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, AnalyticsSections: map1, InstantInviteSources: closure_14, RelationshipTypes: closure_15 } = Constants);
-const ContactPermissions = fn(12175).ContactPermissions;
+const ContactPermissions = fn(12346).ContactPermissions;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
 let closure_19 = { FIND_FRIENDS: 0, [0]: "FIND_FRIENDS", INCOMING_FRIEND_REQUESTS: 1, [1]: "INCOMING_FRIEND_REQUESTS", INCOMING_GAME_FRIEND_REQUESTS: 2, [2]: "INCOMING_GAME_FRIEND_REQUESTS", CONTACT_SUGGESTIONS: 3, [3]: "CONTACT_SUGGESTIONS" };

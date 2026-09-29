@@ -1,10 +1,10 @@
-// Module ID: 10897
-// Function ID: 10898
+// Module ID: 11066
+// Function ID: 11067
 // Name: useSafeAreaBottomKeyboardInfoController
 // Dependencies: [19, 1610, 1364, 1625, 1626, 1482, 1627, 4566, 1875, 2]
 // Exports: default
 
-// Module 10897 (useSafeAreaBottomKeyboardInfoController)
+// Module 11066 (useSafeAreaBottomKeyboardInfoController)
 import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1875 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;

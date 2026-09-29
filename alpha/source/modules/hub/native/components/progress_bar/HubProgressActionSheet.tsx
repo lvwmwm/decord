@@ -1,28 +1,28 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12341
+// Function ID: 12342
 // Name: HubProgressActionSheet
-// Dependencies: [19, 17, 4467, 9286, 1074, 11793, 11962, 21, 4800, 4836, 12166, 11967, 1241, 9285, 1115, 11969, 4832, 11971, 1101, 12171, 1186, 9275, 12172, 12173, 12267, 5281, 5435, 6571, 2]
+// Dependencies: [19, 17, 4467, 9453, 1074, 11962, 12133, 21, 4800, 4836, 12337, 12138, 1241, 9452, 1115, 12140, 4832, 12142, 1101, 12342, 1186, 9442, 12343, 12344, 12438, 5447, 5602, 6737, 2]
 // Exports: default
 
-// Module 12170 (HubProgressActionSheet)
+// Module 12341 (HubProgressActionSheet)
 import router_utils from "router_utils" /* 1101 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9285 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9442 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9452 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12344 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 
 require = fn;
 const View = fn(17).View;
-const HubProgressBarConstants = fn(9286);
+const HubProgressBarConstants = fn(9453);
 ({ HUB_PROGRESS_ACTION_SHEET_ID: metroRequire, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_7 } = HubProgressBarConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsLocations: closure_9, InstantInviteSources: c10, Routes: closure_11 } = Constants);
-let closure_12 = fn(11793).DirectoryChannelScrollBehavior;
-const GuildProgressConstants = fn(11962);
+let closure_12 = fn(11962).DirectoryChannelScrollBehavior;
+const GuildProgressConstants = fn(12133);
 ({ AnalyticsActions: map1, AnalyticsSetupTypes: closure_14 } = GuildProgressConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);

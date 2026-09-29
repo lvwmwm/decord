@@ -1,17 +1,17 @@
-// Module ID: 9299
-// Function ID: 9300
+// Module ID: 9466
+// Function ID: 9467
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [2045, 4479, 1372, 5827, 1074, 4989, 2]
+// Dependencies: [2045, 4479, 1372, 5994, 1074, 4989, 2]
 // Exports: default
 
-// Module 9299 (createAutocompleterResultForChannelId)
+// Module 9466 (createAutocompleterResultForChannelId)
 import useChannelName from "useChannelName" /* 4989 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-fn(5827).AutocompleterResultTypes;
+fn(5994).AutocompleterResultTypes;
 const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");

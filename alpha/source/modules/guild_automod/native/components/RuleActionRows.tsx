@@ -1,12 +1,12 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17523
+// Function ID: 17524
 // Name: RuleActionRows
-// Dependencies: [19, 2045, 4467, 11341, 21, 4836, 576, 17311, 10871, 1115, 4800, 17335, 1981, 17336, 17314, 5917, 5279, 4832, 5929, 17310, 5999, 2]
+// Dependencies: [19, 2045, 4467, 11510, 21, 4836, 576, 17500, 11040, 1115, 4800, 17524, 1981, 17525, 17503, 6083, 5445, 4832, 6095, 17499, 6165, 2]
 // Exports: default
 
-// Module 17334 (RuleActionRows)
+// Module 17523 (RuleActionRows)
 import nativeDefault from "native" /* 576 */;
-import getActionInfo from "getActionInfo" /* 17314 */;
+import getActionInfo from "getActionInfo" /* 17503 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -22,7 +22,7 @@ function RuleActionRow(onPress) {
   } else {
     const obj2 = { icon: null, label: null, subLabel: null, trailing: null, accessibilityValue: null, disabled: null, onPress: null, arrow: true };
     const obj3 = { IconComponent: actionInfo.icon };
-    obj2.icon = timestampProducer(tmp3(5917).TableRow.Icon, obj3);
+    obj2.icon = timestampProducer(tmp3(6083).TableRow.Icon, obj3);
     obj2.label = actionInfo.headerText;
     const obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: null };
     const items = [actionInfo.descriptionText, ];
@@ -37,9 +37,9 @@ function RuleActionRow(onPress) {
     items[1] = tmp9Result;
     obj6.children = items;
     obj4.children = React5(tmp3(4832).Text, obj6);
-    obj2.subLabel = timestampProducer(tmp3(5279).Stack, obj4);
+    obj2.subLabel = timestampProducer(tmp3(5445).Stack, obj4);
     const obj7 = { checked: null != found };
-    obj2.trailing = timestampProducer(tmp3(5929).FormCheckbox, obj7);
+    obj2.trailing = timestampProducer(tmp3(6095).FormCheckbox, obj7);
     const intl = tmp3(1115).intl;
     if (null != found) {
       let Yl1D84 = tmp3(1115).t.G00RI5;
@@ -50,11 +50,11 @@ function RuleActionRow(onPress) {
     obj2.accessibilityValue = obj8;
     obj2.disabled = !actionInfo.isEditable;
     obj2.onPress = onPress.onPress;
-    return timestampProducer(tmp3(5917).TableRow, obj2);
+    return timestampProducer(tmp3(6083).TableRow, obj2);
   }
 }
 let closure_4 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
-const AutomodActionType = fn(11341).AutomodActionType;
+const AutomodActionType = fn(11510).AutomodActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4836);
@@ -66,7 +66,7 @@ const result = size.fileFinishedImporting("modules/guild_automod/native/componen
 export default function RuleActionRows(rule) {
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
-  const availableActionTypes = rule(17310).getAvailableActionTypes(rule.triggerType);
+  const availableActionTypes = rule(17499).getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
     let obj2 = { title: null, hasIcons: true, children: null };
@@ -174,7 +174,7 @@ export default function RuleActionRows(rule) {
         }
       }, actionType);
     });
-    tmp3 = closure_6(tmp(5999).TableRowGroup, obj2);
+    tmp3 = closure_6(tmp(6165).TableRowGroup, obj2);
   }
   return tmp3;
 };

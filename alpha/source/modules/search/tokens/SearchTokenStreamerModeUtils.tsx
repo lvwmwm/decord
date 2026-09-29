@@ -1,11 +1,11 @@
-// Module ID: 11828
-// Function ID: 11829
+// Module ID: 11997
+// Function ID: 11998
 // Name: SearchTokenStreamerModeUtils
-// Dependencies: [4679, 1074, 11823, 2]
+// Dependencies: [4679, 1074, 11992, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 11828 (SearchTokenStreamerModeUtils)
-import SearchUtils from "SearchUtils" /* 11823 */;
+// Module 11997 (SearchTokenStreamerModeUtils)
+import SearchUtils from "SearchUtils" /* 11992 */;
 import StreamerModeStore from "StreamerModeStore" /* 4679 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 17007
+// Function ID: 17008
 // Name: LaunchPadNotificationCenter
-// Dependencies: [19, 21, 4836, 16038, 2]
+// Dependencies: [19, 21, 4836, 16214, 2]
 
-// Module 16820 (LaunchPadNotificationCenter)
-import notifications_NotificationsDefault from "notifications/Notifications" /* 16038 */;
+// Module 17007 (LaunchPadNotificationCenter)
+import notifications_NotificationsDefault from "notifications/Notifications" /* 16214 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

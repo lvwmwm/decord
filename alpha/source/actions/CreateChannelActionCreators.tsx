@@ -1,16 +1,16 @@
-// Module ID: 9014
-// Function ID: 9015
+// Module ID: 9179
+// Function ID: 9180
 // Name: CreateChannelActionCreators
-// Dependencies: [5017, 1074, 1084, 573, 5029, 1249, 2057, 1271, 6540, 6535, 6741, 2]
+// Dependencies: [5017, 1074, 1084, 573, 5029, 1249, 2057, 1271, 6706, 6701, 6907, 2]
 
-// Module 9014 (CreateChannelActionCreators)
+// Module 9179 (CreateChannelActionCreators)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import TypeUtils from "TypeUtils" /* 2057 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6741 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6701 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6706 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6907 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 require = fn;

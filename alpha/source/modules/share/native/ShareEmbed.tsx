@@ -1,13 +1,13 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13618
+// Function ID: 13619
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4836, 576, 5889, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6055, 4832, 2]
 // Exports: default
 
-// Module 13449 (ShareEmbed)
+// Module 13618 (ShareEmbed)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6055 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

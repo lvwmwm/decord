@@ -1,10 +1,10 @@
-// Module ID: 9225
-// Function ID: 9226
+// Module ID: 9390
+// Function ID: 9391
 // Name: usePendingFolderGuildIds
 // Dependencies: [4656, 2067, 504, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 9225 (usePendingFolderGuildIds)
+// Module 9390 (usePendingFolderGuildIds)
 import initialize from "initialize" /* 504 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
 import GuildStore from "GuildStore" /* 2067 */;

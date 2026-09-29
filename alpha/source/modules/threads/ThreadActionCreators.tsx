@@ -1,27 +1,27 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7349
+// Function ID: 7350
 // Name: ThreadActionCreators
-// Dependencies: [5, 2049, 502, 2045, 4469, 7185, 4471, 7195, 1074, 2052, 1271, 573, 5203, 1115, 5016, 7196, 7197, 7200, 7201, 1370, 2056, 2]
+// Dependencies: [5, 2049, 502, 2045, 4469, 7350, 4471, 7360, 1074, 2052, 1271, 573, 5369, 1115, 5016, 7361, 7362, 7365, 7366, 1370, 2056, 2]
 
-// Module 7184 (ThreadActionCreators)
+// Module 7349 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7196 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7361 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7185 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7350 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 7195 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 7360 */;
 
 const require = globalThis.__r;
 
-const ApplicationCommandActionCreators = tmp(7197);
+const ApplicationCommandActionCreators = tmp(7362);
 require = fn;
 function patchThread(id, body) {
   _require = id;
@@ -48,7 +48,7 @@ function dispatchThreadMemberLocalUpdate(id, isJoining) {
   obj.dispatch({ type: "THREAD_MEMBER_LOCAL_UPDATE", id: id.id, guildId: id.getGuildId(), userId: AuthenticationStore.getId(), isJoining });
 }
 let closure_4 = fn(2049).createChannelRecordFromServer;
-const PAGE_SIZE = fn(7185).PAGE_SIZE;
+const PAGE_SIZE = fn(7350).PAGE_SIZE;
 const Constants = fn(1074);
 ({ Endpoints: closure_12, AbortCodes: map1, AnalyticEvents: closure_14, Permissions: closure_15 } = Constants);
 const ChannelFlags = fn(2052).ChannelFlags;
@@ -892,14 +892,14 @@ export default {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const result = tmp4(7200).trackThreadNotificationSettingsUpdated(tmp4, closure_1);
+              const result = tmp4(7365).trackThreadNotificationSettingsUpdated(tmp4, closure_1);
               if (!JoinedThreadsStore.hasJoined(tmp4.id)) {
                 c1 = 1;
                 dependencyMap = 1;
                 const obj5 = { value: self.joinThread(tmp4, "Change Notification Settings"), done: false };
                 return obj5;
               }
-              const obj8 = tmp4(7200);
+              const obj8 = tmp4(7365);
             }
           } else if (arg0 === 1) {
             dependencyMap = 3;

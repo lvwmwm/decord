@@ -1,9 +1,9 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9270
+// Function ID: 9271
 // Name: CertifiedDeviceStore
 // Dependencies: [4861, 510, 504, 12, 573, 2]
 
-// Module 9105 (CertifiedDeviceStore)
+// Module 9270 (CertifiedDeviceStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;

@@ -1,10 +1,10 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11985
+// Function ID: 11986
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4467, 1372, 1074, 21, 4836, 5994, 5831, 5450, 11803, 5832, 2059, 9302, 6544, 11817, 2]
+// Dependencies: [5, 32, 19, 4467, 1372, 1074, 21, 4836, 6160, 5998, 5617, 11972, 5999, 2059, 9469, 6710, 11986, 2]
 // Exports: default
 
-// Module 11816 (CreateGuildContainer)
+// Module 11985 (CreateGuildContainer)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -15,7 +15,7 @@ const require = fn;
 const UPLOAD_MEDIUM_SIZE = fn(1074).UPLOAD_MEDIUM_SIZE;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
-let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5994).NAV_BAR_HEIGHT } };
+let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(6160).NAV_BAR_HEIGHT } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/create_guild/native/components/CreateGuildContainer.tsx");

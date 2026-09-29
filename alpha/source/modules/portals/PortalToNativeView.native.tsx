@@ -1,10 +1,10 @@
-// Module ID: 6491
-// Function ID: 6492
+// Module ID: 6657
+// Function ID: 6658
 // Name: PortalToNativeView
 // Dependencies: [19, 17, 21, 4836, 2]
 // Exports: default
 
-// Module 6491 (PortalToNativeView)
+// Module 6657 (PortalToNativeView)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

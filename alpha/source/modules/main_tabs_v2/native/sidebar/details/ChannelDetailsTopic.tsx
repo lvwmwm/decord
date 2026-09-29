@@ -1,13 +1,13 @@
-// Module ID: 16559
-// Function ID: 16560
+// Module ID: 16748
+// Function ID: 16749
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1372, 10377, 1074, 21, 1364, 4836, 16560, 4566, 5280, 4823, 5435, 4832, 5293, 504, 4678, 4981, 2]
+// Dependencies: [32, 19, 17, 1372, 10546, 1074, 21, 1364, 4836, 16749, 4566, 5446, 4823, 5602, 4832, 5459, 504, 4678, 4981, 2]
 
-// Module 16559 (ChannelDetailsTopic)
+// Module 16748 (ChannelDetailsTopic)
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
 import ChannelUtils from "ChannelUtils" /* 4981 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -207,7 +207,7 @@ function GroupDMChannelDetailsTopic(channel) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const ChannelDetailsConstants = fn(10377);
+const ChannelDetailsConstants = fn(10546);
 ({ CHANNEL_TOPIC_LINE_CLAMP: closure_8, SPRING_CHANNEL_DETAILS: closure_9 } = ChannelDetailsConstants);
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);

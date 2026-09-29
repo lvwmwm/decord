@@ -1,9 +1,9 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 7116
+// Function ID: 7117
 // Name: FavoritesSuggestionStore
 // Dependencies: [2045, 2099, 5017, 504, 573, 2]
 
-// Module 6950 (FavoritesSuggestionStore)
+// Module 7116 (FavoritesSuggestionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

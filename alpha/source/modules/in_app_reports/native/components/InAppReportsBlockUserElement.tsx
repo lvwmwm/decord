@@ -1,14 +1,14 @@
-// Module ID: 12471
-// Function ID: 12472
+// Module ID: 12641
+// Function ID: 12642
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2045, 4479, 1074, 21, 504, 4988, 5016, 9195, 7852, 12468, 1115, 7371, 2]
+// Dependencies: [19, 2045, 4479, 1074, 21, 504, 4988, 5016, 9360, 8017, 12638, 1115, 7536, 2]
 // Exports: default
 
-// Module 12471 (InAppReportsBlockUserElement)
+// Module 12641 (InAppReportsBlockUserElement)
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8017 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

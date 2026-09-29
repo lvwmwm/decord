@@ -1,21 +1,21 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7436
+// Function ID: 7437
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4825, 1182, 4859, 4655, 1372, 1374, 1074, 4883, 7272, 7266, 21, 4836, 576, 4531, 4488, 7273, 5474, 5446, 7274, 7275, 7277, 7278, 1115, 7280, 7282, 7283, 4800, 7270, 7284, 7285, 12869, 12870, 11693, 11702, 12873, 1094, 1364, 8271, 5899, 5293, 504, 6583, 8614, 9421, 6867, 8671, 8622, 1241, 9422, 4701, 6618, 12874, 4832, 5281, 7495, 2]
+// Dependencies: [19, 17, 4825, 1182, 4859, 4655, 1372, 1374, 1074, 4883, 7437, 7431, 21, 4836, 576, 4531, 4488, 7438, 5641, 5613, 7439, 7440, 7442, 7443, 1115, 7445, 7447, 7448, 4800, 7435, 7449, 7450, 13039, 13040, 11862, 11871, 13043, 1094, 1364, 8436, 6065, 5459, 504, 6749, 8779, 9588, 7033, 8836, 8787, 1241, 9589, 4701, 6784, 13044, 4832, 5447, 7660, 2]
 // Exports: default
 
-// Module 7271 (PremiumUpsellActionSheet)
+// Module 7436 (PremiumUpsellActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7270 */;
-import showForLaterModal from "showForLaterModal" /* 7284 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7285 */;
-import APNGPlayer from "APNGPlayer" /* 8271 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7435 */;
+import showForLaterModal from "showForLaterModal" /* 7449 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7450 */;
+import APNGPlayer from "APNGPlayer" /* 8436 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
@@ -74,9 +74,9 @@ const PremiumConstants = fn(1374);
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);
 const ApplicationStreamFPS = fn(4883).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(7272);
+const SavedMessagesConstants = fn(7437);
 ({ SAVED_BOOKMARKS_MAX: closure_17, SAVED_REMINDERS_MAX: closure_18 } = SavedMessagesConstants);
-const premiumMax = fn(7266).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(7431).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
 const createStyles = fn(4836);

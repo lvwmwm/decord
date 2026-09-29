@@ -1,27 +1,27 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16612
+// Function ID: 16613
 // Name: VibegrationsAppChannelView
-// Dependencies: [32, 19, 17, 8499, 12827, 8500, 21, 4836, 576, 1879, 5370, 8501, 16277, 8751, 8760, 16278, 12831, 6876, 16279, 16428, 4832, 1115, 3715, 5281, 2]
+// Dependencies: [32, 19, 17, 8664, 12997, 8665, 21, 4836, 576, 1879, 5536, 8666, 16457, 8916, 8925, 16458, 13001, 7042, 16459, 16613, 4832, 1115, 3715, 5447, 2]
 // Exports: default
 
-// Module 16427 (VibegrationsAppChannelView)
+// Module 16612 (VibegrationsAppChannelView)
 import nativeDefault from "native" /* 576 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8760 */;
-import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 12831 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8666 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8916 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8925 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13001 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 12827 */;
+import FramesStore from "FramesStore" /* 8664 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 12997 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FramesConstants = fn(8500);
+const FramesConstants = fn(8665);
 ({ FrameLayoutModes: closure_9, isLaunched: c10 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);

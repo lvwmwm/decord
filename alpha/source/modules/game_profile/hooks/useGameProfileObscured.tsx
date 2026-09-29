@@ -1,12 +1,12 @@
-// Module ID: 5423
-// Function ID: 5424
+// Module ID: 5590
+// Function ID: 5591
 // Name: useGameProfileObscured
-// Dependencies: [1372, 5424, 504, 2]
+// Dependencies: [1372, 5591, 504, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 5423 (useGameProfileObscured)
+// Module 5590 (useGameProfileObscured)
 import initialize from "initialize" /* 504 */;
-import utils from "utils" /* 5424 */;
+import utils from "utils" /* 5591 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

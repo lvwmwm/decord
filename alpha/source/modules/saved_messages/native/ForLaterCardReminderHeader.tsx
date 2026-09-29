@@ -1,12 +1,12 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 13037
+// Function ID: 13038
 // Name: ForLaterCardReminderHeader
-// Dependencies: [21, 11211, 11699, 4795, 2]
+// Dependencies: [21, 11380, 11868, 4795, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 12867 (ForLaterCardReminderHeader)
+// Module 13037 (ForLaterCardReminderHeader)
 import jsxProd from "jsxProd" /* 21 */;
-import SavedMessageUtils from "SavedMessageUtils" /* 11211 */;
+import SavedMessageUtils from "SavedMessageUtils" /* 11380 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -24,7 +24,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   let tmp7 = null;
   if (null != savedMessage.saveData.dueAt) {
     const obj3 = { IconComponent: tmp(4795).ClockIcon, label: tmp5, isCritical: tmp6, actions };
-    tmp7 = jsx(tmp(11699).ForLaterCardStatusHeader, { IconComponent: tmp(4795).ClockIcon, label: tmp5, isCritical: tmp6, actions });
+    tmp7 = jsx(tmp(11868).ForLaterCardStatusHeader, { IconComponent: tmp(4795).ClockIcon, label: tmp5, isCritical: tmp6, actions });
   }
   return tmp7;
 };

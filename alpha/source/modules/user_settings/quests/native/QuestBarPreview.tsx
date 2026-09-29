@@ -1,14 +1,14 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14885
+// Function ID: 14886
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4836, 576, 14628, 14711, 14712, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 14803, 14886, 14887, 2]
 // Exports: QuestBarPreview
 
-// Module 14710 (QuestBarPreview)
+// Module 14885 (QuestBarPreview)
 import nativeDefault from "native" /* 576 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14628 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14711 */;
-import QuestDock from "QuestDock" /* 14712 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14803 */;
+import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14886 */;
+import QuestDock from "QuestDock" /* 14887 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

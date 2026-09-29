@@ -1,20 +1,20 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17644
+// Function ID: 17645
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 2067, 1372, 9049, 21, 4836, 576, 504, 6470, 2021, 5829, 5832, 9048, 5917, 1177, 5924, 1115, 6610, 4527, 6615, 6460, 17456, 6471, 7678, 6476, 6461, 2]
+// Dependencies: [32, 19, 17, 2067, 1372, 9214, 21, 4836, 576, 504, 6636, 2021, 5996, 5999, 9213, 6083, 1177, 6090, 1115, 6776, 4527, 6781, 6626, 17645, 6637, 7843, 6642, 6627, 2]
 // Exports: default
 
-// Module 17455 (GuildSettingsModalBans)
+// Module 17644 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 6615 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5996 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 6781 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

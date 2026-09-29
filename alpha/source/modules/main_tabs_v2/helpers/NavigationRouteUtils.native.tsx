@@ -2,7 +2,7 @@
 // Function ID: 4693
 // Name: NavigationRouteUtils
 // Dependencies: [32, 19, 4693, 1486, 1255, 4694, 4699, 4700, 4701, 2]
-// Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
+// Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
 
 // Module 4692 (NavigationRouteUtils)
 import Link from "Link" /* 1486 */;
@@ -252,17 +252,6 @@ export const navigateToChannel = function navigateToChannel(openChannel) {
     }
   }
   return false;
-};
-export const navigateToMemberVerification = function navigateToMemberVerification(guildId, inviteCode) {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-  const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
-  let flag = !tmp;
-  if (!tmp) {
-    const obj2 = { guildId, inviteCode };
-    rootNavigationRef.navigate("member-verification", obj2);
-    flag = true;
-  }
-  return flag;
 };
 export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
   const rootNavigationRef = icymiScreen(4693).getRootNavigationRef();

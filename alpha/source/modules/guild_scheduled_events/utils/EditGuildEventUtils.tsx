@@ -1,12 +1,12 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 9147
+// Function ID: 9148
 // Name: EditGuildEventUtils
-// Dependencies: [502, 2051, 8946, 8983, 2]
+// Dependencies: [502, 2051, 9111, 9148, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 8982 (EditGuildEventUtils)
-import ScheduleUtils from "ScheduleUtils" /* 8946 */;
-import EntityUtils from "EntityUtils" /* 8983 */;
+// Module 9147 (EditGuildEventUtils)
+import ScheduleUtils from "ScheduleUtils" /* 9111 */;
+import EntityUtils from "EntityUtils" /* 9148 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;

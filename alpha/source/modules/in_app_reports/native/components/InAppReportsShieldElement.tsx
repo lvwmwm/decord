@@ -1,11 +1,11 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8273
+// Function ID: 8274
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 4836, 7872, 2]
+// Dependencies: [19, 17, 21, 4836, 8037, 2]
 // Exports: default
 
-// Module 8108 (InAppReportsShieldElement)
-import ShieldSpotIllustration from "ShieldSpotIllustration" /* 7872 */;
+// Module 8273 (InAppReportsShieldElement)
+import ShieldSpotIllustration from "ShieldSpotIllustration" /* 8037 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

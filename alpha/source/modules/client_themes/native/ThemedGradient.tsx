@@ -1,10 +1,10 @@
-// Module ID: 5437
-// Function ID: 5438
+// Module ID: 5604
+// Function ID: 5605
 // Name: ThemedGradient
-// Dependencies: [19, 17, 4653, 21, 4836, 4685, 4684, 4683, 1479, 5293, 4767, 576, 4689, 4652, 672, 1231, 563, 4691, 4766, 1230, 2]
+// Dependencies: [19, 17, 4653, 21, 4836, 4685, 4684, 4683, 1479, 5459, 4767, 576, 4689, 4652, 672, 1231, 563, 4691, 4766, 1230, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 5437 (ThemedGradient)
+// Module 5604 (ThemedGradient)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
@@ -17,7 +17,7 @@ import GuildThemePresets from "GuildThemePresets" /* 4689 */;
 import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4691 */;
 import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4766 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
 import noop from "module_19" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
 
@@ -346,8 +346,8 @@ function CustomThemesGradient(arg0) {
     items2[3] = absolute;
     items2[4] = componentStyles;
     obj.style = items2;
-    tmp10Result = closure_6(reduced(5293), obj);
-    const tmp2Result = reduced(5293);
+    tmp10Result = closure_6(reduced(5459), obj);
+    const tmp2Result = reduced(5459);
   }
   return tmp10Result;
 }

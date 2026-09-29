@@ -1,20 +1,20 @@
-// Module ID: 6652
-// Function ID: 6653
+// Module ID: 6818
+// Function ID: 6819
 // Name: StorefrontUtils
-// Dependencies: [19, 2112, 1372, 6653, 1074, 1374, 12, 6654, 1365, 1385, 504, 6647, 6655, 4488, 6662, 2]
+// Dependencies: [19, 2112, 1372, 6819, 1074, 1374, 12, 6820, 1365, 1385, 504, 6813, 6821, 4488, 6828, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6652 (StorefrontUtils)
+// Module 6818 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
-import StorefrontTypes from "StorefrontTypes" /* 6654 */;
-import PriceUtils from "PriceUtils" /* 6655 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6662 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6813 */;
+import StorefrontTypes from "StorefrontTypes" /* 6820 */;
+import PriceUtils from "PriceUtils" /* 6821 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6828 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
-import SKUPricesStore from "SKUPricesStore" /* 6653 */;
+import SKUPricesStore from "SKUPricesStore" /* 6819 */;
 
 const require = globalThis.__r;
 
@@ -62,7 +62,7 @@ function useSKUPrice(sku) {
       if (null != stateFromStores1) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 6654).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 6820).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {
@@ -340,7 +340,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
       if (null != stateFromStores1) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 6654).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 6820).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {

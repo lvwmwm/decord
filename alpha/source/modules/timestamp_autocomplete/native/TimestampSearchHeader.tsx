@@ -1,16 +1,16 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 12053
+// Function ID: 12054
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 9578, 4836, 576, 4795, 4832, 1115, 8053, 2]
+// Dependencies: [19, 17, 21, 9745, 4836, 576, 4795, 4832, 1115, 8218, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 11882 (TimestampSearchHeader)
+// Module 12053 (TimestampSearchHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ClockIcon from "ClockIcon" /* 4795 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Form from "Form" /* 8053 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import Form from "Form" /* 8218 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9745 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

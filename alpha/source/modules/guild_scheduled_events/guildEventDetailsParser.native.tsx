@@ -1,9 +1,9 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9226
+// Function ID: 9227
 // Name: guildEventDetailsParser
 // Dependencies: [4823, 2]
 
-// Module 9061 (guildEventDetailsParser)
+// Module 9226 (guildEventDetailsParser)
 import MarkupUtils from "MarkupUtils" /* 4823 */;
 
 const size = fn(2);

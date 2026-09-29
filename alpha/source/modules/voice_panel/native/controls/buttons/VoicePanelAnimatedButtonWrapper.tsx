@@ -1,17 +1,17 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17196
+// Function ID: 17197
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11755, 21, 4836, 576, 4566, 16918, 1364, 5280, 4837, 2]
+// Dependencies: [19, 17, 11924, 21, 4836, 576, 4566, 17105, 1364, 5446, 4837, 2]
 // Exports: default
 
-// Module 17009 (VoicePanelAnimatedButtonWrapper)
+// Module 17196 (VoicePanelAnimatedButtonWrapper)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import noop from "module_19" /* 19 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 
 require = fn;
-const MODE_CHANGE_PHYSICS = fn(11755).MODE_CHANGE_PHYSICS;
+const MODE_CHANGE_PHYSICS = fn(11924).MODE_CHANGE_PHYSICS;
 let jsx = fn(21).jsx;
 const createStyles = fn(4836);
 let obj2 = { pressableWrapper: { justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG } };
@@ -86,7 +86,7 @@ export default function AnimatedButtonWrapper(onPressOut) {
         obj.animations = obj3;
         return obj;
       };
-      let obj2 = { offsetFromCenter: sharedValue, withSpring: tmp(5280).withSpring, MODE_CHANGE_PHYSICS, withTiming: tmp(4837).withTiming };
+      let obj2 = { offsetFromCenter: sharedValue, withSpring: tmp(5446).withSpring, MODE_CHANGE_PHYSICS, withTiming: tmp(4837).withTiming };
       fn.__closure = obj2;
       fn.__workletHash = 16238937246135;
       fn.__initData = __initData;
@@ -114,7 +114,7 @@ export default function AnimatedButtonWrapper(onPressOut) {
         obj.animations = obj3;
         return obj;
       };
-      let obj2 = { withSpring: tmp(5280).withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: tmp(4837).withTiming };
+      let obj2 = { withSpring: tmp(5446).withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: tmp(4837).withTiming };
       fn.__closure = obj2;
       fn.__workletHash = 17504057367727;
       fn.__initData = __initData2;

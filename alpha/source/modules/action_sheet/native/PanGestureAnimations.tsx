@@ -1,13 +1,13 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12468
+// Function ID: 12469
 // Name: PanGestureAnimations
-// Dependencies: [1177, 5280, 4837, 4566, 6073, 2]
+// Dependencies: [1177, 5446, 4837, 4566, 6239, 2]
 // Exports: default
 
-// Module 12297 (PanGestureAnimations)
+// Module 12468 (PanGestureAnimations)
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import size from "module_2" /* 2 */;
 
 const SPRING_CONFIG = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };

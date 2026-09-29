@@ -1,14 +1,14 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 8704
+// Function ID: 8705
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 8538, 6400, 4832, 1115, 2]
+// Dependencies: [19, 21, 8703, 6566, 4832, 1115, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 8539 (TwoWayLinkStepHeader)
+// Module 8704 (TwoWayLinkStepHeader)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8538 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8703 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

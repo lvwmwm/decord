@@ -1,10 +1,10 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8534
+// Function ID: 8535
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 4566, 4837, 1397, 8370, 4832, 8172, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 4566, 4837, 1397, 8535, 4832, 8337, 2]
 // Exports: default
 
-// Module 8369 (GameProfileNavigationHeader)
+// Module 8534 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import timing from "timing" /* 4837 */;
@@ -111,7 +111,7 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: null };
     const obj4 = { android_fallbackColor: token };
-    const items2 = [closure_7(tmp2(8370).BackgroundBlurFill, obj4), ];
+    const items2 = [closure_7(tmp2(8535).BackgroundBlurFill, obj4), ];
     const obj5 = { style: tmp.headerRow, children: null };
     let tmp17Result = null != memo;
     if (tmp17Result) {
@@ -133,12 +133,12 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp15Result) {
       const obj10 = { style: tmp.rankPillContainer, children: null };
       const obj11 = { rank: game.l30Rank, compact: true };
-      const items5 = [tmp17(tmp4(8172), obj11), ];
+      const items5 = [tmp17(tmp4(8337), obj11), ];
       const obj12 = { style: null, children: null };
       const items6 = [StyleSheet.absoluteFill, animatedStyle1];
       obj12.style = items6;
       const obj13 = { rank: game.l30Rank };
-      obj12.children = tmp17(tmp4(8172), obj13);
+      obj12.children = tmp17(tmp4(8337), obj13);
       items5[1] = tmp17(tmp4(4566).View, obj12);
       obj10.children = items5;
       tmp15Result = tmp15(tmp16, obj10);

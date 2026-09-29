@@ -1,12 +1,12 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16874
+// Function ID: 16875
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 2045, 2067, 4479, 1372, 1074, 21, 4836, 576, 7184, 6540, 6535, 9601, 5917, 1177, 9603, 4832, 1115, 4989, 9604, 1485, 10854, 9600, 1486, 563, 7288, 1613, 2]
+// Dependencies: [19, 17, 2045, 2067, 4479, 1372, 1074, 21, 4836, 576, 7349, 6706, 6701, 9768, 6083, 1177, 9770, 4832, 1115, 4989, 9771, 1485, 11023, 9767, 1486, 563, 7453, 1613, 2]
 
-// Module 16686 (MuteSettingsScreen)
+// Module 16874 (MuteSettingsScreen)
 import nativeDefault from "native" /* 576 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9601 */;
-import threadActionSheets from "threadActionSheets" /* 10854 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9768 */;
+import threadActionSheets from "threadActionSheets" /* 11023 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -30,20 +30,20 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = closure_10;
-  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(9603) });
+  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(9770) });
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1115).intl;
   const obj5 = { name: null };
-  const obj3 = { disableColor: true, source: navigation(9603) };
+  const obj3 = { disableColor: true, source: navigation(9770) };
   obj5.name = channel(4989).computeChannelName(channel, UserStore, RelationshipStore, true);
   obj4.children = intl.format(channel(1115).t["eC+9rj"], obj5);
   obj2.label = closure_10(channel(4832).Text, obj4);
   obj2.onPress = callback;
-  const items1 = [closure_10(channel(5917).TableRow, obj2), ];
+  const items1 = [closure_10(channel(6083).TableRow, obj2), ];
   const obj7 = { muteConfig: channel.muteConfig, type: null };
   const obj6 = channel(4989);
-  const tmp6 = navigation(9604);
-  const MuteSettingType = channel(9604).MuteSettingType;
+  const tmp6 = navigation(9771);
+  const MuteSettingType = channel(9771).MuteSettingType;
   obj7.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj7);
   obj.children = items1;

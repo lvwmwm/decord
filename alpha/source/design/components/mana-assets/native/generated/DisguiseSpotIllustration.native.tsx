@@ -1,13 +1,13 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17254
+// Function ID: 17255
 // Name: DisguiseSpotIllustration
-// Dependencies: [21, 5899, 17068, 2]
+// Dependencies: [21, 6065, 17255, 2]
 // Exports: DisguiseSpotIllustration
 
-// Module 17067 (DisguiseSpotIllustration)
+// Module 17254 (DisguiseSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef17068 from "module_17068" /* 17068 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import _modDef17255 from "module_17255" /* 17255 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const DisguiseSpotIllustration = function DisguiseSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef17068 };
+  const obj2 = { uri: _modDef17255 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

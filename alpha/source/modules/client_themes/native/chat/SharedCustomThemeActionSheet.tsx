@@ -1,19 +1,19 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11596
+// Function ID: 11597
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 4494, 1074, 1374, 21, 4836, 576, 1241, 11428, 4682, 6571, 6570, 1115, 2717, 4832, 8659, 5281, 504, 4488, 6842, 6603, 1177, 1228, 2]
+// Dependencies: [32, 19, 17, 4494, 1074, 1374, 21, 4836, 576, 1241, 11597, 4682, 6737, 6736, 1115, 2717, 4832, 8824, 5447, 504, 4488, 7008, 6769, 1177, 1228, 2]
 // Exports: default
 
-// Module 11427 (SharedCustomThemeActionSheet)
+// Module 11596 (SharedCustomThemeActionSheet)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 4682 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6842 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8659 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11428 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7008 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8824 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11597 */;
 import _slicedToArray from "module_32" /* 32 */;
 import "module_19";
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
@@ -51,7 +51,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1115).intl;
     obj4.text = intl.string(tmp2(1115).t["1Qm822"]);
     obj4.onPress = onPressApply.onPressApply;
-    tmp6 = closure_12(tmp2(5281).Button, obj4);
+    tmp6 = closure_12(tmp2(5447).Button, obj4);
   }
   return tmp6;
 }

@@ -1,22 +1,22 @@
-// Module ID: 17438
-// Function ID: 17439
+// Module ID: 17627
+// Function ID: 17628
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1074, 5720, 21, 4836, 576, 4767, 11058, 1177, 1397, 4685, 5917, 1115, 5435, 5992, 6621, 17439, 1364, 4832, 5595, 5999, 2]
+// Dependencies: [32, 19, 17, 1074, 5887, 21, 4836, 576, 4767, 11227, 1177, 1397, 4685, 6083, 1115, 5602, 6158, 6787, 17628, 1364, 4832, 5762, 6165, 2]
 // Exports: default
 
-// Module 17438 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 17627 (GuildSettingsRoleEditConnectionConfiguration)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import PlatformsDefault from "Platforms" /* 5595 */;
-import TableRow from "TableRow" /* 5917 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11058 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17439 */;
+import Pressables from "Pressables" /* 5602 */;
+import PlatformsDefault from "Platforms" /* 5762 */;
+import TableRow from "TableRow" /* 6083 */;
+import XSmallIcon from "XSmallIcon" /* 6158 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11227 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17628 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ function Header(arg0) {
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj2 = { size: tmp3(1177).AvatarSizes.XSMALL, user: null, guildId: "Array" };
+    const obj2 = { size: tmp3(1177).AvatarSizes.XSMALL, user: null, guildId: "r" };
     let bot;
     if (integration != null) {
       const application = integration.application;
@@ -60,7 +60,7 @@ function Header(arg0) {
       }
       let tmp11;
       if (null != bot1) {
-        const obj3 = { size: tmp3(1177).AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+        const obj3 = { size: tmp3(1177).AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
         tmp11 = closure_1_12(tmp3(1177).Avatar, obj3);
       }
       let name1;
@@ -135,7 +135,7 @@ function BooleanConfigRule(metadataField) {
     }
     _slicedToArray(tmp, num);
   };
-  return closure_12(metadataField(6621).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(6787).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   ({ fieldText, fieldTextHook, metadataField } = existingPendingConfiguration);
@@ -178,7 +178,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  const realizedOperatorForResult = metadataField(17439).realizedOperatorFor(existingPendingConfiguration.operator);
+  const realizedOperatorForResult = metadataField(17628).realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   value = undefined;
   if (existingPendingConfiguration != null) {
@@ -186,9 +186,9 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let obj = metadataField(17439);
-  const tmpResult = metadataField(17439);
-  str1 = metadataField(17439).displayedValueFor(value, realizedOperatorForResult).toString();
+  let obj = metadataField(17628);
+  const tmpResult = metadataField(17628);
+  str1 = metadataField(17628).displayedValueFor(value, realizedOperatorForResult).toString();
   let mapped = noop;
   [value] = noop.useState(str1);
   closure_10 = tmp9;
@@ -300,7 +300,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
           _slicedToArray(tmp3, num);
         }
     };
-    return onInputValueChange(tmp(6621).TableSwitchRow, obj8, metadataField);
+    return onInputValueChange(tmp(6787).TableSwitchRow, obj8, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {
@@ -515,7 +515,7 @@ function ApplicationMetadataRules(arg0) {
 }
 const View = fn(17).View;
 const PlatformTypes = fn(1074).PlatformTypes;
-const Constants = fn(5720);
+const Constants = fn(5887);
 ({ MetadataFields: closure_7, OperatorTypes: closure_8, MetadataItemTypes: closure_9, GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: c10, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);

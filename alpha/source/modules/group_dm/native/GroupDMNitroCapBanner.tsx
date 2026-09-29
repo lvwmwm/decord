@@ -1,17 +1,17 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16711
+// Function ID: 16712
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 12958, 5293, 8122, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 13128, 5459, 8287, 2]
 // Exports: default
 
-// Module 16522 (GroupDMNitroCapBanner)
+// Module 16711 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 12958 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13128 */;
 import noop from "module_19" /* 19 */;
 
-const NitroWheelIcon = tmp2(8122);
+const NitroWheelIcon = tmp2(8287);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);

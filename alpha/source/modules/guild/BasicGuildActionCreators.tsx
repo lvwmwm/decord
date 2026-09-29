@@ -1,15 +1,15 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17842
+// Function ID: 17843
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 2067, 7397, 1074, 573, 1271, 2]
+// Dependencies: [5, 2067, 7562, 1074, 573, 1271, 2]
 // Exports: fetchBasicGuild
 
-// Module 17653 (BasicGuildActionCreators)
+// Module 17842 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import BasicGuildStore from "BasicGuildStore" /* 7397 */;
+import BasicGuildStore from "BasicGuildStore" /* 7562 */;
 
 require = fn;
 let closure_8 = async function _fetchBasicGuild(arg0, value) {

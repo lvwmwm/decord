@@ -1,10 +1,10 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 13098
+// Function ID: 13099
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4497, 1074, 4488, 1271, 573, 4735, 38, 5092, 2]
+// Dependencies: [109, 32, 5, 19, 4497, 1074, 4488, 1271, 573, 4735, 38, 5258, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 12928 (PremiumSubscriptionInvoice)
+// Module 13098 (PremiumSubscriptionInvoice)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

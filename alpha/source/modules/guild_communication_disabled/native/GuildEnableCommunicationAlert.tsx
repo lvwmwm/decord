@@ -1,12 +1,12 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11491
+// Function ID: 11492
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1372, 2110, 1074, 21, 4836, 7419, 5298, 1241, 11321, 4528, 1115, 8810, 5300, 4832, 4988, 10391, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 2110, 1074, 21, 4836, 7584, 5464, 1241, 11490, 4528, 1115, 8975, 5466, 4832, 4988, 10560, 2]
 // Exports: default
 
-// Module 11322 (GuildEnableCommunicationAlert)
+// Module 11491 (GuildEnableCommunicationAlert)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CountDownDefault from "CountDown" /* 10391 */;
+import CountDownDefault from "CountDown" /* 10560 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -56,7 +56,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           } else {
             v1 = 1;
             dependencyMap = 1;
-            const obj5 = { value: v1(11321).setCommunicationDisabledDuration(guildId, userId), done: false };
+            const obj5 = { value: v1(11490).setCommunicationDisabledDuration(guildId, userId), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -70,7 +70,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj7 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
           const intl = tmp4(1115).intl;
           obj7.content = intl.string(tmp4(1115).t["/Mmbfv"]);
-          obj7.icon = v1(8810);
+          obj7.icon = v1(8975);
           v1(4528).open(obj7);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
@@ -83,8 +83,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   };
   const tmp2 = closure_12();
   dependencyMap = tmp2;
-  closure_3 = _slicedToArray(userId(7419)(userId, guildId), 1)[0];
-  userId(5298)(() => {
+  closure_3 = _slicedToArray(userId(7584)(userId, guildId), 1)[0];
+  userId(5464)(() => {
     AnalyticsUtilsDefault.track(constants.OPEN_MODAL, { type, guild_id: guildId, other_user_id: userId });
   });
   let obj = {};
@@ -118,7 +118,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const user = UserStore.getUser(userId);
   const tmp11 = closure_11;
   const tmp12 = View;
-  const tmp7 = userId(5300);
+  const tmp7 = userId(5466);
   let str = userId(4988).getName(guildId, null, user);
   if (str == null) {
     str = "";

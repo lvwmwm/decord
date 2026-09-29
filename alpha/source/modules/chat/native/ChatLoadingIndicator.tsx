@@ -1,20 +1,20 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 13015
+// Function ID: 13016
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 4825, 5589, 5056, 2099, 1372, 1980, 1074, 21, 4836, 576, 5204, 5300, 1981, 504, 4832, 12846, 4566, 4837, 1115, 5435, 2]
+// Dependencies: [32, 19, 17, 4825, 5756, 5056, 2099, 1372, 1980, 1074, 21, 4836, 576, 5370, 5466, 1981, 504, 4832, 13016, 4566, 4837, 1115, 5602, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 12845 (ChatLoadingIndicator)
+// Module 13015 (ChatLoadingIndicator)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import timing from "timing" /* 4837 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -285,7 +285,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
   let tmp7Result = tmp8;
   if (stateFromStores1) {
     let obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = closure_13(tmp2(5435).PressableOpacity, obj8);
+    tmp7Result = closure_13(tmp2(5602).PressableOpacity, obj8);
   }
   return tmp7Result;
 };

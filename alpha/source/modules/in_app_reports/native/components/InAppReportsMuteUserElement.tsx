@@ -1,14 +1,14 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12642
+// Function ID: 12643
 // Name: InAppReportsMuteUserElement
-// Dependencies: [32, 19, 2045, 1074, 1084, 21, 504, 4988, 9601, 5016, 7852, 12468, 1115, 9613, 2]
+// Dependencies: [32, 19, 2045, 1074, 1084, 21, 504, 4988, 9768, 5016, 8017, 12638, 1115, 9780, 2]
 // Exports: default
 
-// Module 12472 (InAppReportsMuteUserElement)
+// Module 12642 (InAppReportsMuteUserElement)
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9601 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8017 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9768 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

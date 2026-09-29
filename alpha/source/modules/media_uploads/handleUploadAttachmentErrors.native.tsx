@@ -1,16 +1,16 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8775
+// Function ID: 8776
 // Name: handleUploadAttachmentErrors
-// Dependencies: [1074, 5446, 8611, 5474, 5203, 1115, 8696, 2]
+// Dependencies: [1074, 5613, 8776, 5641, 5369, 1115, 8861, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 8610 (handleUploadAttachmentErrors)
+// Module 8775 (handleUploadAttachmentErrors)
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import FileUtils from "FileUtils" /* 5446 */;
-import UploadLimits from "UploadLimits" /* 5474 */;
-import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 8611 */;
-import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 8696 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import FileUtils from "FileUtils" /* 5613 */;
+import UploadLimits from "UploadLimits" /* 5641 */;
+import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 8776 */;
+import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 8861 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

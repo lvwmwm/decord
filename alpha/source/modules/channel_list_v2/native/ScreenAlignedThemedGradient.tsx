@@ -1,14 +1,14 @@
-// Module ID: 15685
-// Function ID: 15686
+// Module ID: 15860
+// Function ID: 15861
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4836, 10456, 7299, 5437, 15655, 4566, 2]
+// Dependencies: [17, 21, 4836, 10625, 7464, 5604, 15830, 4566, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15685 (ScreenAlignedThemedGradient)
+// Module 15860 (ScreenAlignedThemedGradient)
 import jsxProd from "jsxProd" /* 21 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
-import useActiveTheme from "useActiveTheme" /* 7299 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5604 */;
+import useActiveTheme from "useActiveTheme" /* 7464 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10625 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;

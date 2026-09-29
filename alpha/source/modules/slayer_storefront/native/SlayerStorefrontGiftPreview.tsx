@@ -1,14 +1,14 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11160
+// Function ID: 11161
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4836, 8288, 4832, 1115, 9254, 3585, 2]
+// Dependencies: [19, 17, 21, 4836, 8453, 4832, 1115, 9421, 3585, 2]
 // Exports: default
 
-// Module 10991 (SlayerStorefrontGiftPreview)
+// Module 11160 (SlayerStorefrontGiftPreview)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8288 */;
-import InfoBox from "InfoBox" /* 9254 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8453 */;
+import InfoBox from "InfoBox" /* 9421 */;
 import noop from "module_19" /* 19 */;
 
 const InfoBoxDefault = InfoBox;

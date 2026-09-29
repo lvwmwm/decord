@@ -1,13 +1,13 @@
-// Module ID: 5912
-// Function ID: 5913
+// Module ID: 6078
+// Function ID: 6079
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4836, 5913, 5916, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 6079, 6082, 1115, 2]
 // Exports: default
 
-// Module 5912 (TermsField)
+// Module 6078 (TermsField)
 import util from "util" /* 1115 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5913 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5916 */;
+import TermsFieldListDefault from "TermsFieldList" /* 6079 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6082 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

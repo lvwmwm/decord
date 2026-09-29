@@ -1,14 +1,14 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13177
+// Function ID: 13178
 // Name: premium/Header
-// Dependencies: [19, 17, 21, 4836, 4767, 5899, 1115, 4685, 13008, 13009, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 4767, 6065, 1115, 4685, 13178, 13179, 4832, 2]
 // Exports: default
 
-// Module 13007 (premium/Header)
+// Module 13177 (premium/Header)
 import util from "util" /* 1115 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
+import FastImageDefault from "FastImage" /* 6065 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -33,9 +33,9 @@ export default function Header(style) {
   obj2.accessibilityLabel = intl.string(util.t.lpNrPu);
   const tmp8 = FastImageDefault;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(13008);
+    let tmp2Result = tmp2(13178);
   } else {
-    tmp2Result = tmp2(13009);
+    tmp2Result = tmp2(13179);
   }
   obj2.source = tmp2Result;
   const items1 = [React4(tmp8, obj2), ];

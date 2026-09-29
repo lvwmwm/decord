@@ -1,10 +1,10 @@
-// Module ID: 7715
-// Function ID: 7716
+// Module ID: 7880
+// Function ID: 7881
 // Name: useStateFromSharedValue
 // Dependencies: [32, 19, 1248, 4566, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 7715 (useStateFromSharedValue)
+// Module 7880 (useStateFromSharedValue)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

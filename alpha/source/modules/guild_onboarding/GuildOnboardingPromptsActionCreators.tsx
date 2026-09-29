@@ -1,10 +1,10 @@
-// Module ID: 6520
-// Function ID: 6521
+// Module ID: 6686
+// Function ID: 6687
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 2108, 2067, 6521, 6522, 1074, 4455, 1241, 5016, 573, 1271, 1385, 2]
+// Dependencies: [5, 502, 2108, 2067, 6687, 6688, 1074, 4455, 1241, 5016, 573, 1271, 1385, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 6520 (GuildOnboardingPromptsActionCreators)
+// Module 6686 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
@@ -12,7 +12,7 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6687 */;
 
 require = fn;
 function fetchOnboardingPrompts(guildId) {
@@ -148,7 +148,7 @@ function _trackOnboardingDirectJoin(guildId) {
   obj5.in_onboarding = true;
   obj4.track(constants.GUILD_ONBOARDING_STEP_COMPLETED, obj5);
 }
-let closure_8 = fn(6522).serverApiResponseToClientState;
+let closure_8 = fn(6688).serverApiResponseToClientState;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, Endpoints: c10, GuildFeatures: closure_11 } = Constants);
 const GuildMemberFlags = fn(4455).GuildMemberFlags;

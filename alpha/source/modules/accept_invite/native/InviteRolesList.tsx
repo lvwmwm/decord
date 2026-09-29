@@ -1,12 +1,12 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12405
+// Function ID: 12406
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4836, 2106, 5279, 4832, 1115, 10409, 2]
+// Dependencies: [19, 17, 21, 4836, 2106, 5445, 4832, 1115, 10578, 2]
 // Exports: default
 
-// Module 12234 (InviteRolesList)
+// Module 12405 (InviteRolesList)
 import GuildRoleUtils from "GuildRoleUtils" /* 2106 */;
-import RolePillDefault from "RolePill" /* 10409 */;
+import RolePillDefault from "RolePill" /* 10578 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export default function InviteRolesList(invite) {
       const obj3 = { style: tmp.rolesRow, children: memo.map((role) => hasOwnProperty(RolePillDefault, { role, guildId: guild.id }, role.id)) };
       items1[1] = closure_5(View, obj3);
       obj.children = items1;
-      tmp2 = closure_6(guild(5279).Stack, obj);
+      tmp2 = closure_6(guild(5445).Stack, obj);
     }
   }
   return tmp2;

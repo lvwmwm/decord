@@ -1,19 +1,19 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15881
+// Function ID: 15882
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2050, 1372, 14841, 1074, 1085, 21, 15707, 15708, 4836, 576, 6583, 504, 6589, 1241, 12443, 1981, 7624, 15702, 4988, 15709, 14842, 15703, 1177, 15712, 10350, 15713, 9366, 12576, 8161, 5411, 8535, 1115, 4683, 1364, 9519, 5899, 15704, 15715, 9522, 7595, 15717, 7694, 2]
+// Dependencies: [19, 17, 2050, 1372, 15016, 1074, 1085, 21, 15882, 15883, 4836, 576, 6749, 504, 6755, 1241, 12614, 1981, 7789, 15877, 4988, 15884, 15017, 15878, 1177, 15887, 10519, 15888, 9533, 12746, 8326, 5577, 8700, 1115, 4683, 1364, 9686, 6065, 15879, 15890, 9689, 7760, 15892, 7859, 2]
 
-// Module 15706 (HappeningNowCardActivity)
+// Module 15881 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9522 */;
-import useLiveStageData from "useLiveStageData" /* 15704 */;
-import _modDef15707 from "module_15707" /* 15707 */;
-import _modDef15708 from "module_15708" /* 15708 */;
-import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 15715 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9689 */;
+import useLiveStageData from "useLiveStageData" /* 15879 */;
+import _modDef15882 from "module_15882" /* 15882 */;
+import _modDef15883 from "module_15883" /* 15883 */;
+import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 15890 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -133,10 +133,10 @@ function IconOrPreview(arg0) {
       obj8.style = tmp.cardImageStreamPreview;
       const intl5 = tmp28(1115).intl;
       obj8.ctaText = intl5.string(tmp28(1115).t["7Xq/nV"]);
-      obj3.children = closure_11(tmp2(9519), obj8);
+      obj3.children = closure_11(tmp2(9686), obj8);
       return closure_11(closure_4, obj3);
     } else {
-      if (tmp2(10350)(activity)) {
+      if (tmp2(10519)(activity)) {
         const intl4 = tmp28(1115).intl;
         let stringResult = intl4.string(tmp28(1115).t.rmnkz4);
       } else {
@@ -147,7 +147,7 @@ function IconOrPreview(arg0) {
         if (type === constants2.LISTENING) {
           const intl3 = tmp28(1115).intl;
           stringResult = intl3.string(tmp28(1115).t.kUEnxN);
-        } else if (tmp2(12576)(activity)) {
+        } else if (tmp2(12746)(activity)) {
           const intl2 = tmp28(1115).intl;
           stringResult = intl2.string(tmp28(1115).t.T0uYK9);
         } else {
@@ -164,7 +164,7 @@ function IconOrPreview(arg0) {
       const obj10 = { style: memo, accessibilityLabel: stringResult, children: null };
       const obj11 = { style: tmp35, children: null };
       const obj12 = { style: tmp.cardImageAsset, source: memoizedImageSourceResult };
-      obj11.children = closure_11(tmp2(5899), obj12);
+      obj11.children = closure_11(tmp2(6065), obj12);
       obj10.children = closure_11(closure_4, obj11);
       return closure_11(closure_4, obj10);
     }
@@ -179,7 +179,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       let tmp2Result2 = items[userId % items.length];
     } else {
-      tmp2Result2 = tmp2(15717);
+      tmp2Result2 = tmp2(15892);
     }
   }
 }
@@ -201,14 +201,14 @@ function StageStreamAvatars(stage) {
 }
 get_ActivityIndicator = fn(17);
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);
-const HappeningNowConstants = fn(14841);
+const HappeningNowConstants = fn(15016);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7, STATUS_CUTOUT_SMALL: closure_8, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT } = HappeningNowConstants);
 const Constants = fn(1074);
 ({ ActivityTypes: closure_9, AnalyticEvents: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
-let items = [_modDef15707, _modDef15708];
+let items = [_modDef15882, _modDef15883];
 const createStyles = fn(4836);
 let obj = { content: { flexShrink: 1, gap: 2 }, avatarStackContainer: { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 }, cardAvatar: { marginBottom: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" }, cardImageStream: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" }, cardImageAsset: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageStreamPreview: null, cardImageStreamLive: null, stageStreamLiveText: null, stagePreviewWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
@@ -305,11 +305,11 @@ export default noop.memo((userId) => {
     obj2.destination_channel_id = channelId;
     AnalyticsUtilsDefault.track(constants3.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stream) {
-      asyncRequireImpl(12443, tmp6.paths).then((result) => result.default(channelId.channelId, true));
-      const promise2 = asyncRequireImpl(12443, tmp6.paths);
+      asyncRequireImpl(12614, tmp6.paths).then((result) => result.default(channelId.channelId, true));
+      const promise2 = asyncRequireImpl(12614, tmp6.paths);
     } else {
-      asyncRequireImpl(7624, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(7624, tmp6.paths);
+      asyncRequireImpl(7789, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(7789, tmp6.paths);
     }
   }, items2);
   if (null == stateFromStores) {

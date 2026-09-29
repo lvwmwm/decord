@@ -1,12 +1,12 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8933
+// Function ID: 8934
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2044, 4739, 1074, 1091, 8769, 568, 1110, 1241, 4458, 8770, 8772, 1981, 8773, 2]
+// Dependencies: [5, 32, 2044, 4739, 1074, 1091, 8934, 568, 1110, 1241, 4458, 8935, 8937, 1981, 8938, 2]
 
-// Module 8768 (PostMessageTransport)
+// Module 8933 (PostMessageTransport)
 import DurationsDefault from "Durations" /* 1091 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 8769 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 8934 */;
+import RPCErrorDefault from "RPCError" /* 8935 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -440,30 +440,30 @@ PostMessageTransport.prototype["routeEvent"] = function routeEvent(value, iframe
     if (RPCOpcodesDefault.HANDSHAKE === tmp5) {
       if (null != value) {
         const obj2 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp35 = new tmp7(8770)(obj2, "Already connected");
+        const tmp35 = new tmp7(8935)(obj2, "Already connected");
         throw tmp35;
       } else {
         return self.handleHandshake(iframeId, tmp6, arg3);
       }
-    } else if (tmp7(8769).FRAME === tmp5) {
+    } else if (tmp7(8934).FRAME === tmp5) {
       if (null == value) {
         const obj3 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp27 = new tmp7(8770)(obj3, "Not connected");
+        const tmp27 = new tmp7(8935)(obj3, "Not connected");
         throw tmp27;
       } else {
         return self.handleFrame(iframeId, value, tmp6);
       }
-    } else if (tmp7(8769).CLOSE === tmp5) {
+    } else if (tmp7(8934).CLOSE === tmp5) {
       if (null == value) {
         const obj4 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp20 = new tmp7(8770)(obj4, "Not connected");
+        const tmp20 = new tmp7(8935)(obj4, "Not connected");
         throw tmp20;
       } else {
         return self.handleClose(value, tmp6);
       }
     } else {
       const obj = { closeCode: constants2.CLOSE_UNSUPPORTED };
-      const tmp13 = new tmp7(8770)(obj, "Invalid opcode");
+      const tmp13 = new tmp7(8935)(obj, "Invalid opcode");
       throw tmp13;
     }
     const tmp4 = _slicedToArray(arg2, 2);

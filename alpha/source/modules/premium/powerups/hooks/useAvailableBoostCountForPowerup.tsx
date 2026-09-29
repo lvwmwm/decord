@@ -1,10 +1,10 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12204
+// Function ID: 12205
 // Name: useAvailableBoostCountForPowerup
 // Dependencies: [19, 2067, 4723, 4724, 504, 4743, 1370, 2]
 // Exports: default
 
-// Module 12033 (useAvailableBoostCountForPowerup)
+// Module 12204 (useAvailableBoostCountForPowerup)
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;

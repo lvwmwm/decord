@@ -1,13 +1,13 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15975
+// Function ID: 15976
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 2042, 21, 4836, 9048, 1115, 2519, 4616, 10589, 2]
+// Dependencies: [19, 17, 2042, 21, 4836, 9213, 1115, 2519, 4616, 10758, 2]
 // Exports: default
 
-// Module 15800 (BoostProgressBarCoachmark)
+// Module 15975 (BoostProgressBarCoachmark)
 import util from "util" /* 1115 */;
 import _modDef2519 from "module_2519" /* 2519 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,6 +50,6 @@ export default function BoostProgressBarCoachmark(guild) {
     obj.onButtonPress = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(10589).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(10758).useCoachmark(guild.targetRef, memo);
   return null;
 };

@@ -1,9 +1,9 @@
-// Module ID: 13310
-// Function ID: 13311
+// Module ID: 13479
+// Function ID: 13480
 // Name: VoiceActionSheetManager
 // Dependencies: [1993, 4855, 1983, 573, 5043, 2]
 
-// Module 13310 (VoiceActionSheetManager)
+// Module 13479 (VoiceActionSheetManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;

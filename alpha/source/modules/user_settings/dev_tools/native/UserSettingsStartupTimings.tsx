@@ -1,18 +1,18 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 15295
+// Function ID: 15296
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4836, 576, 4832, 4699, 1613, 9653, 504, 9, 6895, 7809, 8179, 5279, 5999, 5916, 1347, 5917, 12470, 2]
+// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4836, 576, 4832, 4699, 1613, 9820, 504, 9, 7061, 7974, 8344, 5445, 6165, 6082, 1347, 6083, 12640, 2]
 // Exports: default
 
-// Module 15120 (UserSettingsStartupTimings)
+// Module 15295 (UserSettingsStartupTimings)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5916 */;
-import TableRow from "TableRow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 9653 */;
-import ShareIcon from "ShareIcon" /* 12470 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6082 */;
+import TableRow from "TableRow" /* 6083 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 9820 */;
+import ShareIcon from "ShareIcon" /* 12640 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -109,9 +109,9 @@ export default function UserSettingsStartupTimings() {
           return obj6;
         } else {
           closure_128_0 = value;
-          closure_128_1 = tmp5(9653)(closure_128_0);
+          closure_128_1 = tmp5(9820)(closure_128_0);
           const obj7 = { message: closure_128_1 };
-          tmp2(7809).showShareActionSheet(obj7, "Startup Timing");
+          tmp2(7974).showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -261,6 +261,6 @@ export default function UserSettingsStartupTimings() {
   obj5.renderItem = function renderItem(children) {
     return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj4.children = closure_8(tmp10(8179).FlashList, obj5);
+  obj4.children = closure_8(tmp10(8344).FlashList, obj5);
   return closure_8(checked, obj4);
 };

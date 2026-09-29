@@ -1,11 +1,11 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17298
+// Function ID: 17299
 // Name: getClientVersionForChangelog
-// Dependencies: [17110, 2]
+// Dependencies: [17299, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 17109 (getClientVersionForChangelog)
-import AppInfoUtils from "AppInfoUtils" /* 17110 */;
+// Module 17298 (getClientVersionForChangelog)
+import AppInfoUtils from "AppInfoUtils" /* 17299 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");

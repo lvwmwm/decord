@@ -1,10 +1,10 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11891
+// Function ID: 11892
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4703, 4566, 1611, 4837, 4840, 10413, 2]
+// Dependencies: [19, 21, 4703, 4566, 1611, 4837, 4840, 10582, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11722 (MediaKeyboardButtonIcon)
+// Module 11891 (MediaKeyboardButtonIcon)
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import useKeyboardTypeDefault from "useKeyboardType" /* 4703 */;

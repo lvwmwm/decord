@@ -1,11 +1,11 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14588
+// Function ID: 14589
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [19, 6383, 2]
+// Dependencies: [19, 6549, 2]
 // Exports: default
 
-// Module 14413 (useRefreshLinkCodeOnExpiry)
-import useStableCallbackDefault from "useStableCallback" /* 6383 */;
+// Module 14588 (useRefreshLinkCodeOnExpiry)
+import useStableCallbackDefault from "useStableCallback" /* 6549 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

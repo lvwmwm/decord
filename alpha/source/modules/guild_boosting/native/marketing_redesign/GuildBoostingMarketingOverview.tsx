@@ -1,12 +1,12 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6968
+// Function ID: 6969
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2067, 1372, 1074, 21, 4836, 6803, 504, 1485, 6583, 5910, 6813, 1380, 1241, 573, 6675, 5174, 6821, 13115, 13122, 13127, 13137, 13142, 13146, 2]
+// Dependencies: [32, 19, 17, 2067, 1372, 1074, 21, 4836, 6969, 504, 1485, 6749, 6076, 6979, 1380, 1241, 573, 6841, 5340, 6987, 13285, 13292, 13297, 13307, 13312, 13316, 2]
 // Exports: default
 
-// Module 6802 (GuildBoostingMarketingOverview)
+// Module 6968 (GuildBoostingMarketingOverview)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 6821 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 6987 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -84,9 +84,9 @@ export default function GuildBoostingMarketingOverview(guildId) {
   }, items3);
   const effect1 = obj4.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = guildId(6675).fetchPremiumSubscriptionPlans();
-      const obj = guildId(6675);
-      const paymentSources = guildId(5174).fetchPaymentSources();
+      const premiumSubscriptionPlans = guildId(6841).fetchPremiumSubscriptionPlans();
+      const obj = guildId(6841);
+      const paymentSources = guildId(5340).fetchPaymentSources();
     });
   }, []);
   let tmp18 = null;

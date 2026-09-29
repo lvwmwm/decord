@@ -1,21 +1,21 @@
-// Module ID: 5450
-// Function ID: 5451
+// Module ID: 5617
+// Function ID: 5618
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1184, 4885, 1372, 1074, 5045, 3, 5451, 5462, 5441, 5468, 1364, 4527, 1115, 1427, 4488, 5440, 1151, 5471, 5473, 5474, 5446, 4812, 38, 5475, 5476, 5477, 1370, 5478, 5479, 5480, 5066, 5481, 2]
+// Dependencies: [109, 5, 17, 1184, 4885, 1372, 1074, 5045, 3, 5618, 5629, 5608, 5635, 1364, 4527, 1115, 1427, 4488, 5607, 1151, 5638, 5640, 5641, 5613, 4812, 38, 5642, 5643, 5644, 1370, 5645, 5646, 5647, 5066, 5648, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 5450 (utils/UploadUtils)
+// Module 5617 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import NativeFileModuleDefault from "NativeFileModule" /* 1151 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import NativeMediaManagerModuleDefault from "NativeMediaManagerModule" /* 1427 */;
-import Upload from "Upload" /* 5440 */;
-import UploadUtils from "UploadUtils" /* 5441 */;
-import FileUtils from "FileUtils" /* 5446 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5451 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 5473 */;
-import UploadLimits from "UploadLimits" /* 5474 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 5481 */;
+import Upload from "Upload" /* 5607 */;
+import UploadUtils from "UploadUtils" /* 5608 */;
+import FileUtils from "FileUtils" /* 5613 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5618 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 5640 */;
+import UploadLimits from "UploadLimits" /* 5641 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 5648 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1184 */;
@@ -70,8 +70,8 @@ let closure_24 = async function _openImagePickerUnhandled(arg0, value) {
             closure_135_8 = undefined;
             closure_135_7 = function cleanPickedImage() {
               if (obj.isIOS()) {
-                promise.then(() => type(5462).cleanSingle(decodeURIComponent(uri.uri.replace(/^file:\/\//, "")))).catch((error) => logger.warn("Failed to remove picked image", error));
-                const nextPromise = promise.then(() => type(5462).cleanSingle(decodeURIComponent(uri.uri.replace(/^file:\/\//, ""))));
+                promise.then(() => type(5629).cleanSingle(decodeURIComponent(uri.uri.replace(/^file:\/\//, "")))).catch((error) => logger.warn("Failed to remove picked image", error));
+                const nextPromise = promise.then(() => type(5629).cleanSingle(decodeURIComponent(uri.uri.replace(/^file:\/\//, ""))));
               }
             };
             c11 = 1;
@@ -107,7 +107,7 @@ let closure_24 = async function _openImagePickerUnhandled(arg0, value) {
             size1 = new Promise((arg0, arg1) => {
               closure_0 = arg0;
               closure_1 = arg1;
-              closure_1(5462).launchImageLibrary({ mediaType: "photo", includeBase64: true, disableNewIOSPicker: true }, (assets) => {
+              closure_1(5629).launchImageLibrary({ mediaType: "photo", includeBase64: true, disableNewIOSPicker: true }, (assets) => {
                 let first = null;
                 if (null != assets.assets) {
                   first = null;
@@ -842,7 +842,7 @@ function convertVideo(videoMetadata) {
   if (obj7.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() > 34) {
       let _Math = Math;
-      let frameRate = Math.min(videoMetadata.frameRate, tmp(5473).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
+      let frameRate = Math.min(videoMetadata.frameRate, tmp(5640).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
     }
     obj8.frameRate = frameRate;
     obj8.skipVideoTranscode = result1;
@@ -1279,12 +1279,12 @@ function convertVideo(videoMetadata) {
                   } else {
                     isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                     if (isVideo2) {
-                      obj8 = { uri: str3, overrideType: "a" };
-                      isVideo2 = tmp12(5441).getFile(obj8).isVideo;
-                      const tmp12Result10 = tmp12(5441);
+                      obj8 = { uri: str3, overrideType: "r" };
+                      isVideo2 = tmp12(5608).getFile(obj8).isVideo;
+                      const tmp12Result10 = tmp12(5608);
                     }
                   }
-                  tmp12Result9 = tmp12(5471);
+                  tmp12Result9 = tmp12(5638);
                 }
                 const tmp12Result7 = tmp12(1364);
               }
@@ -1298,12 +1298,12 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj9 = { uri: str3, overrideType: "a" };
-                  isVideo = tmp12(5441).getFile(obj9).isVideo;
-                  const tmp12Result12 = tmp12(5441);
+                  const obj9 = { uri: str3, overrideType: "r" };
+                  isVideo = tmp12(5608).getFile(obj9).isVideo;
+                  const tmp12Result12 = tmp12(5608);
                 }
               }
-              tmp12Result11 = tmp12(5471);
+              tmp12Result11 = tmp12(5638);
             }
             const tmp12Result = tmp12(1364);
           }
@@ -1957,7 +1957,7 @@ let closure_38 = async function _tryConvertImage(arg0, value) {
                       } else {
                         tmp7 = null != str.match(/^assets-library:\/\/.+&ext=gif$/i);
                       }
-                      tmpResult = closure_1_0(5471);
+                      tmpResult = closure_1_0(5638);
                     }
                   })(closure_130_0, closure_130_1)) {
                     c4 = 2;
@@ -2675,8 +2675,8 @@ export const getFileSize = function getFileSize(uri) {
 };
 export { getAppDir };
 export { getFileInfo };
-export const shouldConvertToJPG = fn(5471).shouldConvertToJPG;
-export const shouldForceConvertToJPG = fn(5471).shouldForceConvertToJPG;
+export const shouldConvertToJPG = fn(5638).shouldConvertToJPG;
+export const shouldForceConvertToJPG = fn(5638).shouldForceConvertToJPG;
 export const shouldResolveToMediaFilePath = function shouldResolveToMediaFilePath(str) {
   let isAndroidResult = PlatformUtils.isAndroid();
   if (isAndroidResult) {

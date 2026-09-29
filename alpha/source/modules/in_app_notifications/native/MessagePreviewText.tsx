@@ -1,21 +1,21 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 9733
+// Function ID: 9734
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2045, 9555, 1085, 21, 4836, 1365, 576, 9567, 9568, 9554, 4832, 5899, 9590, 5083, 9595, 9596, 1096, 6720, 1115, 7304, 2]
+// Dependencies: [19, 17, 2045, 9722, 1085, 21, 4836, 1365, 576, 9734, 9735, 9721, 4832, 6065, 9757, 5249, 9762, 9763, 1096, 6886, 1115, 7469, 2]
 // Exports: default
 
-// Module 9566 (MessagePreviewText)
+// Module 9733 (MessagePreviewText)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 9567 */;
-import ChannelRowPreview from "ChannelRowPreview" /* 9568 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 9595 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 9596 */;
+import useMessageAuthor from "useMessageAuthor" /* 5249 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9721 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 9734 */;
+import ChannelRowPreview from "ChannelRowPreview" /* 9735 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 9757 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 9762 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 9763 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -134,7 +134,7 @@ function EmbedCard(embed) {
   return React7(View, obj);
 }
 const View = fn(17).View;
-const InAppNotificationConstants = fn(9555);
+const InAppNotificationConstants = fn(9722);
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_7 } = InAppNotificationConstants);
 const Fonts = fn(1085).Fonts;
 const jsxProd = fn(21);
@@ -198,7 +198,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp29 = previewableMedia.length > 0;
     if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(9590).PreviewableMediaTypes.GIF;
+      tmp29 = previewableMedia[0].type === tmp(9757).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -217,10 +217,10 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       const channel = ChannelStore.getChannel(message.channel_id);
-      tmp(9554);
+      tmp(9721);
       if (null != channel) {
-        const obj10 = { channel, message, color: "text-default", layout: tmp(7304).ChannelListLayoutTypes.COZY, variant: tmp24, muted: false, lineClamp };
-        return React6(tmp(9568).ChannelRowPreview, obj10);
+        const obj10 = { channel, message, color: "text-default", layout: tmp(7469).ChannelListLayoutTypes.COZY, variant: tmp24, muted: false, lineClamp };
+        return React6(tmp(9735).ChannelRowPreview, obj10);
       }
     }
     const obj11 = { message: getInitialMessagePreview, lineClamp, maxHeight };

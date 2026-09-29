@@ -1,9 +1,9 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5256
+// Function ID: 5257
 // Name: PremiumPaymentModalStore
 // Dependencies: [4735, 504, 573, 2]
 
-// Module 5090 (PremiumPaymentModalStore)
+// Module 5256 (PremiumPaymentModalStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;

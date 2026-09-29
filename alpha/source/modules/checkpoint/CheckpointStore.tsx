@@ -1,9 +1,9 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15421
+// Function ID: 15422
 // Name: CheckpointStore
 // Dependencies: [504, 573, 2]
 
-// Module 15246 (CheckpointStore)
+// Module 15421 (CheckpointStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 
@@ -12,6 +12,7 @@ const obj2 = { isMuted: false };
 let merged = Object.assign(obj2);
 obj = {};
 let c3 = null;
+let c4 = null;
 let INIT = obj.INIT;
 const PersistedStore = initializeDefault.PersistedStore;
 class CheckpointStore extends PersistedStore {
@@ -39,6 +40,12 @@ Object.defineProperty(prototype, "stats", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "character", {
+  get: function character() {
+    return c4;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "fetchState", {
   get: function fetchState() {
     return INIT;
@@ -54,17 +61,24 @@ const checkpointStore = new CheckpointStore(DispatcherDefault, {
   CHECKPOINT_FETCH_START: function handleFetchStart() {
     INIT = obj.FETCHING;
   },
-  CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(stats) {
-    stats = stats.stats;
+  CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
+    ({ stats: c3, character: c4 } = arg0);
     INIT = obj.SUCCESS;
   },
   CHECKPOINT_FETCH_FAILED: function handleFetchFailed() {
     INIT = obj.ERROR;
   },
+  CHECKPOINT_COMPLETE_SUCCESS: function handleCompleteSuccess(character) {
+    character = character.character;
+  },
+  CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
+    c4 = null;
+  },
   LOGOUT: function handleLogout() {
     obj = {};
     const merged = Object.assign(obj2);
     c3 = null;
+    c4 = null;
     INIT = obj.INIT;
   }
 });

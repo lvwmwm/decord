@@ -1,12 +1,12 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8678
+// Function ID: 8679
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4836, 576, 8514, 1613, 4566, 5280, 5435, 1115, 8743, 5992, 4832, 6544, 8745, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8679, 1613, 4566, 5446, 5602, 1115, 8908, 6158, 4832, 6710, 8910, 2]
 // Exports: default
 
-// Module 8513 (OAuth2AuthorizeModal)
+// Module 8678 (OAuth2AuthorizeModal)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ let result = size.fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeMo
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = closure_8();
-  const tmp4 = sharedValue(8514)(arg0);
+  const tmp4 = sharedValue(8679)(arg0);
   _require = tmp4;
   sharedValue = require("ReanimatedRexport").useSharedValue(0);
   const obj = require("ReanimatedRexport");
@@ -80,10 +80,10 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(576).colors.INTERACTIVE_TEXT_DEFAULT };
-    let tmp11Result = tmp11(tmp5(8743).ArrowSmallLeftIcon, obj7);
+    let tmp11Result = tmp11(tmp5(8908).ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(576).colors.INTERACTIVE_TEXT_DEFAULT };
-    tmp11Result = tmp11(tmp5(5992).XSmallIcon, obj8);
+    tmp11Result = tmp11(tmp5(6158).XSmallIcon, obj8);
   }
   obj6.children = tmp11Result;
   const items2 = [closure_5(require("Pressables").PressableOpacity, obj6), , ];
@@ -105,7 +105,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp4);
   obj13.onScroll = callback;
   obj13.centerContent = true;
-  obj12.children = closure_5(sharedValue(8745), obj13);
+  obj12.children = closure_5(sharedValue(8910), obj13);
   items4[1] = closure_5(require("common/SafeAreaView").SafeAreaPaddingView, obj12);
   obj3.children = items4;
   return closure_6(View, obj3);

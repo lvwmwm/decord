@@ -1,10 +1,10 @@
-// Module ID: 5875
-// Function ID: 5876
+// Module ID: 6041
+// Function ID: 6042
 // Name: SpellcheckExperiment
 // Dependencies: [1435, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 5875 (SpellcheckExperiment)
+// Module 6041 (SpellcheckExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

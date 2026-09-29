@@ -1,16 +1,16 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11637
+// Function ID: 11638
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5589, 5200, 2042, 2029, 4654, 504, 2031, 2]
+// Dependencies: [32, 19, 5756, 5366, 2042, 2029, 4654, 504, 2031, 2]
 // Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 11468 (ScheduledMessageDraftCoachmarkHooks)
+// Module 11637 (ScheduledMessageDraftCoachmarkHooks)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import DraftStore from "DraftStore" /* 5200 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
+import DraftStore from "DraftStore" /* 5366 */;
 
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;

@@ -1,9 +1,9 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13416
+// Function ID: 13417
 // Name: OnlineFriendsStore
 // Dependencies: [4876, 4479, 1074, 2062, 504, 573, 2]
 
-// Module 13246 (OnlineFriendsStore)
+// Module 13416 (OnlineFriendsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SetUtils from "SetUtils" /* 2062 */;

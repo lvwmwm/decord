@@ -1,10 +1,10 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7546
+// Function ID: 7547
 // Name: AutomodErrorUtils
-// Dependencies: [2045, 1074, 1115, 7253, 2]
+// Dependencies: [2045, 1074, 1115, 7418, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 7381 (AutomodErrorUtils)
+// Module 7546 (AutomodErrorUtils)
 import util from "util" /* 1115 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 

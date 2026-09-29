@@ -1,10 +1,10 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 14935
+// Function ID: 14936
 // Name: LoadingIndicator
 // Dependencies: [19, 17, 21, 4836, 2]
 // Exports: default
 
-// Module 14760 (LoadingIndicator)
+// Module 14935 (LoadingIndicator)
 import noop from "module_19" /* 19 */;
 
 const ActivityIndicator = fn(17).ActivityIndicator;

@@ -1,13 +1,13 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12283
+// Function ID: 12284
 // Name: TabItem
-// Dependencies: [19, 17, 21, 4566, 4836, 576, 5280, 4832, 1364, 1115, 2]
+// Dependencies: [19, 17, 21, 4566, 4836, 576, 5446, 4832, 1364, 1115, 2]
 // Exports: TabItem
 
-// Module 12112 (TabItem)
+// Module 12283 (TabItem)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -40,7 +40,7 @@ function TabItemCount(arg0) {
     }
   }
   let obj2 = sharedValue(4566);
-  T.__closure = { withSpring: sharedValue(5280).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4566).interpolate };
+  T.__closure = { withSpring: sharedValue(5446).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4566).interpolate };
   T.__workletHash = 16666672974627;
   T.__initData = __initData2;
   closure_129_0 = index;
@@ -53,7 +53,7 @@ function TabItemCount(arg0) {
     tmp7 = closure_11();
   }
   closure_129_3 = tmp7;
-  let obj3 = { withSpring: sharedValue(5280).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4566).interpolate };
+  let obj3 = { withSpring: sharedValue(5446).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4566).interpolate };
   const fn = function c() {
     let active = inactive.inactive;
     value = setItemDimensions.get();
@@ -71,7 +71,7 @@ function TabItemCount(arg0) {
     return obj;
   };
   const tmp2Result = sharedValue(4566);
-  fn.__closure = { colors: tmp7, pressed, index, activeIndex, withSpring: sharedValue(5280).withSpring, TEXT_SPRING_CONFIG };
+  fn.__closure = { colors: tmp7, pressed, index, activeIndex, withSpring: sharedValue(5446).withSpring, TEXT_SPRING_CONFIG };
   fn.__workletHash = 11643476765161;
   fn.__initData = __initData;
   const animatedStyle1 = tmp2Result.useAnimatedStyle(fn);

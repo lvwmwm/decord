@@ -1,10 +1,10 @@
-// Module ID: 7325
-// Function ID: 7326
+// Module ID: 7490
+// Function ID: 7491
 // Name: AnalyticsFeedItemSeenActionCreators
 // Dependencies: [573, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 7325 (AnalyticsFeedItemSeenActionCreators)
+// Module 7490 (AnalyticsFeedItemSeenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

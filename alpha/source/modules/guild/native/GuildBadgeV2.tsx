@@ -1,15 +1,15 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8367
+// Function ID: 8368
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4836, 1177, 4685, 8203, 8205, 8204, 2]
+// Dependencies: [19, 21, 4836, 1177, 4685, 8368, 8370, 8369, 2]
 // Exports: default, hasGuildBadge
 
-// Module 8202 (GuildBadgeV2)
+// Module 8367 (GuildBadgeV2)
 import native from "native" /* 1177 */;
 import shared from "shared" /* 4685 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8203 */;
-import BadgeCategory from "BadgeCategory" /* 8204 */;
-import GuildTraits from "GuildTraits" /* 8205 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8368 */;
+import BadgeCategory from "BadgeCategory" /* 8369 */;
+import GuildTraits from "GuildTraits" /* 8370 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default function GuildBadgeV2(arg0) {
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(8203).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(8368).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size, source: guildBadgeImageSource, style: tmp4.icon, disableColor: true };

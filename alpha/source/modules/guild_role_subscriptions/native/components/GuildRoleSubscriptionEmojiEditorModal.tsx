@@ -1,20 +1,20 @@
-// Module ID: 17587
-// Function ID: 17588
+// Module ID: 17776
+// Function ID: 17777
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5772, 21, 4836, 576, 17578, 504, 5899, 1397, 17584, 1115, 5203, 5300, 8053, 17574, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 5939, 21, 4836, 576, 17767, 504, 6065, 1397, 17773, 1115, 5369, 5466, 8218, 17763, 4832, 2]
 // Exports: default
 
-// Module 17587 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 17776 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
-import EmojiAliasDefault from "EmojiAlias" /* 17574 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import common_AlertDefault from "common/Alert" /* 5466 */;
+import EmojiAliasDefault from "EmojiAlias" /* 17763 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5772 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5939 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

@@ -1,26 +1,26 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14649
+// Function ID: 14650
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 6528, 1074, 21, 576, 4836, 8520, 8354, 8734, 4787, 1613, 504, 1485, 1486, 6591, 4832, 1115, 5999, 5917, 9023, 6411, 6416, 2]
+// Dependencies: [19, 17, 6694, 1074, 21, 576, 4836, 8685, 8519, 8899, 4787, 1613, 504, 1485, 1486, 6757, 4832, 1115, 6165, 6083, 9188, 6577, 6582, 2]
 // Exports: DisclosureIcon, default
 
-// Module 14474 (UserSettingsAuthedApps)
+// Module 14649 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import applications from "applications" /* 8520 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6577 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6582 */;
+import applications from "applications" /* 8685 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6694 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const FetchState = fn(6528).FetchState;
+const FetchState = fn(6694).FetchState;
 const Constants = fn(1074);
 ({ AnalyticsPages: closure_9, UserSettingsSections: c10 } = Constants);
 const jsxProd = fn(21);
@@ -119,10 +119,10 @@ export const DisclosureIcon = function DisclosureIcon(disclosure) {
   return noop.useMemo(() => {
     if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
       const obj2 = { style, size: "xs" };
-      return closure_2_11(tmp2(8354).GlobeEarthIcon, obj2);
-    } else if (tmp2(8520).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
+      return closure_2_11(tmp2(8519).GlobeEarthIcon, obj2);
+    } else if (tmp2(8685).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
       const obj3 = { style, size: "xs" };
-      return closure_2_11(tmp2(8734).EmbedIcon, obj3);
+      return closure_2_11(tmp2(8899).EmbedIcon, obj3);
     } else {
       const obj = { style, size: "xs" };
       return closure_2_11(tmp2(4787).CircleInformationIcon, obj);

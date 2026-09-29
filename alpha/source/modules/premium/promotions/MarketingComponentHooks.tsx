@@ -1,10 +1,10 @@
-// Module ID: 10218
-// Function ID: 10219
+// Module ID: 10385
+// Function ID: 10386
 // Name: MarketingComponentHooks
 // Dependencies: [4825, 4767, 504, 4538, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10218 (MarketingComponentHooks)
+// Module 10385 (MarketingComponentHooks)
 import initialize from "initialize" /* 504 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;

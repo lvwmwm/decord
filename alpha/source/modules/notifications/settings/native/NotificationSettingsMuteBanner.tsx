@@ -1,14 +1,14 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9776
+// Function ID: 9777
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 5281, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 5447, 1115, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 9609 (NotificationSettingsMuteBanner)
+// Module 9776 (NotificationSettingsMuteBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

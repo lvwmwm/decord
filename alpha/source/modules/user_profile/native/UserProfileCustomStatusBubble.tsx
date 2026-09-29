@@ -1,20 +1,20 @@
-// Module ID: 10574
-// Function ID: 10575
+// Module ID: 10743
+// Function ID: 10744
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 6629, 1375, 1085, 21, 4836, 576, 7909, 2021, 5899, 1397, 1364, 4832, 6551, 4531, 7635, 10339, 9578, 4800, 10575, 6603, 1115, 5435, 10774, 2]
+// Dependencies: [32, 19, 17, 6795, 1375, 1085, 21, 4836, 576, 8074, 2021, 6065, 1397, 1364, 4832, 6717, 4531, 7800, 10508, 9745, 4800, 10744, 6769, 1115, 5602, 10943, 2]
 
-// Module 10574 (UserProfileCustomStatusBubble)
+// Module 10743 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10575 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import EmojiDefault from "Emoji" /* 6717 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
+import inlineStyles from "inlineStyles" /* 8074 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10744 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -177,7 +177,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let closure_14 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_15 = { [fn(6629).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_15 = { [fn(6795).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 createStyles = fn(4836);
 let closure_18 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 let size = fn(2);

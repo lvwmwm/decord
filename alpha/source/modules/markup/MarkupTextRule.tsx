@@ -1,10 +1,10 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5478
+// Function ID: 5479
 // Name: MarkupTextRule
 // Dependencies: [1930, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 5312 (MarkupTextRule)
+// Module 5478 (MarkupTextRule)
 import _modDef1930 from "module_1930" /* 1930 */;
 
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;

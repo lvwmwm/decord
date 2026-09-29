@@ -1,10 +1,10 @@
-// Module ID: 12128
-// Function ID: 12129
+// Module ID: 12299
+// Function ID: 12300
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4469, 1372, 1074, 21, 4836, 576, 12129, 504, 12130, 5896, 4832, 1115, 4658, 5745, 5281, 2]
+// Dependencies: [19, 17, 4469, 1372, 1074, 21, 4836, 576, 12300, 504, 12301, 6062, 4832, 1115, 4658, 5912, 5447, 2]
 // Exports: default
 
-// Module 12128 (ChatBeginningRowJoinApplication)
+// Module 12299 (ChatBeginningRowJoinApplication)
 import nativeDefault from "native" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import noop from "module_19" /* 19 */;

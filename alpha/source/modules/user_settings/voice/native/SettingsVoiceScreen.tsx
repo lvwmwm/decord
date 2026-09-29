@@ -1,17 +1,17 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14967
+// Function ID: 14968
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 1993, 7417, 1074, 21, 2111, 4836, 4767, 4685, 9454, 9455, 1115, 6073, 9453, 4832, 9450, 11006, 14247, 2]
+// Dependencies: [19, 17, 1993, 7582, 1074, 21, 2111, 4836, 4767, 4685, 9621, 9622, 1115, 6239, 9620, 4832, 9617, 11175, 14423, 2]
 // Exports: default
 
-// Module 14792 (SettingsVoiceScreen)
+// Module 14967 (SettingsVoiceScreen)
 import util from "util" /* 1115 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import KrispLogo2 from "KrispLogo" /* 9453 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14247 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6239 */;
+import KrispLogo2 from "KrispLogo" /* 9620 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
+import SettingLayoutDefault from "SettingLayout" /* 14423 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2111 */;
@@ -21,9 +21,9 @@ function KrispLogo() {
   const tmp = closure_13();
   const tmp4 = useThemeDefault();
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(9454);
+    let tmp2Result = tmp2(9621);
   } else {
-    tmp2Result = tmp2(9455);
+    tmp2Result = tmp2(9622);
   }
   const obj2 = { style: tmp.krisp, children: null };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -60,7 +60,7 @@ function SystemProcessingSubLabel() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const MobileUserSettings = fn(7417).MobileUserSettings;
+const MobileUserSettings = fn(7582).MobileUserSettings;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);

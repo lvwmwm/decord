@@ -1,9 +1,9 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9435
+// Function ID: 9436
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2050, 5726, 1074, 2051, 21, 4836, 576, 5039, 5435, 1115, 1177, 6510, 7855, 5896, 504, 6634, 8053, 4832, 9203, 9269, 9270, 5298, 1241, 1876, 7846, 6637, 4735, 9271, 9272, 7858, 5281, 6544, 5890, 2]
+// Dependencies: [5, 32, 19, 17, 2050, 5893, 1074, 2051, 21, 4836, 576, 5039, 5602, 1115, 1177, 6676, 8020, 6062, 504, 6800, 8218, 4832, 9368, 9436, 9437, 5464, 1241, 1876, 8011, 6803, 4735, 9438, 9439, 8023, 5447, 6710, 6056, 2]
 
-// Module 9268 (StartStageChannelModal)
+// Module 9435 (StartStageChannelModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -11,12 +11,12 @@ import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import Pressables from "Pressables" /* 5435 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import _modDef6510 from "module_6510" /* 6510 */;
-import HotspotStore2 from "HotspotStore" /* 6634 */;
-import StageSparkleDefault from "StageSparkle" /* 7855 */;
-import Form from "Form" /* 8053 */;
+import Pressables from "Pressables" /* 5602 */;
+import GuildIcon from "GuildIcon" /* 6062 */;
+import _modDef6676 from "module_6676" /* 6676 */;
+import HotspotStore2 from "HotspotStore" /* 6800 */;
+import StageSparkleDefault from "StageSparkle" /* 8020 */;
+import Form from "Form" /* 8218 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -40,7 +40,7 @@ function NavigationBar(guild) {
     const intl = util.intl;
     obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
     obj2.onPress = closeModal;
-    const obj3 = { source: _modDef6510 };
+    const obj3 = { source: _modDef6676 };
     obj2.children = closure_1_14(native.Icon, obj3);
     obj.children = closure_1_14(Pressables.PressableOpacity, obj2);
     tmp2 = closure_1_14(React5, obj);
@@ -101,7 +101,7 @@ class NotificationToggle {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const StageChannelsConstants = fn(5726);
+const StageChannelsConstants = fn(5893);
 ({ MAX_STAGE_TOPIC_LENGTH: c10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: closure_11 } = StageChannelsConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let constants = fn(2051).GuildScheduledEventPrivacyLevel;
@@ -182,10 +182,10 @@ export default noop.forwardRef((channel, ref) => {
                 if (null != memo) {
                   c4 = 3;
                   c5 = 1;
-                  const obj8 = { value: tmp66(7846).editStage(channel, tmp75, tmp47), done: false };
+                  const obj8 = { value: tmp66(8011).editStage(channel, tmp75, tmp47), done: false };
                   return obj8;
                 } else {
-                  obj5 = tmp66(7846);
+                  obj5 = tmp66(8011);
                   c4 = 2;
                   c5 = 1;
                   const obj9 = { value: obj5.startStage(channel, tmp75, tmp47, first3), done: false };
@@ -214,8 +214,8 @@ export default noop.forwardRef((channel, ref) => {
                   tmp8 = closure_129_13;
                 }
                 if (tmp8) {
-                  tmp66(6637).hideHotspot(closure_0(6634).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
-                  const obj2 = tmp66(6637);
+                  tmp66(6803).hideHotspot(closure_0(6800).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                  const obj2 = tmp66(6803);
                 }
               }
             } else if (arg0 === 1) {
@@ -262,7 +262,7 @@ export default noop.forwardRef((channel, ref) => {
       const tmp = c16();
       const intl = require("util").intl;
       obj.accessibilityLabel = intl.string(require("util").t.cpT0Cq);
-      obj.source = require("module_6510");
+      obj.source = require("module_6676");
       obj.onPress = onPress;
       return obj5(require("TouchableHitBox"), obj);
     }

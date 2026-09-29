@@ -1,21 +1,21 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11360
+// Function ID: 11361
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4836, 576, 4767, 7583, 7374, 8112, 11192, 5081, 12, 11193, 1115, 11195, 8176, 5401, 9571, 5899, 1478, 8276, 4832, 11197, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4767, 7748, 7539, 8277, 11361, 5081, 12, 11362, 1115, 11364, 8341, 5567, 9738, 6065, 1478, 8441, 4832, 11366, 2]
 // Exports: ForwardPreview
 
-// Module 11191 (ForwardPreview)
+// Module 11360 (ForwardPreview)
 import nativeDefault from "native" /* 576 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1478 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5081 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7583 */;
-import ChatItemDefault from "ChatItem" /* 8112 */;
-import ClipViewDefault from "ClipView" /* 8276 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11192 */;
-import MosaicMediaType from "MosaicMediaType" /* 11193 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11197 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7748 */;
+import ChatItemDefault from "ChatItem" /* 8277 */;
+import ClipViewDefault from "ClipView" /* 8441 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11361 */;
+import MosaicMediaType from "MosaicMediaType" /* 11362 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11366 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -98,7 +98,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         const intl4 = tmp2(1115).intl;
         const obj3 = { image_count: num, video_count: num2 };
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1115).t.Lr0Top, obj3);
-        let AttachmentIcon = tmp2(11195).ImagesIcon;
+        let AttachmentIcon = tmp2(11364).ImagesIcon;
       }
       if (num2 > 0) {
         if (length === num2) {
@@ -115,7 +115,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           size.height = v56;
           const items1 = [hasOwnProperty(FastImageDefault, size), ];
           const obj6 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = hasOwnProperty(tmp2(8176).CirclePlayIcon, obj6);
+          items1[1] = hasOwnProperty(tmp2(8341).CirclePlayIcon, obj6);
           obj4.children = items1;
           let tmp6 = timestampProducer(View, obj4);
           let tmp7 = AttachmentIcon;
@@ -167,14 +167,14 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl3 = tmp2(1115).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(8176).CirclePlayIcon;
+      AttachmentIcon = tmp2(8341).CirclePlayIcon;
     } else if (num > 0) {
       const intl2 = tmp2(1115).intl;
       const obj13 = { count: num };
       if (1 === num) {
-        let ImagesIcon = tmp2(5401).ImageIcon;
+        let ImagesIcon = tmp2(5567).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11195).ImagesIcon;
+        ImagesIcon = tmp2(11364).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.h4pFfU, obj13);
@@ -183,7 +183,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl = tmp2(1115).intl;
       const obj14 = { count: length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(9571).AttachmentIcon;
+      AttachmentIcon = tmp2(9738).AttachmentIcon;
     }
     const tmp2Result = tmp2(12);
   } else {
@@ -195,7 +195,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   if (attachments.length > 1) {
     tmp33 = tmp6;
     if (null != tmp6) {
-      const size3 = { shape: tmp2(8276).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      const size3 = { shape: tmp2(8441).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
       const obj16 = { style: tmp.attachmentPreviewOverflow, children: null };
       const obj17 = { cutouts: null, children: null };
       const items2 = [size3];

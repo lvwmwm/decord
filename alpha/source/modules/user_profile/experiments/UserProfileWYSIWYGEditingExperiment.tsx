@@ -1,10 +1,10 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9393
+// Function ID: 9394
 // Name: UserProfileWYSIWYGEditingExperiment
 // Dependencies: [1435, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9228 (UserProfileWYSIWYGEditingExperiment)
+// Module 9393 (UserProfileWYSIWYGEditingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

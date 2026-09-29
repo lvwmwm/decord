@@ -1,11 +1,11 @@
-// Module ID: 11938
-// Function ID: 11939
+// Module ID: 12109
+// Function ID: 12110
 // Name: useIsStricterMessageRequests
-// Dependencies: [11912, 2]
+// Dependencies: [12083, 2]
 // Exports: default
 
-// Module 11938 (useIsStricterMessageRequests)
-import RegionalTeenUtils from "RegionalTeenUtils" /* 11912 */;
+// Module 12109 (useIsStricterMessageRequests)
+import RegionalTeenUtils from "RegionalTeenUtils" /* 12083 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["GB"]);

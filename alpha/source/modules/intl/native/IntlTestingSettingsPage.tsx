@@ -1,19 +1,19 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15353
+// Function ID: 15354
 // Name: IntlTestingSettingsPage
-// Dependencies: [32, 5, 19, 17, 2113, 2112, 21, 4836, 576, 5997, 1115, 8659, 6000, 504, 4421, 5999, 5917, 1154, 5279, 4832, 15179, 15211, 2]
+// Dependencies: [32, 5, 19, 17, 2113, 2112, 21, 4836, 576, 6163, 1115, 8824, 6166, 504, 4421, 6165, 6083, 1154, 5445, 4832, 15354, 15386, 2]
 // Exports: default
 
-// Module 15178 (IntlTestingSettingsPage)
+// Module 15353 (IntlTestingSettingsPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _mod1154 from "module_1154" /* 1154 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import TableRow from "TableRow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import _modDef15179 from "module_15179" /* 15179 */;
-import _modDef15211 from "module_15211" /* 15211 */;
+import TableRow from "TableRow" /* 6083 */;
+import TableRowGroup from "TableRowGroup" /* 6165 */;
+import _modDef15354 from "module_15354" /* 15354 */;
+import _modDef15386 from "module_15386" /* 15386 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -152,19 +152,19 @@ export default function IntlTestingSettingsPage() {
   const items = [closure_10(LocaleInfo, {}), closure_10(TestLocaleSelector, {}), , , , , , ];
   const obj3 = { variant: "text-md/normal", children: null };
   const intl = require("util").intl;
-  obj3.children = intl.format(_modDef15179.HMvEC5, {});
+  obj3.children = intl.format(_modDef15354.HMvEC5, {});
   items[2] = closure_10(require("Text/Text").Text, obj3);
   const obj4 = { variant: "text-md/normal", children: null };
   const intl2 = require("util").intl;
-  obj4.children = intl2.format(_modDef15211.swfLzV, {});
+  obj4.children = intl2.format(_modDef15386.swfLzV, {});
   items[3] = closure_10(require("Text/Text").Text, obj4);
   const obj5 = { variant: "text-md/normal", children: null };
   const intl3 = require("util").intl;
-  obj5.children = intl3.format(_modDef15179.rmps8y, {});
+  obj5.children = intl3.format(_modDef15354.rmps8y, {});
   items[4] = closure_10(require("Text/Text").Text, obj5);
   const obj6 = { variant: "text-md/normal", children: null };
   const intl4 = require("util").intl;
-  obj6.children = intl4.format(_modDef15179.uczI4g, {
+  obj6.children = intl4.format(_modDef15354.uczI4g, {
     linkTarget() {
 
     }
@@ -172,11 +172,11 @@ export default function IntlTestingSettingsPage() {
   items[5] = closure_10(require("Text/Text").Text, obj6);
   const obj8 = { variant: "text-md/normal", children: null };
   const intl5 = require("util").intl;
-  obj8.children = intl5.format(_modDef15179.rdfRyh, {});
+  obj8.children = intl5.format(_modDef15354.rdfRyh, {});
   items[6] = closure_10(require("Text/Text").Text, obj8);
   const obj9 = { variant: "text-md/normal", children: null };
   const intl6 = require("util").intl;
-  obj9.children = intl6.format(_modDef15179.XOdbAy, {
+  obj9.children = intl6.format(_modDef15354.XOdbAy, {
     username: "some user",
     usernameHook(children) {
       const obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: closure_1_10(closure_0(4832).Text, { variant: "text-sm/normal", color: "text-overlay-light", children }) };

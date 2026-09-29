@@ -1,17 +1,17 @@
-// Module ID: 12654
-// Function ID: 12655
+// Module ID: 12824
+// Function ID: 12825
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1074, 21, 1115, 4836, 576, 4832, 4988, 12, 4849, 4800, 5281, 6800, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 1115, 4836, 576, 4832, 4988, 12, 4849, 4800, 5447, 6966, 2]
 
-// Module 12654 (UserProfileActivityEmptyStates)
+// Module 12824 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import openUserSettings from "openUserSettings" /* 6966 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -136,7 +136,7 @@ const memoResult = noop.memo((user) => {
   const intl2 = user(1115).intl;
   obj4.text = intl2.string(user(1115).t["g33r/P"]);
   obj4.onPress = callback;
-  obj3.children = closure_7(user(5281).Button, obj4);
+  obj3.children = closure_7(user(5447).Button, obj4);
   obj2.children = closure_7(View, obj3);
   return closure_7(EmptyState, obj2);
 });

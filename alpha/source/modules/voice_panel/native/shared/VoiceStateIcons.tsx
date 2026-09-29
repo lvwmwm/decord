@@ -1,15 +1,15 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9297
+// Function ID: 9298
 // Name: VoiceStateIcons
-// Dependencies: [19, 17, 21, 4836, 576, 9133, 9134, 9136, 9138, 9140, 1370, 1177, 7909, 9142, 9143, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9298, 9299, 9301, 9303, 9305, 1370, 1177, 8074, 9307, 9308, 2]
 
-// Module 9132 (VoiceStateIcons)
+// Module 9297 (VoiceStateIcons)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9133 */;
-import _modDef9142 from "module_9142" /* 9142 */;
-import _modDef9143 from "module_9143" /* 9143 */;
+import inlineStyles from "inlineStyles" /* 8074 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9298 */;
+import _modDef9307 from "module_9307" /* 9307 */;
+import _modDef9308 from "module_9308" /* 9308 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -65,13 +65,13 @@ const memoResult = noop.memo((arg0) => {
     const obj = { style: null, size: "xs" };
     items[1] = redTint;
     obj.style = items;
-    return React4(tmp2(9134).HeadphonesDenyIcon, obj);
-  } else if (tmp2(9133).MuteDeafenIconState.DEAFENED === state) {
+    return React4(tmp2(9299).HeadphonesDenyIcon, obj);
+  } else if (tmp2(9298).MuteDeafenIconState.DEAFENED === state) {
     const obj2 = { style: null, size: "xs" };
     const items1 = [style];
     obj2.style = items1;
-    return React4(tmp2(9136).HeadphonesSlashIcon, obj2);
-  } else if (tmp2(9133).MuteDeafenIconState.MUTED_SERVER === state) {
+    return React4(tmp2(9301).HeadphonesSlashIcon, obj2);
+  } else if (tmp2(9298).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
@@ -80,17 +80,17 @@ const memoResult = noop.memo((arg0) => {
     const obj3 = { style: null, size: "xs" };
     items2[1] = redTint1;
     obj3.style = items2;
-    return React4(tmp2(9138).MicrophoneDenyIcon, obj3);
-  } else if (tmp2(9133).MuteDeafenIconState.MUTED_LOCAL === state) {
+    return React4(tmp2(9303).MicrophoneDenyIcon, obj3);
+  } else if (tmp2(9298).MuteDeafenIconState.MUTED_LOCAL === state) {
     const obj4 = { style: null, size: "xs" };
     const items3 = [style];
     obj4.style = items3;
-    return React4(tmp2(9138).MicrophoneDenyIcon, obj4);
-  } else if (tmp2(9133).MuteDeafenIconState.MUTED === state) {
+    return React4(tmp2(9303).MicrophoneDenyIcon, obj4);
+  } else if (tmp2(9298).MuteDeafenIconState.MUTED === state) {
     const obj5 = { style: null, size: "xs" };
     const items4 = [style];
     obj5.style = items4;
-    return React4(tmp2(9140).MicrophoneSlashIcon, obj5);
+    return React4(tmp2(9305).MicrophoneSlashIcon, obj5);
   } else {
     tmp2(1370).assertNever(state);
   }
@@ -105,18 +105,18 @@ export const VideoIcon = noop.memo((state) => {
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = {};
     const merged1 = Object.assign(merged);
-    obj.source = _modDef9142;
+    obj.source = _modDef9307;
     const items = [merged.style, tmp2.noTint];
     obj.style = items;
     return React4(tmp3(1177).Icon, obj);
-  } else if (tmp3(9133).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+  } else if (tmp3(9298).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     const obj2 = {};
     const merged2 = Object.assign(merged);
     return React4(VideoDisabledSvgIcon, obj2);
-  } else if (tmp3(9133).VideoIconState.VIDEO_ACTIVE === state) {
+  } else if (tmp3(9298).VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = {};
     const merged3 = Object.assign(merged);
-    obj3.source = _modDef9143;
+    obj3.source = _modDef9308;
     return React4(tmp3(1177).Icon, obj3);
   } else {
     tmp3(1370).assertNever(state);

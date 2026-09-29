@@ -1,23 +1,23 @@
-// Module ID: 10725
-// Function ID: 10726
+// Module ID: 10894
+// Function ID: 10895
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1074, 6572, 21, 4836, 576, 7131, 5899, 4832, 10726, 1115, 10729, 10734, 1613, 4531, 672, 5293, 5281, 2]
+// Dependencies: [19, 17, 1074, 6738, 21, 4836, 576, 7296, 6065, 4832, 10895, 1115, 10898, 10903, 1613, 4531, 672, 5459, 5447, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 10725 (AppStoreOverlayBody)
+// Module 10894 (AppStoreOverlayBody)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AnalyticsActions from "AnalyticsActions" /* 7131 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10726 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10729 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10734 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import AnalyticsActions from "AnalyticsActions" /* 7296 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10895 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10898 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10903 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const VerticalGradient = fn(1074).VerticalGradient;
-let closure_6 = fn(6572).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_6 = fn(6738).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4836);
@@ -149,13 +149,13 @@ export const AppStoreOverlayFooter = function AppStoreOverlayFooter(arg0) {
   }, items);
   const obj2 = { style: tmp.footer, onLayout, children: null };
   const memo1 = noop.useMemo(() => ({ paddingBottom: Math.max(bottom, closure_6) }), items1);
-  const items2 = [closure_7(token(5293), { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END }), ];
+  const items2 = [closure_7(token(5459), { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END }), ];
   const obj4 = { style: memo1, children: null };
   const obj5 = { size: "lg", text: null, onPress: null };
   const intl = bottom(1115).intl;
   obj5.text = intl.string(bottom(1115).t.lwQdjB);
   obj5.onPress = onInstallPress;
-  obj4.children = closure_7(bottom(5281).Button, obj5);
+  obj4.children = closure_7(bottom(5447).Button, obj5);
   items2[1] = closure_7(View, obj4);
   obj2.children = items2;
   return closure_8(View, obj2);

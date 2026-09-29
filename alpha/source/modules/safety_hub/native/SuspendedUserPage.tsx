@@ -1,23 +1,23 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16918
+// Function ID: 16919
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 7881, 7868, 21, 4836, 576, 504, 6544, 7363, 1115, 6010, 6413, 4832, 4525, 14300, 2]
+// Dependencies: [19, 17, 8046, 8033, 21, 4836, 576, 504, 6710, 7528, 1115, 6176, 6579, 4832, 4525, 14475, 2]
 // Exports: default
 
-// Module 16730 (SuspendedUserPage)
+// Module 16918 (SuspendedUserPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
-import _modDef6413 from "module_6413" /* 6413 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 14300 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6176 */;
+import _modDef6579 from "module_6579" /* 6579 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 14475 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import SafetyHubStore from "SafetyHubStore" /* 8046 */;
 
 require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(7868);
+const SafetyHubConstants = fn(8033);
 ({ AgeCheckStatus: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -45,8 +45,8 @@ export default function SuspendedUserSafetyHubPage() {
     obj4.onPress = function onPress() {
       AuthenticationActionCreatorsDefault.closeSuspendedUser();
     };
-    obj4.icon = _modDef6413;
-    const items1 = [tmp5(tmp2(7363).IconButton, obj4), ];
+    obj4.icon = _modDef6579;
+    const items1 = [tmp5(tmp2(7528).IconButton, obj4), ];
     const obj5 = {
       style: tmp.text,
       onPress() {

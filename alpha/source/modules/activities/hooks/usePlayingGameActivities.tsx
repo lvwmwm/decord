@@ -1,15 +1,15 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9356
+// Function ID: 9357
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 4876, 5591, 504, 9192, 2]
+// Dependencies: [19, 502, 4876, 5758, 504, 9357, 2]
 // Exports: default
 
-// Module 9191 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9192 */;
+// Module 9356 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9357 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5758 */;
 
 const require = globalThis.__r;
 

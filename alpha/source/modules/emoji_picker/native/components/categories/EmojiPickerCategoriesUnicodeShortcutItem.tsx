@@ -1,11 +1,11 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9988
+// Function ID: 9989
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 4566, 8853, 5435, 1115, 9810, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 4566, 9018, 5602, 1115, 9977, 2]
 // Exports: default
 
-// Module 9821 (EmojiPickerCategoriesUnicodeShortcutItem)
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 8853 */;
+// Module 9988 (EmojiPickerCategoriesUnicodeShortcutItem)
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9018 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

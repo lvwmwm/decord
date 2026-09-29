@@ -1,16 +1,16 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 10007
+// Function ID: 10008
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4836, 9830, 576, 1876, 4800, 9841, 1981, 1115, 5435, 5899, 2]
+// Dependencies: [19, 17, 21, 4836, 9997, 576, 1876, 4800, 10008, 1981, 1115, 5602, 6065, 2]
 // Exports: default
 
-// Module 9840 (GIFPickerItemView)
+// Module 10007 (GIFPickerItemView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9830 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9997 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -43,7 +43,7 @@ export default function GIFPickerItemView(onPressGIF) {
   }, items);
   const items2 = [index, item.src];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9841, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10008, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
     const obj2 = { item };
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
   }, items1);

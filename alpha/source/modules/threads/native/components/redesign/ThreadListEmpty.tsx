@@ -1,14 +1,14 @@
-// Module ID: 16539
-// Function ID: 16540
+// Module ID: 16728
+// Function ID: 16729
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4836, 576, 1177, 11720, 4832, 1115, 5281, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1177, 11889, 4832, 1115, 5447, 2]
 
-// Module 16539 (ThreadListEmpty)
+// Module 16728 (ThreadListEmpty)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef11720 from "module_11720" /* 11720 */;
+import _modDef11889 from "module_11889" /* 11889 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,7 +26,7 @@ export default noop.memo((onCreateThreadPress) => {
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef11720, size: native.Icon.Sizes.MEDIUM }) };
+  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef11889, size: native.Icon.Sizes.MEDIUM }) };
   const items = [React4(View, obj2), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
@@ -41,7 +41,7 @@ export default noop.memo((onCreateThreadPress) => {
     const obj6 = { onPress: onCreateThreadPress, text: null };
     const intl3 = tmp5(1115).intl;
     obj6.text = intl3.string(tmp5(1115).t.rBIGBL);
-    tmp4Result = React4(tmp5(5281).Button, obj6);
+    tmp4Result = React4(tmp5(5447).Button, obj6);
   }
   items[3] = tmp4Result;
   obj.children = items;

@@ -1,25 +1,25 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14839
+// Function ID: 14840
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7118, 5756, 21, 14657, 10681, 10689, 4452, 14551, 14665, 7137, 14667, 1363, 10735, 10683, 14675, 14564, 2]
+// Dependencies: [32, 19, 7283, 5923, 21, 14832, 10850, 10858, 4452, 14726, 14840, 7302, 14842, 1363, 10904, 10852, 14850, 14739, 2]
 
-// Module 14664 (VideoQuestPlayer)
-import AssetUtils from "AssetUtils" /* 10689 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10735 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14551 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 14667 */;
-import VideoQuestCaptions from "VideoQuestCaptions" /* 14675 */;
+// Module 14839 (VideoQuestPlayer)
+import AssetUtils from "AssetUtils" /* 10858 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10904 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14726 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 14842 */;
+import VideoQuestCaptions from "VideoQuestCaptions" /* 14850 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7118 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7283 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5923).QuestsExperimentLocations;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
 
-export const PlayerState = fn(14551).PlayerState;
+export const PlayerState = fn(14726).PlayerState;
 export const VideoQuestPlayer = noop.memo((onLoad) => {
   onLoad = onLoad.onLoad;
   const onEnd = onLoad.onEnd;
@@ -160,7 +160,7 @@ export const VideoQuestPlayer = noop.memo((onLoad) => {
             ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
             const obj5 = { contentId: arr, videoStreamType: str, contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj3.contentMetadata = obj5;
-            const mobileMuxWrapper = new tmp2(14667).MobileMuxWrapper(obj3);
+            const mobileMuxWrapper = new tmp2(14842).MobileMuxWrapper(obj3);
             ref2.current = mobileMuxWrapper;
             let current = ref2.current;
             current.initialize();
@@ -256,17 +256,17 @@ export const VideoQuestPlayer = noop.memo((onLoad) => {
     obj.isPlaying = first1 === AdsVideoTypes.PlayerState.PLAYING;
     handleEngagedViewProgress(obj);
     if (currentTime.currentTime >= ref.current) {
-      tmp2(10735).sendVideoProgress(quest, currentTime.currentTime);
+      tmp2(10904).sendVideoProgress(quest, currentTime.currentTime);
       handleProgressAnalytics(currentTime.progress, currentTime.seekableDuration, currentTime.currentTime);
       const _Math = Math;
       const sum = currentTime.currentTime + 6;
       tmp5.current = sum + 2 * Math.random();
-      const tmp2Result = tmp2(10735);
+      const tmp2Result = tmp2(10904);
     }
     if (currentTime.currentTime >= ref2.current) {
-      const result = tmp2(10683).updateOptimisticProgress(quest.id, questTaskDetails.taskType, currentTime.currentTime);
+      const result = tmp2(10852).updateOptimisticProgress(quest.id, questTaskDetails.taskType, currentTime.currentTime);
       tmp12.current = currentTime.currentTime + 1;
-      const tmp2Result2 = tmp2(10683);
+      const tmp2Result2 = tmp2(10852);
     }
     closure_13(quest.id, currentTime.currentTime, currentTime.seekableDuration);
     const current = closure_29.current;

@@ -1,13 +1,13 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16431
+// Function ID: 16432
 // Name: VibegrationsTemplateWizard
-// Dependencies: [1115, 3715, 5370, 2]
+// Dependencies: [1115, 3715, 5536, 2]
 // Exports: canLeaveVibegrationsWizardQuestion, formatVibegrationsWizardAnswers, isVibegrationsWizardComplete, latestVibegrationsIntake, vibegrationsTemplateStartMessage, vibegrationsTemplateWizardGuilds, vibegrationsTemplateWizardSteps, vibegrationsWizardIntro, vibegrationsWizardNeedsServerStep, vibegrationsWizardQuestions, vibegrationsWizardServerCopy
 
-// Module 16251 (VibegrationsTemplateWizard)
+// Module 16431 (VibegrationsTemplateWizard)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5536 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTemplateWizard.tsx");

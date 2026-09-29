@@ -1,13 +1,13 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 13496
+// Function ID: 13497
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4469, 1074, 21, 4836, 9394, 504, 1115, 1876, 5723, 5281, 2]
+// Dependencies: [19, 17, 4469, 1074, 21, 4836, 9561, 504, 1115, 1876, 5890, 5447, 2]
 // Exports: default
 
-// Module 13327 (JoinVoiceChannelButton)
+// Module 13496 (JoinVoiceChannelButton)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9394 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9561 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 
@@ -48,6 +48,6 @@ export default function JoinVoiceChannelButton(channel) {
     const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
     const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
   }, items1);
-  obj2.children = jsx(channel(5281).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj2.children = jsx(channel(5447).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={null}>{null}</View>;
 };

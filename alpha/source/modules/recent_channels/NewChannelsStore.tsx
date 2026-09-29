@@ -1,15 +1,15 @@
-// Module ID: 6952
-// Function ID: 6953
+// Module ID: 7118
+// Function ID: 7119
 // Name: NewChannelsStore
-// Dependencies: [1220, 502, 2045, 4467, 2108, 2067, 4851, 5017, 1074, 1091, 6700, 573, 6531, 11, 504, 2]
+// Dependencies: [1220, 502, 2045, 4467, 2108, 2067, 4851, 5017, 1074, 1091, 6866, 573, 6697, 11, 504, 2]
 
-// Module 6952 (NewChannelsStore)
+// Module 7118 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6531 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6700 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6697 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6866 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

@@ -1,14 +1,14 @@
-// Module ID: 6535
-// Function ID: 6536
+// Module ID: 6701
+// Function ID: 6702
 // Name: NotificationSettingsUtils
-// Dependencies: [6536, 2045, 5056, 5017, 1074, 4482, 5018, 1084, 1385, 5016, 1241, 2]
+// Dependencies: [6702, 2045, 5056, 5017, 1074, 4482, 5018, 1084, 1385, 5016, 1241, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 6535 (NotificationSettingsUtils)
+// Module 6701 (NotificationSettingsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6536 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6702 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;

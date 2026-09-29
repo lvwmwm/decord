@@ -1,17 +1,17 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 16154
+// Function ID: 16155
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 5590, 2045, 7050, 4479, 1372, 1074, 21, 4836, 576, 15930, 504, 9060, 1115, 15933, 4847, 10374, 15979, 10371, 1177, 5899, 2]
+// Dependencies: [19, 502, 5757, 2045, 7215, 4479, 1372, 1074, 21, 4836, 576, 16106, 504, 9225, 1115, 16109, 4847, 10543, 16155, 10540, 1177, 6065, 2]
 
-// Module 15978 (GuildsBarDirectMessage)
+// Module 16154 (GuildsBarDirectMessage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9060 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9225 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5590 */;
+import CallStore from "CallStore" /* 5757 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7215 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 

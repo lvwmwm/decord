@@ -1,10 +1,10 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16887
+// Function ID: 16888
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4479, 21, 4836, 1177, 576, 504, 4678, 16700, 1400, 4832, 1115, 16701, 16702, 2]
+// Dependencies: [19, 17, 4479, 21, 4836, 1177, 576, 504, 4678, 16888, 1400, 4832, 1115, 16889, 16890, 2]
 // Exports: default
 
-// Module 16699 (MessageRequestRowSenderDetails)
+// Module 16887 (MessageRequestRowSenderDetails)
 import nativeDefault from "native" /* 576 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1400 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
@@ -46,7 +46,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     return tmp2;
   });
   let obj = otherUser(504);
-  const messageRequestRelativeTimestampText = otherUser(16700).useMessageRequestRelativeTimestampText(channel);
+  const messageRequestRelativeTimestampText = otherUser(16888).useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
   const obj3 = { style: tmp.avatarContainer, children: null };
@@ -97,7 +97,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let tmp11Result = !flag;
   if (!flag) {
     const obj12 = { style: tmp.messagePreview, channel };
-    tmp11Result = tmp11(tmp7(16701), obj12);
+    tmp11Result = tmp11(tmp7(16889), obj12);
   }
   items5[1] = tmp11Result;
   if (flag) {
@@ -107,8 +107,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const obj13 = { style: tmp.messagePreview, userId: otherUser.id, suffix: null };
     const intl2 = tmp2(1115).intl;
     obj13.suffix = intl2.string(tmp2(1115).t.hTltPn);
-    flag = tmp11(tmp7(16702), obj13);
-    const tmp7Result = tmp7(16702);
+    flag = tmp11(tmp7(16890), obj13);
+    const tmp7Result = tmp7(16890);
   }
   const obj14 = { children: null };
   items5[2] = flag;

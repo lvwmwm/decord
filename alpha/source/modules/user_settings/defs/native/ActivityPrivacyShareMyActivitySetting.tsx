@@ -1,14 +1,14 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15699
+// Function ID: 15700
 // Name: ActivityPrivacyShareMyActivitySetting
-// Dependencies: [7417, 11006, 1115, 2653, 2021, 2]
+// Dependencies: [7582, 11175, 1115, 2653, 2021, 2]
 
-// Module 15524 (ActivityPrivacyShareMyActivitySetting)
+// Module 15699 (ActivityPrivacyShareMyActivitySetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import _modDef2653 from "module_2653" /* 2653 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingsConstants from "SettingsConstants" /* 7582 */;
+import SettingBuilders from "SettingBuilders" /* 11175 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

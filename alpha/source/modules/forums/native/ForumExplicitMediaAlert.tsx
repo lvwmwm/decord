@@ -1,12 +1,12 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8863
+// Function ID: 8864
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4836, 576, 5300, 4832, 1115, 5281, 8699, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5466, 4832, 1115, 5447, 8864, 2]
 // Exports: default
 
-// Module 8698 (ForumExplicitMediaAlert)
+// Module 8863 (ForumExplicitMediaAlert)
 import nativeDefault from "native" /* 576 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 8699 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 8864 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

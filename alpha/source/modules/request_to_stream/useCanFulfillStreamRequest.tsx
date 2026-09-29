@@ -1,10 +1,10 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11435
+// Function ID: 11436
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2000, 4858, 502, 2045, 2067, 4469, 4876, 4859, 1074, 9403, 1364, 504, 2]
+// Dependencies: [2000, 4858, 502, 2045, 2067, 4469, 4876, 4859, 1074, 9570, 1364, 504, 2]
 // Exports: default
 
-// Module 11266 (useCanFulfillStreamRequest)
+// Module 11435 (useCanFulfillStreamRequest)
 import RunningGameStore from "RunningGameStore" /* 2000 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

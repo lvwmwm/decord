@@ -1,18 +1,18 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11622
+// Function ID: 11623
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5771, 7605, 2045, 5750, 1372, 1074, 1375, 1380, 3717, 4483, 4487, 1393, 1086, 4474, 504, 2]
+// Dependencies: [5938, 7770, 2045, 5917, 1372, 1074, 1375, 1380, 3717, 4483, 4487, 1393, 1086, 4474, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
 
-// Module 11453 (CustomTypingIndicatorUtils)
+// Module 11622 (CustomTypingIndicatorUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1393 */;
 import _modDef3717 from "module_3717" /* 3717 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7770 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import SortedGuildStore from "SortedGuildStore" /* 5917 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export const getSurpriseMeEmojiPool = function getSurpriseMeEmojiPool() {
   HermesBuiltin.arraySpread(flattenedGuildIds.flatMap((item) => {
     usableGuildEmoji = usableGuildEmoji.getUsableGuildEmoji(item);
     const found = usableGuildEmoji.filter((emoji) => {
-      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: null };
+      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
       return null == closure_1_1(closure_1_3[10]).getEmojiUnavailableReason(obj2);
     });
     return found.map((id) => ({ id: id.id, name: id.name, animated: id.animated }));

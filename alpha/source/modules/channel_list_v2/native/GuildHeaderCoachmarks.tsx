@@ -1,10 +1,10 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15963
+// Function ID: 15964
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4469, 1074, 2042, 21, 504, 15789, 15790, 15792, 12009, 15799, 12000, 12001, 2029, 6806, 11997, 15800, 15801, 15803, 2]
+// Dependencies: [32, 19, 4469, 1074, 2042, 21, 504, 15964, 15965, 15967, 12180, 15974, 12171, 12172, 2029, 6972, 12168, 15975, 15976, 15978, 2]
 // Exports: default
 
-// Module 15788 (GuildHeaderCoachmarks)
+// Module 15963 (GuildHeaderCoachmarks)
 import dismissible_content from "dismissible_content" /* 2029 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

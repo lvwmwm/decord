@@ -1,10 +1,10 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 17091
+// Function ID: 17092
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [2044, 4852, 4858, 1993, 4857, 8899, 1370, 504, 2]
+// Dependencies: [2044, 4852, 4858, 1993, 4857, 9064, 1370, 504, 2]
 // Exports: default
 
-// Module 16904 (useIsVoicePanelParticipantFocusable)
+// Module 17091 (useIsVoicePanelParticipantFocusable)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
@@ -47,8 +47,8 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
       if (React5(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, channelId);
       } else if (React6(participant)) {
-        result = tmp4(8899).canRenderParticipantVideo(participant, tmp);
-        const tmp4Result = tmp4(8899);
+        result = tmp4(9064).canRenderParticipantVideo(participant, tmp);
+        const tmp4Result = tmp4(9064);
       } else {
         tmp4(1370).assertNever(participant);
         const tmp4Result2 = tmp4(1370);

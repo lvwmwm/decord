@@ -1,14 +1,14 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16658
+// Function ID: 16659
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 2045, 4851, 1372, 7303, 21, 4836, 576, 11844, 5435, 5992, 16458, 11841, 16468, 4832, 6472, 563, 16469, 7626, 4849, 16467, 16471, 16484, 1115, 2]
+// Dependencies: [5, 19, 17, 2045, 4851, 1372, 7468, 21, 4836, 576, 12013, 5602, 6158, 16647, 12010, 16642, 4832, 6638, 563, 16657, 7791, 4849, 16656, 16659, 16672, 1115, 2]
 
-// Module 16470 (SearchHistoryRow)
+// Module 16658 (SearchHistoryRow)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import UserActionCreators from "UserActionCreators" /* 7626 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11844 */;
+import UserActionCreators from "UserActionCreators" /* 7791 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12010 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12013 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -23,14 +23,14 @@ function SearchHistoryRemoveIcon(searchContext) {
   const callback = noop.useCallback(() => {
     const result = SearchPlatformActionCreatorsDefault.removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
-  return closure_10(searchContext(5435).PressableHighlight, { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_10(searchContext(5992).XSmallIcon, { size: "sm", color: "interactive-text-default" }) });
+  return closure_10(searchContext(5602).PressableHighlight, { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_10(searchContext(6158).XSmallIcon, { size: "sm", color: "interactive-text-default" }) });
 }
 function SearchHistoryTextRow(searchContext) {
   searchContext = searchContext.searchContext;
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  const onPressSearchHistoryText = searchContext(16458).useOnPressSearchHistoryText({ searchContext });
+  const onPressSearchHistoryText = searchContext(16647).useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
   const callback = noop.useCallback(() => {
@@ -53,10 +53,10 @@ function SearchHistoryTextRow(searchContext) {
   obj3.onPress = callback;
   obj3.trailing = closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj3.iconContainerStyle = tmp.textIconContainer;
-  let obj = searchContext(16458);
+  let obj = searchContext(16647);
   const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
-  obj3.icon = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(6472).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_10(searchContext(16468).SearchListRow, obj3);
+  obj3.icon = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(6638).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
+  return closure_10(searchContext(16642).SearchListRow, obj3);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -290,7 +290,7 @@ function SearchHistoryGuildTextChannelRow(searchContext) {
   return tmp9Result;
 }
 const View = fn(17).View;
-const SearchHistoryItemTypes = fn(7303).SearchHistoryItemTypes;
+const SearchHistoryItemTypes = fn(7468).SearchHistoryItemTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4836);

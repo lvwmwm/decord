@@ -1,19 +1,19 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 9019
+// Function ID: 9020
 // Name: useActionBarHeight
-// Dependencies: [1993, 1074, 6572, 8855, 8858, 8861, 504, 2]
+// Dependencies: [1993, 1074, 6738, 9020, 9023, 9026, 504, 2]
 // Exports: default
 
-// Module 8854 (useActionBarHeight)
+// Module 9019 (useActionBarHeight)
 import initialize from "initialize" /* 504 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 8858 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 8861 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9023 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9026 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
 const InputModes = fn(1074).InputModes;
-let closure_5 = fn(6572).ACTION_SHEET_HANDLE_SPACING;
-let sum = 2 * fn(8855).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
+let closure_5 = fn(6738).ACTION_SHEET_HANDLE_SPACING;
+let sum = 2 * fn(9020).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
 const metroRequire = sum;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");

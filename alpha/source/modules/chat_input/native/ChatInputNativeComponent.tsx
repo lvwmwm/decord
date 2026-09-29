@@ -1,16 +1,16 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11902
+// Function ID: 11903
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4653, 21, 4836, 576, 1115, 4767, 4685, 4683, 1364, 11513, 11471, 2]
+// Dependencies: [19, 4653, 21, 4836, 576, 1115, 4767, 4685, 4683, 1364, 11682, 11640, 2]
 
-// Module 11733 (chat_input/ChatInputNativeComponent)
+// Module 11902 (chat_input/ChatInputNativeComponent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import shared from "shared" /* 4685 */;
 import useTheme from "useTheme" /* 4767 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11471 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11640 */;
 import noop from "module_19" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
 
@@ -28,6 +28,7 @@ const forwardRefResult = noop.forwardRef((markAsSpoilerTitle, ref) => {
     const intl = util.intl;
     markAsSpoilerTitle = intl.string(util.t["gsI+xC"]);
   }
+  let maxHeight = markAsSpoilerTitle.maxHeight;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
   const tmp3 = closure_5();
   const theme = useTheme.useTheme();
@@ -35,10 +36,8 @@ const forwardRefResult = noop.forwardRef((markAsSpoilerTitle, ref) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   if (isThemeDarkResult) {
     let PRIMARY_500 = unsafe_rawColors.WHITE;
-    let tmp9 = tmp8;
   } else {
     PRIMARY_500 = unsafe_rawColors.PRIMARY_500;
-    tmp9 = tmp8;
   }
   let num = 0.6;
   if (null != ClientThemesBackgroundStore.gradientPreset) {
@@ -60,8 +59,30 @@ const forwardRefResult = noop.forwardRef((markAsSpoilerTitle, ref) => {
     num2 = 1;
   }
   const tmp4Result4 = PlatformUtils;
-  const tmp13 = tmp9(11513)(onMaxHeightChanged);
-  return jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp9(11513)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
+  const obj4 = { accessible, accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: null, onBeginFocus: null, onEndBlur: null, onChangeContentSize: null, onSelectionOrTextChange: null, onTextFlushed: null, onPasteImage: null, onPasteCommand: null, onTapAction: null, onRequestSend: null, placeholder: null, placeholderColor: null, ref: null, selectionColor: null, setNoExtractUI: null, shouldShowCursor: null, style: null, textColor: null, verticalInset: null };
+  if (maxHeight == null) {
+    maxHeight = tmp13;
+  }
+  obj4.maxHeight = maxHeight;
+  obj4.onBeginFocus = onBeginFocus;
+  obj4.onEndBlur = onEndBlur;
+  obj4.onChangeContentSize = onChangeContentSize;
+  obj4.onSelectionOrTextChange = onSelectionOrTextChange;
+  obj4.onTextFlushed = onTextFlushed;
+  obj4.onPasteImage = onPasteImage;
+  obj4.onPasteCommand = onPasteCommand;
+  obj4.onTapAction = onTapAction;
+  obj4.onRequestSend = onRequestSend;
+  obj4.placeholder = placeholder;
+  obj4.placeholderColor = tmp3.placeholderColor.color;
+  obj4.ref = ref;
+  obj4.selectionColor = hexWithOpacityResult;
+  obj4.setNoExtractUI = setNoExtractUI;
+  obj4.shouldShowCursor = shouldShowCursor;
+  obj4.style = tmp3.style;
+  obj4.textColor = tmp3.textColor.color;
+  obj4.verticalInset = verticalInset;
+  return jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: null, onBeginFocus: null, onEndBlur: null, onChangeContentSize: null, onSelectionOrTextChange: null, onTextFlushed: null, onPasteImage: null, onPasteCommand: null, onTapAction: null, onRequestSend: null, placeholder: null, placeholderColor: null, ref: null, selectionColor: null, setNoExtractUI: null, shouldShowCursor: null, style: null, textColor: null, verticalInset: null });
 });
 forwardRefResult.displayName = "ChatInputNativeComponent";
 const size = fn(2);

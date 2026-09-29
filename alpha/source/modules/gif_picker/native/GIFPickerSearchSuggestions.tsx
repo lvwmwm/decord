@@ -1,12 +1,12 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 10001
+// Function ID: 10002
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 9826, 21, 4836, 576, 504, 4832, 1115, 5281, 2]
+// Dependencies: [19, 17, 9993, 21, 4836, 576, 504, 4832, 1115, 5447, 2]
 
-// Module 9834 (GIFPickerSearchSuggestions)
+// Module 10001 (GIFPickerSearchSuggestions)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9826 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9993 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -39,7 +39,7 @@ export default noop.memo(function GIFPickerSearchSuggestions(onClickSuggestion) 
       style: tmp.suggestionsContainer,
       children: stateFromStoresArray.map((text) => {
           closure_0 = text;
-          return closure_1_5(onClickSuggestion(5281).Button, {
+          return closure_1_5(onClickSuggestion(5447).Button, {
             size: "sm",
             variant: "secondary",
             hitSlop: nativeDefault.space.PX_8,

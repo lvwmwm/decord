@@ -1,27 +1,27 @@
-// Module ID: 16602
-// Function ID: 16603
+// Module ID: 16788
+// Function ID: 16789
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7035, 2112, 14249, 7050, 1372, 16007, 1074, 1076, 2042, 6629, 21, 4566, 7691, 4836, 1365, 576, 672, 4693, 563, 1115, 5435, 16040, 7676, 8230, 1249, 7631, 1613, 7673, 4767, 7689, 4695, 1479, 2021, 1486, 16603, 1397, 7693, 6364, 16604, 7635, 5438, 7646, 7658, 6603, 7670, 2029, 6806, 5899, 16612, 11449, 6577, 16615, 16616, 4540, 16617, 7666, 7652, 7683, 1092, 10114, 8264, 16619, 11375, 7632, 8238, 6800, 6961, 10575, 6895, 2]
+// Dependencies: [32, 19, 17, 7200, 2112, 14425, 7215, 1372, 16183, 1074, 1076, 2042, 6795, 21, 4566, 7856, 4836, 1365, 576, 672, 4693, 563, 1115, 5602, 16216, 7841, 8395, 1249, 7796, 1613, 7838, 4767, 7854, 4695, 1479, 2021, 1486, 16789, 1397, 7858, 6530, 16790, 7800, 5605, 7811, 7823, 6769, 7835, 2029, 6972, 6065, 16800, 11618, 6743, 16803, 16804, 4540, 16805, 7831, 7817, 7848, 1092, 10281, 8429, 16807, 11544, 7797, 8403, 6966, 7127, 10744, 7061, 2]
 // Exports: default
 
-// Module 16602 (YouScreen)
+// Module 16788 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import Pressables from "Pressables" /* 5435 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7691 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16040 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 16604 */;
+import Pressables from "Pressables" /* 5602 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7797 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7856 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16216 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 16790 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
+import UserProfileStore from "UserProfileStore" /* 7200 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14425 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7215 */;
 import UserStore from "UserStore" /* 1372 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4566 */;
 
@@ -81,19 +81,19 @@ function UnconnectedYouScreen(arg0) {
   if (tmp3 > 0) {
     tmp8 = tmp3;
   }
-  const tmp7Result = navigateToShop(7676)(tmp8);
+  const tmp7Result = navigateToShop(7841)(tmp8);
   _slicedToArray = tmp7Result;
   const tmp10 = closure_23(tmp7Result);
   let obj2 = { type: null, name: null };
-  const tmp7 = navigateToShop(7676);
+  const tmp7 = navigateToShop(7841);
   obj2.type = navigateToSettings(1249).ImpressionTypes.VIEW;
   obj2.name = navigateToSettings(1249).ImpressionNames.USER_YOU_SCREEN;
-  navigateToShop(8230)(obj2);
-  const obj3 = navigateToShop(7631)(user.id);
+  navigateToShop(8395)(obj2);
+  const obj3 = navigateToShop(7796)(user.id);
   rect = tmp5(1613)();
-  const tmp5Result = navigateToShop(8230);
-  ({ theme, primaryColor, secondaryColor } = navigateToShop(7673)({ user, displayProfile: obj3 }));
-  const tmp14 = navigateToShop(7673)({ user, displayProfile: obj3 });
+  const tmp5Result = navigateToShop(8395);
+  ({ theme, primaryColor, secondaryColor } = navigateToShop(7838)({ user, displayProfile: obj3 }));
+  const tmp14 = navigateToShop(7838)({ user, displayProfile: obj3 });
   const ref = rect.useRef(null);
   const tmp15 = navigateToShop(4767)();
   sharedValue = navigateToSettings(4566).useSharedValue(0);
@@ -109,7 +109,7 @@ function UnconnectedYouScreen(arg0) {
   N.__initData = __initData;
   const obj5 = navigateToSettings(4566);
   const animatedScrollHandler = navigateToSettings(4566).useAnimatedScrollHandler(N);
-  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = navigateToShop(7689)({ scrollPosition: sharedValue, bannerHeight: tmp7Result }));
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = navigateToShop(7854)({ scrollPosition: sharedValue, bannerHeight: tmp7Result }));
   let size = tmp5(1479)();
   const height = size.height;
   let num = 0;
@@ -126,14 +126,14 @@ function UnconnectedYouScreen(arg0) {
   [first, closure_8] = rect.useState(false);
   const GifAutoPlay = tmp12(2021).GifAutoPlay;
   const setting = GifAutoPlay.getSetting();
-  const tmp19 = navigateToShop(7689)({ scrollPosition: sharedValue, bannerHeight: tmp7Result });
+  const tmp19 = navigateToShop(7854)({ scrollPosition: sharedValue, bannerHeight: tmp7Result });
   const isFocused = navigateToSettings(1486).useIsFocused();
   const tmp12Result = navigateToSettings(1486);
   let tmp28 = !isFocused;
   if (!isFocused) {
     tmp28 = !tmp12Result14.useIsProfileModalTransitioning();
   }
-  tmp12Result14 = navigateToSettings(16603);
+  tmp12Result14 = navigateToSettings(16789);
   const ref2 = rect.useRef(undefined);
   const ref3 = rect.useRef(false);
   if (isFocused) {
@@ -163,12 +163,12 @@ function UnconnectedYouScreen(arg0) {
     const isAnimatedImageURLResult = tmp12(1397).isAnimatedImageURL(bannerURL);
     const obj8 = { user, displayProfile: obj3 };
     let tmp37 = null == obj3;
-    const userProfileBannerBackgroundColor = tmp12(7693).useUserProfileBannerBackgroundColor(obj8);
+    const userProfileBannerBackgroundColor = tmp12(7858).useUserProfileBannerBackgroundColor(obj8);
     if (!tmp37) {
       tmp37 = !obj3.isLoaded;
     }
     let items = [tmp7Result, bound, rect.bottom];
-    const tmp12Result17 = tmp12(7693);
+    const tmp12Result17 = tmp12(7858);
     const memo = obj.useMemo(() => {
       const obj = { dimensionStyle: null, contentContainerStyle: null };
       const size = { width: bound, height };
@@ -180,13 +180,13 @@ function UnconnectedYouScreen(arg0) {
       return obj;
     }, items);
     ({ dimensionStyle, contentContainerStyle } = memo);
-    const tmp38 = tmp5(6364)();
+    const tmp38 = tmp5(6530)();
     const obj9 = { layout: "YOU_SCREEN", userId: user.id };
-    const createUserProfileAnalyticsContext = tmp12(7635).useCreateUserProfileAnalyticsContext(obj9);
-    const tmp12Result18 = tmp12(7635);
-    const isScreenLandscape = tmp12(5438).useIsScreenLandscape();
+    const createUserProfileAnalyticsContext = tmp12(7800).useCreateUserProfileAnalyticsContext(obj9);
+    const tmp12Result18 = tmp12(7800);
+    const isScreenLandscape = tmp12(5605).useIsScreenLandscape();
     let tmp43;
-    const tmp12Result19 = tmp12(5438);
+    const tmp12Result19 = tmp12(5605);
     if (!isScreenLandscape) {
       let skuId;
       if (obj3 != null) {
@@ -197,9 +197,9 @@ function UnconnectedYouScreen(arg0) {
       }
       tmp43 = skuId;
     }
-    const tmp5Result1Result = tmp5(7646)(tmp43);
+    const tmp5Result1Result = tmp5(7811)(tmp43);
     let tmp47;
-    const tmp5Result7 = tmp5(7646);
+    const tmp5Result7 = tmp5(7811);
     if (!isScreenLandscape) {
       let skuId1;
       if (obj3 != null) {
@@ -211,13 +211,13 @@ function UnconnectedYouScreen(arg0) {
       tmp47 = skuId1;
     }
     const obj10 = { skuId: tmp47, openedAt: ref2.current, analyticsLocations: null, context: null };
-    const items1 = [tmp5(6603).YOU_SCREEN];
+    const items1 = [tmp5(6769).YOU_SCREEN];
     obj10.analyticsLocations = items1;
     obj10.context = createUserProfileAnalyticsContext;
-    tmp5(7658)(obj10);
+    tmp5(7823)(obj10);
     num2 = 0;
     if (null != tmp5Result1Result) {
-      num2 = tmp5(7670)(tmp5Result1Result, bound).overflowTop;
+      num2 = tmp5(7835)(tmp5Result1Result, bound).overflowTop;
     }
     const items2 = [num2];
     if (!tmp38) {
@@ -238,7 +238,7 @@ function UnconnectedYouScreen(arg0) {
         return items;
       }, []);
       tmp12Result20 = tmp12(1365);
-      const tmpResult4 = tmp(tmp12(6806).useSelectedDismissibleContent(memo1), 2);
+      const tmpResult4 = tmp(tmp12(6972).useSelectedDismissibleContent(memo1), 2);
       closure_10 = tmp58;
       const items3 = [null != tmpResult4[0]];
       const memo2 = obj.useMemo(() => {
@@ -266,12 +266,12 @@ function UnconnectedYouScreen(arg0) {
         closure_11(ContentDismissActionType.TAKE_ACTION);
       }, items4);
       let tmp63 = null != memo2;
-      const tmp12Result21 = tmp12(6806);
+      const tmp12Result21 = tmp12(6972);
       const obj11 = { disabled: tmp63 };
-      youSettingsCoachmark = tmp12(16612).useYouSettingsCoachmark(obj11);
+      youSettingsCoachmark = tmp12(16800).useYouSettingsCoachmark(obj11);
       let tmp65 = null != youSettingsCoachmark;
-      const tmp12Result22 = tmp12(16612);
-      const customTypingIndicatorConfig = tmp12(11449).useCustomTypingIndicatorConfig("YouScreen");
+      const tmp12Result22 = tmp12(16800);
+      const customTypingIndicatorConfig = tmp12(11618).useCustomTypingIndicatorConfig("YouScreen");
       if ("settings" === customTypingIndicatorConfig.entryPoint) {
         if (customTypingIndicatorConfig.canSet) {
           if (null != obj3) {
@@ -279,7 +279,7 @@ function UnconnectedYouScreen(arg0) {
               if (!tmp65) {
                 let items5 = [tmp12(2029).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK];
               }
-              const tmpResult5 = tmp(tmp12(6806).useSelectedDismissibleContent(items5), 2);
+              const tmpResult5 = tmp(tmp12(6972).useSelectedDismissibleContent(items5), 2);
               closure_13 = tmp68;
               const tmp69 = tmpResult5[0] === tmp12(2029).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
               nativeID = tmp69;
@@ -291,7 +291,7 @@ function UnconnectedYouScreen(arg0) {
                 tmp70 = tmp69;
               }
               scrollEventThrottle = tmp70;
-              const tmp12Result24 = tmp12(6806);
+              const tmp12Result24 = tmp12(6972);
               closure_16 = tmp(obj.useState(false), 2)[1];
               let tmp74Result = null;
               if (tmp70) {
@@ -301,25 +301,25 @@ function UnconnectedYouScreen(arg0) {
                     const obj12 = { buttonRef: ref4, markAsDismissed: tmp57, visible: tmp58, title: null, description: null, avatarSrc: null, decorationAsset: null, renderImgComponent: null, navigateToShop: null };
                     ({ title: obj25.title, description: obj25.description, avatarSrc: obj25.avatarSrc, decorationAsset: obj25.decorationAsset, renderImgComponent: obj25.renderImgComponent } = memo2);
                     obj12.navigateToShop = callback1;
-                    tmp63 = closure_20(tmp5(16615), obj12);
+                    tmp63 = closure_20(tmp5(16803), obj12);
                   }
                   const items6 = [tmp63, , ];
                   if (tmp65) {
                     const obj13 = { buttonRef: ref5 };
                     const merged = Object.assign(youSettingsCoachmark.props);
-                    tmp65 = closure_20(tmp5(16612), obj13);
-                    const tmp5Result9 = tmp5(16612);
+                    tmp65 = closure_20(tmp5(16800), obj13);
+                    const tmp5Result9 = tmp5(16800);
                   }
                   items6[1] = tmp65;
                   let tmp80 = tmp69;
                   if (tmp69) {
                     const obj14 = { targetRef: ref5, visible: tmp69, markAsDismissed: tmp68, position: "top" };
-                    tmp80 = closure_20(tmp5(16616), obj14);
+                    tmp80 = closure_20(tmp5(16804), obj14);
                   }
                   const obj15 = { zIndex: 1, children: null };
                   items6[2] = tmp80;
                   obj15.children = items6;
-                  tmp74Result = closure_21(tmp12(6577).LayerScope, obj15);
+                  tmp74Result = closure_21(tmp12(6743).LayerScope, obj15);
                 }
               }
               const items7 = [tmp70];
@@ -367,11 +367,11 @@ function UnconnectedYouScreen(arg0) {
               obj19.style = items9;
               obj19.nativeID = nativeID;
               let tmp84Result = null != tmp5Result1Result;
-              const tmp85 = closure_20(tmp5(16604), obj16);
+              const tmp85 = closure_20(tmp5(16790), obj16);
               if (tmp84Result) {
-                const obj20 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: tmp12(7652).ProfileFrameLayerOrder.BACK, containerWidth: bound };
-                tmp84Result = tmp84(tmp5(7666), obj20);
-                const tmp5Result11 = tmp5(7666);
+                const obj20 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: tmp12(7817).ProfileFrameLayerOrder.BACK, containerWidth: bound };
+                tmp84Result = tmp84(tmp5(7831), obj20);
+                const tmp5Result11 = tmp5(7831);
               }
               const items10 = [tmp84Result, , , , , ];
               class N {
@@ -383,7 +383,7 @@ function UnconnectedYouScreen(arg0) {
               tmp95[0] = height;
               tmp95[1] = tmp7Result;
               tmp95[2] = tmp10.background;
-              items10[1] = closure_20(tmp5(7683), tmp95);
+              items10[1] = closure_20(tmp5(7848), tmp95);
               const obj21 = { contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback, scrollEventThrottle, style: tmp10.scrollView, children: null };
               const obj22 = { style: null, children: null };
               const items11 = [tmp10.banner, bannerAnimatedStyle];
@@ -401,7 +401,7 @@ function UnconnectedYouScreen(arg0) {
               const items14 = [sharedValue.absoluteFill, ];
               const obj27 = { backgroundColor: null };
               const tmp101 = sharedValue;
-              const tmp5Result10 = tmp5(16617);
+              const tmp5Result10 = tmp5(16805);
               const tmp96 = closure_25;
               obj27.backgroundColor = tmp12(1092).int2hex(userProfileBannerBackgroundColor);
               items14[1] = obj27;
@@ -427,7 +427,7 @@ function UnconnectedYouScreen(arg0) {
                   items17[2] = bannerAnimatedStyle;
                   obj29.style = items17;
                   const obj30 = { skuId: skuId2, bannerAdjustment: 0, replayOnNavigationFocus: true, paused: tmp28 };
-                  const items18 = [tmp84(tmp5(8264), obj30), ];
+                  const items18 = [tmp84(tmp5(8429), obj30), ];
                   const obj31 = { paddingTop: bound1 };
                   items18[1] = tmp84(BackButton, obj31);
                   obj29.children = items18;
@@ -444,15 +444,15 @@ function UnconnectedYouScreen(arg0) {
                 obj32.navigateToShop = navigateToShop;
                 obj32.initialTab = initialTab;
                 obj32.animateAvatar = !tmp28;
-                items16[2] = tmp84(tmp5(16619), obj32);
-                items16[3] = tmp84(tmp12(11375).TTIFirstContentfulPaint, { label: "you_screen" });
+                items16[2] = tmp84(tmp5(16807), obj32);
+                items16[3] = tmp84(tmp12(11544).TTIFirstContentfulPaint, { label: "you_screen" });
                 obj21.children = items16;
                 items10[2] = tmp89(tmp96, obj21);
                 let tmp84Result7 = null != tmp5Result1Result;
                 if (tmp84Result7) {
-                  const obj33 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: tmp12(7652).ProfileFrameLayerOrder.FRONT, containerWidth: bound };
-                  tmp84Result7 = tmp84(tmp5(7666), obj33);
-                  const tmp5Result12 = tmp5(7666);
+                  const obj33 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: tmp12(7817).ProfileFrameLayerOrder.FRONT, containerWidth: bound };
+                  tmp84Result7 = tmp84(tmp5(7831), obj33);
+                  const tmp5Result12 = tmp5(7831);
                 }
                 const obj34 = { children: null };
                 items10[3] = tmp84Result7;
@@ -460,9 +460,9 @@ function UnconnectedYouScreen(arg0) {
                 items10[5] = tmp74Result;
                 obj19.children = items10;
                 obj18.children = tmp89(tmp5Result10, obj19);
-                obj17.children = tmp84(tmp12(7635).UserProfileAnalyticsProvider, obj18);
+                obj17.children = tmp84(tmp12(7800).UserProfileAnalyticsProvider, obj18);
                 obj34.children = tmp84(tmp12(4540).ThemeContextProvider, obj17);
-                return tmp84(tmp12(6577).LayerScope, obj34);
+                return tmp84(tmp12(6743).LayerScope, obj34);
               } else if (isAnimatedImageURLResult) {
                 const obj35 = {
                   onPress() {
@@ -475,7 +475,7 @@ function UnconnectedYouScreen(arg0) {
                 let intl2 = tmp12(1115).intl;
                 obj35.accessibilityLabel = intl2.string(tmp12(1115).t["3fzj/l"]);
                 const obj36 = { style: dimensionStyle, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp28 };
-                const items20 = [tmp84(tmp5(5899), obj36), ];
+                const items20 = [tmp84(tmp5(6065), obj36), ];
                 let tmp84Result8 = !obj37;
                 if (!obj37) {
                   obj37 = { label: null, style: null, textStyle: null };
@@ -486,14 +486,14 @@ function UnconnectedYouScreen(arg0) {
                   items21[1] = dimensionStyle;
                   obj37.style = items21;
                   obj37.textStyle = tmp10.gifTagText;
-                  tmp84Result8 = tmp84(tmp12(10114).Caption, obj37);
+                  tmp84Result8 = tmp84(tmp12(10281).Caption, obj37);
                 }
                 items20[1] = tmp84Result8;
                 obj35.children = items20;
-                let tmp89Result2 = tmp89(tmp12(5435).PressableOpacity, obj35);
+                let tmp89Result2 = tmp89(tmp12(5602).PressableOpacity, obj35);
               } else {
                 const obj38 = { style: dimensionStyle, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp28 };
-                tmp89Result2 = tmp84(tmp5(5899), obj38);
+                tmp89Result2 = tmp84(tmp5(6065), obj38);
               }
               const tmp12Result25 = tmp12(1092);
             }
@@ -501,10 +501,10 @@ function UnconnectedYouScreen(arg0) {
         }
       }
       items5 = [];
-      const tmp12Result23 = tmp12(11449);
+      const tmp12Result23 = tmp12(11618);
     }
     bound1 = youSettingsCoachmark;
-    const tmp5Result8 = tmp5(7658);
+    const tmp5Result8 = tmp5(7823);
   }
   if (!isFocused) {
     ref3.current = false;
@@ -512,12 +512,12 @@ function UnconnectedYouScreen(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire, ScrollView } = get_ActivityIndicator);
-const YouConstants = fn(16007);
+const YouConstants = fn(16183);
 ({ YOU_ACTION_SHEET_TOP_INSET: closure_12, YOU_AVATAR_SIZE: map1, YOU_SCREEN_ID: closure_14, YOU_SCROLL_EVENT_THROTTLE: closure_15 } = YouConstants);
 const UserSettingsSections = fn(1074).UserSettingsSections;
 let closure_17 = fn(1076).CollectiblesMobileShopScreen;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const UserProfileThemeTypes = fn(6629).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(6795).UserProfileThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_20, jsxs: closure_21 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;

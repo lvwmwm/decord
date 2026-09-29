@@ -1,13 +1,13 @@
-// Module ID: 9379
-// Function ID: 9380
+// Module ID: 9546
+// Function ID: 9547
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 6583, 5435, 7624, 9380, 1177, 4832, 9381, 1115, 9382, 4983, 6413, 5743, 7846, 5899, 9383, 6493, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 6749, 5602, 7789, 9547, 1177, 4832, 9548, 1115, 9549, 4983, 6579, 5910, 8011, 6065, 9550, 6659, 2]
 // Exports: default
 
-// Module 9379 (RequestToSpeakParticipantList)
+// Module 9546 (RequestToSpeakParticipantList)
 import nativeDefault from "native" /* 576 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8011 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -105,7 +105,7 @@ export default function RequestToSpeakParticipantList(channel) {
   if (0 === sortedRequestToSpeakParticipants.length) {
     let obj2 = { style: tmp.container, children: null };
     const obj3 = { style: tmp.emptyContainer, children: null };
-    const obj4 = { source: require("module_9383") };
+    const obj4 = { source: require("module_9550") };
     const items = [closure_4(require("FastImage"), obj4), , ];
     const obj5 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(tmp3[13]).intl;

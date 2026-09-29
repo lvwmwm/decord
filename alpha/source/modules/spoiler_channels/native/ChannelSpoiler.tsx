@@ -1,16 +1,16 @@
-// Module ID: 12164
-// Function ID: 12165
+// Module ID: 12335
+// Function ID: 12336
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 4852, 2045, 2067, 11753, 21, 4836, 576, 504, 4989, 11754, 5037, 5832, 4693, 5335, 4832, 1115, 5279, 4823, 5435, 12163, 7861, 2]
+// Dependencies: [32, 19, 17, 4852, 2045, 2067, 11922, 21, 4836, 576, 504, 4989, 11923, 5037, 5999, 4693, 5501, 4832, 1115, 5445, 4823, 5602, 12334, 8026, 2]
 // Exports: default
 
-// Module 12164 (ChannelSpoiler)
+// Module 12335 (ChannelSpoiler)
 import nativeDefault from "native" /* 576 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import GatedContentDefault from "GatedContent" /* 12163 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
+import GatedContentDefault from "GatedContent" /* 12334 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(11922).VoicePanelControlsModes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4836);
@@ -49,7 +49,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp6(11754)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp6(11923)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -78,8 +78,8 @@ export default function ChannelSpoiler(channelId) {
     }
   }, items3);
   if (null != stateFromStores1) {
-    channelIconComponent = tmp(5335).getChannelIconComponent(stateFromStores1);
-    const tmpResult = tmp(5335);
+    channelIconComponent = tmp(5501).getChannelIconComponent(stateFromStores1);
+    const tmpResult = tmp(5501);
   }
   if (null != channelIconComponent) {
     let obj3 = { style: { flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }, children: null };
@@ -121,13 +121,13 @@ export default function ChannelSpoiler(channelId) {
         const intl2 = tmp(1115).intl;
         obj13.children = intl2.string(tmp(1115).t["/QvRak"]);
         obj12.children = tmp24(tmp(4832).Text, obj13);
-        tmp24Result = tmp24(tmp(5435).PressableHighlight, obj12);
+        tmp24Result = tmp24(tmp(5602).PressableHighlight, obj12);
       }
       items5[2] = tmp24Result;
       const obj14 = { style: tmp4.divider };
       items5[3] = closure_10(tmp25, obj14);
       obj6.children = items5;
-      tmp23Result = tmp23(tmp(5279).Stack, obj6);
+      tmp23Result = tmp23(tmp(5445).Stack, obj6);
       const tmp6Result3 = tmp6(4823);
     }
     str = stateFromStores1.topic;

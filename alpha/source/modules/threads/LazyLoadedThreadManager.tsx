@@ -1,11 +1,11 @@
-// Module ID: 6732
-// Function ID: 6733
+// Module ID: 6898
+// Function ID: 6899
 // Name: LazyLoadedThreadManager
-// Dependencies: [5589, 2049, 2045, 2099, 1074, 2052, 573, 6642, 4660, 4673, 1271, 2]
+// Dependencies: [5756, 2049, 2045, 2099, 1074, 2052, 573, 6808, 4660, 4673, 1271, 2]
 
-// Module 6732 (LazyLoadedThreadManager)
+// Module 6898 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
@@ -86,7 +86,7 @@ function loadThread(channelId) {
           }
         }).catch(() => {
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj2 = { id, guild_id: null, parent_id: "Array" };
+          const obj2 = { id, guild_id: null, parent_id: "r" };
           let guildId;
           if (closure_1 != null) {
             const params = closure_1.params;
@@ -134,7 +134,7 @@ export default {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp9 = nextResult;
-        if (nextResult !== items1(6642).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6808).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp9)) {
             if (null == ChannelStore.getChannel(tmp9)) {
               let tmp18 = dependencyMap[tmp9];

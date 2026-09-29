@@ -1,10 +1,10 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16491
+// Function ID: 16492
 // Name: vibegrationsProjectMenuItems
 // Dependencies: [1115, 3715, 2]
 // Exports: previewMenuItems
 
-// Module 16311 (vibegrationsProjectMenuItems)
+// Module 16491 (vibegrationsProjectMenuItems)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;

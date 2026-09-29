@@ -1,11 +1,11 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7871
+// Function ID: 7872
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4825, 1074, 7707, 2]
+// Dependencies: [4825, 1074, 7872, 2]
 // Exports: default
 
-// Module 7706 (openUserProfileAvatarMediaViewer)
-import openMediaModal from "openMediaModal" /* 7707 */;
+// Module 7871 (openUserProfileAvatarMediaViewer)
+import openMediaModal from "openMediaModal" /* 7872 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

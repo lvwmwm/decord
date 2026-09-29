@@ -1,12 +1,12 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8456
+// Function ID: 8457
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1243, 4452, 8227, 6973, 2]
+// Dependencies: [1243, 4452, 8392, 7139, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 8291 (CollectiblesShopVariantsUIStore)
+// Module 8456 (CollectiblesShopVariantsUIStore)
 import _mod4452 from "module_4452" /* 4452 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7139 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 

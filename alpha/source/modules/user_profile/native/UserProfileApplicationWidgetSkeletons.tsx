@@ -1,10 +1,10 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8643
+// Function ID: 8644
 // Name: UserProfileApplicationWidgetSkeletons
 // Dependencies: [19, 17, 21, 4836, 576, 4832, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 8478 (UserProfileApplicationWidgetSkeletons)
+// Module 8643 (UserProfileApplicationWidgetSkeletons)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;

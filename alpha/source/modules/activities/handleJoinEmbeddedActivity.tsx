@@ -1,10 +1,10 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8991
+// Function ID: 8992
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5063, 2045, 2099, 1372, 2044, 2005, 8827, 8764, 4458, 8828, 8793, 8792, 8803, 8804, 8789, 12444, 8782, 2]
+// Dependencies: [5, 5063, 2045, 2099, 1372, 2044, 2005, 8992, 8929, 4458, 8993, 8958, 8957, 8968, 8969, 8954, 12615, 8947, 2]
 // Exports: default
 
-// Module 8826 (handleJoinEmbeddedActivity)
+// Module 8991 (handleJoinEmbeddedActivity)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

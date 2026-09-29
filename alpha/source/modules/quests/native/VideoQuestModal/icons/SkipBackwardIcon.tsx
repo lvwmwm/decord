@@ -1,11 +1,11 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14745
+// Function ID: 14746
 // Name: SkipBackwardIcon
-// Dependencies: [19, 21, 7909, 2]
+// Dependencies: [19, 21, 8074, 2]
 // Exports: SkipBackwardIcon
 
-// Module 14570 (SkipBackwardIcon)
-import inlineStyles from "inlineStyles" /* 7909 */;
+// Module 14745 (SkipBackwardIcon)
+import inlineStyles from "inlineStyles" /* 8074 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

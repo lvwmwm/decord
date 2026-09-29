@@ -1,16 +1,16 @@
-// Module ID: 9537
-// Function ID: 9538
+// Module ID: 9704
+// Function ID: 9705
 // Name: ChannelContainer
-// Dependencies: [19, 17, 4470, 2045, 2099, 1074, 2042, 21, 4836, 4695, 9538, 504, 8861, 7720, 4654, 2029, 10865, 10866, 8973, 2]
+// Dependencies: [19, 17, 4470, 2045, 2099, 1074, 2042, 21, 4836, 4695, 9705, 504, 9026, 7885, 4654, 2029, 11034, 11035, 9138, 2]
 // Exports: ChannelContainer
 
-// Module 9537 (ChannelContainer)
+// Module 9704 (ChannelContainer)
 import initialize from "initialize" /* 504 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
 import useChatLayoutDefault from "useChatLayout" /* 4695 */;
-import common_NotificationsDefault from "common/Notifications" /* 9538 */;
-import useChannelStylesShared from "useChannelStylesShared" /* 10865 */;
+import common_NotificationsDefault from "common/Notifications" /* 9705 */;
+import useChannelStylesShared from "useChannelStylesShared" /* 11034 */;
 import noop from "module_19" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4470 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -55,7 +55,7 @@ export const ChannelContainer = function ChannelContainer(children) {
   ({ channel, isStageChannel } = stateFromStoresObject);
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(8861)(stateFromStoresObject.voiceChannelId);
+    tmp5 = channelId(9026)(stateFromStoresObject.voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -70,9 +70,9 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(7720)(isPrivateResult);
+  const tmp8 = channelId(7885)(isPrivateResult);
   noop = tmp8;
-  const tmp9 = channelId(7720)(channelId);
+  const tmp9 = channelId(7885)(channelId);
   closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = noop.useEffect(() => {
@@ -108,13 +108,13 @@ export const ChannelContainer = function ChannelContainer(children) {
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(10866), obj4);
+      tmp15 = closure_10(tmp4(11035), obj4);
     }
   }
   const items3 = [tmp15, children.children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(8973), obj5);
+    tmp5 = closure_10(tmp4(9138), obj5);
   }
   items3[2] = tmp5;
   obj3.children = items3;

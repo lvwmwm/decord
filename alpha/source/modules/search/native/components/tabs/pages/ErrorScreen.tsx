@@ -1,12 +1,12 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16643
+// Function ID: 16644
 // Name: pages/ErrorScreen
-// Dependencies: [19, 17, 21, 4836, 6402, 4541, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 6568, 4541, 4832, 2]
 
-// Module 16454 (pages/ErrorScreen)
+// Module 16643 (pages/ErrorScreen)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

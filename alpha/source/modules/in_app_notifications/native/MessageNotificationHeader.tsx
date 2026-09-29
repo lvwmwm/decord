@@ -1,10 +1,10 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9799
+// Function ID: 9800
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4825, 4479, 1372, 21, 4836, 576, 4832, 4989, 1095, 5385, 5387, 5335, 504, 2]
+// Dependencies: [19, 17, 4825, 4479, 1372, 21, 4836, 576, 4832, 4989, 1095, 5551, 5553, 5501, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 9632 (MessageNotificationHeader)
+// Module 9799 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
@@ -41,13 +41,13 @@ function LocationText(channel) {
       return element;
     } else {
       if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5335).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5335);
+        const simpleChannelIconComponent = tmp3(5501).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5501);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5387).ThreadIcon;
+        const ThreadIcon = tmp3(5553).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5385);
+      tmp3Result2 = tmp3(5551);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);

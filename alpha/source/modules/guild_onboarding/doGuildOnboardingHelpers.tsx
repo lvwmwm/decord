@@ -1,12 +1,12 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6691
+// Function ID: 6692
 // Name: doGuildOnboardingHelpers
-// Dependencies: [2108, 4455, 1385, 6526, 2]
+// Dependencies: [2108, 4455, 1385, 6692, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 6525 (doGuildOnboardingHelpers)
+// Module 6691 (doGuildOnboardingHelpers)
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6526 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6692 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 require = fn;

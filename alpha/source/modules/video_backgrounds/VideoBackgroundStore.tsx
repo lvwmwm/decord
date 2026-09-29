@@ -1,9 +1,9 @@
-// Module ID: 9111
-// Function ID: 9112
+// Module ID: 9276
+// Function ID: 9277
 // Name: VideoBackgroundStore
 // Dependencies: [1184, 1220, 1993, 2099, 1372, 4891, 504, 573, 2]
 
-// Module 9111 (VideoBackgroundStore)
+// Module 9276 (VideoBackgroundStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;

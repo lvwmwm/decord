@@ -1,13 +1,13 @@
-// Module ID: 14954
-// Function ID: 14955
+// Module ID: 15129
+// Function ID: 15130
 // Name: FloatingApplyButton
-// Dependencies: [19, 4825, 1609, 21, 504, 1613, 4566, 576, 5280, 4801, 5281, 2]
+// Dependencies: [19, 4825, 1609, 21, 504, 1613, 4566, 576, 5446, 4801, 5447, 2]
 // Exports: default
 
-// Module 14954 (FloatingApplyButton)
+// Module 15129 (FloatingApplyButton)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

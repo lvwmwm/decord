@@ -1,14 +1,14 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8859
+// Function ID: 8860
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1074, 21, 4836, 5836, 576, 8053, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 6003, 576, 8218, 2]
 // Exports: default
 
-// Module 8694 (PremiumFeatureList)
+// Module 8859 (PremiumFeatureList)
 import nativeDefault from "native" /* 576 */;
-import Form from "Form" /* 8053 */;
+import Form from "Form" /* 8218 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import TextStyles from "TextStyles" /* 6003 */;
 
 require = fn;
 const View = fn(17).View;

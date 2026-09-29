@@ -1,15 +1,15 @@
-// Module ID: 8193
-// Function ID: 8194
+// Module ID: 8358
+// Function ID: 8359
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 5063, 1372, 21, 4836, 576, 6364, 8194, 8195, 6586, 504, 8139, 1115, 5899, 1177, 4832, 5281, 8197, 2]
+// Dependencies: [19, 17, 5063, 1372, 21, 4836, 576, 6530, 8359, 8360, 6752, 504, 8304, 1115, 6065, 1177, 4832, 5447, 8362, 2]
 // Exports: default
 
-// Module 8193 (GameProfileLinkAccount)
+// Module 8358 (GameProfileLinkAccount)
 import nativeDefault from "native" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import GameProfileSection from "GameProfileSection" /* 8194 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8195 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6530 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8304 */;
+import GameProfileSection from "GameProfileSection" /* 8359 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8360 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -80,7 +80,7 @@ let closure_11 = noop.memo(() => {
   let tmp5Result = !tmp4;
   if (!tmp4) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(8195), obj13);
+    tmp5Result = tmp5(tmp2(8360), obj13);
   }
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: null };
   items4[2] = tmp5Result;

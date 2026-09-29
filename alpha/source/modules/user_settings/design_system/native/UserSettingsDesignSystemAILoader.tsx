@@ -1,14 +1,14 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15587
+// Function ID: 15588
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 4836, 4832, 5279, 5919, 13935, 2]
+// Dependencies: [19, 17, 21, 4836, 4832, 5445, 6085, 14104, 2]
 // Exports: default
 
-// Module 15412 (UserSettingsDesignSystemAILoader)
+// Module 15587 (UserSettingsDesignSystemAILoader)
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import Card from "Card" /* 5919 */;
-import AILoader from "AILoader" /* 13935 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import Card from "Card" /* 6085 */;
+import AILoader from "AILoader" /* 14104 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

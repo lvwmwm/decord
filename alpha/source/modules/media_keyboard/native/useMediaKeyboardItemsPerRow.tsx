@@ -1,10 +1,10 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10277
+// Function ID: 10278
 // Name: useMediaKeyboardItemsPerRow
 // Dependencies: [19, 4696, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 10110 (useMediaKeyboardItemsPerRow)
+// Module 10277 (useMediaKeyboardItemsPerRow)
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4696 */;
 import noop from "module_19" /* 19 */;
 

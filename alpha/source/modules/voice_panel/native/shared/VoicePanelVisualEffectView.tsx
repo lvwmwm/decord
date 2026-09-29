@@ -1,14 +1,14 @@
-// Module ID: 17005
-// Function ID: 17006
+// Module ID: 17192
+// Function ID: 17193
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 8370, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 8535, 2]
 
-// Module 17005 (VoicePanelVisualEffectView)
+// Module 17192 (VoicePanelVisualEffectView)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(8370);
+const native = tmp(8535);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: c3 } = get_ActivityIndicator);

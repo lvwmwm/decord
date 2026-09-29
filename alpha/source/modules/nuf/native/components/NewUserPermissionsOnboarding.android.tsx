@@ -1,14 +1,14 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12356
+// Function ID: 12357
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4836, 5994, 576, 4832, 5281, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 6160, 576, 4832, 5447, 1115, 2]
 // Exports: default
 
-// Module 12185 (NewUserPermissionsOnboarding)
+// Module 12356 (NewUserPermissionsOnboarding)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,8 +17,8 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 const createStyles = fn(4836);
-let obj2 = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" }, alertContainer: { paddingTop: 80 + fn(5994).NAV_BAR_HEIGHT }, alert: null, alertContent: null, alertTitle: null, alertSubtitle: null, buttonWrapper: null, primaryButtonContainer: null, trailing: null };
-let obj3 = { paddingTop: 80 + fn(5994).NAV_BAR_HEIGHT };
+let obj2 = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" }, alertContainer: { paddingTop: 80 + fn(6160).NAV_BAR_HEIGHT }, alert: null, alertContent: null, alertTitle: null, alertSubtitle: null, buttonWrapper: null, primaryButtonContainer: null, trailing: null };
+let obj3 = { paddingTop: 80 + fn(6160).NAV_BAR_HEIGHT };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 obj2.alert = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
 obj2.alertContent = { paddingVertical: 24, paddingHorizontal: 24, alignItems: "center" };
@@ -69,7 +69,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     const intl2 = tmp6(1115).intl;
     obj11.text = intl2.string(tmp6(1115).t["5Wxrcd"]);
     obj11.onPress = onDontAllow;
-    obj10.children = tmp4(tmp6(5281).Button, obj11);
+    obj10.children = tmp4(tmp6(5447).Button, obj11);
     flag = tmp4(tmp5, obj10);
   }
   const obj12 = { children: null };

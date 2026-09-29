@@ -1,14 +1,14 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9696
+// Function ID: 9697
 // Name: AudienceTile
-// Dependencies: [19, 17, 2108, 21, 4836, 576, 4983, 1177, 8076, 1479, 504, 5737, 4988, 6073, 1115, 7841, 9510, 4685, 9530, 2]
+// Dependencies: [19, 17, 2108, 21, 4836, 576, 4983, 1177, 8241, 1479, 504, 5904, 4988, 6239, 1115, 8006, 9677, 4685, 9697, 2]
 // Exports: getTileWidthStyle
 
-// Module 9529 (AudienceTile)
+// Module 9696 (AudienceTile)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7841 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8006 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
@@ -28,7 +28,7 @@ function RaisedHandIcon(rtsState) {
   if (activeBackground) {
     activeBackground = tmp.activeBackground;
   }
-  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8076), color: PRIMARY_800 }) };
+  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8241), color: PRIMARY_800 }) };
   items[1] = activeBackground;
   return hasOwnProperty(View, obj);
 }

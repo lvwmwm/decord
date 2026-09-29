@@ -1,13 +1,13 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16466
+// Function ID: 16467
 // Name: VibegrationsDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4800, 16287, 8498, 1115, 3715, 4832, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 4800, 16467, 8663, 1115, 3715, 4832, 2]
 // Exports: default
 
-// Module 16286 (VibegrationsDesignFeedbackOverlay)
+// Module 16466 (VibegrationsDesignFeedbackOverlay)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16287 */;
+import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16467 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,7 +61,7 @@ export default function VibegrationsDesignFeedbackOverlay(projectId) {
     return () => {
       closure_1_9.current = false;
       if (ref.current) {
-        size(4800).hideActionSheet(projectId(16287).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+        size(4800).hideActionSheet(projectId(16467).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
         const obj = size(4800);
       }
     };
@@ -106,7 +106,7 @@ export default function VibegrationsDesignFeedbackOverlay(projectId) {
         point.y = Math.round(nativeEvent.nativeEvent.locationY);
         closure_4(point);
         closure_8(false);
-        const result = projectId(8498).inspectVibegrationsPreviewPoint(point, point);
+        const result = projectId(8663).inspectVibegrationsPreviewPoint(point, point);
         result.then((status) => {
           if (ref.current) {
             closure_4(null);
@@ -135,7 +135,7 @@ export default function VibegrationsDesignFeedbackOverlay(projectId) {
             closure_8(true);
           }
         });
-        const obj2 = projectId(8498);
+        const obj2 = projectId(8663);
       }
     }
   }, items3);

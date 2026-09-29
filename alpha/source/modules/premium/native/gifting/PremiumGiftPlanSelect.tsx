@@ -1,19 +1,19 @@
-// Module ID: 10127
-// Function ID: 10128
+// Module ID: 10294
+// Function ID: 10295
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 7637, 10128, 1374, 1074, 21, 4836, 576, 672, 1485, 1613, 1479, 10162, 5266, 5942, 504, 10206, 10204, 7629, 10208, 10125, 10212, 10215, 7328, 4566, 1177, 4837, 10221, 6603, 10222, 10256, 8839, 1115, 5992, 5899, 10505, 5293, 5994, 4832, 2]
+// Dependencies: [32, 19, 17, 7802, 10295, 1374, 1074, 21, 4836, 576, 672, 1485, 1613, 1479, 10329, 5432, 6108, 504, 10373, 10371, 7794, 10375, 10292, 10379, 10382, 7493, 4566, 1177, 4837, 10390, 6769, 10391, 10425, 9004, 1115, 6158, 6065, 10674, 5459, 6160, 4832, 2]
 // Exports: default
 
-// Module 10127 (PremiumGiftPlanSelect)
+// Module 10294 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4837 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10215 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10382 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7802 */;
+import PromotionsStore from "PromotionsStore" /* 10295 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -509,7 +509,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result8 = tmp4(tmp2[31]);
       }
     } else {
-      const obj44 = { style: tmp14.avatar, guildId: "r", size: "flex", user: null };
+      const obj44 = { style: tmp14.avatar, guildId: "r", size: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004925451564688879, user: -0.000000000000000000000000000000013096336421405486 };
       const AvatarSizes = tmp(tmp2[27]).AvatarSizes;
       obj44.size = enabled ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;
       obj44.user = recipientUser;

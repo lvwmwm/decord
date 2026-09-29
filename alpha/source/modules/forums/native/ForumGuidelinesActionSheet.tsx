@@ -1,23 +1,23 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9897
+// Function ID: 9898
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 6691, 21, 4836, 576, 7310, 1613, 9731, 1364, 9732, 4800, 6544, 5282, 1115, 4661, 4990, 8085, 6571, 6045, 5435, 4832, 9713, 7855, 5389, 4823, 9730, 1981, 2]
+// Dependencies: [32, 19, 17, 6857, 21, 4836, 576, 7475, 1613, 9898, 1364, 9899, 4800, 6710, 5448, 1115, 4661, 4990, 8250, 6737, 6211, 5602, 4832, 9880, 8020, 5555, 4823, 9897, 1981, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 9730 (ForumGuidelinesActionSheet)
+// Module 9897 (ForumGuidelinesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import LinkUtils from "LinkUtils" /* 4990 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8085 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9732 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8250 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9899 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(6691).FORUM_GUIDELINES_ACTION_SHEET;
+let closure_6 = fn(6857).FORUM_GUIDELINES_ACTION_SHEET;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4836);
@@ -187,5 +187,5 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(asyncRequireImpl(9730, dependencyMap.paths), closure_6, obj2);
+  obj.openLazy(asyncRequireImpl(9897, dependencyMap.paths), closure_6, obj2);
 };

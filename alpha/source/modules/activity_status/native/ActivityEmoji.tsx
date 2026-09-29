@@ -1,12 +1,12 @@
-// Module ID: 10353
-// Function ID: 10354
+// Module ID: 10522
+// Function ID: 10523
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4836, 2021, 1397, 8219, 6551, 2]
+// Dependencies: [19, 21, 4836, 2021, 1397, 8384, 6717, 2]
 // Exports: default
 
-// Module 10353 (ActivityEmoji)
+// Module 10522 (ActivityEmoji)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import EmojiDefault from "Emoji" /* 6551 */;
+import EmojiDefault from "Emoji" /* 6717 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -64,7 +64,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(8219).ReactionIcon;
+    ReactionIcon = ReactionIcon(8384).ReactionIcon;
     const obj = { style, size: "sm" };
     <ReactionIcon style={style} size="sm" />;
   } else {

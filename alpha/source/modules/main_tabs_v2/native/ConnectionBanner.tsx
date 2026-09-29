@@ -1,22 +1,22 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16209
+// Function ID: 16210
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13230, 14627, 1074, 21, 4836, 576, 1115, 4531, 16034, 16036, 4832, 672, 4566, 5976, 5293, 504, 1241, 14626, 5280, 13231, 2]
+// Dependencies: [32, 19, 17, 13400, 14802, 1074, 21, 4836, 576, 1115, 4531, 16210, 16212, 4832, 672, 4566, 6142, 5459, 504, 1241, 14801, 5446, 13401, 2]
 // Exports: default
 
-// Module 16033 (ConnectionBanner)
+// Module 16209 (ConnectionBanner)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useToken from "useToken" /* 4531 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import spring from "spring" /* 5280 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import _modDef5976 from "module_5976" /* 5976 */;
+import spring from "spring" /* 5446 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import _modDef6142 from "module_6142" /* 6142 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13230 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13400 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -33,12 +33,12 @@ function ConnectionBannerIcon(state) {
   } else if (tmp7.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: null };
     const obj5 = { size: "xs", color: tmp5(576).colors.INTERACTIVE_ICON_DEFAULT };
-    obj4.children = closure_1_12(tmp2(16034).ConnectionUnknownIcon, obj5);
+    obj4.children = closure_1_12(tmp2(16210).ConnectionUnknownIcon, obj5);
     return closure_1_12(timestampProducer, obj4);
   } else if (tmp7.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: null };
     const obj6 = { size: "xs", color: tmp5(576).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = closure_1_12(tmp2(16036).ConnectionFineIcon, obj6);
+    obj.children = closure_1_12(tmp2(16212).ConnectionFineIcon, obj6);
     return closure_1_12(timestampProducer, obj);
   }
 }
@@ -89,7 +89,7 @@ function BackOnlineGlow(opacity) {
   let obj = token(4531);
   obj3.maskElement = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors, locations, start, end });
   obj3.children = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 });
-  obj2.children = closure_12(_modDef5976, obj3);
+  obj2.children = closure_12(_modDef6142, obj3);
   return closure_12(ReanimatedRexportDefault.View, obj2);
 }
 function ConnectionBannerInner() {
@@ -178,8 +178,8 @@ function ConnectionBannerInner() {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const constants = fn(13230).ConnectivityIndicatorState;
-const YouBarConstants = fn(14627);
+const constants = fn(13400).ConnectivityIndicatorState;
+const YouBarConstants = fn(14802);
 const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
 const AnalyticEvents = fn(1074).AnalyticEvents;
@@ -208,10 +208,10 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(13231).useConfig({ location: "ConnectionBanner" });
+  const config = stateFromStores(13401).useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   stateFromStores = undefined;
-  let obj = stateFromStores(13231);
+  let obj = stateFromStores(13401);
   const items = [ConnectivityIndicatorStateStore];
   stateFromStores = hidden(504).useStateFromStores(items, () => state.getState());
   dependencyMap = noop.useRef(null);

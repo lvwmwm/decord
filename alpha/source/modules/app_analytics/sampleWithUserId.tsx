@@ -1,10 +1,10 @@
-// Module ID: 6890
-// Function ID: 6891
+// Module ID: 7056
+// Function ID: 7057
 // Name: sampleWithUserId
 // Dependencies: [1240, 2]
 // Exports: sampleWithUserId
 
-// Module 6890 (sampleWithUserId)
+// Module 7056 (sampleWithUserId)
 import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
 import size from "module_2" /* 2 */;
 

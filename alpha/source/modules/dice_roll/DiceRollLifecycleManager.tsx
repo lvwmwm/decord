@@ -1,20 +1,20 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17312
+// Function ID: 17313
 // Name: DiceRollLifecycleManager
-// Dependencies: [2045, 2099, 11441, 8602, 4829, 6539, 1115, 6876, 7095, 2]
+// Dependencies: [2045, 2099, 11610, 8767, 4829, 6705, 1115, 7042, 7260, 2]
 
-// Module 17123 (DiceRollLifecycleManager)
+// Module 17312 (DiceRollLifecycleManager)
 import util from "util" /* 1115 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import MessageParserDefault from "MessageParser" /* 7095 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
+import MessageParserDefault from "MessageParser" /* 7260 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import DiceRollStore from "DiceRollStore" /* 11441 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import DiceRollStore from "DiceRollStore" /* 11610 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
-const INITIAL_STATE = fn(11441).INITIAL_STATE;
-const DiceRollConstants = fn(8602);
+const INITIAL_STATE = fn(11610).INITIAL_STATE;
+const DiceRollConstants = fn(8767);
 ({ AFTER_ROLL_DELAY_MS: closure_7, ALLOWED_DICE_SIDES_SET: closure_8, DEFAULT_DICE_SIDES: closure_9, DISMISS_DELAY_MS: c10, MAX_DICE_COUNT: closure_11, ROLL_DURATION_MS: closure_12 } = DiceRollConstants);
 const MessageSendLocation = fn(4829).MessageSendLocation;
 class DiceRollLifecycleManager extends tmp3 {

@@ -1,10 +1,10 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13174
+// Function ID: 13175
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1074, 2042, 1374, 21, 4836, 576, 5753, 12997, 12998, 1485, 6583, 12999, 1613, 13005, 4566, 12959, 10203, 4654, 2029, 2031, 13006, 1115, 11769, 4488, 6813, 6419, 1241, 13007, 12965, 8663, 13010, 13015, 13032, 13035, 2]
+// Dependencies: [32, 19, 17, 1074, 2042, 1374, 21, 4836, 576, 5920, 13167, 13168, 1485, 6749, 13169, 1613, 13175, 4566, 13129, 10370, 4654, 2029, 2031, 13176, 1115, 11938, 4488, 6979, 6585, 1241, 13177, 13135, 8828, 13180, 13185, 13202, 13205, 2]
 // Exports: default
 
-// Module 13004 (PremiumMarketingPage)
+// Module 13174 (PremiumMarketingPage)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
@@ -28,9 +28,9 @@ let items = [{ scaleX: -1 }];
 obj4.transform = items;
 obj2.backButton = obj4;
 let obj3 = { tintColor: nativeDefault.colors.TEXT_DEFAULT };
-obj2.themedBackground = { backgroundColor: fn(5753).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-let obj5 = { backgroundColor: fn(5753).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-obj2.backButtonBackground = { backgroundColor: fn(5753).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
+obj2.themedBackground = { backgroundColor: fn(5920).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+let obj5 = { backgroundColor: fn(5920).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+obj2.backButtonBackground = { backgroundColor: fn(5920).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

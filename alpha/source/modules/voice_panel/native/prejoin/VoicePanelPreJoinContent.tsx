@@ -1,9 +1,9 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 17171
+// Function ID: 17172
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 2044, 4853, 13276, 4858, 502, 2045, 1993, 4469, 4854, 1372, 4855, 4860, 11755, 11758, 1074, 13281, 4861, 21, 4836, 11759, 576, 11754, 504, 5046, 7841, 5723, 4978, 4888, 5901, 4832, 1115, 12612, 6589, 4458, 16973, 1479, 4566, 8825, 8824, 8933, 5435, 16971, 5281, 8230, 1249, 6028, 9131, 4988, 5917, 10456, 10966, 6583, 6603, 1241, 16918, 16940, 16985, 5280, 4540, 6494, 16861, 16987, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 4853, 13446, 4858, 502, 2045, 1993, 4469, 4854, 1372, 4855, 4860, 11924, 11927, 1074, 13451, 4861, 21, 4836, 11928, 576, 11923, 504, 5046, 8006, 5890, 4978, 4888, 6067, 4832, 1115, 12782, 6755, 4458, 17160, 1479, 4566, 8990, 8989, 9098, 5602, 17158, 5447, 8395, 1249, 6194, 9296, 4988, 6083, 10625, 11135, 6749, 6769, 1241, 17105, 17127, 17172, 5446, 4540, 6660, 17048, 17174, 2]
 
-// Module 16984 (VoicePanelPreJoinContent)
+// Module 17171 (VoicePanelPreJoinContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -14,19 +14,19 @@ import Text_Text from "Text/Text" /* 4832 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
 import StreamActionCreators from "StreamActionCreators" /* 4978 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import spring from "spring" /* 5280 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import NativeViewDefault from "NativeView" /* 5901 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7841 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
-import FormComponents from "FormComponents" /* 9131 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
+import spring from "spring" /* 5446 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
+import NativeViewDefault from "NativeView" /* 6067 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8006 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8395 */;
+import FormComponents from "FormComponents" /* 9296 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10625 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13276 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13446 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -166,12 +166,12 @@ function ActivityInfo(activity) {
               if (null != dependencyMap) {
                 const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                 v3 = num3;
-                const obj7 = { value: v3(8824).maybeJoinEmbeddedActivity(obj6), done: false };
+                const obj7 = { value: v3(8989).maybeJoinEmbeddedActivity(obj6), done: false };
                 return obj7;
               }
             } else {
-              const voiceChannel = analyticsLocations(5723).selectVoiceChannel(channelId);
-              const obj2 = analyticsLocations(5723);
+              const voiceChannel = analyticsLocations(5890).selectVoiceChannel(channelId);
+              const obj2 = analyticsLocations(5890);
             }
           } else {
             num3 = 1;
@@ -454,17 +454,17 @@ function renderItem(arg0, arg1, transitionState, transitionCleanUp) {
   return closure_1_25(PreJoinTransitioner, { transitionState, transitionCleanUp }, arg0);
 }
 const StyleSheet = fn(17).StyleSheet;
-const MODE_CHANGE_PHYSICS = fn(11755).MODE_CHANGE_PHYSICS;
-const EDGE_GUTTER = fn(11758).EDGE_GUTTER;
+const MODE_CHANGE_PHYSICS = fn(11924).MODE_CHANGE_PHYSICS;
+const EDGE_GUTTER = fn(11927).EDGE_GUTTER;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_20, AnalyticsSections: closure_21, Permissions: closure_22 } = Constants);
-const constants4 = fn(13281).VoiceChannelWarningSurfaces;
+const constants4 = fn(13451).VoiceChannelWarningSurfaces;
 const Features = fn(4861).Features;
 const jsxProd = fn(21);
 ({ jsx: closure_25, jsxs: closure_26, Fragment: closure_27 } = jsxProd);
 const createStyles = fn(4836);
-let obj = { contentWrapper: { paddingTop: EDGE_GUTTER + fn(11759).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 }, channelInfoWrapper: { paddingHorizontal: 16 }, subheading: { textAlign: "center", paddingTop: 16, paddingBottom: 16 }, previewImageWrapper: null, previewImage: null, activityInfoWrapper: null, activityInfoHeader: null, joinButtonWrapper: null, optInChannelsContainer: null, blockedMemberWarning: null, consolePreJoinPadding: null };
-let obj3 = { paddingTop: EDGE_GUTTER + fn(11759).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 };
+let obj = { contentWrapper: { paddingTop: EDGE_GUTTER + fn(11928).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 }, channelInfoWrapper: { paddingHorizontal: 16 }, subheading: { textAlign: "center", paddingTop: 16, paddingBottom: 16 }, previewImageWrapper: null, previewImage: null, activityInfoWrapper: null, activityInfoHeader: null, joinButtonWrapper: null, optInChannelsContainer: null, blockedMemberWarning: null, consolePreJoinPadding: null };
+let obj3 = { paddingTop: EDGE_GUTTER + fn(11928).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 };
 obj.previewImageWrapper = { position: "relative", width: "100%", aspectRatio: 1.7777777777777777, borderRadius: nativeDefault.radii.lg, overflow: "hidden", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK };
 let obj5 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -517,7 +517,7 @@ let closure_34 = noop.memo((blockedUserIds) => {
       let stringResult1 = intl4.string(tmp5(1115).t.MpRfpC);
     }
     const obj3 = { style: tmp.blockedMemberWarning, children: null };
-    const items = [closure_1_25(tmp5(6028).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [closure_1_25(tmp5(6194).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj4 = { variant: "text-sm/bold", color: "interactive-text-active", style: { flexShrink: 1 }, children: null };
     const items1 = [stringResult1, " ", ];
     let tmp11Result = null;
@@ -650,10 +650,10 @@ let size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");
 
 export default noop.memo(function VoicePanelPreJoinWrapper() {
-  const context = noop.useContext(guildId(11754));
+  const context = noop.useContext(guildId(11923));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(16861)(channelId);
+  const tmp2 = guildId(17048)(channelId);
   dependencyMap = tmp2;
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
   let items1 = [tmp2, channelId, guildId];
@@ -693,6 +693,6 @@ export default noop.memo(function VoicePanelPreJoinWrapper() {
       };
       return obj;
     }
-  }, items1, channelId(16987).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(17174).areVoicePanelPreJoinContentPropsEqual);
   return closure_25(channelId(4540).TransitionItem, { item: stateFromStores, renderItem });
 });

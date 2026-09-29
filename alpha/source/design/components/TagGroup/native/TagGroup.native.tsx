@@ -1,12 +1,12 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 14147
+// Function ID: 14148
 // Name: TagGroup
-// Dependencies: [19, 17, 21, 4836, 576, 13979, 13981, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 14148, 14150, 2]
 // Exports: TagGroup
 
-// Module 13978 (TagGroup)
+// Module 14147 (TagGroup)
 import nativeDefault from "native" /* 576 */;
-import Tag from "Tag" /* 13981 */;
+import Tag from "Tag" /* 14150 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

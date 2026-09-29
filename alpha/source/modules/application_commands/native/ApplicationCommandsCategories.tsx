@@ -1,22 +1,22 @@
-// Module ID: 11891
-// Function ID: 11892
+// Module ID: 12062
+// Function ID: 12063
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2108, 11888, 21, 4836, 576, 504, 11713, 5899, 5435, 1115, 4801, 4802, 2]
+// Dependencies: [19, 17, 2108, 12059, 21, 4836, 576, 504, 11882, 6065, 5602, 1115, 4801, 4802, 2]
 // Exports: default
 
-// Module 11891 (ApplicationCommandsCategories)
+// Module 12062 (ApplicationCommandsCategories)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11713 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11882 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, FlatList: hasOwnProperty } = get_ActivityIndicator);
-const ApplicationCommandsCategoriesConstants = fn(11888);
+const ApplicationCommandsCategoriesConstants = fn(12059);
 ({ ICON_SIZE, NODE_SIZE, NODE_MARGIN, ITEM_WIDTH: closure_7 } = ApplicationCommandsCategoriesConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
@@ -71,7 +71,7 @@ let closure_10 = noop.memo((section) => {
   obj3.accessibilityLabel = formatToPlainStringResult;
   const items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
   obj3.children = <stateFromStores style={items2}>{tmp6}</stateFromStores>;
-  return jsx(section(5435).PressableOpacity, {
+  return jsx(section(5602).PressableOpacity, {
     onPress() {
       return importDefault(dependencyMap);
     },

@@ -1,10 +1,10 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 9100
+// Function ID: 9101
 // Name: useIsStreamFocused
 // Dependencies: [4852, 4857, 504, 2]
 // Exports: useIsStreamFocused
 
-// Module 8935 (useIsStreamFocused)
+// Module 9100 (useIsStreamFocused)
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 const require = globalThis.__r;

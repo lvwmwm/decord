@@ -1,17 +1,17 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 15076
+// Function ID: 15077
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1390, 1074, 21, 1092, 14898, 4836, 576, 7615, 10361, 1389, 4801, 4800, 14152, 1241, 6571, 14890, 1115, 2877, 5281, 12, 4783, 14899, 2]
+// Dependencies: [32, 19, 17, 1390, 1074, 21, 1092, 15073, 4836, 576, 7780, 10530, 1389, 4801, 4800, 14324, 1241, 6737, 15065, 1115, 2877, 5447, 12, 4783, 15074, 2]
 // Exports: default
 
-// Module 14901 (DisplayNameStylesColorPickerSheet)
+// Module 15076 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14152 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14324 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -37,7 +37,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj7.alignItems = "center";
 obj7.justifyContent = "center";
 obj2.checkmarkOverlay = obj7;
-const size1 = { width: fn(14898).CHECKMARK_SIZE, height: fn(14898).CHECKMARK_SIZE };
+const size1 = { width: fn(15073).CHECKMARK_SIZE, height: fn(15073).CHECKMARK_SIZE };
 obj2.checkmark = size1;
 let obj6 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
 obj2.buttonsContainer = { alignSelf: "stretch", flexDirection: "row", gap: nativeDefault.space.PX_16 };
@@ -145,7 +145,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedColor) {
           const obj5 = { size: "custom", style: tmp4.checkmark, color: null };
           const darkness = tmp5(1092).getDarkness(item);
           let str = "black";
-          if (darkness > tmp5(14898).DARK_SWATCH_THRESHOLD) {
+          if (darkness > tmp5(15073).DARK_SWATCH_THRESHOLD) {
             str = "white";
           }
           obj5.color = str;

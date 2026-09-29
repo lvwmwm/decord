@@ -1,10 +1,10 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8201
+// Function ID: 8202
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4836, 576, 5917, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6083, 4832, 2]
 // Exports: default
 
-// Module 8036 (SafetyTipsRow)
+// Module 8201 (SafetyTipsRow)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;

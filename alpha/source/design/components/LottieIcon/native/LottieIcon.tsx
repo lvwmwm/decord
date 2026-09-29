@@ -1,13 +1,13 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9572
+// Function ID: 9573
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 576, 6038, 4550, 4531, 5842, 2]
+// Dependencies: [19, 17, 21, 576, 6204, 4550, 4531, 6008, 2]
 
-// Module 9405 (LottieIcon)
+// Module 9572 (LottieIcon)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
-import _modDef5842 from "module_5842" /* 5842 */;
-import IconSize from "IconSize" /* 6038 */;
+import _modDef6008 from "module_6008" /* 6008 */;
+import IconSize from "IconSize" /* 6204 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -128,6 +128,6 @@ export const LottieIcon = noop.forwardRef((color, ref) => {
   obj3.onAnimationLoaded = callback1;
   const items4 = [size1, { opacity: num }];
   obj3.style = items4;
-  obj2.children = jsx(_modDef5842, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
+  obj2.children = jsx(_modDef6008, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
   return <tmp19 style={size1}>{null}</tmp19>;
 });

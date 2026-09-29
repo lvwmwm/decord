@@ -1,10 +1,10 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8255
+// Function ID: 8256
 // Name: MenuTypes
 // Dependencies: [2]
 // Exports: isMediaTakedownRegulation
 
-// Module 8090 (MenuTypes)
+// Module 8255 (MenuTypes)
 import size from "module_2" /* 2 */;
 
 const MediaTakedownRegulation = { TIDA: "tida", UK_STOPNCII: "uk_stopncii" };

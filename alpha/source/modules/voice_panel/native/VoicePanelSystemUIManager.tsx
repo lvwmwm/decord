@@ -1,9 +1,9 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 17108
+// Function ID: 17109
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 4852, 11755, 11753, 4857, 21, 11754, 1248, 1364, 551, 4566, 8853, 8839, 8841, 2]
+// Dependencies: [32, 19, 4852, 11924, 11922, 4857, 21, 11923, 1248, 1364, 551, 4566, 9018, 9004, 9006, 2]
 
-// Module 16921 (VoicePanelSystemUIManager)
+// Module 17108 (VoicePanelSystemUIManager)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -11,8 +11,8 @@ import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 require = fn;
-const VoicePanelModes = fn(11755).VoicePanelModes;
-const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
+const VoicePanelModes = fn(11924).VoicePanelModes;
+const VoicePanelControlsModes = fn(11922).VoicePanelControlsModes;
 const ParticipantTypes = fn(4857).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);

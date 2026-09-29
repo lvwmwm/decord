@@ -1,14 +1,14 @@
-// Module ID: 6621
-// Function ID: 6622
+// Module ID: 6787
+// Function ID: 6788
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4836, 1364, 4533, 5917, 4832, 6622, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 1364, 4533, 6083, 4832, 6788, 2]
 // Exports: TableSwitchRow
 
-// Module 6621 (TableSwitchRow)
+// Module 6787 (TableSwitchRow)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import native from "native" /* 4533 */;
-import TableRow from "TableRow" /* 5917 */;
-import FormSwitch from "FormSwitch" /* 6622 */;
+import TableRow from "TableRow" /* 6083 */;
+import FormSwitch from "FormSwitch" /* 6788 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

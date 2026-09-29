@@ -1,12 +1,12 @@
-// Module ID: 14569
-// Function ID: 14570
+// Module ID: 14744
+// Function ID: 14745
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [19, 21, 4836, 576, 672, 5435, 5269, 2]
+// Dependencies: [19, 21, 4836, 576, 672, 5602, 5435, 2]
 
-// Module 14569 (VideoQuestPlayerControlButton)
+// Module 14744 (VideoQuestPlayerControlButton)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5269 */;
-import Pressables from "Pressables" /* 5435 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5435 */;
+import Pressables from "Pressables" /* 5602 */;
 import noop from "module_19" /* 19 */;
 import n from "module_672" /* 672 */;
 

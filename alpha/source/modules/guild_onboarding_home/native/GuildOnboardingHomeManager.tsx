@@ -1,9 +1,9 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17326
+// Function ID: 17327
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2101, 502, 2045, 2108, 2067, 4655, 5023, 5024, 4455, 6539, 1385, 5039, 17138, 1981, 11768, 1094, 11767, 6643, 6644, 2]
+// Dependencies: [32, 5, 2101, 502, 2045, 2108, 2067, 4655, 5023, 5024, 4455, 6705, 1385, 5039, 17327, 1981, 11937, 1094, 11936, 6809, 6810, 2]
 
-// Module 17137 (GuildOnboardingHomeManager)
+// Module 17326 (GuildOnboardingHomeManager)
 import FlagUtils from "FlagUtils" /* 1385 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -16,7 +16,7 @@ import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5024 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 const GuildMemberFlags = fn(4455).GuildMemberFlags;
@@ -91,10 +91,10 @@ const prototype = function GuildOnboardingHomeManager() {
           }
           if (0 !== num) {
             const obj2 = ModalActionCreatorsDefault;
-            const tmp9 = tmp(1981)(17138, tmp2.paths);
+            const tmp9 = tmp(1981)(17327, tmp2.paths);
             const obj3 = { initialPercent: (num - 1) / num, numActions: num };
             const obj4 = { animation: tmp(1094).ModalAnimation.FADE };
-            obj2.pushLazy(tmp9, obj3, tmp(11768).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);
+            obj2.pushLazy(tmp9, obj3, tmp(11937).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);
           }
         }
         obj = FlagUtils;
@@ -187,11 +187,11 @@ const prototype = function GuildOnboardingHomeManager() {
               tmp13 = null != closure_129_5;
             }
             if (tmp13) {
-              tmp13 = closure_129_5.actionType === applyArgumentsResult(11768).NewMemberActionTypes.VIEW;
+              tmp13 = closure_129_5.actionType === applyArgumentsResult(11937).NewMemberActionTypes.VIEW;
             }
             if (tmp13) {
-              const result = applyArgumentsResult(11767).completeNewMemberAction(closure_129_0, closure_129_1);
-              const obj = applyArgumentsResult(11767);
+              const result = applyArgumentsResult(11936).completeNewMemberAction(closure_129_0, closure_129_1);
+              const obj = applyArgumentsResult(11936);
             }
             arr = memberActions;
           }

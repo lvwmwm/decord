@@ -1,24 +1,24 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9600
+// Function ID: 9601
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 4853, 1993, 4469, 4854, 8829, 1074, 1085, 21, 4836, 8854, 4800, 6571, 1610, 6045, 9434, 4989, 9394, 9275, 9460, 9461, 1115, 9104, 5723, 4767, 9462, 8962, 504, 9240, 6763, 9469, 9242, 9470, 576, 8907, 9471, 2]
+// Dependencies: [19, 17, 4853, 1993, 4469, 4854, 8994, 1074, 1085, 21, 4836, 9019, 4800, 6737, 1610, 6211, 9601, 4989, 9561, 9442, 9627, 9628, 1115, 1876, 9269, 5890, 4767, 9629, 9127, 504, 9407, 6929, 9636, 9409, 9637, 576, 9072, 9638, 2]
 // Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
 
-// Module 9433 (ChannelCallConnectingScreen)
-import _mod17 from "module_17" /* 17 */;
+// Module 9600 (ChannelCallConnectingScreen)
 import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 9242 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9434 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 9462 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 9469 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
+import BottomSheetModal from "BottomSheetModal" /* 6211 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9269 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 9409 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9442 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9601 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 9629 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 9636 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -41,10 +41,10 @@ function JoinVoiceButton(channel) {
   let stateFromStores1;
   importDefault = require("useVoiceStateForRemoteSession")();
   const items = [GameConsoleStore];
-  const stateFromStores = channel(stateFromStores1[28]).useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  let obj = channel(stateFromStores1[28]);
+  const stateFromStores = channel(stateFromStores1[29]).useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  let obj = channel(stateFromStores1[29]);
   const items1 = [SessionsStore];
-  stateFromStores1 = channel(stateFromStores1[28]).useStateFromStores(items1, () => {
+  stateFromStores1 = channel(stateFromStores1[29]).useStateFromStores(items1, () => {
     let str;
     if (sessionId != null) {
       str = sessionId.sessionId;
@@ -72,19 +72,7 @@ function JoinVoiceButton(channel) {
       }
     }
     resetFocus();
-    const tmp8 = _mod17;
-    if (tmp8 != null) {
-      const NativeModules = tmp8.NativeModules;
-      if (NativeModules != null) {
-        const KeyboardManager = NativeModules.KeyboardManager;
-        if (KeyboardManager != null) {
-          const dismissGlobalKeyboard = KeyboardManager.dismissGlobalKeyboard;
-          if (dismissGlobalKeyboard != null) {
-            const result1 = dismissGlobalKeyboard();
-          }
-        }
-      }
-    }
+    const result1 = KeyboardManagerUtils.dismissGlobalKeyboard();
     if (closure_4) {
       if (!MediaEngineStore.getSettings().mute) {
         AudioActionCreatorsDefault.toggleSelfMute();
@@ -93,7 +81,7 @@ function JoinVoiceButton(channel) {
     const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id, false, false);
   }, items2);
   const tmp10 = require("useIsVoiceChannelFull")(channel);
-  let obj2 = channel(stateFromStores1[28]);
+  let obj2 = channel(stateFromStores1[29]);
   const isVoiceChannelLocked = channel(stateFromStores1[18]).useIsVoiceChannelLocked(channel);
   let tmp13 = tmp10;
   if (!tmp10) {
@@ -102,13 +90,13 @@ function JoinVoiceButton(channel) {
   if (!tmp13) {
     tmp13 = stateFromStores;
   }
-  const obj3 = { disabled: tmp13, backgroundColor: require("native").unsafe_rawColors.GREEN_360, imageStyle: null, accessibilityLabel: null, source: null, onPress: null, label: null, iconPosition: null };
+  let obj3 = { disabled: tmp13, backgroundColor: require("native").unsafe_rawColors.GREEN_360, imageStyle: null, accessibilityLabel: null, source: null, onPress: null, label: null, iconPosition: null };
   const tmp12 = closure_12;
   const tmp3Result = channel(stateFromStores1[18]);
   obj3.imageStyle = { tintColor: require("native").unsafe_rawColors.WHITE };
   const intl = tmp3(tmp2[22]).intl;
   obj3.accessibilityLabel = intl.string(channel(stateFromStores1[22]).t["96ANUN"]);
-  obj3.source = importDefault(tmp7.selfMute || tmp7.mute || tmp7.suppress ? stateFromStores1[35] : stateFromStores1[36]);
+  obj3.source = importDefault(tmp7.selfMute || tmp7.mute || tmp7.suppress ? stateFromStores1[36] : stateFromStores1[37]);
   obj3.onPress = callback;
   const intl2 = tmp3(tmp2[22]).intl;
   const string = intl2.string;
@@ -123,17 +111,17 @@ function JoinVoiceButton(channel) {
     stringResult = string(t["96ANUN"]);
   }
   obj3.label = stringResult;
-  obj3.iconPosition = channel(stateFromStores1[33]).IconPosition.RIGHT;
-  return tmp12(channel(stateFromStores1[33]).LabeledActionButton, obj3);
+  obj3.iconPosition = channel(stateFromStores1[34]).IconPosition.RIGHT;
+  return tmp12(channel(stateFromStores1[34]).LabeledActionButton, obj3);
 }
 const View = fn(17).View;
-const resetFocus = fn(8829).resetFocus;
+const resetFocus = fn(8994).resetFocus;
 const InstantInviteSources = fn(1074).InstantInviteSources;
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
 const createStyles = fn(4836);
-let obj2 = { spacer: { width: 8 }, actionBarContainer: { paddingHorizontal: 12, paddingTop: 16, justifyContent: "center", alignItems: "flex-start", flexDirection: "row", height: fn(8854).CALL_ACTION_BAR_HEIGHT } };
+let obj2 = { spacer: { width: 8 }, actionBarContainer: { paddingHorizontal: 12, paddingTop: 16, justifyContent: "center", alignItems: "flex-start", flexDirection: "row", height: fn(9019).CALL_ACTION_BAR_HEIGHT } };
 let closure_15 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallConnectingScreen.tsx");
@@ -145,7 +133,7 @@ export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(
   channel = channel.channel;
   const tmp = closure_15();
   const tmp4 = useChannelNameDefault(channel);
-  const isVoiceChannelLocked = channel(9394).useIsVoiceChannelLocked(channel);
+  const isVoiceChannelLocked = channel(9561).useIsVoiceChannelLocked(channel);
   let fn = null;
   if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
     fn = null;
@@ -156,12 +144,12 @@ export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(
   const items = [closure_12(View, { style: { width: 4 } }), , , ];
   let tmp9Result = null;
   if (null != fn) {
-    const obj2 = { source: tmp2(9461), onPress: fn, accessibilityLabel: null };
+    const obj2 = { source: tmp2(9628), onPress: fn, accessibilityLabel: null };
     const intl = tmp5(1115).intl;
     const obj3 = { channelName: tmp4 };
     obj2.accessibilityLabel = intl.formatToPlainString(tmp5(1115).t["dHHb/2"], obj3);
-    tmp9Result = tmp9(tmp2(9460), obj2);
-    const tmp2Result = tmp2(9460);
+    tmp9Result = tmp9(tmp2(9627), obj2);
+    const tmp2Result = tmp2(9627);
   }
   const obj4 = { children: null };
   items[1] = tmp9Result;

@@ -1,11 +1,11 @@
-// Module ID: 10288
-// Function ID: 10289
+// Module ID: 10457
+// Function ID: 10458
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1485, 10287, 10165, 10289, 4832, 1115, 10316, 10317, 10318, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1485, 10456, 10332, 10458, 4832, 1115, 10485, 10486, 10487, 2]
 
-// Module 10288 (UnifiedGiftModalDetailsScreen)
+// Module 10457 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 576 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10287 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10456 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

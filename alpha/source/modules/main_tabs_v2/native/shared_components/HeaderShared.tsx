@@ -1,20 +1,20 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7453
+// Function ID: 7454
 // Name: HeaderShared
-// Dependencies: [19, 17, 7289, 21, 4836, 576, 4832, 4531, 5937, 5943, 7290, 1364, 7295, 1613, 1486, 7297, 5893, 558, 7300, 12840, 5435, 1177, 2]
+// Dependencies: [19, 17, 7454, 21, 4836, 576, 4832, 4531, 6103, 6109, 7455, 1364, 7460, 1613, 1486, 7462, 6059, 558, 7465, 13010, 5602, 1177, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 7288 (HeaderShared)
+// Module 7453 (HeaderShared)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import PressableNavigatorBackIcon from "PressableNavigatorBackIcon" /* 7290 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7295 */;
-import ChannelActionsDefault from "ChannelActions" /* 7300 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 12840 */;
+import Pressables from "Pressables" /* 5602 */;
+import _mod6109 from "module_6109" /* 6109 */;
+import PressableNavigatorBackIcon from "PressableNavigatorBackIcon" /* 7455 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7460 */;
+import ChannelActionsDefault from "ChannelActions" /* 7465 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13010 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -128,7 +128,7 @@ function HeaderChannelActions(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Platform } = get_ActivityIndicator);
-const MIN_HEADER_HEIGHT = fn(7289).MIN_HEADER_HEIGHT;
+const MIN_HEADER_HEIGHT = fn(7454).MIN_HEADER_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4836);

@@ -1,15 +1,15 @@
-// Module ID: 12613
-// Function ID: 12614
+// Module ID: 12783
+// Function ID: 12784
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4825, 21, 4836, 576, 4685, 5898, 563, 4566, 4837, 5280, 6401, 4832, 5899, 2]
+// Dependencies: [19, 17, 4825, 21, 4836, 576, 4685, 6064, 563, 4566, 4837, 5446, 6567, 4832, 6065, 2]
 // Exports: default
 
-// Module 12613 (GroupAvatar)
+// Module 12783 (GroupAvatar)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import timing from "timing" /* 4837 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6567 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
@@ -63,22 +63,22 @@ function AnimatedContainer(children) {
     if (stateFromStores) {
       let withSpringResult = sharedValue2.get();
     } else {
-      withSpringResult = tmp(5280).withSpring(sharedValue2.get(), closure_11);
-      const tmpResult = tmp(5280);
+      withSpringResult = tmp(5446).withSpring(sharedValue2.get(), closure_11);
+      const tmpResult = tmp(5446);
     }
     const items = [{ translateX: withSpringResult }, , ];
     if (stateFromStores) {
       let value3 = sharedValue1.get();
     } else {
-      value3 = tmp(5280).withSpring(sharedValue1.get(), closure_11);
-      const tmpResult3 = tmp(5280);
+      value3 = tmp(5446).withSpring(sharedValue1.get(), closure_11);
+      const tmpResult3 = tmp(5446);
     }
     items[1] = { translateY: value3 };
     if (stateFromStores) {
       let value4 = sharedValue3.get();
     } else {
-      value4 = tmp(5280).withSpring(sharedValue3.get(), closure_10);
-      const tmpResult4 = tmp(5280);
+      value4 = tmp(5446).withSpring(sharedValue3.get(), closure_10);
+      const tmpResult4 = tmp(5446);
     }
     items[2] = { scale: value4 };
     obj.transform = items;

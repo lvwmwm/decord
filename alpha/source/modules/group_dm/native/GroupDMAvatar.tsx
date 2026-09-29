@@ -1,12 +1,12 @@
-// Module ID: 10371
-// Function ID: 10372
+// Module ID: 10540
+// Function ID: 10541
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1372, 21, 1177, 4836, 8276, 504, 1370, 2]
+// Dependencies: [19, 17, 1372, 21, 1177, 4836, 8441, 504, 1370, 2]
 // Exports: default
 
-// Module 10371 (GroupDMAvatar)
+// Module 10540 (GroupDMAvatar)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ClipView from "ClipView" /* 8276 */;
+import ClipView from "ClipView" /* 8441 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -60,7 +60,7 @@ class FacepileGroupDMAvatar {
     }, items1);
     tmp9 = jsxs;
     tmp10 = View;
-    obj9 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: 0, animate: "absolute" };
+    obj9 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: "America/St_Kitts", animate: "Asia/Pyongyang" };
     obj9.cutout = memo1;
     obj9.animate = animate;
     if (null == users) {
@@ -74,7 +74,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj11);
     items3 = [, ];
     items3[0] = tmp11(tmp2(tmp3[4]).Avatar, obj9);
-    obj12 = { status, statusSizeOverride: tmp2(tmp3[4]).StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Refresh Override" };
+    obj12 = { status, statusSizeOverride: tmp2(tmp3[4]).StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Trigger Memory Warning" };
     obj12.animate = animate;
     if (null == users) {
       obj13 = { source: null };

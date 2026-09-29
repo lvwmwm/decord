@@ -1,15 +1,15 @@
-// Module ID: 6358
-// Function ID: 6359
+// Module ID: 6524
+// Function ID: 6525
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 4836, 576, 5435, 1115, 1177, 6359, 38, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5602, 1115, 1177, 6525, 38, 2]
 
-// Module 6358 (FreeFormTextInput)
+// Module 6524 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5435 */;
-import _modDef6359 from "module_6359" /* 6359 */;
+import Pressables from "Pressables" /* 5602 */;
+import _modDef6525 from "module_6525" /* 6525 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function ClearButton(onPress) {
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
   const tmp = closure_9();
-  obj.children = React5(native.Icon, { source: _modDef6359, style: closure_9().closeIcon, size: native.Icon.Sizes.MEDIUM });
+  obj.children = React5(native.Icon, { source: _modDef6525, style: closure_9().closeIcon, size: native.Icon.Sizes.MEDIUM });
   return React5(Pressables.PressableOpacity, obj);
 }
 get_ActivityIndicator = fn(17);

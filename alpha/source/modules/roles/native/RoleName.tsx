@@ -1,14 +1,14 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11485
+// Function ID: 11486
 // Name: RoleName
-// Dependencies: [19, 17, 4825, 21, 4836, 576, 504, 7403, 1177, 4832, 2]
+// Dependencies: [19, 17, 4825, 21, 4836, 576, 504, 7568, 1177, 4832, 2]
 // Exports: default
 
-// Module 11316 (RoleName)
+// Module 11485 (RoleName)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7403 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7568 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

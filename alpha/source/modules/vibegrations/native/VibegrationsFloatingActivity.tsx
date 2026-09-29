@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16583
+// Function ID: 16584
 // Name: VibegrationsFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4837, 16379, 5435, 1115, 3715, 9611, 4832, 5850, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4837, 16563, 5602, 1115, 3715, 9778, 4832, 6016, 2]
 // Exports: default
 
-// Module 16398 (VibegrationsFloatingActivity)
+// Module 16583 (VibegrationsFloatingActivity)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
@@ -68,7 +68,7 @@ export default function VibegrationsFloatingActivity(agents) {
     if (null != todos) {
       const obj4 = { style: tmp.panel, children: null };
       const obj5 = { todos, agents: agents.agents, live: todosLive, announceProgress: false };
-      obj4.children = closure_6(tmp11(16379), obj5);
+      obj4.children = closure_6(tmp11(16563), obj5);
       tmp12 = closure_6(View, obj4);
     }
   }
@@ -80,11 +80,11 @@ export default function VibegrationsFloatingActivity(agents) {
   obj7.onPress = onJumpToActivity;
   const tmp15 = View;
   const tmp7 = _slicedToArray(noop.useState(false), 2);
-  const items3 = [closure_6(sharedValue(9611).MagicWandIcon, { size: "xs", color: nativeDefault.colors.TEXT_BRAND }), ];
+  const items3 = [closure_6(sharedValue(9778).MagicWandIcon, { size: "xs", color: nativeDefault.colors.TEXT_BRAND }), ];
   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
   items3[1] = closure_6(View, { style: tmp.label, children: closure_6(sharedValue(4832).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) });
   obj7.children = items3;
-  const items4 = [closure_7(sharedValue(5435).PressableOpacity, obj7), ];
+  const items4 = [closure_7(sharedValue(5602).PressableOpacity, obj7), ];
   if (null == todos) {
     items4[1] = null;
     obj6.children = items4;
@@ -100,8 +100,8 @@ export default function VibegrationsFloatingActivity(agents) {
     obj10.onPress = callback;
     let colors = tmp11(576).colors;
     const obj12 = { size: "xs", color: tmp8 ? colors.TEXT_BRAND : colors.TEXT_MUTED };
-    colors = tmp16(tmp2(5850).ClipboardListIcon, obj12);
+    colors = tmp16(tmp2(6016).ClipboardListIcon, obj12);
     obj10.children = colors;
-    tmp16(tmp2(5435).PressableOpacity, obj10);
+    tmp16(tmp2(5602).PressableOpacity, obj10);
   }
 };

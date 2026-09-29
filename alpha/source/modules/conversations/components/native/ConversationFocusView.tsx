@@ -1,14 +1,14 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12994
+// Function ID: 12995
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 7335, 7351, 1115, 4832, 5281, 12825, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 7500, 7516, 1115, 4832, 5447, 12995, 2]
 // Exports: default
 
-// Module 12824 (ConversationFocusView)
+// Module 12994 (ConversationFocusView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7335 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7351 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7500 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7516 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

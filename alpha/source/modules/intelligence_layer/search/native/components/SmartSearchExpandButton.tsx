@@ -1,12 +1,12 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16702
+// Function ID: 16703
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 576, 4836, 16513, 13113, 10615, 1115, 3877, 2]
+// Dependencies: [19, 17, 21, 576, 4836, 16701, 10784, 13283, 1115, 3881, 2]
 
-// Module 16514 (SmartSearchExpandButton)
+// Module 16702 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 576 */;
-import _modDef3877 from "module_3877" /* 3877 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 16513 */;
+import _modDef3881 from "module_3881" /* 3881 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 16701 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,32 +28,32 @@ let closure_9 = createStyles.createStyles((backgroundColor) => {
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
 
-export default noop.memo((isExpanded) => {
-  isExpanded = isExpanded.isExpanded;
+export default noop.memo((isCollapsed) => {
+  isCollapsed = isCollapsed.isCollapsed;
   const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
-  if (isExpanded) {
-    let ChevronSmallDownIcon = tmp(13113).ChevronSmallUpIcon;
+  if (isCollapsed) {
+    let ChevronSmallUpIcon = tmp(10784).ChevronSmallDownIcon;
   } else {
-    ChevronSmallDownIcon = tmp(10615).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(13283).ChevronSmallUpIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: null };
   const obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
   const intl = tmp(1115).intl;
-  const tmp9 = _modDef3877;
-  if (isExpanded) {
-    let OLD0mz = tmp9.ih0v1g;
+  const tmp9 = _modDef3881;
+  if (isCollapsed) {
+    let FKLBbW = tmp9.NuTbB9;
     let tmp10 = tmp8;
   } else {
-    OLD0mz = tmp9.OLD0mz;
+    FKLBbW = tmp9.FKLBbW;
     tmp10 = tmp8;
   }
-  obj3.accessibilityLabel = intl.string(OLD0mz);
-  obj3.onPress = isExpanded.onPress;
+  obj3.accessibilityLabel = intl.string(FKLBbW);
+  obj3.onPress = isCollapsed.onPress;
   const items = [timestampProducer(hasOwnProperty, { style: tmp3.surface, pointerEvents: "none" }), ];
   const obj4 = { style: tmp3.surface, pointerEvents: "none" };
   const tmp6 = React5;
   const tmp7 = React3;
-  items[1] = timestampProducer(ChevronSmallDownIcon, { size: "sm", color: tmp10(576).colors.INTERACTIVE_ICON_DEFAULT });
+  items[1] = timestampProducer(ChevronSmallUpIcon, { size: "sm", color: tmp10(576).colors.INTERACTIVE_ICON_DEFAULT });
   obj3.children = items;
   obj2.children = tmp6(tmp7, obj3);
   return timestampProducer(hasOwnProperty, obj2);

@@ -1,11 +1,11 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17331
+// Function ID: 17332
 // Name: GuildRoomSpatialAudioManager
-// Dependencies: [32, 4750, 1235, 502, 2045, 1993, 4859, 4994, 6539, 17143, 9104, 5036, 2]
+// Dependencies: [32, 4750, 1235, 502, 2045, 1993, 4859, 4994, 6705, 17332, 9269, 5036, 2]
 
-// Module 17142 (GuildRoomSpatialAudioManager)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17143 */;
+// Module 17331 (GuildRoomSpatialAudioManager)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9269 */;
+import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17332 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 4750 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
@@ -14,7 +14,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import GuildRoomStore from "GuildRoomStore" /* 4994 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 const GuildRoomsExperiment = tmp(5036);
 require = fn;

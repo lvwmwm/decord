@@ -1,13 +1,13 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11474
+// Function ID: 11475
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 2045, 2067, 21, 7577, 11302, 11300, 7579, 1177, 9060, 2]
+// Dependencies: [19, 2045, 2067, 21, 7742, 11471, 11469, 7744, 1177, 9225, 2]
 // Exports: default
 
-// Module 11305 (ChannelSelectComponentActionSheet)
+// Module 11474 (ChannelSelectComponentActionSheet)
 import native from "native" /* 1177 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7577 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 7579 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7742 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 7744 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;

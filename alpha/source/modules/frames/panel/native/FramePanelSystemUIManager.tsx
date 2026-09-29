@@ -1,11 +1,11 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 17058
+// Function ID: 17059
 // Name: FramePanelSystemUIManager
-// Dependencies: [19, 21, 16865, 16862, 2]
+// Dependencies: [19, 21, 17052, 17049, 2]
 
-// Module 16871 (FramePanelSystemUIManager)
-import ActivityPanelSystemUIManager from "ActivityPanelSystemUIManager" /* 16862 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 16865 */;
+// Module 17058 (FramePanelSystemUIManager)
+import ActivityPanelSystemUIManager from "ActivityPanelSystemUIManager" /* 17049 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17052 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

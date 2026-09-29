@@ -1,15 +1,15 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15802
+// Function ID: 15803
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4836, 4688, 7299, 1613, 4540, 5437, 15628, 2]
+// Dependencies: [19, 17, 21, 4836, 4688, 7464, 1613, 4540, 5604, 15803, 2]
 
-// Module 15627 (MainTabs)
+// Module 15802 (MainTabs)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import native from "native" /* 4540 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
-import useActiveTheme from "useActiveTheme" /* 7299 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15628 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5604 */;
+import useActiveTheme from "useActiveTheme" /* 7464 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15803 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

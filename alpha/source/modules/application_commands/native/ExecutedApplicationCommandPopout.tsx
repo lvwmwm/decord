@@ -1,10 +1,10 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11285
+// Function ID: 11286
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 4825, 2045, 2102, 2067, 5056, 4479, 1372, 8591, 5305, 1074, 1484, 5306, 21, 4836, 576, 1979, 1177, 4800, 7624, 4678, 4832, 4989, 1115, 6583, 504, 5084, 9188, 7403, 5899, 1400, 5919, 1364, 11117, 4527, 5917, 1611, 6943, 5279, 5999, 6603, 7574, 6571, 2]
+// Dependencies: [19, 17, 4825, 2045, 2102, 2067, 5056, 4479, 1372, 8756, 5471, 1074, 1484, 5472, 21, 4836, 576, 1979, 1177, 4800, 7789, 4678, 4832, 4989, 1115, 6749, 504, 5250, 9353, 7568, 6065, 1400, 6085, 1364, 11286, 4527, 6083, 1611, 7109, 5445, 6165, 6769, 7739, 6737, 2]
 // Exports: default
 
-// Module 11116 (ExecutedApplicationCommandPopout)
+// Module 11285 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -15,11 +15,11 @@ import ToastUtils from "ToastUtils" /* 4527 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 7574 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11117 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7109 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 7739 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11286 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -28,7 +28,7 @@ import GuildStore from "GuildStore" /* 2067 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8756 */;
 
 require = fn;
 function getCommandOptionComponents(option) {
@@ -600,7 +600,7 @@ function CommandActionsContainer(channelId) {
               const current2 = chatInputRef.current;
               if (current2 != null) {
                 const obj2 = { type: tmp4(1611).KeyboardTypes.APP_LAUNCHER, context: null };
-                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(6943).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
+                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(7109).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
                 const obj5 = { commandId: null, prefilledOptions: null };
                 const sum = tmp3.id + SUB_COMMAND_KEY_SEPARATOR;
                 obj5.commandId = sum + items1.join(SUB_COMMAND_KEY_SEPARATOR);
@@ -644,11 +644,11 @@ function CommandActionsContainer(channelId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5305).SUB_COMMAND_KEY_SEPARATOR;
+const SUB_COMMAND_KEY_SEPARATOR = fn(5471).SUB_COMMAND_KEY_SEPARATOR;
 const Constants = fn(1074);
 ({ MessageTypes: closure_17, WHITESPACE_RE: closure_18 } = Constants);
 const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
-const ChannelAutocompleteConstants = fn(5306);
+const ChannelAutocompleteConstants = fn(5472);
 ({ CHANNEL_SENTINEL: closure_20, COMMAND_SENTINEL: closure_21, MENTION_SENTINEL: closure_22 } = ChannelAutocompleteConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = jsxProd);
@@ -705,7 +705,7 @@ export default function ExecutedCommandPopout(channelId) {
       const messageInteractionData = InteractionActionCreatorsAll.fetchMessageInteractionData(channelId, messageId);
     }
   }, items1);
-  const obj2 = { value: messageId(6583)(messageId(6603).EXECUTED_COMMAND).analyticsLocations, children: null };
+  const obj2 = { value: messageId(6749)(messageId(6769).EXECUTED_COMMAND).analyticsLocations, children: null };
   const obj3 = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -735,6 +735,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj7);
   }
   obj3.children = tmp9Result;
-  obj2.children = closure_23(channelId(6571).BottomSheet, obj3);
-  return closure_23(channelId(6583).AnalyticsLocationProvider, obj2);
+  obj2.children = closure_23(channelId(6737).BottomSheet, obj3);
+  return closure_23(channelId(6749).AnalyticsLocationProvider, obj2);
 };

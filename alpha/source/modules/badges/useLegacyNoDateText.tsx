@@ -1,10 +1,10 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10833
+// Function ID: 10834
 // Name: useLegacyNoDateText
 // Dependencies: [32, 19, 1115, 2]
 // Exports: default
 
-// Module 10664 (useLegacyNoDateText)
+// Module 10833 (useLegacyNoDateText)
 import util from "util" /* 1115 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

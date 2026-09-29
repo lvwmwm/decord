@@ -1,10 +1,10 @@
-// Module ID: 5727
-// Function ID: 5728
+// Module ID: 5894
+// Function ID: 5895
 // Name: StageChannelPermissionUtils
 // Dependencies: [4470, 2063, 502, 2045, 2067, 4469, 2050, 1074, 1086, 4474, 2053, 504, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5727 (StageChannelPermissionUtils)
+// Module 5894 (StageChannelPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2053 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4474 */;

@@ -1,13 +1,13 @@
-// Module ID: 12930
-// Function ID: 12931
+// Module ID: 13100
+// Function ID: 13101
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 1177, 12285, 4832, 1115, 4488, 5281, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 1177, 12456, 4832, 1115, 4488, 5447, 2]
 // Exports: default
 
-// Module 12930 (SubscriptionAccountHoldNotice)
+// Module 13100 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
-import _modDef12285 from "module_12285" /* 12285 */;
+import _modDef12456 from "module_12456" /* 12456 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
     const obj = { style: tmp.container, children: null };
     const obj2 = { style: tmp.textContainer, children: null };
-    const obj3 = { size: subscription(1177).IconSizes.MEDIUM, style: tmp.icon, source: _modDef12285 };
+    const obj3 = { size: subscription(1177).IconSizes.MEDIUM, style: tmp.icon, source: _modDef12456 };
     const items = [closure_6(subscription(1177).Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "text-sm/medium", children: null };
     const intl = subscription(1115).intl;
@@ -44,7 +44,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj7.onPress = function onPress() {
       return React3.openURL(PremiumUtils.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = closure_6(subscription(5281).Button, obj7);
+    items1[1] = closure_6(subscription(5447).Button, obj7);
     obj.children = items1;
     tmp2 = closure_7(closure_4, obj);
     const obj6 = subscription(4488);

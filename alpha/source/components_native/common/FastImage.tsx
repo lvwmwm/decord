@@ -1,10 +1,10 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 6065
+// Function ID: 6066
 // Name: FastImage
-// Dependencies: [19, 17, 21, 4836, 5900, 1364, 2]
+// Dependencies: [19, 17, 21, 4836, 6066, 1364, 2]
 
-// Module 5899 (FastImage)
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5900 */;
+// Module 6065 (FastImage)
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 6066 */;
 import noop from "module_19" /* 19 */;
 
 class FastImageAndroid {

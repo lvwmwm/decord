@@ -1,9 +1,9 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13801
+// Function ID: 13802
 // Name: Ellipsis
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 4566, 4837, 504, 2]
 
-// Module 13632 (Ellipsis)
+// Module 13801 (Ellipsis)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;

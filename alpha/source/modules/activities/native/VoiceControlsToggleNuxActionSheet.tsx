@@ -1,10 +1,10 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 17111
+// Function ID: 17112
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 4825, 2042, 21, 4836, 576, 5438, 504, 6571, 7755, 4832, 1115, 5281, 2]
+// Dependencies: [32, 19, 17, 4825, 2042, 21, 4836, 576, 5605, 504, 6737, 7920, 4832, 1115, 5447, 2]
 // Exports: default
 
-// Module 16924 (VoiceControlsToggleNuxActionSheet)
+// Module 17111 (VoiceControlsToggleNuxActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

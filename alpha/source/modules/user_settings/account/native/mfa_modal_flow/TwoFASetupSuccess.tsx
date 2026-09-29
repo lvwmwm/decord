@@ -1,17 +1,17 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14500
+// Function ID: 14501
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 6014, 1115, 14315, 6368, 14316, 14326, 4832, 1177, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 6180, 1115, 14490, 6534, 14491, 14501, 4832, 1177, 5447, 2]
 // Exports: default
 
-// Module 14325 (TwoFASetupSuccess)
+// Module 14500 (TwoFASetupSuccess)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 14316 */;
-import _mod14326 from "module_14326" /* 14326 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 14491 */;
+import _mod14501 from "module_14501" /* 14501 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -86,7 +86,7 @@ export default function TwoFASetupSuccess() {
               const intl = setRegistering(1115).intl;
               c5 = 3;
               c6 = 1;
-              const obj5 = { value: setRegistering(6014).finishRegisterWebAuthnCredential(intl.string(setRegistering(1115).t["8H5RmH"]), closure_129_0, closure_129_1), done: false };
+              const obj5 = { value: setRegistering(6180).finishRegisterWebAuthnCredential(intl.string(setRegistering(1115).t["8H5RmH"]), closure_129_0, closure_129_1), done: false };
               return obj5;
             }
           } else {
@@ -98,9 +98,9 @@ export default function TwoFASetupSuccess() {
               c6 = 3;
               throw value;
             } else if (arg0 !== 2) {
-              setError(14315).close();
+              setError(14490).close();
               c4 = 0;
-              const obj = setError(14315);
+              const obj = setError(14490);
             }
             c4 = 0;
             c6 = 3;
@@ -137,7 +137,7 @@ export default function TwoFASetupSuccess() {
   const items = [closure_8(closure_6, { style: tmp.flex }), , , , , , , ];
   let obj2 = { style: tmp.flex };
   const tmp4 = _slicedToArray(noop.useState(""), 2);
-  items[1] = closure_8(closure_7, { source: _mod14326, style: tmp.image });
+  items[1] = closure_8(closure_7, { source: _mod14501, style: tmp.image });
   let obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = util.intl;
   obj4.children = intl.string(util.t.Awk3Gw);

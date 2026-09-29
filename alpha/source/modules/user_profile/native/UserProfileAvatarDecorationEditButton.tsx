@@ -1,19 +1,19 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14357
+// Function ID: 14358
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 2108, 6629, 1085, 21, 4836, 576, 504, 7704, 7611, 10508, 7602, 1115, 14175, 8275, 1177, 12745, 2]
+// Dependencies: [19, 17, 2108, 6795, 1085, 21, 4836, 576, 504, 7869, 7776, 10677, 7767, 1115, 14350, 8440, 1177, 12915, 2]
 // Exports: default
 
-// Module 14182 (UserProfileAvatarDecorationEditButton)
+// Module 14357 (UserProfileAvatarDecorationEditButton)
 import nativeDefault from "native" /* 576 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7602 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7767 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const COLLECTIBLES_PREVIEW_SIZE = fn(6629).COLLECTIBLES_PREVIEW_SIZE;
+const COLLECTIBLES_PREVIEW_SIZE = fn(6795).COLLECTIBLES_PREVIEW_SIZE;
 const NOOP = fn(1085).NOOP;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);

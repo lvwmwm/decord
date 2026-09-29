@@ -1,12 +1,12 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6994
+// Function ID: 6995
 // Name: LinkButton
-// Dependencies: [19, 21, 4836, 5435, 4832, 2]
+// Dependencies: [19, 21, 4836, 5602, 4832, 2]
 // Exports: LinkButton
 
-// Module 6828 (LinkButton)
+// Module 6994 (LinkButton)
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
+import Pressables from "Pressables" /* 5602 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

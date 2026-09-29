@@ -1,13 +1,13 @@
-// Module ID: 13613
-// Function ID: 13614
+// Module ID: 13782
+// Function ID: 13783
 // Name: queryAudioEffects
-// Dependencies: [5, 1074, 4, 1365, 13557, 4450, 573, 1241, 2]
+// Dependencies: [5, 1074, 4, 1365, 13726, 4450, 573, 1241, 2]
 // Exports: default
 
-// Module 13613 (queryAudioEffects)
+// Module 13782 (queryAudioEffects)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import DiscordNativeDefault from "DiscordNative" /* 4450 */;
-import _modDef13557 from "module_13557" /* 13557 */;
+import _modDef13726 from "module_13726" /* 13726 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -54,7 +54,7 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
               const obj7 = { value: Promise.reject(error), done: true };
               return obj7;
             }
-            obj5 = _modDef13557;
+            obj5 = _modDef13726;
           } else {
             const _Error = Error;
             const error1 = new Error("Audio effects querying not supported on non-Windows platforms");

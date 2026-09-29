@@ -1,10 +1,10 @@
-// Module ID: 8776
-// Function ID: 8777
+// Module ID: 8941
+// Function ID: 8942
 // Name: transformUser
 // Dependencies: [1966, 2]
 // Exports: default
 
-// Module 8776 (transformUser)
+// Module 8941 (transformUser)
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1966 */;
 import size from "module_2" /* 2 */;
 

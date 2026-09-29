@@ -1,13 +1,13 @@
-// Module ID: 10466
-// Function ID: 10467
+// Module ID: 10635
+// Function ID: 10636
 // Name: Pile
-// Dependencies: [19, 17, 21, 4836, 1370, 12, 8276, 10467, 2]
+// Dependencies: [19, 17, 21, 4836, 1370, 12, 8441, 10636, 2]
 // Exports: Pile
 
-// Module 10466 (Pile)
+// Module 10635 (Pile)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ClipViewDefault from "ClipView" /* 8276 */;
-import PileOverflow from "PileOverflow" /* 10467 */;
+import ClipViewDefault from "ClipView" /* 8441 */;
+import PileOverflow from "PileOverflow" /* 10636 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -47,7 +47,7 @@ export const Pile = function Pile(aria_label) {
         if (tmp3Result.isArray(tmp5)) {
           sum = tmp5[arg1 + 1];
         }
-        if (tmp3(8276).CutoutShape.Circle === closure_1_0) {
+        if (tmp3(8441).CutoutShape.Circle === closure_1_0) {
           const point = { shape: tmp10, x: null, y: null, size: null };
           if (null == closure_1_3) {
             let result = -dependencyMap;
@@ -63,7 +63,7 @@ export const Pile = function Pile(aria_label) {
           point.y = result1;
           sum = sum + 2 * dependencyMap;
           point.size = sum;
-        } else if (tmp3(8276).CutoutShape.RoundedRect === tmp10) {
+        } else if (tmp3(8441).CutoutShape.RoundedRect === tmp10) {
           size = { shape: tmp10, x: null, y: null, width: null, height: null, cornerRadius: null };
           if (null == closure_1_3) {
             let result2 = -dependencyMap;

@@ -1,16 +1,16 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16345
+// Function ID: 16346
 // Name: ThemedHeaderBackgroundGradient
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 4531, 1092, 5293, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1613, 4531, 1092, 5459, 2]
 
-// Module 16169 (ThemedHeaderBackgroundGradient)
+// Module 16345 (ThemedHeaderBackgroundGradient)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import useToken from "useToken" /* 4531 */;
 import noop from "module_19" /* 19 */;
 
-const LinearGradientDefault = tmp4(5293);
+const LinearGradientDefault = tmp4(5459);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);

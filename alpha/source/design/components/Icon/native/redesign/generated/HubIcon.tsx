@@ -1,13 +1,13 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5582
+// Function ID: 5583
 // Name: HubIcon
-// Dependencies: [19, 21, 576, 4530, 5346, 2]
+// Dependencies: [19, 21, 576, 4530, 5512, 2]
 // Exports: HubIcon
 
-// Module 5416 (HubIcon)
+// Module 5582 (HubIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod5346 from "module_5346" /* 5346 */;
+import _mod5512 from "module_5512" /* 5512 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HubIcon = function HubIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5346, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5512, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

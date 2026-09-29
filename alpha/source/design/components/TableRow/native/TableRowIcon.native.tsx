@@ -1,12 +1,12 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 6089
+// Function ID: 6090
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4836, 576, 5283, 2]
+// Dependencies: [109, 19, 17, 21, 4836, 576, 5449, 2]
 // Exports: TableRowIcon
 
-// Module 5923 (TableRowIcon)
+// Module 6089 (TableRowIcon)
 import nativeDefault from "native" /* 576 */;
-import Icon from "Icon" /* 5283 */;
+import Icon from "Icon" /* 5449 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

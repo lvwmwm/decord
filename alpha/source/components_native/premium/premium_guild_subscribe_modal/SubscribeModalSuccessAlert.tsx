@@ -1,21 +1,21 @@
-// Module ID: 13163
-// Function ID: 13164
+// Module ID: 13333
+// Function ID: 13334
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 2067, 6852, 21, 4836, 576, 13164, 13165, 504, 4767, 5300, 1115, 5204, 5746, 5293, 1094, 4685, 13166, 13167, 4832, 2]
+// Dependencies: [32, 19, 17, 2067, 7018, 21, 4836, 576, 13334, 13335, 504, 4767, 5466, 1115, 5370, 5913, 5459, 1094, 4685, 13336, 13337, 4832, 2]
 // Exports: default
 
-// Module 13163 (SubscribeModalSuccessAlert)
+// Module 13333 (SubscribeModalSuccessAlert)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5746 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13164 */;
-import _mod13165 from "module_13165" /* 13165 */;
+import LinearGradientDefault from "LinearGradient" /* 5459 */;
+import common_AlertDefault from "common/Alert" /* 5466 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5913 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13334 */;
+import _mod13335 from "module_13335" /* 13335 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -33,7 +33,7 @@ class PremiumPaymentGuildAnimation {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const Gradients = fn(6852).Gradients;
+const Gradients = fn(7018).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);
@@ -76,8 +76,8 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const intl = tmp2(1115).intl;
   obj2.confirmText = intl.string(util.t.YKxJCI);
   obj2.onConfirm = function onConfirm() {
-    closure_1(5204).close();
-    const obj = closure_1(5204);
+    closure_1(5370).close();
+    const obj = closure_1(5370);
     actions_BoostingActionCreators.closeApplyBoostModal();
   };
   const items1 = [
@@ -115,9 +115,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13166);
+    let tmp8Result = tmp8(13336);
   } else {
-    tmp8Result = tmp8(13167);
+    tmp8Result = tmp8(13337);
   }
   obj6.source = tmp8Result;
   obj5.children = closure_9(tmp15, obj6);

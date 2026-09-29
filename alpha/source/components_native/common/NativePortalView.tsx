@@ -1,16 +1,16 @@
-// Module ID: 7716
-// Function ID: 7717
+// Module ID: 7881
+// Function ID: 7882
 // Name: NativePortalView
-// Dependencies: [19, 17, 21, 4836, 1364, 7717, 7718, 2]
+// Dependencies: [19, 17, 21, 4836, 1364, 7882, 7883, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 7716 (NativePortalView)
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 7717 */;
+// Module 7881 (NativePortalView)
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 7882 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
-({ NativeModules, requireNativeComponent, NativeEventEmitter } = get_ActivityIndicator);
+({ requireNativeComponent, NativeEventEmitter, NativeModules } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ base: { overflow: "hidden" } });
@@ -22,7 +22,6 @@ if (PlatformUtils.isAndroid()) {
 }
 const metroRequire = importDefaultResult;
 const MediaPlayerManager = NativeModules.MediaPlayerManager;
-const DCDPortalViewManager = NativeModules.DCDPortalViewManager;
 const nativeEventEmitter = new NativeEventEmitter(MediaPlayerManager);
 const set = new Set();
 const size = fn(2);
@@ -53,22 +52,19 @@ export default noop.memo((paused) => {
     }, items1);
     const items2 = [onLoad, merged.portal];
     const layoutEffect2 = merged.useLayoutEffect(() => {
-      if (!obj.isAndroid()) {
-        if (onLoad != null) {
-          onLoad();
+      if (null != merged.portal) {
+        if (!obj.isAndroid()) {
+          if (onLoad != null) {
+            onLoad();
+          }
         }
+        MediaPlayerManager.setLoopPlayback(tmp.portal, true);
+        return () => {
+          loopPlayback.setLoopPlayback(merged.portal, false);
+          muted(onLoad[6]).unregisterView(merged.portal);
+          set.add(merged.portal);
+        };
       }
-      MediaPlayerManager.setLoopPlayback(merged.portal, true);
-      return () => {
-        loopPlayback.setLoopPlayback(portal.portal, false);
-        if (obj.isAndroid()) {
-          muted(onLoad[6]).unregisterView(tmp.portal);
-          const obj2 = muted(onLoad[6]);
-        } else {
-          DCDPortalViewManager.unregisterView(tmp.portal);
-        }
-        set.add(portal.portal);
-      };
     }, items2);
     const items3 = [onLoad, merged.portal];
     const callback = merged.useCallback((nativeEvent) => {
@@ -78,7 +74,7 @@ export default noop.memo((paused) => {
         }
       }
     }, items3);
-    let obj2 = {};
+    const obj2 = {};
     const obj = paused(onLoad[4]);
     const merged1 = Object.assign(merged);
     const items4 = [tmp2.base, style];
@@ -107,7 +103,7 @@ export function createPortalControls(portal) {
       closure_3 = arg2;
       const items = [closure_0, arg1, arg0, arg2];
       const effect = noop.useEffect(() => {
-        closure_0 = closure_1_9.addListener("MediaPlayerProgress", (duration) => {
+        closure_0 = closure_1_8.addListener("MediaPlayerProgress", (duration) => {
           duration = duration.duration;
           let tmp = duration.id === closure_0;
           if (tmp) {
@@ -117,7 +113,7 @@ export function createPortalControls(portal) {
             closure_1(duration.time, duration);
           }
         });
-        closure_1 = closure_1_9.addListener("MediaPlayerDownloadProgress", (id) => {
+        closure_1 = closure_1_8.addListener("MediaPlayerDownloadProgress", (id) => {
           let tmp2 = id.id === closure_0;
           if (tmp2) {
             tmp2 = tmp > 0;
@@ -129,7 +125,7 @@ export function createPortalControls(portal) {
             closure_1_3(id.progressPercent);
           }
         });
-        closure_2 = closure_1_9.addListener("MediaPlayerPause", (id) => {
+        closure_2 = closure_1_8.addListener("MediaPlayerPause", (id) => {
           if (id.id === closure_0) {
             closure_2(tmp);
           }

@@ -1,16 +1,16 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14612
+// Function ID: 14613
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4836, 576, 7618, 14438, 6655, 14439, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7783, 14613, 6821, 14614, 4832, 2]
 // Exports: default
 
-// Module 14437 (FamilyCenterActivityPurchaseRow)
+// Module 14612 (FamilyCenterActivityPurchaseRow)
 import nativeDefault from "native" /* 576 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7618 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14438 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7783 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14613 */;
 import noop from "module_19" /* 19 */;
 
-const FamilyCenterActivityItemPreviewDefault = tmp2(14439);
+const FamilyCenterActivityItemPreviewDefault = tmp2(14614);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -43,14 +43,14 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(6655);
+    const tmp5Result = tmp5(6821);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
     }
     const obj2 = { style: tmp.container, children: null };
     const obj3 = { displayName, product: null, isSubscription: null, subscriptionPlanId: null };
-    const formatPriceResult = tmp5(6655).formatPrice(total, currency);
+    const formatPriceResult = tmp5(6821).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }

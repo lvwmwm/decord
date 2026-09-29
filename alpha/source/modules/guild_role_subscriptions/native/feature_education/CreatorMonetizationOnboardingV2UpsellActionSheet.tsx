@@ -1,17 +1,17 @@
-// Module ID: 15879
-// Function ID: 15880
+// Module ID: 16054
+// Function ID: 16055
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 4836, 6571, 4832, 1115, 5899, 15880, 5281, 9048, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 4836, 6737, 4832, 1115, 6065, 16055, 5447, 9213, 2]
 // Exports: default
 
-// Module 15879 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 16054 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
-import _modDef15880 from "module_15880" /* 15880 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
+import _modDef16055 from "module_16055" /* 16055 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -44,7 +44,7 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   const intl2 = util.intl;
   obj4.children = intl2.string(util.t.kUUFbG);
   items[1] = closure_6(Text_Text.Text, obj4);
-  const obj5 = { style: tmp.image, resizeMode: "contain", source: _modDef15880 };
+  const obj5 = { style: tmp.image, resizeMode: "contain", source: _modDef16055 };
   items[2] = closure_6(FastImageDefault, obj5);
   const obj6 = {
     onPress() {

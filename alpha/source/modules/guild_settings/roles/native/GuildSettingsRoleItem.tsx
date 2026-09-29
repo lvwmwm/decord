@@ -1,11 +1,11 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17611
+// Function ID: 17612
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5310, 6607, 5204, 1115, 11068, 5832, 5300, 7363, 4790, 6626, 6624, 5293, 1370, 1092, 9033, 5917, 5403, 1177, 9762, 5409, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5476, 6773, 5370, 1115, 11237, 5999, 5466, 7528, 4790, 6792, 6790, 5459, 1370, 1092, 9198, 6083, 5569, 1177, 9929, 5575, 2]
 
-// Module 17422 (GuildSettingsRoleItem)
+// Module 17611 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 576 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -139,7 +139,7 @@ export default noop.memo(function GuildSettingsRoleItem(guildId) {
                   } else if (closure_1_5) {
                     c1 = 1;
                     c2 = 1;
-                    const obj6 = { value: tmp2(11068).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
+                    const obj6 = { value: tmp2(11237).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
                     return obj6;
                   }
                 } else if (arg0 === 1) {

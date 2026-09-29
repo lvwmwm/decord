@@ -1,13 +1,13 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 16039
+// Function ID: 16040
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4836, 576, 6593, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6759, 4832, 2]
 // Exports: default
 
-// Module 15864 (ChannelItemEmbeddedActivities)
+// Module 16039 (ChannelItemEmbeddedActivities)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GameIcon from "GameIcon" /* 6593 */;
+import GameIcon from "GameIcon" /* 6759 */;
 import noop from "module_19" /* 19 */;
 
 const GameIconDefault = GameIcon;

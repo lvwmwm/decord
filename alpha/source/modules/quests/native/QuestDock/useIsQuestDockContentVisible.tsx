@@ -1,17 +1,17 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14912
+// Function ID: 14913
 // Name: useIsQuestDockContentVisible
-// Dependencies: [19, 14622, 5756, 14711, 504, 2]
+// Dependencies: [19, 14797, 5923, 14886, 504, 2]
 // Exports: default
 
-// Module 14737 (useIsQuestDockContentVisible)
+// Module 14912 (useIsQuestDockContentVisible)
 import initialize from "initialize" /* 504 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14711 */;
+import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14886 */;
 import noop from "module_19" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 14622 */;
+import QuestDockStore from "QuestDockStore" /* 14797 */;
 
 require = fn;
-const QuestDockMode = fn(5756).QuestDockMode;
+const QuestDockMode = fn(5923).QuestDockMode;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/useIsQuestDockContentVisible.tsx");
 

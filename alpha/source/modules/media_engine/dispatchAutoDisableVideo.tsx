@@ -1,10 +1,10 @@
-// Module ID: 13367
-// Function ID: 13368
+// Module ID: 13536
+// Function ID: 13537
 // Name: dispatchAutoDisableVideo
 // Dependencies: [4861, 573, 2]
 // Exports: default
 
-// Module 13367 (dispatchAutoDisableVideo)
+// Module 13536 (dispatchAutoDisableVideo)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 4861 */;
 import size from "module_2" /* 2 */;

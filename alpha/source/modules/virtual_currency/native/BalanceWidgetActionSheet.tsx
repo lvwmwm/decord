@@ -1,18 +1,18 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10733
+// Function ID: 10734
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 10565, 10566, 10567, 1115, 4519, 2111, 4550, 4531, 576, 1241, 4654, 2029, 4540, 6571, 5899, 7755, 6575, 10568, 8298, 4832, 5281, 4836, 1364, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 10734, 10735, 10736, 1115, 4519, 2111, 4550, 4531, 576, 1241, 4654, 2029, 4540, 6737, 6065, 7920, 6741, 10737, 8463, 4832, 5447, 4836, 1364, 2]
 // Exports: default
 
-// Module 10564 (BalanceWidgetActionSheet)
+// Module 10733 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import _mod10565 from "module_10565" /* 10565 */;
-import _mod10566 from "module_10566" /* 10566 */;
-import _mod10567 from "module_10567" /* 10567 */;
+import _mod10734 from "module_10734" /* 10734 */;
+import _mod10735 from "module_10735" /* 10735 */;
+import _mod10736 from "module_10736" /* 10736 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ export default function _default(balance) {
     }
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod10565.default, backgroundImage: _mod10566.default, bannerImage: _mod10567.default, bannerText: null };
+      const obj = { backgroundVideo: _mod10734.default, backgroundImage: _mod10735.default, bannerImage: _mod10736.default, bannerText: null };
       const intl = util.intl;
       obj.bannerText = intl.string(util.t.LaMEFL);
       tmp = obj;

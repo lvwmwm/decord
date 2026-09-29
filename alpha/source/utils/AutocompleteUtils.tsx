@@ -1,10 +1,10 @@
-// Module ID: 5754
-// Function ID: 5755
+// Module ID: 5921
+// Function ID: 5922
 // Name: AutocompleteUtils
-// Dependencies: [32, 5755, 5771, 5319, 5813, 5814, 5818, 4471, 2049, 2103, 1386, 2045, 5821, 4467, 2108, 2102, 2067, 5056, 4469, 4876, 4479, 2099, 4655, 1372, 5822, 1074, 5827, 2052, 3, 5828, 2059, 4820, 5829, 2011, 4678, 5830, 5581, 12, 2019, 1370, 5831, 4474, 4989, 1115, 11, 6749, 2021, 6752, 6643, 6753, 6754, 2026, 6755, 6756, 5326, 6761, 2]
+// Dependencies: [32, 5922, 5938, 5485, 5980, 5981, 5985, 4471, 2049, 2103, 1386, 2045, 5988, 4467, 2108, 2102, 2067, 5056, 4469, 4876, 4479, 2099, 4655, 1372, 5989, 1074, 5994, 2052, 3, 5995, 2059, 4820, 5996, 2011, 4678, 5997, 5748, 12, 2019, 1370, 5998, 4474, 4989, 1115, 11, 6915, 2021, 6918, 6809, 6919, 6920, 2026, 6921, 6922, 5492, 6927, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5754 (AutocompleteUtils)
+// Module 5921 (AutocompleteUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -16,23 +16,23 @@ import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import RegexUtilsDefault from "RegexUtils" /* 4820 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import StickersTypes from "StickersTypes" /* 5581 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
-import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5830 */;
-import GuildUtilsDefault from "GuildUtils" /* 5831 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6643 */;
-import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6753 */;
-import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6754 */;
+import StickersTypes from "StickersTypes" /* 5748 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5996 */;
+import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5997 */;
+import GuildUtilsDefault from "GuildUtils" /* 5998 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6809 */;
+import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6919 */;
+import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6920 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import SoundboardStore from "SoundboardStore" /* 5319 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 5813 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5818 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
+import SoundboardStore from "SoundboardStore" /* 5485 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 5980 */;
+import StickersStore from "StickersStore" /* 5981 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5985 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import FrecencyStore from "FrecencyStore" /* 5821 */;
+import FrecencyStore from "FrecencyStore" /* 5988 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
@@ -44,7 +44,7 @@ import RelationshipStore from "RelationshipStore" /* 4479 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import SKUStore from "SKUStore" /* 5989 */;
 
 const require = globalThis.__r;
 
@@ -210,21 +210,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(5829)(toLocaleLowerCaseResult, str4) || tmp12(5829)(normalizeResult, str5);
+                                let tmp28 = tmp12(5996)(toLocaleLowerCaseResult, str4) || tmp12(5996)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(5829)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5996)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(5829)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5996)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(5829)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5996)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(5829)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5996)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -354,13 +354,13 @@ function queryMemberList(arg0) {
 function getPriorityForStickerMetadataType(arg0) {
   if (StickersTypes.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(5581).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5748).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(5581).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5748).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(5581).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(5581).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5748).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5748).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -428,7 +428,7 @@ function getCategoryName(parent_id, arg1) {
     return tmp2;
   }
 }
-const InAppNavigationRecord = fn(5755);
+const InAppNavigationRecord = fn(5922);
 ({ InAppNavigationRecord: hasOwnProperty, InAppNavigationType: metroRequire } = InAppNavigationRecord);
 const ChannelRecord = fn(2049);
 ({ ChannelRecordBase: map1, isGuildChannelType: closure_14, isGuildSelectableChannelType: closure_15, isGuildVocalChannelType: closure_16, isThread: closure_17, PrivateChannelRecord: closure_18, UnknownChannelRecord: closure_19 } = ChannelRecord);
@@ -440,18 +440,18 @@ let GuildChannelStore = GuildChannelStore_mod;
 const Constants = fn(1074);
 ({ Permissions: closure_38, GuildFeatures: closure_39, ChannelTypes } = Constants);
 ({ SKUTypes: closure_41, MAX_AUTOCOMPLETE_RESULTS: closure_42 } = Constants);
-fn(5827).AutocompleterResultTypes;
+fn(5994).AutocompleterResultTypes;
 const StaticChannelId = fn(2052).StaticChannelId;
 const logger = new LoggerDefault("AutocompleteUtils");
 let c46 = 10;
 let tmp7 = /(\t|\s)/;
 const re48 = tmp7;
 let closure_49 = [];
-const MENTION_EVERYONE = fn(5828).default.MENTION_EVERYONE;
-const MENTION_HERE = fn(5828).default.MENTION_HERE;
-const MENTION_GAME = fn(5828).default.MENTION_GAME;
-const MENTION_TIMESTAMP = fn(5828).default.MENTION_TIMESTAMP;
-const LAUNCHABLE_APPLICATIONS = fn(5828).default.LAUNCHABLE_APPLICATIONS;
+const MENTION_EVERYONE = fn(5995).default.MENTION_EVERYONE;
+const MENTION_HERE = fn(5995).default.MENTION_HERE;
+const MENTION_GAME = fn(5995).default.MENTION_GAME;
+const MENTION_TIMESTAMP = fn(5995).default.MENTION_TIMESTAMP;
+const LAUNCHABLE_APPLICATIONS = fn(5995).default.LAUNCHABLE_APPLICATIONS;
 class AutocompleteBoostersCache {
   constructor() {
     merged = Object.assign({ lastFrecencyVersion: null, lastRelationshipVersion: null, lastPrivateChannelsVersion: null, cache: null });
@@ -1769,7 +1769,21 @@ export default {
       type,
       allowEmptyQueries: null
     };
-    obj.channels = this.queryChannels(obj2).map((record) => record.record);
+    obj.channels = this.queryChannels({
+      query: channelTypes.query,
+      guildId: channel.getGuildId(),
+      limit: "r",
+      fuzzy: "HermesInternal",
+      filter(type) {
+        let hasItem = null == channelTypes;
+        if (!hasItem) {
+          hasItem = channelTypes.includes(type.type);
+        }
+        return hasItem;
+      },
+      type,
+      allowEmptyQueries: null
+    }).map((record) => record.record);
     return obj;
   },
   queryApplicationCommandChannelResults(limit) {
@@ -1892,12 +1906,12 @@ export default {
                       num4 = 7 * tmp9;
                     } else {
                       let tmp15 = flag;
-                      let tmp18 = tmp7 !== flag(5581).StickerMetadataTypes.GUILD_NAME;
+                      let tmp18 = tmp7 !== flag(5748).StickerMetadataTypes.GUILD_NAME;
                       if (tmp18) {
-                        tmp18 = tmp7 !== tmp15(5581).StickerMetadataTypes.PACK_NAME;
+                        tmp18 = tmp7 !== tmp15(5748).StickerMetadataTypes.PACK_NAME;
                       }
                       if (tmp18) {
-                        tmp18 = tmp7 !== tmp15(5581).StickerMetadataTypes.STICKER_NAME;
+                        tmp18 = tmp7 !== tmp15(5748).StickerMetadataTypes.STICKER_NAME;
                       }
                       if (!tmp18) {
                         tmp18 = !regex2.test(value);
@@ -1934,7 +1948,7 @@ export default {
                   closure_2_5.push(obj);
                 }
               }
-              obj2 = flag(6755);
+              obj2 = flag(6921);
             }
           });
         });

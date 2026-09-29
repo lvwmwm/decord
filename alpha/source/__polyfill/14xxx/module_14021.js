@@ -1,0 +1,44 @@
+// Module ID: 14021
+// Function ID: 14022
+// Dependencies: [13964, 13961, 13960, 14022, 13981, 14010, 13995, 13963, 13990]
+
+// Module 14021
+import _mod13960 from "module_13960" /* 13960 */;
+import _mod13961 from "module_13961" /* 13961 */;
+import _mod13963 from "module_13963" /* 13963 */;
+import _mod13964 from "module_13964" /* 13964 */;
+import _mod13981 from "module_13981" /* 13981 */;
+import _mod14010 from "module_14010" /* 14010 */;
+
+let closure_4 = _mod13964([].concat);
+if (!assign) {
+  assign = function assign(arg0, arg1) {
+    const tmp = _mod13981(arg0);
+    const f = _mod14010.f;
+    for (let num = 1; length > num; num = num + 1) {
+      let tmp3 = require;
+      let tmp5 = _mod13963(arguments[num]);
+      if (f) {
+        let tmp8 = tmp3(14022)(tmp5);
+        let arr = closure_4(tmp8, f(tmp5));
+      } else {
+        arr = tmp3(14022)(tmp5);
+      }
+      let length2 = arr.length;
+      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
+        let tmp9 = arr[num2];
+        let tmp10 = require;
+        let tmp12 = _mod13960;
+        if (tmp12) {
+          tmp12 = !tmp10(13990)(tmp2, tmp5, tmp9);
+        }
+        if (!tmp12) {
+          tmp[tmp9] = tmp5[tmp9];
+        }
+      }
+    }
+    return tmp;
+  };
+}
+
+export default assign;

@@ -1,16 +1,16 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12222
+// Function ID: 12223
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 4836, 576, 6401, 4832, 12052, 12053, 1115, 2519, 12056, 2]
+// Dependencies: [17, 21, 4836, 576, 6567, 4832, 12223, 12224, 1115, 2519, 12227, 2]
 // Exports: default
 
-// Module 12051 (GuildPowerupsNotificationContainer)
+// Module 12222 (GuildPowerupsNotificationContainer)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12052 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12053 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6567 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12223 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12224 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(12056), obj9);
+      shouldShow2 = tmp11(tmp2(12227), obj9);
     }
     items[2] = shouldShow2;
     obj2.children = items;

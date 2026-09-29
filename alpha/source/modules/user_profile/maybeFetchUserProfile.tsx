@@ -1,15 +1,15 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7797
+// Function ID: 7798
 // Name: maybeFetchUserProfile
-// Dependencies: [2045, 2108, 7035, 6961, 7589, 5719, 573, 7626, 7633, 2]
+// Dependencies: [2045, 2108, 7200, 7127, 7754, 5886, 573, 7791, 7798, 2]
 // Exports: default
 
-// Module 7632 (maybeFetchUserProfile)
-import UserActionCreators from "UserActionCreators" /* 7626 */;
-import preloadUserBannerImageDefault from "preloadUserBannerImage" /* 7633 */;
+// Module 7797 (maybeFetchUserProfile)
+import UserActionCreators from "UserActionCreators" /* 7791 */;
+import preloadUserBannerImageDefault from "preloadUserBannerImage" /* 7798 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
+import UserProfileStore from "UserProfileStore" /* 7200 */;
 
 const require = globalThis.__r;
 
@@ -158,7 +158,7 @@ export default function maybeFetchUserProfile(id, guildIconURL) {
       obj5(573).wait(() => UserActionCreators.fetchProfile(closure_0, obj5, preloadUserBannerImageDefault));
       return Promise.resolve();
     } else {
-      const profile = require("UserActionCreators").fetchProfile(id, obj5, obj5(7633));
+      const profile = require("UserActionCreators").fetchProfile(id, obj5, obj5(7798));
       let resolved = profile;
       if (tmp18) {
         resolved = profile;

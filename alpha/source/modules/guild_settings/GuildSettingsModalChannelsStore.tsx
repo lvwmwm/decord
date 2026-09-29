@@ -1,12 +1,12 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15950
+// Function ID: 15951
 // Name: GuildSettingsModalChannelsStore
-// Dependencies: [109, 2049, 4467, 4469, 1074, 2070, 6533, 12, 504, 573, 2]
+// Dependencies: [109, 2049, 4467, 4469, 1074, 2070, 6699, 12, 504, 573, 2]
 
-// Module 15775 (GuildSettingsModalChannelsStore)
+// Module 15950 (GuildSettingsModalChannelsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6699 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

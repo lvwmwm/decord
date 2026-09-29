@@ -1,13 +1,13 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14205
+// Function ID: 14206
 // Name: getCurrentEmbeddedChannel
-// Dependencies: [8499, 2045, 4739, 8501, 14029, 2]
+// Dependencies: [8664, 2045, 4739, 8666, 14201, 2]
 // Exports: default
 
-// Module 14033 (getCurrentEmbeddedChannel)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
-import FramesStore from "FramesStore" /* 8499 */;
+// Module 14205 (getCurrentEmbeddedChannel)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8666 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14201 */;
+import FramesStore from "FramesStore" /* 8664 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;

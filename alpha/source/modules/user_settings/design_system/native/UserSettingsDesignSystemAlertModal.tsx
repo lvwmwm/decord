@@ -1,13 +1,13 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 15549
+// Function ID: 15550
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 5209, 5205, 4836, 5281, 2]
+// Dependencies: [5, 19, 17, 21, 5375, 5371, 4836, 5447, 2]
 // Exports: default
 
-// Module 15374 (UserSettingsDesignSystemAlertModal)
-import useAlertStore from "useAlertStore" /* 5205 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
+// Module 15549 (UserSettingsDesignSystemAlertModal)
+import useAlertStore from "useAlertStore" /* 5371 */;
+import AlertModal from "AlertModal" /* 5375 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

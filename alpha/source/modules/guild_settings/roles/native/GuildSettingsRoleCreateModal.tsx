@@ -1,10 +1,10 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17597
+// Function ID: 17598
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 2063, 2102, 1372, 9049, 17409, 1074, 21, 4836, 5994, 576, 1241, 5016, 4832, 1115, 17407, 504, 38, 4474, 1485, 6043, 5936, 5832, 4527, 17406, 4800, 15927, 1981, 5279, 6024, 5999, 5917, 14154, 1092, 5281, 17413, 17414, 9048, 17415, 6402, 5266, 5275, 6460, 5298, 6421, 2]
+// Dependencies: [5, 32, 19, 17, 2063, 2102, 1372, 9214, 17598, 1074, 21, 4836, 6160, 576, 1241, 5016, 4832, 1115, 17596, 504, 38, 4474, 1485, 6209, 6102, 5999, 4527, 17595, 4800, 16103, 1981, 5445, 6190, 6165, 6083, 14326, 1092, 5447, 17602, 17603, 9213, 17604, 6568, 5432, 5441, 6626, 5464, 6587, 2]
 // Exports: default
 
-// Module 17408 (GuildSettingsRoleCreateModal)
+// Module 17597 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -14,18 +14,18 @@ import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5275 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 17407 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5441 */;
+import useMountEffectDefault from "useMountEffect" /* 5464 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 17596 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
 
 require = fn;
 function RoleCreateScene() {
@@ -71,7 +71,7 @@ function RoleCreateScene() {
     if (first === closure_1_17) {
       num5 = 0;
     }
-    await tmp3(5832).createRole(stateFromStores.id, str, num5);
+    await tmp3(5999).createRole(stateFromStores.id, str, num5);
     if (1 === tmp7) {
       c2 = 0;
       closure_129_5(false);
@@ -96,13 +96,13 @@ function RoleCreateScene() {
               closure_0(4527).roleCreatedToast();
               const obj5 = closure_0(4527);
               const tmp13 = closure_0;
-              closure_0(17406).setRoleJustCreated(true);
+              closure_0(17595).setRoleJustCreated(true);
               let STEP_MEMBERS = constants4.STEP_PERMISSIONS;
               const guild2 = closure_2_12.getProps().guild;
               closure_1(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               currentUser = currentUser.getCurrentUser();
               const tmp23 = closure_2_9(guild2, currentUser);
-              const obj6 = closure_0(17406);
+              const obj6 = closure_0(17595);
               const tmp18 = closure_1;
               const obj2 = { permission: constants3.ADMINISTRATOR, user: currentUser, context: guild2 };
               let tmp4 = !tmp23;
@@ -131,7 +131,7 @@ function RoleCreateScene() {
   let obj3 = { title: null, subtitle: null, children: null };
   const callback2 = onSelect.useCallback(() => {
     React6.dismiss();
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15927, dependencyMap.paths), "RoleColorPicker", { color, onSelect });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16103, dependencyMap.paths), "RoleColorPicker", { color, onSelect });
   }, items3);
   const intl2 = navigation(color[17]).intl;
   obj3.title = intl2.string(navigation(color[17]).t["8pxAPp"]);
@@ -406,7 +406,7 @@ function ModalScene(hasSkipButton) {
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, Keyboard: closure_8 } = get_ActivityIndicator);
 const isGuildOwner = fn(2063).isGuildOwner;
-const GuildSettingsRoleConstants = fn(17409);
+const GuildSettingsRoleConstants = fn(17598);
 ({ PermissionTemplates: map1, DEFAULT_TEMPLATE_TYPE: closure_14, MAX_BULK_ROLE_MEMBERS_ADD: closure_15 } = GuildSettingsRoleConstants);
 const Constants = fn(1074);
 ({ MAX_ROLE_LENGTH: closure_16, DEFAULT_ROLE_COLOR: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20 } = Constants);
@@ -414,8 +414,8 @@ const jsxProd = fn(21);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
 let closure_23 = { titleContainer: { flexDirection: "row", justifyContent: "center", alignContent: "center", width: "100%" }, title: { textAlign: "center", flex: 1 } };
 const createStyles = fn(4836);
-let obj = { container: { marginTop: fn(5994).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: nativeDefault.space.PX_16 }, sceneHeader: { alignItems: "center", marginBottom: 8, marginHorizontal: 16 }, sceneSubtitle: { textAlign: "center", paddingTop: 8, maxWidth: 400 }, sceneContent: { flex: 1 }, sceneInner: null, colorTrailing: null, colorBlock: null, sceneFooter: null, nextButton: null, nextButtonFloating: null };
-let obj3 = { marginTop: fn(5994).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: nativeDefault.space.PX_16 };
+let obj = { container: { marginTop: fn(6160).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: nativeDefault.space.PX_16 }, sceneHeader: { alignItems: "center", marginBottom: 8, marginHorizontal: 16 }, sceneSubtitle: { textAlign: "center", paddingTop: 8, maxWidth: 400 }, sceneContent: { flex: 1 }, sceneInner: null, colorTrailing: null, colorBlock: null, sceneFooter: null, nextButton: null, nextButtonFloating: null };
+let obj3 = { marginTop: fn(6160).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: nativeDefault.space.PX_16 };
 obj.sceneInner = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 obj.colorTrailing = { flexDirection: "row", alignItems: "center" };
 obj.colorBlock = { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 };
@@ -470,5 +470,5 @@ export default function GuildSettingsRoleCreateModal() {
     const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(stateFromStores.id));
     obj.track(constants.USER_FLOW_TRANSITION, obj2);
   });
-  return closure_21(stateFromStores(6421).Navigator, { screens, initialRouteName: obj7.STEP_DISPLAY });
+  return closure_21(stateFromStores(6587).Navigator, { screens, initialRouteName: obj7.STEP_DISPLAY });
 };

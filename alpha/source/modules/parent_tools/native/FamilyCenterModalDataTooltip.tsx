@@ -1,17 +1,17 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14602
+// Function ID: 14603
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 6958, 21, 5385, 11399, 4529, 13128, 5387, 11401, 4795, 10496, 4836, 576, 4832, 11398, 1115, 2487, 8106, 7012, 7870, 7871, 11405, 5281, 5039, 5936, 10769, 2]
+// Dependencies: [19, 17, 7124, 21, 5551, 11568, 4529, 13298, 5553, 11570, 4795, 10665, 4836, 576, 4832, 11567, 1115, 2487, 8271, 7177, 8035, 8036, 11574, 5447, 5039, 6102, 10938, 2]
 // Exports: default
 
-// Module 14427 (FamilyCenterModalDataTooltip)
+// Module 14602 (FamilyCenterModalDataTooltip)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
-import Modal from "Modal" /* 10769 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8271 */;
+import Modal from "Modal" /* 10938 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -66,8 +66,8 @@ function FamilyCenterModalDataTooltipScreen() {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let obj = { [USER_INTERACTION]: fn(5385).ChatIcon, [USER_CALLED]: fn(11399).PhoneIcon, [USER_ADD]: fn(4529).FriendsIcon, [GUILD_ADD]: fn(13128).ServerGridIcon, [GUILD_INTERACTION]: fn(5387).ThreadIcon, [PURCHASES]: fn(11401).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4795).ClockIcon, [GIFTS]: fn(10496).GiftIcon };
-({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(6958).TeenActionDisplayType);
+let obj = { [USER_INTERACTION]: fn(5551).ChatIcon, [USER_CALLED]: fn(11568).PhoneIcon, [USER_ADD]: fn(4529).FriendsIcon, [GUILD_ADD]: fn(13298).ServerGridIcon, [GUILD_INTERACTION]: fn(5553).ThreadIcon, [PURCHASES]: fn(11570).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4795).ClockIcon, [GIFTS]: fn(10665).GiftIcon };
+({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(7124).TeenActionDisplayType);
 let createStyles = fn(4836);
 let obj3 = { row: { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, content: { flexShrink: 1 }, iconContainer: null, header: null, icon: null };
 let size = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, flexShrink: 0, marginRight: nativeDefault.space.PX_12 };

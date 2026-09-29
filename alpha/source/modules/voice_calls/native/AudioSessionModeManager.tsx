@@ -1,12 +1,12 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17288
+// Function ID: 17289
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2044, 5733, 4858, 502, 2045, 1993, 2099, 4855, 1980, 1074, 1364, 17100, 6539, 2]
+// Dependencies: [17, 2044, 5900, 4858, 502, 2045, 1993, 2099, 4855, 1980, 1074, 1364, 17289, 6705, 2]
 
-// Module 17099 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17100 */;
+// Module 17288 (AudioSessionModeManager)
+import VoicePermissionManager from "VoicePermissionManager" /* 17289 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5900 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -14,7 +14,7 @@ import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 function handleAVAudioSessionMode() {

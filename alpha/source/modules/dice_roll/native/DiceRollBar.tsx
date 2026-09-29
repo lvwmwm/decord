@@ -1,10 +1,10 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 12043
+// Function ID: 12044
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4825, 11441, 21, 4836, 576, 504, 4566, 4837, 1177, 11873, 8295, 4832, 2]
+// Dependencies: [19, 17, 4825, 11610, 21, 4836, 576, 504, 4566, 4837, 1177, 12044, 8460, 4832, 2]
 // Exports: default
 
-// Module 11872 (DiceRollBar)
+// Module 12043 (DiceRollBar)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -14,7 +14,7 @@ import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
 const View = fn(17).View;
-const useDiceRollState = fn(11441).useDiceRollState;
+const useDiceRollState = fn(11610).useDiceRollState;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);

@@ -1,9 +1,9 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9753
+// Function ID: 9754
 // Name: Spoiler
-// Dependencies: [19, 17, 1074, 9577, 21, 4836, 1364, 576, 4540, 1177, 2]
+// Dependencies: [19, 17, 1074, 9744, 21, 4836, 1364, 576, 4540, 1177, 2]
 
-// Module 9586 (Spoiler)
+// Module 9753 (Spoiler)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,7 +23,7 @@ let size = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: n
 obj3.placeholder = size;
 const obj4 = { color: str, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND };
 obj3.spoilerRevealed = { color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.SPOILER_REVEALED_BACKGROUND };
-obj3.muted = { opacity: fn(9577).MUTED_OPACITY_CONTENT };
+obj3.muted = { opacity: fn(9744).MUTED_OPACITY_CONTENT };
 let closure_6 = createStyles.createLegacyClassComponentStyles(obj3);
 const PureComponent = noop.PureComponent;
 class Spoiler extends PureComponent {
@@ -88,7 +88,7 @@ Spoiler.prototype["render"] = function render() {
                 if (Array.isArray(style)) {
                   flattenResult = closure_2_4.flatten(style);
                 }
-                const obj = { children: null, style: null, onPress: "Array" };
+                const obj = { children: null, style: null, onPress: "r" };
                 ({ Children, cloneElement } = tmp);
                 obj.children = Children.map(props.props.children, (props) => {
                   if (validElement.isValidElement(props)) {
@@ -98,7 +98,7 @@ Spoiler.prototype["render"] = function render() {
                     if (Array.isArray(style)) {
                       flattenResult = closure_2_4.flatten(style);
                     }
-                    const obj = { children: null, style: null, onPress: "Array" };
+                    const obj = { children: null, style: null, onPress: "r" };
                     ({ Children, cloneElement } = tmp);
                     obj.children = Children.map(props.props.children, (props) => {
                       if (validElement.isValidElement(props)) {
@@ -108,7 +108,7 @@ Spoiler.prototype["render"] = function render() {
                         if (Array.isArray(style)) {
                           flattenResult = closure_2_4.flatten(style);
                         }
-                        const obj = { children: null, style: null, onPress: "Array" };
+                        const obj = { children: null, style: null, onPress: "r" };
                         ({ Children, cloneElement } = tmp);
                         obj.children = Children.map(props.props.children, () => { ... });
                         const items = [flattenResult, spoiler.spoiler];

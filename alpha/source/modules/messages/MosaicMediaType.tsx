@@ -1,13 +1,13 @@
-// Module ID: 11193
-// Function ID: 11194
+// Module ID: 11362
+// Function ID: 11363
 // Name: MosaicMediaType
-// Dependencies: [1074, 4986, 1385, 11194, 2]
+// Dependencies: [1074, 4986, 1385, 11363, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 11193 (MosaicMediaType)
+// Module 11362 (MosaicMediaType)
 import Constants from "Constants" /* 1074 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 11194 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 11363 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;

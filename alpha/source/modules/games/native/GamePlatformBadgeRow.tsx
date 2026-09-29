@@ -1,19 +1,19 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 12049
+// Function ID: 12050
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 11879, 8347, 6379, 8535, 4836, 11880, 5279, 576, 2]
+// Dependencies: [19, 21, 12050, 8512, 6545, 8700, 4836, 12051, 5445, 576, 2]
 
-// Module 11878 (GamePlatformBadgeRow)
+// Module 12049 (GamePlatformBadgeRow)
 import nativeDefault from "native" /* 576 */;
-import GamePlatformBadges from "GamePlatformBadges" /* 11880 */;
+import GamePlatformBadges from "GamePlatformBadges" /* 12051 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 let obj = {};
-obj[fn(11879).GamePlatformAvailability.DESKTOP] = fn(8347).ScreenIcon;
-obj[fn(11879).GamePlatformAvailability.MOBILE] = fn(6379).MobilePhoneIcon;
-obj[fn(11879).GamePlatformAvailability.CONSOLE] = fn(8535).GameControllerIcon;
+obj[fn(12050).GamePlatformAvailability.DESKTOP] = fn(8512).ScreenIcon;
+obj[fn(12050).GamePlatformAvailability.MOBILE] = fn(6545).MobilePhoneIcon;
+obj[fn(12050).GamePlatformAvailability.CONSOLE] = fn(8700).GameControllerIcon;
 const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ row: { width: "auto" } });
 const size = fn(2);
@@ -24,7 +24,7 @@ export default noop.memo(function GamePlatformBadgeRow(platforms) {
   const items = [platforms];
   const memo = noop.useMemo(() => GamePlatformBadges.sortGamePlatformAvailability(platforms), items);
   const tmp = closure_6();
-  return jsx(platforms(5279).Stack, {
+  return jsx(platforms(5445).Stack, {
     direction: "horizontal",
     align: "center",
     spacing: nativeDefault.space.PX_4,

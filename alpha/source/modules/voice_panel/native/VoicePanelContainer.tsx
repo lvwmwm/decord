@@ -1,13 +1,13 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 17059
+// Function ID: 17060
 // Name: VoicePanelContainer
-// Dependencies: [19, 2045, 5044, 21, 504, 16873, 16917, 4452, 4540, 2]
+// Dependencies: [19, 2045, 5044, 21, 504, 17060, 17104, 4452, 4540, 2]
 
-// Module 16872 (VoicePanelContainer)
+// Module 17059 (VoicePanelContainer)
 import _mod4452 from "module_4452" /* 4452 */;
 import native from "native" /* 4540 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 16873 */;
-import VoicePanelUIDefault from "VoicePanelUI" /* 16917 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 17060 */;
+import VoicePanelUIDefault from "VoicePanelUI" /* 17104 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import VoicePanelStore from "VoicePanelStore" /* 5044 */;

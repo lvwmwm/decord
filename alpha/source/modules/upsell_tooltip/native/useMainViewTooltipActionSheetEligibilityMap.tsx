@@ -1,29 +1,29 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16964
+// Function ID: 16965
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 16754, 10128, 1220, 2037, 1074, 1374, 1084, 504, 16778, 1610, 7504, 6867, 16779, 12959, 10203, 10202, 10208, 4654, 2029, 16780, 16783, 16752, 16764, 9189, 11449, 2]
+// Dependencies: [32, 16941, 10295, 1220, 2037, 1074, 1374, 1084, 504, 16965, 1610, 7669, 7033, 16966, 13129, 10370, 10369, 10375, 4654, 2029, 16967, 16970, 16939, 16951, 9354, 11618, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 16777 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 16964 (useMainViewTooltipActionSheetEligibilityMap)
 import initialize from "initialize" /* 504 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6867 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7504 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9189 */;
-import MarketingComponentType from "MarketingComponentType" /* 10203 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11449 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 12959 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16752 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16764 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16778 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16783 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7033 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7669 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9354 */;
+import MarketingComponentType from "MarketingComponentType" /* 10370 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10375 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11618 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13129 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16939 */;
+import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16951 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16965 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16970 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16754 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16941 */;
+import PromotionsStore from "PromotionsStore" /* 10295 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 
-const useGiftingPromotionAssetsReadyDefault = tmp4(16780);
+const useGiftingPromotionAssetsReadyDefault = tmp4(16967);
 require = fn;
 const PlatformTypes = fn(1074).PlatformTypes;
 const PremiumConstants = fn(1374);
@@ -67,9 +67,9 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const premiumDiscountOffer = usePremiumDiscountOffer.usePremiumDiscountOffer();
   const tmpResult19 = usePremiumDiscountOffer;
   const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16779).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16966).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const tmpResult20 = usePremiumTrialOffer;
-  const promotionMarketingComponent = usePromotionMarketingComponent.usePromotionMarketingComponent(tmp(10203).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const promotionMarketingComponent = usePromotionMarketingComponent.usePromotionMarketingComponent(tmp(10370).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -114,7 +114,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10202).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10369).GiftPromotionReminderExperiment;
   const tmpResult24 = initialize;
   const giftingBadgeCoachmarkVariant = GiftingBadgesUtils.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });
   let isDismissed = null != stateFromStores2;

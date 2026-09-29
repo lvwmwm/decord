@@ -1,17 +1,17 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12402
+// Function ID: 12403
 // Name: AcceptInvite
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 1370, 4531, 5893, 12232, 12235, 1397, 1432, 12240, 1479, 5919, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 1370, 4531, 6059, 12403, 12406, 1397, 1432, 12411, 1479, 6085, 2]
 // Exports: default
 
-// Module 12231 (AcceptInvite)
+// Module 12402 (AcceptInvite)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import useToken from "useToken" /* 4531 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5893 */;
-import Card from "Card" /* 5919 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6059 */;
+import Card from "Card" /* 6085 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -85,12 +85,12 @@ function AcceptInviteCardComponent(invite) {
     const obj2 = {};
     const merged = Object.assign(invite);
     obj2.invite = invite;
-    return closure_9(first(12232), obj2);
+    return closure_9(first(12403), obj2);
   } else if (tmp22.ERROR === first) {
     let obj = {};
     const merged1 = Object.assign(invite);
     obj.invite = invite;
-    return closure_9(first(12235), obj);
+    return closure_9(first(12406), obj);
   } else {
     return closure_9(InviteResolving, {});
   }
@@ -126,7 +126,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    let guildSplashSource = tmp3(12240);
+    let guildSplashSource = tmp3(12411);
   } else {
     const obj2 = { id: null, splash: null, size: null };
     ({ id: obj3.id, splash: obj3.splash } = guild);

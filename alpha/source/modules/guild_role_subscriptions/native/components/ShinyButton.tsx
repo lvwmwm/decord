@@ -1,13 +1,13 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9928
+// Function ID: 9929
 // Name: ShinyButton
-// Dependencies: [19, 21, 4836, 576, 5282, 1177, 9762, 2]
+// Dependencies: [19, 21, 4836, 576, 5448, 1177, 9929, 2]
 // Exports: default
 
-// Module 9761 (ShinyButton)
+// Module 9928 (ShinyButton)
 import nativeDefault from "native" /* 576 */;
-import BaseTextButton from "BaseTextButton" /* 5282 */;
-import _modDef9762 from "module_9762" /* 9762 */;
+import BaseTextButton from "BaseTextButton" /* 5448 */;
+import _modDef9929 from "module_9929" /* 9929 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,7 +35,7 @@ export default function ShinyButton(style) {
   obj.pillStyle = items;
   let tmp3Result;
   if (!loading) {
-    const obj2 = { size: tmp4(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9762, style: null };
+    const obj2 = { size: tmp4(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9929, style: null };
     const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;

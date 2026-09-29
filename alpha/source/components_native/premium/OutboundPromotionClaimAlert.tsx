@@ -1,14 +1,14 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13270
+// Function ID: 13271
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4836, 576, 13101, 6583, 6603, 12962, 13102, 4832, 1115, 5281, 6610, 13103, 5300, 4525, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 13271, 6749, 6769, 13132, 13272, 4832, 1115, 5447, 6776, 13273, 5466, 4525, 2]
 // Exports: default
 
-// Module 13100 (OutboundPromotionClaimAlert)
+// Module 13270 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import PromotionUtils from "PromotionUtils" /* 12962 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
+import PromotionUtils from "PromotionUtils" /* 13132 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

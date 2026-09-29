@@ -1,13 +1,13 @@
-// Module ID: 14269
-// Function ID: 14270
+// Module ID: 14445
+// Function ID: 14446
 // Name: UniqueUsernamesUtils
-// Dependencies: [5021, 14264, 1115, 2]
+// Dependencies: [5021, 14440, 1115, 2]
 // Exports: formatUsernameLiveCheckValidation
 
-// Module 14269 (UniqueUsernamesUtils)
+// Module 14445 (UniqueUsernamesUtils)
 import util from "util" /* 1115 */;
 import _mod5021 from "module_5021" /* 5021 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14264 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14440 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesUtils.tsx");

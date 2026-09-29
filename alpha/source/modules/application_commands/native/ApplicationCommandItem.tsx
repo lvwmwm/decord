@@ -1,12 +1,12 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 12064
+// Function ID: 12065
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2108, 9726, 21, 4836, 576, 5288, 504, 11713, 5435, 1115, 5899, 4832, 2]
+// Dependencies: [19, 17, 2108, 9893, 21, 4836, 576, 5454, 504, 11882, 5602, 1115, 6065, 4832, 2]
 // Exports: default
 
-// Module 11893 (ApplicationCommandItem)
+// Module 12064 (ApplicationCommandItem)
 import nativeDefault from "native" /* 576 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11713 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11882 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(9726).AUTOCOMPLETE_ROW_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(9893).AUTOCOMPLETE_ROW_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4836);

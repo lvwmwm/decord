@@ -1,13 +1,13 @@
-// Module ID: 6467
-// Function ID: 6468
+// Module ID: 6633
+// Function ID: 6634
 // Name: FormPhoneOrEmail
-// Dependencies: [19, 17, 21, 4836, 576, 5435, 1115, 4832, 6382, 6357, 6358, 6360, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5602, 1115, 4832, 6548, 6523, 6524, 6526, 2]
 
-// Module 6467 (FormPhoneOrEmail)
+// Module 6633 (FormPhoneOrEmail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
+import Pressables from "Pressables" /* 5602 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

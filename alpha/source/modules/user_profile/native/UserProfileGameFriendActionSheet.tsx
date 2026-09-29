@@ -1,13 +1,13 @@
-// Module ID: 12636
-// Function ID: 12637
+// Module ID: 12806
+// Function ID: 12807
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4479, 1074, 21, 4836, 576, 12117, 6620, 5992, 1177, 4832, 12637, 6589, 4988, 9195, 4527, 4800, 6618, 6570, 1115, 2]
+// Dependencies: [5, 32, 19, 17, 4479, 1074, 21, 4836, 576, 12288, 6786, 6158, 1177, 4832, 12807, 6755, 4988, 9360, 4527, 4800, 6784, 6736, 1115, 2]
 // Exports: default
 
-// Module 12636 (UserProfileGameFriendActionSheet)
+// Module 12806 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12117 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12288 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 6458
-// Function ID: 6459
+// Module ID: 6624
+// Function ID: 6625
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 4836, 576, 5298, 6459, 6460, 5890, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 5464, 6625, 6626, 6056, 2]
 // Exports: PostponeRender
 
-// Module 6458 (PostponeRender)
+// Module 6624 (PostponeRender)
 import nativeDefault from "native" /* 576 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5890 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
+import useMountEffectDefault from "useMountEffect" /* 5464 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6056 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6625 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -47,7 +47,7 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(6460).SceneLoadingIndicator, {});
+    children = jsx(first(6626).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp4Result = closure_5;

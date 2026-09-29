@@ -1,10 +1,10 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14645
+// Function ID: 14646
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4800, 8995, 1981, 4836, 576, 1177, 5279, 4832, 1115, 2487, 1485, 6415, 9543, 563, 14471, 14472, 4790, 5999, 6621, 5917, 6544, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4800, 9160, 1981, 4836, 576, 1177, 5445, 4832, 1115, 2487, 1485, 6581, 9710, 563, 14646, 14647, 4790, 6165, 6787, 6083, 6710, 5447, 2]
 // Exports: default
 
-// Module 14470 (ScheduleDowntimeScreen)
+// Module 14645 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -12,8 +12,8 @@ import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9543 */;
+import Stack_Stack from "Stack/Stack" /* 5445 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9710 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -530,7 +530,7 @@ export default function ScheduleDowntimeScreen() {
     obj13.trailing = closure_11(tmp2(stringResult[14]).Text, obj14);
     obj13.onPress = function handleStartTimePress() {
       const intl = util.intl;
-      const f118316 = (first1) => {
+      const f118710 = (first1) => {
         closure_1_11(first1);
         const result = (closure_0(rule[19]).timeToMinutes(first1) + 540) % 1440;
         const time = { hours: Math.floor(result / 60), minutes: result % 60 };
@@ -539,7 +539,7 @@ export default function ScheduleDowntimeScreen() {
       const stringResult = intl.string(_modDef2487["8bLRt0"]);
       const obj2 = { title: stringResult, mode: "time", startDate: null, onSubmit: null };
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequireImpl(8995, dependencyMap.paths);
+      const tmp2 = asyncRequireImpl(9160, dependencyMap.paths);
       obj2.startDate = new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
       obj2.onSubmit = function onSubmit(hours) {
         const time = { hours: hours.hours(), minutes: hours.minutes() };
@@ -562,7 +562,7 @@ export default function ScheduleDowntimeScreen() {
       const stringResult = intl.string(_modDef2487["+JkWJV"]);
       const obj2 = { title: stringResult, mode: "time", startDate: null, onSubmit: null };
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequireImpl(8995, dependencyMap.paths);
+      const tmp2 = asyncRequireImpl(9160, dependencyMap.paths);
       obj2.startDate = new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
       obj2.onSubmit = function onSubmit(hours) {
         const time = { hours: hours.hours(), minutes: hours.minutes() };

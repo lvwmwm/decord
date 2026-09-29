@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11618
+// Function ID: 11619
 // Name: CustomTypingIndicatorExperiment
 // Dependencies: [1435, 2]
 // Exports: getCustomTypingIndicatorConfig, useCustomTypingIndicatorConfig
 
-// Module 11449 (CustomTypingIndicatorExperiment)
+// Module 11618 (CustomTypingIndicatorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

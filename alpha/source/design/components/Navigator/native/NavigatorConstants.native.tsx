@@ -1,9 +1,9 @@
-// Module ID: 5994
-// Function ID: 5995
+// Module ID: 6160
+// Function ID: 6161
 // Name: NavigatorConstants
 // Dependencies: [2]
 
-// Module 5994 (NavigatorConstants)
+// Module 6160 (NavigatorConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Navigator/native/NavigatorConstants.native.tsx");

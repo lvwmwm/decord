@@ -1,17 +1,17 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12653
+// Function ID: 12654
 // Name: StageChannelNewUserManager
-// Dependencies: [502, 2099, 5733, 5726, 1983, 573, 510, 12484, 2]
+// Dependencies: [502, 2099, 5900, 5893, 1983, 573, 510, 12654, 2]
 
-// Module 12483 (StageChannelNewUserManager)
+// Module 12653 (StageChannelNewUserManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5900 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 let require = fn;
-let closure_7 = fn(5726).STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY;
+let closure_7 = fn(5893).STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY;
 class StageChannelNewUserManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

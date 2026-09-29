@@ -1,13 +1,13 @@
-// Module ID: 6758
-// Function ID: 6759
+// Module ID: 6924
+// Function ID: 6925
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 2067, 5319, 563, 2]
+// Dependencies: [19, 2067, 5485, 563, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 6758 (useGuildIdsToFetchSoundsFor)
+// Module 6924 (useGuildIdsToFetchSoundsFor)
 import _mod19 from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SoundboardStore from "SoundboardStore" /* 5319 */;
+import SoundboardStore from "SoundboardStore" /* 5485 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = _mod19.useMemo;

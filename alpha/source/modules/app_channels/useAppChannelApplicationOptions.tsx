@@ -1,10 +1,10 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9186
+// Function ID: 9187
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 9022, 8501, 6584, 2]
+// Dependencies: [19, 9187, 8666, 6750, 2]
 // Exports: useAppChannelApplicationOptions
 
-// Module 9021 (useAppChannelApplicationOptions)
+// Module 9186 (useAppChannelApplicationOptions)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

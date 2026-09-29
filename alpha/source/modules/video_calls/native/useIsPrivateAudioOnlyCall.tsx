@@ -1,10 +1,10 @@
-// Module ID: 8831
-// Function ID: 8832
+// Module ID: 8996
+// Function ID: 8997
 // Name: useIsPrivateAudioOnlyCall
 // Dependencies: [32, 2044, 4852, 4858, 1993, 4855, 4857, 504, 2]
 // Exports: default
 
-// Module 8831 (useIsPrivateAudioOnlyCall)
+// Module 8996 (useIsPrivateAudioOnlyCall)
 import _slicedToArray from "module_32" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;

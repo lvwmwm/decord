@@ -1,10 +1,10 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 17071
+// Function ID: 17072
 // Name: ExpressionPickerStore
 // Dependencies: [1218, 5040, 1243, 4706, 1248, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 16884 (ExpressionPickerStore)
+// Module 17071 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
 import uniqueIdDefault from "uniqueId" /* 5040 */;
 import identity_mod from "module_1243" /* 1243 */;

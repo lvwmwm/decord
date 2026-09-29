@@ -1,10 +1,10 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 8713
+// Function ID: 8714
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 8531, 8545, 21, 4836, 576, 8538, 1364, 1485, 8549, 4832, 1115, 8550, 8551, 1177, 8552, 6544, 5281, 2]
+// Dependencies: [32, 19, 17, 8696, 8710, 21, 4836, 576, 8703, 1364, 1485, 8714, 4832, 1115, 8715, 8716, 1177, 8717, 6710, 5447, 2]
 // Exports: default
 
-// Module 8548 (XboxLinkSuccess)
+// Module 8713 (XboxLinkSuccess)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -15,8 +15,8 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, Linking: closure_7, Pressable: closure_8 } = get_ActivityIndicator);
-const XboxLinkModalScenes = fn(8531).XboxLinkModalScenes;
-const GameConsoleConstants = fn(8545);
+const XboxLinkModalScenes = fn(8696).XboxLinkModalScenes;
+const GameConsoleConstants = fn(8710);
 ({ XBOX_ANDROID_APP_LINK: c10, XBOX_IOS_APP_LINK: closure_11, XBOX_URL_BASE: closure_12 } = GameConsoleConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
@@ -61,7 +61,7 @@ export default function XboxLinkDiscordSuccess() {
   const callback1 = noop.useCallback(() => {
     navigation.push(XboxLinkModalScenes.EDUCATION);
   }, items1);
-  obj5.source = require("module_8549");
+  obj5.source = require("module_8714");
   obj5.style = tmp.image;
   const items2 = [closure_13(closure_5, obj5), , , ];
   const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
@@ -76,7 +76,7 @@ export default function XboxLinkDiscordSuccess() {
   const obj9 = { style: tmp.appLogoBox, children: null };
   const obj2 = first(navigation[10]);
   const tmp14 = closure_5;
-  obj9.children = closure_13(closure_5, { source: require("module_8550"), style: tmp.appLogo });
+  obj9.children = closure_13(closure_5, { source: require("module_8715"), style: tmp.appLogo });
   const items3 = [closure_13(closure_6, obj9), , ];
   const obj11 = { style: tmp.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl3 = first(navigation[13]).intl;

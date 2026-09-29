@@ -1,10 +1,10 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16519
+// Function ID: 16520
 // Name: VibegrationsMessageTime
 // Dependencies: [4512, 2]
 // Exports: describeMessageTime
 
-// Module 16340 (VibegrationsMessageTime)
+// Module 16519 (VibegrationsMessageTime)
 import DateUtils from "DateUtils" /* 4512 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 16069
+// Function ID: 16070
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 1980, 1074, 504, 4797, 7720, 4528, 1115, 3231, 2]
+// Dependencies: [19, 1980, 1074, 504, 4797, 7885, 4528, 1115, 3231, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15892 (useDefaultAuthorizationNotifiers)
+// Module 16069 (useDefaultAuthorizationNotifiers)
 import util from "util" /* 1115 */;
 import _modDef3231 from "module_3231" /* 3231 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;

@@ -1,16 +1,16 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14957
+// Function ID: 14958
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6400, 4832, 14772, 9807, 1115, 1177, 14783, 14784, 14787, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 6566, 4832, 14947, 9974, 1115, 1177, 14958, 14959, 14962, 2]
 // Exports: Content
 
-// Module 14782 (GuildRoleSubscriptionCard)
+// Module 14957 (GuildRoleSubscriptionCard)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 14784 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 14787 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14947 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 14959 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 14962 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -63,7 +63,7 @@ export const Content = function Content(arg0) {
   const obj7 = { children: null };
   const intl = guildId(1115).intl;
   obj7.children = intl.string(guildId(1115).t["DJ+bGu"]);
-  const items = [closure_6(SectionTitle, obj7), closure_6(guildId(1177).Spacer, { size: 8 }), closure_6(guildId(14783).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const items = [closure_6(SectionTitle, obj7), closure_6(guildId(1177).Spacer, { size: 8 }), closure_6(guildId(14958).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   obj6.children = items;
   const items1 = [closure_8(closure_7, obj6), , , ];
   let tmp4Result = null;
@@ -93,7 +93,7 @@ export const Content = function Content(arg0) {
     obj13.children = intl3.format(tmp5(1115).t.l40GUu, obj14);
     const items4 = [tmp7(tmp8, obj13), tmp7(tmp5(1177).Spacer, { size: 14 }), ];
     const obj15 = { gap: 14, children: first1.map((benefit) => timestampProducer(GuildRoleSubscriptionBenefitRow.ChannelBenefitRow, { benefit, guildId }, benefit.ref_id)) };
-    items4[2] = tmp7(tmp5(9807).GappedList, obj15);
+    items4[2] = tmp7(tmp5(9974).GappedList, obj15);
     obj12.children = items4;
     tmp4Result3 = tmp4(tmp6, obj12);
   }
@@ -107,11 +107,11 @@ export const Content = function Content(arg0) {
     obj17.children = intl4.format(tmp5(1115).t["4V/Mfi"], obj18);
     const items5 = [tmp7(tmp8, obj17), tmp7(tmp5(1177).Spacer, { size: 14 }), ];
     const obj19 = { gap: 14, children: first2.map((benefit, index) => timestampProducer(GuildRoleSubscriptionBenefitRow.IntangibleBenefitRow, { benefit, guildId }, index)) };
-    items5[2] = tmp7(tmp5(9807).GappedList, obj19);
+    items5[2] = tmp7(tmp5(9974).GappedList, obj19);
     obj16.children = items5;
     tmp4Result4 = tmp4(tmp6, obj16);
   }
   items1[3] = tmp4Result4;
   obj5.children = items1;
-  return closure_8(guildId(9807).GappedList, obj5);
+  return closure_8(guildId(9974).GappedList, obj5);
 };

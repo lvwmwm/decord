@@ -1,12 +1,12 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 9206
+// Function ID: 9207
 // Name: NoResultsAlt
-// Dependencies: [19, 17, 21, 7679, 9042, 9043, 6475, 4685, 2]
+// Dependencies: [19, 17, 21, 7844, 9207, 9208, 6641, 4685, 2]
 // Exports: NoResultsAlt, getNoResultsAltSource, useNoResultsAltSource
 
-// Module 9041 (NoResultsAlt)
+// Module 9206 (NoResultsAlt)
 import shared from "shared" /* 4685 */;
-import _mod7679 from "module_7679" /* 7679 */;
+import _mod7844 from "module_7844" /* 7844 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResultsAlt.tsx");
 
 export const getNoResultsAltSource = function getNoResultsAltSource(theme) {
-  return _mod7679.getIllustrationSource(theme, {
+  return _mod7844.getIllustrationSource(theme, {
     dark() {
-      return require("module_9042");
+      return require("module_9207");
     },
     darker() {
-      return require("module_9043");
+      return require("module_9208");
     },
     light() {
-      return require("module_6475");
+      return require("module_6641");
     }
   });
 };
 export const useNoResultsAltSource = function useNoResultsAltSource() {
   const obj = shared;
-  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_9042");
+      return require("module_9207");
     },
     darker() {
-      return require("module_9043");
+      return require("module_9208");
     },
     light() {
-      return require("module_6475");
+      return require("module_6641");
     }
   });
 };
 export const NoResultsAlt = function NoResultsAlt(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_9042");
+      return require("module_9207");
     },
     darker() {
-      return require("module_9043");
+      return require("module_9208");
     },
     light() {
-      return require("module_6475");
+      return require("module_6641");
     }
   });
   const merged = Object.assign(arg0);

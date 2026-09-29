@@ -1,12 +1,12 @@
-// Module ID: 6693
-// Function ID: 6694
+// Module ID: 6859
+// Function ID: 6860
 // Name: ForumTagHooks
-// Dependencies: [19, 2045, 4469, 1085, 504, 1370, 6694, 2]
+// Dependencies: [19, 2045, 4469, 1085, 504, 1370, 6860, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 6693 (ForumTagHooks)
+// Module 6859 (ForumTagHooks)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ReportToModUtils from "ReportToModUtils" /* 6694 */;
+import ReportToModUtils from "ReportToModUtils" /* 6860 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

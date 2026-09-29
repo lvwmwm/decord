@@ -1,10 +1,10 @@
-// Module ID: 5825
-// Function ID: 5826
+// Module ID: 5992
+// Function ID: 5993
 // Name: getPricesFromServer
 // Dependencies: [4489, 2]
 // Exports: default
 
-// Module 5825 (getPricesFromServer)
+// Module 5992 (getPricesFromServer)
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4489 */;
 import size from "module_2" /* 2 */;
 

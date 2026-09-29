@@ -1,15 +1,15 @@
-// Module ID: 12639
-// Function ID: 12640
+// Module ID: 12809
+// Function ID: 12810
 // Name: VibegrationsCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4836, 576, 7687, 12640, 4800, 12641, 5435, 1115, 3715, 9611, 4832, 6630, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7852, 12810, 4800, 12811, 5602, 1115, 3715, 9778, 4832, 6796, 2]
 // Exports: default
 
-// Module 12639 (VibegrationsCustomWidgetAddOption)
+// Module 12809 (VibegrationsCustomWidgetAddOption)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
-import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 12640 */;
-import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 12641 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7852 */;
+import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 12810 */;
+import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 12811 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export default function VibegrationsCustomWidgetAddOption() {
     obj2.style = items;
     obj2.onPress = tmp7;
     const obj3 = { size: "sm", color: tmp2(576).colors.ICON_MUTED };
-    const items1 = [hasOwnProperty(tmp5(9611).MagicWandIcon, obj3), , ];
+    const items1 = [hasOwnProperty(tmp5(9778).MagicWandIcon, obj3), , ];
     const obj4 = { style: tmp.copy, children: null };
     const obj5 = { variant: "text-sm/semibold", color: "text-strong", children: null };
     const intl2 = tmp5(1115).intl;
@@ -50,9 +50,9 @@ export default function VibegrationsCustomWidgetAddOption() {
     obj4.children = items2;
     items1[1] = timestampProducer(View, obj4);
     const obj7 = { size: "xs", color: tmp2(576).colors.ICON_MUTED };
-    items1[2] = hasOwnProperty(tmp5(6630).ChevronSmallRightIcon, obj7);
+    items1[2] = hasOwnProperty(tmp5(6796).ChevronSmallRightIcon, obj7);
     obj2.children = items1;
-    tmp8 = timestampProducer(tmp5(5435).PressableOpacity, obj2);
+    tmp8 = timestampProducer(tmp5(5602).PressableOpacity, obj2);
   }
   return tmp8;
 };

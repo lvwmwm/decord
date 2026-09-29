@@ -1,12 +1,12 @@
-// Module ID: 6471
-// Function ID: 6472
+// Module ID: 6637
+// Function ID: 6638
 // Name: SearchField
-// Dependencies: [19, 21, 6031, 1115, 6472, 2]
+// Dependencies: [19, 21, 6197, 1115, 6638, 2]
 
-// Module 6471 (SearchField)
+// Module 6637 (SearchField)
 import util from "util" /* 1115 */;
-import TextField from "TextField" /* 6031 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6472 */;
+import TextField from "TextField" /* 6197 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6638 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

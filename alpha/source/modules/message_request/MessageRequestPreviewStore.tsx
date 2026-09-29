@@ -1,15 +1,15 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12263
+// Function ID: 12264
 // Name: MessageRequestPreviewStore
-// Dependencies: [1372, 6640, 6641, 5058, 504, 573, 2]
+// Dependencies: [1372, 6806, 6807, 5058, 504, 573, 2]
 
-// Module 12092 (MessageRequestPreviewStore)
+// Module 12263 (MessageRequestPreviewStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
 import UserStore from "UserStore" /* 1372 */;
-import MessageRequestStore from "MessageRequestStore" /* 6640 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6641 */;
+import MessageRequestStore from "MessageRequestStore" /* 6806 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6807 */;
 
 require = fn;
 function isMessagePreviewEnabledForChannel(id) {

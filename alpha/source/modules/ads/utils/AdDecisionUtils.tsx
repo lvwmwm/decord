@@ -1,12 +1,12 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 7279
+// Function ID: 7280
 // Name: AdDecisionUtils
-// Dependencies: [1091, 5763, 2]
+// Dependencies: [1091, 5930, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7114 (AdDecisionUtils)
+// Module 7279 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1091 */;
-import AdCreativeType from "AdCreativeType" /* 5763 */;
+import AdCreativeType from "AdCreativeType" /* 5930 */;
 
 require = fn;
 let result = 6 * DurationsDefault.Millis.HOUR;
@@ -22,9 +22,9 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) 
     type = type.type;
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       return type.questId;
-    } else if (tmp(5763).AdCreativeType.BOUNTY === type) {
+    } else if (tmp(5930).AdCreativeType.BOUNTY === type) {
       return type.bounty.id;
-    } else if (tmp(5763).AdCreativeType.QUEST_HOME_HERO === type) {
+    } else if (tmp(5930).AdCreativeType.QUEST_HOME_HERO === type) {
       return type.questHomeHero.id;
     }
   }

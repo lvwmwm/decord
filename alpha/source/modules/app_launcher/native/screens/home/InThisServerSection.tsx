@@ -1,16 +1,16 @@
-// Module ID: 11592
-// Function ID: 11593
+// Module ID: 11761
+// Function ID: 11762
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 4836, 576, 11570, 1370, 4832, 1115, 5435, 11533, 8370, 8712, 11538, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 11739, 1370, 4832, 1115, 5602, 11702, 8535, 8877, 11707, 2]
 // Exports: default
 
-// Module 11592 (InThisServerSection)
+// Module 11761 (InThisServerSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11570 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8877 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11739 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   const tmp = closure_7();
   const application = onAppSelected.appItem.application;
-  const appLauncherIconSource = onAppSelected(11533).getAppLauncherIconSource(application);
+  const appLauncherIconSource = onAppSelected(11702).getAppLauncherIconSource(application);
   const obj2 = {
     accessible: true,
     accessibilityLabel: application.name,
@@ -39,11 +39,11 @@ function AppInThisServer(onAppSelected) {
   let tmp6 = null;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(11538), obj3);
+    tmp6 = closure_5(application(11707), obj3);
   }
   const items = [tmp6, closure_5(onAppSelected(4832).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj2.children = items;
-  return closure_6(onAppSelected(8370).PressableScale, obj2, application.id);
+  return closure_6(onAppSelected(8535).PressableScale, obj2, application.id);
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
@@ -104,7 +104,7 @@ export default function InThisServerSection(arg0) {
       const intl2 = tmp11(1115).intl;
       obj5.children = intl2.string(tmp11(1115).t["/qG8v7"]);
       obj4.children = tmp5(tmp11(4832).Text, obj5);
-      tmp5Result = tmp5(tmp11(5435).PressableOpacity, obj4);
+      tmp5Result = tmp5(tmp11(5602).PressableOpacity, obj4);
     }
     items2[1] = tmp5Result;
     obj2.children = items2;

@@ -1,10 +1,10 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8893
+// Function ID: 8894
 // Name: GuildSelector
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4800, 8729, 1981, 1115, 1086, 4832, 1177, 8053, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 4800, 8894, 1981, 1115, 1086, 4832, 1177, 8218, 2]
 // Exports: default
 
-// Module 8728 (GuildSelector)
+// Module 8893 (GuildSelector)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -45,7 +45,7 @@ export default function GuildSelector(disabled) {
       onGuildChange(dependencyMap[6]).hideActionSheet(GuildSelector);
     };
     obj2.selectedItem = selectedGuildId;
-    obj.openLazy(asyncRequireImpl(8729, dependencyMap.paths), GuildSelector, obj2);
+    obj.openLazy(asyncRequireImpl(8894, dependencyMap.paths), GuildSelector, obj2);
   }, items);
   let found = guilds.find((id) => id.id === selectedGuildId);
   let obj = { style: tmp.selectorGroup, children: null };
@@ -70,7 +70,7 @@ export default function GuildSelector(disabled) {
     const intl2 = tmp7(1115).intl;
     name = intl2.string(tmp7(1115).t.oM4E1A);
   }
-  items1[2] = closure_7(selectedGuildId(8053).FormRow, { label: name, disabled: disabled.disabled, trailing: closure_7(selectedGuildId(8053).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = closure_7(selectedGuildId(8218).FormRow, { label: name, disabled: disabled.disabled, trailing: closure_7(selectedGuildId(8218).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj5 = { style: tmp.label, children: null };
   const intl3 = tmp7(1115).intl;
   obj5.children = intl3.format(selectedGuildId(1115).t.t9Jm9o, {});

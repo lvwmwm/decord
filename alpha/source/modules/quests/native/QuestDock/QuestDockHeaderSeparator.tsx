@@ -1,9 +1,9 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14899
+// Function ID: 14900
 // Name: QuestDockHeaderSeparator
 // Dependencies: [19, 17, 21, 4836, 576, 2]
 
-// Module 14724 (QuestDockHeaderSeparator)
+// Module 14899 (QuestDockHeaderSeparator)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

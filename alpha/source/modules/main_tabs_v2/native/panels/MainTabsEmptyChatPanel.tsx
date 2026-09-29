@@ -1,16 +1,16 @@
-// Module ID: 16561
-// Function ID: 16562
+// Module ID: 16750
+// Function ID: 16751
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4836, 576, 11021, 1613, 9685, 16562, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 11190, 1613, 9852, 16751, 2]
 // Exports: default
 
-// Module 16561 (MainTabsEmptyChatPanel)
+// Module 16750 (MainTabsEmptyChatPanel)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useDrawerWidth from "useDrawerWidth" /* 11021 */;
+import useDrawerWidth from "useDrawerWidth" /* 11190 */;
 import noop from "module_19" /* 19 */;
 
-const FavoritesEmptyStateDefault = tmp3(16562);
+const FavoritesEmptyStateDefault = tmp3(16751);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);

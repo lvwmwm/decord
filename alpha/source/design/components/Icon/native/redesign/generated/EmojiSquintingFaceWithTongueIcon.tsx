@@ -1,13 +1,13 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 15117
+// Function ID: 15118
 // Name: EmojiSquintingFaceWithTongueIcon
-// Dependencies: [19, 21, 576, 4530, 14943, 2]
+// Dependencies: [19, 21, 576, 4530, 15118, 2]
 // Exports: EmojiSquintingFaceWithTongueIcon
 
-// Module 14942 (EmojiSquintingFaceWithTongueIcon)
+// Module 15117 (EmojiSquintingFaceWithTongueIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod14943 from "module_14943" /* 14943 */;
+import _mod15118 from "module_15118" /* 15118 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiSquintingFaceWithTongueIcon = function EmojiSquintingFaceWithT
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14943, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15118, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,13 +1,13 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17751
+// Function ID: 17752
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2067, 1074, 21, 4836, 504, 17538, 11705, 17511, 1115, 14758, 17552, 2]
+// Dependencies: [19, 17, 2067, 1074, 21, 4836, 504, 17727, 11874, 17700, 1115, 14933, 17741, 2]
 // Exports: default
 
-// Module 17562 (GuildSettingsRoleSubscriptionContainer)
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 14758 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17538 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17552 */;
+// Module 17751 (GuildSettingsRoleSubscriptionContainer)
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 14933 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17727 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17741 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -29,39 +29,39 @@ function ApplicationRejectedNotice(guildId) {
   ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = useOnboardingMonetizationEnableFlowDefault(stateFromStores));
   if (null != resubmissionError) {
     const obj2 = { children: resubmissionError.getAnyErrorMessage() };
-    let tmp14 = closure_7(tmp9(11705), obj2);
-    const tmp9Result = tmp9(11705);
+    let tmp14 = closure_7(tmp9(11874), obj2);
+    const tmp9Result = tmp9(11874);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(17511), obj3);
+    tmp14 = closure_7(tmp9(17700), obj3);
   } else if (tmp13) {
     const obj4 = { notice: null };
     const intl3 = tmp2(1115).intl;
     obj4.notice = intl3.string(tmp2(1115).t.MyJpJT);
-    tmp14 = closure_7(tmp9(17511), obj4);
-    const tmp9Result5 = tmp9(17511);
+    tmp14 = closure_7(tmp9(17700), obj4);
+    const tmp9Result5 = tmp9(17700);
   } else if (null != reapplyNoticeText) {
     const obj5 = { notice: reapplyNoticeText, ctaLabel: null, onClick: null, submitting: null };
     const intl2 = tmp2(1115).intl;
     obj5.ctaLabel = intl2.string(tmp2(1115).t["YKw/NQ"]);
     obj5.onClick = tmp12;
     obj5.submitting = tmp11;
-    tmp14 = closure_7(tmp9(17511), obj5);
-    const tmp9Result6 = tmp9(17511);
+    tmp14 = closure_7(tmp9(17700), obj5);
+    const tmp9Result6 = tmp9(17700);
   } else if (true === hasItem1) {
     const obj6 = { notice: null };
     const intl = tmp2(1115).intl;
     obj6.notice = intl.string(tmp2(1115).t.e2g9sW);
-    tmp14 = closure_7(tmp9(17511), obj6);
-    const tmp9Result7 = tmp9(17511);
+    tmp14 = closure_7(tmp9(17700), obj6);
+    const tmp9Result7 = tmp9(17700);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj7 = { notice: null };
       const intl4 = tmp2(1115).intl;
       obj7.notice = intl4.string(tmp2(1115).t.rxI9sl);
-      tmp14 = closure_7(tmp9(17511), obj7);
-      const tmp9Result8 = tmp9(17511);
+      tmp14 = closure_7(tmp9(17700), obj7);
+      const tmp9Result8 = tmp9(17700);
     }
   }
   let tmp24 = null;

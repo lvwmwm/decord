@@ -1,15 +1,15 @@
-// Module ID: 7684
-// Function ID: 7685
+// Module ID: 7849
+// Function ID: 7850
 // Name: useUserProfileColors
-// Dependencies: [4825, 1085, 4767, 6605, 504, 4531, 576, 7675, 1092, 2]
+// Dependencies: [4825, 1085, 4767, 6771, 504, 4531, 576, 7840, 1092, 2]
 // Exports: useUserProfileColors
 
-// Module 7684 (useUserProfileColors)
+// Module 7849 (useUserProfileColors)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6605 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6771 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
@@ -38,18 +38,18 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
         if (stateFromStores) {
           tmp7 = overlaySyncedWithUserTheme;
         }
-        const result = tmp3(7675).calculateOverlayedColor(primaryColor, tmp7);
+        const result = tmp3(7840).calculateOverlayedColor(primaryColor, tmp7);
         const obj10 = {};
         const merged = Object.assign(obj3);
         obj10.containerBackground = tmp6;
-        const tmp3Result = tmp3(7675);
+        const tmp3Result = tmp3(7840);
         const tmp3Result6 = tmp3(1092);
-        obj10.gradientSecondaryBackground = tmp3Result6.int2hex(tmp3(7675).calculateOverlayedColor(secondaryColor, overlay));
-        const tmp3Result7 = tmp3(7675);
+        obj10.gradientSecondaryBackground = tmp3Result6.int2hex(tmp3(7840).calculateOverlayedColor(secondaryColor, overlay));
+        const tmp3Result7 = tmp3(7840);
         obj10.avatarBackground = tmp3(1092).int2hex(result);
         const tmp3Result8 = tmp3(1092);
         const tmp3Result9 = tmp3(1092);
-        obj10.statusBackground = tmp3Result9.int2hex(tmp3(7675).calculateOverlayedColor(result, sectionBox));
+        obj10.statusBackground = tmp3Result9.int2hex(tmp3(7840).calculateOverlayedColor(result, sectionBox));
         return obj10;
       }
     }

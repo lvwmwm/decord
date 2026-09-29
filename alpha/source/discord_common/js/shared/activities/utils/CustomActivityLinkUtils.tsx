@@ -1,10 +1,10 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12669
+// Function ID: 12670
 // Name: utils/CustomActivityLinkUtils
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12499 (utils/CustomActivityLinkUtils)
+// Module 12669 (utils/CustomActivityLinkUtils)
 import _slicedToArray from "module_32" /* 32 */;
 
 const CustomLinkType = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };

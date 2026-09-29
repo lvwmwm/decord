@@ -1,14 +1,14 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16861
+// Function ID: 16862
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 1177, 4832, 10389, 4685, 2]
+// Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 1177, 4832, 10558, 4685, 2]
 
-// Module 16673 (IconLabelBlock)
+// Module 16861 (IconLabelBlock)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import shared from "shared" /* 4685 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import IconUploaderDefault from "IconUploader" /* 10389 */;
+import IconUploaderDefault from "IconUploader" /* 10558 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

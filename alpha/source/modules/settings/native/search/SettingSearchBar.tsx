@@ -1,16 +1,16 @@
-// Module ID: 14260
-// Function ID: 14261
+// Module ID: 14436
+// Function ID: 14437
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14249, 21, 4836, 576, 1876, 6418, 6471, 2]
+// Dependencies: [19, 17, 14425, 21, 4836, 576, 1876, 6584, 6637, 2]
 // Exports: default
 
-// Module 14260 (SettingSearchBar)
+// Module 14436 (SettingSearchBar)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import Tracking from "Tracking" /* 6418 */;
-import SearchField from "SearchField" /* 6471 */;
+import Tracking from "Tracking" /* 6584 */;
+import SearchField from "SearchField" /* 6637 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14425 */;
 
 require = fn;
 const View = fn(17).View;

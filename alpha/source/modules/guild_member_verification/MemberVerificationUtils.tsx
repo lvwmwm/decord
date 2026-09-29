@@ -1,13 +1,13 @@
-// Module ID: 5365
-// Function ID: 5366
+// Module ID: 5531
+// Function ID: 5532
 // Name: MemberVerificationUtils
-// Dependencies: [5366, 1074, 4658, 1370, 2]
+// Dependencies: [5532, 1074, 4658, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5365 (MemberVerificationUtils)
+// Module 5531 (MemberVerificationUtils)
 import Constants from "Constants" /* 1074 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5366 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5532 */;
 import size from "module_2" /* 2 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: c2, MANUAL_APPROVAL_FORM_FIELDS: c3 } = MemberVerificationConstants);

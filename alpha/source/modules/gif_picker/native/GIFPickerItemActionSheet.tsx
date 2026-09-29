@@ -1,18 +1,18 @@
-// Module ID: 9841
-// Function ID: 9842
+// Module ID: 10008
+// Function ID: 10009
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4836, 576, 9831, 9827, 1479, 4800, 4528, 1115, 9842, 6610, 4527, 5281, 6571, 5899, 5745, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9998, 9994, 1479, 4800, 4528, 1115, 10009, 6776, 4527, 5447, 6737, 6065, 5912, 2]
 // Exports: default
 
-// Module 9841 (GIFPickerItemActionSheet)
+// Module 10008 (GIFPickerItemActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9827 */;
-import GifIcon from "GifIcon" /* 9842 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9994 */;
+import GifIcon from "GifIcon" /* 10009 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

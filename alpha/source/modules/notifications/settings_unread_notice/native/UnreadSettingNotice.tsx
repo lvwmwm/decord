@@ -1,13 +1,13 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 11130
+// Function ID: 11131
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1084, 21, 4836, 576, 10962, 4832, 1115, 5435, 10963, 2]
+// Dependencies: [19, 17, 1084, 21, 4836, 576, 11131, 4832, 1115, 5602, 11132, 2]
 // Exports: default
 
-// Module 10961 (UnreadSettingNotice)
+// Module 11130 (UnreadSettingNotice)
 import nativeDefault from "native" /* 576 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10962 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10963 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11131 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11132 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

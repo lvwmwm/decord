@@ -1,9 +1,9 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13421
+// Function ID: 13422
 // Name: GuildProductsStore
 // Dependencies: [1091, 11, 4464, 504, 573, 2]
 
-// Module 13251 (GuildProductsStore)
+// Module 13421 (GuildProductsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,10 +1,10 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9702
+// Function ID: 9703
 // Name: ThemeContextProvider/RootThemeContextProvider
 // Dependencies: [19, 1085, 21, 4540, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 9535 (ThemeContextProvider/RootThemeContextProvider)
+// Module 9702 (ThemeContextProvider/RootThemeContextProvider)
 import native from "native" /* 4540 */;
 import noop from "module_19" /* 19 */;
 

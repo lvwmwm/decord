@@ -1,15 +1,15 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8335
+// Function ID: 8336
 // Name: SKUUtils
-// Dependencies: [32, 1074, 4660, 1115, 5092, 1364, 4421, 2]
+// Dependencies: [32, 1074, 4660, 1115, 5258, 1364, 4421, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8170 (SKUUtils)
+// Module 8335 (SKUUtils)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import matchPathCompat from "matchPathCompat" /* 4660 */;
-import StoreUtils from "StoreUtils" /* 5092 */;
+import StoreUtils from "StoreUtils" /* 5258 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

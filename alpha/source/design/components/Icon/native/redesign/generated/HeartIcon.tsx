@@ -1,13 +1,13 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8401
+// Function ID: 8402
 // Name: HeartIcon
-// Dependencies: [19, 21, 576, 4530, 8237, 2]
+// Dependencies: [19, 21, 576, 4530, 8402, 2]
 // Exports: HeartIcon
 
-// Module 8236 (HeartIcon)
+// Module 8401 (HeartIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod8237 from "module_8237" /* 8237 */;
+import _mod8402 from "module_8402" /* 8402 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HeartIcon = function HeartIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8237, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8402, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

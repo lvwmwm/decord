@@ -1,11 +1,11 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16454
+// Function ID: 16455
 // Name: VibegrationsInstallTarget
-// Dependencies: [5, 8496, 2]
+// Dependencies: [5, 8661, 2]
 // Exports: repairVibegrationsGuildHints, vibegrationsInstallGuildId
 
-// Module 16274 (VibegrationsInstallTarget)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
+// Module 16454 (VibegrationsInstallTarget)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8661 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -71,20 +71,20 @@ let closure_3 = async function _repairVibegrationsGuildHints(arg0, arg1) {
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsInstallTarget.tsx");
 
-export const vibegrationsInstallGuildId = function vibegrationsInstallGuildId(stateFromStores, stateFromStores2, guildId) {
+export const vibegrationsInstallGuildId = function vibegrationsInstallGuildId(project, integrationStatus, guildId) {
   let prop;
-  if (stateFromStores2 != null) {
-    prop = stateFromStores2.integration_installed;
+  if (integrationStatus != null) {
+    prop = integrationStatus.integration_installed;
   }
   let guild_id = guildId;
   if (true === prop) {
     let guild_id1;
-    if (stateFromStores != null) {
-      guild_id1 = stateFromStores.guild_id;
+    if (project != null) {
+      guild_id1 = project.guild_id;
     }
     guild_id = guildId;
     if (null != guild_id1) {
-      guild_id = stateFromStores.guild_id;
+      guild_id = project.guild_id;
     }
   }
   return guild_id;

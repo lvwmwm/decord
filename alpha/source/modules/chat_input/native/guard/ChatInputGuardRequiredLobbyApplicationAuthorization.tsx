@@ -1,12 +1,12 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 12124
+// Function ID: 12125
 // Name: ChatInputGuardRequiredLobbyApplicationAuthorization
-// Dependencies: [19, 17, 21, 4836, 576, 11941, 1115, 4525, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 12112, 1115, 4525, 2]
 
-// Module 11953 (ChatInputGuardRequiredLobbyApplicationAuthorization)
+// Module 12124 (ChatInputGuardRequiredLobbyApplicationAuthorization)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12112 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

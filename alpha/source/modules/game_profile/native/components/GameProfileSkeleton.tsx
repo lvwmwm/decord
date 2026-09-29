@@ -1,13 +1,13 @@
-// Module ID: 8195
-// Function ID: 8196
+// Module ID: 8360
+// Function ID: 8361
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 4836, 576, 8196, 4566, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8361, 4566, 2]
 // Exports: GameProfileSkeletonButton, GameProfileSkeletonContainer
 
-// Module 8195 (GameProfileSkeleton)
+// Module 8360 (GameProfileSkeleton)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 8196 */;
+import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 8361 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

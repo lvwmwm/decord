@@ -1,10 +1,10 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 9087
+// Function ID: 9088
 // Name: EmbeddedActivityWebView
-// Dependencies: [5, 32, 19, 17, 8320, 2005, 1074, 4739, 21, 4836, 3, 1364, 8923, 1255, 7746, 8924, 8925, 1363, 8927, 8928, 8929, 1241, 1110, 563, 5203, 1115, 8503, 1271, 8930, 1366, 8753, 8766, 7720, 5037, 8765, 2]
+// Dependencies: [5, 32, 19, 17, 8485, 2005, 1074, 4739, 21, 4836, 3, 1364, 9088, 1255, 7911, 9089, 9090, 1363, 9092, 9093, 9094, 1241, 1110, 563, 5369, 1115, 8668, 1271, 9095, 1366, 8918, 8931, 7885, 5037, 8930, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 8922 (EmbeddedActivityWebView)
+// Module 9087 (EmbeddedActivityWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
@@ -12,16 +12,16 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import usePreviousDefault from "usePrevious" /* 7720 */;
-import WebView from "WebView" /* 7746 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8753 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8766 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import usePreviousDefault from "usePrevious" /* 7885 */;
+import WebView from "WebView" /* 7911 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8918 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8930 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8931 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8320 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8485 */;
 
 require = fn;
 function getSafeArea(arg0, arg1) {

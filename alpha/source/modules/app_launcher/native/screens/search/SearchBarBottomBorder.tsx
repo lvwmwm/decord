@@ -1,13 +1,13 @@
-// Module ID: 11579
-// Function ID: 11580
+// Module ID: 11748
+// Function ID: 11749
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 4836, 576, 4566, 5280, 5284, 2]
+// Dependencies: [19, 21, 4836, 576, 4566, 5446, 5450, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 11579 (SearchBarBottomBorder)
+// Module 11748 (SearchBarBottomBorder)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+import spring from "spring" /* 5446 */;
+import springPresets from "springPresets" /* 5450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -43,7 +43,7 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     return { opacity: spring.withSpring(num, springPresets.springStandard) };
   };
   const obj2 = triggerScrollHeight(4566);
-  fn.__closure = { withSpring: triggerScrollHeight(5280).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5284).springStandard };
+  fn.__closure = { withSpring: triggerScrollHeight(5446).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5450).springStandard };
   fn.__workletHash = 5466161440826;
   fn.__initData = __initData;
   const obj4 = { scrollHandler: callback, bottomBorderComponent: null };

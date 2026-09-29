@@ -1,9 +1,9 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 6042
+// Function ID: 6043
 // Name: LanguageDetector
-// Dependencies: [5877, 2]
+// Dependencies: [6043, 2]
 
-// Module 5876 (LanguageDetector)
+// Module 6042 (LanguageDetector)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

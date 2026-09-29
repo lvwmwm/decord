@@ -1,10 +1,10 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16270
+// Function ID: 16271
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 7339, 4836, 576, 6421, 7288, 1115, 10386, 16095, 16096, 2]
+// Dependencies: [19, 21, 7504, 4836, 576, 6587, 7453, 1115, 10555, 16271, 16272, 2]
 // Exports: default
 
-// Module 16094 (ICYMICustomScoresModal)
+// Module 16270 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(7339);
+const NativeStackNavigator = fn(7504);
 let closure_5 = NativeStackNavigator.createNativeStackNavigator();
 const createStyles = fn(4836);
 const obj3 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
@@ -47,22 +47,22 @@ export default function ICYMICustomScoresModal() {
         const obj = { title: null, headerLeft: null };
         const intl = closure_0(1115).intl;
         obj.title = intl.string(closure_0(1115).t.jVshKt);
-        obj.headerLeft = closure_0(7288).getRenderModalCloseImage(navigation.navigation);
-        const merged = Object.assign(closure_1(10386)());
+        obj.headerLeft = closure_0(7453).getRenderModalCloseImage(navigation.navigation);
+        const merged = Object.assign(closure_1(10555)());
         return obj;
       },
       getComponent() {
-        return closure_0(16095).default;
+        return closure_0(16271).default;
       }
     }),
     closure_3(closure_5.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: closure_0(7288).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: closure_0(7453).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return closure_0(16096).default;
+        return closure_0(16272).default;
       }
     })
   ];

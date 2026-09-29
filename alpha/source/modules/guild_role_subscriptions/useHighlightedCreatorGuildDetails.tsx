@@ -1,12 +1,12 @@
-// Module ID: 17536
-// Function ID: 17537
+// Module ID: 17725
+// Function ID: 17726
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 1074, 17537, 1397, 2]
+// Dependencies: [19, 1074, 17726, 1397, 2]
 // Exports: default
 
-// Module 17536 (useHighlightedCreatorGuildDetails)
+// Module 17725 (useHighlightedCreatorGuildDetails)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 17537 */;
+import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 17726 */;
 import noop from "module_19" /* 19 */;
 
 const MarketingURLs = fn(1074).MarketingURLs;

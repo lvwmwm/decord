@@ -1,14 +1,14 @@
-// Module ID: 6463
-// Function ID: 6464
+// Module ID: 6629
+// Function ID: 6630
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1074, 6464, 21, 5936, 6465, 6466, 5039, 1249, 6499, 6414, 6421, 1115, 2]
+// Dependencies: [5, 19, 1074, 6630, 21, 6102, 6631, 6632, 5039, 1249, 6665, 6580, 6587, 1115, 2]
 // Exports: default
 
-// Module 6463 (PhoneVerificationModal)
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6414 */;
-import AddPhoneDefault from "AddPhone" /* 6465 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6466 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 6499 */;
+// Module 6629 (PhoneVerificationModal)
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6580 */;
+import AddPhoneDefault from "AddPhone" /* 6631 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6632 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 6665 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const VerificationModalScenes = fn(1074).VerificationModalScenes;
-let closure_5 = fn(6464).PHONE_VERIFICATION_MODAL_KEY;
+let closure_5 = fn(6630).PHONE_VERIFICATION_MODAL_KEY;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/PhoneVerificationModal.tsx");
@@ -135,7 +135,7 @@ export default function PhoneVerificationModal(onClose) {
                   c4 = 1;
                   c2 = 2;
                   c1 = 1;
-                  const obj5 = { value: v3(6466).addPhone(reason, reason, reason.reason), done: false };
+                  const obj5 = { value: v3(6632).addPhone(reason, reason, reason.reason), done: false };
                   return obj5;
                 }
               } else if (1 === tmp6) {

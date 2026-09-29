@@ -1,9 +1,9 @@
-// Module ID: 7093
-// Function ID: 7094
+// Module ID: 7258
+// Function ID: 7259
 // Name: PendingReplyStore
 // Dependencies: [32, 2045, 5056, 11, 504, 573, 2]
 
-// Module 7093 (PendingReplyStore)
+// Module 7258 (PendingReplyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

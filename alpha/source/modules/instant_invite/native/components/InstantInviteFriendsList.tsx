@@ -1,20 +1,20 @@
-// Module ID: 9347
-// Function ID: 9348
+// Module ID: 9514
+// Function ID: 9515
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1074, 21, 4836, 5836, 576, 1177, 1115, 5435, 4800, 4693, 4832, 9348, 6402, 6045, 2]
+// Dependencies: [19, 1074, 21, 4836, 6003, 576, 1177, 1115, 5602, 4800, 4693, 4832, 9515, 6568, 6211, 2]
 // Exports: default
 
-// Module 9347 (InstantInviteFriendsList)
+// Module 9514 (InstantInviteFriendsList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9348 */;
+import Pressables from "Pressables" /* 5602 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9515 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5836 */;
+import TextStyles_mod from "TextStyles" /* 6003 */;
 
 require = fn;
 function keyExtractor(item) {

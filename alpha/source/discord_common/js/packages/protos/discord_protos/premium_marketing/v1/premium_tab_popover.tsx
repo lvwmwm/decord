@@ -1,14 +1,14 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10317
+// Function ID: 10318
 // Name: premium_tab_popover
-// Dependencies: [32, 1187, 10143, 10135, 10134, 10133, 2]
+// Dependencies: [32, 1187, 10310, 10302, 10301, 10300, 2]
 
-// Module 10150 (premium_tab_popover)
+// Module 10317 (premium_tab_popover)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10133 */;
-import help_article from "help_article" /* 10134 */;
-import cta_button from "cta_button" /* 10135 */;
-import theme_aware_asset from "theme_aware_asset" /* 10143 */;
+import localized_string from "localized_string" /* 10300 */;
+import help_article from "help_article" /* 10301 */;
+import cta_button from "cta_button" /* 10302 */;
+import theme_aware_asset from "theme_aware_asset" /* 10310 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

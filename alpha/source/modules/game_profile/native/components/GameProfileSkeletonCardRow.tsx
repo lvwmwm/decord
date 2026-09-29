@@ -1,10 +1,10 @@
-// Module ID: 8213
-// Function ID: 8214
+// Module ID: 8378
+// Function ID: 8379
 // Name: GameProfileSkeletonCardRow
 // Dependencies: [19, 17, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 8213 (GameProfileSkeletonCardRow)
+// Module 8378 (GameProfileSkeletonCardRow)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

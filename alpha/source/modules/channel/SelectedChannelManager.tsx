@@ -1,17 +1,17 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17442
+// Function ID: 17443
 // Name: SelectedChannelManager
-// Dependencies: [1993, 2099, 4655, 1074, 6539, 6760, 5723, 1101, 573, 2]
+// Dependencies: [1993, 2099, 4655, 1074, 6705, 6926, 5890, 1101, 573, 2]
 
-// Module 17253 (SelectedChannelManager)
+// Module 17442 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
+import transitionToGuild from "transitionToGuild" /* 6926 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 const findFirstVoiceChannelId = fn(2099).findFirstVoiceChannelId;

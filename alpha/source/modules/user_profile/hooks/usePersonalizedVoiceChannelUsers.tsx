@@ -1,12 +1,12 @@
-// Module ID: 12599
-// Function ID: 12600
+// Module ID: 12769
+// Function ID: 12770
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7072, 6012, 1372, 4860, 1074, 504, 2]
+// Dependencies: [7237, 6178, 1372, 4860, 1074, 504, 2]
 // Exports: default
 
-// Module 12599 (usePersonalizedVoiceChannelUsers)
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
-import ConsentStore from "ConsentStore" /* 6012 */;
+// Module 12769 (usePersonalizedVoiceChannelUsers)
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7237 */;
+import ConsentStore from "ConsentStore" /* 6178 */;
 import UserStore from "UserStore" /* 1372 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5092
-// Function ID: 5093
+// Module ID: 5258
+// Function ID: 5259
 // Name: StoreUtils
-// Dependencies: [5, 502, 4490, 4491, 4494, 1074, 5093, 5091, 5172, 1432, 5174, 1271, 1364, 1115, 2]
+// Dependencies: [5, 502, 4490, 4491, 4494, 1074, 5259, 5257, 5338, 1432, 5340, 1271, 1364, 1115, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5092 (StoreUtils)
+// Module 5258 (StoreUtils)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
@@ -13,7 +13,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import BillingInfoStore from "BillingInfoStore" /* 4490 */;
 import PaymentSourceStore from "PaymentSourceStore" /* 4491 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import allSettled_mod from "allSettled" /* 5093 */;
+import allSettled_mod from "allSettled" /* 5259 */;
 
 require = fn;
 let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
@@ -246,14 +246,14 @@ const Constants = fn(1074);
 ({ Endpoints: closure_7, OperatingSystems: closure_8 } = Constants);
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
-const isMobile = fn(5091).isMobile;
+const isMobile = fn(5257).isMobile;
 let tmp4 = !isMobile;
 if (!isMobile) {
-  tmp4 = !fn(5091).isTablet;
+  tmp4 = !fn(5257).isTablet;
 }
 if (tmp4) {
-  tmp4 = -1 !== fn(5172).getChromeVersion();
-  let obj2 = fn(5172);
+  tmp4 = -1 !== fn(5338).getChromeVersion();
+  let obj2 = fn(5338);
 }
 let closure_9 = tmp4;
 const size = fn(2);

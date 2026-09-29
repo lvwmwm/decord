@@ -1,10 +1,10 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7606
+// Function ID: 7607
 // Name: transformSticker
-// Dependencies: [2024, 5198, 7442, 7393, 1115, 2021, 2]
+// Dependencies: [2024, 5364, 7607, 7558, 1115, 2021, 2]
 // Exports: transformSticker
 
-// Module 7441 (transformSticker)
+// Module 7606 (transformSticker)
 import util from "util" /* 1115 */;
 import StickersConstants from "StickersConstants" /* 2024 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ export const transformSticker = function transformSticker(tmp5Result8) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp(7442).NativeLottieRenderMode;
+  const NativeLottieRenderMode = tmp(7607).NativeLottieRenderMode;
   obj.renderMode = setting === StickerAnimationSettings.ALWAYS_ANIMATE ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
   const obj2 = { isPreview: setting !== StickerAnimationSettings.ALWAYS_ANIMATE };
   const tmpResult = require("StickersUtils");

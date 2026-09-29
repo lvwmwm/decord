@@ -1,0 +1,15 @@
+// Module ID: 6344
+// Function ID: 6345
+// Dependencies: [6345, 6320]
+
+// Module 6344
+const require = globalThis.__r;
+
+for (const key10013 in require("module_6345")) {
+  arg5[key10013] = require("module_6345")[key10013];
+  continue;
+}
+for (const key10017 in require("transformLongPressProps")) {
+  arg5[key10017] = require("transformLongPressProps")[key10017];
+  continue;
+}

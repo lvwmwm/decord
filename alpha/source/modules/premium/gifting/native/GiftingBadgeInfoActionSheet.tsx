@@ -1,25 +1,25 @@
-// Module ID: 10213
-// Function ID: 10214
+// Module ID: 10380
+// Function ID: 10381
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4825, 7637, 1074, 21, 4836, 576, 1613, 504, 7629, 1241, 6571, 4832, 1115, 2583, 10208, 10214, 2]
+// Dependencies: [19, 17, 4825, 7802, 1074, 21, 4836, 576, 1613, 504, 7794, 1241, 6737, 4832, 1115, 2583, 10375, 10381, 2]
 // Exports: default
 
-// Module 10213 (GiftingBadgeInfoActionSheet)
+// Module 10380 (GiftingBadgeInfoActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import _modDef2583 from "module_2583" /* 2583 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10214 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10375 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10381 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7802 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(7637).getSingleRequirementThreshold;
+let closure_7 = fn(7802).getSingleRequirementThreshold;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -45,7 +45,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const tmp = closure_11();
   _require = tmp;
   let items = [BadgeDirectoryStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(7629).BadgeId.GIFTING));
+  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(7794).BadgeId.GIFTING));
   let obj = require("initialize");
   const items1 = [AccessibilityStore];
   importDefault = require("initialize").useStateFromStores(items1, () => useReducedMotion.useReducedMotion);

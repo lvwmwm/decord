@@ -1,14 +1,14 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10782
+// Function ID: 10783
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 6045, 8053, 1364, 6571, 5435, 1115, 5940, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1613, 6211, 8218, 1364, 6737, 5602, 1115, 6106, 4832, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 10613 (UserProfileStackedActionSheet)
+// Module 10782 (UserProfileStackedActionSheet)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import Form from "Form" /* 8053 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
+import Form from "Form" /* 8218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,8 +48,8 @@ export default function UserProfileStackedActionSheet(onBack) {
     const intl = tmp5(1115).intl;
     obj3.accessibilityLabel = intl.string(tmp5(1115).t["13/7kX"]);
     obj3.onPress = onBack;
-    obj3.children = tmp4(tmp5(5940).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(5435).PressableOpacity, obj3);
+    obj3.children = tmp4(tmp5(6106).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(5602).PressableOpacity, obj3);
   }
   const items1 = [tmp4Result, React4(Text_Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result2) {
@@ -87,7 +87,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(6045).BottomSheetFlatList, obj);
+  return closure_4(data(6211).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
@@ -103,5 +103,5 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return React4(Form.FormDivider, { style: divider.divider });
   };
-  return closure_4(renderItem(6045).BottomSheetSectionList, obj);
+  return closure_4(renderItem(6211).BottomSheetSectionList, obj);
 };

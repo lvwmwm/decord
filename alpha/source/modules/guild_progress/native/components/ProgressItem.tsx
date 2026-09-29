@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 12142
+// Function ID: 12143
 // Name: ProgressItem
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 5016, 8053, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 5016, 8218, 2]
 // Exports: default
 
-// Module 11971 (ProgressItem)
+// Module 12142 (ProgressItem)
 import nativeDefault from "native" /* 576 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import noop from "module_19" /* 19 */;

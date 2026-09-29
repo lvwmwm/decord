@@ -1,14 +1,14 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9261
+// Function ID: 9262
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2051, 1074, 21, 4836, 576, 8943, 4800, 9097, 8051, 1177, 1115, 4832, 5281, 8981, 2]
+// Dependencies: [19, 17, 2051, 1074, 21, 4836, 576, 9108, 4800, 9262, 8216, 1177, 1115, 4832, 5447, 9146, 2]
 // Exports: default
 
-// Module 9096 (EndEventActionSheet)
+// Module 9261 (EndEventActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8981 */;
-import CallsUtils from "CallsUtils" /* 9097 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9146 */;
+import CallsUtils from "CallsUtils" /* 9262 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/native
 export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   const tmp = closure_7();
-  const activeEvent = channel(8943).useActiveEvent(channel.id);
+  const activeEvent = channel(9108).useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
   } else {
@@ -48,7 +48,7 @@ export default function EndEventActionSheet(channel) {
     const intl3 = tmp2(1115).intl;
     obj7.text = intl3.string(tmp2(1115).t.P60OAX);
     obj7.onPress = handleClose;
-    obj6.children = closure_5(tmp2(5281).Button, obj7);
+    obj6.children = closure_5(tmp2(5447).Button, obj7);
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: null };
     const obj9 = { text: null, variant: "destructive", grow: true, onPress: null };
@@ -61,11 +61,11 @@ export default function EndEventActionSheet(channel) {
         CallsUtils.handleDisconnect(channel);
       }
     };
-    obj8.children = closure_5(tmp2(5281).Button, obj9);
+    obj8.children = closure_5(tmp2(5447).Button, obj9);
     items[3] = closure_5(View, obj8);
     obj3.children = items;
     obj2.children = closure_6(View, obj3);
-    return closure_5(activeEvent(8051), obj2);
+    return closure_5(activeEvent(8216), obj2);
   }
-  let obj = channel(8943);
+  let obj = channel(9108);
 };

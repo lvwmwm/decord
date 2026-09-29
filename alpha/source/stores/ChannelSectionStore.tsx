@@ -1,19 +1,19 @@
-// Module ID: 6698
-// Function ID: 6699
+// Module ID: 6864
+// Function ID: 6865
 // Name: ChannelSectionStore
-// Dependencies: [4750, 6699, 2049, 2045, 2067, 4469, 2099, 4655, 1372, 1074, 2052, 1085, 6700, 6701, 1110, 11, 5091, 504, 1435, 573, 2]
+// Dependencies: [4750, 6865, 2049, 2045, 2067, 4469, 2099, 4655, 1372, 1074, 2052, 1085, 6866, 6867, 1110, 11, 5257, 504, 1435, 573, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6698 (ChannelSectionStore)
+// Module 6864 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import ApexExperiment from "ApexExperiment" /* 1435 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6700 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6701 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6866 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6867 */;
 import ExperimentStore from "ExperimentStore" /* 4750 */;
-import SearchMessageStore from "SearchMessageStore" /* 6699 */;
+import SearchMessageStore from "SearchMessageStore" /* 6865 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
@@ -621,7 +621,7 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (sidebars[channelId] != null) {
           type = tmp10.type;
         }
-        if (type === tmp(6700).SidebarType.VIEW_CHANNEL) {
+        if (type === tmp(6866).SidebarType.VIEW_CHANNEL) {
           if (tmp10.channelId === channelId) {
             return flag;
           }
@@ -631,8 +631,8 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (null != channel) {
           flag2 = flag;
           if (isChannelChatInSidebar(channel.type)) {
-            const obj = { type: tmp(6700).SidebarType.VIEW_CHANNEL, channelId, details: null };
-            const obj2 = { type: tmp(6700).ViewChannelDetailType.CHAT, initialMessageId: messageId };
+            const obj = { type: tmp(6866).SidebarType.VIEW_CHANNEL, channelId, details: null };
+            const obj2 = { type: tmp(6866).ViewChannelDetailType.CHAT, initialMessageId: messageId };
             obj.details = obj2;
             sidebars[channelId] = obj;
             flag2 = true;

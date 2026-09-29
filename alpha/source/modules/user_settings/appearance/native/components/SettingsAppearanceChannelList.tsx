@@ -1,16 +1,16 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 15011
+// Function ID: 15012
 // Name: SettingsAppearanceChannelList
-// Dependencies: [19, 17, 21, 4836, 576, 14837, 14838, 14839, 4566, 1115, 14845, 8179, 14848, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 15012, 15013, 15014, 4566, 1115, 15020, 8344, 15023, 2]
 // Exports: default
 
-// Module 14836 (SettingsAppearanceChannelList)
+// Module 15011 (SettingsAppearanceChannelList)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 14837 */;
-import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 14838 */;
-import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 14839 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 14848 */;
+import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 15012 */;
+import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 15013 */;
+import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 15014 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 15023 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -74,9 +74,9 @@ export default function ChannelListPreview(useGradientBackground) {
   if (useGradientBackground) {
     let obj2 = { style: tmp.channelPreviewGradient, children: null };
     let obj3 = { themes, themeIndex, isDimmed: false, backgroundToken: tmp4(576).colors.BACKGROUND_BASE_LOW };
-    obj2.children = closure_5(tmp4(14845), obj3);
+    obj2.children = closure_5(tmp4(15020), obj3);
     tmp7 = closure_5(closure_4, obj2);
-    const tmp4Result = tmp4(14845);
+    const tmp4Result = tmp4(15020);
   }
   const items2 = [tmp7, , ];
   const obj4 = {
@@ -89,7 +89,7 @@ export default function ChannelListPreview(useGradientBackground) {
     showsVerticalScrollIndicator: false,
     importantForAccessibility: "no-hide-descendants"
   };
-  items2[1] = closure_5(animatedStyles(8179).FlashList, obj4);
+  items2[1] = closure_5(animatedStyles(8344).FlashList, obj4);
   items2[2] = closure_5(SettingsAppearanceChannelListPreviewNitroUpsellDefault, { visible: isNitroLocked, theme: themes[themeIndex] });
   obj.children = items2;
   return closure_6(ReanimatedRexportDefault.View, obj);

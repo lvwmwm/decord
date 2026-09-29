@@ -1,10 +1,10 @@
-// Module ID: 6994
-// Function ID: 6995
+// Module ID: 7160
+// Function ID: 7161
 // Name: FeaturedCategorySubblockRecord
-// Dependencies: [6995, 2]
+// Dependencies: [7161, 2]
 
-// Module 6994 (FeaturedCategorySubblockRecord)
-import FeaturedSubblockType from "FeaturedSubblockType" /* 6995 */;
+// Module 7160 (FeaturedCategorySubblockRecord)
+import FeaturedSubblockType from "FeaturedSubblockType" /* 7161 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function FeaturedCategorySubblockRecord(unpublished_at) {

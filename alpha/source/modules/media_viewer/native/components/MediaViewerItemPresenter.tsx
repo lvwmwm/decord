@@ -1,10 +1,10 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12711
+// Function ID: 12712
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 12540, 7712, 12539, 4566, 4567, 2]
+// Dependencies: [19, 17, 21, 12710, 7877, 12709, 4566, 4567, 2]
 // Exports: default
 
-// Module 12541 (MediaViewerItemPresenter)
+// Module 12711 (MediaViewerItemPresenter)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
 

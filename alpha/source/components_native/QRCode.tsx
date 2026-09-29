@@ -1,17 +1,17 @@
-// Module ID: 9319
-// Function ID: 9320
+// Module ID: 9486
+// Function ID: 9487
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 9320, 5269, 9334, 7691, 2]
+// Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 9487, 5435, 9501, 7856, 2]
 
-// Module 9319 (components_native/QRCode)
+// Module 9486 (components_native/QRCode)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7691 */;
-import QRCodeDefault from "QRCode" /* 9320 */;
-import _mod9334 from "module_9334" /* 9334 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7856 */;
+import QRCodeDefault from "QRCode" /* 9487 */;
+import _mod9501 from "module_9501" /* 9501 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const VisualEffectViewDefault = tmp7(5269);
+const VisualEffectViewDefault = tmp7(5435);
 require = fn;
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
 get_ActivityIndicator = fn(17);
@@ -70,7 +70,7 @@ QRCodeWithOverlay.prototype["render"] = function render() {
   const obj3 = { style: null, children: null };
   const items1 = [tmp.qrCodeOverlay, React5.absoluteFill];
   obj3.style = items1;
-  obj4 = { style: tmp[frozen[SIZE_40]], source: _mod9334 };
+  obj4 = { style: tmp[frozen[SIZE_40]], source: _mod9501 };
   obj3.children = React6(timestampProducer, obj4);
   items[1] = React6(hasOwnProperty, obj3);
   let tmp6Result = null;

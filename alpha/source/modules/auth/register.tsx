@@ -1,17 +1,17 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15756
+// Function ID: 15757
 // Name: auth/register
-// Dependencies: [5, 15582, 502, 1074, 1099, 4421, 1241, 5029, 1249, 4736, 5177, 573, 15583, 15584, 2]
+// Dependencies: [5, 15757, 502, 1074, 1099, 4421, 1241, 5029, 1249, 4736, 5343, 573, 15758, 15759, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15581 (auth/register)
+// Module 15756 (auth/register)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import APIErrorDefault from "APIError" /* 4736 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5177 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 15584 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5343 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 15759 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -204,7 +204,7 @@ function registerFull(giftCodeSKUId) {
   }
   DispatcherDefault.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(15583)(birthday, constants2.REGISTER);
+    tmp4(15758)(birthday, constants2.REGISTER);
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     tmp4(1241).track(constants.AGE_GATE_ACTION, obj2);
     const tmp14 = constants;
@@ -279,7 +279,7 @@ function registerFull(giftCodeSKUId) {
     }
   });
 }
-const ParentalConsentStore = fn(15582);
+const ParentalConsentStore = fn(15757);
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, AnalyticsSections: closure_7, Endpoints: closure_8 } = Constants);
 const AgeGateConstants = fn(1099);

@@ -1,17 +1,17 @@
-// Module ID: 10726
-// Function ID: 10727
+// Module ID: 10895
+// Function ID: 10896
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 576, 4836, 10727, 1115, 10728, 4832, 1364, 6073, 7131, 7141, 2]
+// Dependencies: [19, 17, 21, 576, 4836, 10896, 1115, 10897, 4832, 1364, 6239, 7296, 7306, 2]
 // Exports: default
 
-// Module 10726 (AppStoreOverlayStatsCarousel)
+// Module 10895 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import AnalyticsActions from "AnalyticsActions" /* 7131 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10727 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10728 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6239 */;
+import AnalyticsActions from "AnalyticsActions" /* 7296 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10896 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10897 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,8 +31,8 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const result = AppStoreOverlayStatCardUtils.formatAppStoreRatingValue(stat.rating, util.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      result1 = tmp9(10727).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
-      const tmp9Result = tmp9(10727);
+      result1 = tmp9(10896).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
+      const tmp9Result = tmp9(10896);
     }
     const appStoreStarFillAmounts = AppStoreOverlayStatCardUtils.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1115).intl;
@@ -161,10 +161,10 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
           let HorizontalScrollingDirection = dependencyMap;
           obj.carouselType = AnalyticsActions.AppStoreOverlayCarouselTypes.STATS;
           if (bound > current) {
-            HorizontalScrollingDirection = tmp2(7141).HorizontalScrollingDirection;
+            HorizontalScrollingDirection = tmp2(7306).HorizontalScrollingDirection;
             let LEFT = HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7141).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7306).HorizontalScrollingDirection.LEFT;
           }
           obj.scrollingDirection = LEFT;
           obj.carouselPosition = bound;

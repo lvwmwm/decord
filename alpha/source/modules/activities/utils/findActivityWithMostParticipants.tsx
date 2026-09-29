@@ -1,10 +1,10 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15871
+// Function ID: 15872
 // Name: findActivityWithMostParticipants
 // Dependencies: [4479, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 15696 (findActivityWithMostParticipants)
+// Module 15871 (findActivityWithMostParticipants)
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const size = fn(2);

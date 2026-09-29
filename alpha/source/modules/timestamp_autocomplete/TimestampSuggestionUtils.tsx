@@ -1,13 +1,13 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 10055
+// Function ID: 10056
 // Name: TimestampSuggestionUtils
-// Dependencies: [32, 2112, 4421, 9889, 1115, 2]
+// Dependencies: [32, 2112, 4421, 10056, 1115, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 9888 (TimestampSuggestionUtils)
+// Module 10055 (TimestampSuggestionUtils)
 import util from "util" /* 1115 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import _mod9889 from "module_9889" /* 9889 */;
+import _mod10056 from "module_10056" /* 10056 */;
 import _slicedToArray from "module_32" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 
@@ -20,7 +20,7 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/timestamp_autocomplete/TimestampSuggestionUtils.tsx");
 
 export const preloadTimestampParser = function preloadTimestampParser() {
-  _mod9889;
+  _mod10056;
 };
 export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0, cloneResult1) {
   let obj = cloneResult1;
@@ -221,7 +221,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
     }
     return items1;
   } else {
-    const tmp6 = _mod9889;
+    const tmp6 = _mod10056;
     locale = LocaleStore.locale;
     if ("en-US" === locale) {
       let en = tmp6.en;

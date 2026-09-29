@@ -1,10 +1,10 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 17137
+// Function ID: 17138
 // Name: useCanConnect
 // Dependencies: [2045, 2067, 4469, 4855, 1085, 504, 4981, 2]
 // Exports: default
 
-// Module 16950 (useCanConnect)
+// Module 17137 (useCanConnect)
 import ChannelUtils from "ChannelUtils" /* 4981 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;

@@ -1,9 +1,9 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15733
+// Function ID: 15734
 // Name: ScreenRecordingManager
 // Dependencies: [17, 2]
 
-// Module 15558 (ScreenRecordingManager)
+// Module 15733 (ScreenRecordingManager)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

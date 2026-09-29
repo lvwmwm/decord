@@ -1,13 +1,13 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16586
+// Function ID: 16587
 // Name: VibegrationsNativeTurnTimer
-// Dependencies: [19, 21, 4836, 16402, 4832, 16350, 2]
+// Dependencies: [19, 21, 4836, 16587, 4832, 16530, 2]
 // Exports: default
 
-// Module 16401 (VibegrationsNativeTurnTimer)
+// Module 16586 (VibegrationsNativeTurnTimer)
 import Text_Text from "Text/Text" /* 4832 */;
-import VibegrationsDuration from "VibegrationsDuration" /* 16350 */;
-import useVibegrationsElapsedMs from "useVibegrationsElapsedMs" /* 16402 */;
+import VibegrationsDuration from "VibegrationsDuration" /* 16530 */;
+import useVibegrationsElapsedMs from "useVibegrationsElapsedMs" /* 16587 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

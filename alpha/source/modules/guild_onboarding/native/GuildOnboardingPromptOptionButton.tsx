@@ -1,10 +1,10 @@
-// Module ID: 6547
-// Function ID: 6548
+// Module ID: 6713
+// Function ID: 6714
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 4825, 5771, 1375, 21, 4566, 4836, 576, 504, 4837, 5280, 6548, 4541, 1115, 4531, 4548, 5435, 6551, 1397, 4832, 6554, 1177, 2]
+// Dependencies: [32, 19, 17, 4825, 5938, 1375, 21, 4566, 4836, 576, 504, 4837, 5446, 6714, 4541, 1115, 4531, 4548, 5602, 6717, 1397, 4832, 6720, 1177, 2]
 // Exports: default
 
-// Module 6547 (GuildOnboardingPromptOptionButton)
+// Module 6713 (GuildOnboardingPromptOptionButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
@@ -13,7 +13,7 @@ import timing from "timing" /* 4837 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+import EmojiStore from "EmojiStore" /* 5938 */;
 
 require = fn;
 const View = fn(17).View;
@@ -122,11 +122,11 @@ export default function PromptOptionButton(option) {
     }
   }
   let obj3 = option(4566);
-  R.__closure = { selected, withTiming: option(4837).withTiming, Easing: option(4566).Easing, useReducedMotion: stateFromStores1, withSequence: option(4566).withSequence, withSpring: option(5280).withSpring };
+  R.__closure = { selected, withTiming: option(4837).withTiming, Easing: option(4566).Easing, useReducedMotion: stateFromStores1, withSequence: option(4566).withSequence, withSpring: option(5446).withSpring };
   R.__workletHash = 8281627194581;
   R.__initData = __initData;
   const animatedStyle = obj3.useAnimatedStyle(R);
-  const tmp8 = selected(6548)(option.guildId);
+  const tmp8 = selected(6714)(option.guildId);
   closure_5 = tmp8;
   num = 0;
   if (null != tmp8) {
@@ -176,7 +176,7 @@ export default function PromptOptionButton(option) {
       ref.current = false;
     }
   }, items4);
-  let obj4 = { selected, withTiming: option(4837).withTiming, Easing: option(4566).Easing, useReducedMotion: stateFromStores1, withSequence: option(4566).withSequence, withSpring: option(5280).withSpring };
+  let obj4 = { selected, withTiming: option(4837).withTiming, Easing: option(4566).Easing, useReducedMotion: stateFromStores1, withSequence: option(4566).withSequence, withSpring: option(5446).withSpring };
   let obj5 = stateFromStores1;
   class V {
     constructor() {
@@ -456,9 +456,9 @@ export default function PromptOptionButton(option) {
       str = "";
     }
     obj13.name = str;
-    obj12.children = closure_9(tmp7(6551), obj13);
+    obj12.children = closure_9(tmp7(6717), obj13);
     tmp38Result = tmp38(closure_5, obj12);
-    const tmp7Result = tmp7(6551);
+    const tmp7Result = tmp7(6717);
   }
   const items8 = [tmp38Result, ];
   const obj15 = { style: tmp.optionText, children: null };
@@ -472,7 +472,7 @@ export default function PromptOptionButton(option) {
   obj15.children = items9;
   items8[1] = ref(closure_5, obj15);
   obj11.children = items8;
-  const items10 = [ref(option(5435).PressableOpacity, obj11), , , ];
+  const items10 = [ref(option(5602).PressableOpacity, obj11), , , ];
   let tmp44Result2 = null;
   if (num > 0) {
     const obj18 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: null, children: null };
@@ -491,7 +491,7 @@ export default function PromptOptionButton(option) {
   obj21.style = items12;
   const obj16 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
   const tmp2Result20 = option(4548);
-  obj21.children = closure_9(option(6554).CheckmarkSmallIcon, { size: "xs", color: selected(576).colors.WHITE });
+  obj21.children = closure_9(option(6720).CheckmarkSmallIcon, { size: "xs", color: selected(576).colors.WHITE });
   items10[2] = closure_9(selected(4566).View, obj21);
   if (canBeNew) {
     canBeNew = !selected;

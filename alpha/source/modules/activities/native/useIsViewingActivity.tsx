@@ -1,12 +1,12 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 9016
+// Function ID: 9017
 // Name: useIsViewingActivity
-// Dependencies: [4852, 8838, 4692, 8835, 504, 2]
+// Dependencies: [4852, 9003, 4692, 9000, 504, 2]
 // Exports: useIsViewingActivity
 
-// Module 8851 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 8835 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 8838 */;
+// Module 9016 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 9000 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9003 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 const require = fn;

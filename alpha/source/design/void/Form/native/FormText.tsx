@@ -1,12 +1,12 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8231
+// Function ID: 8232
 // Name: FormText
-// Dependencies: [19, 21, 4836, 5753, 576, 1177, 2]
+// Dependencies: [19, 21, 4836, 5920, 576, 1177, 2]
 
-// Module 8066 (FormText)
+// Module 8231 (FormText)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
+import LegacyTokens from "LegacyTokens" /* 5920 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

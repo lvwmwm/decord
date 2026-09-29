@@ -1,7 +1,7 @@
 // Module ID: 4813
 // Function ID: 4814
 // Name: parseURL
-// Dependencies: [32, 1074, 1076, 4814, 4815, 1473, 1930, 1368, 4816, 4821, 12501, 5089, 13393, 1366, 4990, 8516, 6826, 1610, 1364, 9173, 1241, 1254, 13394, 2]
+// Dependencies: [32, 1074, 1076, 4814, 4815, 1473, 1930, 1368, 4816, 4821, 12671, 5255, 13562, 1366, 4990, 8681, 6992, 1610, 1364, 9338, 1241, 1254, 13563, 2]
 // Exports: default
 
 // Module 4813 (parseURL)
@@ -10,8 +10,8 @@ import _modDef1473 from "module_1473" /* 1473 */;
 import _modDef1930 from "module_1930" /* 1930 */;
 import findCodedLinks from "findCodedLinks" /* 4816 */;
 import LinkUtils from "LinkUtils" /* 4990 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5089 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13394 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5255 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13563 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -124,7 +124,7 @@ export default function parseURL(arg0) {
                                   if (tmp5(4821).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
                                     if (tmp5(4821).CodedLinkType.APP_OAUTH2_LINK !== type) {
                                       if (tmp5(4821).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                        const tmp5Result = tmp5(12501);
+                                        const tmp5Result = tmp5(12671);
                                         const tmp10 = _slicedToArray(findCodedLinkResult.code.split("-"), 2)[1];
                                         if (tmp5Result.isVirtualCurrencyEnabled().enabled) {
                                           if (tmp9 === constants2.ORBS) {
@@ -177,7 +177,7 @@ export default function parseURL(arg0) {
       obj17.payload = obj18;
       return obj17;
     } else {
-      const result = tmp5(13393).findRemoteAuthFingerprint(host, pathname);
+      const result = tmp5(13562).findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
           const obj19 = { fingerprint, attemptId, installationId, payload: null };
@@ -186,7 +186,7 @@ export default function parseURL(arg0) {
           return obj19;
         }
       }
-      const tmp5Result9 = tmp5(13393);
+      const tmp5Result9 = tmp5(13562);
       if (!tmpResult6.isDiscordHostname(host)) {
         if (!tmpResult7.isDiscordProtocol(protocol)) {
           const tmpResult8 = tmp(1366);
@@ -323,7 +323,7 @@ export default function parseURL(arg0) {
                 if (query == null) {
                   str6 = "";
                 }
-                const result1 = tmp5(8516).parseOAuth2AuthorizeProps(str6);
+                const result1 = tmp5(8681).parseOAuth2AuthorizeProps(str6);
                 if (null != result1) {
                   const obj49 = { fingerprint, attemptId, installationId, payload: null };
                   const element = { type: React5.OAUTH2_AUTHORIZE, props: null };
@@ -334,7 +334,7 @@ export default function parseURL(arg0) {
                   obj49.payload = element;
                   return obj49;
                 }
-                const tmp5Result12 = tmp5(8516);
+                const tmp5Result12 = tmp5(8681);
               }
               if (null != pathname.match(re17)) {
                 let str24 = query;
@@ -456,7 +456,7 @@ export default function parseURL(arg0) {
                         tmp28 = obj72;
                       break;
                       case "mobile-web-redirect-checkout":
-                        let result2 = tmp5(6826).isMobileWebRedirectCheckoutEnabled();
+                        let result2 = tmp5(6992).isMobileWebRedirectCheckoutEnabled();
                         if (result2) {
                           result2 = !tmp5(1610).isMetaQuest();
                           const tmp5Result14 = tmp5(1610);
@@ -465,7 +465,7 @@ export default function parseURL(arg0) {
                         if (query == null) {
                           str12 = "";
                         }
-                        const tmp5Result13 = tmp5(6826);
+                        const tmp5Result13 = tmp5(6992);
                         let DEFAULT = tmp139(str12)[constants5.DEEP_LINK_ACTION];
                         tmp28 = null;
                         if (result2) {
@@ -535,7 +535,7 @@ export default function parseURL(arg0) {
                               const obj76 = { type: React5.DAVE_PROTOCOL_VERIFICATION, userId, fingerprint: fingerprint2 };
                               tmp28 = obj76;
                             }
-                            tmp5Result16 = tmp5(9173);
+                            tmp5Result16 = tmp5(9338);
                           }
                         }
                         const tmp139Result11 = tmp139(str10);

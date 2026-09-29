@@ -1,11 +1,11 @@
-// Module ID: 9237
-// Function ID: 9238
+// Module ID: 9404
+// Function ID: 9405
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4656, 504, 5853, 2]
+// Dependencies: [19, 4656, 504, 6019, 2]
 // Exports: default
 
-// Module 9237 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5853 */;
+// Module 9404 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6019 */;
 import noop from "module_19" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
 

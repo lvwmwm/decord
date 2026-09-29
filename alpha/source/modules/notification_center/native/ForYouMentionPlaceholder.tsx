@@ -1,10 +1,10 @@
-// Module ID: 16054
-// Function ID: 16055
+// Module ID: 16230
+// Function ID: 16231
 // Name: ForYouMentionPlaceholder
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 504, 4566, 4837, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 16054 (ForYouMentionPlaceholder)
+// Module 16230 (ForYouMentionPlaceholder)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;

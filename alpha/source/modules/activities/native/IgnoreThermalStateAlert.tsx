@@ -1,12 +1,12 @@
-// Module ID: 8864
-// Function ID: 8865
+// Module ID: 9029
+// Function ID: 9030
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4836, 5300, 1115, 8782, 4832, 2]
+// Dependencies: [19, 21, 4836, 5466, 1115, 8947, 4832, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 8864 (IgnoreThermalStateAlert)
-import common_AlertDefault from "common/Alert" /* 5300 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
+// Module 9029 (IgnoreThermalStateAlert)
+import common_AlertDefault from "common/Alert" /* 5466 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8947 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12348
+// Function ID: 12349
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5593, 12176, 12175, 1074, 1365, 5029, 1249, 573, 12178, 2021, 1231, 504, 1385, 2111, 4525, 5039, 2]
+// Dependencies: [5, 17, 5760, 12347, 12346, 1074, 1365, 5029, 1249, 573, 12349, 2021, 1231, 504, 1385, 2111, 4525, 5039, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12177 (ContactSyncUtils)
+// Module 12348 (ContactSyncUtils)
 import initialize from "initialize" /* 504 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
@@ -15,9 +15,9 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import ContactSyncManager from "ContactSyncManager" /* 12178 */;
+import ContactSyncManager from "ContactSyncManager" /* 12349 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5760 */;
 
 require = fn;
 let closure_18 = async function _uploadContacts(arg0, value) {
@@ -102,9 +102,9 @@ let closure_18 = async function _uploadContacts(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const ContactSyncPersistedStore = fn(12176);
+const ContactSyncPersistedStore = fn(12347);
 ({ useContactSyncStore: metroRequire, clearDismissState: closure_7, deleteStoredContacts: closure_8 } = ContactSyncPersistedStore);
-const ContactSyncConstants = fn(12175);
+const ContactSyncConstants = fn(12346);
 ({ CONTACT_SYNC_MODAL_KEY: closure_9, ContactPermissions: c10, ContactSyncSuggestionsSetting: closure_11 } = ContactSyncConstants);
 const Constants = fn(1074);
 ({ Endpoints: closure_12, PlatformTypes: map1, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = Constants);

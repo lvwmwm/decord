@@ -1,18 +1,18 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15726
+// Function ID: 15727
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5270, 21, 4836, 8053, 6622, 15552, 2]
+// Dependencies: [32, 19, 5436, 21, 4836, 8218, 6788, 15727, 2]
 
-// Module 15551 (VEVOOPropBlurAmount)
-import FormSwitch from "FormSwitch" /* 6622 */;
-import Form from "Form" /* 8053 */;
+// Module 15726 (VEVOOPropBlurAmount)
+import FormSwitch from "FormSwitch" /* 6788 */;
+import Form from "Form" /* 8218 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VEVOOStore = fn(5270);
+const VEVOOStore = fn(5436);
 ({ getVisualEffectViewOverrides: hasOwnProperty, setVisualEffectViewOverides: metroRequire } = VEVOOStore);
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
@@ -72,7 +72,7 @@ export default noop.memo(function VEVOOPropBlurAmount() {
     }
   };
   const ref = noop.useRef(first);
-  obj.subLabel = jsx(first(15552), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
+  obj.subLabel = jsx(first(15727), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
   return jsx(Form.FormRow, {
     label: "Blur Amount " + str,
     leadingStyle: tmp.enabledSwitchStyle,

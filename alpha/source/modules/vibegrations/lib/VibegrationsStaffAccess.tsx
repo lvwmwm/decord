@@ -1,10 +1,10 @@
-// Module ID: 16268
-// Function ID: 16269
+// Module ID: 16448
+// Function ID: 16449
 // Name: VibegrationsStaffAccess
 // Dependencies: [4467, 2067, 4479, 1372, 1074, 504, 4989, 2]
 // Exports: useVibegrationsStaffAccessTarget
 
-// Module 16268 (VibegrationsStaffAccess)
+// Module 16448 (VibegrationsStaffAccess)
 import initialize from "initialize" /* 504 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import GuildStore from "GuildStore" /* 2067 */;

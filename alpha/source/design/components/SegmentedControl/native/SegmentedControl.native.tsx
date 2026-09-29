@@ -1,13 +1,13 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9249
+// Function ID: 9250
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 4566, 5280, 9085, 6073, 1364, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 4566, 5446, 9250, 6239, 1364, 2]
 // Exports: SegmentedControl
 
-// Module 9084 (SegmentedControl)
+// Module 9249 (SegmentedControl)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
+import spring from "spring" /* 5446 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

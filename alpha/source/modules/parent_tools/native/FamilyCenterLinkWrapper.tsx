@@ -1,12 +1,12 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14630
+// Function ID: 14631
 // Name: FamilyCenterLinkWrapper
-// Dependencies: [19, 21, 4836, 576, 6583, 5435, 7624, 2]
+// Dependencies: [19, 21, 4836, 576, 6749, 5602, 7789, 2]
 // Exports: default
 
-// Module 14455 (FamilyCenterLinkWrapper)
+// Module 14630 (FamilyCenterLinkWrapper)
 import nativeDefault from "native" /* 576 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCen
 export default function FamilyCenterLinkRowWrapper(userId) {
   userId = userId.userId;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6583)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6749)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
     const obj = {
@@ -30,7 +30,7 @@ export default function FamilyCenterLinkRowWrapper(userId) {
         },
       children: userId.children
     };
-    tmp3 = jsx(userId(5435).PressableOpacity, {
+    tmp3 = jsx(userId(5602).PressableOpacity, {
       style: tmp.container,
       onPress() {
           showUserProfileActionSheetDefault({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });

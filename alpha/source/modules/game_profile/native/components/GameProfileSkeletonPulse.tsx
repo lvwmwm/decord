@@ -1,10 +1,10 @@
-// Module ID: 8196
-// Function ID: 8197
+// Module ID: 8361
+// Function ID: 8362
 // Name: GameProfileSkeletonPulse
 // Dependencies: [19, 4825, 4566, 4837, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 8196 (GameProfileSkeletonPulse)
+// Module 8361 (GameProfileSkeletonPulse)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

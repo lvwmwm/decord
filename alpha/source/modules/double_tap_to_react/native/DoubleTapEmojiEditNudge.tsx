@@ -1,13 +1,13 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11402
+// Function ID: 11403
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 4825, 1480, 1074, 1375, 21, 4836, 576, 2021, 7410, 1482, 504, 1397, 10583, 1241, 10586, 4832, 1115, 6551, 5435, 2]
+// Dependencies: [5, 19, 17, 4825, 1480, 1074, 1375, 21, 4836, 576, 2021, 7575, 1482, 504, 1397, 10752, 1241, 10755, 4832, 1115, 6717, 5602, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 11233 (DoubleTapEmojiEditNudge)
+// Module 11402 (DoubleTapEmojiEditNudge)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7410 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7575 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -93,7 +93,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
               return obj16;
             } else {
               const obj17 = { emoji: closure_129_0 };
-              const result = _location(10586).showDoubleTapEmojiUpdatedToast(obj17);
+              const result = _location(10755).showDoubleTapEmojiUpdatedToast(obj17);
               c4 = 3;
               return { value: "HermesInternal", done: null };
             }
@@ -114,7 +114,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
       }
       return applyArgumentsResult;
     };
-    let result = _location(10583).openEmojiPickerActionSheet(obj2, "stack");
+    let result = _location(10752).openEmojiPickerActionSheet(obj2, "stack");
   }, items2);
   let obj4 = { color: "text-subtle", variant: "text-sm/normal", children: null };
   const intl = _location(1115).intl;
@@ -129,13 +129,13 @@ function DoubleTapEmojiEditNudgeInner(location) {
     str = emoji.surrogates;
   }
   obj5.name = str;
-  items3[1] = closure_11(emoji(6551), obj5);
+  items3[1] = closure_11(emoji(6717), obj5);
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: null };
   const obj7 = { color: "text-brand", variant: "text-sm/normal", children: null };
   const intl2 = tmp(1115).intl;
   obj7.children = intl2.string(_location(1115).t.bt75uw);
   obj6.children = closure_11(_location(4832).Text, obj7);
-  items3[2] = closure_11(_location(5435).PressableOpacity, obj6);
+  items3[2] = closure_11(_location(5602).PressableOpacity, obj6);
   obj3.children = items3;
   return tmp8(tmp9, obj3);
 }

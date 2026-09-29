@@ -1,13 +1,13 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 12676
+// Function ID: 12677
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4836, 576, 12507, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 12677, 4832, 2]
 // Exports: URLCallout
 
-// Module 12506 (URLCallout)
+// Module 12676 (URLCallout)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import SharedStateUtils from "SharedStateUtils" /* 12507 */;
+import SharedStateUtils from "SharedStateUtils" /* 12677 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

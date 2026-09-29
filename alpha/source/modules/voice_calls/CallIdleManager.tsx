@@ -1,18 +1,18 @@
-// Module ID: 17106
-// Function ID: 17107
+// Module ID: 17295
+// Function ID: 17296
 // Name: CallIdleManager
-// Dependencies: [2044, 2045, 4855, 4860, 6876, 1115, 5723, 6539, 2040, 2]
+// Dependencies: [2044, 2045, 4855, 4860, 7042, 1115, 5890, 6705, 2040, 2]
 
-// Module 17106 (CallIdleManager)
+// Module 17295 (CallIdleManager)
 import util from "util" /* 1115 */;
 import Timers from "Timers" /* 2040 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5890 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 function disconnect() {

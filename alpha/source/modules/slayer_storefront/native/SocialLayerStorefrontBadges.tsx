@@ -1,14 +1,14 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10446
+// Function ID: 10447
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 10278, 4832, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1364, 10447, 4832, 1115, 2]
 // Exports: ExclusiveBadge
 
-// Module 10277 (SocialLayerStorefrontBadges)
+// Module 10446 (SocialLayerStorefrontBadges)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import ClydeIcon from "ClydeIcon" /* 10278 */;
+import ClydeIcon from "ClydeIcon" /* 10447 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

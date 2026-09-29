@@ -1,10 +1,10 @@
-// Module ID: 5372
-// Function ID: 5373
+// Module ID: 5538
+// Function ID: 5539
 // Name: VibegrationsGuildExperiment
 // Dependencies: [2067, 1074, 1435, 504, 2]
 // Exports: useHasVibegrationsGuild, useIsVibegrationsGuildEnabled
 
-// Module 5372 (VibegrationsGuildExperiment)
+// Module 5538 (VibegrationsGuildExperiment)
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
@@ -46,9 +46,9 @@ export const useIsVibegrationsGuildEnabled = function useIsVibegrationsGuildEnab
 };
 export { isVibegrationsGuildEnabled };
 export { hasVibegrationsGuild };
-export const useHasVibegrationsGuild = function useHasVibegrationsGuild(arg0) {
-  _require = arg0;
+export const useHasVibegrationsGuild = function useHasVibegrationsGuild(YouBannerDecorations) {
+  _require = YouBannerDecorations;
   const items = [GuildStore, require("ApexExperiment").ApexExperimentStore];
-  const items1 = [arg0];
+  const items1 = [YouBannerDecorations];
   return require("initialize").useStateFromStores(items, () => hasVibegrationsGuild(Object.values(GuildStore.getGuilds()), closure_0), items1);
 };

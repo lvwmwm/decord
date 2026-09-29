@@ -1,23 +1,23 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17394
+// Function ID: 17395
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 17206, 17207, 17208, 17209, 17210, 17211, 17212, 17213, 1115, 4836, 576, 4832, 5435, 5899, 2]
+// Dependencies: [19, 17, 21, 17395, 17396, 17397, 17398, 17399, 17400, 17401, 17402, 1115, 4836, 576, 4832, 5602, 6065, 2]
 // Exports: default
 
-// Module 17205 (PresetAvatarSelect)
+// Module 17394 (PresetAvatarSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 17206 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 17207 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 17208 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 17209 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 17210 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 17211 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 17212 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 17213 */;
+import Pressables from "Pressables" /* 5602 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 17395 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 17396 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 17397 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 17398 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 17399 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 17400 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 17401 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 17402 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

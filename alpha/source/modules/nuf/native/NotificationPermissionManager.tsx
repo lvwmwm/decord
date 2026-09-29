@@ -1,21 +1,21 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17414
+// Function ID: 17415
 // Name: NotificationPermissionManager
-// Dependencies: [5, 17, 4471, 502, 2045, 5017, 11902, 11903, 1074, 5045, 4800, 17226, 1981, 1249, 4421, 11905, 9545, 1241, 1364, 6539, 15033, 1094, 2]
+// Dependencies: [5, 17, 4471, 502, 2045, 5017, 12073, 12074, 1074, 5045, 4800, 17415, 1981, 1249, 4421, 12076, 9712, 1241, 1364, 6705, 15208, 1094, 2]
 
-// Module 17225 (NotificationPermissionManager)
+// Module 17414 (NotificationPermissionManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11905 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12076 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11902 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12073 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 function haveNotSeenPromptSince(arg0, arg1) {
@@ -92,7 +92,7 @@ function showPrompt(arg0, arg1, arg2) {
     obj3.impressionName = discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT;
     obj3.impressionProperties = { action_location: location };
     obj3.location = location;
-    obj2.openLazy(asyncRequireImpl(17226, dependencyMap.paths), closure_2_11, obj3);
+    obj2.openLazy(asyncRequireImpl(17415, dependencyMap.paths), closure_2_11, obj3);
   }, arg2);
 }
 function _logNotificationPermissionStatus() {
@@ -169,8 +169,8 @@ let closure_26 = async function _logNotificationPermissionStatus2(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const PermissionPromptType = fn(11902).PermissionPromptType;
-const NotificationPermissionConstants = fn(11903);
+const PermissionPromptType = fn(12073).PermissionPromptType;
+const NotificationPermissionConstants = fn(12074);
 ({ NOTIFICATION_REACTIVATION_ACTIONSHEET_KEY: closure_11, EventActionLocation: closure_12 } = NotificationPermissionConstants);
 const Constants = fn(1074);
 ({ RelationshipTypes: map1, GuildFeatures: closure_14, AnalyticEvents: closure_15 } = Constants);

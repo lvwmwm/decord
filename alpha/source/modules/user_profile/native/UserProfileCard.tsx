@@ -1,19 +1,19 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6794
+// Function ID: 6795
 // Name: UserProfileCard
-// Dependencies: [19, 17, 6629, 21, 4836, 576, 5435, 4832, 6630, 2]
+// Dependencies: [19, 17, 6795, 21, 4836, 576, 5602, 4832, 6796, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 6628 (UserProfileCard)
+// Module 6794 (UserProfileCard)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6630 */;
+import Pressables from "Pressables" /* 5602 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6796 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(6629);
+const Constants = fn(6795);
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_4 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);

@@ -1,16 +1,16 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9765
+// Function ID: 9766
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2049, 2045, 4479, 5017, 1372, 1074, 21, 6540, 6535, 4989, 8053, 1115, 9599, 6800, 504, 5936, 6421, 2]
+// Dependencies: [19, 2049, 2045, 4479, 5017, 1372, 1074, 21, 6706, 6701, 4989, 8218, 1115, 9766, 6966, 504, 6102, 6587, 2]
 
-// Module 9598 (InAppNotificationSettingsModal)
+// Module 9765 (InAppNotificationSettingsModal)
 import util from "util" /* 1115 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import Form from "Form" /* 8053 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 9599 */;
+import NavigatorHeader from "NavigatorHeader" /* 6102 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6701 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6706 */;
+import Form from "Form" /* 8218 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 9766 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
@@ -151,7 +151,7 @@ export default noop.memo((channelId) => {
           channelName = tmp3Result.computeChannelName(tmp, UserStore, RelationshipStore, true);
         }
         obj.subtitle = channelName;
-        return closure_2_11(channelId(5936).NavigatorHeader, obj);
+        return closure_2_11(channelId(6102).NavigatorHeader, obj);
       },
       headerLeft: NavigatorHeader.getHeaderCloseButton(onClose),
       render() {
@@ -161,5 +161,5 @@ export default noop.memo((channelId) => {
     obj.IN_APP_NOTIFICATION_SETTINGS = obj2;
     return obj;
   }, items);
-  return closure_11(channelId(6421).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(6587).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });

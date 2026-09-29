@@ -1,15 +1,15 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 17088
+// Function ID: 17089
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 1094, 9420, 7273, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1613, 1094, 9587, 7438, 2]
 // Exports: default
 
-// Module 16901 (PremiumSoundboardFeatureUpsell)
+// Module 17088 (PremiumSoundboardFeatureUpsell)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7273 */;
-import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 9420 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7438 */;
+import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 9587 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

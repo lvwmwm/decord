@@ -1,18 +1,18 @@
-// Module ID: 14694
-// Function ID: 14695
+// Module ID: 14869
+// Function ID: 14870
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4767, 4538, 4531, 4683, 10681, 10697, 1115, 8122, 4832, 5435, 14695, 5293, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 4767, 4538, 4531, 4683, 10850, 10866, 1115, 8287, 4832, 5602, 14870, 5459, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14694 (QuestOrbMultiplierPerkPill)
+// Module 14869 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import themes from "themes" /* 4538 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import useTheme from "useTheme" /* 4767 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10681 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10697 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14695 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10850 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10866 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14870 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp21Result = !tmp13;
     let tmp19 = tmp21Result;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(8122).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(8287).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: null };
     const items2 = [tmp19, ];
@@ -100,13 +100,13 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     obj16.style = items3;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5293), obj18);
+      tmp21Result = tmp21(tmp6(5459), obj18);
     }
     const items4 = [tmp21Result, ];
     const obj19 = { style: tmp.fullGradientContent, children: closure_8(closure_7, obj13) };
     items4[1] = closure_6(token3, obj19);
     obj16.children = items4;
     obj15.children = closure_8(token3, obj16);
-    return closure_6(tmp2(5435).PressableOpacity, obj15);
+    return closure_6(tmp2(5602).PressableOpacity, obj15);
   }
 };

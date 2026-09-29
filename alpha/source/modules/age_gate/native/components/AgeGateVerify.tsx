@@ -1,17 +1,17 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17278
+// Function ID: 17279
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4836, 576, 5046, 6544, 4832, 5281, 7859, 7861, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5046, 6710, 4832, 5447, 8024, 8026, 2]
 // Exports: default
 
-// Module 17091 (AgeGateVerify)
+// Module 17278 (AgeGateVerify)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import AgeGateUtils from "AgeGateUtils" /* 5046 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import components_Button_Button from "components/Button/Button" /* 5447 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8026 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

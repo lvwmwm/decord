@@ -1,17 +1,17 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12306
+// Function ID: 12307
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 8843, 21, 4836, 576, 1613, 6402, 1479, 12136, 12137, 12138, 4566, 2]
+// Dependencies: [19, 17, 9008, 21, 4836, 576, 1613, 6568, 1479, 12307, 12308, 12309, 4566, 2]
 
-// Module 12135 (ChatPlaceholder)
+// Module 12306 (ChatPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12137 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12138 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12308 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12309 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-let closure_3 = fn(8843).useChatInputContainerHeight;
+let closure_3 = fn(9008).useChatInputContainerHeight;
 const jsx = fn(21).jsx;
 const createStyles = fn(4836);
 let obj = { placeholder: null };

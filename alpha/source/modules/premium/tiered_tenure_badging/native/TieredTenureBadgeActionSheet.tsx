@@ -1,18 +1,18 @@
-// Module ID: 10619
-// Function ID: 10620
+// Module ID: 10788
+// Function ID: 10789
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1372, 1374, 1074, 21, 4836, 576, 10620, 7048, 10645, 5899, 4832, 1115, 10646, 504, 1970, 8230, 1249, 1613, 6800, 4800, 7624, 9422, 9425, 6571, 6045, 2]
+// Dependencies: [19, 17, 1372, 1374, 1074, 21, 4836, 576, 10789, 7213, 10814, 6065, 4832, 1115, 10815, 504, 1970, 8395, 1249, 1613, 6966, 4800, 7789, 9589, 9592, 6737, 6211, 2]
 // Exports: default
 
-// Module 10619 (TieredTenureBadgeActionSheet)
+// Module 10788 (TieredTenureBadgeActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7048 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 7624 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10620 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10645 */;
+import FastImageDefault from "FastImage" /* 6065 */;
+import openUserSettings from "openUserSettings" /* 6966 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7213 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 7789 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10789 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10814 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

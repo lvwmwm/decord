@@ -1,20 +1,20 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17265
+// Function ID: 17266
 // Name: RestrictedHoursManager
-// Dependencies: [9541, 1372, 6957, 1115, 2487, 1395, 9543, 573, 17073, 6539, 2]
+// Dependencies: [9708, 1372, 7123, 1115, 2487, 1395, 9710, 573, 17260, 6705, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 17078 (RestrictedHoursManager)
+// Module 17265 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1395 */;
 import _modDef2487 from "module_2487" /* 2487 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9543 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17073 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 9541 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9710 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17260 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 9708 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7123 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
 
 require = fn;
 function scheduleUpcomingWarning() {

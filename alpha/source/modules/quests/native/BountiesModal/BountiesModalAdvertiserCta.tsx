@@ -1,18 +1,18 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14752
+// Function ID: 14753
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 4825, 5756, 21, 4566, 4836, 576, 4837, 4840, 14578, 10689, 5287, 10711, 10719, 5763, 7141, 5761, 8056, 5899, 4832, 5281, 14545, 504, 14546, 9424, 2]
+// Dependencies: [109, 19, 17, 4825, 5923, 21, 4566, 4836, 576, 4837, 4840, 14753, 10858, 5453, 10880, 10888, 5930, 7306, 5928, 8221, 6065, 4832, 5447, 14720, 504, 14721, 9591, 2]
 // Exports: default
 
-// Module 14577 (BountiesModalAdvertiserCta)
+// Module 14752 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import timingPresets from "timingPresets" /* 4840 */;
-import QuestContent from "QuestContent" /* 5761 */;
-import AdCreativeType from "AdCreativeType" /* 5763 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10719 */;
+import QuestContent from "QuestContent" /* 5928 */;
+import AdCreativeType from "AdCreativeType" /* 5930 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7306 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10888 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -83,7 +83,7 @@ function BountiesModalAdvertiserCtaContent(bounty) {
 let closure_3 = ["style"];
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: metroRequire, View: closure_7, Pressable } = get_ActivityIndicator);
-const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5923).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = ReanimatedRexport.createAnimatedComponent(Pressable);
@@ -95,12 +95,9 @@ let closure_13 = createStyles.createStyles(() => {
   const obj2 = {};
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
   obj2.alignSelf = "stretch";
-  obj2.borderWidth = 1;
-  obj2.borderColor = "transparent";
   obj2.borderRadius = nativeDefault.radii.lg;
-  obj2.overflow = "hidden";
   obj.ctaPressable = obj2;
-  obj.cta = { flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+  obj.cta = { flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
   const size = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, overflow: "hidden" };
   obj.ctaLogoContainer = size;
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);

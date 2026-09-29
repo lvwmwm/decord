@@ -1,10 +1,10 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15230
+// Function ID: 15231
 // Name: FriendOnlineNotificationUtils
 // Dependencies: [4482, 1074, 2021, 1241, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 15055 (FriendOnlineNotificationUtils)
+// Module 15230 (FriendOnlineNotificationUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;

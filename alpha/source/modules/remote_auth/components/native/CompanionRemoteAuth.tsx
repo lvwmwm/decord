@@ -1,11 +1,11 @@
-// Module ID: 15612
-// Function ID: 15613
+// Module ID: 15787
+// Function ID: 15788
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1074, 21, 4836, 15613, 5889, 4832, 1115, 5281, 1177, 4678, 1485, 5087, 1241, 15614, 15618, 6391, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 15788, 6055, 4832, 1115, 5447, 1177, 4678, 1485, 5253, 1241, 15789, 15793, 6557, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 15612 (CompanionRemoteAuth)
-import NativeAuthenticationModuleDefault from "NativeAuthenticationModule" /* 15618 */;
+// Module 15787 (CompanionRemoteAuth)
+import NativeAuthenticationModuleDefault from "NativeAuthenticationModule" /* 15793 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/remote_auth/components/native
 export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   let tmp = closure_10();
   navigation = navigation(1485).useNavigation();
-  const context = noop.useContext(fingerprint(5087));
+  const context = noop.useContext(fingerprint(5253));
   const callback = noop.useCallback((arg0) => {
     let tmp = arg0;
     const obj2 = { source: constants2.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth", login_instance_id: null };
@@ -34,13 +34,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   }, []);
   let obj = navigation(1485);
   let obj2 = noop;
-  const state = navigation(15614).useAuthWebsocket(callback, true).state;
+  const state = navigation(15789).useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = noop.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(15613).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(15788).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -55,14 +55,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   const obj4 = { headerText: null, children: null };
-  const obj3 = navigation(15614);
+  const obj3 = navigation(15789);
   const intl = tmp2(1115).intl;
   obj4.headerText = intl.string(navigation(1115).t["7fNJgA"]);
   const obj5 = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(15613).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(15613).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(15613).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(15788).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(15788).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(15788).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         const obj6 = { children: null };
         const obj7 = { style: tmp.avatar, user, size: tmp2(1177).AvatarSizes.LARGE, guildId: context };
@@ -81,13 +81,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         const intl4 = tmp2(1115).intl;
         obj12.text = intl4.string(tmp2(1115).t["ETE/oC"]);
         obj12.onPress = callback1;
-        obj11.children = tmp11(tmp2(5281).Button, obj12);
+        obj11.children = tmp11(tmp2(5447).Button, obj12);
         items2[3] = tmp11(tmp13, obj11);
         obj6.children = items2;
         let tmp11Result = closure_9(closure_8, obj6);
         const tmp5Result2 = tmp5(4678);
-      } else if (tmp2(15613).RemoteAuthStep.PENDING_LOGIN === step) {
-        tmp11Result = tmp11(tmp2(5889).ActivityIndicator, {});
+      } else if (tmp2(15788).RemoteAuthStep.PENDING_LOGIN === step) {
+        tmp11Result = tmp11(tmp2(6055).ActivityIndicator, {});
       }
     }
     obj5.children = tmp11Result;
@@ -95,7 +95,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     return tmp11(tmp5Result, obj4);
   }
   const obj13 = { children: null };
-  const items3 = [closure_7(navigation(5889).ActivityIndicator, {}), , ];
+  const items3 = [closure_7(navigation(6055).ActivityIndicator, {}), , ];
   const obj14 = { style: tmp.statusText, variant: "text-md/medium", color: "text-muted", children: null };
   const intl5 = tmp2(1115).intl;
   obj14.children = intl5.string(navigation(1115).t["7LkwqE"]);
@@ -105,7 +105,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   const intl6 = tmp2(1115).intl;
   obj16.text = intl6.string(navigation(1115).t["ETE/oC"]);
   obj16.onPress = callback1;
-  obj15.children = closure_7(navigation(5281).Button, obj16);
+  obj15.children = closure_7(navigation(5447).Button, obj16);
   items3[2] = closure_7(View, obj15);
   obj13.children = items3;
   tmp11Result = closure_9(closure_8, obj13);

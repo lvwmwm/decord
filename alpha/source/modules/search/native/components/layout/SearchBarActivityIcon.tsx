@@ -1,20 +1,20 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16628
+// Function ID: 16629
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 6699, 11822, 7303, 21, 4836, 576, 563, 11823, 4566, 4837, 6472, 1364, 2]
+// Dependencies: [19, 17, 6865, 11991, 7468, 21, 4836, 576, 563, 11992, 4566, 4837, 6638, 1364, 2]
 
-// Module 16443 (SearchBarActivityIcon)
+// Module 16628 (SearchBarActivityIcon)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import SearchUtils from "SearchUtils" /* 11823 */;
+import SearchUtils from "SearchUtils" /* 11992 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6699 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+import SearchMessageStore from "SearchMessageStore" /* 6865 */;
+import SearchQueryStore from "SearchQueryStore" /* 11991 */;
 
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
-let closure_7 = fn(7303).SEARCH_MESSAGE_TAB_SENTINEL;
+let closure_7 = fn(7468).SEARCH_MESSAGE_TAB_SENTINEL;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);

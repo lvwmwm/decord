@@ -1,21 +1,21 @@
-// Module ID: 11612
-// Function ID: 11613
+// Module ID: 11781
+// Function ID: 11782
 // Name: application_view/Header
-// Dependencies: [19, 17, 1372, 8711, 1484, 1074, 21, 576, 4836, 4566, 504, 11533, 4531, 7589, 11538, 8590, 8321, 11613, 4832, 1177, 7363, 4776, 1241, 6610, 11614, 4527, 1115, 11615, 2]
+// Dependencies: [19, 17, 1372, 8876, 1484, 1074, 21, 576, 4836, 4566, 504, 11702, 4531, 7754, 11707, 8755, 8486, 11782, 4832, 1177, 7528, 4776, 1241, 6776, 11783, 4527, 1115, 11784, 2]
 // Exports: default
 
-// Module 11612 (application_view/Header)
+// Module 11781 (application_view/Header)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import useAvatarColorDefault from "useAvatarColor" /* 7589 */;
-import AppLauncherBackButtonDefault from "AppLauncherBackButton" /* 11613 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11614 */;
+import ClipboardUtils from "ClipboardUtils" /* 6776 */;
+import useAvatarColorDefault from "useAvatarColor" /* 7754 */;
+import AppLauncherBackButtonDefault from "AppLauncherBackButton" /* 11782 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11783 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppLauncherStore from "AppLauncherStore" /* 8711 */;
+import AppLauncherStore from "AppLauncherStore" /* 8876 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -59,8 +59,8 @@ export default function Header(application) {
   const tmp3 = closure_12();
   let appLauncherIconSource = null;
   if (null != application) {
-    appLauncherIconSource = tmp(11533).getAppLauncherIconSource(application);
-    const tmpResult = tmp(11533);
+    appLauncherIconSource = tmp(11702).getAppLauncherIconSource(application);
+    const tmpResult = tmp(11702);
   }
   let obj = application(504);
   let str = application(4531).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
@@ -79,7 +79,7 @@ export default function Header(application) {
   const tmp6Result = useAvatarColorDefault(tmp7, str);
   if (null != appLauncherIconSource) {
     let obj2 = { iconSource: appLauncherIconSource, iconBorderRadius: xl, iconSize: 72 };
-    let tmp12 = closure_8(tmp5(11538), obj2);
+    let tmp12 = closure_8(tmp5(11707), obj2);
     let tmp13 = closure_8;
   } else {
     let obj3 = { style: tmp3.loadingIcon };
@@ -150,16 +150,16 @@ export default function Header(application) {
   let str2 = "";
   const animatedStyle3 = tmpResult13.useAnimatedStyle(fn4);
   if (null != application) {
-    str2 = tmp(8590).getSectionName(application);
-    const tmpResult14 = tmp(8590);
+    str2 = tmp(8755).getSectionName(application);
+    const tmpResult14 = tmp(8755);
   }
   let hasApplicationFlagResult = null != application;
   if (hasApplicationFlagResult) {
     hasApplicationFlagResult = "flags" in application;
   }
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = tmp(8321).hasApplicationFlag(application, constants2.EMBEDDED);
-    const tmpResult15 = tmp(8321);
+    hasApplicationFlagResult = tmp(8486).hasApplicationFlag(application, constants2.EMBEDDED);
+    const tmpResult15 = tmp(8486);
   }
   dependencyMap = hasApplicationFlagResult;
   id = UserStore.getCurrentUser();
@@ -207,9 +207,9 @@ export default function Header(application) {
                 let activityLaunchURL = obj4.getActivityLaunchURL(obj5);
               } else {
                 const obj6 = { id: tmp2.id };
-                const merged = Object.assign(tmp4(8590).getInstallAppProps(tmp2));
+                const merged = Object.assign(tmp4(8755).getInstallAppProps(tmp2));
                 activityLaunchURL = obj4.getApplicationInstallURL(obj6);
-                const tmp4Result = tmp4(8590);
+                const tmp4Result = tmp4(8755);
               }
               ClipboardUtils.copy(activityLaunchURL);
               ToastUtils.presentLinkCopied();
@@ -219,13 +219,13 @@ export default function Header(application) {
       };
       const intl = tmp(1115).intl;
       obj15.accessibilityLabel = intl.string(tmp(1115).t.XWDihq);
-      const items7 = [tmp13(tmp(7363).IconButton, obj15), ];
+      const items7 = [tmp13(tmp(7528).IconButton, obj15), ];
       const obj16 = { application, onAddAppMenuClick };
-      items7[1] = tmp13(tmp5(11615), obj16);
+      items7[1] = tmp13(tmp5(11784), obj16);
       obj14.children = items7;
       tmp22Result = tmp22(tmp23, obj14);
     }
-    tmpResult16 = tmp(8590);
+    tmpResult16 = tmp(8755);
   }
   items3[2] = tmp22Result;
   obj8.children = items3;

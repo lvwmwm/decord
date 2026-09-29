@@ -1,13 +1,13 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8686
+// Function ID: 8687
 // Name: Utils
-// Dependencies: [1074, 8522, 1115, 5424, 2]
+// Dependencies: [1074, 8687, 1115, 5591, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 8521 (Utils)
+// Module 8686 (Utils)
 import Constants from "Constants" /* 1074 */;
-import utils from "utils" /* 5424 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 8522 */;
+import utils from "utils" /* 5591 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 8687 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;

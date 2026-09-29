@@ -1,10 +1,10 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15435
+// Function ID: 15436
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 5061, 21, 576, 4836, 6402, 2]
+// Dependencies: [19, 17, 5061, 21, 576, 4836, 6568, 2]
 // Exports: default
 
-// Module 15260 (CheckpointScreen)
+// Module 15435 (CheckpointScreen)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default function CheckpointScreen(children) {
   let insets;
   const tmp = closure_8();
-  insets = insets(6402)().insets;
+  insets = insets(6568)().insets;
   const items = [, , , ];
   ({ bottom: arr[0], left: arr[1], right: arr[2], top: arr[3] } = insets);
   const obj = { style: tmp.container, children: null };

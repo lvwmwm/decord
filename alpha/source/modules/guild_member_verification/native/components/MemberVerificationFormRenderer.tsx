@@ -1,10 +1,10 @@
-// Module ID: 5911
-// Function ID: 5912
+// Module ID: 6077
+// Function ID: 6078
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4836, 4658, 5912, 5931, 6504, 6505, 6509, 2]
+// Dependencies: [19, 17, 21, 4836, 4658, 6078, 6097, 6670, 6671, 6675, 2]
 // Exports: default
 
-// Module 5911 (MemberVerificationFormRenderer)
+// Module 6077 (MemberVerificationFormRenderer)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

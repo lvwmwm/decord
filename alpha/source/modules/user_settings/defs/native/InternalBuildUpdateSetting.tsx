@@ -1,18 +1,18 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15519
+// Function ID: 15520
 // Name: InternalBuildUpdateSetting
-// Dependencies: [13885, 21, 13451, 504, 4421, 14378, 4781, 14506, 11006, 2]
+// Dependencies: [14054, 21, 13620, 504, 4421, 14553, 4781, 14681, 11175, 2]
 
-// Module 15344 (InternalBuildUpdateSetting)
+// Module 15519 (InternalBuildUpdateSetting)
 import initialize from "initialize" /* 504 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13451 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14378 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 13885 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13620 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14553 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14054 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
+const SettingBuilders = fn(11175);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "Internal Build Update";
@@ -23,7 +23,7 @@ const pressable = SettingBuilders.createPressable({
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
       let RefreshIcon = tmp(4781).DownloadIcon;
     } else {
-      RefreshIcon = tmp(14506).RefreshIcon;
+      RefreshIcon = tmp(14681).RefreshIcon;
     }
     return <RefreshIcon />;
   },

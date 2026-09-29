@@ -1,9 +1,9 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 11179
+// Function ID: 11180
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2045, 1074, 4829, 573, 1271, 7095, 6876, 5016, 4849, 2]
+// Dependencies: [5, 2045, 1074, 4829, 573, 1271, 7260, 7042, 5016, 4849, 2]
 
-// Module 11010 (ActivitiesActionCreators)
+// Module 11179 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;

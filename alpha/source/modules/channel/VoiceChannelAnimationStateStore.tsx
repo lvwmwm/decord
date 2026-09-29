@@ -1,9 +1,9 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13399
+// Function ID: 13400
 // Name: VoiceChannelAnimationStateStore
 // Dependencies: [32, 4655, 4855, 504, 573, 2]
 
-// Module 13229 (VoiceChannelAnimationStateStore)
+// Module 13399 (VoiceChannelAnimationStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;

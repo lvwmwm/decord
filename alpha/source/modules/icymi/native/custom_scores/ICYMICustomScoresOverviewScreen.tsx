@@ -1,15 +1,15 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16271
+// Function ID: 16272
 // Name: ICYMICustomScoresOverviewScreen
-// Dependencies: [19, 17, 2067, 5750, 7783, 21, 4836, 576, 504, 1613, 5999, 5917, 5896, 7798, 1115, 2]
+// Dependencies: [19, 17, 2067, 5917, 7948, 21, 4836, 576, 504, 1613, 6165, 6083, 6062, 7963, 1115, 2]
 // Exports: default
 
-// Module 16095 (ICYMICustomScoresOverviewScreen)
+// Module 16271 (ICYMICustomScoresOverviewScreen)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5750 */;
-import ICYMIStore from "ICYMIStore" /* 7783 */;
+import SortedGuildStore from "SortedGuildStore" /* 5917 */;
+import ICYMIStore from "ICYMIStore" /* 7948 */;
 
 const require = fn;
 const ScrollView = fn(17).ScrollView;

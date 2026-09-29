@@ -1,15 +1,15 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6716
+// Function ID: 6717
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 6549, 1074, 573, 1271, 1439, 5832, 2]
+// Dependencies: [5, 6715, 1074, 573, 1271, 1439, 5999, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 6550 (GuildRoleMemberActionCreators)
+// Module 6716 (GuildRoleMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1439 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6549 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6715 */;
 
 const require = globalThis.__r;
 

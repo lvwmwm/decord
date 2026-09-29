@@ -1,21 +1,21 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 11133
+// Function ID: 11134
 // Name: ChatBanner
-// Dependencies: [19, 17, 5589, 4851, 10965, 1074, 21, 4836, 576, 10966, 10967, 504, 11, 1241, 5016, 6534, 4832, 1115, 5281, 6687, 7184, 5435, 6531, 7415, 2]
+// Dependencies: [19, 17, 5756, 4851, 11134, 1074, 21, 4836, 576, 11135, 11136, 504, 11, 1241, 5016, 6700, 4832, 1115, 5447, 6853, 7349, 5602, 6697, 7580, 2]
 // Exports: default
 
-// Module 10964 (ChatBanner)
+// Module 11133 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6531 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6534 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10966 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10967 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6697 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6700 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7349 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11135 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11136 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 
 require = fn;
@@ -85,10 +85,10 @@ function ArchivedLockedThreadChatBanner(channel) {
     obj2.banner_type = "thread";
     obj.track(constants3.CHANNEL_BANNER_VIEWED, obj2);
   }, items);
-  let canUnarchiveThread = channel(6687).useCanUnarchiveThread(channel);
+  let canUnarchiveThread = channel(6853).useCanUnarchiveThread(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: null };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
-  let obj = channel(6687);
+  let obj = channel(6853);
   const tmp6 = closure_13;
   const intl = channel(1115).intl;
   const string = intl.string;
@@ -115,7 +115,7 @@ function ArchivedLockedThreadChatBanner(channel) {
       obj.track(constants3.CHANNEL_BANNER_CTA_CLICKED, obj2);
       ThreadActionCreatorsDefault.unarchiveThread(channel, false);
     };
-    obj4.children = tmp8(tmp3(5281).Button, obj5);
+    obj4.children = tmp8(tmp3(5447).Button, obj5);
     canUnarchiveThread = tmp8(tmp7, obj4);
   }
   items1[1] = canUnarchiveThread;
@@ -134,10 +134,10 @@ function LockedThreadChatBanner(channel) {
     obj2.banner_type = "thread";
     obj.track(constants3.CHANNEL_BANNER_VIEWED, obj2);
   }, items);
-  let isThreadModerator = channel(6687).useIsThreadModerator(channel);
+  let isThreadModerator = channel(6853).useIsThreadModerator(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: null };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
-  let obj = channel(6687);
+  let obj = channel(6853);
   const tmp6 = closure_13;
   const intl = channel(1115).intl;
   const string = intl.string;
@@ -164,7 +164,7 @@ function LockedThreadChatBanner(channel) {
       obj.track(constants3.CHANNEL_BANNER_CTA_CLICKED, obj2);
       ThreadActionCreatorsDefault.unlockThread(channel);
     };
-    obj4.children = tmp8(tmp3(5281).Button, obj5);
+    obj4.children = tmp8(tmp3(5447).Button, obj5);
     isThreadModerator = tmp8(tmp7, obj4);
   }
   items1[1] = isThreadModerator;
@@ -192,8 +192,8 @@ function NewMessagesChatBar(channel) {
       const obj4 = { count: unreadCount, timestamp: channel.oldestUnreadTimestamp };
       obj3.children = intl.format(ReadStateStore.isEstimated(channel.id) ? t.wvtbbG : t["BctFH/"], obj4);
       obj2.children = closure_12(XSmallBoldIcon(4832).Text, obj3);
-      const items1 = [closure_12(XSmallBoldIcon(5435).PressableOpacity, obj2), ];
-      handleScrollToNewMessages = XSmallBoldIcon(5435).PressableOpacity;
+      const items1 = [closure_12(XSmallBoldIcon(5602).PressableOpacity, obj2), ];
+      handleScrollToNewMessages = XSmallBoldIcon(5602).PressableOpacity;
       const obj5 = { style: stringResult.newMessageBarCloseButton, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
       const intl2 = XSmallBoldIcon(1115).intl;
       stringResult = intl2.string(XSmallBoldIcon(1115).t.e6RscS);
@@ -201,7 +201,7 @@ function NewMessagesChatBar(channel) {
       obj5.onPress = function onPress() {
         return ReadStateActionCreators.ack(channel.id, { section: constants4.NEW_MESSAGES_BANNER, object: constants2.MARK_CHANNEL_AS_READ_BUTTON, objectType: constants.ACK_MANUAL });
       };
-      XSmallBoldIcon = XSmallBoldIcon(7415).XSmallBoldIcon;
+      XSmallBoldIcon = XSmallBoldIcon(7580).XSmallBoldIcon;
       const obj6 = { size: "sm", color: null };
       WHITE = nativeDefault.colors.WHITE;
       obj6.color = WHITE;
@@ -216,7 +216,7 @@ function NewMessagesChatBar(channel) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const ChatOverlays = fn(10965).ChatOverlays;
+const ChatOverlays = fn(11134).ChatOverlays;
 const Constants = fn(1074);
 ({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticEvents: c10, AnalyticsSections: closure_11 } = Constants);
 const jsxProd = fn(21);

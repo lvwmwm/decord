@@ -1,10 +1,10 @@
-// Module ID: 16325
-// Function ID: 16326
+// Module ID: 16504
+// Function ID: 16505
 // Name: getActivityReportOptions
 // Dependencies: [2005, 1115, 2]
 // Exports: default
 
-// Module 16325 (getActivityReportOptions)
+// Module 16504 (getActivityReportOptions)
 import util from "util" /* 1115 */;
 import Constants from "Constants" /* 2005 */;
 import size from "module_2" /* 2 */;

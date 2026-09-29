@@ -1,19 +1,19 @@
-// Module ID: 11201
-// Function ID: 11202
+// Module ID: 11370
+// Function ID: 11371
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 1364, 8605, 8061, 1115, 5435, 8219, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 1364, 8770, 8226, 1115, 5602, 8384, 2]
 // Exports: default
 
-// Module 11201 (ShareChatInput)
+// Module 11370 (ShareChatInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5435 */;
-import ReactionIcon from "ReactionIcon" /* 8219 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8605 */;
+import Pressables from "Pressables" /* 5602 */;
+import ReactionIcon from "ReactionIcon" /* 8384 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8770 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const FormInputDefault = tmp2(8061);
+const FormInputDefault = tmp2(8226);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);

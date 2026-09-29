@@ -1,10 +1,10 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7553
+// Function ID: 7554
 // Name: renderer/EmbedUtils
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 7388 (renderer/EmbedUtils)
+// Module 7553 (renderer/EmbedUtils)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

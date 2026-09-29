@@ -1,14 +1,14 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 11068
+// Function ID: 11069
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5589, 4470, 2045, 1993, 4859, 1074, 2052, 4836, 576, 10900, 5314, 4703, 563, 1611, 1364, 4531, 7297, 2]
+// Dependencies: [19, 5756, 4470, 2045, 1993, 4859, 1074, 2052, 4836, 576, 11069, 5480, 4703, 563, 1611, 1364, 4531, 7462, 2]
 // Exports: default
 
-// Module 10899 (useChannelSafeAreaBottomStyles)
+// Module 11068 (useChannelSafeAreaBottomStyles)
 import nativeDefault from "native" /* 576 */;
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
 import LurkingStore from "LurkingStore" /* 4470 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
