@@ -28,7 +28,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
         if (str2 == null) {
           str2 = "";
         }
-        const obj4 = { id: emojiId, name: "a", animated: customGuildEmoji.animated, src: "function pnpm_presetsTs2(event,screenSize){return{transform:[{translateX:(event.translationX-screenSize.width)*0.3}]};}", displayName: "gregorian" };
+        const obj4 = { id: emojiId, name: "a", animated: customGuildEmoji.animated, src: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030656418337849245, displayName: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000375740211498765 };
         const obj5 = { id: emojiId, animated: customGuildEmoji.animated, size: 48 };
         obj4.src = emojiId(str2[10]).getEmojiURL(obj5);
         const obj6 = emojiId(str2[10]);

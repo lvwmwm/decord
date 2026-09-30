@@ -53,8 +53,8 @@ class UploaderBase extends EventEmitter {
       closure_0._file = obj3;
       closure_0.emit("progress", closure_0._file);
     };
-    tmp3._handleException = function _handleException(arg0) {
-      const obj = { reason: { type: FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN, msg: arg0.toString() } };
+    tmp3._handleException = function _handleException(arg0, INVALID_FILE_ASSET) {
+      const obj = { code: INVALID_FILE_ASSET, reason: { type: FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN, msg: arg0.toString() } };
       closure_0._handleError(obj);
     };
     tmp3._handleAborted = function _handleAborted() {
@@ -158,12 +158,17 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
           _self.return();
           throw logger;
         } else if (2 === tmp4) {
+          c7 = 1;
           closure_132_3 = logger;
-          let _handleExceptionResult = closure_133_0._handleException(closure_132_3);
-          c7 = 0;
-          _self.return();
-          c9 = 3;
-          return { value: false, done: true };
+          if (closure_132_1.isCancelled()) {
+            c7 = 0;
+          } else {
+            let _handleExceptionResult = closure_133_0._handleException(closure_132_3, constants.INVALID_FILE_ASSET);
+            c7 = 0;
+            _self.return();
+            c9 = 3;
+            return { value: false, done: true };
+          }
         } else if (arg0 === 1) {
           c9 = 3;
           throw value;
@@ -173,46 +178,49 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
           c9 = 3;
           let obj5 = { value, done: true };
           return obj5;
-        } else if (closure_132_1.isCancelled()) {
-          let _HermesInternal = HermesInternal;
-          let logResult2 = logger.log("compressAndCheckFileSize() file has been cancelled for compression - " + closure_132_1.id);
-          c7 = 0;
         } else {
-          let currentSize = closure_132_1.currentSize;
-          c2 = currentSize;
-          if (currentSize == null) {
-            c2 = 0;
-          }
-          if (0 === c2) {
-            let obj6 = { code: null };
-            obj6.code = constants.ENTITY_EMPTY;
-            let _handleErrorResult1 = closure_133_0._handleError(obj6);
+          if (closure_132_1.isCancelled()) {
+            let _HermesInternal = HermesInternal;
+            let logResult2 = logger.log("compressAndCheckFileSize() file has been cancelled for compression - " + closure_132_1.id);
             c7 = 0;
-            _self.return();
-            c9 = 3;
-            return { value: false, done: true };
           } else {
-            maxFileSize = closure_132_0.getMaxFileSize(closure_132_1.channelId);
-            let currentSize2 = closure_132_1.currentSize;
-            c3 = currentSize2;
-            if (currentSize2 == null) {
-              c3 = 0;
+            let currentSize = closure_132_1.currentSize;
+            c2 = currentSize;
+            if (currentSize == null) {
+              c2 = 0;
             }
-            if (c3 > maxFileSize) {
-              let obj = { code: null, reason: null };
-              obj.code = constants.ENTITY_TOO_LARGE;
-              let obj7 = { type: null };
-              obj7.type = tmp.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE;
-              obj.reason = obj7;
-              let _handleErrorResult2 = closure_133_0._handleError(obj);
+            if (0 === c2) {
+              let obj6 = { code: null };
+              obj6.code = constants.ENTITY_EMPTY;
+              let _handleErrorResult1 = closure_133_0._handleError(obj6);
               c7 = 0;
               _self.return();
               c9 = 3;
               return { value: false, done: true };
             } else {
-              c7 = 0;
+              maxFileSize = closure_132_0.getMaxFileSize(closure_132_1.channelId);
+              let currentSize2 = closure_132_1.currentSize;
+              c3 = currentSize2;
+              if (currentSize2 == null) {
+                c3 = 0;
+              }
+              if (c3 > maxFileSize) {
+                let obj = { code: null, reason: null };
+                obj.code = constants.ENTITY_TOO_LARGE;
+                let obj7 = { type: null };
+                obj7.type = tmp.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE;
+                obj.reason = obj7;
+                let _handleErrorResult2 = closure_133_0._handleError(obj);
+                c7 = 0;
+                _self.return();
+                c9 = 3;
+                return { value: false, done: true };
+              } else {
+                c7 = 1;
+              }
             }
           }
+          c7 = 0;
         }
         if (_self === undefined) {
           let _fileSizeResult = closure_133_0._fileSize();
@@ -230,12 +238,15 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
           let obj10 = { value: flag, done: true };
           return obj10;
         } else {
-          closure_132_1 = tmp41;
-          c7 = 2;
-          c8 = 3;
-          c9 = 1;
-          let obj11 = { value: closure_132_1.reactNativeCompressAndExtractData(), done: false };
-          return obj11;
+          c7 = 1;
+          closure_132_1 = tmp44;
+          if (!closure_132_1.isCancelled()) {
+            c7 = 2;
+            c8 = 3;
+            c9 = 1;
+            let obj11 = { value: closure_132_1.reactNativeCompressAndExtractData(), done: false };
+            return obj11;
+          }
         }
       }
     }
@@ -314,10 +325,10 @@ prototype["cancel"] = function cancel() {
 prototype["cancelItem"] = function cancelItem(itemId) {
   const self = this;
   return (async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
+    if (c3 === 2) {
+      c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp5 === 3) {
+    } else if (tmp4 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -328,23 +339,21 @@ prototype["cancelItem"] = function cancelItem(itemId) {
       }
     } else {
       try {
-        c4 = 2;
-        if (0 === c3) {
+        c3 = 2;
+        if (0 === c2) {
           if (arg0 === 1) {
-            c4 = 3;
+            c3 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c3 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
             closure_1 = tmp2;
-            closure_129_0 = undefined;
             const _HermesInternal = HermesInternal;
             logger.log("Cancel called for " + self.id + " for item " + itemId);
             const files = self.files;
             const found = files.find((id) => id.id === closure_1_0);
-            closure_129_0 = found;
             if (null != found) {
               if (!found.isCancelled()) {
                 const files1 = self.files;
@@ -360,30 +369,30 @@ prototype["cancelItem"] = function cancelItem(itemId) {
                 const merged = Object.assign(self._file);
                 obj5.items = self.files;
                 self._file = obj5;
+                found.cancel();
+                c2 = 1;
                 c3 = 1;
-                c4 = 1;
-                const obj6 = { value: itemId(tmp3[8]).cancelGetAttachmentFile(found), done: false };
+                const obj6 = { value: itemId(c2[8]).cancelGetAttachmentFile(found), done: false };
                 return obj6;
               }
             }
-            c4 = 3;
+            c3 = 3;
           }
         } else if (arg0 === 1) {
-          c4 = 3;
+          c3 = 3;
           throw value;
         } else if (arg0 !== 2) {
-          closure_129_0.cancel();
-          closure_130_1.emit("cancel-upload-item", closure_130_1._file);
-          if (0 === closure_130_1.files.length) {
-            closure_130_1.cancel();
+          closure_129_1.emit("cancel-upload-item", closure_129_1._file);
+          if (0 === closure_129_1.files.length) {
+            closure_129_1.cancel();
           }
         }
-        c4 = 3;
+        c3 = 3;
         const obj = { value, done: true };
         return obj;
-      } catch (tmp31) {
-        c4 = tmp;
-        throw tmp31;
+      } catch (tmp28) {
+        c3 = tmp;
+        throw tmp28;
       }
     }
   })();

@@ -136,7 +136,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj6 = { style: tmp21.popoutCheckGroupPlatformIcon, user: tmp7, size: tmp11(1177).AvatarSizes.XSMALL, guildId: "Array" };
+                const obj6 = { style: tmp21.popoutCheckGroupPlatformIcon, user: tmp7, size: tmp11(1177).AvatarSizes.XSMALL, guildId: "a" };
                 tmp26 = value2(tmp11(1177).Avatar, obj6);
               }
               items1[1] = tmp26;

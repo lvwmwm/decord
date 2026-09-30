@@ -44,7 +44,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flexDirection", ringing: null, hasVideo: "row", isSelf: "center" };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flexDirection", ringing: null, hasVideo: 0, isSelf: 2 };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);

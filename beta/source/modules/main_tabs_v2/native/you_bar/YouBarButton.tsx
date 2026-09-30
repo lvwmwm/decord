@@ -88,7 +88,7 @@ class YouBarButtonIcon {
     items2[0] = memo;
     items2[1] = hasBadge;
     memo1 = obj2.useMemo(() => {
-      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "children", bottom: "default", padding: "justifyContent", minWidth: "raw" };
+      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "paddingHorizontal", bottom: "position", padding: "container", minWidth: "Array" };
       return rect;
     }, items1);
     obj6 = { style: { position: "relative", height: tmp, width: tmp }, children: null };

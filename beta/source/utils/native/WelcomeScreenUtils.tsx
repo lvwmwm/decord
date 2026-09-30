@@ -17,7 +17,7 @@ const require = globalThis.__r;
 
 require = fn;
 const NO_WELCOME_SCREEN = fn(12151).NO_WELCOME_SCREEN;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "r" };
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "Array" };
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 

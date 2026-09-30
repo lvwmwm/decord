@@ -30,7 +30,7 @@ function SharedUser(user) {
   }
   const tmp8 = View;
   items[1] = erroredAvatar;
-  const items1 = [closure_5(user(1177).Avatar, { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" }), , ];
+  const items1 = [closure_5(user(1177).Avatar, { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" }), , ];
   if (tmp6) {
     const obj4 = { children: null };
     const obj5 = { variant: "text-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
@@ -50,7 +50,7 @@ function SharedUser(user) {
   const obj9 = { variant: "secondary", size: "sm", text: null, icon: null, onPress: null };
   const intl2 = tmp5(1115).intl;
   obj9.text = intl2.string(user(1115).t["g33r/P"]);
-  const obj3 = { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+  const obj3 = { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
   obj9.icon = closure_5(user(5385).ChatIcon, { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT });
   obj9.onPress = function onPress() {
     ActionSheetActionCreatorsDefault.hideActionSheet();

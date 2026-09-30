@@ -99,7 +99,7 @@ prototype["getState"] = function getState() {
     const obj2 = { theme, customTheme: prop };
     let obj = obj2;
   } else {
-    obj = { theme: "st", customTheme: "channel" };
+    obj = { theme: "Array", customTheme: "flex" };
   }
   return obj;
 };

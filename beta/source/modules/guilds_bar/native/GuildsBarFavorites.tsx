@@ -68,7 +68,7 @@ export default noop.memo(function GuildsBarFavorites() {
     return obj;
   }, []);
   ({ accessibilityActions, onAccessibilityAction } = memo1);
-  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: 279.113, externalChildren: 107.996, expandedChildren: 148.729, children: "userSpaceOnUse" };
+  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: "\u05EA\u05D0\u05E8\u05D9\u05DA \u05D5\u05D6\u05DE\u05DF ISO", externalChildren: "m", expandedChildren: "text-sm/semibold", children: "text-subtle" };
   const obj4 = shouldShowPopover(9701);
   const tmp13 = closure_9;
   let intl = shouldShowPopover(1115).intl;

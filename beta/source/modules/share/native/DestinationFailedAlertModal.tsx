@@ -44,7 +44,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: null };
-    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", isVROnline: null, size: "7aaabb385f87843ebbb050e554f08ed8", avatarDecoration: "en-GB.messages.7aaabb385f87843ebbb050e554f08ed8.compiled.messages", autoStatusCutout: "jsona" };
+    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "primary", autoStatusCutout: null };
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
       tmp13 = status;

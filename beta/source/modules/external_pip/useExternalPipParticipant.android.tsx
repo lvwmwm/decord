@@ -62,7 +62,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (ref.current !== id2) {
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "paddingHorizontal", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "flex", focusedParticipantType: ref2.current };
       let obj = obj2;
     } else {
       let type1;
@@ -241,7 +241,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "paddingHorizontal" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "disabled" };
   }, items4);
   closure_129_4 = selectedParticipantSpeaking;
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];

@@ -108,7 +108,7 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "disabled", autoStatusCutout: false };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "99914b932bd37a50b983c5e7c90ae93b", style: "CopyExperiments.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null };
       let tmp12 = null;
       if (!stateFromStores2.isSystemUser()) {
         tmp12 = status;
@@ -119,7 +119,7 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
       obj7.size = REFRESH_MEDIUM_32;
       obj7.animate = stateFromStores1;
       obj7.typing = stateFromStores;
-      tmp11Result = jsx(tmp3(1177).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "disabled", autoStatusCutout: false });
+      tmp11Result = jsx(tmp3(1177).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "99914b932bd37a50b983c5e7c90ae93b", style: "CopyExperiments.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null });
     }
   }
   return tmp11Result;

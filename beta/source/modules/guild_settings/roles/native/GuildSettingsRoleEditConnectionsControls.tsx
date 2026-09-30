@@ -361,7 +361,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   const obj9 = {
     handleConnectionTapped(connectionType, applicationId) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "current", value: null };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "Icon", value: false };
       items.push(obj);
       if (AND === ConnectionsUtils.ConnectionConfigurationRuleOperator.AND) {
         if (0 === items.length) {

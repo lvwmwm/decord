@@ -223,7 +223,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = applyArgumentsResult.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "flexDirection", shouldInitialScroll: "Array", animated: "2026-05-quest-home-tile-redesign", scrollPosition: "user", focusTargetId: null };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "flexDirection", shouldInitialScroll: "Array", animated: "2026-02-mobile-volume-output-slider-removal", scrollPosition: "user", focusTargetId: null };
         applyArgumentsResult.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {

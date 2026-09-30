@@ -339,7 +339,7 @@ export default noop.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: 72, scrollPosition: 4, dragRegion: null, windowSize: null, dropComplete: null, listInsets: null };
+          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "ultra-thin", scrollPosition: null, dragRegion: null, windowSize: null, dropComplete: "text-xxs/normal", listInsets: "text-default" };
           ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
           obj.overState = state;
           let node;

@@ -430,7 +430,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                       obj12.label = intl11.string(intl(1115).t.KC26NR);
                       obj16 = obj12;
                     } else if (isAskToJoin) {
-                      const obj13 = { label: "flex", disabled: null, footerLabel: "<string:415694850>" };
+                      const obj13 = { label: "flex", disabled: null, footerLabel: "100" };
                       const intl10 = intl(1115).intl;
                       const obj14 = { username: message.author.globalName, appName: name_override };
                       obj13.footerLabel = intl10.formatToPlainString(intl(1115).t.gYVkSW, obj14);
@@ -444,7 +444,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                           obj16 = obj15;
                         }
                       }
-                      obj16 = { label: "flex", disabled: null, footerLabel: "<string:415694850>" };
+                      obj16 = { label: "flex", disabled: null, footerLabel: "100" };
                       const intl8 = intl(1115).intl;
                       obj16.footerLabel = intl8.string(intl(1115).t.OAB5TK);
                     }
@@ -574,7 +574,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               return null;
             }
           }
-          const obj20 = { displayType: obj.BLOCKED, headerText: null, subtitle: null, ctaButtonEnabled: false, ctaButtonText: "flex", ctaButtonIsLoading: "Array", footerLabel: "flexDirection", gradientColors: 0, iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "disabled", maxPartySize: "find", partyMemberAvatarURIs: "r", partySizeText: 347.2, platformIconKeys: 0, coverImageUrl: 52.8, detailsText: 1, title: 0.667 };
+          const obj20 = { displayType: obj.BLOCKED, headerText: null, subtitle: null, ctaButtonEnabled: false, ctaButtonText: "flex", ctaButtonIsLoading: "Array", footerLabel: "flexDirection", gradientColors: 0, iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "channel", maxPartySize: "height", partyMemberAvatarURIs: "category", partySizeText: "100%", platformIconKeys: "100%", coverImageUrl: "flex", detailsText: "center", title: "100%" };
           const intl2 = intl(1115).intl;
           obj20.headerText = intl2.string(intl(1115).t.pkq6Vq);
           if (contentClassificationVisibility === intl(11421).ContentClassificationVisibility.BLOCK_UNDERAGE) {

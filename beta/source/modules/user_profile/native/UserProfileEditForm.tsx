@@ -75,7 +75,7 @@ let closure_11 = fn(1084).ProfileCustomizationScrollPositions;
 const constants = fn(10658).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: fn(6410).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14147, staticImageUri: _modDef14147, description: "", originalAsset: "add" };
+let obj = { assetOrigin: fn(6410).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14147, staticImageUri: _modDef14147, description: "", originalAsset: "channel" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

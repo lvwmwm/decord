@@ -44,7 +44,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = noop.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "media_engine_connect", "aria-hidden": "MEDIA_SESSION_JOINED" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "deaf_woman_medium_dark_skin_tone", "aria-hidden": 40 };
     return timestampProducer(native.Avatar, obj);
   }, items1);
   return closure_6(currentUser(stateFromStores[20]).UserNameplateRow, { nameplate, icon, label, isPreviewRow: true });

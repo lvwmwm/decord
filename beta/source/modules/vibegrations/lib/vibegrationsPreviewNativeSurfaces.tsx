@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: null }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: null })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "channel" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "channel" })
 };
 let closure_5 = {
   drain() {

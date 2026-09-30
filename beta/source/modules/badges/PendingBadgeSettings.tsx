@@ -222,7 +222,7 @@ export const setPendingBadgeVisibility = function setPendingBadgeVisibility(badg
   DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeHiddenBadges: tmp20 });
 };
 export const resetPendingBadgeSettings = function resetPendingBadgeSettings() {
-  DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "channel", pendingBadgeHiddenBadges: "x" });
+  DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "channelId", pendingBadgeHiddenBadges: "ddd" });
 };
 export const hasPendingBadgeSettings = function hasPendingBadgeSettings(pendingBadgeDisplayOrder) {
   return undefined !== pendingBadgeDisplayOrder.pendingBadgeDisplayOrder || undefined !== pendingBadgeDisplayOrder.pendingBadgeHiddenBadges;

@@ -104,7 +104,7 @@ export default function FamilyCenterParentalControlsSettings() {
         stackNavigation.setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "st", headerRight: "channel" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "flex" });
   }, items1);
   const obj4 = { label: null, id: null, page: null };
   let intl = tmp2(tmp3[14]).intl;

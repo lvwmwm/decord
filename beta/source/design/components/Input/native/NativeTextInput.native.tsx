@@ -100,8 +100,8 @@ export const NativeTextInput = noop.forwardRef((value, ref2) => {
   ref(defaultValue[9]);
   if (null != value.keyboardAppearance) {
     const obj3 = {};
-    let merged = Object.assign(tmp6(tmp3[10]).mergeProps(value, tmp4, { value: "st", defaultValue: "channel" }));
-    const obj4 = { value: "st", defaultValue: "channel" };
+    let merged = Object.assign(tmp6(tmp3[10]).mergeProps(value, tmp4, { value: "Array", defaultValue: "flex" }));
+    const obj4 = { value: "Array", defaultValue: "flex" };
     const tmp15 = closure_10;
     const tmp6Result = tmp6(tmp3[10]);
     obj3.ref = tmp6(tmp3[10]).mergeRefs(ref, ref2);

@@ -98,7 +98,7 @@ function GroupDMIcon(channel) {
 function UserAvatar(user) {
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", isMobileOnline: null, isVROnline: "6c58e84d046fe7f47bf33aa76fadd01f", style: "sv-SE.messages.6c58e84d046fe7f47bf33aa76fadd01f.compiled.messages", autoStatusCutout: "jsona" };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: null, isMobileOnline: null, isVROnline: null, style: null, autoStatusCutout: null };
   let tmp3 = null;
   if (!user.isSystemUser()) {
     tmp3 = status;

@@ -50,7 +50,7 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1177).AvatarSizes.NORMAL, status: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", isMobileOnline: null, isVROnline: "6c58e84d046fe7f47bf33aa76fadd01f", statusStyle: "sv-SE.messages.6c58e84d046fe7f47bf33aa76fadd01f.compiled.messages" };
+    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1177).AvatarSizes.NORMAL, status: null, isMobileOnline: null, isVROnline: null, statusStyle: null };
     let isSystemUserResult;
     if (stateFromStores != null) {
       isSystemUserResult = stateFromStores.isSystemUser();

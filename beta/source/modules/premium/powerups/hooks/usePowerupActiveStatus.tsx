@@ -61,7 +61,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         if (null != stateFromStores) {
           if (null != unlockedPowerups) {
             if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
+              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
             } else {
               let tmp4;
               if (null != React5[tmp22]) {
@@ -114,7 +114,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
     }
   });
   if (mapped.length <= 0) {
@@ -166,7 +166,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
         if (null != stateFromStores) {
           if (null != unlockedPowerups) {
             if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
+              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
             } else {
               let tmp4;
               if (null != React5[tmp22]) {
@@ -219,7 +219,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
           return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
     }
   });
 };

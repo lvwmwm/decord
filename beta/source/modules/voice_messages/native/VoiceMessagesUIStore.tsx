@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 ({ VoiceMessageAnimationState: c2, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageConstants);
 let obj = module_560.create(() => {
-  obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "flex", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flexDirection", showVoiceMessagesTooltip: "M10 7H6v1h4V7ZM12 8h-2v1h2V8ZM6 8H4v1h2V8Z", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: 0.75, isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "flex", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flexDirection", showVoiceMessagesTooltip: "[^\\ud800-\\udfff]", savedVoiceMessageUploadData: "[\\u2700-\\u27bf]", isVoiceMessageButtonMounted: "[^\\ud800-\\udfff][\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]?", isUsingHoldGesture: "[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]" };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj.voiceMessageAnimationState = ReanimatedRexport.makeMutable(items);
@@ -91,7 +91,7 @@ export const hideVoiceMessagesTooltip = function hideVoiceMessagesTooltip() {
 export const resetVoiceMessageState = function resetVoiceMessageState() {
   obj = ReactBatchUpdates;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "paddingHorizontal" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "disabled" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {

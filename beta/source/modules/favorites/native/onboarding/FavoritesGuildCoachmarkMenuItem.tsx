@@ -34,7 +34,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M9 14H7v1h2v-1ZM9 11H7v1h2v-1Z", onButtonPress: null };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M10 10H6v1h4v-1Z", onButtonPress: null };
     const intl = util.intl;
     const tmp4 = _modDef3361;
     if (stateFromStores) {

@@ -24,7 +24,7 @@ function LeftSlot(state) {
   obj2.style = items;
   const tmp = useChatInputFloatingBounceDefault({ visible: state !== native.TransitionStates.YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup });
   const merged = Object.assign(ChatInputActionButtonTransitionItem.interactivityProps(isInteractive));
-  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flex", shouldShowThread: "face_with_hand_over_mouth" });
+  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flex", shouldShowThread: "animal" });
   return React5(ReanimatedRexportDefault.View, obj2);
 }
 const View = fn(17).View;

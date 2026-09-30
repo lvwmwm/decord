@@ -56,7 +56,7 @@ export default noop.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
       AlertActionCreatorsDefault.show(obj2);
     }
   }), items);
-  const obj3 = { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "canap\u00E9", expandedChildren: "canap\u00E9 avec une lampe", children: "canap\u00E9 et lampe" };
+  const obj3 = { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "Override Descriptor", expandedChildren: false, children: null };
   const guildsBarAnimatedWrapperStyles = restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   obj3.externalChildren = jsx(GuildsBarGeoRestrictedBadgeDefault, { style: tmp.geoRestrictedBadge });
   obj3.expandedChildren = jsx(HomeDrawerGuildRowDefault, { guildId: restrictedGuild.id });
@@ -69,5 +69,5 @@ export default noop.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
     const tmp9Result = tmp9(5896);
   }
   obj3.children = tmp8Result;
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "canap\u00E9", expandedChildren: "canap\u00E9 avec une lampe", children: "canap\u00E9 et lampe" });
+  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "Override Descriptor", expandedChildren: false, children: null });
 });

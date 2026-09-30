@@ -16,7 +16,7 @@ let result = size.fileFinishedImporting("modules/routing/transitionToGuild.nativ
 
 export const transitionToGuild = function transitionToGuild(guildId, arg1) {
   const channelIdForGuildTransition = getChannelIdForGuildTransition.getChannelIdForGuildTransition(guildId);
-  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "HermesInternal", delete: "paddingHorizontal" });
+  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "paddingHorizontal", delete: "Error" });
   const obj3 = router_utils;
   const obj4 = { navigationReplace: true };
   const merged = Object.assign(arg1);

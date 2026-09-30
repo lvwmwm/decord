@@ -14,7 +14,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const hasOwnProperty = { input: "", error: "add" };
+const hasOwnProperty = { input: "", error: "channel" };
 const PureComponent = noop.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {

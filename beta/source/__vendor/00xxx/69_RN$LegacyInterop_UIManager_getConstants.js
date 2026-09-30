@@ -15,7 +15,7 @@ const f18177 = () => {
 ({ RN$LegacyInterop_UIManager_getConstantsForViewManager: closure_7, RN$LegacyInterop_UIManager_getDefaultEventTypes: closure_8 } = global);
 let c0 = false;
 let c1 = null;
-const f70014 = () => {
+const f70017 = () => {
 
 };
 let obj = {};
@@ -50,7 +50,7 @@ const merged1 = Object.assign({
   },
   getDefaultEventTypes() {
     if (React6) {
-      if (typeof f70014 === "function") {
+      if (typeof f70017 === "function") {
         if (!closure_137_0) {
           closure_137_1 = _null(70)(React6)();
           closure_137_0 = true;

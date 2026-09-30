@@ -1624,8 +1624,8 @@ let c82 = 0;
 let c83 = false;
 let closure_84 = performance.now();
 let c85 = null;
-const inputDevices = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "Boolean", hardwareId: "disabled", containerId: "isArray" } };
-const outputDevices = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "paddingHorizontal", hardwareId: "Math", containerId: "PX_16" } };
+const inputDevices = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "sa", hardwareId: "Date", containerId: "isArray" } };
+const outputDevices = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "channel", hardwareId: "to", containerId: "find" } };
 let dependencyMap = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "channel", hardwareId: "height", containerId: "isArray" } };
 const timeout = new fn(2040).Timeout();
 let c90 = false;
@@ -4916,7 +4916,7 @@ const mediaEngineStore = new MediaEngineStore(DispatcherDefault, {
     _require = videoDevices;
     const arr = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_INPUT]];
     if (0 === arr.length) {
-      let obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "paddingHorizontal", hardwareId: "Boolean", containerId: "accessibilityLabel" };
+      let obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "sa", hardwareId: "w", containerId: "isArray" };
       obj2 = {};
       obj2[obj.id] = obj;
       let valueResult = obj2;
@@ -5080,7 +5080,7 @@ const mediaEngineStore = new MediaEngineStore(DispatcherDefault, {
     closure_129_1 = AUDIO_OUTPUT;
     const arr3 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_OUTPUT]];
     if (0 === arr3.length) {
-      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp25, disabled: true, guid: "paddingHorizontal", hardwareId: "Boolean", containerId: "accessibilityLabel" };
+      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp25, disabled: true, guid: "sa", hardwareId: "w", containerId: "isArray" };
       const obj6 = {};
       obj6[obj3.id] = obj3;
       let valueResult3 = obj6;
@@ -5254,7 +5254,7 @@ const mediaEngineStore = new MediaEngineStore(DispatcherDefault, {
     closure_131_1 = VIDEO_INPUT;
     const arr5 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[VIDEO_INPUT]];
     if (0 === arr5.length) {
-      const obj8 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp42, disabled: true, guid: "paddingHorizontal", hardwareId: "Boolean", containerId: "accessibilityLabel" };
+      const obj8 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp42, disabled: true, guid: "sa", hardwareId: "w", containerId: "isArray" };
       const obj9 = {};
       obj9[obj8.id] = obj8;
       let valueResult4 = obj9;

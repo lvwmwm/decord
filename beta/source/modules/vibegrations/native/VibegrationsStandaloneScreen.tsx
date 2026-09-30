@@ -160,7 +160,7 @@ function ProjectList(guildId) {
     closure_1 = callback;
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f119755(arg0);
+        f119758(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback1.CHANNEL(arg1, num2.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);
@@ -956,10 +956,10 @@ function ChatScene(guildId) {
   const items18 = [guildId, navigation];
   memo2 = obj12.useMemo(() => {
     closure_0 = guildId;
-    const f119755 = (projectId) => navigation.push(memo2.CHAT, { projectId });
+    const f119758 = (projectId) => navigation.push(memo2.CHAT, { projectId });
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f119755(arg0);
+        f119758(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback1.CHANNEL(arg1, num2.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);

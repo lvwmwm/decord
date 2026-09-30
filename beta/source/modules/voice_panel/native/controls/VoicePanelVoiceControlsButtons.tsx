@@ -388,7 +388,7 @@ export const HideSelfVideo = function HideSelfVideo() {
       if (!paths) {
         if (!VIDEO) {
           VIDEO = constants.VIDEO;
-          const f121578 = () => f121578(!VIDEO);
+          const f121581 = () => f121581(!VIDEO);
           const obj2 = {
             importer() {
                   return VIDEO(paths[16])(paths[15], paths.paths).then((result) => {

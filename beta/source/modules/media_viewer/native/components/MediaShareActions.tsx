@@ -128,7 +128,7 @@ function useMediaShareActions(source) {
       if ("embed" !== source.accessoryType) {
         const attachmentId = tmp8.attachmentId;
         if (null != attachmentId) {
-          const obj3 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "USER_DISCORD_ACHIEVEMENT_STATE_UPDATE" };
+          const obj3 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "wutheringwaves" };
           const obj4 = { onlyAttachmentIds: null };
           const items = [attachmentId];
           obj4.onlyAttachmentIds = items;
@@ -136,7 +136,7 @@ function useMediaShareActions(source) {
           ForwardModalUtils.openForwardModal(obj3);
         }
       } else {
-        const obj6 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "USER_DISCORD_ACHIEVEMENT_STATE_UPDATE" };
+        const obj6 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "wutheringwaves" };
         const obj7 = { onlyEmbedIndices: null };
         const items1 = [tmp8.mediaIndex];
         obj7.onlyEmbedIndices = items1;

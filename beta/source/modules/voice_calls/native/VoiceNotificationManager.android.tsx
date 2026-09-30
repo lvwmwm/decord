@@ -28,7 +28,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "PX_8", connectionState: "context", selfMute: false, deafened: "zh-Hant-MO", isPushToTalk: "zh-Hant-HK", embeddedActivity: 0, isStreaming: 0 };
+    obj.state = { channelId: "PX_8", connectionState: "context", selfMute: false, deafened: 2952, isPushToTalk: 2953, embeddedActivity: 2954, isStreaming: 2955 };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = RTCConnectionStore.getChannelId();
       const state = RTCConnectionStore.getState();
@@ -219,7 +219,7 @@ prototype["terminate"] = function terminate() {
 };
 obj2 = Object.create(VoiceNotificationManager.prototype);
 obj2.voiceServiceHandlerId = 9000;
-obj2.state = { channelId: "PX_8", connectionState: "context", selfMute: false, deafened: "zh-Hant-MO", isPushToTalk: "zh-Hant-HK", embeddedActivity: 0, isStreaming: 0 };
+obj2.state = { channelId: "PX_8", connectionState: "context", selfMute: false, deafened: 2952, isPushToTalk: 2953, embeddedActivity: 2954, isStreaming: 2955 };
 obj2.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = RTCConnectionStore.getChannelId();
   const state = RTCConnectionStore.getState();

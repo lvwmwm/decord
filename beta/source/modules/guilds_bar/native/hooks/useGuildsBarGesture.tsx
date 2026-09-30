@@ -605,7 +605,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state1.setStateShallow({ dragSpecs: "st", overSpecs: "channel" });
+    state1.setStateShallow({ dragSpecs: "Array", overSpecs: "flex" });
     value = gestureState.get();
     if (null != value.mode) {
       const obj11 = {};

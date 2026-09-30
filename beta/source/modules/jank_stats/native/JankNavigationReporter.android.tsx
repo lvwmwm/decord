@@ -14,7 +14,7 @@ const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });

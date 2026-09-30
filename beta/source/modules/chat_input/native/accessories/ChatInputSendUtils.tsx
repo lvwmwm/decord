@@ -324,7 +324,8 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             let intl2 = util.intl;
             obj3.confirmText = intl2.string(util.t.KJnHq3);
             obj3.onConfirm = function onConfirm() {
-              chatInputSendMessage({ text, parsedMessage, tts: "paddingHorizontal", source: null, params });
+              const obj = { text, parsedMessage, tts: "paddingHorizontal", source: 256546495762780000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, params };
+              chatInputSendMessage(obj);
             };
             let intl3 = util.intl;
             obj3.cancelText = intl3.string(util.t.fsBWmS);
@@ -339,7 +340,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          const obj = { text, parsedMessage, tts: "paddingHorizontal", source: "<string:16777813>", params };
+                          const obj = { text, parsedMessage, tts: "paddingHorizontal", source: "children", params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -350,7 +351,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
           tmp19 = require;
           tmp20 = dependencyMap;
         }
-        const obj7 = { text, parsedMessage: tmp2, tts: "paddingHorizontal", source: false, params };
+        const obj7 = { text, parsedMessage: tmp2, tts: "paddingHorizontal", source: null, params };
         chatInputSendMessage(obj7);
       }
     }

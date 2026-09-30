@@ -135,13 +135,13 @@ export default noop.memo(function GuildsBarCreateJoinButton() {
       })();
     }
   }), items1);
-  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: null, expandedChildren: "text-xs/medium", children: "interactive-text-default" };
+  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: null, expandedChildren: 8, children: 2 };
   obj2 = enabled(504);
   const intl = tmp2(1115).intl;
   obj4.label = intl.string(enabled(1115).t.l5WIbf);
   obj4.expandedChildren = jsx(enabled(15990).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = nativeDefault.colors;
   obj4.children = jsx(enabled(10774).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: null, expandedChildren: "text-xs/medium", children: "interactive-text-default" });
+  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: null, expandedChildren: 8, children: 2 });
   return <tmp8 style={tmp.stretch}>{null}</tmp8>;
 });

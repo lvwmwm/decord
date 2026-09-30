@@ -193,11 +193,11 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                     request.body = obj8;
                     const postResult = HTTP.post(request);
                     HTTP.post(request).then((() => {
-                      closure_0 = closure_1_3(/* F128456 */ function() { ... });
+                      closure_0 = closure_1_3(/* F128459 */ function() { ... });
                       return () => { ... };
                     })()).catch(() => closure_1_11());
                     const nextPromise = HTTP.post(request).then((() => {
-                      closure_0 = closure_1_3(/* F128456 */ function() { ... });
+                      closure_0 = closure_1_3(/* F128459 */ function() { ... });
                       return () => { ... };
                     })());
                   }

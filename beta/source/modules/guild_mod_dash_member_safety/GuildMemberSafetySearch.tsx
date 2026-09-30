@@ -20,7 +20,7 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "user", selectedSort: "isArray" };
+let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "then", selectedSort: "unicodeVersion" };
 let closure_4 = Object.freeze(obj);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
@@ -28,7 +28,7 @@ class GuildMemberSafetySearch {
   constructor(arg0) {
     obj1 = Object.create(new.target.prototype);
     obj1.guildId = global;
-    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "user", selectedSort: "isArray" };
+    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "then", selectedSort: "unicodeVersion" };
     set = new Set();
     obj.selectedRoleIds = set;
     obj.selectedJoinDateOption = { optionId: 0, afterDate: null, beforeDate: null };
@@ -46,7 +46,7 @@ Object.defineProperty(prototype, "requiresUsernameMatch", {
   set: undefined
 });
 prototype["reset"] = function reset() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "user", selectedSort: "isArray" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "then", selectedSort: "unicodeVersion" };
   this._searchState = obj;
   this.hasDefaultQuery = true;
 };
@@ -62,7 +62,7 @@ prototype["resetSearchState"] = function resetSearchState() {
   const hasDefaultQuery = this.hasDefaultQuery;
   let flag = !hasDefaultQuery;
   if (!hasDefaultQuery) {
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "user", selectedSort: "isArray" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "then", selectedSort: "unicodeVersion" };
     const _Set = Set;
     const set = new Set();
     obj.selectedRoleIds = set;
@@ -221,7 +221,7 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
 };
 
 export const getDefaultSearchState = function getDefaultSearchState() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "user", selectedSort: "isArray" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "channel", selectedSourceInviteCode: "then", selectedSort: "unicodeVersion" };
   return obj;
 };
 export { GuildMemberSafetySearch };

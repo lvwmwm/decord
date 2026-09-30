@@ -632,7 +632,7 @@ export const initSentry = function initSentry() {
           if (tmp14Result11.isAndroid()) {
             str2 = "android";
           }
-          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6530", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@348.6.0-1+348106", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6542", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@348.7.0-1+348107", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           items = [PRIMARY_DOMAIN];
           obj3.tracePropagationTargets = items;
           const items1 = [registerSpanErrorInstrumentation, , ];
@@ -664,7 +664,7 @@ export const initSentry = function initSentry() {
           };
           tmp14Result10.init(obj3);
           const tmp14Result13 = require("module_675");
-          require("module_675").setTag("buildNumber", "6530");
+          require("module_675").setTag("buildNumber", "6542");
           const tmp14Result14 = require("module_675");
           require("module_675").setTag("appVersion", constants.Version);
           const tmp14Result15 = require("module_675");
