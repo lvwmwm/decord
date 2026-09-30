@@ -1,13 +1,13 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17978
+// Function ID: 17979
 // Name: BackgroundSync
-// Dependencies: [5756, 502, 1980, 3, 2091, 17293, 2]
+// Dependencies: [5786, 502, 1980, 3, 2091, 17328, 2]
 
-// Module 17943 (BackgroundSync)
+// Module 17978 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2091 */;
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17293 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17328 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 

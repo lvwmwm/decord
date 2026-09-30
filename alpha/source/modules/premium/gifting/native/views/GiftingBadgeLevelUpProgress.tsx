@@ -1,23 +1,23 @@
-// Module ID: 10667
-// Function ID: 10668
+// Module ID: 10701
+// Function ID: 10702
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 7802, 21, 4836, 576, 10375, 10381, 4832, 1115, 2583, 2]
+// Dependencies: [19, 17, 7832, 21, 4866, 576, 10409, 10415, 4862, 1115, 2583, 2]
 // Exports: default
 
-// Module 10667 (GiftingBadgeLevelUpProgress)
+// Module 10701 (GiftingBadgeLevelUpProgress)
 import nativeDefault from "native" /* 576 */;
 import _modDef2583 from "module_2583" /* 2583 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10375 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10381 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10409 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10415 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(7802).getSingleRequirementThreshold;
+let closure_4 = fn(7832).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { gap: nativeDefault.space.PX_4, width: "100%" }, barRow: null, progressBarTrack: null, progressBarFill: null, labels: null };
 let obj3 = { gap: nativeDefault.space.PX_4, width: "100%" };
 obj2.barRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };

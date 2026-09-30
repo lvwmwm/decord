@@ -1,18 +1,18 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10976
+// Function ID: 10977
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 10746, 21, 4836, 576, 6737, 6736, 1115, 6163, 6166, 10941, 5447, 4800, 2]
+// Dependencies: [32, 19, 17, 10780, 21, 4866, 576, 6767, 6766, 1115, 6193, 6196, 10977, 5477, 4830, 2]
 // Exports: default
 
-// Module 10940 (ClearAfterOptionsActionSheet)
+// Module 10976 (ClearAfterOptionsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import TableRadioGroup from "TableRadioGroup" /* 6163 */;
-import TableRadioRow from "TableRadioRow" /* 6166 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6736 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import TableRadioGroup from "TableRadioGroup" /* 6193 */;
+import TableRadioRow from "TableRadioRow" /* 6196 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6766 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6767 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,10 +20,10 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ClearAfterOptions = fn(10746).ClearAfterOptions;
+const ClearAfterOptions = fn(10780).ClearAfterOptions;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, buttonWrapper: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.buttonWrapper = { marginTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_16 };
@@ -45,7 +45,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   const intl2 = util.intl;
   obj3.title = intl2.string(util.t.E45wvP);
   obj3.defaultValue = initialValue;
-  obj3.children = ClearAfterOptions.map((value) => closure_1_7(TableRadioRow.TableRadioRow, { value, label: closure_1(10941)(value) }, value));
+  obj3.children = ClearAfterOptions.map((value) => closure_1_7(TableRadioRow.TableRadioRow, { value, label: closure_1(10977)(value) }, value));
   const items = [closure_7(TableRadioGroup.TableRadioGroup, obj3), ];
   const obj4 = { style: tmp.buttonWrapper, children: null };
   const obj5 = {

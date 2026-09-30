@@ -1,14 +1,14 @@
-// Module ID: 7149
-// Function ID: 7150
+// Module ID: 7179
+// Function ID: 7180
 // Name: CollectiblesMarketingRecord
-// Dependencies: [7150, 7152, 7153, 7154, 7151, 2]
+// Dependencies: [7180, 7182, 7183, 7184, 7181, 2]
 
-// Module 7149 (CollectiblesMarketingRecord)
-import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7150 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7151 */;
-import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7152 */;
-import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7153 */;
-import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7154 */;
+// Module 7179 (CollectiblesMarketingRecord)
+import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7180 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7181 */;
+import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7182 */;
+import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7183 */;
+import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7184 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = CollectiblesMarketingBadgeRecord.CollectiblesMarketingBadgeRecord;

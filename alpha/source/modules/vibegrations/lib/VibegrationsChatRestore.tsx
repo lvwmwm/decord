@@ -1,10 +1,10 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16587
+// Function ID: 16588
 // Name: VibegrationsChatRestore
 // Dependencies: [2]
 // Exports: proposalRestoreEntry, turnRestoreEntry
 
-// Module 16557 (VibegrationsChatRestore)
+// Module 16587 (VibegrationsChatRestore)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsChatRestore.tsx");

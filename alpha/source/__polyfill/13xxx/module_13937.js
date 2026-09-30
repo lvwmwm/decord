@@ -1,10 +1,10 @@
 // Module ID: 13937
 // Function ID: 13938
 // Dependencies: []
-// Exports: shouldPolyfill
+// Exports: CanonicalizeLocaleList
 
 // Module 13937
 
-export const shouldPolyfill = function shouldPolyfill() {
-  return !("supportedValuesOf" in Intl);
+export const CanonicalizeLocaleList = function CanonicalizeLocaleList(items) {
+  return Intl.getCanonicalLocales(items);
 };

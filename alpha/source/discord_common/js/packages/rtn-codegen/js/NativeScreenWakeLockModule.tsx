@@ -1,9 +1,9 @@
-// Module ID: 9085
-// Function ID: 9086
+// Module ID: 9119
+// Function ID: 9120
 // Name: NativeScreenWakeLockModule
 // Dependencies: [17, 2]
 
-// Module 9085 (NativeScreenWakeLockModule)
+// Module 9119 (NativeScreenWakeLockModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

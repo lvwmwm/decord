@@ -1,8 +1,8 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5116
+// Function ID: 5117
 // Dependencies: [2]
 
-// Module 5086
+// Module 5116
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/base/icy.png.js");

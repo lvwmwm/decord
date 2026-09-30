@@ -1,15 +1,15 @@
-// Module ID: 15221
-// Function ID: 15222
+// Module ID: 15254
+// Function ID: 15255
 // Name: AndroidNotificationVibrationsSetting
-// Dependencies: [15207, 7582, 1364, 15209, 1115, 11175, 14183, 15213, 2]
+// Dependencies: [15240, 7612, 1364, 15242, 1115, 11211, 14212, 15246, 2]
 
-// Module 15221 (AndroidNotificationVibrationsSetting)
+// Module 15254 (AndroidNotificationVibrationsSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import SettingsConstants from "SettingsConstants" /* 7582 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15213 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15207 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11175 */;
+import SettingsConstants from "SettingsConstants" /* 7612 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15246 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15240 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 ({ useAndroidNotificationVibrationsEnabled: c2, setAndroidNotificationVibrationsEnabled } = AndroidNotificationSettingsStore);
@@ -36,8 +36,8 @@ obj2.usePredicate = function usePredicate() {
   const isIOSResult = PlatformUtils.isIOS();
   let tmp5 = !isIOSResult;
   if (!isIOSResult) {
-    tmp5 = !tmp2(15209).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15209);
+    tmp5 = !tmp2(15242).hasAndroidNotificationChannels();
+    const tmp2Result = tmp2(15242);
   }
   if (tmp5) {
     tmp5 = null != tmp;
@@ -57,8 +57,8 @@ obj3.usePredicate = function usePredicate() {
   const isIOSResult = PlatformUtils.isIOS();
   let isDeclarativeSettingsUIAvailable = !isIOSResult;
   if (!isIOSResult) {
-    isDeclarativeSettingsUIAvailable = !tmp2(15209).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15209);
+    isDeclarativeSettingsUIAvailable = !tmp2(15242).hasAndroidNotificationChannels();
+    const tmp2Result = tmp2(15242);
   }
   if (isDeclarativeSettingsUIAvailable) {
     isDeclarativeSettingsUIAvailable = null != tmp;

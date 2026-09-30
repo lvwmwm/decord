@@ -1,14 +1,14 @@
-// Module ID: 11420
-// Function ID: 11421
+// Module ID: 11456
+// Function ID: 11457
 // Name: SpotifyActionCreators
-// Dependencies: [11419, 7953, 1074, 2040, 1271, 573, 1091, 1364, 8302, 2]
+// Dependencies: [11455, 7983, 1074, 2040, 1271, 573, 1091, 1364, 8333, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 11420 (SpotifyActionCreators)
+// Module 11456 (SpotifyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GameUtilsDefault from "GameUtils" /* 8302 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11419 */;
+import GameUtilsDefault from "GameUtils" /* 8333 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11455 */;
 
 const require = globalThis.__r;
 
@@ -321,7 +321,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
     return Promise.reject(error);
   });
 }
-const SpotifyConstants = fn(7953);
+const SpotifyConstants = fn(7983);
 ({ SPOTIFY_APP_PROTOCOL: closure_4, SpotifyEndpoints: hasOwnProperty } = SpotifyConstants);
 const Constants = fn(1074);
 ({ AbortCodes: metroRequire, Endpoints: closure_7, PlatformTypes: closure_8 } = Constants);

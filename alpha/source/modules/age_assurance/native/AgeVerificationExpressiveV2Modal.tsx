@@ -1,16 +1,16 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8088
+// Function ID: 8089
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 8025, 1074, 21, 1380, 8059, 8061, 8063, 1364, 8065, 4836, 576, 8067, 8068, 8054, 5048, 8026, 8040, 8041, 8070, 8035, 8036, 5445, 8071, 4832, 8024, 2111, 1177, 5447, 1115, 3039, 6165, 6083, 8073, 8186, 6796, 5039, 6102, 8187, 8188, 1255, 6587, 2]
+// Dependencies: [5, 32, 19, 17, 8055, 1074, 21, 1380, 8089, 8091, 8093, 1364, 8095, 8097, 6573, 4866, 576, 8099, 8100, 8084, 5078, 8056, 8070, 8071, 8102, 8065, 8066, 5475, 8103, 4862, 8054, 2111, 1177, 5477, 1115, 3039, 6195, 6113, 8105, 8218, 6826, 5069, 6132, 8219, 8220, 1255, 6617, 2]
 // Exports: default
 
-// Module 8058 (AgeVerificationExpressiveV2Modal)
+// Module 8088 (AgeVerificationExpressiveV2Modal)
 import nativeDefault from "native" /* 576 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import NavigatorHeader from "NavigatorHeader" /* 6102 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8026 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8040 */;
+import NavigatorHeader from "NavigatorHeader" /* 6132 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8054 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8056 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8070 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -79,13 +79,13 @@ function MethodsScreen(onClose) {
             } else {
               closure_2 = tmp3;
               if (!ref.current) {
-                const obj2 = navigation(onComplete[19]);
-                const result = obj2.trackAgeVerificationModalClicked(c3, navigation(onComplete[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, navigation(onComplete[19]).AgeVerificationModalCta.METHOD_SELECT, tmp48.method);
+                const obj2 = navigation(onComplete[21]);
+                const result = obj2.trackAgeVerificationModalClicked(c3, navigation(onComplete[21]).AgeVerificationModalVersion.EXPRESSIVE_V2, navigation(onComplete[21]).AgeVerificationModalCta.METHOD_SELECT, tmp48.method);
                 if (tmp48.method !== navigation(onComplete[7]).AgeAssuranceMethod.GOOGLE_WALLET) {
                   if (tmp48.method !== tmp22(tmp23[7]).AgeAssuranceMethod.OS_SIGNAL) {
-                    const result1 = tmp22(tmp23[20]).releaseAgeVerificationCustomTab();
-                    const tmp22Result = tmp22(tmp23[20]);
-                    const result2 = tmp22(tmp23[21]).closeAgeVerificationAuthSession();
+                    const result1 = tmp22(tmp23[22]).releaseAgeVerificationCustomTab();
+                    const tmp22Result = tmp22(tmp23[22]);
+                    const result2 = tmp22(tmp23[23]).closeAgeVerificationAuthSession();
                     ref.current = true;
                     _undefined(tmp49);
                     c5 = 1;
@@ -158,7 +158,7 @@ function MethodsScreen(onClose) {
     return externalWindow;
   }, items2);
   const effect = onComplete.useEffect(() => {
-    const result = closure_0(onComplete[20]).resumeAgeVerificationCustomTab();
+    const result = closure_0(onComplete[22]).resumeAgeVerificationCustomTab();
   }, []);
   const items3 = [memo];
   const effect1 = onComplete.useEffect(() => {
@@ -171,24 +171,24 @@ function MethodsScreen(onClose) {
     if (obj.isAgeVerified()) {
       if (tmpResult.getIsAgeVerificationCustomTabAwaitingResult()) {
         if (!tmpResult6.getIsAgeVerificationCustomTabOpen()) {
-          const result = tmp(8040).releaseAgeVerificationCustomTab();
+          const result = tmp(8070).releaseAgeVerificationCustomTab();
           callback();
-          const tmpResult7 = tmp(8040);
+          const tmpResult7 = tmp(8070);
         }
-        tmpResult6 = tmp(8040);
+        tmpResult6 = tmp(8070);
       }
-      tmpResult = tmp(8040);
-      let isAgeVerificationAuthSessionAwaitingResult = tmp(8041).getIsAgeVerificationAuthSessionAwaitingResult();
+      tmpResult = tmp(8070);
+      let isAgeVerificationAuthSessionAwaitingResult = tmp(8071).getIsAgeVerificationAuthSessionAwaitingResult();
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        isAgeVerificationAuthSessionAwaitingResult = !tmp(8041).getIsAgeVerificationAuthSessionOpen();
-        const tmpResult9 = tmp(8041);
+        isAgeVerificationAuthSessionAwaitingResult = !tmp(8071).getIsAgeVerificationAuthSessionOpen();
+        const tmpResult9 = tmp(8071);
       }
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        const result1 = tmp(8041).closeAgeVerificationAuthSession();
+        const result1 = tmp(8071).closeAgeVerificationAuthSession();
         callback();
-        const tmpResult10 = tmp(8041);
+        const tmpResult10 = tmp(8071);
       }
-      const tmpResult8 = tmp(8041);
+      const tmpResult8 = tmp(8071);
     }
   }, items4);
   const obj6 = require("AgeVerificationCustomTab");
@@ -221,14 +221,14 @@ function MethodsScreen(onClose) {
   }, items6);
   if (isAgeVerificationCustomTabOpen) {
     const obj9 = { copy: ageVerificationCustomTabCopy };
-    let tmp19Result = tmp19(onClose(tmp3[22]), obj9);
+    let tmp19Result = tmp19(onClose(tmp3[24]), obj9);
   } else {
     const obj10 = { align: "stretch", spacing: 24, style: tmp.container, children: null };
-    const items7 = [tmp19(tmp2(tmp3[26]).AgeVerificationSpotIllustration, { width: 150, height: 100 }), ];
-    const obj11 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp2(tmp3[18]).getAgeVerificationGetStartedTitle(entryPoint, true) };
-    const items8 = [tmp19(tmp2(tmp3[27]).Text, obj11), ];
+    const items7 = [tmp19(tmp2(tmp3[28]).AgeVerificationSpotIllustration, { width: 150, height: 100 }), ];
+    const obj11 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp2(tmp3[20]).getAgeVerificationGetStartedTitle(entryPoint, true) };
+    const items8 = [tmp19(tmp2(tmp3[29]).Text, obj11), ];
     const obj12 = { variant: "text-md/medium", color: "text-subtle", style: tmp.header, children: null };
-    const tmp2Result2 = tmp2(tmp3[18]);
+    const tmp2Result2 = tmp2(tmp3[20]);
     let fn;
     if (shouldShowExpressiveModalSubtitleAlt) {
       fn = () => {
@@ -243,15 +243,15 @@ function MethodsScreen(onClose) {
       obj.openUrl(HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
       const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
     }, undefined, fn, true);
-    items8[1] = tmp19(tmp2(tmp3[27]).Text, obj12);
+    items8[1] = tmp19(tmp2(tmp3[29]).Text, obj12);
     obj14.children = items8;
-    items7[1] = closure_10(tmp2(tmp3[25]).Stack, obj14);
+    items7[1] = closure_10(tmp2(tmp3[27]).Stack, obj14);
     obj13.children = items7;
-    const items9 = [closure_10(tmp2(tmp3[25]).Stack, obj13), , , ];
+    const items9 = [closure_10(tmp2(tmp3[27]).Stack, obj13), , , ];
     let tmp19Result6 = loading;
     if (loading) {
       const obj15 = { align: "center", justify: "center", style: tmp.loadingContainer, children: tmp19(initiateAgeVerificationV2, { size: "large" }) };
-      tmp19Result6 = tmp19(tmp2(tmp3[25]).Stack, obj15);
+      tmp19Result6 = tmp19(tmp2(tmp3[27]).Stack, obj15);
     }
     items9[1] = tmp19Result6;
     let tmp20Result = !loading;
@@ -261,8 +261,8 @@ function MethodsScreen(onClose) {
         tmp19Result7 = null != outageBannerMessage;
       }
       if (tmp19Result7) {
-        const obj16 = { messageType: tmp2(tmp3[30]).HelpMessageTypes.WARNING, children: outageBannerMessage };
-        tmp19Result7 = tmp19(tmp2(tmp3[30]).HelpMessage, obj16);
+        const obj16 = { messageType: tmp2(tmp3[32]).HelpMessageTypes.WARNING, children: outageBannerMessage };
+        tmp19Result7 = tmp19(tmp2(tmp3[32]).HelpMessage, obj16);
       }
       const items10 = [tmp19Result7, , ];
       if (tmp6) {
@@ -275,75 +275,79 @@ function MethodsScreen(onClose) {
                       closure_0 = children;
                       const method = children.method;
                       if (closure_0(onComplete[7]).AgeAssuranceMethod.FACIAL_AGE_ESTIMATION === method) {
-                        let GoogleNeutralIcon = tmp(tmp2[8]).VideoSelfieIcon;
+                        let KeyIcon = tmp(tmp2[8]).VideoSelfieIcon;
                       } else if (tmp(tmp2[7]).AgeAssuranceMethod.ID_SELFIE_MATCH === method) {
-                        GoogleNeutralIcon = tmp(tmp2[9]).IdCardIcon;
+                        KeyIcon = tmp(tmp2[9]).IdCardIcon;
                       } else if (tmp(tmp2[7]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
-                        GoogleNeutralIcon = tmp(tmp2[10]).GoogleNeutralIcon;
+                        KeyIcon = tmp(tmp2[10]).GoogleNeutralIcon;
                       } else if (tmp(tmp2[7]).AgeAssuranceMethod.OS_SIGNAL === method) {
                         if (tmpResult.isIOS()) {
-                          let GoogleNeutralIcon2 = tmp(tmp2[12]).AppleNeutralIcon;
+                          let GoogleNeutralIcon = tmp(tmp2[12]).AppleNeutralIcon;
                         } else {
-                          GoogleNeutralIcon2 = tmp(tmp2[10]).GoogleNeutralIcon;
+                          GoogleNeutralIcon = tmp(tmp2[10]).GoogleNeutralIcon;
                         }
-                        GoogleNeutralIcon = GoogleNeutralIcon2;
+                        KeyIcon = GoogleNeutralIcon;
                         tmpResult = tmp(tmp2[11]);
+                      } else if (tmp(tmp2[7]).AgeAssuranceMethod.CREDIT_CARD === method) {
+                        KeyIcon = tmp(tmp2[13]).CreditCardIcon;
+                      } else if (tmp(tmp2[7]).AgeAssuranceMethod.NEW_METHOD === method) {
+                        KeyIcon = tmp(tmp2[14]).KeyIcon;
                       }
-                      if (null != GoogleNeutralIcon) {
-                        const obj = { IconComponent: GoogleNeutralIcon, variant: "secondary" };
-                        let tmp4 = _undefined(tmp(tmp2[35]).TableRow.Icon, obj);
+                      if (null != KeyIcon) {
+                        const obj = { IconComponent: KeyIcon, variant: "secondary" };
+                        let tmp4 = _undefined(tmp(tmp2[37]).TableRow.Icon, obj);
                         let tmp5 = _undefined;
                       } else if (null != children.icon) {
                         const obj2 = { icon: children.icon };
-                        tmp4 = _undefined(onClose(tmp2[36]), obj2);
+                        tmp4 = _undefined(onClose(tmp2[38]), obj2);
                         tmp5 = _undefined;
                       } else {
-                        const obj3 = { IconComponent: tmp(tmp2[37]).UnknownGameIcon, variant: "secondary" };
-                        tmp4 = _undefined(tmp(tmp2[35]).TableRow.Icon, obj3);
+                        const obj3 = { IconComponent: tmp(tmp2[39]).UnknownGameIcon, variant: "secondary" };
+                        tmp4 = _undefined(tmp(tmp2[37]).TableRow.Icon, obj3);
                         tmp5 = _undefined;
                       }
                       const combined = "" + children.method + "-" + children.vendor;
                       if (c8 === combined) {
                         let tmp5Result = tmp5(initiateAgeVerificationV2, {});
                       } else {
-                        const obj4 = { size: "md", color: onClose(tmp2[14]).colors.INTERACTIVE_ICON_DEFAULT };
-                        tmp5Result = tmp5(tmp(tmp2[38]).ChevronSmallRightIcon, obj4);
+                        const obj4 = { size: "md", color: onClose(tmp2[16]).colors.INTERACTIVE_ICON_DEFAULT };
+                        tmp5Result = tmp5(tmp(tmp2[40]).ChevronSmallRightIcon, obj4);
                       }
                       const obj5 = { trailing: tmp5Result, disabled: null != c8, icon: tmp4, label: children.title, subLabel: null, onPress: null };
-                      const items = [tmp5(closure_0(onComplete[27]).Text, { variant: "text-sm/normal", color: "text-muted", children: children.description }), ];
+                      const items = [tmp5(closure_0(onComplete[29]).Text, { variant: "text-sm/normal", color: "text-muted", children: children.description }), ];
                       let tmp5Result2 = null != children.providedBy;
                       if (tmp5Result2) {
                         const obj7 = { variant: "text-sm/normal", color: "text-muted", children: children.providedBy };
-                        tmp5Result2 = tmp5(tmp(tmp2[27]).Text, obj7);
+                        tmp5Result2 = tmp5(tmp(tmp2[29]).Text, obj7);
                       }
                       items[1] = tmp5Result2;
-                      obj5.subLabel = closure_10(closure_0(onComplete[25]).Stack, { direction: "vertical", spacing: 4, children: items });
+                      obj5.subLabel = closure_10(closure_0(onComplete[27]).Stack, { direction: "vertical", spacing: 4, children: items });
                       obj5.onPress = function onPress() {
                         return closure_10(closure_0, combined);
                       };
-                      return tmp5(closure_0(onComplete[35]).TableRow, obj5, combined);
+                      return tmp5(closure_0(onComplete[37]).TableRow, obj5, combined);
                     })
           };
-          tmp19Result8 = tmp19(tmp2(tmp3[34]).TableRowGroup, obj17);
+          tmp19Result8 = tmp19(tmp2(tmp3[36]).TableRowGroup, obj17);
         }
         const obj18 = { direction: "vertical", spacing: 12, children: null };
         items10[2] = tmp19Result8;
         obj18.children = items10;
-        tmp20Result = tmp20(tmp2(tmp3[25]).Stack, obj18);
+        tmp20Result = tmp20(tmp2(tmp3[27]).Stack, obj18);
       } else {
         const obj19 = { style: tmp.emptyContainer, children: null };
-        let obj20 = { messageType: tmp2(tmp3[30]).HelpMessageTypes.ERROR, button: null, children: null };
+        let obj20 = { messageType: tmp2(tmp3[32]).HelpMessageTypes.ERROR, button: null, children: null };
         const obj21 = { variant: "secondary", size: "sm", text: null, onPress: null };
-        const intl = tmp2(tmp3[32]).intl;
-        obj21.text = intl.string(onClose(tmp3[33]).hDvmYP);
+        const intl = tmp2(tmp3[34]).intl;
+        obj21.text = intl.string(onClose(tmp3[35]).hDvmYP);
         obj21.onPress = refetch;
-        obj20.button = tmp19(tmp2(tmp3[31]).Button, obj21);
-        const intl2 = tmp2(tmp3[32]).intl;
-        const tmp29 = onClose(tmp3[33]);
+        obj20.button = tmp19(tmp2(tmp3[33]).Button, obj21);
+        const intl2 = tmp2(tmp3[34]).intl;
+        const tmp29 = onClose(tmp3[35]);
         obj20.children = intl2.string(error ? tmp29.Bkmk4Y : tmp29.cR6336);
-        obj20 = tmp19(tmp2(tmp3[30]).HelpMessage, obj20);
+        obj20 = tmp19(tmp2(tmp3[32]).HelpMessage, obj20);
         obj19.children = obj20;
-        tmp19(tmp2(tmp3[25]).Stack, obj19);
+        tmp19(tmp2(tmp3[27]).Stack, obj19);
       }
     }
     items9[2] = tmp20Result;
@@ -356,25 +360,25 @@ function MethodsScreen(onClose) {
     }
     if (tmp19Result10) {
       const obj22 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.footer, children: footerMessage };
-      tmp19Result10 = tmp19(tmp2(tmp3[27]).Text, obj22);
+      tmp19Result10 = tmp19(tmp2(tmp3[29]).Text, obj22);
     }
     const obj23 = { children: null };
     const obj24 = { children: null };
     items9[3] = tmp19Result10;
     obj10.children = items9;
-    obj24.children = closure_10(tmp2(tmp3[25]).Stack, obj10);
-    obj23.children = tmp19(tmp2(tmp3[24]).ModalContent, obj24);
-    tmp19Result = tmp19(tmp2(tmp3[23]).ModalScreen, obj23);
-    const tmp2Result = tmp2(tmp3[18]);
+    obj24.children = closure_10(tmp2(tmp3[27]).Stack, obj10);
+    obj23.children = tmp19(tmp2(tmp3[26]).ModalContent, obj24);
+    tmp19Result = tmp19(tmp2(tmp3[25]).ModalScreen, obj23);
+    const tmp2Result = tmp2(tmp3[20]);
   }
   return tmp19Result;
 }
 const ActivityIndicator = fn(17).ActivityIndicator;
-const TRUSTED_PROVIDERS_URL = fn(8025).TRUSTED_PROVIDERS_URL;
+const TRUSTED_PROVIDERS_URL = fn(8055).TRUSTED_PROVIDERS_URL;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: { alignSelf: "stretch" }, header: { textAlign: "center" }, loadingContainer: null, emptyContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 obj2.loadingContainer = { marginTop: nativeDefault.space.PX_24 };
@@ -392,14 +396,14 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   const onComplete = entryPoint.onComplete;
   const tmp = closure_11();
   closure_3 = tmp;
-  const memo = noop.useMemo(() => entryPoint(onComplete[43]).v4(), []);
+  const memo = noop.useMemo(() => entryPoint(onComplete[45]).v4(), []);
   const items = [tmp, memo, entryPoint, onClose, onComplete];
   const items1 = [memo, entryPoint];
   const memo1 = noop.useMemo(() => {
     const modalSessionId = memo;
     closure_2 = onClose;
     function closeModal() {
-      onClose(onComplete[39]).pop();
+      onClose(onComplete[41]).pop();
       closure_2();
     }
     const obj = {};
@@ -424,7 +428,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     };
     obj4.headerLeft = NavigatorHeader.getHeaderBackButton();
     obj4.render = function render() {
-      return closure_2_9(onClose(onComplete[41]), { onClose: closeModal, onComplete, modalSessionId });
+      return closure_2_9(onClose(onComplete[43]), { onClose: closeModal, onComplete, modalSessionId });
     };
     obj[constants.GOOGLE_WALLET_VERIFICATION] = obj4;
     const obj6 = {
@@ -437,7 +441,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     };
     obj6.headerLeft = NavigatorHeader.getHeaderBackButton();
     obj6.render = function render() {
-      return closure_2_9(onClose(onComplete[42]), { onClose: closeModal, modalSessionId });
+      return closure_2_9(onClose(onComplete[44]), { onClose: closeModal, modalSessionId });
     };
     obj[constants.APP_STORE_VERIFICATION] = obj6;
     return obj;
@@ -446,7 +450,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalViewed(memo, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
   }, items1);
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
-  const intl = entryPoint(onComplete[32]).intl;
-  obj.headerBackTitle = intl.string(entryPoint(onComplete[32]).t["13/7kX"]);
-  return closure_9(entryPoint(onComplete[44]).Navigator, obj);
+  const intl = entryPoint(onComplete[34]).intl;
+  obj.headerBackTitle = intl.string(entryPoint(onComplete[34]).t["13/7kX"]);
+  return closure_9(entryPoint(onComplete[46]).Navigator, obj);
 };

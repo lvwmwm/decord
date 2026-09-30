@@ -1,17 +1,17 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 13980
+// Function ID: 13981
 // Name: polyfillsNative
-// Dependencies: [3, 13954, 14024, 14042, 14045, 14048, 1252, 1237, 2]
+// Dependencies: [3, 13981, 14051, 14069, 14072, 14075, 1252, 1237, 2]
 
-// Module 13953 (polyfillsNative)
+// Module 13980 (polyfillsNative)
 import q from "q" /* 1237 */;
 import Buffer from "Buffer" /* 1252 */;
-import _mod14048 from "module_14048" /* 14048 */;
+import _mod14075 from "module_14075" /* 14075 */;
 import Logger from "Logger" /* 3 */;
-import module_13954 from "module_13954" /* 13954 */;
-import get_ActivityIndicator from "module_14024" /* 14024 */;
-import _typeof from "module_14042" /* 14042 */;
-import GetOption from "module_14045" /* 14045 */;
+import module_13981 from "module_13981" /* 13981 */;
+import get_ActivityIndicator from "module_14051" /* 14051 */;
+import _typeof from "module_14069" /* 14069 */;
+import GetOption from "module_14072" /* 14072 */;
 import size from "module_2" /* 2 */;
 
 if (typeof process === "undefined") {
@@ -26,7 +26,7 @@ if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = _mod14048;
+  const _module5 = _mod14075;
   const _window = window;
   window.crypto = global.crypto;
 }

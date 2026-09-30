@@ -1,13 +1,13 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16154
+// Function ID: 16155
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 16118, 4832, 1115, 2]
+// Dependencies: [19, 21, 16147, 4862, 1115, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 16125 (HomeDrawerFavoritesRow)
+// Module 16154 (HomeDrawerFavoritesRow)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16118 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16147 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

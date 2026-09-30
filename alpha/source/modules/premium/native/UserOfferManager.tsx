@@ -1,12 +1,12 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17496
+// Function ID: 17497
 // Name: UserOfferManager
-// Dependencies: [1372, 7036, 1085, 6705, 8831, 1970, 7671, 2]
+// Dependencies: [1372, 7066, 1085, 6735, 8865, 1970, 7701, 2]
 
-// Module 17461 (UserOfferManager)
+// Module 17496 (UserOfferManager)
 import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7036 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
+import UserOfferStore from "UserOfferStore" /* 7066 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
 
 let require = fn;
 const PaymentGateways = fn(1085).PaymentGateways;

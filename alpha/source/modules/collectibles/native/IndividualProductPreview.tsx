@@ -1,18 +1,18 @@
-// Module ID: 12879
-// Function ID: 12880
+// Module ID: 12906
+// Function ID: 12907
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1076, 21, 4836, 576, 5459, 7788, 10740, 10958, 12880, 12881, 1974, 1077, 12882, 12885, 2]
+// Dependencies: [19, 17, 1076, 21, 4866, 576, 5489, 7818, 10774, 10994, 12907, 12908, 1974, 1077, 12909, 12912, 2]
 // Exports: IndividualProductPreview
 
-// Module 12879 (IndividualProductPreview)
+// Module 12906 (IndividualProductPreview)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import LinearGradientDefault from "LinearGradient" /* 5459 */;
-import useCurrentUser from "useCurrentUser" /* 7788 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10740 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10958 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12880 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12881 */;
+import LinearGradientDefault from "LinearGradient" /* 5489 */;
+import useCurrentUser from "useCurrentUser" /* 7818 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10774 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10994 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12907 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12908 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -82,7 +82,7 @@ const CollectiblesShopConstants = fn(1076);
 ({ EXTERNAL_PRODUCT_SKU_IDS: hasOwnProperty, ShopCtaEnum: metroRequire } = CollectiblesShopConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { collectiblePreview: { marginTop: nativeDefault.space.PX_12, position: "relative", height: 280 }, profilePreviewContainer: { position: "relative", flex: 1, alignItems: "center", overflow: "hidden" }, profilePreview: { width: "66%" }, profilePreviewGradient: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -113,11 +113,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1974).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(1077).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = React5(tmp(12882).FractionalNitroPreview, {});
+      let tmp5 = React5(tmp(12909).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = React5(tmp(12885).OrbBadgePreview, {});
+        tmp5 = React5(tmp(12912).OrbBadgePreview, {});
       }
     }
     return tmp5;

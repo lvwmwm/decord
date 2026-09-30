@@ -1,11 +1,11 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 7370
+// Function ID: 7371
 // Name: ForegroundServiceManager
-// Dependencies: [17, 7341, 1331, 1983, 2]
+// Dependencies: [17, 7371, 1331, 1983, 2]
 
-// Module 7340 (ForegroundServiceManager)
+// Module 7370 (ForegroundServiceManager)
 import _mod17 from "module_17" /* 17 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7341 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7371 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 import size from "module_2" /* 2 */;
 

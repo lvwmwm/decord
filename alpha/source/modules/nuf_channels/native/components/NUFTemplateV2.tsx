@@ -1,19 +1,19 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13509
+// Function ID: 13510
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 4836, 4832, 5447, 2]
+// Dependencies: [19, 17, 21, 4866, 4862, 5477, 2]
 // Exports: default
 
-// Module 13482 (NUFTemplateV2)
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
+// Module 13509 (NUFTemplateV2)
+import Text_Text from "Text/Text" /* 4862 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_5 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 46, paddingLeft: 18, paddingRight: 18 }, illustration: { alignSelf: "stretch", alignItems: "center", marginBottom: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplateV2.tsx");

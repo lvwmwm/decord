@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11470
+// Function ID: 11471
 // Name: GamesActionCreators
-// Dependencies: [5, 1074, 2005, 8665, 1094, 6897, 4525, 573, 1271, 8948, 8925, 8991, 2]
+// Dependencies: [5, 1074, 2005, 8699, 1094, 6927, 4555, 573, 1271, 8982, 8959, 9025, 2]
 
-// Module 11434 (GamesActionCreators)
-import LinkingDefault from "Linking" /* 4525 */;
+// Module 11470 (GamesActionCreators)
+import LinkingDefault from "Linking" /* 4555 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -34,7 +34,7 @@ function fetchJoinSecret(application, arg1) {
 const Constants = fn(1074);
 ({ Endpoints: closure_4, DiscordConnectDeeplinks: hasOwnProperty, WebBrowserType: metroRequire, ActivityFlags: closure_7 } = Constants);
 const ActivityIntent = fn(2005).ActivityIntent;
-const MAIN_SURFACE = fn(8665).MAIN_SURFACE;
+const MAIN_SURFACE = fn(8699).MAIN_SURFACE;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/GamesActionCreators.native.tsx");
 
@@ -146,8 +146,8 @@ export default {
                     const join_url = body.body.join_url;
                     const secret = body.body.secret;
                     if (null != join_url) {
-                      activityChannelId(4525).openURL(join_url, constants2.SAFARI);
-                      const obj3 = activityChannelId(4525);
+                      activityChannelId(4555).openURL(join_url, constants2.SAFARI);
+                      const obj3 = activityChannelId(4555);
                       const obj2 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret: null, intent: null, embedded: null };
                       ({ id: obj5.applicationId, parent_id: obj5.parentApplicationId } = application);
                       obj2.secret = secret;
@@ -169,8 +169,8 @@ export default {
                       } else {
                         const _HermesInternal = HermesInternal;
                         const combined = "" + str.replace(/\/+$/, "") + constants.GAME_INVITE_FRAGMENT + secret;
-                        activityChannelId(4525).openURL(combined, constants2.SAFARI);
-                        const obj6 = activityChannelId(4525);
+                        activityChannelId(4555).openURL(combined, constants2.SAFARI);
+                        const obj6 = activityChannelId(4555);
                         const obj12 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret: null, intent: null, embedded: null };
                         ({ id: obj8.applicationId, parent_id: obj8.parentApplicationId } = application);
                         obj12.secret = secret;

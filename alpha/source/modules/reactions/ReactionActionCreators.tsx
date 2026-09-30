@@ -1,22 +1,22 @@
-// Module ID: 7348
-// Function ID: 7349
+// Module ID: 7378
+// Function ID: 7379
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2045, 5056, 1074, 1091, 5369, 1115, 1110, 573, 7347, 1271, 7349, 1241, 5016, 4685, 7367, 4487, 2]
+// Dependencies: [5, 502, 2045, 5086, 1074, 1091, 5399, 1115, 1110, 573, 7377, 1271, 7379, 1241, 5046, 4715, 7397, 4517, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7348 (ReactionActionCreators)
+// Module 7378 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import EmojiUtils from "EmojiUtils" /* 4487 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7347 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7349 */;
+import EmojiUtils from "EmojiUtils" /* 4517 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7377 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7379 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5056 */;
+import MessageStore from "MessageStore" /* 5086 */;
 
 require = fn;
 function checkReactionResponse(arg0, fn, isRetry) {
@@ -789,7 +789,7 @@ let closure_23 = async function _removeReaction(arg0, value) {
                   if (burst != null) {
                     burst = burst.burst;
                   }
-                  const AccessibilityAnnouncer = channelId(4685).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = channelId(4715).AccessibilityAnnouncer;
                   intl = channelId(1115).intl;
                   if (!burst) {
                     const obj6 = { name: tmp2.name };

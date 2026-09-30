@@ -1,11 +1,11 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12359
+// Function ID: 12360
 // Name: GuildDirectoryNicknameUpsellModalActionCreators
-// Dependencies: [5039, 12330, 1981, 2]
+// Dependencies: [5069, 12360, 1981, 2]
 
-// Module 12329 (GuildDirectoryNicknameUpsellModalActionCreators)
+// Module 12359 (GuildDirectoryNicknameUpsellModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY";
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/directory_channels/native/com
 
 export default {
   open(merged) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12330, dependencyMap.paths), merged, c3);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12360, dependencyMap.paths), merged, c3);
   },
   close() {
     ModalActionCreatorsDefault.popWithKey(c3);

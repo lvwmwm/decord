@@ -1,10 +1,10 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12460
+// Function ID: 12461
 // Name: HubEmailConnectionModalActionCreators
-// Dependencies: [5, 5039, 12412, 1981, 2]
+// Dependencies: [5, 5069, 12442, 1981, 2]
 
-// Module 12430 (HubEmailConnectionModalActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+// Module 12460 (HubEmailConnectionModalActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

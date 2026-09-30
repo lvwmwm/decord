@@ -1,30 +1,30 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 15805
+// Function ID: 15806
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 6178, 15745, 15746, 1074, 21, 4836, 576, 4421, 15781, 4540, 1485, 15742, 504, 6542, 15761, 15744, 38, 6557, 1115, 6191, 8535, 15782, 5447, 6526, 9162, 4685, 2]
+// Dependencies: [32, 19, 17, 6208, 15770, 15771, 1074, 21, 4866, 576, 4451, 15806, 4570, 1485, 15767, 504, 6572, 15786, 15769, 38, 6587, 1115, 6221, 8569, 15807, 5477, 6556, 9196, 4715, 2]
 // Exports: default
 
-// Module 15780 (RegisterAgeGate)
+// Module 15805 (RegisterAgeGate)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15744 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15769 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6178 */;
-import hooks_mod from "module_4421" /* 4421 */;
+import ConsentStore from "ConsentStore" /* 6208 */;
+import hooks_mod from "module_4451" /* 4451 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const RegistrationUIStore = fn(15745);
+const RegistrationUIStore = fn(15770);
 ({ updateRegistrationOptions: closure_7, useRegistrationUIStore: closure_8 } = RegistrationUIStore);
-const RegistrationConstants = fn(15746);
+const RegistrationConstants = fn(15771);
 ({ RegisterTransitionSteps: closure_9, RegistrationTransitionActionTypes: c10 } = RegistrationConstants);
 const AuthStates = fn(1074).AuthStates;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { inputGroup: { marginTop: 24, marginBottom: 24 }, flexGrow: { flexGrow: 1 }, button: { flexGrow: 0, marginBottom: 4, marginTop: 16, flexDirection: "column" }, datePickerButton: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, page: { flex: 1 } };
 let closure_15 = createStyles.createStyles(obj2);
 let hooks = hooks_mod;

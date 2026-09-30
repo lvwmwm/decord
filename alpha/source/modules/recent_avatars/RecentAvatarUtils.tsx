@@ -1,15 +1,15 @@
-// Module ID: 7779
-// Function ID: 7780
+// Module ID: 7809
+// Function ID: 7810
 // Name: RecentAvatarUtils
-// Dependencies: [1074, 1397, 1432, 1473, 1115, 6576, 1370, 2]
+// Dependencies: [1074, 1397, 1432, 1473, 1115, 6606, 1370, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 7779 (RecentAvatarUtils)
+// Module 7809 (RecentAvatarUtils)
 import Constants from "Constants" /* 1074 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
 import _modDef1473 from "module_1473" /* 1473 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6576 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6606 */;
 import size from "module_2" /* 2 */;
 
 function getArchivedAvatarURL(allowWebp) {
@@ -132,7 +132,7 @@ export const generateAvatarDescription = function generateAvatarDescription(arg0
     const _Date = Date;
     const date = new Date();
     const intl2 = tmp3(1115).intl;
-    if (assetOrigin === tmp3(6576).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+    if (assetOrigin === tmp3(6606).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
       let DYil93 = tmp3(1115).t.eC2sZi;
     } else {
       DYil93 = tmp3(1115).t.DYil93;

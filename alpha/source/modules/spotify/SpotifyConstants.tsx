@@ -1,11 +1,11 @@
-// Module ID: 7953
-// Function ID: 7954
+// Module ID: 7983
+// Function ID: 7984
 // Name: SpotifyConstants
-// Dependencies: [1074, 5762, 1364, 2]
+// Dependencies: [1074, 5792, 1364, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 7953 (SpotifyConstants)
-import Platforms from "Platforms" /* 5762 */;
+// Module 7983 (SpotifyConstants)
+import Platforms from "Platforms" /* 5792 */;
 
 const spotify = "spotify";
 let c1 = "spotify:";
@@ -25,6 +25,9 @@ const obj2 = {
     }
     const encodeURIComponentResult = encodeURIComponent(ALBUM);
     return "https://open.spotify.com/" + encodeURIComponentResult + "/" + encodeURIComponent(album_id) + "?utm_source=discord&utm_medium=" + str;
+  },
+  IMAGE(arg0) {
+    return "https://i.scdn.co/image/" + encodeURIComponent(arg0);
   },
   EMBED(arg0) {
     let str = arg1;
@@ -51,6 +54,7 @@ const obj2 = {
     }
     return "" + tmp + ":" + encodeURIComponentResult + ":" + encodeURIComponent(sync_id) + str2;
   },
+  WEB_HOME: "https://open.spotify.com/" + "?utm_source=discord&utm_medium=" + "desktop",
   PREMIUM_SITE: "https://www.spotify.com/premium/" + "?utm_source=discord&utm_medium=" + "desktop",
   INSTALL_ATTRIBUTION(Identifier) {
     return "https://app.adjust.com/bdyga9?campaign=" + Identifier;

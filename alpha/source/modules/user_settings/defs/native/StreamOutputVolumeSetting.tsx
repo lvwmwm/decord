@@ -1,27 +1,27 @@
-// Module ID: 14972
-// Function ID: 14973
+// Module ID: 15003
+// Function ID: 15004
 // Name: StreamOutputVolumeSetting
-// Dependencies: [4858, 502, 1993, 7582, 504, 4891, 38, 9269, 9604, 11175, 1115, 2]
+// Dependencies: [4888, 502, 1993, 7612, 504, 4921, 38, 9303, 9638, 11211, 1115, 2]
 
-// Module 14972 (StreamOutputVolumeSetting)
+// Module 15003 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9269 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9604 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4921 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9303 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9638 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4888 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
-const SettingBuilders = fn(11175);
+const SettingBuilders = fn(11211);
 const volumeSlider = SettingBuilders.createVolumeSlider({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.pEAl4b);
   },
-  parent: fn(7582).MobileUserSettings.VOICE,
+  parent: fn(7612).MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useStreamVolumeSettingValue() {
     let items = [ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];

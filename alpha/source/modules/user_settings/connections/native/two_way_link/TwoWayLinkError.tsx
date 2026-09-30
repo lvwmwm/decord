@@ -1,17 +1,17 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8756
+// Function ID: 8757
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 4836, 8703, 8723, 4832, 6710, 5445, 5447, 1115, 2]
+// Dependencies: [19, 17, 21, 4866, 8737, 8757, 4862, 6740, 5475, 5477, 1115, 2]
 // Exports: TwoWayLinkError
 
-// Module 8722 (TwoWayLinkError)
+// Module 8756 (TwoWayLinkError)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5445 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6710 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8703 */;
-import _modDef8723 from "module_8723" /* 8723 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import Stack_Stack from "Stack/Stack" /* 5475 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6740 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8737 */;
+import _modDef8757 from "module_8757" /* 8757 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_7 = createStyles.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkError.tsx");
@@ -30,7 +30,7 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
   const obj2 = { style: twoWayLinkStyles.container, children: null };
   const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef8723, style: tmp.image }), hasOwnProperty(Text_Text.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
+  const items = [hasOwnProperty(React3, { source: _modDef8757, style: tmp.image }), hasOwnProperty(Text_Text.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
   obj3.children = items;
   const items1 = [timestampProducer(React4, obj3), ];
   const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };

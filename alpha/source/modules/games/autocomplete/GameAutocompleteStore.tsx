@@ -1,14 +1,14 @@
-// Module ID: 5586
-// Function ID: 5587
+// Module ID: 5616
+// Function ID: 5617
 // Name: GameAutocompleteStore
-// Dependencies: [1439, 504, 5587, 5588, 573, 2]
+// Dependencies: [1439, 504, 5617, 5618, 573, 2]
 
-// Module 5586 (GameAutocompleteStore)
+// Module 5616 (GameAutocompleteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1439 */;
-import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5587 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5588 */;
+import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5617 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5618 */;
 
 require = fn;
 function getCacheKey(arg0, arg1) {
@@ -56,9 +56,9 @@ prototype["getClosestResults"] = function getClosestResults(result) {
 prototype["shouldSuppressFetch"] = function shouldSuppressFetch(query, arg1) {
   let DEFAULT = arg1;
   if (arg1 === undefined) {
-    DEFAULT = DEFAULT(5587).GameAutocompleteProfile.DEFAULT;
+    DEFAULT = DEFAULT(5617).GameAutocompleteProfile.DEFAULT;
   }
-  const result = DEFAULT(5588).normalizeGameAutocompleteQuery(query);
+  const result = DEFAULT(5618).normalizeGameAutocompleteQuery(query);
   if (null == result) {
     return false;
   } else {
@@ -70,12 +70,12 @@ prototype["shouldSuppressFetch"] = function shouldSuppressFetch(query, arg1) {
       result1 = !set.has(combined);
     }
     if (result1) {
-      result1 = tmp3(5588).shouldSuppressAutocompleteFetch(result, (arg0) => closure_3.peek("" + DEFAULT + ":" + arg0));
-      const tmp3Result = tmp3(5588);
+      result1 = tmp3(5618).shouldSuppressAutocompleteFetch(result, (arg0) => closure_3.peek("" + DEFAULT + ":" + arg0));
+      const tmp3Result = tmp3(5618);
     }
     return result1;
   }
-  const obj = DEFAULT(5588);
+  const obj = DEFAULT(5618);
   tmp3 = DEFAULT;
 };
 prototype["isFetching"] = function isFetching(query) {

@@ -1,13 +1,13 @@
-// Module ID: 7514
-// Function ID: 7515
+// Module ID: 7544
+// Function ID: 7545
 // Name: useSelectedConversation
-// Dependencies: [7179, 7184, 504, 7515, 2]
+// Dependencies: [7209, 7214, 504, 7545, 2]
 // Exports: default
 
-// Module 7514 (useSelectedConversation)
-import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7515 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7179 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7184 */;
+// Module 7544 (useSelectedConversation)
+import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7545 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7209 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7214 */;
 
 const require = globalThis.__r;
 

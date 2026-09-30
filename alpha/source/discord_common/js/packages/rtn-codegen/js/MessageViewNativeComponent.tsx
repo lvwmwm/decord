@@ -1,9 +1,9 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8310
+// Function ID: 8311
 // Name: MessageViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 8279 (MessageViewNativeComponent)
+// Module 8310 (MessageViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

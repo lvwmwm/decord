@@ -1,12 +1,12 @@
-// Module ID: 9250
-// Function ID: 9251
+// Module ID: 9284
+// Function ID: 9285
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4836, 576, 7880, 4566, 5446, 1364, 1115, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 7910, 4596, 5476, 1364, 1115, 4862, 2]
 // Exports: SegmentedControlItem
 
-// Module 9250 (SegmentedControlItem)
+// Module 9284 (SegmentedControlItem)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5446 */;
+import spring from "spring" /* 5476 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const SPRING_CONFIG = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let closure_8 = createStyles.createStyles((arg0) => {
   const item = { borderRadius: nativeDefault.radii.lg, paddingVertical: null, flexDirection: "row", justifyContent: "center" };
   let num = 8;
@@ -25,7 +25,7 @@ let closure_8 = createStyles.createStyles((arg0) => {
   item.paddingVertical = num;
   return { item, label: { flexDirection: "column", alignItems: "center", gap: 8 } };
 });
-createStyles = fn(4836);
+createStyles = fn(4866);
 let closure_9 = createStyles.createStyleProperties({ inactive: nativeDefault.colors.TEXT_MUTED, active: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, pressed: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
 const __initData = { code: "function SegmentedControlItemNativeTsx1(){const{colors,pressed,index,activeIndex,withSpring,SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else if(isPressActive){color=colors.inactive;}else if(isActive){color=colors.active;}return{color:withSpring(color,SPRING_CONFIG,'animate-always')};}" };
 const size = fn(2);

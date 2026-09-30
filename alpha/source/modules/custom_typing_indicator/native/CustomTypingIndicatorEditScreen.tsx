@@ -1,18 +1,18 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15112
+// Function ID: 15113
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 1380, 1115, 3717, 1485, 1486, 504, 4488, 6749, 1241, 11622, 1393, 4955, 4800, 15082, 1981, 15083, 7777, 7774, 6571, 4735, 14334, 8860, 11631, 4988, 4832, 15084, 6165, 6083, 2111, 5445, 5447, 8460, 7536, 15129, 9592, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4866, 576, 1380, 1115, 3717, 1485, 1486, 504, 4518, 6779, 1241, 11656, 1393, 4985, 4830, 15113, 1981, 15114, 7807, 7804, 6601, 4765, 14363, 8894, 11665, 5018, 4862, 15115, 6195, 6113, 2111, 5475, 5477, 8491, 7566, 15160, 9626, 2]
 // Exports: default
 
-// Module 15081 (CustomTypingIndicatorEditScreen)
+// Module 15112 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import user from "user" /* 1380 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1393 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8860 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11622 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8894 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11656 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -25,7 +25,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsSections: c10, HelpdeskArticles: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { screen: { flex: 1 }, container: { padding: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_24 }, previewContainer: null, section: null, description: null };
 let obj3 = { padding: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_24 };
 obj2.previewContainer = { height: 140, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_8 };
@@ -109,10 +109,10 @@ export default function CustomTypingIndicatorEditScreen() {
   }, []);
   const items5 = [memo, first3];
   const callback1 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15082, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15113, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
   }, items4);
   const callback2 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15083, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15114, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
   }, items5);
   first1.useRef(null);
   const callback3 = first1.useCallback(() => {

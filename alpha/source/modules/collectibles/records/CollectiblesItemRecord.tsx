@@ -1,16 +1,16 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7162
+// Function ID: 7163
 // Name: CollectiblesItemRecord
-// Dependencies: [7133, 1972, 7134, 7135, 7136, 1074, 1974, 2]
+// Dependencies: [7163, 1972, 7164, 7165, 7166, 1074, 1974, 2]
 // Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 7132 (CollectiblesItemRecord)
+// Module 7162 (CollectiblesItemRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7133 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7163 */;
 import NameplateRecord from "NameplateRecord" /* 1972 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7134 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7135 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7136 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7164 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7165 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7166 */;
 
 require = fn;
 const Constants = fn(1074);

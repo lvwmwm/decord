@@ -1,21 +1,21 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10044
+// Function ID: 10045
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 9993, 21, 4836, 9997, 576, 9913, 504, 9994, 10011, 9950, 6649, 6642, 6057, 1115, 2]
+// Dependencies: [19, 17, 10027, 21, 4866, 10031, 576, 9947, 504, 10028, 10045, 9984, 6679, 6672, 6087, 1115, 2]
 
-// Module 10010 (GIFPickerCategoriesPage)
+// Module 10044 (GIFPickerCategoriesPage)
 import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6649 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9994 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9997 */;
-import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10011 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6679 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10028 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10031 */;
+import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10045 */;
 import noop from "module_19" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9993 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10027 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_7 = createStyles.createStyles((height) => {
   const obj = { item: { height, flexDirection: "row", gap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING }, placeholder: null };
   const obj2 = { height, flexDirection: "row", gap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING };

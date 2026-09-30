@@ -1,14 +1,14 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16352
+// Function ID: 16353
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1372, 21, 16267, 576, 1364, 7964, 7789, 504, 5602, 16306, 1177, 2]
+// Dependencies: [19, 17, 1372, 21, 16296, 576, 1364, 7994, 7819, 504, 5632, 16335, 1177, 2]
 // Exports: default
 
-// Module 16323 (ContentInventoryEntryContainer)
+// Module 16352 (ContentInventoryEntryContainer)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7964 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7994 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createICYMIStyles = fn(16267);
+const createICYMIStyles = fn(16296);
 const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom, arg1) => {
   let num = 0;
   if (!arg1) {

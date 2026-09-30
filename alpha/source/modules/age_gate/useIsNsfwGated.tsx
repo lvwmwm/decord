@@ -1,11 +1,11 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7505
+// Function ID: 7506
 // Name: useIsNsfwGated
-// Dependencies: [5047, 1372, 504, 2]
+// Dependencies: [5077, 1372, 504, 2]
 // Exports: default
 
-// Module 7474 (useIsNsfwGated)
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5047 */;
+// Module 7505 (useIsNsfwGated)
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5077 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

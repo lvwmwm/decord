@@ -1,18 +1,18 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16498
+// Function ID: 16499
 // Name: useVibegrationsControlBar
-// Dependencies: [32, 19, 12813, 12812, 504, 2]
+// Dependencies: [32, 19, 12843, 12842, 504, 2]
 // Exports: useVibegrationsControlPhase, useVibegrationsControlStop
 
-// Module 16469 (useVibegrationsControlBar)
+// Module 16498 (useVibegrationsControlBar)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12813 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12843 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const interruptTurn = fn(12812).interruptTurn;
+const interruptTurn = fn(12842).interruptTurn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsControlBar.tsx");
 

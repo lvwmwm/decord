@@ -1,14 +1,14 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9435
+// Function ID: 9436
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [9402, 1115, 9403, 5048, 2]
+// Dependencies: [9436, 1115, 9437, 5078, 2]
 // Exports: getNsfwServerInviteWarningVariant, useGatedAgeGroup
 
-// Module 9401 (NsfwServerInviteWarningVariant)
+// Module 9435 (NsfwServerInviteWarningVariant)
 import util from "util" /* 1115 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 9402 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9403 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5078 */;
+import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 9436 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9437 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_gate/NsfwServerInviteWarningVariant.tsx");
@@ -25,10 +25,10 @@ export const getNsfwServerInviteWarningVariant = function getNsfwServerInviteWar
     obj4.text = intl2.string(tmp(1115).t.wVq7uo);
     obj3.confirm = obj4;
     return obj3;
-  } else if (tmp(9403).AgeGroupState.TEEN === arg0) {
+  } else if (tmp(9437).AgeGroupState.TEEN === arg0) {
     const obj5 = { description: tmp3, confirm: obj2, goBackIsPrimary: true };
     return obj5;
-  } else if (tmp(9403).AgeGroupState.UNVERIFIED === arg0) {
+  } else if (tmp(9437).AgeGroupState.UNVERIFIED === arg0) {
     const obj6 = { description: tmp3, confirm: obj2, goBackIsPrimary: false };
     return obj6;
   }

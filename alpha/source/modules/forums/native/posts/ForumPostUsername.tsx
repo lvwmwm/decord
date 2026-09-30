@@ -1,16 +1,16 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11690
+// Function ID: 11691
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4825, 11652, 21, 4836, 7475, 2055, 11189, 11657, 504, 7568, 1177, 4832, 2]
+// Dependencies: [19, 17, 4855, 11686, 21, 4866, 7506, 2055, 11225, 11691, 504, 7598, 1177, 4862, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11656 (ForumPostUsername)
+// Module 11690 (ForumPostUsername)
 import initialize from "initialize" /* 504 */;
 import ForumLayout from "ForumLayout" /* 2055 */;
-import ForumHooks from "ForumHooks" /* 7475 */;
-import useChatWidthDefault from "useChatWidth" /* 11189 */;
+import ForumHooks from "ForumHooks" /* 7506 */;
+import useChatWidthDefault from "useChatWidth" /* 11225 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 require = fn;
 function ForumPostUsername(arg0) {
@@ -21,7 +21,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === ForumLayout.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = useChatWidthDefault() - tmp2(11657).GRID_HORIZONTAL_PADDING - num;
+  const diff = useChatWidthDefault() - tmp2(11691).GRID_HORIZONTAL_PADDING - num;
   const tmp4 = useChatWidthDefault();
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -29,8 +29,8 @@ function ForumPostUsername(arg0) {
     if (null != authorColor) {
       const obj = { color: authorColor };
     }
-    const processColorStringsArray = tmp2(7568).useProcessColorStringsArray(authorColors);
-    const tmp2Result4 = tmp2(7568);
+    const processColorStringsArray = tmp2(7598).useProcessColorStringsArray(authorColors);
+    const tmp2Result4 = tmp2(7598);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result4.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp19Result = null;
@@ -59,7 +59,7 @@ function ForumPostUsername(arg0) {
       obj6.style = items4;
       const items5 = [authorName, suffix];
       obj6.children = items5;
-      items3[1] = React5(tmp2(4832).Text, obj6);
+      items3[1] = React5(tmp2(4862).Text, obj6);
       obj2.children = items3;
       tmp19Result = tmp19(tmp20, obj2);
     }
@@ -67,10 +67,10 @@ function ForumPostUsername(arg0) {
   }
 }
 const View = fn(17).View;
-const useForumChannelStore = fn(11652).useForumChannelStore;
+const useForumChannelStore = fn(11686).useForumChannelStore;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles({ authorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", marginEnd: 8 }, roleDotContainer: { alignItems: "center", justifyContent: "center", marginEnd: 2, marginBottom: 4 }, authorName: { overflow: "hidden", flexWrap: "nowrap" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");

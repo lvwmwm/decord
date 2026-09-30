@@ -1,13 +1,13 @@
-// Module ID: 5531
-// Function ID: 5532
+// Module ID: 5561
+// Function ID: 5562
 // Name: MemberVerificationUtils
-// Dependencies: [5532, 1074, 4658, 1370, 2]
+// Dependencies: [5562, 1074, 4688, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5531 (MemberVerificationUtils)
+// Module 5561 (MemberVerificationUtils)
 import Constants from "Constants" /* 1074 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5532 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4688 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5562 */;
 import size from "module_2" /* 2 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: c2, MANUAL_APPROVAL_FORM_FIELDS: c3 } = MemberVerificationConstants);
@@ -21,10 +21,10 @@ export const isValidFormResponse = function isValidFormResponse(required) {
       return false;
     } else {
       if (MemberVerificationTypes.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4658).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4658).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4658).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4658).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+        if (tmp4(4688).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4688).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4688).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4688).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
                 return tmp4(1370).assertNever(field_type);

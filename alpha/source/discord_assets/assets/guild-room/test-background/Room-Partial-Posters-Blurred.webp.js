@@ -1,8 +1,8 @@
-// Module ID: 5001
-// Function ID: 5002
+// Module ID: 5031
+// Function ID: 5032
 // Dependencies: [2]
 
-// Module 5001
+// Module 5031
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Room-Partial-Posters-Blurred.webp.js");

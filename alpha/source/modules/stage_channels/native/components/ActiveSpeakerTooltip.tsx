@@ -1,22 +1,22 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 9735
+// Function ID: 9736
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 4852, 9672, 1074, 21, 4836, 576, 504, 5911, 5602, 9681, 4832, 1115, 2]
+// Dependencies: [32, 19, 17, 4882, 9706, 1074, 21, 4866, 576, 504, 5941, 5632, 9715, 4862, 1115, 2]
 
-// Module 9701 (ActiveSpeakerTooltip)
+// Module 9735 (ActiveSpeakerTooltip)
 import nativeDefault from "native" /* 576 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 9681 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 9715 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4882 */;
 
 const require = fn;
 const View = fn(17).View;
-const StageChannelListStore = fn(9672);
+const StageChannelListStore = fn(9706);
 ({ useActiveSpeakerPillScrollHandler: metroRequire, useActiveSpeakerPillState: closure_7 } = StageChannelListStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj = { container: { width: "100%", flexDirection: "column", alignItems: "center", justifyContent: "center" }, participantItemContainer: { padding: 10, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round }, participantAvatarContainer: { alignItems: "center", justifyContent: "center" }, participantAvatarText: null, participantNameplateContainer: null, participantNameplateSpeakingText: null };
 let obj3 = { padding: 10, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round };
 obj.participantAvatarText = { fontSize: 12, fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, lineHeight: 18 };
@@ -37,7 +37,7 @@ export default noop.memo((channel) => {
     const speakingParticipants = ChannelRTCStore.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), ChannelRTCStore.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(5911).isVersionEqual), 1)[0];
+  }, items1, channel(5941).isVersionEqual), 1)[0];
   let tmp5 = null;
   if (0 !== first.length) {
     tmp5 = null;
@@ -53,11 +53,11 @@ export default noop.memo((channel) => {
       const intl = tmp2(1115).intl;
       const obj8 = { count: first.length };
       obj7.children = intl.format(tmp2(1115).t["+dia6l"], obj8);
-      obj6.children = closure_8(tmp2(4832).Text, obj7);
+      obj6.children = closure_8(tmp2(4862).Text, obj7);
       items2[1] = closure_8(View, obj6);
       obj3.children = items2;
       obj2.children = closure_9(View, obj3);
-      tmp5 = closure_8(tmp2(5602).PressableOpacity, obj2);
+      tmp5 = closure_8(tmp2(5632).PressableOpacity, obj2);
     }
   }
   return tmp5;

@@ -1,10 +1,10 @@
-// Module ID: 14234
-// Function ID: 14235
+// Module ID: 14263
+// Function ID: 14264
 // Name: GameStoreAsset
 // Dependencies: [2]
 // Exports: transformStoreAssetFromServer
 
-// Module 14234 (GameStoreAsset)
+// Module 14263 (GameStoreAsset)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_store/GameStoreAsset.tsx");

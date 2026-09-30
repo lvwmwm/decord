@@ -1,12 +1,12 @@
-// Module ID: 12618
-// Function ID: 12619
+// Module ID: 12648
+// Function ID: 12649
 // Name: vibegrationsPreviewNativeSurfaces
-// Dependencies: [1074, 12619, 2]
+// Dependencies: [1074, 12649, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 12618 (vibegrationsPreviewNativeSurfaces)
+// Module 12648 (vibegrationsPreviewNativeSurfaces)
 import Constants from "Constants" /* 1074 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 12619 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 12649 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: false }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: false })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "<string:28471873>" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "<string:28471873>" })
 };
 let closure_5 = {
   drain() {
@@ -221,8 +221,8 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj3);
     }
     if (1 === arr.length) {
-      let result = obj3(12619).setRpcCommandInterceptor(answerFor);
-      const obj2 = obj3(12619);
+      let result = obj3(12649).setRpcCommandInterceptor(answerFor);
+      const obj2 = obj3(12649);
     }
     const obj4 = {
       iframeId,

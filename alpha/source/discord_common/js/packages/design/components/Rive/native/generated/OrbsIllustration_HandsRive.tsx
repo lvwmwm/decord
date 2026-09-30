@@ -1,11 +1,11 @@
-// Module ID: 4642
-// Function ID: 4643
+// Module ID: 4672
+// Function ID: 4673
 // Name: OrbsIllustration_HandsRive
-// Dependencies: [109, 19, 21, 4560, 4643, 4615, 2]
+// Dependencies: [109, 19, 21, 4590, 4673, 4645, 2]
 
-// Module 4642 (OrbsIllustration_HandsRive)
-import BaseRive from "BaseRive" /* 4560 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4615 */;
+// Module 4672 (OrbsIllustration_HandsRive)
+import BaseRive from "BaseRive" /* 4590 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4645 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

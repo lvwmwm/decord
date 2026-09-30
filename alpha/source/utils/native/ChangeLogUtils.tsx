@@ -1,14 +1,14 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7736
+// Function ID: 7737
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4836, 576, 5920, 5467, 4832, 6567, 7707, 1930, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 5950, 5497, 4862, 6597, 7737, 1930, 2]
 
-// Module 7706 (utils/ChangeLogUtils)
+// Module 7736 (utils/ChangeLogUtils)
 import nativeDefault from "native" /* 576 */;
 import _modDef1930 from "module_1930" /* 1930 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Text_Text from "Text/Text" /* 4862 */;
 import noop from "module_19" /* 19 */;
-import CustomMarkup from "CustomMarkup" /* 5467 */;
+import CustomMarkup from "CustomMarkup" /* 5497 */;
 
 require = fn;
 function ChangeLogLink(arg0) {
@@ -88,9 +88,9 @@ function ChangeLogStrong(arg0) {
     if (str == null) {
       str = "text-default";
     }
-    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(7707).smartOutput(node, output, state) };
-    let reactResult = jsx(tmp(4832).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(7707).smartOutput(node, output, state) });
-    const tmpResult = tmp(7707);
+    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(7737).smartOutput(node, output, state) };
+    let reactResult = jsx(tmp(4862).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(7737).smartOutput(node, output, state) });
+    const tmpResult = tmp(7737);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);
@@ -114,11 +114,11 @@ function ChangeLogBlockQuote(state) {
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { link: { color: nativeDefault.colors.TEXT_LINK }, list: { marginBottom: 10 }, image: { alignSelf: "center", flex: 1 }, container: null, text: null };
 const obj3 = { color: nativeDefault.colors.TEXT_LINK };
-obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5920).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5920).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5950).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5950).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 obj2.text = { fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED };
 let closure_6 = createStyles.createStyles(obj2);
 const rules = CustomMarkup.createRules({});

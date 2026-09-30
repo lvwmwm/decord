@@ -1,10 +1,10 @@
-// Module ID: 17501
-// Function ID: 17502
+// Module ID: 17536
+// Function ID: 17537
 // Name: KeywordTextUtils
 // Dependencies: [2]
 // Exports: dedupeKeywords, getKeywordStringFromKeywordFilter, getKeywordsFromString, getRegexPatternsFromString, getStringFromRegexPatterns, isKeywordParseableString, sortKeywords
 
-// Module 17501 (KeywordTextUtils)
+// Module 17536 (KeywordTextUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /[\t\n,]/g;

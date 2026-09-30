@@ -1,10 +1,10 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17220
+// Function ID: 17221
 // Name: useShouldDisplayCancelConsoleTransfer
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 17185 (useShouldDisplayCancelConsoleTransfer)
+// Module 17220 (useShouldDisplayCancelConsoleTransfer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

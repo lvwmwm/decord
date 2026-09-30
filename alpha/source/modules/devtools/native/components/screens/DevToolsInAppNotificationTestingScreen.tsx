@@ -1,22 +1,22 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15537
+// Function ID: 15538
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5981, 2049, 4480, 2045, 2067, 2099, 1372, 1074, 21, 4836, 576, 4528, 8213, 9721, 9723, 5748, 11, 1613, 1177, 6165, 6083, 15314, 6090, 2]
+// Dependencies: [19, 17, 6011, 2049, 4510, 2045, 2067, 2099, 1372, 1074, 21, 4866, 576, 4558, 8244, 9755, 9757, 5778, 11, 1613, 1177, 6195, 6113, 15347, 6120, 2]
 // Exports: default
 
-// Module 15504 (DevToolsInAppNotificationTestingScreen)
+// Module 15537 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import StickersTypes from "StickersTypes" /* 5748 */;
-import TableRowGroup from "TableRowGroup" /* 6165 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9721 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9723 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
+import StickersTypes from "StickersTypes" /* 5778 */;
+import TableRowGroup from "TableRowGroup" /* 6195 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9755 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9757 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5981 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
+import StickersStore from "StickersStore" /* 6011 */;
+import MessageRecord from "MessageRecord" /* 4510 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
@@ -220,7 +220,7 @@ const Constants = fn(1074);
 ({ ChannelTypes: closure_12, InAppNotificationTypes } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -556,14 +556,14 @@ export default function DevToolsInAppNotificationTestingScreen() {
       const options = title.options;
       obj2.children = options.map((label) => {
         closure_0 = label;
-        return closure_1_14(closure_1_0(6083).TableRow, {
+        return closure_1_14(closure_1_0(6113).TableRow, {
           label: label.label,
           subLabel: label.subLabel,
-          icon: closure_1_14(closure_1_0(15314).BeakerIcon, {}),
+          icon: closure_1_14(closure_1_0(15347).BeakerIcon, {}),
           onPress() {
             return closure_2_0(closure_0);
           },
-          trailing: closure_1_14(closure_1_0(6090).TableRowArrow, {})
+          trailing: closure_1_14(closure_1_0(6120).TableRowArrow, {})
         }, label.label);
       });
       items = [closure_2_14(TableRowGroup.TableRowGroup, obj2), closure_2_14(native.Spacer, { size: nativeDefault.space.PX_16 })];
@@ -576,14 +576,14 @@ export default function DevToolsInAppNotificationTestingScreen() {
   items1[2] = closure_14(require("TableRowGroup").TableRowGroup, {
     title: "Other Notification Types",
     hasIcons: true,
-    children: items3.map((label) => closure_1_14(label(6083).TableRow, {
+    children: items3.map((label) => closure_1_14(label(6113).TableRow, {
       label: label.label,
       subLabel: label.subLabel,
-      icon: closure_1_14(label(15314).BeakerIcon, {}),
+      icon: closure_1_14(label(15347).BeakerIcon, {}),
       onPress() {
         return label(label);
       },
-      trailing: closure_1_14(label(6090).TableRowArrow, {})
+      trailing: closure_1_14(label(6120).TableRowArrow, {})
     }, label.label))
   });
   obj.children = items1;

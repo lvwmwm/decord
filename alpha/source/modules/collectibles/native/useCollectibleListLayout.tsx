@@ -1,10 +1,10 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12940
+// Function ID: 12941
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 12913 (useCollectibleListLayout)
+// Module 12940 (useCollectibleListLayout)
 import _slicedToArray from "module_32" /* 32 */;
 
 const noop = fn(19);

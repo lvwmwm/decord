@@ -1,25 +1,25 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7246
+// Function ID: 7247
 // Name: RecentMentionsStore
-// Dependencies: [4480, 502, 2045, 5056, 4851, 4479, 4655, 5017, 1372, 1074, 510, 5058, 5046, 5254, 12, 4865, 6854, 7217, 504, 573, 2]
+// Dependencies: [4510, 502, 2045, 5086, 4881, 4509, 4685, 5047, 1372, 1074, 510, 5088, 5076, 5284, 12, 4895, 6884, 7247, 504, 573, 2]
 
-// Module 7216 (RecentMentionsStore)
+// Module 7246 (RecentMentionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import TimeUtils from "TimeUtils" /* 4865 */;
-import AgeGateUtils from "AgeGateUtils" /* 5046 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import isMessageMentioned from "isMessageMentioned" /* 5254 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6854 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
+import TimeUtils from "TimeUtils" /* 4895 */;
+import AgeGateUtils from "AgeGateUtils" /* 5076 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5088 */;
+import isMessageMentioned from "isMessageMentioned" /* 5284 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6884 */;
+import MessageRecord from "MessageRecord" /* 4510 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import MessageStore from "MessageStore" /* 5086 */;
+import ReadStateStore from "ReadStateStore" /* 4881 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const isMessageMentionedDefault = isMessageMentioned;
@@ -96,7 +96,7 @@ function parseMessage(message, channelId) {
       }
       const id = AuthenticationStore.getId();
       if (!RelationshipStore.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7217)(message, id)) {
+        if (!tmp2(7247)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof MessageRecord)) {
             message = MessageStore.getMessage(message.channel_id, message.id);
@@ -107,15 +107,15 @@ function parseMessage(message, channelId) {
           }
           const obj = { message: tmp12, userId: id, suppressEveryone: !closure_23.everyoneFilter, suppressRoles: !closure_23.roleFilter };
           let tmp20 = null;
-          if (tmp2(5254)(obj)) {
+          if (tmp2(5284)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = ReadStateStore.ackMessageId(channel.id) !== tmp12.id;
             }
             if (tmp2ResultResult) {
               const obj3 = { message: tmp12, userId: id, suppressEveryone: UserGuildSettingsStore.isSuppressEveryoneEnabled(channel.getGuildId()), suppressRoles: UserGuildSettingsStore.isSuppressRolesEnabled(channel.getGuildId()) };
-              tmp2ResultResult = tmp2(5254)(obj3);
-              const tmp2Result = tmp2(5254);
+              tmp2ResultResult = tmp2(5284)(obj3);
+              const tmp2Result = tmp2(5284);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {

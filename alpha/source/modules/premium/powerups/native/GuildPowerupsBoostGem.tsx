@@ -1,15 +1,15 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12220
+// Function ID: 12221
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 4836, 576, 12189, 2]
+// Dependencies: [17, 21, 4866, 576, 12221, 2]
 // Exports: default
 
-// Module 12188 (GuildPowerupsBoostGem)
+// Module 12220 (GuildPowerupsBoostGem)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import BoostGemDefault from "BoostGem" /* 12189 */;
-import createStyles from "createStyles" /* 4836 */;
+import BoostGemDefault from "BoostGem" /* 12221 */;
+import createStyles from "createStyles" /* 4866 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = _mod17.View;

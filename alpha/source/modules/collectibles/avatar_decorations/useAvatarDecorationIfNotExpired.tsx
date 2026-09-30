@@ -1,10 +1,10 @@
-// Module ID: 7869
-// Function ID: 7870
+// Module ID: 7899
+// Function ID: 7900
 // Name: useAvatarDecorationIfNotExpired
 // Dependencies: [32, 19, 1074, 1966, 2040, 2]
 // Exports: default
 
-// Module 7869 (useAvatarDecorationIfNotExpired)
+// Module 7899 (useAvatarDecorationIfNotExpired)
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1966 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

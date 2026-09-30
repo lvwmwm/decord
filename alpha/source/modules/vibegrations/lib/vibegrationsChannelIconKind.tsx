@@ -1,12 +1,12 @@
-// Module ID: 5535
-// Function ID: 5536
+// Module ID: 5565
+// Function ID: 5566
 // Name: vibegrationsChannelIconKind
-// Dependencies: [5536, 5539, 2]
+// Dependencies: [5566, 5569, 2]
 // Exports: vibegrationsChannelIconKind
 
-// Module 5535 (vibegrationsChannelIconKind)
-import VibegrationsUtils from "VibegrationsUtils" /* 5536 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5539 */;
+// Module 5565 (vibegrationsChannelIconKind)
+import VibegrationsUtils from "VibegrationsUtils" /* 5566 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5569 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsChannelIconKind.tsx");

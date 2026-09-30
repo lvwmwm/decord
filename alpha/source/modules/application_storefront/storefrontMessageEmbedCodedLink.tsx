@@ -1,10 +1,10 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7299
+// Function ID: 7300
 // Name: storefrontMessageEmbedCodedLink
 // Dependencies: [32, 2]
 // Exports: makeStorefrontSKUCodedLink, parseStorefrontSkuCodedLink
 
-// Module 7269 (storefrontMessageEmbedCodedLink)
+// Module 7299 (storefrontMessageEmbedCodedLink)
 import _slicedToArray from "module_32" /* 32 */;
 
 const size = fn(2);

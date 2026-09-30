@@ -1,11 +1,11 @@
-// Module ID: 11639
-// Function ID: 11640
+// Module ID: 11673
+// Function ID: 11674
 // Name: ChatInputNativeCommands
-// Dependencies: [11640, 7337, 2]
+// Dependencies: [11674, 7367, 2]
 
-// Module 11639 (ChatInputNativeCommands)
-import createNonce from "createNonce" /* 7337 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11640 */;
+// Module 11673 (ChatInputNativeCommands)
+import createNonce from "createNonce" /* 7367 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11674 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");

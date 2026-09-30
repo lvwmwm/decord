@@ -1,23 +1,23 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 15087
+// Function ID: 15088
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 4825, 1372, 1074, 1609, 21, 1391, 4836, 576, 1486, 504, 15057, 7776, 5250, 4767, 1392, 1389, 9354, 10529, 10530, 558, 15058, 15059, 15060, 15061, 1241, 4801, 7777, 7774, 4800, 15064, 1981, 15066, 15067, 15072, 15076, 1115, 14347, 4540, 5252, 15077, 2877, 4832, 1177, 6796, 1092, 14348, 5447, 8460, 7536, 1613, 4566, 5446, 2]
+// Dependencies: [32, 19, 17, 4855, 1372, 1074, 1609, 21, 1391, 4866, 576, 1486, 504, 15088, 7806, 5280, 4797, 1392, 1389, 9388, 10563, 10564, 558, 15089, 15090, 15091, 15092, 1241, 4831, 7807, 7804, 4830, 15095, 1981, 15097, 15098, 15103, 15107, 1115, 14376, 4570, 5282, 15108, 2877, 4862, 1177, 6826, 1092, 14377, 5477, 8491, 7566, 1613, 4596, 5476, 2]
 // Exports: default
 
-// Module 15056 (DisplayNameStylesEditScreen)
+// Module 15087 (DisplayNameStylesEditScreen)
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5446 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7774 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import HapticUtils from "HapticUtils" /* 4831 */;
+import spring from "spring" /* 5476 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7804 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -98,7 +98,7 @@ const MEDIA_PICKER_SEND_BUTTON_SPRING = fn(1609).MEDIA_PICKER_SEND_BUTTON_SPRING
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 let items = [fn(1391).DisplayNameEffect.GRADIENT, fn(1391).DisplayNameEffect.GUMMY, fn(1391).DisplayNameEffect.PRISM];
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, contentContainer: null, fieldButtonGroup: null, fieldButton: null, fieldButtonBorder: null, fieldButtonLabel: null, fieldButtonChevron: null, fieldButtonTrailing: null, buttonContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.contentContainer = { padding: nativeDefault.space.PX_16 };
@@ -303,11 +303,11 @@ export default function DisplayNameStylesEditScreen() {
     const callback2 = obj8.useCallback(() => {
       const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
       if (isTryItOut) {
-        const result1 = tmp(7777).setTryItOutDisplayNameStyles(null);
-        const tmpResult = tmp(7777);
+        const result1 = tmp(7807).setTryItOutDisplayNameStyles(null);
+        const tmpResult = tmp(7807);
       } else {
-        tmp(7774).setPendingChanges({ displayNameStyles: null });
-        const tmpResult2 = tmp(7774);
+        tmp(7804).setPendingChanges({ displayNameStyles: null });
+        const tmpResult2 = tmp(7804);
       }
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_REMOVED);
       navigation.goBack();
@@ -324,7 +324,7 @@ export default function DisplayNameStylesEditScreen() {
       if (showFontsBadge) {
         dismissFontsBadge();
       }
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15064, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15095, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName });
     }, items6);
     if (stateFromStores != null) {
       id1 = stateFromStores.id;
@@ -342,7 +342,7 @@ export default function DisplayNameStylesEditScreen() {
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
-      obj.openLazy(asyncRequireImpl(15066, dependencyMap.paths), "DisplayNameStylesEffectPickerSheet", { userId: id, selectedEffectId: first1, onSelectEffect });
+      obj.openLazy(asyncRequireImpl(15097, dependencyMap.paths), "DisplayNameStylesEffectPickerSheet", { userId: id, selectedEffectId: first1, onSelectEffect });
     }, items7);
     const callback6 = obj8.useCallback(() => {
       if (first1 === DisplayNameEffect.DisplayNameEffect.GUMMY) {
@@ -352,7 +352,7 @@ export default function DisplayNameStylesEditScreen() {
               return callback(navigation(isTryItOut[8]).DisplayNameEffect.GUMMY, arg0);
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(tmp2(1981)(15067, tmp3.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(tmp2(1981)(15098, tmp3.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         const tmp2Result = tmp2(1981);
@@ -364,10 +364,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(15072, tmp3.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(15103, tmp3.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: tmp, onSelectColor };
-          openLazy(tmp2Result(15076, tmp3.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(15107, tmp3.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);

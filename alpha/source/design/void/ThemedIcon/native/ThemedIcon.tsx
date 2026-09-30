@@ -1,12 +1,12 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 13836
+// Function ID: 13837
 // Name: ThemedIcon
-// Dependencies: [19, 21, 4531, 5449, 2]
+// Dependencies: [19, 21, 4561, 5479, 2]
 // Exports: default
 
-// Module 13809 (ThemedIcon)
-import useToken from "useToken" /* 4531 */;
-import IconDefault from "Icon" /* 5449 */;
+// Module 13836 (ThemedIcon)
+import useToken from "useToken" /* 4561 */;
+import IconDefault from "Icon" /* 5479 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

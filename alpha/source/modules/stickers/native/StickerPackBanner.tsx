@@ -1,11 +1,11 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10062
+// Function ID: 10063
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 5364, 2]
+// Dependencies: [19, 17, 21, 5394, 2]
 // Exports: default
 
-// Module 10028 (StickerPackBanner)
-import StickersUtils from "StickersUtils" /* 5364 */;
+// Module 10062 (StickerPackBanner)
+import StickersUtils from "StickersUtils" /* 5394 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

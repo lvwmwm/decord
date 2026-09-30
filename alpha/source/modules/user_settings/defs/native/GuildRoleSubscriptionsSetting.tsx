@@ -1,16 +1,16 @@
-// Module ID: 14924
-// Function ID: 14925
+// Module ID: 14955
+// Function ID: 14956
 // Name: GuildRoleSubscriptionsSetting
-// Dependencies: [7582, 1074, 14925, 14926, 11175, 1115, 14927, 14929, 2]
+// Dependencies: [7612, 1074, 14956, 14957, 11211, 1115, 14958, 14960, 2]
 
-// Module 14924 (GuildRoleSubscriptionsSetting)
+// Module 14955 (GuildRoleSubscriptionsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7582 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14925 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14926 */;
-import TicketIcon from "TicketIcon" /* 14927 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
+import SettingsConstants from "SettingsConstants" /* 7612 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14956 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14957 */;
+import TicketIcon from "TicketIcon" /* 14958 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

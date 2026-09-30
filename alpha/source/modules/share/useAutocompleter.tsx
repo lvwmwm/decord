@@ -1,11 +1,11 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10658
+// Function ID: 10659
 // Name: useAutocompleter
-// Dependencies: [32, 19, 6076, 9457, 2]
+// Dependencies: [32, 19, 6106, 9491, 2]
 // Exports: default
 
-// Module 10624 (useAutocompleter)
-import sortByMatchScoreDefault from "sortByMatchScore" /* 9457 */;
+// Module 10658 (useAutocompleter)
+import sortByMatchScoreDefault from "sortByMatchScore" /* 9491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ export default function useAutocompleter(searchOptions) {
   searchOptions = searchOptions.searchOptions;
   dependencyMap = undefined;
   [tmp2, c1] = noop.useState({ results: [], query: "" });
-  const tmp3 = searchOptions(6076)(() => {
+  const tmp3 = searchOptions(6106)(() => {
     const obj = new sortByMatchScoreDefault((results, query) => {
       closure_1_1({ results, query });
     });

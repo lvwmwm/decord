@@ -1,13 +1,13 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16499
+// Function ID: 16500
 // Name: SparklesIcon
-// Dependencies: [19, 21, 576, 4530, 16471, 2]
+// Dependencies: [19, 21, 576, 4560, 16500, 2]
 // Exports: SparklesIcon
 
-// Module 16470 (SparklesIcon)
+// Module 16499 (SparklesIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod16471 from "module_16471" /* 16471 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod16500 from "module_16500" /* 16500 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SparklesIcon = function SparklesIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16471, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16500, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

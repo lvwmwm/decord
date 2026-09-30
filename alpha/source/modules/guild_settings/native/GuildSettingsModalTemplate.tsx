@@ -1,31 +1,31 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17675
+// Function ID: 17676
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 17641, 8218, 4832, 1115, 6626, 1485, 5375, 11439, 4735, 6102, 6961, 5445, 6190, 6672, 5447, 6627, 6085, 4792, 6200, 17642, 6776, 4527, 6191, 8535, 4779, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4866, 576, 17676, 8249, 4862, 1115, 6656, 1485, 5405, 11475, 4765, 6132, 6991, 5475, 6220, 6702, 5477, 6657, 6115, 4822, 6230, 17677, 6806, 4557, 6221, 8569, 4809, 2]
 // Exports: default
 
-// Module 17640 (GuildSettingsModalTemplate)
+// Module 17675 (GuildSettingsModalTemplate)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import CopyIcon2 from "CopyIcon" /* 4779 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AlertModal from "AlertModal" /* 5375 */;
-import Stack_Stack from "Stack/Stack" /* 5445 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import Card from "Card" /* 6085 */;
-import Input from "Input" /* 6191 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import HeaderActionButton from "HeaderActionButton" /* 6961 */;
-import native from "native" /* 8535 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11439 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17641 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import CopyIcon2 from "CopyIcon" /* 4809 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import AlertModal from "AlertModal" /* 5405 */;
+import Stack_Stack from "Stack/Stack" /* 5475 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import Card from "Card" /* 6115 */;
+import Input from "Input" /* 6221 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import HeaderActionButton from "HeaderActionButton" /* 6991 */;
+import native from "native" /* 8569 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11475 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17676 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const SceneLoadingIndicator = Text(6626);
-const Form = Text(8218);
+const SceneLoadingIndicator = Text(6656);
+const Form = Text(8249);
 require = fn;
 function TemplateForm(guildId) {
   guildId = guildId.guildId;
@@ -128,7 +128,7 @@ function TemplateForm(guildId) {
         obj2.onCloseCallback = function onCloseCallback() {
           return closure_0(false);
         };
-        guildId(5375).showConfirmModal(obj2);
+        guildId(5405).showConfirmModal(obj2);
       });
     } else {
       _Promise1 = _Promise.resolve(true);
@@ -193,7 +193,7 @@ function TemplateForm(guildId) {
                 closure_1_7(null);
                 closure_1_9(true);
                 c3 = 1;
-                const obj2 = guildTemplate(11439);
+                const obj2 = guildTemplate(11475);
                 c4 = 2;
                 c5 = 1;
                 const obj5 = { value: obj2.updateGuildTemplate(closure_0, tmp7.code, str, str2), done: false };
@@ -204,7 +204,7 @@ function TemplateForm(guildId) {
             if (1 === tmp7) {
               c3 = 0;
               closure_128_0 = closure_2;
-              const aPIError = new handleSave(4735).APIError(closure_128_0);
+              const aPIError = new handleSave(4765).APIError(closure_128_0);
               closure_1_7(aPIError);
             } else if (arg0 === 1) {
               c5 = 3;
@@ -342,10 +342,10 @@ function TemplateForm(guildId) {
 function CopyRow(children) {
   const copies = children.copies;
   if (copies) {
-    let CircleXIcon = tmp2(4792).CircleCheckIcon;
+    let CircleXIcon = tmp2(4822).CircleCheckIcon;
     let tmp4 = tmp2;
   } else {
-    CircleXIcon = tmp2(6200).CircleXIcon;
+    CircleXIcon = tmp2(6230).CircleXIcon;
     tmp4 = tmp2;
   }
   const obj = { style: closure_10().copyRow, children: null };
@@ -360,14 +360,14 @@ function CopyRow(children) {
   const tmp = closure_10();
   const tmp6 = React6;
   const tmp7 = View;
-  const items = [React5(CircleXIcon, { size: "sm", color: ICON_FEEDBACK_CRITICAL, secondaryColor: tmp10(576).colors.WHITE }), React5(tmp4(4832).Text, { variant: "text-sm/normal", children: children.label })];
+  const items = [React5(CircleXIcon, { size: "sm", color: ICON_FEEDBACK_CRITICAL, secondaryColor: tmp10(576).colors.WHITE }), React5(tmp4(4862).Text, { variant: "text-sm/normal", children: children.label })];
   obj.children = items;
   return tmp6(tmp7, obj);
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: { flex: 1 }, containerContent: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, copyRow: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj.copyRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -471,7 +471,7 @@ let closure_14 = noop.memo(function TemplateControls(arg0) {
   };
   const tmp = _slicedToArray(noop.useState(false), 2);
   _slicedToArray = tmp[1];
-  const tmp3 = guildTemplate(17642)(guildTemplate.code);
+  const tmp3 = guildTemplate(17677)(guildTemplate.code);
   noop = tmp3;
   let obj = { spacing: guildTemplate(576).space.PX_12, children: null };
   let obj2 = { label: null, children: null };
@@ -501,7 +501,7 @@ let closure_14 = noop.memo(function TemplateControls(arg0) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
     const intl4 = tmp5(1115).intl;
     obj5.children = intl4.string(tmp5(1115).t.aWsjtD);
-    const items1 = [tmp6(tmp5(4832).Text, obj5), ];
+    const items1 = [tmp6(tmp5(4862).Text, obj5), ];
     const obj6 = { variant: "primary", text: null, loading: null, onPress: null };
     const intl5 = tmp5(1115).intl;
     obj6.text = intl5.string(tmp5(1115).t["Nw+0Y/"]);
@@ -516,7 +516,7 @@ let closure_14 = noop.memo(function TemplateControls(arg0) {
       }
       return applyArgumentsResult;
     };
-    items1[1] = tmp6(tmp5(5447).Button, obj6);
+    items1[1] = tmp6(tmp5(5477).Button, obj6);
     obj4.children = items1;
     isDirty = tmp4(closure_9, obj4);
   }
@@ -552,7 +552,7 @@ let closure_14 = noop.memo(function TemplateControls(arg0) {
     const date = new Date(guildTemplate.updatedAt);
     obj10.timestamp = date;
     obj9.children = intl8.format(tmp5(1115).t.v0AVum, obj10);
-    isDirty2 = tmp6(tmp5(4832).Text, obj9);
+    isDirty2 = tmp6(tmp5(4862).Text, obj9);
   }
   items[4] = isDirty2;
   obj.children = items;

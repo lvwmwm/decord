@@ -1,9 +1,9 @@
-// Module ID: 7224
-// Function ID: 7225
+// Module ID: 7254
+// Function ID: 7255
 // Name: actions
 // Dependencies: [2]
 
-// Module 7224 (actions)
+// Module 7254 (actions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");

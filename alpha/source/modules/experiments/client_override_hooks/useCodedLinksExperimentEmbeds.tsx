@@ -1,17 +1,17 @@
-// Module ID: 11184
-// Function ID: 11185
+// Module ID: 11220
+// Function ID: 11221
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1372, 4750, 1235, 504, 11185, 11186, 2]
+// Dependencies: [32, 19, 1372, 4780, 1235, 504, 11221, 11222, 2]
 // Exports: canSeeExperimentEmbeds, useCanSeeExperimentEmbeds, useCodedLinksExperimentEmbeds
 
-// Module 11184 (useCodedLinksExperimentEmbeds)
+// Module 11220 (useCodedLinksExperimentEmbeds)
 import initialize from "initialize" /* 504 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11185 */;
-import useApexExperiments from "useApexExperiments" /* 11186 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11221 */;
+import useApexExperiments from "useApexExperiments" /* 11222 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import ExperimentStore from "ExperimentStore" /* 4750 */;
+import ExperimentStore from "ExperimentStore" /* 4780 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 require = fn;

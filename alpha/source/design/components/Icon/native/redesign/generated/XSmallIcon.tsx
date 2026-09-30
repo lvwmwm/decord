@@ -1,13 +1,13 @@
-// Module ID: 6158
-// Function ID: 6159
+// Module ID: 6188
+// Function ID: 6189
 // Name: XSmallIcon
-// Dependencies: [19, 21, 576, 4530, 6159, 2]
+// Dependencies: [19, 21, 576, 4560, 6189, 2]
 // Exports: XSmallIcon
 
-// Module 6158 (XSmallIcon)
+// Module 6188 (XSmallIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod6159 from "module_6159" /* 6159 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod6189 from "module_6189" /* 6189 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const XSmallIcon = function XSmallIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod6159, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod6189, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

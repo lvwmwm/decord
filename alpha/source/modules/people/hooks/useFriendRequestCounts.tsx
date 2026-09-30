@@ -1,14 +1,14 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16796
+// Function ID: 16797
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7236, 4479, 504, 2]
+// Dependencies: [32, 7266, 4509, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 16761 (useFriendRequestCounts)
+// Module 16796 (useFriendRequestCounts)
 import initialize from "initialize" /* 504 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7236 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7266 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 
 require = fn;
 const size = fn(2);

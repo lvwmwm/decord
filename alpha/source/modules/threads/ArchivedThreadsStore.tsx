@@ -1,21 +1,21 @@
-// Module ID: 7350
-// Function ID: 7351
+// Module ID: 7380
+// Function ID: 7381
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 2049, 2045, 4851, 4471, 2054, 7351, 12, 2056, 11, 6891, 504, 573, 2]
+// Dependencies: [32, 2049, 2045, 4881, 4501, 2054, 7381, 12, 2056, 11, 6921, 504, 573, 2]
 
-// Module 7350 (ArchivedThreadsStore)
+// Module 7380 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2056 */;
-import ForumUtils from "ForumUtils" /* 6891 */;
-import tracking_Tracking from "tracking/Tracking" /* 7351 */;
+import ForumUtils from "ForumUtils" /* 6921 */;
+import tracking_Tracking from "tracking/Tracking" /* 7381 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import ReadStateStore from "ReadStateStore" /* 4881 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4501 */;
 
 require = fn;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {

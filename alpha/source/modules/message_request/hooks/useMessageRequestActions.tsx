@@ -1,20 +1,20 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12140
+// Function ID: 12141
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7200, 12107, 1074, 12108, 10591, 4735, 9972, 7797, 1241, 12110, 2021, 8254, 2]
+// Dependencies: [5, 32, 19, 7230, 12141, 1074, 12142, 10625, 4765, 10006, 7827, 1241, 12144, 2021, 8285, 2]
 // Exports: useMessageRequestActions
 
-// Module 12106 (useMessageRequestActions)
+// Module 12140 (useMessageRequestActions)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import ReportModals from "ReportModals" /* 8254 */;
+import ReportModals from "ReportModals" /* 8285 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7200 */;
+import UserProfileStore from "UserProfileStore" /* 7230 */;
 
 require = fn;
-const MessageRequestConstants = fn(12107);
+const MessageRequestConstants = fn(12141);
 ({ MessageRequestAnalyticsAction: closure_7, BATCH_REJECT_LIMIT: closure_8 } = MessageRequestConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

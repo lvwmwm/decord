@@ -1,19 +1,19 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9755
+// Function ID: 9756
 // Name: InAppNotificationUtils
-// Dependencies: [19, 9722, 1074, 12, 1255, 1365, 1091, 6886, 5016, 2]
+// Dependencies: [19, 9756, 1074, 12, 1255, 1365, 1091, 6916, 5046, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 9721 (InAppNotificationUtils)
+// Module 9755 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import v1 from "v1" /* 1255 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6886 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5046 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6916 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const REACTION_MILESTONE_COUNTS = fn(9722).REACTION_MILESTONE_COUNTS;
+const REACTION_MILESTONE_COUNTS = fn(9756).REACTION_MILESTONE_COUNTS;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: closure_7, MessageEmbedTypes: closure_8, MessageFlags: closure_9 } = Constants);
 const size = fn(2);

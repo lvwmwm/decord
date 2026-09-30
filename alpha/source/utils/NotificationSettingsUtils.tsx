@@ -1,23 +1,23 @@
-// Module ID: 6701
-// Function ID: 6702
+// Module ID: 6731
+// Function ID: 6732
 // Name: NotificationSettingsUtils
-// Dependencies: [6702, 2045, 5056, 5017, 1074, 4482, 5018, 1084, 1385, 5016, 1241, 2]
+// Dependencies: [6732, 2045, 5086, 5047, 1074, 4512, 5048, 1084, 1385, 5046, 1241, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 6701 (NotificationSettingsUtils)
+// Module 6731 (NotificationSettingsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6702 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5046 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6732 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import MessageStore from "MessageStore" /* 5086 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserNotificationSettings } = Constants);
-const constants2 = fn(4482).NotificationSettingsUpdateType;
-const UnreadSetting = fn(5018).UnreadSetting;
+const constants2 = fn(4512).NotificationSettingsUpdateType;
+const UnreadSetting = fn(5048).UnreadSetting;
 const UserSettingsConstants = fn(1084);
 ({ ChannelNotificationSettingsFlags: closure_11, GuildNotificationSettingsFlags: closure_12 } = UserSettingsConstants);
 const NotificationLabels = { ForumThreadsCreatedOn: "enabled forum thread created notifs", ForumThreadsCreatedOff: "disabled forum thread created notifs", SuppressEveryoneOn: "enabled suppress everyone", SuppressEveryoneOff: "disabled suppress everyone", SuppressRolesOn: "enabled suppress roles", SuppressRolesOff: "disabled suppress roles", HighlightsOn: "enabled highlights", HighlightsOff: "disabled highlights", MobilePushOn: "enabled mobile push notifications", MobilePushOff: "disabled mobile push notifications", UnreadsAll: "unreads set to all messages", UnreadsMentions: "unreads set to mentions", UnreadsDefault: "unreads set to the default", NotificationsAll: "notifications set to all messages", NotificationsMentions: "notifications set to mentions", NotificationsNothing: "notifications set to nothing", NotificationsDefault: "notifications set to the default", PresetAll: "notification preset set to all messages", PresetHybrid: "notification preset set to hybrid", PresetMentions: "notification preset set to mentions", PresetNothing: "notification preset set to nothing", PresetDefault: "notification preset set to the default", OptedIn: "opted in to entity", OptedOut: "opted out from entity", Favorited: "favorited", UnFavorited: "unfavorited", Muted: "muted", Unmuted: "unmuted", MutedScheduledEvents: "muted scheduled events", UnmutedScheduledEvents: "unmuted scheduled events", OverrideCreated: "channel override created", OverrideDeleted: "channel override deleted", AnnouncementAutoEnable: "announcement channels auto set to all messages" };

@@ -1,13 +1,13 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16323
+// Function ID: 16324
 // Name: MedalIcon
-// Dependencies: [19, 21, 576, 4530, 16295, 2]
+// Dependencies: [19, 21, 576, 4560, 16324, 2]
 // Exports: MedalIcon
 
-// Module 16294 (MedalIcon)
+// Module 16323 (MedalIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod16295 from "module_16295" /* 16295 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod16324 from "module_16324" /* 16324 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MedalIcon = function MedalIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16295, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16324, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

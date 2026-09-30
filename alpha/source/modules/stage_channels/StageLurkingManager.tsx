@@ -1,12 +1,12 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12682
+// Function ID: 12683
 // Name: StageLurkingManager
-// Dependencies: [2045, 4655, 1983, 573, 6906, 1370, 2]
+// Dependencies: [2045, 4685, 1983, 573, 6936, 1370, 2]
 
-// Module 12652 (StageLurkingManager)
+// Module 12682 (StageLurkingManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 let require = fn;
@@ -32,7 +32,7 @@ class StageLurkingManager extends tmp2 {
     applyArgumentsResult.handleDisconnectFromStageChannel = function handleDisconnectFromStageChannel(guildId) {
       guildId = guildId.getGuildId();
       const items = [guildId, guildId];
-      applyArgumentsResult(6906).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
+      applyArgumentsResult(6936).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
       applyArgumentsResult.terminate();

@@ -1,18 +1,18 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 8754
+// Function ID: 8755
 // Name: XboxLinkError
-// Dependencies: [19, 8696, 21, 1485, 8721, 8722, 1115, 2]
+// Dependencies: [19, 8730, 21, 1485, 8755, 8756, 1115, 2]
 // Exports: default
 
-// Module 8720 (XboxLinkError)
+// Module 8754 (XboxLinkError)
 import util from "util" /* 1115 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import useConnectRetry from "useConnectRetry" /* 8721 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 8722 */;
+import useConnectRetry from "useConnectRetry" /* 8755 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 8756 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const XboxLinkModalScenes = fn(8696).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(8730).XboxLinkModalScenes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkError.tsx");

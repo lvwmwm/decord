@@ -1,10 +1,10 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17209
+// Function ID: 17210
 // Name: VoicePanelPreJoinUtils
 // Dependencies: [558, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 17174 (VoicePanelPreJoinUtils)
+// Module 17209 (VoicePanelPreJoinUtils)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import size from "module_2" /* 2 */;
 

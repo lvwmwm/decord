@@ -1,12 +1,12 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8503
+// Function ID: 8504
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1076, 21, 8473, 8475, 2]
+// Dependencies: [19, 1076, 21, 8504, 8506, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 8472 (FractionalNitroCoinIllustration)
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8473 */;
-import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8475 */;
+// Module 8503 (FractionalNitroCoinIllustration)
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8504 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8506 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

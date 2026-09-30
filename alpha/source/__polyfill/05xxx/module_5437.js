@@ -1,0 +1,13 @@
+// Module ID: 5437
+// Function ID: 5438
+// Dependencies: [17, 65]
+
+// Module 5437
+import _mod17 from "module_17" /* 17 */;
+import module_65 from "module_65" /* 65 */;
+
+const codegenNativeComponent = _mod17.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStackHeaderSubview", validAttributes: { type: true, hidesSharedBackground: true, synchronousShadowStateUpdatesEnabled: true } };
+
+export default module_65.get("RNSScreenStackHeaderSubview", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

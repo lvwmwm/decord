@@ -1,27 +1,27 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15628
+// Function ID: 15629
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4835, 1182, 1372, 7128, 1076, 1074, 2042, 21, 4836, 6769, 13167, 15596, 504, 6076, 1255, 10365, 15597, 1364, 7139, 8832, 7788, 8403, 4685, 6749, 1485, 8478, 4501, 15599, 4654, 2029, 4488, 15600, 1241, 7174, 7797, 15601, 15602, 15604, 15629, 1231, 8394, 10451, 15632, 15633, 15607, 15634, 5346, 2]
+// Dependencies: [32, 19, 17, 4865, 1182, 1372, 7158, 1076, 1074, 2042, 21, 4866, 6799, 13194, 15629, 504, 6106, 1255, 10399, 15630, 1364, 7169, 8866, 7818, 8434, 4715, 6779, 1485, 8509, 4531, 15632, 4684, 2029, 4518, 15633, 1241, 7204, 7827, 15634, 15635, 15637, 15662, 1231, 8425, 10485, 15665, 15666, 15640, 15667, 5376, 2]
 
-// Module 15595 (CollectiblesShopV2)
+// Module 15628 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7174 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7797 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8478 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 8832 */;
-import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15600 */;
-import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15601 */;
-import ShopCategory from "ShopCategory" /* 15602 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15604 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4684 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7204 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7827 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8509 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 8866 */;
+import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15633 */;
+import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15634 */;
+import ShopCategory from "ShopCategory" /* 15635 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15637 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import DevSettingsStore from "DevSettingsStore" /* 4865 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
 
 const SentryUtilsDefault = tmp(1231);
 require = fn;
@@ -104,7 +104,7 @@ const Constants = fn(1074);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_19 = createStyles.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 let closure_20 = { CATEGORY: "category", NITRO_UPSELL: "nitro_upsell" };
 function CollectiblesShopInternal(analyticsSource) {
@@ -382,7 +382,7 @@ function CollectiblesShopInternal(analyticsSource) {
       const obj2 = { isDarkTheme: stateFromStores, dismiss, buttonVariant: null };
       let GET_NITRO = constants;
       if (constants == null) {
-        GET_NITRO = tmp18(15600).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp18(15633).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       obj2.buttonVariant = GET_NITRO;
       let tmp17Result = closure_2_17(ShopNitroUpsellBanner.ShopNitroUpsellBanner, obj2);

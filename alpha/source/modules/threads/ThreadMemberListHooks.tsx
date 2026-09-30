@@ -1,16 +1,16 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16744
+// Function ID: 16745
 // Name: ThreadMemberListHooks
-// Dependencies: [19, 2102, 9459, 1085, 5464, 6896, 6870, 504, 1115, 2]
+// Dependencies: [19, 2102, 9493, 1085, 5494, 6926, 6900, 504, 1115, 2]
 // Exports: useThreadMemberListSections
 
-// Module 16709 (ThreadMemberListHooks)
+// Module 16744 (ThreadMemberListHooks)
 import util from "util" /* 1115 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6870 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6896 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6900 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6926 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9459 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 9493 */;
 
 const require = globalThis.__r;
 

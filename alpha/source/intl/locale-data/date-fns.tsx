@@ -1,16 +1,16 @@
-// Module ID: 3913
-// Function ID: 3914
+// Module ID: 3943
+// Function ID: 3944
 // Name: bg
-// Dependencies: [5, 3914, 1981, 3926, 3932, 3938, 3944, 3950, 2114, 3952, 3958, 3964, 3970, 3976, 3982, 3988, 3994, 4000, 4006, 4012, 4018, 4024, 4030, 4036, 4042, 4048, 4054, 4060, 4364, 4370, 4376, 4382, 2]
+// Dependencies: [5, 3944, 1981, 3956, 3962, 3968, 3974, 3980, 2114, 3982, 3988, 3994, 4000, 4006, 4012, 4018, 4024, 4030, 4036, 4042, 4048, 4054, 4060, 4066, 4072, 4078, 4084, 4090, 4394, 4400, 4406, 4412, 2]
 
-// Module 3913 (bg)
+// Module 3943 (bg)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
 const obj = { bg: null, cs: null, da: null, de: null, el: null, "en-GB": null, "en-US": null, "es-ES": null, "es-419": null, fi: null, fr: null, hr: null, hu: null, it: null, ja: null, ko: null, lt: null, nl: null, no: null, pl: null, "pt-BR": null, ro: null, ru: null, "sv-SE": null, th: null, tr: null, uk: null, vi: null, "zh-CN": null, "zh-TW": null, hi: null };
 let closure_32 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3914, dependencyMap.paths);
+  await asyncRequireImpl(3944, dependencyMap.paths);
   return arg1.default;
 });
 obj.bg = function() {
@@ -24,7 +24,7 @@ obj.bg = function() {
   return applyArgumentsResult;
 };
 let closure_31 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3926, dependencyMap.paths);
+  await asyncRequireImpl(3956, dependencyMap.paths);
   return arg1.default;
 });
 obj.cs = function() {
@@ -38,7 +38,7 @@ obj.cs = function() {
   return applyArgumentsResult;
 };
 let closure_30 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3932, dependencyMap.paths);
+  await asyncRequireImpl(3962, dependencyMap.paths);
   return arg1.default;
 });
 obj.da = function() {
@@ -52,7 +52,7 @@ obj.da = function() {
   return applyArgumentsResult;
 };
 let closure_29 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3938, dependencyMap.paths);
+  await asyncRequireImpl(3968, dependencyMap.paths);
   return arg1.default;
 });
 obj.de = function() {
@@ -66,7 +66,7 @@ obj.de = function() {
   return applyArgumentsResult;
 };
 let closure_28 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3944, dependencyMap.paths);
+  await asyncRequireImpl(3974, dependencyMap.paths);
   return arg1.default;
 });
 obj.el = function() {
@@ -80,7 +80,7 @@ obj.el = function() {
   return applyArgumentsResult;
 };
 let closure_27 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3950, dependencyMap.paths);
+  await asyncRequireImpl(3980, dependencyMap.paths);
   return arg1.default;
 });
 obj["en-GB"] = function() {
@@ -108,7 +108,7 @@ obj["en-US"] = function() {
   return applyArgumentsResult;
 };
 let closure_25 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3952, dependencyMap.paths);
+  await asyncRequireImpl(3982, dependencyMap.paths);
   return arg1.default;
 });
 obj["es-ES"] = function() {
@@ -122,7 +122,7 @@ obj["es-ES"] = function() {
   return applyArgumentsResult;
 };
 let closure_24 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3952, dependencyMap.paths);
+  await asyncRequireImpl(3982, dependencyMap.paths);
   return arg1.default;
 });
 obj["es-419"] = function() {
@@ -136,7 +136,7 @@ obj["es-419"] = function() {
   return applyArgumentsResult;
 };
 let closure_23 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3958, dependencyMap.paths);
+  await asyncRequireImpl(3988, dependencyMap.paths);
   return arg1.default;
 });
 obj.fi = function() {
@@ -150,7 +150,7 @@ obj.fi = function() {
   return applyArgumentsResult;
 };
 let closure_22 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3964, dependencyMap.paths);
+  await asyncRequireImpl(3994, dependencyMap.paths);
   return arg1.default;
 });
 obj.fr = function() {
@@ -164,7 +164,7 @@ obj.fr = function() {
   return applyArgumentsResult;
 };
 let closure_21 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3970, dependencyMap.paths);
+  await asyncRequireImpl(4000, dependencyMap.paths);
   return arg1.default;
 });
 obj.hr = function() {
@@ -178,7 +178,7 @@ obj.hr = function() {
   return applyArgumentsResult;
 };
 let closure_20 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3976, dependencyMap.paths);
+  await asyncRequireImpl(4006, dependencyMap.paths);
   return arg1.default;
 });
 obj.hu = function() {
@@ -192,7 +192,7 @@ obj.hu = function() {
   return applyArgumentsResult;
 };
 let closure_19 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3982, dependencyMap.paths);
+  await asyncRequireImpl(4012, dependencyMap.paths);
   return arg1.default;
 });
 obj.it = function() {
@@ -206,7 +206,7 @@ obj.it = function() {
   return applyArgumentsResult;
 };
 let closure_18 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3988, dependencyMap.paths);
+  await asyncRequireImpl(4018, dependencyMap.paths);
   return arg1.default;
 });
 obj.ja = function() {
@@ -220,7 +220,7 @@ obj.ja = function() {
   return applyArgumentsResult;
 };
 let closure_17 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3994, dependencyMap.paths);
+  await asyncRequireImpl(4024, dependencyMap.paths);
   return arg1.default;
 });
 obj.ko = function() {
@@ -234,7 +234,7 @@ obj.ko = function() {
   return applyArgumentsResult;
 };
 let closure_16 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4000, dependencyMap.paths);
+  await asyncRequireImpl(4030, dependencyMap.paths);
   return arg1.default;
 });
 obj.lt = function() {
@@ -248,7 +248,7 @@ obj.lt = function() {
   return applyArgumentsResult;
 };
 let closure_15 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4006, dependencyMap.paths);
+  await asyncRequireImpl(4036, dependencyMap.paths);
   return arg1.default;
 });
 obj.nl = function() {
@@ -262,7 +262,7 @@ obj.nl = function() {
   return applyArgumentsResult;
 };
 let closure_14 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4012, dependencyMap.paths);
+  await asyncRequireImpl(4042, dependencyMap.paths);
   return arg1.default;
 });
 obj.no = function() {
@@ -276,7 +276,7 @@ obj.no = function() {
   return applyArgumentsResult;
 };
 let closure_13 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4018, dependencyMap.paths);
+  await asyncRequireImpl(4048, dependencyMap.paths);
   return arg1.default;
 });
 obj.pl = function() {
@@ -290,7 +290,7 @@ obj.pl = function() {
   return applyArgumentsResult;
 };
 let closure_12 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4024, dependencyMap.paths);
+  await asyncRequireImpl(4054, dependencyMap.paths);
   return arg1.default;
 });
 obj["pt-BR"] = function() {
@@ -304,7 +304,7 @@ obj["pt-BR"] = function() {
   return applyArgumentsResult;
 };
 let closure_11 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4030, dependencyMap.paths);
+  await asyncRequireImpl(4060, dependencyMap.paths);
   return arg1.default;
 });
 obj.ro = function() {
@@ -318,7 +318,7 @@ obj.ro = function() {
   return applyArgumentsResult;
 };
 let closure_10 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4036, dependencyMap.paths);
+  await asyncRequireImpl(4066, dependencyMap.paths);
   return arg1.default;
 });
 obj.ru = function() {
@@ -332,7 +332,7 @@ obj.ru = function() {
   return applyArgumentsResult;
 };
 let closure_9 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4042, dependencyMap.paths);
+  await asyncRequireImpl(4072, dependencyMap.paths);
   return arg1.default;
 });
 obj["sv-SE"] = function() {
@@ -346,7 +346,7 @@ obj["sv-SE"] = function() {
   return applyArgumentsResult;
 };
 let closure_8 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4048, dependencyMap.paths);
+  await asyncRequireImpl(4078, dependencyMap.paths);
   return arg1.default;
 });
 obj.th = function() {
@@ -360,7 +360,7 @@ obj.th = function() {
   return applyArgumentsResult;
 };
 let closure_7 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4054, dependencyMap.paths);
+  await asyncRequireImpl(4084, dependencyMap.paths);
   return arg1.default;
 });
 obj.tr = function() {
@@ -374,7 +374,7 @@ obj.tr = function() {
   return applyArgumentsResult;
 };
 let closure_6 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4060, dependencyMap.paths);
+  await asyncRequireImpl(4090, dependencyMap.paths);
   return arg1.default;
 });
 obj.uk = function() {
@@ -388,7 +388,7 @@ obj.uk = function() {
   return applyArgumentsResult;
 };
 let closure_5 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4364, dependencyMap.paths);
+  await asyncRequireImpl(4394, dependencyMap.paths);
   return arg1.default;
 });
 obj.vi = function() {
@@ -402,7 +402,7 @@ obj.vi = function() {
   return applyArgumentsResult;
 };
 let closure_4 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4370, dependencyMap.paths);
+  await asyncRequireImpl(4400, dependencyMap.paths);
   return arg1.default;
 });
 obj["zh-CN"] = function() {
@@ -416,7 +416,7 @@ obj["zh-CN"] = function() {
   return applyArgumentsResult;
 };
 let closure_3 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4376, dependencyMap.paths);
+  await asyncRequireImpl(4406, dependencyMap.paths);
   return arg1.default;
 });
 obj["zh-TW"] = function() {
@@ -430,7 +430,7 @@ obj["zh-TW"] = function() {
   return applyArgumentsResult;
 };
 let closure_2 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4382, dependencyMap.paths);
+  await asyncRequireImpl(4412, dependencyMap.paths);
   return arg1.default;
 });
 obj.hi = function() {

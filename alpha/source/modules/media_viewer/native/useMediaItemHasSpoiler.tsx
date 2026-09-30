@@ -1,11 +1,11 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 7907
+// Function ID: 7908
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 2045, 7873, 7878, 563, 7884, 2]
+// Dependencies: [19, 2045, 7903, 7908, 563, 7914, 2]
 // Exports: useMediaItemHasSpoiler
 
-// Module 7877 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 7878 */;
+// Module 7907 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 7908 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 

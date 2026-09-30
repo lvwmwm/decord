@@ -1,9 +1,9 @@
-// Module ID: 9058
-// Function ID: 9059
+// Module ID: 9092
+// Function ID: 9093
 // Name: VideoRendererNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 9058 (VideoRendererNativeComponent)
+// Module 9092 (VideoRendererNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

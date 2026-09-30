@@ -1,12 +1,12 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14374
+// Function ID: 14375
 // Name: UserProfileEditFormTextField
-// Dependencies: [19, 21, 6672, 6190, 2]
+// Dependencies: [19, 21, 6702, 6220, 2]
 // Exports: default
 
-// Module 14345 (UserProfileEditFormTextField)
-import TextInput from "TextInput" /* 6190 */;
-import TextArea from "TextArea" /* 6672 */;
+// Module 14374 (UserProfileEditFormTextField)
+import TextInput from "TextInput" /* 6220 */;
+import TextArea from "TextArea" /* 6702 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

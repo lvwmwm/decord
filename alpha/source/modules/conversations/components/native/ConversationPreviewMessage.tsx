@@ -1,16 +1,16 @@
-// Module ID: 7538
-// Function ID: 7539
+// Module ID: 7568
+// Function ID: 7569
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 4825, 2108, 21, 7539, 7748, 4836, 576, 504, 4988, 7568, 2021, 4512, 1177, 4832, 8277, 2]
+// Dependencies: [19, 17, 4855, 2108, 21, 7569, 7778, 4866, 576, 504, 5018, 7598, 2021, 4542, 1177, 4862, 8308, 2]
 // Exports: default
 
-// Module 7538 (ConversationPreviewMessage)
+// Module 7568 (ConversationPreviewMessage)
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4512 */;
-import RowGeneratorDefault from "RowGenerator" /* 7539 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7748 */;
+import DateUtils from "DateUtils" /* 4542 */;
+import RowGeneratorDefault from "RowGenerator" /* 7569 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7778 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 require = fn;
@@ -23,7 +23,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let rowGenerator = new RowGeneratorDefault();
 rowGenerator.setOptions({ renderReplies: false, renderReactions: false });
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj3 = { container: { gap: nativeDefault.space.PX_4 }, header: null, authorRow: null, headerTimestamp: null };
 let obj4 = { gap: nativeDefault.space.PX_4 };
 obj3.header = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };

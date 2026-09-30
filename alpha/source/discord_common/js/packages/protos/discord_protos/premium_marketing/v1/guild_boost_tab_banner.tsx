@@ -1,13 +1,13 @@
-// Module ID: 10326
-// Function ID: 10327
+// Module ID: 10360
+// Function ID: 10361
 // Name: guild_boost_tab_banner
-// Dependencies: [32, 1187, 10310, 10300, 10301, 2]
+// Dependencies: [32, 1187, 10344, 10334, 10335, 2]
 
-// Module 10326 (guild_boost_tab_banner)
+// Module 10360 (guild_boost_tab_banner)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10300 */;
-import help_article from "help_article" /* 10301 */;
-import theme_aware_asset from "theme_aware_asset" /* 10310 */;
+import localized_string from "localized_string" /* 10334 */;
+import help_article from "help_article" /* 10335 */;
+import theme_aware_asset from "theme_aware_asset" /* 10344 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

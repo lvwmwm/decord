@@ -1,11 +1,11 @@
-// Module ID: 7880
-// Function ID: 7881
+// Module ID: 7910
+// Function ID: 7911
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1248, 4566, 2]
+// Dependencies: [32, 19, 1248, 4596, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 7880 (useStateFromSharedValue)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+// Module 7910 (useStateFromSharedValue)
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -52,7 +52,7 @@ export default function useStateFromSharedValue(arg0) {
       const result = map.set(tmp, value);
       let fn = function n(arg0, arg1, addListener) {
         closure_0 = arg1;
-        addListener.addListener(arg0, (arg0) => set(4566).runOnJS(closure_0)(arg0));
+        addListener.addListener(arg0, (arg0) => set(4596).runOnJS(closure_0)(arg0));
       };
       const obj4 = { runOnJS: activeIndex(callback[3]).runOnJS };
       fn.__closure = obj4;
@@ -119,7 +119,7 @@ export const useDerivedStateFromSharedValue = function useDerivedStateFromShared
       const result = map.set(tmp, value);
       let fn = function n(arg0, arg1, addListener) {
         closure_0 = arg1;
-        addListener.addListener(arg0, (arg0) => set(4566).runOnJS(closure_0)(arg0));
+        addListener.addListener(arg0, (arg0) => set(4596).runOnJS(closure_0)(arg0));
       };
       const obj4 = { runOnJS: activeIndex(callback[3]).runOnJS };
       fn.__closure = obj4;

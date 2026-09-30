@@ -1,15 +1,15 @@
-// Module ID: 5607
-// Function ID: 5608
+// Module ID: 5637
+// Function ID: 5638
 // Name: Upload
-// Dependencies: [568, 5608, 12, 5613, 1255, 2]
+// Dependencies: [568, 5638, 12, 5643, 1255, 2]
 // Exports: isResolvedUpload
 
-// Module 5607 (Upload)
+// Module 5637 (Upload)
 import _modDef12 from "module_12" /* 12 */;
 import _mod568 from "module_568" /* 568 */;
 import v1 from "v1" /* 1255 */;
-import UploadUtils from "UploadUtils" /* 5608 */;
-import FileUtilsAll from "FileUtils" /* 5613 */;
+import UploadUtils from "UploadUtils" /* 5638 */;
+import FileUtilsAll from "FileUtils" /* 5643 */;
 import size from "module_2" /* 2 */;
 
 const UploadPlatform = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };

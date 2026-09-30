@@ -1,12 +1,12 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10066
+// Function ID: 10067
 // Name: showStickerDetailActionSheet
-// Dependencies: [4800, 10033, 1981, 2]
+// Dependencies: [4830, 10067, 1981, 2]
 // Exports: hideStickerDetailActionSheet, showStickerDetailActionSheet
 
-// Module 10032 (showStickerDetailActionSheet)
+// Module 10066 (showStickerDetailActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 const sticker_detail_action_sheet = "sticker_detail_action_sheet";
@@ -16,5 +16,5 @@ export const hideStickerDetailActionSheet = function hideStickerDetailActionShee
   ActionSheetActionCreatorsDefault.hideActionSheet(sticker_detail_action_sheet);
 };
 export const showStickerDetailActionSheet = function showStickerDetailActionSheet(arg0) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10033, dependencyMap.paths), sticker_detail_action_sheet, arg0);
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10067, dependencyMap.paths), sticker_detail_action_sheet, arg0);
 };

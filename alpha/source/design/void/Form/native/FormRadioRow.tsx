@@ -1,14 +1,14 @@
-// Module ID: 8233
-// Function ID: 8234
+// Module ID: 8264
+// Function ID: 8265
 // Name: FormRadioRow
-// Dependencies: [19, 21, 6164, 4548, 6166, 6724, 6730, 2]
+// Dependencies: [19, 21, 6194, 4578, 6196, 6754, 6760, 2]
 // Exports: default
 
-// Module 8233 (FormRadioRow)
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
-import RedesignCompat from "RedesignCompat" /* 6164 */;
-import TableRadioRow from "TableRadioRow" /* 6166 */;
-import FormRowDefault from "FormRow" /* 6724 */;
+// Module 8264 (FormRadioRow)
+import useA11yRolesNative from "useA11yRolesNative" /* 4578 */;
+import RedesignCompat from "RedesignCompat" /* 6194 */;
+import TableRadioRow from "TableRadioRow" /* 6196 */;
+import FormRowDefault from "FormRow" /* 6754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,13 +40,13 @@ export default function FormRadioRow(arg0) {
     let tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
-      tmp8Result3 = tmp8(tmp9(6730), obj4);
+      tmp8Result3 = tmp8(tmp9(6760), obj4);
     }
     obj3.trailing = tmp8Result3;
     let tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
-      tmp8Result4 = tmp8(tmp9(6730), obj5);
+      tmp8Result4 = tmp8(tmp9(6760), obj5);
     }
     obj3.leading = tmp8Result4;
     tmp8Result = tmp8(FormRowDefault, obj3);

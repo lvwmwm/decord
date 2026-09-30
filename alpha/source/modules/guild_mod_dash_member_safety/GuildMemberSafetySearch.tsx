@@ -1,14 +1,14 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7135
+// Function ID: 7136
 // Name: GuildMemberSafetySearch
-// Dependencies: [32, 7106, 4955, 11, 4456, 4475, 2]
+// Dependencies: [32, 7136, 4985, 11, 4486, 4505, 2]
 // Exports: getDefaultSearchState
 
-// Module 7105 (GuildMemberSafetySearch)
+// Module 7135 (GuildMemberSafetySearch)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4456 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4475 */;
-import _modDef4955 from "module_4955" /* 4955 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4486 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4505 */;
+import _modDef4985 from "module_4985" /* 4985 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "hash", selectedSort: "children" };
+let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "opacity", selectedSort: "children" };
 let closure_4 = Object.freeze(obj);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
@@ -28,7 +28,7 @@ class GuildMemberSafetySearch {
   constructor(arg0) {
     obj1 = Object.create(new.target.prototype);
     obj1.guildId = global;
-    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "hash", selectedSort: "children" };
+    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "opacity", selectedSort: "children" };
     set = new Set();
     obj.selectedRoleIds = set;
     obj.selectedJoinDateOption = { optionId: 0, afterDate: null, beforeDate: null };
@@ -46,7 +46,7 @@ Object.defineProperty(prototype, "requiresUsernameMatch", {
   set: undefined
 });
 prototype["reset"] = function reset() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "hash", selectedSort: "children" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "opacity", selectedSort: "children" };
   this._searchState = obj;
   this.hasDefaultQuery = true;
 };
@@ -54,7 +54,7 @@ prototype["updateSearchState"] = function updateSearchState(arg0) {
   const merged = Object.assign(this._searchState);
   const merged1 = Object.assign(arg0);
   this._searchState = {};
-  this.hasDefaultQuery = _modDef4955(this._searchState, closure_4);
+  this.hasDefaultQuery = _modDef4985(this._searchState, closure_4);
   return true;
 };
 prototype["resetSearchState"] = function resetSearchState() {
@@ -62,7 +62,7 @@ prototype["resetSearchState"] = function resetSearchState() {
   const hasDefaultQuery = this.hasDefaultQuery;
   let flag = !hasDefaultQuery;
   if (!hasDefaultQuery) {
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "hash", selectedSort: "children" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "opacity", selectedSort: "children" };
     const _Set = Set;
     const set = new Set();
     obj.selectedRoleIds = set;
@@ -221,7 +221,7 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
 };
 
 export const getDefaultSearchState = function getDefaultSearchState() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "hash", selectedSort: "children" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "paddingHorizontal", selectedSourceInviteCode: "opacity", selectedSort: "children" };
   return obj;
 };
 export { GuildMemberSafetySearch };

@@ -1,11 +1,11 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12235
+// Function ID: 12236
 // Name: useGuildPowerupOnToggle
-// Dependencies: [32, 19, 12155, 2]
+// Dependencies: [32, 19, 12189, 2]
 // Exports: default
 
-// Module 12203 (useGuildPowerupOnToggle)
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12155 */;
+// Module 12235 (useGuildPowerupOnToggle)
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12189 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

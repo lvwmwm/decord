@@ -1,16 +1,16 @@
-// Module ID: 5494
-// Function ID: 5495
+// Module ID: 5524
+// Function ID: 5525
 // Name: SoundboardTypes
 // Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 5494 (SoundboardTypes)
+// Module 5524 (SoundboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
 
 export const SoundButtonOverlay = { NONE: 0, [0]: "NONE", PLAY: 1, [1]: "PLAY", ADD: 2, [2]: "ADD", SOUNDMOJI: 3, [3]: "SOUNDMOJI" };
-export const AnalyticsSoundType = { ENTRY: "entry_sound", EXIT: "exit_sound", DEFAULT: "default" };
+export const AnalyticsSoundType = { ENTRY: "entry_sound", EXIT: "exit_sound", DEFAULT: "default", ECHO: "echo" };
 export const AnalyticsChangeType = { ADDED: "added", UPDATED: "updated", REMOVED: "removed" };
 export const AnalyticsSoundSource = { DEFAULT: "default", CUSTOM: "custom" };
 export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, guild_id) {

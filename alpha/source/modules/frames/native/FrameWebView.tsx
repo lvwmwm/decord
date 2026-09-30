@@ -1,12 +1,12 @@
-// Module ID: 16461
-// Function ID: 16462
+// Module ID: 16490
+// Function ID: 16491
 // Name: FrameWebView
-// Dependencies: [19, 21, 9087, 8916, 8925, 2]
+// Dependencies: [19, 21, 9121, 8950, 8959, 2]
 // Exports: default
 
-// Module 16461 (FrameWebView)
-import FramesNativeManagerDefault from "FramesNativeManager" /* 8916 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8925 */;
+// Module 16490 (FrameWebView)
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8950 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8959 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

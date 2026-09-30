@@ -1,17 +1,17 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15954
+// Function ID: 15955
 // Name: VoiceUser
-// Dependencies: [19, 2044, 4858, 502, 1993, 4854, 4855, 21, 504, 15930, 2]
+// Dependencies: [19, 2044, 4888, 502, 1993, 4884, 4885, 21, 504, 15955, 2]
 // Exports: default
 
-// Module 15929 (VoiceUser)
+// Module 15954 (VoiceUser)
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4888 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SessionsStore from "SessionsStore" /* 4854 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import SessionsStore from "SessionsStore" /* 4884 */;
+import VoiceStateStore from "VoiceStateStore" /* 4885 */;
 
 const require = fn;
 const jsx = fn(21).jsx;

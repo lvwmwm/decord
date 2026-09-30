@@ -1,17 +1,17 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 7787
+// Function ID: 7788
 // Name: utils
-// Dependencies: [1091, 11, 1115, 4421, 7758, 4064, 7752, 2]
+// Dependencies: [1091, 11, 1115, 4451, 7788, 4094, 7782, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7757 (utils)
+// Module 7787 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
-import _mod4064 from "module_4064" /* 4064 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7752 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7758 */;
+import _mod4094 from "module_4094" /* 4094 */;
+import _modDef4451 from "module_4451" /* 4451 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7782 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7788 */;
 import size from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -101,8 +101,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef4421(timestamp);
-  const tmp3 = _modDef4421;
+  const obj2 = _modDef4451(timestamp);
+  const tmp3 = _modDef4451;
   const diffResult = obj2.diff(tmp3(SnowflakeUtilsDefault.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
   if (absolute < DurationsDefault.Seconds.MINUTE) {
@@ -396,7 +396,7 @@ export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastP
 };
 export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(start) {
   const obj2 = { start, end: null };
-  const obj = _mod4064;
+  const obj = _mod4094;
   obj2.end = new Date();
   const intervalToDurationResult = obj.intervalToDuration(obj2);
   const months = intervalToDurationResult.months;

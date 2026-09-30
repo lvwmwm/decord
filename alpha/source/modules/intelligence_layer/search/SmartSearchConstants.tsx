@@ -1,9 +1,9 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12050
+// Function ID: 12051
 // Name: SmartSearchConstants
 // Dependencies: [1091, 2]
 
-// Module 12016 (SmartSearchConstants)
+// Module 12050 (SmartSearchConstants)
 import DurationsDefault from "Durations" /* 1091 */;
 
 const result = 60 * DurationsDefault.Millis.MINUTE;

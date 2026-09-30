@@ -1,33 +1,33 @@
-// Module ID: 10298
-// Function ID: 10299
+// Module ID: 10332
+// Function ID: 10333
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1187, 10299, 10303, 10304, 10305, 10306, 10307, 10309, 10311, 10312, 10313, 10314, 10315, 10316, 10317, 10318, 10319, 10320, 10321, 10322, 10323, 10324, 10325, 10326, 2]
+// Dependencies: [32, 1187, 10333, 10337, 10338, 10339, 10340, 10341, 10343, 10345, 10346, 10347, 10348, 10349, 10350, 10351, 10352, 10353, 10354, 10355, 10356, 10357, 10358, 10359, 10360, 2]
 
-// Module 10298 (premium_marketing_component_properties)
+// Module 10332 (premium_marketing_component_properties)
 import _mod1187 from "module_1187" /* 1187 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 10299 */;
-import premium_tab from "premium_tab" /* 10303 */;
-import marketing_page_banner from "marketing_page_banner" /* 10304 */;
-import payment_modal_banner from "payment_modal_banner" /* 10305 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 10306 */;
-import gift_icon from "gift_icon" /* 10307 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 10309 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 10311 */;
-import gift_customization_banner from "gift_customization_banner" /* 10312 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 10313 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 10314 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 10315 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 10316 */;
-import premium_tab_popover from "premium_tab_popover" /* 10317 */;
-import nagbar from "nagbar" /* 10318 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 10319 */;
-import billing_settings_banner from "billing_settings_banner" /* 10320 */;
-import shop_nagbar from "shop_nagbar" /* 10321 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 10322 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 10323 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 10324 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 10325 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 10326 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 10333 */;
+import premium_tab from "premium_tab" /* 10337 */;
+import marketing_page_banner from "marketing_page_banner" /* 10338 */;
+import payment_modal_banner from "payment_modal_banner" /* 10339 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 10340 */;
+import gift_icon from "gift_icon" /* 10341 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 10343 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 10345 */;
+import gift_customization_banner from "gift_customization_banner" /* 10346 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 10347 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 10348 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 10349 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 10350 */;
+import premium_tab_popover from "premium_tab_popover" /* 10351 */;
+import nagbar from "nagbar" /* 10352 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 10353 */;
+import billing_settings_banner from "billing_settings_banner" /* 10354 */;
+import shop_nagbar from "shop_nagbar" /* 10355 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 10356 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 10357 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 10358 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 10359 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 10360 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -250,7 +250,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
 }
 const prototype = PremiumMarketingComponentProperties$Type.prototype;
 prototype["create"] = function create(arr) {
-  const obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
+  const obj = { properties: { oneofKind: "Array" }, contentIdentifier: "", isDefaultBase: false };
   const _Object = Object;
   _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {

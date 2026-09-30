@@ -1,15 +1,15 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14398
+// Function ID: 14399
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7128, 7143, 563, 7140, 1115, 2]
+// Dependencies: [32, 19, 7158, 7173, 563, 7170, 1115, 2]
 // Exports: default
 
-// Module 14369 (useNameplateSections)
+// Module 14398 (useNameplateSections)
 import util from "util" /* 1115 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7140 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7170 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7143 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7173 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;

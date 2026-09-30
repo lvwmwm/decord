@@ -1,11 +1,11 @@
-// Module ID: 8835
-// Function ID: 8836
+// Module ID: 8869
+// Function ID: 8870
 // Name: useStoreFrontPrice
-// Dependencies: [19, 1074, 4488, 2]
+// Dependencies: [19, 1074, 4518, 2]
 // Exports: default
 
-// Module 8835 (useStoreFrontPrice)
-import PremiumUtils from "PremiumUtils" /* 4488 */;
+// Module 8869 (useStoreFrontPrice)
+import PremiumUtils from "PremiumUtils" /* 4518 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

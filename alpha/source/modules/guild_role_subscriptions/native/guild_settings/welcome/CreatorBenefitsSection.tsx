@@ -1,22 +1,22 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17750
+// Function ID: 17751
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 14925, 21, 4836, 576, 4685, 4767, 4832, 1115, 6065, 17716, 17717, 17718, 17719, 17720, 17721, 17722, 17723, 2]
+// Dependencies: [19, 17, 14956, 21, 4866, 576, 4715, 4797, 4862, 1115, 6095, 17751, 17752, 17753, 17754, 17755, 17756, 17757, 17758, 2]
 // Exports: default
 
-// Module 17715 (CreatorBenefitsSection)
+// Module 17750 (CreatorBenefitsSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4685 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import _modDef17716 from "module_17716" /* 17716 */;
-import _modDef17719 from "module_17719" /* 17719 */;
-import _modDef17720 from "module_17720" /* 17720 */;
-import _modDef17721 from "module_17721" /* 17721 */;
-import _modDef17722 from "module_17722" /* 17722 */;
-import _modDef17723 from "module_17723" /* 17723 */;
+import shared from "shared" /* 4715 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import _modDef17751 from "module_17751" /* 17751 */;
+import _modDef17754 from "module_17754" /* 17754 */;
+import _modDef17755 from "module_17755" /* 17755 */;
+import _modDef17756 from "module_17756" /* 17756 */;
+import _modDef17757 from "module_17757" /* 17757 */;
+import _modDef17758 from "module_17758" /* 17758 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -46,7 +46,7 @@ function EarningPreview() {
   const items3 = [timestampProducer(View, obj5), ];
   const obj7 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp7Result2 = shared;
-  obj7.source = _modDef17716;
+  obj7.source = _modDef17751;
   items3[1] = hasOwnProperty(FastImageDefault, obj7);
   obj3.children = items3;
   obj2.children = timestampProducer(View, obj3);
@@ -65,15 +65,15 @@ function ConsistentEarningBenefit() {
   obj3.style = items1;
   const tmp3 = useThemeDefault();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(17717);
+    let tmpResult = tmp(17752);
   } else {
-    tmpResult = tmp(17718);
+    tmpResult = tmp(17753);
   }
   const items2 = [hasOwnProperty(BenefitAvatar, { avatarSource: tmpResult }), , ];
   obj4 = shared;
-  items2[1] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17719 });
-  const obj5 = { avatarSource: _modDef17719 };
-  items2[2] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17720 });
+  items2[1] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17754 });
+  const obj5 = { avatarSource: _modDef17754 };
+  items2[2] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17755 });
   obj3.children = items2;
   items[2] = timestampProducer(View, obj3);
   obj.children = items;
@@ -86,10 +86,10 @@ function FollowerAwardBenefit() {
   const intl = util.intl;
   obj2.children = intl.string(util.t.qsKRUQ);
   const items = [hasOwnProperty(Text_Text.Text, obj2), , ];
-  const obj3 = { style: tmp.socialIllo, source: _modDef17721 };
+  const obj3 = { style: tmp.socialIllo, source: _modDef17756 };
   items[1] = hasOwnProperty(FastImageDefault, obj3);
   const obj4 = { style: tmp.lanyardIllo, source: null };
-  obj4.source = _modDef17722;
+  obj4.source = _modDef17757;
   items[2] = hasOwnProperty(FastImageDefault, obj4);
   obj.children = items;
   return timestampProducer(View, obj);
@@ -114,7 +114,7 @@ function RevenueShareBenefit() {
   obj4.children = intl.string(util.t.AewsXD);
   items2[1] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: tmp4.revenueShareIllo, source: null };
-  obj5.source = _modDef17723;
+  obj5.source = _modDef17758;
   items2[2] = hasOwnProperty(FastImageDefault, obj5);
   obj.children = items2;
   return tmp5(tmp6, obj);
@@ -125,10 +125,10 @@ function BenefitAvatar(avatarSource) {
   return hasOwnProperty(View, obj);
 }
 const View = fn(17).View;
-let closure_4 = fn(14925).CREATOR_REVENUE_SHARE_PERCENTAGE;
+let closure_4 = fn(14956).CREATOR_REVENUE_SHARE_PERCENTAGE;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { horizontalContainer: { flex: 1, flexDirection: "row" }, benefitAvatarContainer: { padding: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, benefitCard: null, benefitAvatar: null, benefitAvatars: null, benefitCardTitle: null, earningMetricsShadowContainer: null, earningMetricsShadowContainerDarkMode: null, earningMetrics: null, earningMetricsDarkMode: null, earningMetricsLightMode: null, greenTextDarkMode: null, greenTextLightMode: null, earningMetricsAvatar: null, socialIllo: null, lanyardIllo: null, revenueShare: null, revenueShareContainer: null, revenueShareIllo: null, revenueShareDescription: null };
 let obj3 = { padding: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj2.benefitCard = { marginVertical: 6, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };

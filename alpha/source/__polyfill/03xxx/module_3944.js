@@ -1,13 +1,13 @@
 // Module ID: 3944
 // Function ID: 3945
-// Dependencies: [3945, 3946, 3947, 3948, 3949]
+// Dependencies: [3945, 3946, 3947, 3954, 3955]
 
 // Module 3944
 import module_3945 from "module_3945" /* 3945 */;
 import module_3946 from "module_3946" /* 3946 */;
 import module_3947 from "module_3947" /* 3947 */;
-import date_mod from "module_3948" /* 3948 */;
-import date_mod from "module_3949" /* 3949 */;
+import date_mod from "module_3954" /* 3954 */;
+import date_mod from "module_3955" /* 3955 */;
 
 if (!module_3945) {
   const obj = { default: module_3945 };
@@ -42,5 +42,5 @@ if (!date) {
   tmp11 = date;
 }
 
-export default { code: "el", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default { code: "bg", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

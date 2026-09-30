@@ -1,17 +1,17 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16766
+// Function ID: 16767
 // Name: useSmartSearchMessages
-// Dependencies: [19, 12027, 7468, 12018, 16637, 12028, 504, 12017, 2]
+// Dependencies: [19, 12061, 7499, 12052, 16672, 12062, 504, 12051, 2]
 // Exports: useSmartSearchMessages
 
-// Module 16731 (useSmartSearchMessages)
-import SmartSearchTypes from "SmartSearchTypes" /* 12017 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12018 */;
+// Module 16766 (useSmartSearchMessages)
+import SmartSearchTypes from "SmartSearchTypes" /* 12051 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12052 */;
 import noop from "module_19" /* 19 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12027 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12061 */;
 
 require = fn;
-const SearchListItemTypes = fn(7468).SearchListItemTypes;
+const SearchListItemTypes = fn(7499).SearchListItemTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useSmartSearchMessages.tsx");
 
@@ -63,7 +63,7 @@ export const useSmartSearchMessages = function useSmartSearchMessages(searchCont
             } else {
               tmp2 = null;
             }
-            tmp6Result = tmp6(12018);
+            tmp6Result = tmp6(12052);
           }
           tmp5 = smartSearchStatus;
           tmp6 = require;

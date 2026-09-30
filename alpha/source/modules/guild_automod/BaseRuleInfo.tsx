@@ -1,13 +1,13 @@
-// Module ID: 17509
-// Function ID: 17510
+// Module ID: 17544
+// Function ID: 17545
 // Name: BaseRuleInfo
-// Dependencies: [11510, 17499, 17498, 1115, 2]
+// Dependencies: [11546, 17534, 17533, 1115, 2]
 // Exports: getBaseRuleInfo
 
-// Module 17509 (BaseRuleInfo)
-import Constants from "Constants" /* 11510 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17498 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17499 */;
+// Module 17544 (BaseRuleInfo)
+import Constants from "Constants" /* 11546 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17533 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17534 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -53,7 +53,7 @@ export const getBaseRuleInfo = function getBaseRuleInfo(triggerType, rule) {
                       formatToPlainStringResult = intl.formatToPlainString(tmp5(1115).t.dJN7Lk, obj5);
                     }
                   }
-                  tmp5Result = tmp5(17498);
+                  tmp5Result = tmp5(17533);
                 }
                 if (str2 == null) {
                   str2 = "";

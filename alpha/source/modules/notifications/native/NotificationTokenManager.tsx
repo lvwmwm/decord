@@ -1,9 +1,9 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14205
+// Function ID: 14206
 // Name: NotificationTokenManager
-// Dependencies: [17, 1235, 12077, 13343, 502, 14177, 1074, 1983, 573, 8911, 14180, 14181, 1231, 1115, 2813, 1364, 14182, 1241, 12076, 2]
+// Dependencies: [17, 1235, 12111, 13370, 502, 14206, 1074, 1983, 573, 8945, 14209, 14210, 1231, 1115, 2813, 1364, 14211, 1241, 12110, 2]
 
-// Module 14176 (NotificationTokenManager)
+// Module 14205 (NotificationTokenManager)
 import _mod17 from "module_17" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
@@ -11,15 +11,15 @@ import util from "util" /* 1115 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _modDef2813 from "module_2813" /* 2813 */;
-import PushNotificationDefault from "PushNotification" /* 8911 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12076 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14177 */;
-import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14180 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14181 */;
-import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14182 */;
+import PushNotificationDefault from "PushNotification" /* 8945 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12110 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14206 */;
+import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14209 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14210 */;
+import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14211 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import MultiAccountStore from "MultiAccountStore" /* 12077 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13343 */;
+import MultiAccountStore from "MultiAccountStore" /* 12111 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13370 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 import size from "module_2" /* 2 */;

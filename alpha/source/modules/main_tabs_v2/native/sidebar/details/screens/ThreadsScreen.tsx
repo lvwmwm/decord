@@ -1,13 +1,13 @@
-// Module ID: 16724
-// Function ID: 16725
+// Module ID: 16759
+// Function ID: 16760
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 2045, 1074, 1114, 21, 4836, 576, 6853, 6568, 10961, 4847, 16725, 563, 1486, 2]
+// Dependencies: [19, 17, 2045, 1074, 1114, 21, 4866, 576, 6883, 6598, 10997, 4877, 16760, 563, 1486, 2]
 
-// Module 16724 (ThreadsScreen)
+// Module 16759 (ThreadsScreen)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 10961 */;
-import ThreadListDefault from "ThreadList" /* 16725 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6598 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 10997 */;
+import ThreadListDefault from "ThreadList" /* 16760 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -15,7 +15,7 @@ require = fn;
 function ThreadsScreen(channel) {
   channel = channel.channel;
   const tmp = closure_9();
-  const canStartThread = channel(6853).useCanStartThread(channel);
+  const canStartThread = channel(6883).useCanStartThread(channel);
   const items = [channel];
   const callback = noop.useCallback(() => {
     const result = navigateToThreadCreation.navigateToThreadCreation(channel, "Thread Browser Empty State");
@@ -33,7 +33,7 @@ function ThreadsScreen(channel) {
   }, []);
   const obj3 = { channel, onCreateThreadPress: null, onThreadPress: null, contentContainerStyle: null };
   let tmp10;
-  let obj = channel(6853);
+  let obj = channel(6883);
   if (canStartThread) {
     tmp10 = callback;
   }
@@ -47,7 +47,7 @@ const View = fn(17).View;
 const SearchTypes = fn(1074).SearchTypes;
 let closure_7 = fn(1114).OpenThreadAnalyticsLocations;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: { flex: 1 }, screen: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_9 = createStyles.createStyles(obj);
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

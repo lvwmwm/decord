@@ -1,8 +1,8 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16584
+// Function ID: 16585
 // Dependencies: [2]
 
-// Module 16554
+// Module 16584
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BotIllocon-2x.png.js");

@@ -1,11 +1,11 @@
-// Module ID: 15676
-// Function ID: 15677
+// Module ID: 15709
+// Function ID: 15710
 // Name: ReactCompilerSetting
-// Dependencies: [11175, 15290, 2]
+// Dependencies: [11211, 15323, 2]
 
-// Module 15676 (ReactCompilerSetting)
-import WrenchIcon from "WrenchIcon" /* 15290 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
+// Module 15709 (ReactCompilerSetting)
+import WrenchIcon from "WrenchIcon" /* 15323 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

@@ -1,10 +1,10 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9429
+// Function ID: 9430
 // Name: handleNSFWGuildInvite
-// Dependencies: [2067, 1074, 9396, 1364, 9397, 5902, 9399, 9400, 2]
+// Dependencies: [2067, 1074, 9430, 1364, 9431, 5932, 9433, 9434, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 9395 (handleNSFWGuildInvite)
+// Module 9429 (handleNSFWGuildInvite)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -12,7 +12,7 @@ const require = globalThis.__r;
 
 require = fn;
 const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
-let closure_4 = fn(9396).TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_4 = fn(9430).TINY_BRONCO_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -54,7 +54,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
   if (set.has(nsfw_level)) {
     if (null == GuildStore.getGuild(id)) {
       if (obj6.isIOS()) {
-        const result = tmp9(9397).showNsfwGateGuildAlert(id);
+        const result = tmp9(9431).showNsfwGateGuildAlert(id);
         if (onCancel != null) {
           onCancel();
         }
@@ -76,16 +76,16 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
                           }
                         }
             };
-            const result1 = tmp9(9400).showNsfwServerInviteWarningAlert(obj);
+            const result1 = tmp9(9434).showNsfwServerInviteWarningAlert(obj);
             return true;
           } else {
             return false;
           }
-          tmp9Result5 = tmp9(9399);
+          tmp9Result5 = tmp9(9433);
         } else {
           return false;
         }
-        tmp9Result4 = tmp9(5902);
+        tmp9Result4 = tmp9(5932);
       }
       obj6 = PlatformUtils;
     }

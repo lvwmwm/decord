@@ -1,18 +1,18 @@
-// Module ID: 8955
-// Function ID: 8956
+// Module ID: 8989
+// Function ID: 8990
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 2045, 8756, 1979, 8764, 8760, 8670, 2]
+// Dependencies: [5, 19, 2045, 8790, 1979, 8798, 8794, 8704, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 8955 (getPrimaryAppCommand)
+// Module 8989 (getPrimaryAppCommand)
 import Server from "Server" /* 1979 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8670 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 8760 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8764 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8704 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 8794 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8798 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8756 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8790 */;
 
 const require = globalThis.__r;
 
@@ -97,7 +97,7 @@ function queryForPrimaryAppCommand(withAffinitySuggestions, id) {
   obj.commandTypes = items;
   return ApplicationCommandIndexStore.query(withAffinitySuggestions, obj, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true }).commands[0];
 }
-let ApplicationCommandIndexStore = fn(8756);
+let ApplicationCommandIndexStore = fn(8790);
 ({ getOrFetchApplicationCommandIndexForTarget: hasOwnProperty, useQueryState: metroRequire } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
 let c8 = "no primary app command for application";

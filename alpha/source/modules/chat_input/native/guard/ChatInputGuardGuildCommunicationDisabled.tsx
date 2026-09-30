@@ -1,13 +1,13 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12159
+// Function ID: 12160
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 2110, 21, 12126, 12112, 11501, 1115, 2]
+// Dependencies: [19, 2110, 21, 12160, 12146, 11537, 1115, 2]
 
-// Module 12125 (ChatInputGuardGuildCommunicationDisabled)
+// Module 12159 (ChatInputGuardGuildCommunicationDisabled)
 import util from "util" /* 1115 */;
-import ClockWarningIcon from "ClockWarningIcon" /* 11501 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12112 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12126 */;
+import ClockWarningIcon from "ClockWarningIcon" /* 11537 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12146 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12160 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

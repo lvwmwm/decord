@@ -1,10 +1,10 @@
-// Module ID: 12161
-// Function ID: 12162
+// Module ID: 12195
+// Function ID: 12196
 // Name: GuildDismissibleContentUtils
 // Dependencies: [1220, 1074, 2042, 1084, 2028, 504, 2026, 1241, 2029, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 12161 (GuildDismissibleContentUtils)
+// Module 12195 (GuildDismissibleContentUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2028 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
@@ -18,8 +18,8 @@ const UserSettingsDelay = fn(1084).UserSettingsDelay;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
 
-export const isContentDismissed = function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, id) {
-  const dismissedGuildContent = UserSettingsProtoStore.getDismissedGuildContent(id);
+export const isContentDismissed = function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, guildId) {
+  const dismissedGuildContent = UserSettingsProtoStore.getDismissedGuildContent(guildId);
   let hasBitResult = null != dismissedGuildContent;
   if (hasBitResult) {
     hasBitResult = Uint8ArrayUtils.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);

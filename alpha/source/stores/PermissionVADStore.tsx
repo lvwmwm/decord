@@ -1,17 +1,17 @@
-// Module ID: 14057
-// Function ID: 14058
+// Module ID: 14084
+// Function ID: 14085
 // Name: PermissionVADStore
-// Dependencies: [502, 2045, 1993, 4469, 4859, 4855, 1074, 573, 504, 2]
+// Dependencies: [502, 2045, 1993, 4499, 4889, 4885, 1074, 573, 504, 2]
 
-// Module 14057 (PermissionVADStore)
+// Module 14084 (PermissionVADStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
+import VoiceStateStore from "VoiceStateStore" /* 4885 */;
 
 function handleUpdateVADPermission() {
   const channelId = RTCConnectionStore.getChannelId();

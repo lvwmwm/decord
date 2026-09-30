@@ -1,14 +1,14 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11042
+// Function ID: 11043
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7179, 7184, 7973, 21, 504, 6749, 6769, 10995, 2]
+// Dependencies: [19, 7209, 7214, 8003, 21, 504, 6779, 6799, 11031, 2]
 // Exports: default
 
-// Module 11006 (MessagePreviewReactions)
+// Module 11042 (MessagePreviewReactions)
 import noop from "module_19" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7179 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7184 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 7973 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7209 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7214 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8003 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -31,13 +31,13 @@ export default function MessagePreviewReactions(emoji) {
     return null != message ? message.reactions : closure_7;
   }, items1);
   const obj = channelId(504);
-  const obj2 = { value: messageId(6749)(messageId(6769).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
+  const obj2 = { value: messageId(6779)(messageId(6799).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji: emoji.emoji, reactions: stateFromStores };
-    let tmp4Result = tmp4(tmp(10995).MessageReactionsContent, obj3);
+    let tmp4Result = tmp4(tmp(11031).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(10995).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(11031).MessageReactionsEmpty, {});
   }
   obj2.children = tmp4Result;
-  return jsx(channelId(6749).AnalyticsLocationProvider, { value: messageId(6749)(messageId(6769).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
+  return jsx(channelId(6779).AnalyticsLocationProvider, { value: messageId(6779)(messageId(6799).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
 };

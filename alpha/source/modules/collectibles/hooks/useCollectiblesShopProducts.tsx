@@ -1,20 +1,20 @@
-// Module ID: 8504
-// Function ID: 8505
+// Module ID: 8538
+// Function ID: 8539
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 8505, 7829, 7129, 7130, 8506, 504, 7127, 7828, 8507, 2]
+// Dependencies: [32, 19, 8539, 7859, 7159, 7160, 8540, 504, 7157, 7858, 8541, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 8504 (useCollectiblesShopProducts)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7127 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7828 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 8506 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 8507 */;
+// Module 8538 (useCollectiblesShopProducts)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7157 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7858 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 8540 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 8541 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8505 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7829 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7129 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7130 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8539 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 7859 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7159 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7160 */;
 
 const require = globalThis.__r;
 

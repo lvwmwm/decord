@@ -1,14 +1,14 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9272
+// Function ID: 9273
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [7112, 2051, 9111, 576, 9239, 1115, 8247, 9240, 2]
+// Dependencies: [7142, 2051, 9145, 576, 9273, 1115, 8278, 9274, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9238 (GuildScheduledEventHeaderUtils)
+// Module 9272 (GuildScheduledEventHeaderUtils)
 import nativeDefault from "native" /* 576 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import _modDef9239 from "module_9239" /* 9239 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7112 */;
+import _modDef9273 from "module_9273" /* 9273 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7142 */;
 import size from "module_2" /* 2 */;
 
 ({ isGuildEventEnded: c3, isGuildScheduledEventActive: closure_4 } = GuildScheduledEventStore);
@@ -30,12 +30,12 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   }
   const tmp7 = React3(event);
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
-  let tmp8Result = _modDef9239;
+  let tmp8Result = _modDef9273;
   if (tmp4) {
     const intl4 = tmp(1115).intl;
     let stringResult = intl4.string(tmp(1115).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8247);
+      tmp8Result = tmp8(8278);
     }
     let entity_type;
     if (event != null) {
@@ -49,11 +49,11 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     let stringResult1 = stringResult;
     let tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(9240);
+    tmp8Result3 = tmp8(9274);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(9240);
+    tmp8Result3 = tmp8(9274);
     const intl3 = tmp(1115).intl;
     stringResult1 = intl3.string(tmp(1115).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
@@ -71,9 +71,9 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
         formatToPlainStringResult = intl.string(tmp(1115).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
-      tmp8Result3 = tmp8(9240);
+      tmp8Result3 = tmp8(9274);
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      const tmp8Result4 = tmp8(9240);
+      const tmp8Result4 = tmp8(9274);
     }
   }
   if (isCanceled) {

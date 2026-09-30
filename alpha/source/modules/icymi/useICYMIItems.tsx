@@ -1,14 +1,14 @@
-// Module ID: 16301
-// Function ID: 16302
+// Module ID: 16330
+// Function ID: 16331
 // Name: useICYMIItems
-// Dependencies: [19, 7948, 7961, 504, 7964, 2]
+// Dependencies: [19, 7978, 7991, 504, 7994, 2]
 // Exports: default
 
-// Module 16301 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 7961 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7964 */;
+// Module 16330 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 7991 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7994 */;
 import noop from "module_19" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 7948 */;
+import ICYMIStore from "ICYMIStore" /* 7978 */;
 
 require = fn;
 function createItem(id, type, unread) {
@@ -42,9 +42,9 @@ function createItem(id, type, unread) {
     obj4.debugScore = JSON.stringify(id.score_components);
     obj4.unread = unread;
   } else {
-    if (tmp(7961).ICYMIItemTypes.ACTIVITY !== type) {
-      if (tmp(7961).ICYMIItemTypes.CUSTOM_STATUS !== type) {
-        if (tmp(7961).ICYMIItemTypes.GUILD_EVENT === type) {
+    if (tmp(7991).ICYMIItemTypes.ACTIVITY !== type) {
+      if (tmp(7991).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+        if (tmp(7991).ICYMIItemTypes.GUILD_EVENT === type) {
           const obj6 = { id: id.id, timestamp: null, data: null, score: null, debugScore: null, unread: null };
           const _Date2 = Date;
           obj6.timestamp = Date.now();
@@ -55,7 +55,7 @@ function createItem(id, type, unread) {
           obj6.debugScore = JSON.stringify(id.score_components);
           obj6.unread = unread;
           return obj6;
-        } else if (tmp(7961).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+        } else if (tmp(7991).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
           const obj = { id: id.id, timestamp: null, data: null, score: null, debugScore: null, unread: null };
           const _Date = Date;
           obj.timestamp = Date.now();
@@ -123,7 +123,7 @@ export default function useICYMIItems() {
           let tmp9 = stateFromStoresObject[tmp6.id];
           let tmp10 = null == tmp9;
           if (tmp10) {
-            tmp10 = tmp6.type === stateFromStores1(7961).ICYMIItemTypes.MESSAGE;
+            tmp10 = tmp6.type === stateFromStores1(7991).ICYMIItemTypes.MESSAGE;
           }
           if (tmp10) {
             let message_context = tmp6.data.message_context;
@@ -169,7 +169,7 @@ export default function useICYMIItems() {
           let tmp22 = stateFromStoresObject[tmp19.id];
           let tmp23 = null == tmp22;
           if (tmp23) {
-            tmp23 = tmp19.type === stateFromStores1(7961).ICYMIItemTypes.MESSAGE;
+            tmp23 = tmp19.type === stateFromStores1(7991).ICYMIItemTypes.MESSAGE;
           }
           if (tmp23) {
             let message_context2 = tmp19.data.message_context;

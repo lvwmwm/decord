@@ -1,20 +1,20 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14782
+// Function ID: 14783
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4836, 4531, 576, 4620, 2]
+// Dependencies: [32, 19, 17, 21, 4866, 4561, 576, 4650, 2]
 // Exports: default
 
-// Module 14751 (BountiesScrollIndicatorAnimation)
+// Module 14782 (BountiesScrollIndicatorAnimation)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
+import useToken from "useToken" /* 4561 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const BountiesScrollIndicatorRive = tmp2(4620);
+const BountiesScrollIndicatorRive = tmp2(4650);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_7 = createStyles.createStyles(() => ({ container: { width: 80, height: 80 } }));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorAnimation.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 7973
-// Function ID: 7974
+// Module ID: 8003
+// Function ID: 8004
 // Name: MessagePreviewStore
-// Dependencies: [5058, 504, 12, 573, 2]
+// Dependencies: [5088, 504, 12, 573, 2]
 
-// Module 7973 (MessagePreviewStore)
+// Module 8003 (MessagePreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5088 */;
 
 require = fn;
 let c3 = null;

@@ -1,9 +1,9 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6938
+// Function ID: 6939
 // Name: GuildTemplateActionCreators
-// Dependencies: [1074, 573, 1271, 1241, 6909, 2]
+// Dependencies: [1074, 573, 1271, 1241, 6939, 2]
 
-// Module 6908 (GuildTemplateActionCreators)
+// Module 6938 (GuildTemplateActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;

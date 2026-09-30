@@ -1,36 +1,41 @@
 // Module ID: 6314
 // Function ID: 6315
-// Dependencies: [19, 6313, 6283]
-// Exports: useGestureRelationsUpdater
+// Dependencies: [19, 6293, 6304, 6315, 6316, 6317, 6318]
+// Exports: useDetectorUpdater
 
 // Module 6314
-import traverseAndConfigureRelations from "traverseAndConfigureRelations" /* 6313 */;
-import noop from "module_19" /* 19 */;
+import _mod19 from "module_19" /* 19 */;
+import _modDef6304 from "module_6304" /* 6304 */;
+import dropHandlers from "dropHandlers" /* 6316 */;
+import attachHandlers from "attachHandlers" /* 6317 */;
+import _mod6318 from "module_6318" /* 6318 */;
 
-({ useEffect: c2, useMemo: c3 } = noop);
+const require = globalThis.__r;
 
-export const useGestureRelationsUpdater = function useGestureRelationsUpdater(gesture) {
-  closure_0 = gesture;
-  const items = [gesture];
-  const tmp = closure_3(() => {
-    let configureRelationsResult = null;
-    if (closure_0) {
-      configureRelationsResult = traverseAndConfigureRelations.configureRelations(tmp);
+_mod19.useCallback;
+
+export const useDetectorUpdater = function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
+  _require = current;
+  const preparedGesture = current2;
+  dependencyMap = gesturesToAttach;
+  const forceRender = require("convertToHandlerTag").useForceRender();
+  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
+  return gesture((arg0) => {
+    const tmp3 = _modDef6304(current.viewRef);
+    if (tmp3 === current.previousViewTag) {
+      if (!obj.needsToReattach(preparedGesture, gesturesToAttach)) {
+        if (!arg0) {
+          _mod6318.updateHandlers(preparedGesture, gestureConfig, gesturesToAttach);
+          const tmp5Result = _mod6318;
+        }
+      }
     }
-    return configureRelationsResult;
+    dropHandlers.dropHandlers(preparedGesture);
+    attachHandlers.attachHandlers({ preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp3 });
+    if (tmp3 !== current.previousViewTag) {
+      tmp2.previousViewTag = tmp3;
+      tmp2.forceRebuildReanimatedEvent = true;
+      forceRender();
+    }
   }, items);
-  closure_1 = tmp;
-  const items1 = [tmp];
-  closure_2(() => {
-    if (closure_1) {
-      const _requestAnimationFrame = requestAnimationFrame;
-      closure_0 = requestAnimationFrame(() => {
-        const item = closure_1_1.forEach((item, index) => {
-          const NativeProxy = closure_1_0(closure_1_1[2]).NativeProxy;
-          NativeProxy.configureRelations(index, item);
-        });
-      });
-      return () => cancelAnimationFrame(closure_0);
-    }
-  }, items1);
 };

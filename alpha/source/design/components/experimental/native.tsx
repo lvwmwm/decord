@@ -1,20 +1,20 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8569
+// Function ID: 8570
 // Name: native
-// Dependencies: [8536, 2, 8537, 8538, 8539, 8540, 8541, 8543, 8221, 8222, 6087, 8544]
+// Dependencies: [8570, 2, 8571, 8572, 8573, 8574, 8575, 8577, 8252, 8253, 6117, 8578]
 
-// Module 8535 (native)
-import AnimatedPressableHighlight from "AnimatedPressableHighlight" /* 6087 */;
-import BackgroundBlurView from "BackgroundBlurView" /* 8221 */;
-import BackgroundBlurFill from "BackgroundBlurFill" /* 8222 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8536 */;
-import TwinButtons from "TwinButtons" /* 8537 */;
-import Button_HeaderButton from "Button/HeaderButton" /* 8538 */;
-import InputButton from "InputButton" /* 8539 */;
-import PressableScale from "PressableScale" /* 8540 */;
-import CollapsibleFloatingActionButton from "CollapsibleFloatingActionButton" /* 8541 */;
-import CollapsibleFloatingActionButtonState from "CollapsibleFloatingActionButtonState" /* 8543 */;
-import ActionSheetDragHandle from "ActionSheetDragHandle" /* 8544 */;
+// Module 8569 (native)
+import AnimatedPressableHighlight from "AnimatedPressableHighlight" /* 6117 */;
+import BackgroundBlurView from "BackgroundBlurView" /* 8252 */;
+import BackgroundBlurFill from "BackgroundBlurFill" /* 8253 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8570 */;
+import TwinButtons from "TwinButtons" /* 8571 */;
+import Button_HeaderButton from "Button/HeaderButton" /* 8572 */;
+import InputButton from "InputButton" /* 8573 */;
+import PressableScale from "PressableScale" /* 8574 */;
+import CollapsibleFloatingActionButton from "CollapsibleFloatingActionButton" /* 8575 */;
+import CollapsibleFloatingActionButtonState from "CollapsibleFloatingActionButtonState" /* 8577 */;
+import ActionSheetDragHandle from "ActionSheetDragHandle" /* 8578 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/experimental/native.tsx");

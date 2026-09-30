@@ -1,9 +1,9 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9170
+// Function ID: 9171
 // Name: TooltipStore
 // Dependencies: [1074, 510, 504, 573, 2]
 
-// Module 9136 (TooltipStore)
+// Module 9170 (TooltipStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,16 +1,16 @@
-// Module ID: 9924
-// Function ID: 9925
+// Module ID: 9958
+// Function ID: 9959
 // Name: age_gate/AgeGateUtils
-// Dependencies: [2067, 4469, 1372, 1074, 1364, 8762, 2]
+// Dependencies: [2067, 4499, 1372, 1074, 1364, 8796, 2]
 // Exports: shouldNSFWGateGuild
 
-// Module 9924 (age_gate/AgeGateUtils)
+// Module 9958 (age_gate/AgeGateUtils)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const AgeRestrictedContentSettingsUtils = tmp(8762);
+const AgeRestrictedContentSettingsUtils = tmp(8796);
 require = fn;
 const Constants = fn(1074);
 ({ GuildNSFWContentLevel: hasOwnProperty, Permissions: metroRequire } = Constants);

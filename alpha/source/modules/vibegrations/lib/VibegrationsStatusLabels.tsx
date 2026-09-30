@@ -1,13 +1,13 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16614
+// Function ID: 16615
 // Name: VibegrationsStatusLabels
-// Dependencies: [3715, 1115, 5537, 2]
+// Dependencies: [3715, 1115, 5567, 2]
 // Exports: connectionLabel, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 16578 (VibegrationsStatusLabels)
+// Module 16614 (VibegrationsStatusLabels)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5537 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5567 */;
 
 require = fn;
 function thinkingLabel(restoring) {

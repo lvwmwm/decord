@@ -1,17 +1,17 @@
-// Module ID: 6564
-// Function ID: 6565
+// Module ID: 6594
+// Function ID: 6595
 // Name: JoinServer
-// Dependencies: [19, 17, 6565, 21, 4836, 576, 6566, 4832, 1115, 6568, 1485, 1479, 6189, 5447, 2]
+// Dependencies: [19, 17, 6595, 21, 4866, 576, 6596, 4862, 1115, 6598, 1485, 1479, 6219, 5477, 2]
 // Exports: default
 
-// Module 6564 (JoinServer)
+// Module 6594 (JoinServer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6189 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6566 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6568 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6219 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6596 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6598 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,11 +40,11 @@ class OrSeparator {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(6565);
+const CreateGuildConstants = fn(6595);
 ({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: metroRequire, CreateGuildModalStates: closure_7 } = CreateGuildConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { growSpacing: { flexGrow: 2, minHeight: nativeDefault.space.PX_24 }, container: null, textInput: null, innerSeparator: null, separator: null, orText: null, header: null, description: null, exampleText: null };
 let obj3 = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
 obj2.container = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -86,11 +86,11 @@ export default function JoinServer(arg0) {
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp4(1115).intl;
     obj5.children = intl.string(tmp4(1115).t.jlfuFW);
-    const items2 = [closure_8(tmp4(4832).Text, obj5), ];
+    const items2 = [closure_8(tmp4(4862).Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
     const intl2 = tmp4(1115).intl;
     obj6.children = intl2.string(tmp4(1115).t.lVvN3A);
-    items2[1] = closure_8(tmp4(4832).Text, obj6);
+    items2[1] = closure_8(tmp4(4862).Text, obj6);
     obj4.children = items2;
     tmp7Result = tmp7(closure_10, obj4);
   }
@@ -120,7 +120,7 @@ export default function JoinServer(arg0) {
       return closure_1_8(navigation(dependencyMap[7]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
     }
   });
-  items3[2] = closure_8(navigation(4832).Text, obj9);
+  items3[2] = closure_8(navigation(4862).Text, obj9);
   obj7.children = items3;
   const items4 = [closure_9(closure_4, obj7), ];
   const obj11 = { children: null };
@@ -133,7 +133,7 @@ export default function JoinServer(arg0) {
   obj13.loading = submitting;
   obj13.disabled = submitting;
   obj13.onPress = onDone;
-  items5[1] = closure_8(navigation(5447).Button, obj13);
+  items5[1] = closure_8(navigation(5477).Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1115).intl;
@@ -141,7 +141,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1115).intl;
   obj14.accessibilityLabel = intl9.string(navigation(1115).t["MOqX/G"]);
   obj14.onPress = callback;
-  items5[3] = closure_8(navigation(5447).Button, obj14);
+  items5[3] = closure_8(navigation(5477).Button, obj14);
   obj11.children = items5;
   items4[1] = closure_9(closure_10, obj11);
   obj2.children = items4;

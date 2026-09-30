@@ -1,10 +1,10 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15940
+// Function ID: 15941
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1074, 2070, 1115, 15916, 2]
+// Dependencies: [19, 1074, 2070, 1115, 15941, 2]
 // Exports: default
 
-// Module 15915 (useFavoritesGuildCategoryLongPress)
+// Module 15940 (useFavoritesGuildCategoryLongPress)
 import util from "util" /* 1115 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import noop from "module_19" /* 19 */;

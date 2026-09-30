@@ -1,19 +1,19 @@
-// Module ID: 14734
-// Function ID: 14735
+// Module ID: 14765
+// Function ID: 14766
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 4885, 1074, 10880, 1255, 7312, 7306, 5928, 14735, 7296, 5930, 7255, 1364, 7287, 10904, 14726, 14736, 5345, 5350, 2]
+// Dependencies: [5, 32, 19, 4915, 1074, 10915, 1255, 7342, 7336, 5958, 14766, 7326, 5960, 7285, 1364, 7317, 10939, 14757, 14767, 5375, 5380, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 14734 (useBountiesModalVideoAnalytics)
-import MonitoringAgentDefault from "MonitoringAgent" /* 5345 */;
-import AdCreativeType from "AdCreativeType" /* 5930 */;
-import AnalyticsActions from "AnalyticsActions" /* 7296 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10904 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14726 */;
+// Module 14765 (useBountiesModalVideoAnalytics)
+import MonitoringAgentDefault from "MonitoringAgent" /* 5375 */;
+import AdCreativeType from "AdCreativeType" /* 5960 */;
+import AnalyticsActions from "AnalyticsActions" /* 7326 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10939 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14757 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4885 */;
+import NetworkStore from "NetworkStore" /* 4915 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
@@ -73,7 +73,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     return obj.getAdUser(bountyId(rewardDurationMs[8]).getQuestContentName(bountyId(rewardDurationMs[9]).QuestContent.VIDEO_MODAL_MOBILE));
   }), 1)[0];
   closure_12 = flag.useRef({ getImpressionId: getQuestImpressionId, bountyId, sourceQuestContent });
-  const items = [getQuestImpressionId, bountyId, sourceQuestContent];
+  let items = [getQuestImpressionId, bountyId, sourceQuestContent];
   const layoutEffect = flag.useLayoutEffect(() => {
     closure_12.current = { getImpressionId: getQuestImpressionId, bountyId, sourceQuestContent };
   }, items);
@@ -122,7 +122,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
               closure_129_3 = undefined;
               let impressionId;
               closure_129_5 = undefined;
-              VIDEO_MODAL_MOBILE = closure_0(5928).QuestContent.VIDEO_MODAL_MOBILE;
+              VIDEO_MODAL_MOBILE = closure_0(5958).QuestContent.VIDEO_MODAL_MOBILE;
               ({ bountyId: closure_129_2, sourceQuestContent: closure_129_3 } = ref.current);
               c4 = 1;
               const current = ref.current;
@@ -135,7 +135,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
           } else if (1 === tmp8) {
             c4 = 0;
             closure_129_6 = closure_3;
-            const questLogger = closure_0(7287).getQuestLogger();
+            const questLogger = closure_0(7317).getQuestLogger();
             questLogger.warn("[EngagedView] failed to emit quest_content_engaged_viewed", closure_129_6);
             throw closure_129_6;
           } else if (arg0 === 1) {
@@ -148,11 +148,11 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
             return obj7;
           } else {
             closure_129_5 = value;
-            const obj8 = { adContentId: closure_129_2, adCreativeType: closure_0(5930).AdCreativeType.BOUNTY, event: constants.QUEST_CONTENT_ENGAGED_VIEWED, properties: null, sourceQuestContent: null };
+            const obj8 = { adContentId: closure_129_2, adCreativeType: closure_0(5960).AdCreativeType.BOUNTY, event: constants.QUEST_CONTENT_ENGAGED_VIEWED, properties: null, sourceQuestContent: null };
             const obj10 = {};
-            const obj9 = closure_0(7296);
-            const merged = Object.assign(closure_0(7306).getContentProperties(VIDEO_MODAL_MOBILE));
-            const merged1 = Object.assign(sourceQuestContent(7255)());
+            const obj9 = closure_0(7326);
+            const merged = Object.assign(closure_0(7336).getContentProperties(VIDEO_MODAL_MOBILE));
+            const merged1 = Object.assign(sourceQuestContent(7285)());
             obj10.impression_id = impressionId;
             obj10.video_watch_seconds = closure_129_0.video_watch_seconds;
             obj10.video_position_seconds = closure_129_0.video_position_seconds;
@@ -373,23 +373,23 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   const callback13 = obj3.useCallback((video_timestamp_seconds, arg1) => {
     callback1();
     if (arg1 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
-      const obj = { adContentId: bountyId, adCreativeType: tmp2(5930).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_PAUSED, properties: null, sourceQuestContent: null };
+      const obj = { adContentId: bountyId, adCreativeType: tmp2(5960).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_PAUSED, properties: null, sourceQuestContent: null };
       const obj2 = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
       obj.properties = obj2;
       obj.sourceQuestContent = sourceQuestContent;
-      tmp2(7296).trackAdContentEvent(obj);
-      const tmp2Result = tmp2(7296);
+      tmp2(7326).trackAdContentEvent(obj);
+      const tmp2Result = tmp2(7326);
     }
   }, items14);
   const items16 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
   const callback14 = obj3.useCallback((video_timestamp_seconds, arg1) => {
     if (arg1 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
-      const obj = { adContentId: bountyId, adCreativeType: tmp(5930).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_RESUMED, properties: null, sourceQuestContent: null };
+      const obj = { adContentId: bountyId, adCreativeType: tmp(5960).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_RESUMED, properties: null, sourceQuestContent: null };
       const obj2 = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
       obj.properties = obj2;
       obj.sourceQuestContent = sourceQuestContent;
-      tmp(7296).trackAdContentEvent(obj);
-      const tmpResult = tmp(7296);
+      tmp(7326).trackAdContentEvent(obj);
+      const tmpResult = tmp(7326);
     }
   }, items15);
   const items17 = [bountyId, memo, questImpressionId, callback3, memo1, sourceQuestContent];
@@ -397,6 +397,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     const obj2 = { adContentId: bountyId, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_ERROR, properties: null, sourceQuestContent: null };
     const obj3 = { video_progress: null, video_error_type: null, network_connection_speed: null, video_session_id: null, video_error_code: null, video_error_message: null, video_network_state: null, impression_id: null, reward_timer_seconds: null };
     const obj = AnalyticsActions;
+    const tmp3 = bountyId;
     obj3.video_progress = VideoQuestUtils.formatVideoProgressRatio(ref2.current, ref3.current);
     obj3.video_session_id = memo;
     let code;
@@ -422,7 +423,13 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj2.sourceQuestContent = sourceQuestContent;
     obj.trackAdContentEvent(obj2);
     if (tmpResult.isSourceError(error)) {
-      const obj5 = { name: tmp(5350).MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
+      const obj5 = { name: tmp(5380).MetricEvents.QUEST_VIDEO_ERROR, tags: null };
+      const _HermesInternal = HermesInternal;
+      const items = ["ad_creative_id:" + tmp3, , ];
+      const _HermesInternal2 = HermesInternal;
+      items[1] = "ad_creative_type:" + tmp(5960).AdCreativeType[tmp(undefined, 5960).AdCreativeType.BOUNTY];
+      items[2] = "error_type:SOURCE_ERROR";
+      obj5.tags = items;
       MonitoringAgentDefault.increment(obj5);
     }
   }, items16);

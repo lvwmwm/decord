@@ -1,26 +1,26 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12183
+// Function ID: 12184
 // Name: GameServerActionCreators
-// Dependencies: [2112, 1372, 12150, 4725, 1074, 573, 12151, 5258, 1271, 12153, 4746, 1241, 12154, 12152, 2]
+// Dependencies: [2112, 1372, 12184, 4755, 1074, 573, 12185, 5288, 1271, 12187, 4776, 1241, 12188, 12186, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 12149 (GameServerActionCreators)
+// Module 12183 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4746 */;
-import StoreUtils from "StoreUtils" /* 5258 */;
-import GameServerMocks from "GameServerMocks" /* 12151 */;
-import GameServerStatus from "GameServerStatus" /* 12152 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 12154 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4776 */;
+import StoreUtils from "StoreUtils" /* 5288 */;
+import GameServerMocks from "GameServerMocks" /* 12185 */;
+import GameServerStatus from "GameServerStatus" /* 12186 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 12188 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 12150 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 12184 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GAME_SERVER_COLLECTION_ID = fn(4725).GAME_SERVER_COLLECTION_ID;
+const GAME_SERVER_COLLECTION_ID = fn(4755).GAME_SERVER_COLLECTION_ID;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);
@@ -232,7 +232,7 @@ export const optimisticallyMarkGameServerResizing = function optimisticallyMarkG
   const gameServers = OwnedGameServersStore.getGameServers();
   const found = gameServers.find((subscription_id) => subscription_id.subscription_id === closure_0);
   if (null != found) {
-    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "CLIENT_MISSING_GATEWAY_CONFIGURATION" };
+    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "br" };
     const obj3 = {};
     const merged = Object.assign(found);
     obj3.status = GameServerStatus.GameServerStatus.STARTING;
@@ -247,7 +247,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
   if (null == found) {
     let resolved = Promise.resolve();
   } else {
-    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "CLIENT_MISSING_GATEWAY_CONFIGURATION" };
+    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "br" };
     const obj3 = {};
     const merged = Object.assign(found);
     obj3.name = name;
@@ -308,7 +308,7 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
   const gameServers = OwnedGameServersStore.getGameServers();
   const found = gameServers.find((id) => id.id === closure_0);
   if (null != found) {
-    let obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "CLIENT_MISSING_GATEWAY_CONFIGURATION" };
+    let obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "br" };
     let obj3 = {};
     let merged = Object.assign(found);
     obj3.status = require("GameServerStatus").GameServerStatus.STARTING;
@@ -321,10 +321,10 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
   return HTTP.post({ url: constants.GAME_SERVER_ME_WAKE(arg0), rejectWithError: true }).then((body) => {
     body = body.body;
     let tmp3 = body;
-    if (body.status === closure_0(12152).GameServerStatus.SLEEPING) {
+    if (body.status === closure_0(12186).GameServerStatus.SLEEPING) {
       const obj2 = {};
       const merged = Object.assign(body);
-      obj2.status = closure_0(12152).GameServerStatus.STARTING;
+      obj2.status = closure_0(12186).GameServerStatus.STARTING;
       tmp3 = obj2;
     }
     const obj3 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: tmp3 };

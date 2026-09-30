@@ -1,9 +1,9 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16444
+// Function ID: 16445
 // Name: VibegrationsBuilderRouteStore
 // Dependencies: [2052, 504, 573, 2]
 
-// Module 16415 (VibegrationsBuilderRouteStore)
+// Module 16444 (VibegrationsBuilderRouteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelConstants from "ChannelConstants" /* 2052 */;

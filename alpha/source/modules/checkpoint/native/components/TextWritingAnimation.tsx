@@ -1,12 +1,12 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15469
+// Function ID: 15470
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 4825, 21, 4836, 504, 15437, 2]
+// Dependencies: [32, 19, 17, 4855, 21, 4866, 504, 15470, 2]
 // Exports: default
 
-// Module 15436 (TextWritingAnimation)
+// Module 15469 (TextWritingAnimation)
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 let require = fn;
 const noop = fn(19);
@@ -14,7 +14,7 @@ const noop = fn(19);
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_10 = createStyles.createStyles({ hiddenText: { opacity: 0 }, animatedText: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/TextWritingAnimation.tsx");

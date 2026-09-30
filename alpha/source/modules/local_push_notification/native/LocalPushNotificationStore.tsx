@@ -1,19 +1,19 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13457
+// Function ID: 13458
 // Name: LocalPushNotificationStore
-// Dependencies: [2067, 5892, 8669, 1074, 8911, 4421, 1115, 504, 573, 2]
+// Dependencies: [2067, 5922, 8703, 1074, 8945, 4451, 1115, 504, 573, 2]
 
-// Module 13430 (LocalPushNotificationStore)
+// Module 13457 (LocalPushNotificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import PushNotificationDefault from "PushNotification" /* 8911 */;
+import _modDef4451 from "module_4451" /* 4451 */;
+import PushNotificationDefault from "PushNotification" /* 8945 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5892 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5922 */;
 
 require = fn;
-const Constants = fn(8669);
+const Constants = fn(8703);
 ({ LocalNotificationTypes: hasOwnProperty, FIRE_DATE_FORMAT: metroRequire } = Constants);
 const VerificationLevels = fn(1074).VerificationLevels;
 const set = new Set();
@@ -46,9 +46,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
             set.add(userInfo);
           }
         }
-        const result = closure_1_1(8911).cancelLocalNotifications(userInfo);
-        const obj = closure_1_1(8911);
-        const result1 = closure_1_1(8911).cancelLocalNotifications(userInfo);
+        const result = closure_1_1(8945).cancelLocalNotifications(userInfo);
+        const obj = closure_1_1(8945);
+        const result1 = closure_1_1(8945).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -64,19 +64,19 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
         if (guild.verificationLevel === VerificationLevels.MEDIUM) {
           const verificationLevel = guild.verificationLevel;
           if (tmp2.MEDIUM === verificationLevel) {
-            let obj = _modDef4421(check.accountDeadline);
+            let obj = _modDef4451(check.accountDeadline);
           } else if (tmp2.HIGH === verificationLevel) {
-            obj = _modDef4421(check.memberDeadline);
+            obj = _modDef4451(check.memberDeadline);
           }
           if (null != obj) {
-            if (!obj.isSameOrBefore(_modDef4421(), "minute")) {
+            if (!obj.isSameOrBefore(_modDef4451(), "minute")) {
               const obj2 = { type: constants.GUILD_VERIFICATION, guildId: guild.id };
               set.add(obj2);
               const obj3 = { userInfo: obj2, fireDate: obj.format(timestampProducer), alertTitle: guild.name, alertBody: null, category: "local" };
               const intl = util.intl;
               obj3.alertBody = intl.string(util.t["hrDBa+"]);
-              const result = tmp15(8911).scheduleLocalNotification(obj3);
-              const tmp15Result = tmp15(8911);
+              const result = tmp15(8945).scheduleLocalNotification(obj3);
+              const tmp15Result = tmp15(8945);
             }
             tmp15 = importDefault;
           }

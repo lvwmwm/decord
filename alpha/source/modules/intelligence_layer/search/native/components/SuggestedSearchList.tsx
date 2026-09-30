@@ -1,19 +1,19 @@
-// Module ID: 16639
-// Function ID: 16640
+// Module ID: 16674
+// Function ID: 16675
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 4836, 576, 16640, 4832, 1115, 3881, 16641, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 16675, 4862, 1115, 3911, 16676, 2]
 
-// Module 16639 (SuggestedSearchList)
+// Module 16674 (SuggestedSearchList)
 import nativeDefault from "native" /* 576 */;
-import _modDef3881 from "module_3881" /* 3881 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16641 */;
+import _modDef3911 from "module_3911" /* 3911 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16676 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj = { text: { marginBottom: nativeDefault.space.PX_4, marginHorizontal: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj);
 let obj3 = { marginBottom: nativeDefault.space.PX_4, marginHorizontal: nativeDefault.space.PX_16 };
@@ -27,7 +27,7 @@ export default noop.memo((smartSearchQuery) => {
     flag = false;
   }
   const tmp = closure_6();
-  const suggestedSearches = smartSearchQuery(16640).useSuggestedSearches(smartSearchQuery, smartSearchQuery.source).suggestedSearches;
+  const suggestedSearches = smartSearchQuery(16675).useSuggestedSearches(smartSearchQuery, smartSearchQuery.source).suggestedSearches;
   let tmp7Result = null;
   if (0 !== suggestedSearches.length) {
     const items = [tmp.text, ];
@@ -41,8 +41,8 @@ export default noop.memo((smartSearchQuery) => {
     items[1] = obj4;
     obj3.style = items;
     const intl = tmp2(1115).intl;
-    obj3.children = intl.string(_modDef3881.bzswFC);
-    const items1 = [closure_4(tmp2(4832).Text, obj3), suggestedSearches.map((suggestedSearch) => React4(SuggestedSearchRowDefault, { suggestedSearch, smartSearchQuery }, suggestedSearch.suggestionId))];
+    obj3.children = intl.string(_modDef3911.bzswFC);
+    const items1 = [closure_4(tmp2(4862).Text, obj3), suggestedSearches.map((suggestedSearch) => React4(SuggestedSearchRowDefault, { suggestedSearch, smartSearchQuery }, suggestedSearch.suggestionId))];
     obj2.children = items1;
     tmp7Result = closure_5(View, obj2);
   }

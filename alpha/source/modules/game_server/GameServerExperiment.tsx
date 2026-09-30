@@ -1,11 +1,11 @@
-// Module ID: 4747
-// Function ID: 4748
+// Module ID: 4777
+// Function ID: 4778
 // Name: GameServerExperiment
-// Dependencies: [4748, 2]
+// Dependencies: [4778, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 4747 (GameServerExperiment)
-import createExperiment from "module_4748" /* 4748 */;
+// Module 4777 (GameServerExperiment)
+import createExperiment from "module_4778" /* 4778 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2025-08_portkey_enabled", label: "GameServer Enabled", defaultConfig: { enabled: false }, treatments: null };
@@ -15,8 +15,8 @@ const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/game_server/GameServerExperiment.tsx");
 
 export const GameServerExperiment = experiment;
-export const getGameServerEnabled = function getGameServerEnabled(id, maybeGetGameServerHostingGuildEligiblePopoutDCF) {
-  return experiment.getCurrentConfig({ guildId: id, location: maybeGetGameServerHostingGuildEligiblePopoutDCF }, { autoTrackExposure: false }).enabled;
+export const getGameServerEnabled = function getGameServerEnabled(guildId, maybeGetGameServerHostingGuildEligiblePopoutDCF) {
+  return experiment.getCurrentConfig({ guildId, location: maybeGetGameServerHostingGuildEligiblePopoutDCF }, { autoTrackExposure: false }).enabled;
 };
 export const useGameServerEnabled = function useGameServerEnabled(guildId, GuildPowerupsBoostCount) {
   return experiment.useExperiment({ guildId, location: GuildPowerupsBoostCount }, { autoTrackExposure: false }).enabled;

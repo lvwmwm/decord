@@ -1,22 +1,22 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15922
+// Function ID: 15923
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 4876, 1372, 15016, 1074, 21, 1177, 4836, 6749, 504, 1241, 7789, 1981, 4678, 9225, 15017, 7870, 2]
+// Dependencies: [19, 17, 4906, 1372, 15047, 1074, 21, 1177, 4866, 6779, 504, 1241, 7819, 1981, 4708, 9259, 15048, 7900, 2]
 
-// Module 15897 (HappeningNowCardUser)
+// Module 15922 (HappeningNowCardUser)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
+import PresenceStore from "PresenceStore" /* 4906 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(15016).HappeningNowCardTrackingType;
+let closure_7 = fn(15047).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
 const LARGE = fn(1177).AvatarSizes.LARGE;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_11 = createStyles.createStyles({ content: { flex: 1, display: "flex", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUser.tsx");
@@ -42,8 +42,8 @@ export default noop.memo((index) => {
     obj2.highlighted_user_ids = items;
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stateFromStores) {
-      asyncRequireImpl(7789, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(7789, dependencyMap.paths);
+      asyncRequireImpl(7819, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(7819, dependencyMap.paths);
     }
   }, items2);
   let obj = index(guildId[10]);

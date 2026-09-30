@@ -1,9 +1,9 @@
-// Module ID: 5444
-// Function ID: 5445
+// Module ID: 5474
+// Function ID: 5475
 // Name: NativeKeyCommandsModule
 // Dependencies: [17, 2]
 
-// Module 5444 (NativeKeyCommandsModule)
+// Module 5474 (NativeKeyCommandsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

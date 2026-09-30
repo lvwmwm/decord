@@ -1,11 +1,11 @@
-// Module ID: 5372
-// Function ID: 5373
+// Module ID: 5402
+// Function ID: 5403
 // Name: setAccessibilityFocusPrevious
-// Dependencies: [5373, 2]
+// Dependencies: [5403, 2]
 // Exports: default
 
-// Module 5372 (setAccessibilityFocusPrevious)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5373 */;
+// Module 5402 (setAccessibilityFocusPrevious)
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5403 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 8468
-// Function ID: 8469
+// Module ID: 8499
+// Function ID: 8500
 // Name: useProductPurchaseState
-// Dependencies: [7143, 8469, 1974, 504, 2]
+// Dependencies: [7173, 8500, 1974, 504, 2]
 // Exports: useProductPurchaseState
 
-// Module 8468 (useProductPurchaseState)
+// Module 8499 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import compactDefault from "compact" /* 8469 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7143 */;
+import compactDefault from "compact" /* 8500 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7173 */;
 
 const require = globalThis.__r;
 

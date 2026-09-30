@@ -1,11 +1,11 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15896
+// Function ID: 15897
 // Name: findActivityWithMostParticipants
-// Dependencies: [4479, 2]
+// Dependencies: [4509, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 15871 (findActivityWithMostParticipants)
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+// Module 15896 (findActivityWithMostParticipants)
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");

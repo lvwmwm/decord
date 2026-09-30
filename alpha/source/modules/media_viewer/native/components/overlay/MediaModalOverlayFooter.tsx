@@ -1,16 +1,16 @@
-// Module ID: 12697
-// Function ID: 12698
+// Module ID: 12727
+// Function ID: 12728
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 11200, 4837, 1177, 12698, 6239, 4567, 6710, 6741, 12699, 12689, 2]
+// Dependencies: [32, 19, 17, 21, 4866, 576, 4596, 11236, 4867, 1177, 12728, 6269, 4597, 6740, 6771, 12729, 12719, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12697 (MediaModalOverlayFooter)
+// Module 12727 (MediaModalOverlayFooter)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6239 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import timing from "timing" /* 4867 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6269 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11236 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,8 +18,8 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "__closure" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+const createStyles = fn(4866);
+let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "__closure" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "Array" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 let c9 = -1;
 function clamp(arg0, arg1, arg2) {

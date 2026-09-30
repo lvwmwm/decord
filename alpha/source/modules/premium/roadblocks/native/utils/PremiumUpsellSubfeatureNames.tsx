@@ -1,9 +1,9 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7470
+// Function ID: 7471
 // Name: PremiumUpsellSubfeatureNames
 // Dependencies: [2]
 
-// Module 7439 (PremiumUpsellSubfeatureNames)
+// Module 7470 (PremiumUpsellSubfeatureNames)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumUpsellSubfeatureNames.tsx");

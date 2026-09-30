@@ -1,20 +1,20 @@
-// Module ID: 14305
-// Function ID: 14306
+// Module ID: 14334
+// Function ID: 14335
 // Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11138, 21, 4836, 504, 11436, 5447, 1115, 4540, 1231, 573, 1177, 9471, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 11174, 21, 4866, 504, 11472, 5477, 1115, 4570, 1231, 573, 1177, 9505, 4862, 2]
 
-// Module 14305 (ErrorBoundary)
+// Module 14334 (ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import AppCrash from "AppCrash" /* 9471 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import AppCrash from "AppCrash" /* 9505 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11138 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11174 */;
 
 require = fn;
 function MaybeClearBuildOverride() {
@@ -62,7 +62,7 @@ function MaybeClearBuildOverride() {
       }
       return applyArgumentsResult;
     };
-    return closure_9(tmp2(5447).Button, obj2);
+    return closure_9(tmp2(5477).Button, obj2);
   }
   obj = require("initialize");
 }
@@ -70,7 +70,7 @@ get_ActivityIndicator = fn(17);
 ({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
 const PureComponent = noop.PureComponent;
 class ErrorBoundary extends PureComponent {
@@ -90,7 +90,7 @@ prototype["triggerSoftCrash"] = function triggerSoftCrash(error, info) {
   SentryUtilsDefault.captureCrash(error, { extra: info });
   const obj = { error, info };
   const obj3 = { extra: info };
-  DispatcherDefault.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed" });
+  DispatcherDefault.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed", resetSocket: true });
 };
 prototype["handleReload"] = function handleReload() {
   BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
@@ -161,7 +161,7 @@ prototype["render"] = function render() {
   }
   return children;
 };
-ErrorBoundary.contextType = fn(4540).ThemeContext;
+ErrorBoundary.contextType = fn(4570).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/ErrorBoundary.tsx");
 

@@ -1,22 +1,22 @@
-// Module ID: 16483
-// Function ID: 16484
+// Module ID: 16513
+// Function ID: 16514
 // Name: vibegrationsFeedback
-// Dependencies: [12813, 8660, 1074, 11290, 510, 1115, 3715, 1241, 11293, 2]
+// Dependencies: [12843, 8694, 1074, 11326, 510, 1115, 3715, 1241, 11329, 2]
 // Exports: consumeFeedbackSkipForProject, countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, skipNextFeedbackForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
-// Module 16483 (vibegrationsFeedback)
+// Module 16513 (vibegrationsFeedback)
 import Storage3 from "Storage" /* 510 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import FeedbackUtils from "FeedbackUtils" /* 11293 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12813 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8660 */;
+import FeedbackUtils from "FeedbackUtils" /* 11329 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12843 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8694 */;
 
 require = fn;
-const turnSettled = fn(12813).turnSettled;
+const turnSettled = fn(12843).turnSettled;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const Constants = fn(11290);
+const Constants = fn(11326);
 ({ FeedbackCategory: closure_7, FeedbackOptionVariant: closure_8, FeedbackType: closure_9, VibegrationsFeedbackOption: c10 } = Constants);
 const shownVibegrationsFeedbackProjectIds = "shownVibegrationsFeedbackProjectIds";
 const set = new Set();

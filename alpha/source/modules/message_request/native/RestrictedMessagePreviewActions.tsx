@@ -1,29 +1,29 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 16943
+// Function ID: 16944
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4479, 1074, 11095, 21, 4836, 576, 12260, 504, 9360, 10499, 12288, 4678, 4800, 11096, 1981, 8254, 4849, 5447, 1115, 4832, 2]
+// Dependencies: [19, 17, 4509, 1074, 11131, 21, 4866, 576, 12292, 504, 9394, 10533, 12318, 4708, 4830, 11132, 1981, 8285, 4879, 5477, 1115, 4862, 2]
 // Exports: default
 
-// Module 16908 (RestrictedMessagePreviewActions)
+// Module 16943 (RestrictedMessagePreviewActions)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ReportModals from "ReportModals" /* 8254 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10499 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12288 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import ReportModals from "ReportModals" /* 8285 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9394 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10533 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12318 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticsPages: metroRequire, RelationshipTypes: closure_7 } = Constants);
-let closure_8 = fn(11095).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
+let closure_8 = fn(11131).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { gap: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_12 }, buttonRow: null };
 let obj3 = { gap: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_12 };
 obj2.buttonRow = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
@@ -69,7 +69,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   }, items5);
   const items7 = [user.id];
   const callback4 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11096, dependencyMap.paths), closure_8, { userId: user.id, channelId: channel.id });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11132, dependencyMap.paths), closure_8, { userId: user.id, channelId: channel.id });
   }, items6);
   const items8 = [message, channel.id];
   const callback5 = noop.useCallback(() => {

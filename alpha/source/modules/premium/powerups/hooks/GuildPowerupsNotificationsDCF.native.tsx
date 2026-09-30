@@ -1,14 +1,14 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12202
+// Function ID: 12203
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [6972, 2029, 12162, 12169, 2]
-// Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
+// Dependencies: [7002, 2029, 12196, 12203, 2]
+// Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 12168 (GuildPowerupsNotificationsDCF)
+// Module 12202 (GuildPowerupsNotificationsDCF)
 import dismissible_content from "dismissible_content" /* 2029 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6972 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12162 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12169 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7002 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12196 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12203 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
@@ -41,15 +41,6 @@ export const useGuildPowerupNotificationDCF = function useGuildPowerupNotificati
   return obj.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: GuildPowerupsNotification.GUILD_POWERUP_NOTIFICATION_COOLDOWN });
 };
 export function useNewGamesCoachmarkDC() {
-  const items = [
-    null,
-    () => {
-
-    }
-  ];
-  return items;
-}
-export function useGameServerPricingCoachmarkDCF() {
   const items = [
     null,
     () => {

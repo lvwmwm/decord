@@ -1,12 +1,12 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9856
+// Function ID: 9857
 // Name: getLogMetadata
-// Dependencies: [1363, 4812, 2]
+// Dependencies: [1363, 4842, 2]
 // Exports: default
 
-// Module 9822 (getLogMetadata)
+// Module 9856 (getLogMetadata)
 import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import DeviceUtils from "DeviceUtils" /* 4812 */;
+import DeviceUtils from "DeviceUtils" /* 4842 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");

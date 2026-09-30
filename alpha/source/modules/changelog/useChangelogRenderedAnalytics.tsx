@@ -1,16 +1,16 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12135
+// Function ID: 12136
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2112, 4851, 4850, 1074, 12102, 504, 7987, 7704, 1241, 2]
+// Dependencies: [19, 2112, 4881, 4880, 1074, 12136, 504, 8017, 7734, 1241, 2]
 // Exports: default
 
-// Module 12101 (useChangelogRenderedAnalytics)
+// Module 12135 (useChangelogRenderedAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7704 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7734 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import ChangelogStore from "ChangelogStore" /* 4850 */;
+import ReadStateStore from "ReadStateStore" /* 4881 */;
+import ChangelogStore from "ChangelogStore" /* 4880 */;
 
 const require = globalThis.__r;
 

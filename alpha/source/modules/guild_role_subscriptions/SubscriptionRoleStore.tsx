@@ -1,14 +1,14 @@
-// Module ID: 5939
-// Function ID: 5940
+// Module ID: 5969
+// Function ID: 5970
 // Name: SubscriptionRoleStore
-// Dependencies: [2063, 2103, 2108, 2102, 2067, 1372, 1074, 4459, 504, 573, 2]
+// Dependencies: [2063, 2103, 2108, 2102, 2067, 1372, 1074, 4489, 504, 573, 2]
 
-// Module 5939 (SubscriptionRoleStore)
+// Module 5969 (SubscriptionRoleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4459 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4489 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -48,7 +48,7 @@ function computeRolesForGuild(guildId) {
           let obj2 = PremiumRoleUtils;
           if (obj2.isSubscriptionRole(nextResult)) {
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(4459);
+            let tmp16Result = tmp16(4489);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let addResult1 = set1.add(tmp15.id);
               if (set3.has(tmp15.id)) {

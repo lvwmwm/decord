@@ -1,14 +1,14 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10707
+// Function ID: 10708
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 10668, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 1115, 10702, 4862, 2]
 // Exports: default
 
-// Module 10673 (WishlistViewMoreCard)
+// Module 10707 (WishlistViewMoreCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 10668 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 10702 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles(() => {
   const obj = { moreOverlay: null };
   const obj2 = {};

@@ -1,13 +1,13 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14199
+// Function ID: 14200
 // Name: AccessibilityActionCreators
-// Dependencies: [4825, 1074, 2024, 1084, 573, 1241, 8824, 2]
-// Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
+// Dependencies: [4855, 1074, 2024, 1084, 573, 1241, 8858, 2]
+// Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setMinToastDuration, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14170 (AccessibilityActionCreators)
+// Module 14199 (AccessibilityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const StickerAnimationSettings = fn(2024).StickerAnimationSettings;
@@ -76,16 +76,16 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(reduce) 
       obj3.animateEmoji = obj5;
       const obj6 = { value: StickerAnimationSettings.ANIMATE_ON_INTERACTION, reasonKey: constants.REDUCED_MOTION_STICKERS };
       obj3.animateStickers = obj6;
-      const result = tmp(8824).applySettingsOverride(obj3);
-      const tmpResult = tmp(8824);
+      const result = tmp(8858).applySettingsOverride(obj3);
+      const tmpResult = tmp(8858);
     }
   }
   if (prefersReducedMotion) {
     prefersReducedMotion = !prefersReducedMotion2;
   }
   if (prefersReducedMotion) {
-    const result1 = tmp(8824).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
-    const tmpResult2 = tmp(8824);
+    const result1 = tmp(8858).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
+    const tmpResult2 = tmp(8858);
   }
 };
 export const setSyncForcedColors = function setSyncForcedColors(syncForcedColors) {
@@ -124,6 +124,9 @@ export const toggleSyncProfileThemeWithUserTheme = function toggleSyncProfileThe
 };
 export const setContrast = function setContrast(contrast) {
   DispatcherDefault.dispatch({ type: "ACCESSIBILITY_SET_CONTRAST", contrast });
+};
+export const setMinToastDuration = function setMinToastDuration(minToastDurationMs) {
+  DispatcherDefault.dispatch({ type: "ACCESSIBILITY_SET_MIN_TOAST_DURATION", minToastDurationMs });
 };
 export const setContrastMode = function setContrastMode(contrastMode) {
   DispatcherDefault.dispatch({ type: "ACCESSIBILITY_SET_CONTRAST_MODE", contrastMode });

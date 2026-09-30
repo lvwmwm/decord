@@ -1,10 +1,10 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16612
+// Function ID: 16613
 // Name: VibegrationsTurnStart
 // Dependencies: [11, 2]
 // Exports: vibegrationsTurnStartedAt
 
-// Module 16576 (VibegrationsTurnStart)
+// Module 16612 (VibegrationsTurnStart)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

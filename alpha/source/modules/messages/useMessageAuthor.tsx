@@ -1,17 +1,17 @@
-// Module ID: 5249
-// Function ID: 5250
+// Module ID: 5279
+// Function ID: 5280
 // Name: useMessageAuthor
-// Dependencies: [2045, 2108, 2102, 2067, 4479, 1372, 38, 504, 4678, 5250, 2]
+// Dependencies: [2045, 2108, 2102, 2067, 4509, 1372, 38, 504, 4708, 5280, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 5249 (useMessageAuthor)
+// Module 5279 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;

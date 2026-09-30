@@ -1,17 +1,17 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11666
+// Function ID: 11667
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4836, 1393, 1177, 576, 11633, 2]
+// Dependencies: [19, 17, 21, 4866, 1393, 1177, 576, 11667, 2]
 // Exports: default
 
-// Module 11632 (CustomTypingIndicatorGlyph)
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11633 */;
+// Module 11666 (CustomTypingIndicatorGlyph)
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11667 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_5 = createStyles.createStyles({ emojiRow: { flexDirection: "row", alignItems: "center" } });
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorGlyph.tsx");

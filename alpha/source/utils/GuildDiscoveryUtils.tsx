@@ -1,16 +1,16 @@
-// Module ID: 6925
-// Function ID: 6926
+// Module ID: 6955
+// Function ID: 6956
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4470, 4754, 2067, 1074, 1101, 6926, 6831, 5999, 1241, 1271, 1473, 2]
+// Dependencies: [5, 4500, 4784, 2067, 1074, 1101, 6956, 6861, 6029, 1241, 1271, 1473, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 6925 (GuildDiscoveryUtils)
+// Module 6955 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _modDef1473 from "module_1473" /* 1473 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4470 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
+import LurkingStore from "LurkingStore" /* 4500 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4784 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;

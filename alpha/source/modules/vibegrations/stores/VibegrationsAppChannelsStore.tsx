@@ -1,9 +1,9 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13024
+// Function ID: 13025
 // Name: VibegrationsAppChannelsStore
 // Dependencies: [504, 573, 2]
 
-// Module 12997 (VibegrationsAppChannelsStore)
+// Module 13024 (VibegrationsAppChannelsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

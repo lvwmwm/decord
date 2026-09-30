@@ -1,12 +1,12 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12742
+// Function ID: 12743
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 1074, 12709, 6549, 4566, 2]
+// Dependencies: [32, 19, 1074, 12739, 6579, 4596, 2]
 // Exports: default
 
-// Module 12712 (useMediaViewerClosePosition)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 12709 */;
+// Module 12742 (useMediaViewerClosePosition)
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 12739 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

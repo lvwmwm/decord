@@ -1,19 +1,19 @@
-// Module ID: 15183
-// Function ID: 15184
+// Module ID: 15216
+// Function ID: 15217
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1372, 4494, 7582, 1074, 21, 4836, 576, 1485, 563, 4488, 4832, 1115, 6085, 1177, 10027, 6577, 11175, 14423, 2]
+// Dependencies: [19, 17, 1372, 4524, 7612, 1074, 21, 4866, 576, 1485, 563, 4518, 4862, 1115, 6115, 1177, 10061, 6607, 11211, 14454, 2]
 // Exports: default
 
-// Module 15183 (SettingsChatScreen)
+// Module 15216 (SettingsChatScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6577 */;
-import _modDef10027 from "module_10027" /* 10027 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
-import SettingLayoutDefault from "SettingLayout" /* 14423 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6607 */;
+import _modDef10061 from "module_10061" /* 10061 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
+import SettingLayoutDefault from "SettingLayout" /* 14454 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import SubscriptionStore from "SubscriptionStore" /* 4524 */;
 
 require = fn;
 function VideoUploadQualityNitroUpsell() {
@@ -35,7 +35,7 @@ function VideoUploadQualityNitroUpsell() {
     const obj4 = { style: tmp3.card, children: null };
     const obj5 = { border: "none", shadow: "none", children: null };
     const obj6 = { style: tmp3.cardContent, children: null };
-    const obj7 = { style: tmp3.cardIcon, source: _modDef10027, size: tmp(1177).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+    const obj7 = { style: tmp3.cardIcon, source: _modDef10061, size: tmp(1177).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const items2 = [tmp7(tmp(1177).Icon, obj7), ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = tmp(1115).intl;
@@ -46,21 +46,21 @@ function VideoUploadQualityNitroUpsell() {
         }
     };
     obj8.children = intl2.format(tmp(1115).t.uW1zul, obj9);
-    items2[1] = tmp7(tmp(4832).Text, obj8);
+    items2[1] = tmp7(tmp(4862).Text, obj8);
     obj6.children = items2;
     obj5.children = tmp5(tmp6, obj6);
-    obj4.children = tmp7(tmp(6085).Card, obj5);
+    obj4.children = tmp7(tmp(6115).Card, obj5);
     tmp7Result = tmp7(tmp6, obj4);
   }
   children[1] = tmp7Result;
   return closure_10(View, { children });
 }
 const View = fn(17).View;
-const MobileUserSettings = fn(7582).MobileUserSettings;
+const MobileUserSettings = fn(7612).MobileUserSettings;
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { card: { marginTop: 8, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, cardContent: { flexDirection: "row", alignItems: "center" }, cardIcon: { marginEnd: 8 } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);

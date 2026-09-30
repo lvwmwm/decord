@@ -1,18 +1,18 @@
-// Module ID: 8283
-// Function ID: 8284
+// Module ID: 8314
+// Function ID: 8315
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1074, 21, 4836, 576, 8284, 8285, 4832, 1115, 2021, 8286, 4540, 6065, 5459, 7866, 504, 6794, 8287, 8288, 2]
+// Dependencies: [32, 19, 17, 502, 1074, 21, 4866, 576, 8315, 8316, 4862, 1115, 2021, 8317, 4570, 6095, 5489, 7896, 504, 6824, 8318, 8319, 2]
 // Exports: default
 
-// Module 8283 (UserProfilePersonalWidgetCard)
+// Module 8314 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import native from "native" /* 4540 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import GifTagDefault from "GifTag" /* 7866 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8284 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8285 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 8286 */;
+import native from "native" /* 4570 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import GifTagDefault from "GifTag" /* 7896 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8315 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8316 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 8317 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -48,7 +48,7 @@ function PersonalWidgetShowMoreButton() {
   const intl = tmp(1115).intl;
   let t = tmp(1115).t;
   const tmp6 = hasOwnProperty;
-  t = tmp5(tmp(4832).Text, { variant: "text-sm/medium", color: "text-subtle", children: intl.string(isExpanded ? t["6MwJo/"] : t.lBeKY2) });
+  t = tmp5(tmp(4862).Text, { variant: "text-sm/medium", color: "text-subtle", children: intl.string(isExpanded ? t["6MwJo/"] : t.lBeKY2) });
   obj2.children = t;
   closure_1_10(tmp6, obj2);
 }
@@ -155,7 +155,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5459), obj9);
+        tmp24Result4 = tmp24(tmp14(5489), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -165,7 +165,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(7866), obj10);
+      tmp24Result5 = tmp24(tmp14(7896), obj10);
     }
     items2[3] = tmp24Result5;
     obj5.children = items2;
@@ -247,7 +247,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   let obj2 = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   let obj = userId(504);
   const tmp5 = disableInteraction;
-  obj2.titleLeadingIcon = closure_10(userId(8287).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj2.titleLeadingIcon = closure_10(userId(8318).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj2.title = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -255,7 +255,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   }
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(8288), obj3);
+    tmp4Result = tmp4(tmp5(8319), obj3);
   }
   obj2.trailingAction = tmp4Result;
   const obj4 = { style: tmp.sectionsContainer, children: null };
@@ -282,7 +282,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   items1[1] = tmp4Result2;
   obj4.children = items1;
   obj2.children = closure_11(closure_7, obj4);
-  return closure_10(disableInteraction(6794), obj2);
+  return closure_10(disableInteraction(6824), obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
@@ -292,7 +292,7 @@ const jsxProd = fn(21);
 const colors = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.5)", "#000"];
 const locations = [0, 0.4, 1];
 const hitSlop = { top: 8, bottom: 8, left: 8, right: 8 };
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { coverContainer: { borderRadius: nativeDefault.radii.md, overflow: "hidden", justifyContent: "flex-end" }, coverContent: null, coverContentWithImage: null, sectionsContainer: null, fieldsContainer: null, fieldRow: null, fieldImage: null, fieldContent: null, gifTag: null, gifTagSmall: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", justifyContent: "flex-end" };
 obj2.coverContent = { gap: nativeDefault.space.PX_4 };

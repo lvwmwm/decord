@@ -1,23 +1,23 @@
-// Module ID: 10496
-// Function ID: 10497
+// Module ID: 10530
+// Function ID: 10531
 // Name: useFastestListTableRowPlaceholderConfig
-// Dependencies: [19, 4836, 576, 1177, 5920, 6649, 2]
+// Dependencies: [19, 4866, 576, 1177, 5950, 6679, 2]
 // Exports: default
 
-// Module 10496 (useFastestListTableRowPlaceholderConfig)
+// Module 10530 (useFastestListTableRowPlaceholderConfig)
 import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6649 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6679 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { placeholder: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT }, placeholderAvatar: null, placeholderUsername: null, placeholderDivider: null };
 let size = { width: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.REFRESH_MEDIUM_32], height: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.REFRESH_MEDIUM_32], borderRadius: nativeDefault.radii.xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj2.placeholderAvatar = size;
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 obj2.placeholderUsername = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const obj4 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-obj2.placeholderDivider = { backgroundColor: fn(5920).DIVIDER_BACKGROUND };
+obj2.placeholderDivider = { backgroundColor: fn(5950).DIVIDER_BACKGROUND };
 const styles = createStyles.createStyles(obj2);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx");

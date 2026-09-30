@@ -1,10 +1,10 @@
-// Module ID: 13621
-// Function ID: 13622
+// Module ID: 13648
+// Function ID: 13649
 // Name: openGuildActionSheet
-// Dependencies: [1074, 2070, 1241, 9924, 4800, 13622, 1981, 13680, 13686, 2]
+// Dependencies: [1074, 2070, 1241, 9958, 4830, 13649, 1981, 13707, 13713, 2]
 // Exports: default
 
-// Module 13621 (openGuildActionSheet)
+// Module 13648 (openGuildActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -22,26 +22,26 @@ export default function openGuildActionSheet(id) {
     AnalyticsUtilsDefault.track(constants.OPEN_POPOUT, obj3);
     if (tmpResult.shouldNSFWGateGuild(id.id)) {
       const obj4 = { guild: id };
-      tmp3(4800).openLazy(tmp(1981)(13622, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj4);
-      const tmp3Result = tmp3(4800);
+      tmp3(4830).openLazy(tmp(1981)(13649, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj4);
+      const tmp3Result = tmp3(4830);
     } else {
       const features = id.features;
       const hasItem = features.has(constants2.HUB);
-      const openLazy = tmp3(4800).openLazy;
+      const openLazy = tmp3(4830).openLazy;
       const tmpResult2 = tmp(1981);
       if (hasItem) {
         const _HermesInternal2 = HermesInternal;
         const obj5 = { guild: id, expanded: flag };
-        openLazy(tmpResult2(13680, tmp2.paths), "GuildActionSheet:" + id.id, obj5);
-        const tmpResult1Result = tmpResult2(13680, tmp2.paths);
+        openLazy(tmpResult2(13707, tmp2.paths), "GuildActionSheet:" + id.id, obj5);
+        const tmpResult1Result = tmpResult2(13707, tmp2.paths);
       } else {
         const _HermesInternal = HermesInternal;
         const obj6 = { guild: id, expanded: flag };
-        openLazy(tmpResult2(13686, tmp2.paths), "GuildActionSheet:" + id.id, obj6);
-        const tmpResult1Result1 = tmpResult2(13686, tmp2.paths);
+        openLazy(tmpResult2(13713, tmp2.paths), "GuildActionSheet:" + id.id, obj6);
+        const tmpResult1Result1 = tmpResult2(13713, tmp2.paths);
       }
-      const tmp3Result2 = tmp3(4800);
+      const tmp3Result2 = tmp3(4830);
     }
-    tmpResult = tmp(9924);
+    tmpResult = tmp(9958);
   }
 };

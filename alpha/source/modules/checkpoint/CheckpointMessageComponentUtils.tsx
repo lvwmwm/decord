@@ -1,16 +1,16 @@
-// Module ID: 5081
-// Function ID: 5082
+// Module ID: 5111
+// Function ID: 5112
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5061, 5082, 5083, 5084, 5248, 1880, 1979, 1115, 3005, 2]
+// Dependencies: [5091, 5112, 5113, 5114, 5278, 1880, 1979, 1115, 3005, 2]
 // Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5081 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5111 (checkpoint/CheckpointMessageComponentUtils)
 import util from "util" /* 1115 */;
 import Server from "Server" /* 1979 */;
 import _modDef3005 from "module_3005" /* 3005 */;
-import CheckpointTrait from "CheckpointTrait" /* 5083 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5084 */;
-import CheckpointConstants from "CheckpointConstants" /* 5061 */;
+import CheckpointTrait from "CheckpointTrait" /* 5113 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5114 */;
+import CheckpointConstants from "CheckpointConstants" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 ({ NATIVE_CHARACTER_LAYER_SIZE: c3, CheckpointVersions: closure_4 } = CheckpointConstants);

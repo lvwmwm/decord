@@ -1,10 +1,10 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11739
+// Function ID: 11740
 // Name: usePlaceholderSize
 // Dependencies: [19, 2]
 // Exports: usePlaceholderWidth
 
-// Module 11705 (usePlaceholderSize)
+// Module 11739 (usePlaceholderSize)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

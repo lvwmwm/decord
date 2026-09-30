@@ -1,13 +1,13 @@
-// Module ID: 6675
-// Function ID: 6676
+// Module ID: 6705
+// Function ID: 6706
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1085, 21, 4836, 6003, 576, 4832, 6163, 6166, 2]
+// Dependencies: [19, 17, 1085, 21, 4866, 6033, 576, 4862, 6193, 6196, 2]
 // Exports: default
 
-// Module 6675 (MultipleChoiceField)
+// Module 6705 (MultipleChoiceField)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 6003 */;
+import TextStyles from "TextStyles" /* 6033 */;
 
 const require = globalThis.__r;
 
@@ -15,7 +15,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj2 = { container: { marginVertical: 12, flexDirection: "column" }, formHeader: null };
 const obj3 = {};
 const merged = Object.assign(TextStyles(fn(1085).Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));

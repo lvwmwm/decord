@@ -1,13 +1,13 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15491
+// Function ID: 15492
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 15459, 15460, 4528, 4832, 1177, 6710, 5447, 5039, 6102, 6587, 1115, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4866, 576, 15492, 15493, 4558, 4862, 1177, 6740, 5477, 5069, 6132, 6617, 1115, 2]
 // Exports: default
 
-// Module 15458 (CaptchaTestModal)
+// Module 15491 (CaptchaTestModal)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 6102 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 15460 */;
+import NavigatorHeader from "NavigatorHeader" /* 6132 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 15493 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -165,7 +165,7 @@ function CaptchaTestScreen(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let obj2 = { container: { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, separator: null, footerContainer: null, footerButton: null, content: null };
 let obj3 = { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.separator = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: nativeDefault.space.PX_24 };
@@ -176,15 +176,15 @@ obj2.footerButton = { paddingHorizontal: nativeDefault.space.PX_16 };
 let obj6 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { margin: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
 let closure_9 = createStyles.createStyles(obj2);
-const prop = fn(15459).HCAPTCHA_DIFFICULTY_OPTIONS;
+const prop = fn(15492).HCAPTCHA_DIFFICULTY_OPTIONS;
 const options = prop.map((label) => ({ name: label.label, value: label.value }));
-let items = [fn(15460).CaptchaDeciderType.HCAPTCHA_RQDATA, fn(15460).CaptchaDeciderType.SMITE_RQDATA];
+let items = [fn(15493).CaptchaDeciderType.HCAPTCHA_RQDATA, fn(15493).CaptchaDeciderType.SMITE_RQDATA];
 const set = new Set(items);
-const prop1 = fn(15459).CAPTCHA_DECIDER_TYPE_OPTIONS;
+const prop1 = fn(15492).CAPTCHA_DECIDER_TYPE_OPTIONS;
 const mapped = prop1.map((label) => ({ name: label.label, value: label.value }));
 const options2 = mapped.filter((value) => set.has(value.value));
 const constants = { TEST_CAPTCHA: "TEST_CAPTCHA" };
-createStyles = fn(4836);
+createStyles = fn(4866);
 let obj9 = { headerStyle: null };
 let obj7 = { margin: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
 obj9.headerStyle = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

@@ -1,21 +1,21 @@
-// Module ID: 11289
-// Function ID: 11290
+// Module ID: 11325
+// Function ID: 11326
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2067, 5017, 1074, 11290, 21, 4836, 576, 6062, 4832, 11291, 563, 1115, 11292, 1613, 6737, 6211, 2111, 4566, 6085, 8218, 6706, 6701, 4800, 2]
+// Dependencies: [32, 19, 17, 2067, 5047, 1074, 11326, 21, 4866, 576, 6092, 4862, 11327, 563, 1115, 11328, 1613, 6767, 6241, 2111, 4596, 6115, 8249, 6736, 6731, 4830, 2]
 // Exports: default
 
-// Module 11289 (GuildHighlightsNotificationsActionSheet)
+// Module 11325 (GuildHighlightsNotificationsActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import GuildIcon from "GuildIcon" /* 6062 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6701 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6706 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 11291 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import GuildIcon from "GuildIcon" /* 6092 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6731 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6736 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 11327 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
 
 const GuildIconDefault = GuildIcon;
 
@@ -39,13 +39,13 @@ function GuildPill(guild) {
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ HelpdeskArticles: closure_8, HighlightSettings: closure_9 } = Constants);
-const FeedbackRating = fn(11290).FeedbackRating;
+const FeedbackRating = fn(11326).FeedbackRating;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let obj2 = { contentContainer: { padding: 24, alignItems: "center", justifyContent: "center" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: { marginTop: 16, alignItems: "stretch", alignSelf: "stretch", paddingBottom: 16 }, thanks: { height: 40, textAlign: "center", textAlignVertical: "center" }, settings: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 } };
 let closure_13 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
+createStyles = fn(4866);
 let obj5 = { guildPill: null, guildName: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);

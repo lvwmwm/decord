@@ -1,11 +1,11 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13409
+// Function ID: 13410
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1435, 2, 13383]
+// Dependencies: [1435, 2, 13410]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 13382 (PrivateChannelHidingExperiment)
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13383 */;
+// Module 13409 (PrivateChannelHidingExperiment)
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13410 */;
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

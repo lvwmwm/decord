@@ -1,30 +1,30 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12080
+// Function ID: 12081
 // Name: Autocomplete
-// Dependencies: [19, 17, 2067, 4479, 1372, 1074, 9893, 21, 4836, 576, 8218, 504, 4678, 1177, 9259, 6083, 6092, 1115, 7746, 5501, 4989, 4832, 6065, 12047, 10015, 5602, 9803, 12, 5496, 12048, 2010, 2011, 8186, 12049, 2]
+// Dependencies: [19, 17, 2067, 4509, 1372, 1074, 9927, 21, 4866, 576, 8249, 504, 4708, 1177, 9293, 6113, 6122, 1115, 7776, 5531, 5019, 4862, 6095, 12081, 10049, 5632, 9837, 12, 5526, 12082, 2010, 2011, 8218, 12083, 2]
 
-// Module 12046 (Autocomplete)
+// Module 12080 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2010 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import TimestampUtils from "TimestampUtils" /* 5496 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
-import Pressables from "Pressables" /* 5602 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import TableRow from "TableRow" /* 6083 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 6092 */;
-import _modDef7746 from "module_7746" /* 7746 */;
-import Form from "Form" /* 8218 */;
-import StickerDefault from "Sticker" /* 9803 */;
-import StickersHooks from "StickersHooks" /* 10015 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12047 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12048 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import useChannelName from "useChannelName" /* 5019 */;
+import TimestampUtils from "TimestampUtils" /* 5526 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5531 */;
+import Pressables from "Pressables" /* 5632 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import TableRow from "TableRow" /* 6113 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 6122 */;
+import _modDef7776 from "module_7776" /* 7776 */;
+import Form from "Form" /* 8249 */;
+import StickerDefault from "Sticker" /* 9837 */;
+import StickersHooks from "StickersHooks" /* 10049 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12081 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12082 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -37,9 +37,9 @@ const Constants = fn(1074);
 ({ ChannelTypes: closure_8, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { row: { height: fn(9893).AUTOCOMPLETE_ROW_HEIGHT, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, leading: null, trailing: null, username: null, emoji: null, emojiImage: null, emojiText: null, stickerContainer: null, commandChoiceLoadingContainer: null, commandChoiceLoadingItem: null, autocompleteIcon: null, gameIcon: null, labelRow: null };
-let obj3 = { height: fn(9893).AUTOCOMPLETE_ROW_HEIGHT, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+const createStyles = fn(4866);
+let obj2 = { row: { height: fn(9927).AUTOCOMPLETE_ROW_HEIGHT, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, leading: null, trailing: null, username: null, emoji: null, emojiImage: null, emojiText: null, stickerContainer: null, commandChoiceLoadingContainer: null, commandChoiceLoadingItem: null, autocompleteIcon: null, gameIcon: null, labelRow: null };
+let obj3 = { height: fn(9927).AUTOCOMPLETE_ROW_HEIGHT, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.leading = { fontSize: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 let obj4 = { fontSize: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 obj2.trailing = { fontSize: 14, color: nativeDefault.colors.TEXT_MUTED };
@@ -82,8 +82,8 @@ export default {
       nick = stateFromStores;
     }
     if (nick == null) {
-      nick = guildId(4678).getName(user);
-      const obj3 = guildId(4678);
+      nick = guildId(4708).getName(user);
+      const obj3 = guildId(4708);
     }
     obj2.label = closure_9(AutocompleteLabel, { text: nick });
     const obj = user(504);
@@ -92,8 +92,8 @@ export default {
     const items1 = [, ];
     ({ trailing: arr2[0], username: arr2[1] } = tmp);
     obj5.usernameStyle = items1;
-    obj2.trailing = closure_9(guildId(9259), obj5);
-    return closure_9(user(8218).FormRow, obj2);
+    obj2.trailing = closure_9(guildId(9293), obj5);
+    return closure_9(user(8249).FormRow, obj2);
   },
   Global(arg0) {
     ({ text, badge } = arg0);
@@ -138,7 +138,7 @@ export default {
     ({ channel, category } = onPress);
     const tmp = closure_11();
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = _modDef7746;
+      let channelIconWithGuild = _modDef7776;
     } else {
       channelIconWithGuild = utils_ChannelUtils.getChannelIconWithGuild(channel, tmp2);
     }
@@ -217,20 +217,20 @@ export default {
     const obj = GameSearchRowExperimentDefault;
     if (obj2.isNullOrEmpty(tmp4)) {
       const obj3 = { size: "sm", style: tmp.gameIcon };
-      let tmp6Result = tmp6(tmp5(8186).UnknownGameIcon, obj3);
+      let tmp6Result = tmp6(tmp5(8218).UnknownGameIcon, obj3);
       let tmp8 = tmp6;
     } else {
       const obj4 = { style: tmp.gameIcon, source: null };
       const obj5 = { uri: tmp4 };
       obj4.source = obj5;
-      tmp6Result = tmp6(tmp2(6065), obj4);
+      tmp6Result = tmp6(tmp2(6095), obj4);
       tmp8 = tmp6;
     }
     const obj6 = { onPress: game.onPress, accessibilityRole: "menuitem", leading: tmp6Result, label: tmp8(AutocompleteLabel, { text: game.name }), trailing: null };
     let tmp8Result;
     if (obj.useConfig({ location: "game_mention_autocomplete_native" }).extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp8Result = tmp8(tmp2(12049), obj8);
+      tmp8Result = tmp8(tmp2(12083), obj8);
     }
     obj6.trailing = tmp8Result;
     return tmp8(Form.FormRow, obj6);
@@ -248,8 +248,8 @@ export default {
         str = "";
       }
       const obj4 = { text: str };
-      obj2.trailing = React7(tmp(6092).TableRowTrailingText, obj4);
-      tmp5Result = tmp5(tmp(6083).TableRow, obj2);
+      obj2.trailing = React7(tmp(6122).TableRowTrailingText, obj4);
+      tmp5Result = tmp5(tmp(6113).TableRow, obj2);
     }
     return tmp5Result;
   }

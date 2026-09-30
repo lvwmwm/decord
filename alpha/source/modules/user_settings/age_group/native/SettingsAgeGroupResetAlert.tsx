@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14499
+// Function ID: 14500
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1485, 13477, 5371, 4527, 1115, 5375, 3039, 5375, 2]
+// Dependencies: [5, 21, 1485, 13504, 5401, 4557, 1115, 5405, 3039, 5405, 2]
 // Exports: default
 
-// Module 14468 (SettingsAgeGroupResetAlert)
+// Module 14499 (SettingsAgeGroupResetAlert)
 import _modDef3039 from "module_3039" /* 3039 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -46,13 +46,13 @@ export default function SettingsAgeGroupResetAlert() {
             dependencyMap = 1;
             c1 = 2;
             c3 = 1;
-            const obj6 = { value: tmp3(13477).resetAgeVerification(), done: false };
+            const obj6 = { value: tmp3(13504).resetAgeVerification(), done: false };
             return obj6;
           }
         } else if (1 === tmp7) {
           dependencyMap = 0;
           const intl = tmp3(1115).intl;
-          tmp3(4527).presentError(intl.string(tmp3(1115).t.fEptJP));
+          tmp3(4557).presentError(intl.string(tmp3(1115).t.fEptJP));
           const _Error = Error;
           const error = new Error("Reset failed");
           throw error;
@@ -65,7 +65,7 @@ export default function SettingsAgeGroupResetAlert() {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          tmp3(5371).dismissAlert(closure_1_6);
+          tmp3(5401).dismissAlert(closure_1_6);
           closure_128_0.goBack();
           dependencyMap = 0;
           c3 = 3;

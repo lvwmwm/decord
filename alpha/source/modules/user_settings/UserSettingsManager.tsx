@@ -1,11 +1,11 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17495
+// Function ID: 17496
 // Name: UserSettingsManager
-// Dependencies: [6705, 2021, 2]
+// Dependencies: [6735, 2021, 2]
 
-// Module 17460 (UserSettingsManager)
+// Module 17495 (UserSettingsManager)
 import UserSettings from "UserSettings" /* 2021 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
 
 require = fn;
 let c2 = false;

@@ -1,12 +1,12 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16627
+// Function ID: 16628
 // Name: VibegrationsDebugStore
-// Dependencies: [504, 5537, 573, 2]
+// Dependencies: [504, 5567, 573, 2]
 
-// Module 16592 (VibegrationsDebugStore)
+// Module 16627 (VibegrationsDebugStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5537 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5567 */;
 
 require = fn;
 let closure_2 = [];

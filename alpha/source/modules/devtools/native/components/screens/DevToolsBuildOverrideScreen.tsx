@@ -1,33 +1,33 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15344
+// Function ID: 15345
 // Name: DevToolsBuildOverrideScreen
-// Dependencies: [32, 19, 17, 11138, 21, 4836, 576, 8492, 15312, 6568, 504, 11436, 5445, 6165, 6083, 4779, 6776, 4527, 14681, 4790, 6163, 6166, 6190, 5447, 1370, 2]
+// Dependencies: [32, 19, 17, 11174, 21, 4866, 576, 8526, 15345, 6598, 504, 11472, 5475, 6195, 6113, 4809, 6806, 4557, 14712, 4820, 6193, 6196, 6220, 5477, 1370, 2]
 
-// Module 15311 (DevToolsBuildOverrideScreen)
+// Module 15344 (DevToolsBuildOverrideScreen)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11436 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11472 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11138 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11174 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 const jsx = jsxProd.jsx;
 const jsxs = jsxProd.jsxs;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { content: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.contentContainer = { padding: nativeDefault.space.PX_16 };
 let closure_9 = createStyles.createStyles(obj);
 let obj4 = { padding: nativeDefault.space.PX_16 };
-let items = [{ label: "Branch Name", value: "branch", icon: jsx(fn(8492).TagIcon, {}) }, ];
-let obj5 = { label: "Branch Name", value: "branch", icon: jsx(fn(8492).TagIcon, {}) };
-items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15312).HashmarkIcon, {}) };
-let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15312).HashmarkIcon, {}) };
+let items = [{ label: "Branch Name", value: "branch", icon: jsx(fn(8526).TagIcon, {}) }, ];
+let obj5 = { label: "Branch Name", value: "branch", icon: jsx(fn(8526).TagIcon, {}) };
+items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15345).HashmarkIcon, {}) };
+let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15345).HashmarkIcon, {}) };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
 
@@ -38,7 +38,7 @@ export default noop.memo(() => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 11436).DEVICE_FIELD];
+      tmp = overrides[first(undefined, 11472).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -47,11 +47,11 @@ export default noop.memo(() => {
   let obj2 = { style: tmp.content, contentContainerStyle: null, children: null };
   let obj3 = {};
   let merged = Object.assign(tmp.contentContainer);
-  obj3.paddingBottom = tmp.contentContainer.padding + first(6568)({ includeKeyboardHeight: true }).insets.bottom;
+  obj3.paddingBottom = tmp.contentContainer.padding + first(6598)({ includeKeyboardHeight: true }).insets.bottom;
   obj2.contentContainerStyle = obj3;
   let tmp10Result = null;
   if (null != stateFromStores) {
-    const obj4 = { icon: tmp7(tmp3(4779).CopyIcon, {}), label: null, subLabel: null, onPress: null };
+    const obj4 = { icon: tmp7(tmp3(4809).CopyIcon, {}), label: null, subLabel: null, onPress: null };
     first = stateFromStores;
     const found = items.find((value) => value.value === first.type);
     let label;
@@ -65,13 +65,13 @@ export default noop.memo(() => {
       ClipboardUtils.copy(first.id);
       const result = ToastUtils.presentCopiedToClipboard();
     };
-    const items1 = [tmp7(tmp3(6083).TableRow, obj4), , ];
-    const obj6 = { icon: tmp7(tmp3(14681).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(11436).refreshBuildOverride, arrow: true };
-    items1[1] = tmp7(tmp3(6083).TableRow, obj6);
-    const obj7 = { icon: tmp7(tmp3(4790).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Override", variant: "danger", onPress: tmp3(11436).clearBuildOverride, arrow: true };
-    items1[2] = tmp7(tmp3(6083).TableRow, obj7);
+    const items1 = [tmp7(tmp3(6113).TableRow, obj4), , ];
+    const obj6 = { icon: tmp7(tmp3(14712).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(11472).refreshBuildOverride, arrow: true };
+    items1[1] = tmp7(tmp3(6113).TableRow, obj6);
+    const obj7 = { icon: tmp7(tmp3(4820).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Override", variant: "danger", onPress: tmp3(11472).clearBuildOverride, arrow: true };
+    items1[2] = tmp7(tmp3(6113).TableRow, obj7);
     obj5.children = items1;
-    tmp10Result = tmp10(tmp3(6165).TableRowGroup, obj5);
+    tmp10Result = tmp10(tmp3(6195).TableRowGroup, obj5);
   }
   const items2 = [tmp10Result, , , ];
   let str = "";
@@ -79,7 +79,7 @@ export default noop.memo(() => {
     str = "New";
   }
   let obj = first(504);
-  items2[1] = jsx(first(6163).TableRadioGroup, {
+  items2[1] = jsx(first(6193).TableRadioGroup, {
     title: `${str} Override Type`,
     defaultValue: first.type,
     onChange(type) {
@@ -89,7 +89,7 @@ export default noop.memo(() => {
     children: items.map((value) => {
       value = value.value;
       ({ icon, label } = value);
-      return jsx(first(6166).TableRadioRow, { value, label, icon }, value);
+      return jsx(first(6196).TableRadioRow, { value, label, icon }, value);
     })
   });
   const found1 = items.find((value) => value.value === first.type);
@@ -120,10 +120,10 @@ export default noop.memo(() => {
     children: items.map((value) => {
       value = value.value;
       ({ icon, label } = value);
-      return jsx(first(6166).TableRadioRow, { value, label, icon }, value);
+      return jsx(first(6196).TableRadioRow, { value, label, icon }, value);
     })
   };
-  obj10.label = jsx(first(6190).TextInput, {
+  obj10.label = jsx(first(6220).TextInput, {
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
@@ -137,9 +137,9 @@ export default noop.memo(() => {
     autoComplete: "off",
     clearable: true
   });
-  obj9.children = jsx(first(6083).TableRow, { icon, label: null });
-  items2[2] = jsx(first(6165).TableRowGroup, { title: label1, hasIcons: true, children: null });
-  items2[3] = jsx(first(5447).Button, {
+  obj9.children = jsx(first(6113).TableRow, { icon, label: null });
+  items2[2] = jsx(first(6195).TableRowGroup, { title: label1, hasIcons: true, children: null });
+  items2[3] = jsx(first(5477).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
@@ -154,6 +154,6 @@ export default noop.memo(() => {
     }
   });
   obj11.children = items2;
-  obj2.children = jsxs(first(5445).Stack, { spacing: 16, children: null });
+  obj2.children = jsxs(first(5475).Stack, { spacing: 16, children: null });
   return <tmp8 style={tmp.content} contentContainerStyle={null}>{null}</tmp8>;
 });

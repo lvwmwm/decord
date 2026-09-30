@@ -1,11 +1,11 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13191
+// Function ID: 13192
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4836, 13108, 4832, 8827, 1177, 2]
+// Dependencies: [32, 19, 17, 21, 4866, 13135, 4862, 8861, 1177, 2]
 // Exports: default
 
-// Module 13164 (PremiumPerkCarousel)
-import PremiumPerkCard from "PremiumPerkCard" /* 13108 */;
+// Module 13191 (PremiumPerkCarousel)
+import PremiumPerkCard from "PremiumPerkCard" /* 13135 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPerkCarousel.tsx");

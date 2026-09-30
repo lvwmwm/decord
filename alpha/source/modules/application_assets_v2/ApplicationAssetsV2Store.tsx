@@ -1,9 +1,9 @@
-// Module ID: 8651
-// Function ID: 8652
+// Module ID: 8685
+// Function ID: 8686
 // Name: ApplicationAssetsV2Store
 // Dependencies: [12, 504, 573, 2]
 
-// Module 8651 (ApplicationAssetsV2Store)
+// Module 8685 (ApplicationAssetsV2Store)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

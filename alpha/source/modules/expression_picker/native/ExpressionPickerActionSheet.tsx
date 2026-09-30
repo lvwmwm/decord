@@ -1,25 +1,25 @@
-// Module ID: 9902
-// Function ID: 9903
+// Module ID: 9936
+// Function ID: 9937
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 2045, 6738, 9903, 21, 4566, 4703, 1611, 504, 9904, 4800, 1479, 1613, 6160, 1364, 9905, 6737, 9906, 2]
+// Dependencies: [19, 2045, 6768, 9937, 21, 4596, 4733, 1611, 504, 9938, 4830, 1479, 1613, 6190, 1364, 9939, 6767, 9940, 2]
 // Exports: default
 
-// Module 9902 (ExpressionPickerActionSheet)
+// Module 9936 (ExpressionPickerActionSheet)
 import initialize from "initialize" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import useKeyboardType from "useKeyboardType" /* 4703 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import NavigatorConstants from "NavigatorConstants" /* 6160 */;
-import KeyboardUtils from "KeyboardUtils" /* 9904 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import useKeyboardType from "useKeyboardType" /* 4733 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import NavigatorConstants from "NavigatorConstants" /* 6190 */;
+import KeyboardUtils from "KeyboardUtils" /* 9938 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-let closure_5 = fn(6738).ACTION_SHEET_START_HEIGHT_RATIO;
-const STICKER_FORMATS = fn(9903).STICKER_FORMATS;
+let closure_5 = fn(6768).ACTION_SHEET_START_HEIGHT_RATIO;
+const STICKER_FORMATS = fn(9937).STICKER_FORMATS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const size = fn(2);
@@ -40,7 +40,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     let isIOSResult = tmp2(1364).isIOS();
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = closure_7(tmp7(9905), obj4);
+      isIOSResult = closure_7(tmp7(9939), obj4);
     }
     const obj5 = { children: null };
     const items1 = [isIOSResult, ];
@@ -71,8 +71,8 @@ export default function ExpressionPickerActionSheet(arg0) {
       stickerFormats: STICKER_FORMATS,
       height: diff
     };
-    obj6.children = closure_7(tmp7(9906), obj7);
-    items1[1] = closure_7(tmp2(6737).BottomSheet, obj6);
+    obj6.children = closure_7(tmp7(9940), obj7);
+    items1[1] = closure_7(tmp2(6767).BottomSheet, obj6);
     obj5.children = items1;
     tmp15Result = closure_9(closure_8, obj5);
     const tmp2Result = tmp2(1364);

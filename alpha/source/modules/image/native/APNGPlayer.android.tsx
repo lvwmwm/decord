@@ -1,10 +1,10 @@
-// Module ID: 8436
-// Function ID: 8437
+// Module ID: 8467
+// Function ID: 8468
 // Name: APNGPlayer
-// Dependencies: [19, 21, 8437, 2]
+// Dependencies: [19, 21, 8468, 2]
 // Exports: useAPNGPlayerControls
 
-// Module 8436 (APNGPlayer)
+// Module 8467 (APNGPlayer)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -71,31 +71,31 @@ export const APNGPlayer = noop.forwardRef((onLoad, ref) => {
   const imperativeHandle = noop.useImperativeHandle(ref, () => ({
     play() {
       if (null != ref.current) {
-        const Commands = onLoad(8437).Commands;
+        const Commands = onLoad(8468).Commands;
         Commands.play(tmp.current);
       }
     },
     pause() {
       if (null != ref.current) {
-        const Commands = onLoad(8437).Commands;
+        const Commands = onLoad(8468).Commands;
         Commands.pause(tmp.current);
       }
     },
     stop() {
       if (null != ref.current) {
-        const Commands = onLoad(8437).Commands;
+        const Commands = onLoad(8468).Commands;
         Commands.seek(tmp.current, 0);
-        const Commands2 = onLoad(8437).Commands;
+        const Commands2 = onLoad(8468).Commands;
         Commands2.pause(tmp.current);
       }
     },
     seek(arg0) {
       if (null != ref.current) {
-        const Commands = onLoad(8437).Commands;
+        const Commands = onLoad(8468).Commands;
         Commands.seek(tmp.current, arg0);
       }
     }
   }));
   const merged1 = Object.assign(merged);
-  return jsx(ref(8437), { ref, onLoad: callback });
+  return jsx(ref(8468), { ref, onLoad: callback });
 });

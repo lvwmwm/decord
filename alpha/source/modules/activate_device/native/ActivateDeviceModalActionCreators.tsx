@@ -1,11 +1,11 @@
-// Module ID: 13586
-// Function ID: 13587
+// Module ID: 13613
+// Function ID: 13614
 // Name: ActivateDeviceModalActionCreators
-// Dependencies: [5039, 13587, 1981, 2]
+// Dependencies: [5069, 13614, 1981, 2]
 
-// Module 13586 (ActivateDeviceModalActionCreators)
+// Module 13613 (ActivateDeviceModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
 import size from "module_2" /* 2 */;
 
 const ACTIVATE_DEVICE_MODAL_KEY = "ACTIVATE_DEVICE_MODAL_KEY";
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/activate_device/native/Activa
 
 export default {
   showModal(userCode) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13587, dependencyMap.paths), { userCode }, ACTIVATE_DEVICE_MODAL_KEY);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13614, dependencyMap.paths), { userCode }, ACTIVATE_DEVICE_MODAL_KEY);
   },
   hideModal() {
     ModalActionCreatorsDefault.popWithKey(ACTIVATE_DEVICE_MODAL_KEY);

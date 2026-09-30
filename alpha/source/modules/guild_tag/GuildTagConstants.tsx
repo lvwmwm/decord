@@ -1,12 +1,12 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 7581
+// Function ID: 7582
 // Name: GuildTagConstants
-// Dependencies: [1074, 4727, 2]
+// Dependencies: [1074, 4757, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7551 (GuildTagConstants)
+// Module 7581 (GuildTagConstants)
 import Constants from "Constants" /* 1074 */;
-import Powerups from "Powerups" /* 4727 */;
+import Powerups from "Powerups" /* 4757 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

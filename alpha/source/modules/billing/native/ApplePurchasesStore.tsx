@@ -1,9 +1,9 @@
-// Module ID: 13096
-// Function ID: 13097
+// Module ID: 13123
+// Function ID: 13124
 // Name: ApplePurchasesStore
 // Dependencies: [504, 573, 2]
 
-// Module 13096 (ApplePurchasesStore)
+// Module 13123 (ApplePurchasesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

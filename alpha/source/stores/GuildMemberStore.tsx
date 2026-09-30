@@ -1,7 +1,7 @@
 // Module ID: 2108
 // Function ID: 2109
 // Name: GuildMemberStore
-// Dependencies: [2109, 2101, 502, 2045, 2102, 2067, 4455, 3, 4456, 2106, 1385, 11, 1966, 1967, 1389, 4457, 1370, 1978, 12, 4458, 504, 573, 2]
+// Dependencies: [2109, 2101, 502, 2045, 2102, 2067, 4485, 3, 4486, 2106, 1385, 11, 1966, 1967, 1389, 4487, 1370, 1978, 12, 4488, 504, 573, 2]
 // Exports: getCommunicationDisabledUserKey, getGuildIdFromCommunicationDisabledUserKey, getUserCommunicationDisabledVersion, getUserIdFromCommunicationDisabledUserKey
 
 // Module 2108 (GuildMemberStore)
@@ -16,10 +16,10 @@ import mappers from "mappers" /* 1967 */;
 import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1978 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2106 */;
 import useCommunicationDisabledNoticeStore from "useCommunicationDisabledNoticeStore" /* 2109 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4456 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4457 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4485 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4486 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4487 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4488 */;
 import ImpersonateStore from "ImpersonateStore" /* 2101 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -37,8 +37,8 @@ function trackCommunicationDisabled(guildId, tmp10Result) {
       const joined = items.join("-");
       let result = dependencyMap3[joined] !== tmp10Result.communicationDisabledUntil;
       if (result) {
-        result = tmp10(4456).isMemberCommunicationDisabled(tmp10Result);
-        tmp10Result = tmp10(4456);
+        result = tmp10(4486).isMemberCommunicationDisabled(tmp10Result);
+        tmp10Result = tmp10(4486);
       }
       if (result) {
         dependencyMap3[joined] = tmp10Result.communicationDisabledUntil;
@@ -95,7 +95,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "children", hoistRoleId: "getCurrentUser", iconRoleId: "justifyContent", highestRoleId: "next" };
+    return { colorString: null, colorStrings: null, colorRoleId: "paddingHorizontal", hoistRoleId: "hasDiversityParent", iconRoleId: "__esModule", highestRoleId: "Array" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {
@@ -298,8 +298,8 @@ function handleGuildMemberUpdate(arg0) {
           const joined = items.join("-");
           let result = dependencyMap3[joined] !== tmp17.communicationDisabledUntil;
           if (result) {
-            result = tmp34(4456).isMemberCommunicationDisabled(tmp17);
-            const tmp34Result2 = tmp34(4456);
+            result = tmp34(4486).isMemberCommunicationDisabled(tmp17);
+            const tmp34Result2 = tmp34(4486);
           }
           if (result) {
             dependencyMap3[joined] = tmp17.communicationDisabledUntil;
@@ -362,8 +362,8 @@ function batchUpdateGuildMembers(guildId, members) {
             const joined = items.join("-");
             let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
             if (result) {
-              result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-              const tmp5Result8 = tmp5(4456);
+              result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+              const tmp5Result8 = tmp5(4486);
             }
             if (result) {
               closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1134,8 +1134,8 @@ obj = {
               const joined = items.join("-");
               let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
               if (result) {
-                result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                const tmp5Result8 = tmp5(4456);
+                result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                const tmp5Result8 = tmp5(4486);
               }
               if (result) {
                 closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1206,8 +1206,8 @@ obj = {
                 const joined = items.join("-");
                 let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
                 if (result) {
-                  result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                  const tmp5Result8 = tmp5(4456);
+                  result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                  const tmp5Result8 = tmp5(4486);
                 }
                 if (result) {
                   closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1276,8 +1276,8 @@ obj = {
               const joined = items.join("-");
               let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
               if (result) {
-                result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                const tmp5Result8 = tmp5(4456);
+                result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                const tmp5Result8 = tmp5(4486);
               }
               if (result) {
                 closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1377,8 +1377,8 @@ obj = {
               const joined = items.join("-");
               let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
               if (result) {
-                result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                const tmp5Result8 = tmp5(4456);
+                result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                const tmp5Result8 = tmp5(4486);
               }
               if (result) {
                 closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1489,8 +1489,8 @@ obj = {
             const joined = items.join("-");
             let result = dependencyMap3[joined] !== tmp3.communicationDisabledUntil;
             if (result) {
-              result = tmp20(4456).isMemberCommunicationDisabled(tmp3);
-              const tmp20Result2 = tmp20(4456);
+              result = tmp20(4486).isMemberCommunicationDisabled(tmp3);
+              const tmp20Result2 = tmp20(4486);
             }
             if (result) {
               dependencyMap3[joined] = tmp3.communicationDisabledUntil;
@@ -1558,8 +1558,8 @@ obj = {
                 const joined = items.join("-");
                 let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
                 if (result) {
-                  result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                  const tmp5Result8 = tmp5(4456);
+                  result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                  const tmp5Result8 = tmp5(4486);
                 }
                 if (result) {
                   closure_15[joined] = tmp10.communicationDisabledUntil;
@@ -1679,8 +1679,8 @@ obj = {
               const joined = items.join("-");
               let result = closure_15[joined] !== tmp10.communicationDisabledUntil;
               if (result) {
-                result = tmp5(4456).isMemberCommunicationDisabled(tmp10);
-                const tmp5Result8 = tmp5(4456);
+                result = tmp5(4486).isMemberCommunicationDisabled(tmp10);
+                const tmp5Result8 = tmp5(4486);
               }
               if (result) {
                 closure_15[joined] = tmp10.communicationDisabledUntil;

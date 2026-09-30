@@ -1,9 +1,9 @@
-// Module ID: 6643
-// Function ID: 6644
+// Module ID: 6673
+// Function ID: 6674
 // Name: FastestListNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 6643 (FastestListNativeComponent)
+// Module 6673 (FastestListNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;

@@ -1,21 +1,21 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17449
+// Function ID: 17450
 // Name: NotificationPermissionManager
-// Dependencies: [5, 17, 4471, 502, 2045, 5017, 12073, 12074, 1074, 5045, 4800, 17415, 1981, 1249, 4421, 12076, 9712, 1241, 1364, 6705, 15208, 1094, 2]
+// Dependencies: [5, 17, 4501, 502, 2045, 5047, 12107, 12108, 1074, 5075, 4830, 17450, 1981, 1249, 4451, 12110, 9746, 1241, 1364, 6735, 15241, 1094, 2]
 
-// Module 17414 (NotificationPermissionManager)
+// Module 17449 (NotificationPermissionManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12076 */;
+import _modDef4451 from "module_4451" /* 4451 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12110 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4501 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12073 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12107 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
 
 require = fn;
 function haveNotSeenPromptSince(arg0, arg1) {
@@ -24,8 +24,8 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      tmp4 = _modDef4421().diff(tmp, "days") >= 1;
-      const obj = _modDef4421();
+      tmp4 = _modDef4451().diff(tmp, "days") >= 1;
+      const obj = _modDef4451();
     }
     tmp2 = tmp4;
   }
@@ -92,7 +92,7 @@ function showPrompt(arg0, arg1, arg2) {
     obj3.impressionName = discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT;
     obj3.impressionProperties = { action_location: location };
     obj3.location = location;
-    obj2.openLazy(asyncRequireImpl(17415, dependencyMap.paths), closure_2_11, obj3);
+    obj2.openLazy(asyncRequireImpl(17450, dependencyMap.paths), closure_2_11, obj3);
   }, arg2);
 }
 function _logNotificationPermissionStatus() {
@@ -169,12 +169,12 @@ let closure_26 = async function _logNotificationPermissionStatus2(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const PermissionPromptType = fn(12073).PermissionPromptType;
-const NotificationPermissionConstants = fn(12074);
+const PermissionPromptType = fn(12107).PermissionPromptType;
+const NotificationPermissionConstants = fn(12108);
 ({ NOTIFICATION_REACTIVATION_ACTIONSHEET_KEY: closure_11, EventActionLocation: closure_12 } = NotificationPermissionConstants);
 const Constants = fn(1074);
 ({ RelationshipTypes: map1, GuildFeatures: closure_14, AnalyticEvents: closure_15 } = Constants);
-let closure_16 = fn(5045).NotificationAuthorizationStatus;
+let closure_16 = fn(5075).NotificationAuthorizationStatus;
 const items = [, ];
 ({ FRIEND_REQUEST_SENT: arr[0], INVITE_ACCEPTED: arr[1] } = PermissionPromptType);
 let c23 = null;

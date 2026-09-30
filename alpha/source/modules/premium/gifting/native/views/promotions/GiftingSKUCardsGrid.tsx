@@ -1,26 +1,26 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10710
+// Function ID: 10711
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7133, 1972, 21, 4836, 576, 7788, 4548, 10677, 5602, 8452, 8438, 8423, 4832, 1115, 2]
+// Dependencies: [19, 17, 7163, 1972, 21, 4866, 576, 7818, 4578, 10711, 5632, 8483, 8469, 8454, 4862, 1115, 2]
 // Exports: default
 
-// Module 10676 (GiftingSKUCardsGrid)
+// Module 10710 (GiftingSKUCardsGrid)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
-import useCurrentUser from "useCurrentUser" /* 7788 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8438 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8452 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10677 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4578 */;
+import useCurrentUser from "useCurrentUser" /* 7818 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8469 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8483 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10711 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const isAvatarDecorationRecord = fn(7133).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7163).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1972).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let obj = { card: { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE, margin: nativeDefault.space.PX_4 }, previewContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: 100, overflow: "hidden" }, preview: null, selected: null, claimed: null, checkmark: null, textContainer: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -83,14 +83,14 @@ let closure_10 = noop.memo((rewardSkuId) => {
     let tmp8Result2 = claimed;
     if (claimed) {
       const obj9 = { size: "lg", style: tmp.checkmark };
-      tmp8Result2 = tmp8(tmp2(8423).CheckmarkLargeBoldIcon, obj9);
+      tmp8Result2 = tmp8(tmp2(8454).CheckmarkLargeBoldIcon, obj9);
     }
     items3[1] = tmp8Result2;
     obj5.children = items3;
     const items4 = [React6(React4, obj5), ];
     const obj10 = { style: tmp.textContainer, children: null };
     const obj11 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
-    const items5 = [React5(tmp2(4832).Text, obj11), ];
+    const items5 = [React5(tmp2(4862).Text, obj11), ];
     const intl = tmp2(1115).intl;
     const string = intl.string;
     const t = tmp2(1115).t;
@@ -100,14 +100,14 @@ let closure_10 = noop.memo((rewardSkuId) => {
       stringResult = string(t.QQsaCc);
     }
     const obj12 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: stringResult };
-    items5[1] = React5(tmp2(4832).Text, obj12);
+    items5[1] = React5(tmp2(4862).Text, obj12);
     obj10.children = items5;
     items4[1] = React6(React4, obj10);
     obj4.children = items4;
-    return React6(tmp2(5602).PressableOpacity, obj4);
+    return React6(tmp2(5632).PressableOpacity, obj4);
   }
 });
-createStyles = fn(4836);
+createStyles = fn(4866);
 let closure_11 = createStyles.createStyles({ grid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");

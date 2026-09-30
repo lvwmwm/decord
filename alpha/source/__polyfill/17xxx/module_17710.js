@@ -1,9 +1,17 @@
 // Module ID: 17710
 // Function ID: 17711
-// Dependencies: [1121]
+// Dependencies: [17711, 17719]
 
 // Module 17710
-import registerAsset from "module_1121" /* 1121 */;
+import _mod17711 from "module_17711" /* 17711 */;
+import capitalize from "capitalize" /* 17719 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "0ddefd9d8828364a18e4207ffcdf1e76", name: "ic_close_circle", type: "png" });
+export default _mod17711((arg0, str, arg2) => {
+  const formatted = str.toLowerCase();
+  let tmp2 = formatted;
+  if (arg2) {
+    tmp2 = capitalize(formatted);
+  }
+  return arg0 + tmp2;
+});

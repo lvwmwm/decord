@@ -1,10 +1,10 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17096
+// Function ID: 17097
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2045, 2099, 1074, 4458, 8968, 8969, 8993, 1110, 2]
+// Dependencies: [5, 19, 2045, 2099, 1074, 4488, 9002, 9003, 9027, 1110, 2]
 // Exports: default
 
-// Module 17061 (useTransitionToConnectedActivityInVoice)
+// Module 17096 (useTransitionToConnectedActivityInVoice)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -80,14 +80,14 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   const obj4 = { value, done: true };
                   return obj4;
                 } else {
-                  embeddedActivityLocationChannelId = handler(4458).getEmbeddedActivityLocationChannelId(_location2);
+                  embeddedActivityLocationChannelId = handler(4488).getEmbeddedActivityLocationChannelId(_location2);
                   if (null != embeddedActivityLocationChannelId) {
-                    if (closure_2_1(8968)(embeddedActivityLocationChannelId)) {
+                    if (closure_2_1(9002)(embeddedActivityLocationChannelId)) {
                       if (voiceChannelId.getVoiceChannelId() !== embeddedActivityLocationChannelId) {
                         const obj5 = { channelId: embeddedActivityLocationChannelId };
                         c3 = 2;
                         c4 = 1;
-                        const obj6 = { value: closure_2_1(8969)(obj5), done: false };
+                        const obj6 = { value: closure_2_1(9003)(obj5), done: false };
                         return obj6;
                       }
                     }
@@ -111,7 +111,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               closure_129_3 = guild_id;
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => {
-                closure_3_1(8993)(closure_1_3, _location);
+                closure_3_1(9027)(closure_1_3, _location);
                 if (closure_0 != null) {
                   closure_0();
                 }

@@ -1,9 +1,9 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17393
+// Function ID: 17394
 // Name: InteractionIframeConstants
 // Dependencies: [2]
 
-// Module 17358 (InteractionIframeConstants)
+// Module 17393 (InteractionIframeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/native/InteractionIframeConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16364
+// Function ID: 16365
 // Name: CardHeightMeasurer
-// Dependencies: [19, 17, 21, 16268, 7964, 2]
+// Dependencies: [19, 17, 21, 16297, 7994, 2]
 
-// Module 16335 (CardHeightMeasurer)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7964 */;
+// Module 16364 (CardHeightMeasurer)
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7994 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -18,5 +18,5 @@ export const CardHeightMeasurer = noop.memo((children) => {
   const items = [itemId];
   return <View onLayout={noop.useCallback((nativeEvent) => {
     ICYMIActionCreatorsDefault.setCardHeight(itemId, nativeEvent.nativeEvent.layout.height);
-  }, items)} pointerEvents="box-none" style={{ width: noop.useContext(itemId(16268).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
+  }, items)} pointerEvents="box-none" style={{ width: noop.useContext(itemId(16297).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
 });

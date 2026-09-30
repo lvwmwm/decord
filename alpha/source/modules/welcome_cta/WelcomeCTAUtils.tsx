@@ -1,16 +1,16 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 7639
+// Function ID: 7640
 // Name: WelcomeCTAUtils
-// Dependencies: [1372, 7610, 1074, 11, 7042, 1241, 2]
+// Dependencies: [1372, 7640, 1074, 11, 7072, 1241, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7609 (WelcomeCTAUtils)
+// Module 7639 (WelcomeCTAUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7042 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7072 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const WELCOME_STICKERS = fn(7610).WELCOME_STICKERS;
+const WELCOME_STICKERS = fn(7640).WELCOME_STICKERS;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/welcome_cta/WelcomeCTAUtils.tsx");

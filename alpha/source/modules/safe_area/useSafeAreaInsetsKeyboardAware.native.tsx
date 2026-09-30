@@ -1,14 +1,14 @@
-// Module ID: 6568
-// Function ID: 6569
+// Module ID: 6598
+// Function ID: 6599
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1481, 6058, 6059, 1613, 1482, 1364, 1879, 4703, 1611, 6057, 2]
+// Dependencies: [32, 19, 1481, 6088, 6089, 1613, 1482, 1364, 1879, 4733, 1611, 6087, 2]
 // Exports: default
 
-// Module 6568 (useSafeAreaInsetsKeyboardAware)
+// Module 6598 (useSafeAreaInsetsKeyboardAware)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1879 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6058 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6059 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6088 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6089 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
@@ -58,17 +58,17 @@ export default function useSafeAreaInsetsKeyboardAware() {
     tmpResult = PlatformUtils;
     let systemKeyboardHeight = useSystemKeyboardHeight.getSystemKeyboardHeight({ appEntryKey });
     if (0 === systemKeyboardHeight) {
-      const keyboardType = tmp(4703).getKeyboardType(tmp5);
+      const keyboardType = tmp(4733).getKeyboardType(tmp5);
       let num3 = 0;
       if (keyboardType !== tmp(1611).KeyboardTypes.SYSTEM) {
         num3 = 0;
         if (flag3) {
-          num3 = tmp(6057).getCustomKeyboardHeight(tmp5);
-          const tmpResult6 = tmp(6057);
+          num3 = tmp(6087).getCustomKeyboardHeight(tmp5);
+          const tmpResult6 = tmp(6087);
         }
       }
       systemKeyboardHeight = num3;
-      const tmpResult5 = tmp(4703);
+      const tmpResult5 = tmp(4733);
     }
     return systemKeyboardHeight;
   }, items);

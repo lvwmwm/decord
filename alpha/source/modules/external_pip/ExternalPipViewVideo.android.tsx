@@ -1,13 +1,13 @@
-// Module ID: 17014
-// Function ID: 17015
+// Module ID: 17049
+// Function ID: 17050
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2045, 1372, 4857, 21, 4836, 576, 9042, 4787, 4832, 1115, 504, 9067, 1177, 9046, 4531, 17015, 9057, 17016, 9051, 2]
+// Dependencies: [32, 19, 17, 2045, 1372, 4887, 21, 4866, 576, 9076, 4817, 4862, 1115, 504, 9101, 1177, 9080, 4561, 17050, 9091, 17051, 9085, 2]
 
-// Module 17014 (ExternalPipViewVideo)
+// Module 17049 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9051 */;
-import VideoActionCreators from "VideoActionCreators" /* 17015 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17016 */;
+import ExternalPipDefault from "ExternalPip" /* 9085 */;
+import VideoActionCreators from "VideoActionCreators" /* 17050 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17051 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -20,11 +20,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   const obj = { style: tmp.unavailable, children: null };
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(9042).StreamEnded, obj2);
+    let tmp4Result = tmp4(tmp5(9076).StreamEnded, obj2);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4787).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4817).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -37,7 +37,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1115).t.Nzo5nz);
   }
   obj3.children = result;
-  items[1] = tmp8(tmp10(4832).Text, obj3);
+  items[1] = tmp8(tmp10(4862).Text, obj3);
   obj.children = items;
   return closure_1_12(timestampProducer, obj);
 }
@@ -57,7 +57,7 @@ function ExternalPipViewVideoUser(userId) {
     }
     return guild_id;
   });
-  userId(9067);
+  userId(9101);
   const obj3 = { style: tmp.user, children: null };
   let tmp8Result = null;
   if (null != stateFromStores) {
@@ -72,7 +72,7 @@ function ExternalPipViewVideoStream(streamId) {
   first = 300;
   _slicedToArray = undefined;
   noop = undefined;
-  const surfaceDirectRendererExperiment = streamId(9046).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
+  const surfaceDirectRendererExperiment = streamId(9080).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   [first, _slicedToArray] = noop.useState(undefined);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
   noop = tmp4[1];
@@ -104,8 +104,8 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items2);
-  let obj = streamId(9046);
-  const token = streamId(4531).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
+  let obj = streamId(9080);
+  const token = streamId(4561).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
   value = closure_7.get();
   _slicedToArray = value;
   const items3 = [streamId, value];
@@ -116,7 +116,7 @@ function ExternalPipViewVideoStream(streamId) {
       VideoActionCreators.updateVideoSize(tmp, size, 1);
     }
   }, items3);
-  const children = [closure_11(first(9057), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(9091), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;
@@ -132,10 +132,10 @@ function ExternalPipViewVideoStream(streamId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, StyleSheet, View: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const ParticipantTypes = fn(4857).ParticipantTypes;
+const ParticipantTypes = fn(4887).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: null, video: null, videoUnavailableWrap: null, videoUnavailableSpinner: null, unavailable: null, unavailableText: null, unavaiableImage: null, user: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

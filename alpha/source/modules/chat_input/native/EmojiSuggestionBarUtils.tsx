@@ -1,16 +1,16 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12124
+// Function ID: 12125
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4825, 1074, 21, 1177, 4566, 5446, 4540, 4837, 504, 12055, 12091, 12092, 8779, 2]
+// Dependencies: [32, 19, 4855, 1074, 21, 1177, 4596, 5476, 4570, 4867, 504, 12089, 12125, 12126, 8813, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 12090 (EmojiSuggestionBarUtils)
-import native from "native" /* 4540 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5446 */;
+// Module 12124 (EmojiSuggestionBarUtils)
+import native from "native" /* 4570 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import spring from "spring" /* 5476 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 const require = globalThis.__r;
 
@@ -108,14 +108,14 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp11(0);
       }
-      const tmpResult = tmp(4837);
+      const tmpResult = tmp(4867);
       const fn = function n(arg0) {
         if (arg0) {
           closure_0(dependencyMap[6]).runOnJS(cleanUp)();
           obj = closure_0(dependencyMap[6]);
         }
       };
-      const __closure = { runOnJS: tmp(4566).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4596).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 15923583203906;
       fn.__initData = __initData;
@@ -124,8 +124,8 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp3(dependencyMap);
       }
-      const result1 = sharedValue.set(tmp(4837).withTiming(dependencyMap, __closure));
-      const tmpResult2 = tmp(4837);
+      const result1 = sharedValue.set(tmp(4867).withTiming(dependencyMap, __closure));
+      const tmpResult2 = tmp(4867);
     }
   }, items);
   return sharedValue;

@@ -1,10 +1,10 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11890
+// Function ID: 11891
 // Name: PollAttachmentUtils
-// Dependencies: [5, 7413, 2]
+// Dependencies: [5, 7443, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11856 (PollAttachmentUtils)
+// Module 11890 (PollAttachmentUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 let closure_2 = async function _downloadPollGif() {
@@ -25,7 +25,7 @@ let closure_2 = async function _downloadPollGif() {
   await closure_130_0.blob();
   return convertBlobToBase64(arg1);
 };
-const POLL_ATTACHMENT_FOLDER = fn(7413).POLL_ATTACHMENT_FOLDER;
+const POLL_ATTACHMENT_FOLDER = fn(7443).POLL_ATTACHMENT_FOLDER;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/PollAttachmentUtils.tsx");
 

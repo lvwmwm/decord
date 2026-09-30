@@ -1,13 +1,13 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16370
+// Function ID: 16371
 // Name: BellSpotIllustration
-// Dependencies: [21, 6065, 16342, 2]
+// Dependencies: [21, 6095, 16371, 2]
 // Exports: BellSpotIllustration
 
-// Module 16341 (BellSpotIllustration)
+// Module 16370 (BellSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import _modDef16342 from "module_16342" /* 16342 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import _modDef16371 from "module_16371" /* 16371 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const BellSpotIllustration = function BellSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef16342 };
+  const obj2 = { uri: _modDef16371 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,17 +1,17 @@
-// Module ID: 11230
-// Function ID: 11231
+// Module ID: 11266
+// Function ID: 11267
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1074, 21, 4836, 6773, 6792, 576, 1092, 1177, 11231, 11232, 2]
+// Dependencies: [19, 17, 1074, 21, 4866, 6803, 6822, 576, 1092, 1177, 11267, 11268, 2]
 // Exports: default
 
-// Module 11230 (OfficialConnectionIcon)
+// Module 11266 (OfficialConnectionIcon)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import native from "native" /* 1177 */;
-import useRoleIconProps from "useRoleIconProps" /* 6773 */;
-import RoleIconDefault from "RoleIcon" /* 6792 */;
-import _modDef11231 from "module_11231" /* 11231 */;
-import _modDef11232 from "module_11232" /* 11232 */;
+import useRoleIconProps from "useRoleIconProps" /* 6803 */;
+import RoleIconDefault from "RoleIcon" /* 6822 */;
+import _modDef11267 from "module_11267" /* 11267 */;
+import _modDef11268 from "module_11268" /* 11268 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const Constants = fn(1074);
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles({ verifiedCheck: { position: "absolute", left: 0, top: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/native/OfficialConnectionIcon.tsx");
@@ -74,11 +74,11 @@ export default function OfficialConnectionIcon(arg0) {
   const obj5 = { style: null, children: null };
   const items1 = [style, size1];
   obj5.style = items1;
-  const obj6 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11231, color: roleColor };
+  const obj6 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11267, color: roleColor };
   const items2 = [tmp.verifiedCheck, size1];
   obj6.style = items2;
   const items3 = [timestampProducer(native.Icon, obj6), ];
-  const obj7 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11232, color: PRIMARY_630 };
+  const obj7 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11268, color: PRIMARY_630 };
   const items4 = [tmp.verifiedCheck, size1];
   obj7.style = items4;
   items3[1] = timestampProducer(native.Icon, obj7);

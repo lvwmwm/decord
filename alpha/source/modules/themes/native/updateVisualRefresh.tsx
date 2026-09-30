@@ -1,11 +1,11 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17010
+// Function ID: 17011
 // Name: updateVisualRefresh
-// Dependencies: [14172, 2]
+// Dependencies: [14201, 2]
 // Exports: updateVisualRefresh
 
-// Module 16975 (updateVisualRefresh)
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14172 */;
+// Module 17010 (updateVisualRefresh)
+import NativeThemeModuleDefault from "NativeThemeModule" /* 14201 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");

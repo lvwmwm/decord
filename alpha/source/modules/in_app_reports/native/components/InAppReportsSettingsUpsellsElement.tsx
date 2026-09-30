@@ -1,17 +1,17 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12675
+// Function ID: 12676
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 2045, 1074, 21, 4836, 576, 5464, 8258, 12638, 6964, 504, 8265, 6165, 1115, 4832, 6966, 5016, 2]
+// Dependencies: [32, 19, 17, 2045, 1074, 21, 4866, 576, 5494, 8289, 12668, 6994, 504, 8296, 6195, 1115, 4862, 6996, 5046, 2]
 // Exports: default
 
-// Module 12645 (InAppReportsSettingsUpsellsElement)
+// Module 12675 (InAppReportsSettingsUpsellsElement)
 import nativeDefault from "native" /* 576 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import useMountEffectDefault from "useMountEffect" /* 5464 */;
-import SettingsIcon from "SettingsIcon" /* 6964 */;
-import openUserSettings from "openUserSettings" /* 6966 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8258 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12638 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5046 */;
+import useMountEffectDefault from "useMountEffect" /* 5494 */;
+import SettingsIcon from "SettingsIcon" /* 6994 */;
+import openUserSettings from "openUserSettings" /* 6996 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8289 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12668 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -44,7 +44,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, settingsContainer: null, goToSettingsText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.settingsContainer = { width: "100%", marginBottom: nativeDefault.space.PX_8 };

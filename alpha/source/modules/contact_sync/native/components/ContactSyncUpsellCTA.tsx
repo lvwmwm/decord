@@ -1,21 +1,21 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 13598
+// Function ID: 13599
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12347, 1074, 21, 4836, 576, 8218, 1241, 12344, 6781, 1115, 13572, 2]
+// Dependencies: [19, 12377, 1074, 21, 4866, 576, 8249, 1241, 12374, 6811, 1115, 13599, 2]
 
-// Module 13571 (ContactSyncUpsellCTA)
+// Module 13598 (ContactSyncUpsellCTA)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12344 */;
-import _modDef13572 from "module_13572" /* 13572 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12374 */;
+import _modDef13599 from "module_13599" /* 13599 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const dismissUpsellCTA = fn(12347).dismissUpsellCTA;
+const dismissUpsellCTA = fn(12377).dismissUpsellCTA;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -49,10 +49,10 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(6781).showSimpleActionSheet(obj2);
+      const result = location(6811).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef13572,
+    iconSource: _modDef13599,
     title: null,
     subtitle: null
   };
@@ -62,7 +62,7 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
   obj.title = intl.string(location(1115).t.T6Rfd9);
   const intl2 = location(1115).intl;
   obj.subtitle = intl2.string(location(1115).t.c6KIpg);
-  return jsx(location(8218).FormCTA, {
+  return jsx(location(8249).FormCTA, {
     onPress() {
       const obj2 = { type: constants2.CONTACT_SYNC_MODAL, location: null };
       let str = location;
@@ -87,10 +87,10 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(6781).showSimpleActionSheet(obj2);
+      const result = location(6811).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef13572,
+    iconSource: _modDef13599,
     title: null,
     subtitle: null
   });

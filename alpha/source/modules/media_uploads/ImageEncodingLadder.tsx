@@ -1,9 +1,9 @@
-// Module ID: 5643
-// Function ID: 5644
+// Module ID: 5673
+// Function ID: 5674
 // Name: ImageEncodingLadder
 // Dependencies: [1074, 2]
 
-// Module 5643 (ImageEncodingLadder)
+// Module 5673 (ImageEncodingLadder)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

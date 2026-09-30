@@ -1,9 +1,9 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6781
+// Function ID: 6782
 // Name: ApplicationDirectoryApplicationsStore
 // Dependencies: [2003, 504, 573, 2]
 
-// Module 6751 (ApplicationDirectoryApplicationsStore)
+// Module 6781 (ApplicationDirectoryApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ApplicationRecord from "ApplicationRecord" /* 2003 */;

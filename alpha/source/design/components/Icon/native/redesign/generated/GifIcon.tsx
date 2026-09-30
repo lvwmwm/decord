@@ -1,13 +1,13 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10043
+// Function ID: 10044
 // Name: GifIcon
-// Dependencies: [19, 21, 576, 4530, 7692, 2]
+// Dependencies: [19, 21, 576, 4560, 7722, 2]
 // Exports: GifIcon
 
-// Module 10009 (GifIcon)
+// Module 10043 (GifIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod7692 from "module_7692" /* 7692 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod7722 from "module_7722" /* 7722 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const GifIcon = function GifIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7692, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod7722, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

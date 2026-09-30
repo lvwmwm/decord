@@ -1,11 +1,11 @@
-// Module ID: 8787
-// Function ID: 8788
+// Module ID: 8821
+// Function ID: 8822
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1435, 7438, 2]
+// Dependencies: [1435, 7469, 2]
 // Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature, useMobileStickerPickerUpsellRestyleEnabled
 
-// Module 8787 (MobileStickerPickerUpsellRestyleExperiment)
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7438 */;
+// Module 8821 (MobileStickerPickerUpsellRestyleExperiment)
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7469 */;
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
 // Module ID: 10127
 // Function ID: 10128
-// Dependencies: [41, 42, 93, 95, 98, 10124, 10064, 10065, 10069]
+// Dependencies: [41, 42, 93, 95, 98, 10095, 10098, 10099, 10115]
 
 // Module 10127
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10069 */;
+import Filter from "Filter" /* 10115 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FRTimeUnitAgoFormatParser = require;
+const ENMergeRelativeAfterDateRefiner = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,41 +30,60 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeUnitAgoFormatParser {
+class ENMergeRelativeAfterDateRefiner {
   constructor() {
     self = this;
-    tmp = c2(this, FRTimeUnitAgoFormatParser);
+    tmp = c2(this, ENMergeRelativeAfterDateRefiner);
     tmp2 = closure_4;
-    obj = closure_4(FRTimeUnitAgoFormatParser);
+    obj = closure_4(ENMergeRelativeAfterDateRefiner);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeRelativeAfterDateRefiner, Filter.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const regExp = new RegExp("il y a\\s*(" + FRTimeUnitAgoFormatParser(10124).TIME_UNITS_PATTERN + ")(?=(?:\\W|$))", "i");
-    return regExp;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, arg1, text) {
+    let match = str.match(/^\s*$/i);
+    if (match) {
+      let tmp4 = null != text.text.match(/^[+-]/i);
+      if (!tmp4) {
+        tmp4 = null != text.text.match(/^-/i);
+      }
+      match = tmp4;
+      str = text.text;
+    }
+    return match;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = FRTimeUnitAgoFormatParser(10124).parseDuration(arg1[1]);
-      const ParsingComponents = FRTimeUnitAgoFormatParser(10065).ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, FRTimeUnitAgoFormatParser(10064).reverseDuration(FRTimeUnitAgoFormatParser(10124).parseDuration(arg1[1])));
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text, arg3) {
+      const parseDurationResult = ENMergeRelativeAfterDateRefiner(10095).parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      if (null != str.match(/^-/i)) {
+        reverseDurationResult = tmp(10098).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(10099).ParsingComponents;
+      const ReferenceWithTimezone = tmp(10099).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = ParsingComponents.createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      ({ reference, index } = start);
+      return new ENMergeRelativeAfterDateRefiner(10099).ParsingResult(reference, index, "" + start.text + arg0 + text.text, relativeFromReference);
     }
   }
 ];
 
-export default _createClass(FRTimeUnitAgoFormatParser, items);
+export default _createClass(ENMergeRelativeAfterDateRefiner, items);

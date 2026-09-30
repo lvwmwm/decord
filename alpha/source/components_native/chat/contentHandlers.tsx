@@ -1,18 +1,18 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 11286
+// Function ID: 11287
 // Name: contentHandlers
-// Dependencies: [5, 11248, 9566, 7988, 4525, 11211, 7789, 6769, 4800, 11251, 1981, 11, 2021, 1115, 6776, 4527, 5369, 9957, 2]
+// Dependencies: [5, 11284, 9600, 8018, 4555, 11247, 7819, 6799, 4830, 11287, 1981, 11, 2021, 1115, 6806, 4557, 5399, 9991, 2]
 
-// Module 11250 (contentHandlers)
+// Module 11286 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6769 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11248 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6799 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11284 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -216,7 +216,7 @@ obj.onLongPressAttachmentLink = function() {
   return applyArgumentsResult;
 };
 obj.onTapMention = function onTapMention(nativeEvent) {
-  const nativeSyntheticEventData = parsedUserId(11211).getNativeSyntheticEventData(nativeEvent);
+  const nativeSyntheticEventData = parsedUserId(11247).getNativeSyntheticEventData(nativeEvent);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
   if (null != userId) {
@@ -228,14 +228,14 @@ obj.onTapMention = function onTapMention(nativeEvent) {
     if (null != roleId) {
       if (null != guildId) {
         const obj3 = { guildId, roleId, channelId };
-        ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11251, tmp2.paths), "RoleMembersActionSheet", obj3);
+        ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11287, tmp2.paths), "RoleMembersActionSheet", obj3);
       }
     }
     if ("@everyone" === roleName) {
       if (null != guildId) {
         const obj5 = { guildId, roleId: null, channelId: null };
         const obj6 = ActionSheetActionCreatorsDefault;
-        const tmp10 = tmp(1981)(11251, tmp2.paths);
+        const tmp10 = tmp(1981)(11287, tmp2.paths);
         obj5.roleId = SnowflakeUtilsDefault.castGuildIdAsEveryoneGuildRoleId(guildId);
         obj5.channelId = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj5);
@@ -279,7 +279,7 @@ obj.onTapInlineCode = function onTapInlineCode(nativeEvent) {
   }
 };
 obj.onTapEmoji = function onTapEmoji(emojiNode) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9957, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9991, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/chat/contentHandlers.tsx");

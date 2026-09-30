@@ -1,15 +1,15 @@
-// Module ID: 9429
-// Function ID: 9430
+// Module ID: 9463
+// Function ID: 9464
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4469, 1074, 1085, 21, 4836, 6003, 576, 504, 8020, 9239, 9241, 4832, 1115, 9213, 2]
+// Dependencies: [19, 17, 4499, 1074, 1085, 21, 4866, 6033, 576, 504, 8050, 9273, 9275, 4862, 1115, 9247, 2]
 // Exports: default
 
-// Module 9429 (GuildEventsNoContent)
+// Module 9463 (GuildEventsNoContent)
 import nativeDefault from "native" /* 576 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import TextStyles from "TextStyles" /* 6003 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import TextStyles from "TextStyles" /* 6033 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -18,7 +18,7 @@ const Constants = fn(1085);
 ({ Permissions: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginBottom: 88, padding: 16 }, title: null, subtitle: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
@@ -42,17 +42,17 @@ export default function GuildEventsNoContent(guild) {
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
-  obj3.icon = onClose(9239);
-  obj3.IconComponent = guild(9241).CalendarIcon;
-  const items2 = [closure_7(onClose(8020), obj3), , , ];
+  obj3.icon = onClose(9273);
+  obj3.IconComponent = guild(9275).CalendarIcon;
+  const items2 = [closure_7(onClose(8050), obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1115).intl;
   obj4.children = intl.string(guild(1115).t["WgZ+3D"]);
-  items2[1] = closure_7(guild(4832).Text, obj4);
+  items2[1] = closure_7(guild(4862).Text, obj4);
   const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = guild(1115).intl;
   obj5.children = intl2.string(guild(1115).t["v/S/PG"]);
-  items2[2] = closure_7(guild(4832).Text, obj5);
+  items2[2] = closure_7(guild(4862).Text, obj5);
   if (stateFromStores) {
     const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
     const intl3 = tmp2(1115).intl;
@@ -63,7 +63,7 @@ export default function GuildEventsNoContent(guild) {
         }
     };
     obj6.children = intl3.format(tmp2(1115).t["K+DH2o"], obj7);
-    stateFromStores = tmp7(tmp2(4832).Text, obj6);
+    stateFromStores = tmp7(tmp2(4862).Text, obj6);
   }
   items2[3] = stateFromStores;
   obj2.children = items2;

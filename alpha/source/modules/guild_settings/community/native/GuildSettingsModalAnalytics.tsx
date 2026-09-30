@@ -1,10 +1,10 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17707
+// Function ID: 17708
 // Name: GuildSettingsModalAnalytics
-// Dependencies: [5, 19, 17, 2112, 1074, 21, 4836, 576, 504, 17673, 1241, 6901, 6905, 5445, 4832, 1115, 1177, 5447, 17693, 6627, 2]
+// Dependencies: [5, 19, 17, 2112, 1074, 21, 4866, 576, 504, 17708, 1241, 6931, 6935, 5475, 4862, 1115, 1177, 5477, 17728, 6657, 2]
 // Exports: default
 
-// Module 17672 (GuildSettingsModalAnalytics)
+// Module 17707 (GuildSettingsModalAnalytics)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -16,7 +16,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, RelativeMarketingURLs: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1 }, content: { padding: nativeDefault.space.PX_16 } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -28,7 +28,7 @@ export default function GuildSettingsModalAnalytics(guildId) {
   const items = [LocaleStore];
   const stateFromStores = guildId(504).useStateFromStores(items, () => locale.locale);
   let obj = guildId(504);
-  const guildAnalyticsOverview = guildId(17673).useGuildAnalyticsOverview(guildId);
+  const guildAnalyticsOverview = guildId(17708).useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   const items1 = [guildId];
   let obj3 = { style: tmp.container, contentContainerStyle: null, children: null };
@@ -65,7 +65,7 @@ export default function GuildSettingsModalAnalytics(guildId) {
             const result = closure_1_8.DEVELOPER_PORTAL_GUILD_ANALYTICS(guildId);
             v1 = 1;
             v3 = 1;
-            const obj6 = { value: v1(6901).redirectDeveloperPortalWithHandoffToken(result, v3(6905).LoginHandoffSource.GUILD_ANALYTICS_SETTING), done: false };
+            const obj6 = { value: v1(6931).redirectDeveloperPortalWithHandoffToken(result, v3(6935).LoginHandoffSource.GUILD_ANALYTICS_SETTING), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -88,22 +88,22 @@ export default function GuildSettingsModalAnalytics(guildId) {
   let obj4 = { spacing: nativeDefault.space.PX_16, children: null };
   let obj5 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl = guildId(1115).intl;
-  let obj2 = guildId(17673);
+  let obj2 = guildId(17708);
   const tmp10 = ScrollView;
   const tmp8 = closure_11;
   obj5.children = intl.string(guildId(1115).t.NIZ60a).trim();
-  const items3 = [closure_9(guildId(4832).Text, obj5), , , , ];
+  const items3 = [closure_9(guildId(4862).Text, obj5), , , , ];
   if (null == notice) {
     items3[1] = null;
     let obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = tmp2(1115).intl;
     obj6.children = intl2.string(tmp2(1115).t.A5vswv);
-    items3[2] = tmp9(tmp2(4832).Text, obj6);
+    items3[2] = tmp9(tmp2(4862).Text, obj6);
     const obj7 = { text: null, onPress: null };
     const intl3 = tmp2(1115).intl;
     obj7.text = intl3.string(tmp2(1115).t.Uskgxx);
     obj7.onPress = callback;
-    items3[3] = tmp9(tmp2(5447).Button, obj7);
+    items3[3] = tmp9(tmp2(5477).Button, obj7);
     let tmp7Result = null;
     if (null != analytics) {
       const obj8 = { spacing: tmp11(576).space.PX_8, children: null };
@@ -112,43 +112,43 @@ export default function GuildSettingsModalAnalytics(guildId) {
       obj9.title = intl4.string(tmp2(1115).t.i0NorT);
       const intl5 = tmp2(1115).intl;
       obj9.description = intl5.string(tmp2(1115).t.KiRbLJ);
-      const tmp11Result = tmp11(17693);
-      const merged = Object.assign(tmp2(17673).getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
+      const tmp11Result = tmp11(17728);
+      const merged = Object.assign(tmp2(17708).getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
       const items4 = [tmp9(tmp11Result, obj9), , , ];
       const obj10 = { metricKey: "communicators", title: null, description: null };
-      const tmp2Result = tmp2(17673);
+      const tmp2Result = tmp2(17708);
       const intl6 = tmp2(1115).intl;
       obj10.title = intl6.string(tmp2(1115).t.DDAHdQ);
       const intl7 = tmp2(1115).intl;
       obj10.description = intl7.string(tmp2(1115).t.HxWUkU);
-      const tmp11Result4 = tmp11(17693);
-      const merged1 = Object.assign(tmp2(17673).getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
+      const tmp11Result4 = tmp11(17728);
+      const merged1 = Object.assign(tmp2(17708).getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
       items4[1] = tmp9(tmp11Result4, obj10);
       const obj11 = { metricKey: "new_members", title: null };
-      const tmp2Result4 = tmp2(17673);
+      const tmp2Result4 = tmp2(17708);
       const intl8 = tmp2(1115).intl;
       obj11.title = intl8.string(tmp2(1115).t.hYeOqC);
-      const tmp11Result5 = tmp11(17693);
-      const merged2 = Object.assign(tmp2(17673).getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
+      const tmp11Result5 = tmp11(17728);
+      const merged2 = Object.assign(tmp2(17708).getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
       items4[2] = tmp9(tmp11Result5, obj11);
       const obj12 = { metricKey: "new_member_retention", title: null, description: null };
-      const tmp2Result5 = tmp2(17673);
+      const tmp2Result5 = tmp2(17708);
       const intl9 = tmp2(1115).intl;
       obj12.title = intl9.string(tmp2(1115).t.jj7OPw);
       const intl10 = tmp2(1115).intl;
       obj12.description = intl10.string(tmp2(1115).t.MQCslz);
-      const tmp2Result6 = tmp2(17673);
+      const tmp2Result6 = tmp2(17708);
       const merged3 = Object.assign(tmp2Result6.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
-      items4[3] = tmp9(tmp11(17693), obj12);
+      items4[3] = tmp9(tmp11(17728), obj12);
       obj8.children = items4;
-      tmp7Result = tmp7(tmp2(5445).Stack, obj8);
-      const tmp11Result6 = tmp11(17693);
+      tmp7Result = tmp7(tmp2(5475).Stack, obj8);
+      const tmp11Result6 = tmp11(17728);
     }
     const obj13 = { children: null };
     items3[4] = tmp7Result;
     obj4.children = items3;
-    obj3.children = tmp7(guildId(5445).Stack, obj4);
-    const items5 = [tmp9(tmp10, obj3), tmp9(tmp2(6627).NavScrim, {})];
+    obj3.children = tmp7(guildId(5475).Stack, obj4);
+    const items5 = [tmp9(tmp10, obj3), tmp9(tmp2(6657).NavScrim, {})];
     obj13.children = items5;
     return tmp7(tmp8, obj13);
   } else {

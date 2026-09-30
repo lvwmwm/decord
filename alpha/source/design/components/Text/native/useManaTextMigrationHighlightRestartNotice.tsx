@@ -1,13 +1,13 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14182
+// Function ID: 14183
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4835, 504, 5370, 2]
+// Dependencies: [19, 4865, 504, 5400, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 14155 (useManaTextMigrationHighlightRestartNotice)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
+// Module 14182 (useManaTextMigrationHighlightRestartNotice)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import DevSettingsStore from "DevSettingsStore" /* 4865 */;
 
 const require = globalThis.__r;
 

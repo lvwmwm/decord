@@ -1,25 +1,25 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 7932
+// Function ID: 7933
 // Name: MediaModal
-// Dependencies: [19, 17, 7903, 1980, 1074, 21, 7873, 7904, 7875, 504, 1364, 7878, 7881, 7909, 7919, 7920, 1876, 7945, 4801, 4802, 4800, 7947, 1981, 12684, 7876, 12702, 12704, 6065, 12706, 2]
+// Dependencies: [19, 17, 7933, 1980, 1074, 21, 7903, 7934, 7905, 504, 1364, 7908, 7911, 7939, 7949, 7950, 1876, 7975, 4831, 4832, 4830, 7977, 1981, 12714, 7906, 12732, 12734, 6095, 12736, 2]
 // Exports: default
 
-// Module 7902 (MediaModal)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 7878 */;
-import NativePortalViewDefault from "NativePortalView" /* 7881 */;
-import MediaModalTiktokDefault from "MediaModalTiktok" /* 7909 */;
-import MediaModalWebVideoFileDefault from "MediaModalWebVideoFile" /* 7919 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 12684 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 12702 */;
-import MediaModalLoaderDefault from "MediaModalLoader" /* 12704 */;
+// Module 7932 (MediaModal)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4832 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 7908 */;
+import NativePortalViewDefault from "NativePortalView" /* 7911 */;
+import MediaModalTiktokDefault from "MediaModalTiktok" /* 7939 */;
+import MediaModalWebVideoFileDefault from "MediaModalWebVideoFile" /* 7949 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 12714 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 12732 */;
+import MediaModalLoaderDefault from "MediaModalLoader" /* 12734 */;
 import noop from "module_19" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 7903 */;
+import AppFreezeStore from "AppFreezeStore" /* 7933 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 
-const useVideoControls = obj(7875);
+const useVideoControls = obj(7905);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, Modal: metroRequire, StyleSheet: closure_7, View: closure_8 } = get_ActivityIndicator);
@@ -118,18 +118,18 @@ export default function MediaModal(originLayout) {
     if (null != ref3.current[combined]) {
       return tmp6;
     } else {
-      if (tmp(7878).VideoSourceType.PORTAL === videoSourceType) {
-        let portalControls = tmp(7881).createPortalControls(portal.portal);
-        const tmpResult = tmp(7881);
-      } else if (tmp(7878).VideoSourceType.TIKTOK_IFRAME === videoSourceType) {
-        portalControls = tmp(7909).createTiktokVideoControls();
-        const tmpResult4 = tmp(7909);
-      } else if (tmp(7878).VideoSourceType.WEB_FILE_IFRAME === videoSourceType) {
-        portalControls = tmp(7919).createWebFileVideoControls();
-        const tmpResult5 = tmp(7919);
+      if (tmp(7908).VideoSourceType.PORTAL === videoSourceType) {
+        let portalControls = tmp(7911).createPortalControls(portal.portal);
+        const tmpResult = tmp(7911);
+      } else if (tmp(7908).VideoSourceType.TIKTOK_IFRAME === videoSourceType) {
+        portalControls = tmp(7939).createTiktokVideoControls();
+        const tmpResult4 = tmp(7939);
+      } else if (tmp(7908).VideoSourceType.WEB_FILE_IFRAME === videoSourceType) {
+        portalControls = tmp(7949).createWebFileVideoControls();
+        const tmpResult5 = tmp(7949);
       } else {
-        portalControls = tmp(7920).createVideoControls(tmp(7875).setPausedState);
-        const tmpResult6 = tmp(7920);
+        portalControls = tmp(7950).createVideoControls(tmp(7905).setPausedState);
+        const tmpResult6 = tmp(7950);
       }
       tmp5.current[combined] = portalControls;
       return portalControls;
@@ -174,10 +174,10 @@ export default function MediaModal(originLayout) {
     if (flag2) {
       const selectedMediaSource = MediaSourceUtil.getSelectedMediaSource(mediaViewerSyncer);
       if (null != selectedMediaSource) {
-        const result = tmp2(4801).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-        const tmp2Result = tmp2(4801);
+        const result = tmp2(4831).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+        const tmp2Result = tmp2(4831);
         const obj2 = { source: selectedMediaSource, disableDownload, shareable: tmp };
-        ActionSheetActionCreatorsDefault.openLazy(tmp2(1981)(7947, tmp3.paths), "MediaShareActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(tmp2(1981)(7977, tmp3.paths), "MediaShareActionSheet", obj2);
       }
       tmp3 = dependencyMap;
     }
@@ -226,7 +226,7 @@ export default function MediaModal(originLayout) {
         obj3.muted = tmp2;
         return createElement(NativePortalViewDefault, {});
       }
-      tmp3Result = tmp3(7881);
+      tmp3Result = tmp3(7911);
     }
     if (null != source.embedURI) {
       if (!source.isGIFV) {
@@ -258,7 +258,7 @@ export default function MediaModal(originLayout) {
       }
     }
     if (null != source.videoURI) {
-      const obj8 = { Component: tmp3(7920).VideoComponent };
+      const obj8 = { Component: tmp3(7950).VideoComponent };
       const merged5 = Object.assign(merged);
       obj8.key = key;
       obj8.pointerEvents = pointerEvents;
@@ -270,7 +270,7 @@ export default function MediaModal(originLayout) {
       const size3 = { uri: null, width: null, height: null, videoURI: null, messageId: null, channelId: null, mediaIndex: null, description: null, obscure: null, accessoryType: null, attachmentId: null };
       ({ videoURI: obj11.uri, width: obj11.width, height: obj11.height, videoURI: obj11.videoURI, messageId: obj11.messageId, channelId: obj11.channelId, mediaIndex: obj11.mediaIndex, description: obj11.description, obscure: obj11.obscure, accessoryType: obj11.accessoryType, attachmentId: obj11.attachmentId } = source);
       obj8.source = size3;
-      let tmp33 = createElement(MediaModalLoaderDefault, { Component: tmp3(7920).VideoComponent });
+      let tmp33 = createElement(MediaModalLoaderDefault, { Component: tmp3(7950).VideoComponent });
     } else {
       const uri3 = source.uri;
       if (!uri3.startsWith("assets-library://")) {

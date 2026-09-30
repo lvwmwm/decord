@@ -1,19 +1,19 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17086
+// Function ID: 17087
 // Name: FramePanelController
-// Dependencies: [19, 5063, 8664, 8665, 8667, 21, 504, 8925, 17018, 17052, 2]
+// Dependencies: [19, 5093, 8698, 8699, 8701, 21, 504, 8959, 17053, 17087, 2]
 // Exports: default
 
-// Module 17051 (FramePanelController)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8925 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17052 */;
+// Module 17086 (FramePanelController)
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8959 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17087 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import FramesStore from "FramesStore" /* 8664 */;
+import ApplicationStore from "ApplicationStore" /* 5093 */;
+import FramesStore from "FramesStore" /* 8698 */;
 
 const require = fn;
-const asLaunched = fn(8665).asLaunched;
-const ActivityPanelModes = fn(8667).ActivityPanelModes;
+const asLaunched = fn(8699).asLaunched;
+const ActivityPanelModes = fn(8701).ActivityPanelModes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");
@@ -57,5 +57,5 @@ export default function FramePanelController(children) {
     }
   }, items1);
   let obj = mainFrameId(504);
-  return jsx(mainFrameId(17018).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
+  return jsx(mainFrameId(17053).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
 };

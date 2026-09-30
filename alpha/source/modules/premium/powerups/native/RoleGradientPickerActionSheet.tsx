@@ -1,13 +1,13 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17653
+// Function ID: 17654
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 17601, 21, 4836, 576, 2105, 1370, 4800, 14324, 6737, 6736, 1115, 5447, 5459, 15074, 5602, 1092, 2]
+// Dependencies: [32, 19, 17, 17636, 21, 4866, 576, 2105, 1370, 4830, 14353, 6767, 6766, 1115, 5477, 5489, 15105, 5632, 1092, 2]
 // Exports: default
 
-// Module 17618 (RoleGradientPickerActionSheet)
+// Module 17653 (RoleGradientPickerActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14324 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14353 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,11 +16,11 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Pressable: metroRequire } = get_ActivityIndicator);
-const EnhancedRoleColorConstants = fn(17601);
+const EnhancedRoleColorConstants = fn(17636);
 ({ DEFAULT_GRADIENT_ROLE_COLORS: closure_7, GRADIENT_PRESETS: closure_8 } = EnhancedRoleColorConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { body: { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 }, gradientContainer: null, dropperContainer: null, dropper: null, gradient: null, optionContainer: null, pressable: null, selected: null, option: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.gradientContainer = { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };

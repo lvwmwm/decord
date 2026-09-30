@@ -1,10 +1,10 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 11106
+// Function ID: 11107
 // Name: useChatViewPointerEvents
 // Dependencies: [2]
 // Exports: default
 
-// Module 11070 (useChatViewPointerEvents)
+// Module 11106 (useChatViewPointerEvents)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/chat/native/useChatViewPointerEvents.android.tsx");

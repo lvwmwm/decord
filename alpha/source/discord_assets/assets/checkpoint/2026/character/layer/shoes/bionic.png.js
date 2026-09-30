@@ -1,8 +1,8 @@
-// Module ID: 5106
-// Function ID: 5107
+// Module ID: 5136
+// Function ID: 5137
 // Dependencies: [2]
 
-// Module 5106
+// Module 5136
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/bionic.png.js");

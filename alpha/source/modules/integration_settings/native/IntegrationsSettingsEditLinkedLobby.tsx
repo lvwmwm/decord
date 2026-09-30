@@ -1,13 +1,13 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16897
+// Function ID: 16898
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1372, 21, 4836, 576, 4531, 1485, 6749, 6769, 6755, 4989, 504, 10564, 7789, 1115, 4832, 8218, 5445, 1177, 1397, 6165, 6083, 2]
+// Dependencies: [19, 17, 1372, 21, 4866, 576, 4561, 1485, 6779, 6799, 6785, 5019, 504, 10598, 7819, 1115, 4862, 8249, 5475, 1177, 1397, 6195, 6113, 2]
 // Exports: default
 
-// Module 16862 (IntegrationsSettingsEditLinkedLobby)
+// Module 16897 (IntegrationsSettingsEditLinkedLobby)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { screenContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, header: { alignItems: "center", marginTop: 8, marginBottom: 32, gap: 12 }, divider: null };
 let size = { height: 1, width: 48, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 obj2.divider = size;

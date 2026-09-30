@@ -1,35 +1,13 @@
 // Module ID: 14092
 // Function ID: 14093
-// Dependencies: [14075]
+// Dependencies: [17, 14093]
 // Exports: default
 
 // Module 14092
-import emptyPromise from "emptyPromise" /* 14075 */;
+import _mod14093 from "module_14093" /* 14093 */;
+import get_ActivityIndicator from "module_17" /* 17 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export default () => (arg0) => {
-  const result = emptyPromise.assertHasLoggerPlugin(arg0);
-  closure_0 = arg0;
-  return {
-    onConnect() {
-      console.log = () => {
-        const items = [...arguments];
-        log(...items);
-        const items1 = [...items];
-        log.log.apply(items1);
-      };
-      console.warn = () => {
-        const items = [...arguments];
-        warn(...items);
-        log.warn(items[0]);
-      };
-      console.debug = () => {
-        const items = [...arguments];
-        debug(...items);
-        log.debug(items[0]);
-      };
-    }
-  };
+export default function getReactNativeVersion() {
+  return _mod14093.getReactNativeVersionWithModules(get_ActivityIndicator.Platform.constants);
 };

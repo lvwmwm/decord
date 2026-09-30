@@ -1,10 +1,10 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9849
+// Function ID: 9850
 // Name: DebugUploadManager
-// Dependencies: [5, 2045, 3, 17, 4735, 9040, 9816, 9817, 7, 9818, 9819, 1350, 4699, 9820, 9821, 9822, 9823, 2]
+// Dependencies: [5, 2045, 3, 17, 4765, 9074, 9850, 9851, 7, 9852, 9853, 1350, 4729, 9854, 9855, 9856, 9857, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 9815 (DebugUploadManager)
+// Module 9849 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

@@ -1,12 +1,12 @@
-// Module ID: 9276
-// Function ID: 9277
+// Module ID: 9310
+// Function ID: 9311
 // Name: VideoBackgroundStore
-// Dependencies: [1184, 1220, 1993, 2099, 1372, 4891, 504, 573, 2]
+// Dependencies: [1184, 1220, 1993, 2099, 1372, 4921, 504, 573, 2]
 
-// Module 9276 (VideoBackgroundStore)
+// Module 9310 (VideoBackgroundStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4921 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;

@@ -1,24 +1,24 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 11874
+// Function ID: 11875
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11257, 21, 4836, 576, 4800, 6737, 4832, 1115, 5447, 2]
+// Dependencies: [19, 17, 11293, 21, 4866, 576, 4830, 6767, 4862, 1115, 5477, 2]
 // Exports: default
 
-// Module 11840 (GroupDMNitroCapInfoActionSheet)
+// Module 11874 (GroupDMNitroCapInfoActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6767 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const number = fn(11257).MAX_GROUP_DM_NITRO_PARTICIPANTS;
+const number = fn(11293).MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, title: null, body: null, button: null };
 let obj3 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.title = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };

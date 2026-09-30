@@ -1,17 +1,17 @@
-// Module ID: 13165
-// Function ID: 13166
+// Module ID: 13192
+// Function ID: 13193
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 8789, 1074, 1374, 3, 13166, 8790, 5464, 573, 1241, 4528, 1115, 6966, 1610, 2]
+// Dependencies: [32, 5, 19, 8823, 1074, 1374, 3, 13193, 8824, 5494, 573, 1241, 4558, 1115, 6996, 1610, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 13165 (AppIconUtils)
+// Module 13192 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
-import useMountEffectDefault from "useMountEffect" /* 5464 */;
-import openUserSettings from "openUserSettings" /* 6966 */;
-import AppIconTypes from "AppIconTypes" /* 8790 */;
-import NativeAppIconModuleDefault from "NativeAppIconModule" /* 13166 */;
+import useMountEffectDefault from "useMountEffect" /* 5494 */;
+import openUserSettings from "openUserSettings" /* 6996 */;
+import AppIconTypes from "AppIconTypes" /* 8824 */;
+import NativeAppIconModuleDefault from "NativeAppIconModule" /* 13193 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -130,7 +130,7 @@ let closure_15 = async function _setAppIcon(arg0, arg1) {
   }
   return arg1;
 };
-const AppIconConstants = fn(8789);
+const AppIconConstants = fn(8823);
 ({ getDefaultIcon: metroRequire, getOfficialAlternateIcons: closure_7, getLimitedAlternateIcons: closure_8 } = AppIconConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, UserSettingsSections: c10 } = Constants);

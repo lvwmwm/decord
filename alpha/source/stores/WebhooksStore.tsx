@@ -1,13 +1,13 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16887
+// Function ID: 16888
 // Name: WebhooksStore
-// Dependencies: [16853, 12, 504, 573, 2]
+// Dependencies: [16888, 12, 504, 573, 2]
 
-// Module 16852 (WebhooksStore)
+// Module 16887 (WebhooksStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16853 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16888 */;
 
 function handleWebhookCreateUpdate(arg0) {
   ({ guildId, webhook } = arg0);

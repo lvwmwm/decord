@@ -1,14 +1,14 @@
-// Module ID: 10285
-// Function ID: 10286
+// Module ID: 10319
+// Function ID: 10320
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 4836, 576, 10274, 4832, 1115, 5447, 10286, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 10308, 4862, 1115, 5477, 10320, 2]
 
-// Module 10285 (MediaKeyboardFooter)
+// Module 10319 (MediaKeyboardFooter)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import _modDef10286 from "module_10286" /* 10286 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import _modDef10320 from "module_10320" /* 10320 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj = { container: { padding: nativeDefault.space.PX_16, height: 280, alignItems: "center" }, label: { textAlign: "center", marginBottom: 16 }, buttonWrapper: null, loadingSpinner: null };
 let obj3 = { padding: nativeDefault.space.PX_16, height: 280, alignItems: "center" };
 obj.buttonWrapper = { marginBottom: nativeDefault.space.PX_32, height: nativeDefault.space.PX_48 };
@@ -43,7 +43,7 @@ export default noop.memo(function MediaKeyboardFooter(arg0) {
     obj5.disabled = disabled;
     obj4.children = timestampProducer(components_Button_Button.Button, obj5);
     items[1] = timestampProducer(React3, obj4);
-    const obj6 = { source: _modDef10286 };
+    const obj6 = { source: _modDef10320 };
     items[2] = timestampProducer(React4, obj6);
     obj2.children = items;
     let tmp6 = React5(React3, obj2);

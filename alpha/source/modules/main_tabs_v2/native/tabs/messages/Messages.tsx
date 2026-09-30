@@ -1,15 +1,15 @@
-// Module ID: 15829
-// Function ID: 15830
+// Module ID: 15854
+// Function ID: 15855
 // Name: messages/Messages
-// Dependencies: [19, 4825, 5756, 21, 6749, 6769, 4566, 14804, 15830, 15834, 15853, 15855, 15856, 15857, 13167, 15858, 1364, 4693, 4692, 6059, 7061, 9, 14803, 1115, 15859, 8442, 576, 15835, 15861, 15863, 15908, 15909, 11544, 2]
+// Dependencies: [19, 4855, 5786, 21, 6779, 6799, 4596, 14835, 15855, 15859, 15878, 15880, 15881, 15882, 13194, 15883, 1364, 4723, 4722, 6089, 7091, 9, 14834, 1115, 15884, 8473, 576, 15860, 15886, 15888, 15933, 15934, 11580, 2]
 
-// Module 15829 (messages/Messages)
+// Module 15854 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7061 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7091 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
 
 require = fn;
 const jsxProd = fn(21);
@@ -51,23 +51,23 @@ export default noop.memo(function Messages(style) {
     if (null != dataKey) {
       if (!obj7.isAndroid()) {
         if (!AccessibilityStore.useReducedMotion) {
-          const rootNavigationRef = tmp5(4693).getRootNavigationRef();
+          const rootNavigationRef = tmp5(4723).getRootNavigationRef();
           let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
           if (tmp2) {
-            const tmp5Result4 = tmp5(4692);
-            const rootNavigationRef1 = tmp5(4693).getRootNavigationRef();
+            const tmp5Result4 = tmp5(4722);
+            const rootNavigationRef1 = tmp5(4723).getRootNavigationRef();
             let currentRoute;
             if (rootNavigationRef1 != null) {
               currentRoute = rootNavigationRef1.getCurrentRoute();
             }
             tmp2 = null != tmp5Result4.coerceGuildsRoute(currentRoute);
-            const tmp5Result5 = tmp5(4693);
+            const tmp5Result5 = tmp5(4723);
           }
           if (tmp2) {
-            const result = tmp5(6059).DeprecatedLayoutAnimation();
-            const tmp5Result6 = tmp5(6059);
+            const result = tmp5(6089).DeprecatedLayoutAnimation();
+            const tmp5Result6 = tmp5(6089);
           }
-          const tmp5Result = tmp5(4693);
+          const tmp5Result = tmp5(4723);
         }
       }
       obj7 = PlatformUtils;

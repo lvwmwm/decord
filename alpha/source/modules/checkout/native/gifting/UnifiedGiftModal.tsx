@@ -1,14 +1,14 @@
-// Module ID: 10455
-// Function ID: 10456
+// Module ID: 10489
+// Function ID: 10490
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 5039, 6587, 10456, 1115, 6102, 10457, 10488, 6749, 2]
+// Dependencies: [32, 19, 21, 5069, 6617, 10490, 1115, 6132, 10491, 10522, 6779, 2]
 // Exports: default
 
-// Module 10455 (UnifiedGiftModal)
+// Module 10489 (UnifiedGiftModal)
 import util from "util" /* 1115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import NavigatorHeader from "NavigatorHeader" /* 6102 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10456 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
+import NavigatorHeader from "NavigatorHeader" /* 6132 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10490 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

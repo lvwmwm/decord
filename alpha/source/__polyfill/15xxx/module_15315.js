@@ -1,9 +1,11 @@
 // Module ID: 15315
 // Function ID: 15316
-// Dependencies: [1121]
+// Dependencies: [7941]
 
 // Module 15315
-import registerAsset from "module_1121" /* 1121 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3ef7b97baaf789cd87cf8f96f96361db", name: "BeakerIcon", type: "png" });
+export const WebView = require("WebView").WebView;

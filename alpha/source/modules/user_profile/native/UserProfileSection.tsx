@@ -1,20 +1,20 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11282
+// Function ID: 11283
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4836, 576, 4540, 6771, 4683, 8224, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 4570, 6801, 4713, 8255, 4862, 2]
 // Exports: default
 
-// Module 11246 (UserProfileSection)
+// Module 11282 (UserProfileSection)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4540 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6771 */;
+import native from "native" /* 4570 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6801 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj2 = { titleContainer: { flexDirection: "row", marginBottom: 12, justifyContent: "space-between" }, title: { flexDirection: "row" }, section: { marginHorizontal: 12, marginTop: 12, marginBottom: 8 }, contentContainer: { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -32,8 +32,8 @@ export default function UserProfileSection(title) {
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4683).hexOpacityToRgba(tmp3(8224).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
-      const tmp3Result = tmp3(4683);
+      let borderColor = tmp3(4713).hexOpacityToRgba(tmp3(8255).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      const tmp3Result = tmp3(4713);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: null };
@@ -45,7 +45,7 @@ export default function UserProfileSection(title) {
       const obj5 = { style: tmp2.titleContainer, children: null };
       const obj6 = { style: tmp2.title, children: null };
       const obj7 = { variant: "eyebrow", accessibilityRole: "header", children: title };
-      const items1 = [React3(tmp3(4832).Text, obj7), headerIcon];
+      const items1 = [React3(tmp3(4862).Text, obj7), headerIcon];
       obj6.children = items1;
       const items2 = [tmp8(tmp9, obj6), trailingIcon];
       obj5.children = items2;

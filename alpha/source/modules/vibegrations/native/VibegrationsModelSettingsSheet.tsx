@@ -1,18 +1,18 @@
-// Module ID: 16444
-// Function ID: 16445
+// Module ID: 16473
+// Function ID: 16474
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 17, 12812, 21, 504, 5445, 576, 16424, 4832, 1115, 3715, 6784, 6736, 2]
+// Dependencies: [19, 17, 12842, 21, 504, 5475, 576, 16453, 4862, 1115, 3715, 6814, 6766, 2]
 // Exports: default
 
-// Module 16444 (VibegrationsModelSettingsSheet)
+// Module 16473 (VibegrationsModelSettingsSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6736 */;
-import ActionSheet from "ActionSheet" /* 6784 */;
-import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16424 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6766 */;
+import ActionSheet from "ActionSheet" /* 6814 */;
+import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16453 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12812 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12842 */;
 
 require = fn;
 class VibegrationsModelSettingsContent {
@@ -84,7 +84,7 @@ class VibegrationsModelSettingsContent {
   }
 }
 const View = fn(17).View;
-const sendModelSettings = fn(12812).sendModelSettings;
+const sendModelSettings = fn(12842).sendModelSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const size = fn(2);

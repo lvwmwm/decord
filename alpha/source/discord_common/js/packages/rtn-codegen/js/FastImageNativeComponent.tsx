@@ -1,9 +1,9 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6096
+// Function ID: 6097
 // Name: FastImageNativeComponent
 // Dependencies: [81, 106, 65, 2]
 
-// Module 6066 (FastImageNativeComponent)
+// Module 6096 (FastImageNativeComponent)
 import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;

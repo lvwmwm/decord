@@ -1,21 +1,21 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17123
+// Function ID: 17124
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 1094, 9587, 7438, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 1613, 1094, 9621, 7469, 2]
 // Exports: default
 
-// Module 17088 (PremiumSoundboardFeatureUpsell)
+// Module 17123 (PremiumSoundboardFeatureUpsell)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7438 */;
-import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 9587 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7469 */;
+import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 9621 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { container: null };
   const rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_12 };

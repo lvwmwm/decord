@@ -1,12 +1,12 @@
-// Module ID: 8770
-// Function ID: 8771
+// Module ID: 8804
+// Function ID: 8805
 // Name: useMessageMaxLength
-// Dependencies: [1372, 1074, 4488, 504, 2]
+// Dependencies: [1372, 1074, 4518, 504, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 8770 (useMessageMaxLength)
+// Module 8804 (useMessageMaxLength)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4518 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

@@ -1,7 +1,7 @@
 // Module ID: 2099
 // Function ID: 2100
 // Name: SelectedChannelStore
-// Dependencies: [2100, 2049, 502, 2045, 4467, 2067, 1993, 4469, 4655, 1074, 2052, 510, 12, 1370, 1086, 4692, 1101, 6899, 504, 573, 2]
+// Dependencies: [2100, 2049, 502, 2045, 4497, 2067, 1993, 4499, 4685, 1074, 2052, 510, 12, 1370, 1086, 4722, 1101, 6929, 504, 573, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2099 (SelectedChannelStore)
@@ -12,16 +12,16 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import router_utils from "router_utils" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 6899 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4722 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 6929 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import GuildChannelStore from "GuildChannelStore" /* 4497 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
 
 require = fn;
 function handleConnectionOpen(sessionId) {

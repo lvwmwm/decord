@@ -1,19 +1,19 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9101
+// Function ID: 9102
 // Name: useAvatarSpeakingColor
-// Dependencies: [19, 4825, 9068, 504, 9069, 4531, 576, 4683, 672, 2]
+// Dependencies: [19, 4855, 9102, 504, 9103, 4561, 576, 4713, 672, 2]
 // Exports: useAvatarSpeakingColor
 
-// Module 9067 (useAvatarSpeakingColor)
+// Module 9101 (useAvatarSpeakingColor)
 import _modDef672 from "module_672" /* 672 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
+import ColorUtils from "ColorUtils" /* 4713 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(9068).VAD_COLOR_MIN_CONTRAST_RATIO;
+let closure_5 = fn(9102).VAD_COLOR_MIN_CONTRAST_RATIO;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/native/useAvatarSpeakingColor.tsx");
 

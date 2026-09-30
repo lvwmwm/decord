@@ -1,15 +1,15 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15424
+// Function ID: 15425
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 9821, 5445, 6165, 6083, 4832, 15392, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4866, 576, 9855, 5475, 6195, 6113, 4862, 15425, 2]
 // Exports: default
 
-// Module 15391 (DevToolsProfilingScreen)
+// Module 15424 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 576 */;
-import Stack_Stack from "Stack/Stack" /* 5445 */;
-import TableRowGroup from "TableRowGroup" /* 6165 */;
-import ComponentProfiler from "ComponentProfiler" /* 9821 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15392 */;
+import Stack_Stack from "Stack/Stack" /* 5475 */;
+import TableRowGroup from "TableRowGroup" /* 6195 */;
+import ComponentProfiler from "ComponentProfiler" /* 9855 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15425 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: null, monospace: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -47,8 +47,8 @@ export default function DevToolsProfilingScreen() {
     let obj3 = { children: null };
     const obj4 = { title: "Component Profiler", hasIcons: false, children: null };
     const obj5 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: callback };
-    obj4.children = tmp8(tmp4(6083).TableRow, obj5);
-    let items = [tmp8(tmp4(6165).TableRowGroup, obj4), ];
+    obj4.children = tmp8(tmp4(6113).TableRow, obj5);
+    let items = [tmp8(tmp4(6195).TableRowGroup, obj4), ];
     const _Object = Object;
     const keys = Object.keys(componentRenderStats);
     items[1] = keys.map((item) => {
@@ -76,11 +76,11 @@ export default function DevToolsProfilingScreen() {
     const obj7 = { label: "No components rendered yet.", subLabel: null };
     const obj8 = { variant: "text-xs/medium", color: "text-subtle", children: null };
     const obj9 = { variant: "text-xs/semibold", style: tmp3.monospace, children: "<ComponentProfiler />" };
-    const items1 = ["Make sure you wrap your component in ", tmp8(tmp4(4832).Text, obj9), " to enable measurements."];
+    const items1 = ["Make sure you wrap your component in ", tmp8(tmp4(4862).Text, obj9), " to enable measurements."];
     obj8.children = items1;
-    obj7.subLabel = tmp10(tmp4(4832).Text, obj8);
-    obj6.children = tmp8(tmp4(6083).TableRow, obj7);
-    tmp8Result = tmp8(tmp4(6165).TableRowGroup, obj6);
+    obj7.subLabel = tmp10(tmp4(4862).Text, obj8);
+    obj6.children = tmp8(tmp4(6113).TableRow, obj7);
+    tmp8Result = tmp8(tmp4(6195).TableRowGroup, obj6);
   }
   const obj10 = { spacing: 16, children: null };
   const items2 = [tmp8Result, closure_5(DevToolsProfilingUseStateFromStores.DevToolsProfilingUseStateFromStores, {})];

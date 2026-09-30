@@ -1,12 +1,12 @@
-// Module ID: 7965
-// Function ID: 7966
+// Module ID: 7995
+// Function ID: 7996
 // Name: ICYMIExperiment
-// Dependencies: [7966, 1435, 7968, 2]
+// Dependencies: [7996, 1435, 7998, 2]
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 7965 (ICYMIExperiment)
-import useLabFeatureDefault from "useLabFeature" /* 7968 */;
-import LabFeatureStore from "LabFeatureStore" /* 7966 */;
+// Module 7995 (ICYMIExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 7998 */;
+import LabFeatureStore from "LabFeatureStore" /* 7996 */;
 
 const hide_icymi_tab = "hide_icymi_tab";
 let ApexExperiment = fn(1435);

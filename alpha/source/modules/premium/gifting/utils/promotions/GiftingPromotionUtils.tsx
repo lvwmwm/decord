@@ -1,14 +1,14 @@
-// Module ID: 10364
-// Function ID: 10365
+// Module ID: 10398
+// Function ID: 10399
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 10295, 1374, 504, 10365, 10369, 10370, 4654, 2029, 2]
+// Dependencies: [32, 19, 10329, 1374, 504, 10399, 10403, 10404, 4684, 2029, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10364 (GiftingPromotionUtils)
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10369 */;
+// Module 10398 (GiftingPromotionUtils)
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10403 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10295 */;
+import PromotionsStore from "PromotionsStore" /* 10329 */;
 
 const require = globalThis.__r;
 
@@ -180,7 +180,7 @@ export const combinePromotionStyles = function combinePromotionStyles(background
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
   const GiftPromotionReminderExperiment = GiftPromotionReminderExperiment2.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == PromotionsStore.getMarketingComponentByType(tmp(10370).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == PromotionsStore.getMarketingComponentByType(tmp(10404).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();
@@ -190,13 +190,13 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       }
       let tmp5 = null != id;
       if (tmp5) {
-        let isDismissed = tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmp(4684).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
-          isDismissed = !tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
-          const tmpResult2 = tmp(4654);
+          isDismissed = !tmp(4684).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          const tmpResult2 = tmp(4684);
         }
         tmp5 = isDismissed;
-        const tmpResult = tmp(4654);
+        const tmpResult = tmp(4684);
       }
       return tmp5;
     }

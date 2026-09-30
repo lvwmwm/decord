@@ -1,11 +1,11 @@
-// Module ID: 6583
-// Function ID: 6584
+// Module ID: 6613
+// Function ID: 6614
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [1255, 6584, 2]
+// Dependencies: [1255, 6614, 2]
 
-// Module 6583 (SettingSearchSessionAnalyticsManager)
+// Module 6613 (SettingSearchSessionAnalyticsManager)
 import v1 from "v1" /* 1255 */;
-import Tracking from "Tracking" /* 6584 */;
+import Tracking from "Tracking" /* 6614 */;
 import size from "module_2" /* 2 */;
 
 class SettingSearchSessionAnalyticsManager {

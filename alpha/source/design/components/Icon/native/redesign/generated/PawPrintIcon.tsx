@@ -1,13 +1,13 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15371
+// Function ID: 15372
 // Name: PawPrintIcon
-// Dependencies: [19, 21, 576, 4530, 15339, 2]
+// Dependencies: [19, 21, 576, 4560, 15372, 2]
 // Exports: PawPrintIcon
 
-// Module 15338 (PawPrintIcon)
+// Module 15371 (PawPrintIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod15339 from "module_15339" /* 15339 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod15372 from "module_15372" /* 15372 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PawPrintIcon = function PawPrintIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15339, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15372, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

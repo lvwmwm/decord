@@ -1,10 +1,10 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9467
+// Function ID: 9468
 // Name: StartEventUtils
-// Dependencies: [5, 2049, 2045, 2067, 2051, 1074, 9179, 38, 8019, 9146, 2]
+// Dependencies: [5, 2049, 2045, 2067, 2051, 1074, 9213, 38, 8049, 9180, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9433 (StartEventUtils)
+// Module 9467 (StartEventUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;

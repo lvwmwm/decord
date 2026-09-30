@@ -1,14 +1,14 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13125
+// Function ID: 13126
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4497, 1074, 4488, 1271, 573, 4735, 38, 5258, 2]
+// Dependencies: [109, 32, 5, 19, 4527, 1074, 4518, 1271, 573, 4765, 38, 5288, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 13098 (PremiumSubscriptionInvoice)
+// Module 13125 (PremiumSubscriptionInvoice)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import InvoiceRecord from "InvoiceRecord" /* 4497 */;
+import InvoiceRecord from "InvoiceRecord" /* 4527 */;
 
 const require = fn;
 function createSubscriptionInvoicePreview() {

@@ -1,12 +1,12 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6062
+// Function ID: 6063
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1074, 21, 1110, 6033, 2014, 6034, 2]
+// Dependencies: [32, 19, 1074, 21, 1110, 6063, 2014, 6064, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6032 (AppWindowContext)
-import WindowIdUtils2 from "WindowIdUtils" /* 6033 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 6034 */;
+// Module 6062 (AppWindowContext)
+import WindowIdUtils2 from "WindowIdUtils" /* 6063 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6064 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ require = fn;
 const jsx = fn(21).jsx;
 let componentDispatcher = new fn(1110).ComponentDispatcher();
 const obj = { appContext: fn(1074).AppContext.APP, renderWindow: window, windowDispatch: componentDispatcher, windowId: null };
-const WindowIdUtils = fn(6033);
+const WindowIdUtils = fn(6063);
 obj.windowId = WindowIdUtils.getMainWindowId();
 const context = noop.createContext(obj);
 const map = new Map();

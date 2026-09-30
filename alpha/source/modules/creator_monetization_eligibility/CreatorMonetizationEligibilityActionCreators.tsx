@@ -1,10 +1,10 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17737
+// Function ID: 17738
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1074, 1349, 1271, 573, 6750, 2]
+// Dependencies: [5, 1074, 1349, 1271, 573, 6780, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 17702 (CreatorMonetizationEligibilityActionCreators)
+// Module 17737 (CreatorMonetizationEligibilityActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

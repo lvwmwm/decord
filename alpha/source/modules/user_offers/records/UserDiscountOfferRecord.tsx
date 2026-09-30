@@ -1,11 +1,11 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7702
+// Function ID: 7703
 // Name: UserDiscountOfferRecord
-// Dependencies: [1387, 7037, 2]
+// Dependencies: [1387, 7067, 2]
 
-// Module 7672 (UserDiscountOfferRecord)
+// Module 7702 (UserDiscountOfferRecord)
 import Record from "Record" /* 1387 */;
-import DiscountRecord from "DiscountRecord" /* 7037 */;
+import DiscountRecord from "DiscountRecord" /* 7067 */;
 
 let UserDiscountOfferRecord;
 class UserDiscountOfferRecord extends tmp2 {

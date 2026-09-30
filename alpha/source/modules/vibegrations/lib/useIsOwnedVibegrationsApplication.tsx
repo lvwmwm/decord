@@ -1,21 +1,21 @@
-// Module ID: 8659
-// Function ID: 8660
+// Module ID: 8693
+// Function ID: 8694
 // Name: useIsOwnedVibegrationsApplication
-// Dependencies: [19, 2067, 8660, 559, 504, 5536, 8661, 2]
+// Dependencies: [19, 2067, 8694, 559, 504, 5566, 8695, 2]
 // Exports: default
 
-// Module 8659 (useIsOwnedVibegrationsApplication)
+// Module 8693 (useIsOwnedVibegrationsApplication)
 import BackoffDefault from "Backoff" /* 559 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5536 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8661 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5566 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8695 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8660 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8694 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const isProjectOwner = fn(8660).isProjectOwner;
+const isProjectOwner = fn(8694).isProjectOwner;
 let closure_6 = new BackoffDefault(30000, 300000);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useIsOwnedVibegrationsApplication.tsx");

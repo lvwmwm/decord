@@ -1,18 +1,18 @@
-// Module ID: 5435
-// Function ID: 5436
+// Module ID: 5465
+// Function ID: 5466
 // Name: VisualEffectView
-// Dependencies: [19, 17, 5436, 1074, 21, 1364, 5437, 4531, 576, 5440, 2]
+// Dependencies: [19, 17, 5466, 1074, 21, 1364, 5467, 4561, 576, 5470, 2]
 // Exports: isBlurDisabled, isBlurThemeLight, normalizeBlurTheme
 
-// Module 5435 (VisualEffectView)
+// Module 5465 (VisualEffectView)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
-import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5440 */;
+import useToken from "useToken" /* 4561 */;
+import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5470 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(5436).useVisualEffectViewOverrides;
+let closure_4 = fn(5466).useVisualEffectViewOverrides;
 const ThemeTypes = fn(1074).ThemeTypes;
 const jsx = fn(21).jsx;
 const PlatformUtils = fn(1364);
@@ -75,7 +75,7 @@ export default noop.forwardRef(function VisualEffectView(blurAmount, ref) {
     let tmp18 = null == android_blurTargetViewNativeId;
     if (!tmp18) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !tmp6(5440).MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !tmp6(5470).MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp18 = true === android_softwareBlurDisabled;
     }
@@ -111,8 +111,8 @@ export default noop.forwardRef(function VisualEffectView(blurAmount, ref) {
     obj5.tintColor = tintColorOverride;
     obj5.blurTargetViewNativeId = android_blurTargetViewNativeId;
     const merged2 = Object.assign(merged);
-    tmp19Result = tmp19(tmp8(5440), obj5);
-    const tmp8Result = tmp8(5440);
+    tmp19Result = tmp19(tmp8(5470), obj5);
+    const tmp8Result = tmp8(5470);
   } else {
     const obj6 = { ref, blurEffectName: null, blurAmount: null, tintColor: null };
     if (blurEffectNameOverride != null) {
@@ -130,7 +130,7 @@ export default noop.forwardRef(function VisualEffectView(blurAmount, ref) {
       const merged3 = Object.assign(merged);
       tmp19Result = tmp19(tmp20, obj6);
     } else {
-      if (!tmp6(5437).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
+      if (!tmp6(5467).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
         if (tmp3) {
           let DARK3 = ThemeTypes.LIGHT;
         } else {

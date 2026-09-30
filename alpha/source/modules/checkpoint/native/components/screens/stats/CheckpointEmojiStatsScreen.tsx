@@ -1,12 +1,12 @@
-// Module ID: 15443
-// Function ID: 15444
+// Module ID: 15476
+// Function ID: 15477
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [21, 15440, 2]
+// Dependencies: [21, 15473, 2]
 // Exports: default
 
-// Module 15443 (CheckpointEmojiStatsScreen)
+// Module 15476 (CheckpointEmojiStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15440 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15473 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

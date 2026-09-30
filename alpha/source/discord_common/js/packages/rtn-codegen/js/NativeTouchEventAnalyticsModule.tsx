@@ -1,9 +1,9 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14311
+// Function ID: 14312
 // Name: NativeTouchEventAnalyticsModule
 // Dependencies: [17, 2]
 
-// Module 14282 (NativeTouchEventAnalyticsModule)
+// Module 14311 (NativeTouchEventAnalyticsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14850
+// Function ID: 14851
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1074, 21, 4836, 576, 2021, 8752, 1115, 8519, 11472, 8700, 14820, 4832, 10868, 6085, 2111, 5447, 2]
+// Dependencies: [17, 1074, 21, 4866, 576, 2021, 8786, 1115, 8553, 11508, 8734, 14851, 4862, 10903, 6115, 2111, 5477, 2]
 // Exports: default
 
-// Module 14819 (QuestDisclosureModalInner)
+// Module 14850 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Text_Text from "Text/Text" /* 4862 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4866 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,22 +42,22 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const setting = DropsOptedOut.useSetting();
   let obj = { icon: null, text: null };
   if (setting) {
-    obj.icon = tmp5(tmp2(8752).ServerIcon, { size: "xs" });
+    obj.icon = tmp5(tmp2(8786).ServerIcon, { size: "xs" });
     const intl4 = tmp2(1115).intl;
     obj.text = intl4.string(tmp2(1115).t["2bL0wT"]);
     let items = [obj];
     let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj.icon = tmp5(tmp2(8519).GlobeEarthIcon, { size: "xs" });
+    obj.icon = tmp5(tmp2(8553).GlobeEarthIcon, { size: "xs" });
     const intl = tmp2(1115).intl;
     obj.text = intl.string(tmp2(1115).t.xQSdPv);
     items1 = [obj, , ];
-    const obj2 = { icon: tmp5(tmp2(11472).UserIcon, { size: "xs" }), text: null };
+    const obj2 = { icon: tmp5(tmp2(11508).UserIcon, { size: "xs" }), text: null };
     const intl2 = tmp2(1115).intl;
     obj2.text = intl2.string(tmp2(1115).t.mYt7hQ);
     items1[1] = obj2;
-    const obj3 = { icon: tmp5(tmp2(8700).GameControllerIcon, { size: "xs" }), text: null };
+    const obj3 = { icon: tmp5(tmp2(8734).GameControllerIcon, { size: "xs" }), text: null };
     const intl3 = tmp2(1115).intl;
     obj3.text = intl3.string(tmp2(1115).t.XAsWxQ);
     items1[2] = obj3;
@@ -90,7 +90,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
           return React5(React4, obj, index);
         })
     };
-    isTargetedDisclosure = tmp6(tmp2(6085).Card, obj7);
+    isTargetedDisclosure = tmp6(tmp2(6115).Card, obj7);
   }
   items2[2] = isTargetedDisclosure;
   const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };

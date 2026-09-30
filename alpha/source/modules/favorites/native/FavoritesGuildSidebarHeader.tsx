@@ -1,18 +1,18 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16120
+// Function ID: 16121
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16009, 21, 4836, 576, 9852, 10608, 4800, 9856, 1981, 9855, 4832, 1115, 3361, 5560, 5581, 5551, 5445, 2]
+// Dependencies: [19, 17, 16034, 21, 4866, 576, 9886, 10642, 4830, 9890, 1981, 9889, 4862, 1115, 3361, 5590, 5611, 5581, 5475, 2]
 // Exports: default
 
-// Module 16091 (FavoritesGuildSidebarHeader)
+// Module 16120 (FavoritesGuildSidebarHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3361 from "module_3361" /* 3361 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5445 */;
-import ChatIcon from "ChatIcon" /* 5551 */;
-import TextIcon from "TextIcon" /* 5560 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5581 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import Stack_Stack from "Stack/Stack" /* 5475 */;
+import ChatIcon from "ChatIcon" /* 5581 */;
+import TextIcon from "TextIcon" /* 5590 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5611 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -67,10 +67,10 @@ function PlaceholderRows() {
   return React5(View, obj);
 }
 const View = fn(17).View;
-let closure_5 = fn(16009).useHasFavoritesGuildSuggestions;
+let closure_5 = fn(16034).useHasFavoritesGuildSuggestions;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { copy: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, divider: null, placeholderRows: null, placeholderRow: null, placeholderBar: null, placeholderBarShort: null, placeholderBarLong: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.divider = { height: 1, marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };

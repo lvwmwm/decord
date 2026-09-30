@@ -1,13 +1,13 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8084
+// Function ID: 8085
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1380, 1364, 8055, 8056, 2]
+// Dependencies: [5, 32, 19, 1380, 1364, 8085, 8086, 2]
 // Exports: getAvailableMethodsV2, useAvailableMethodsV2
 
-// Module 8054 (AgeVerificationMethodAvailability)
+// Module 8084 (AgeVerificationMethodAvailability)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8055 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8056 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8085 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8086 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

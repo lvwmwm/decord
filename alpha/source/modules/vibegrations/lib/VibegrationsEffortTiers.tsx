@@ -1,13 +1,13 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16454
+// Function ID: 16455
 // Name: VibegrationsEffortTiers
-// Dependencies: [109, 16426, 1115, 3715, 2]
+// Dependencies: [109, 16455, 1115, 3715, 2]
 // Exports: vibegrationsCeilingSupportsFast, vibegrationsNormalizeFast, vibegrationsPickTierModel, vibegrationsTierDescription, vibegrationsTierLabel, vibegrationsTierModel, vibegrationsWithTier
 
-// Module 16425 (VibegrationsEffortTiers)
+// Module 16454 (VibegrationsEffortTiers)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16426 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16455 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;

@@ -1,8 +1,8 @@
-// Module ID: 8480
-// Function ID: 8481
-// Dependencies: [2, 8481, 8488]
+// Module ID: 8511
+// Function ID: 8512
+// Dependencies: [2, 8512, 8519, 8520]
 
-// Module 8480
+// Module 8511
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -12,7 +12,11 @@ for (const key10018 in require("useFetchVirtualCurrencyBalance")) {
   arg5[key10018] = require("useFetchVirtualCurrencyBalance")[key10018];
   continue;
 }
-for (const key10022 in require("useRedeemVirtualCurrency")) {
-  arg5[key10022] = require("useRedeemVirtualCurrency")[key10022];
+for (const key10022 in require("useFetchVirtualCurrencyTotalRedeemed")) {
+  arg5[key10022] = require("useFetchVirtualCurrencyTotalRedeemed")[key10022];
+  continue;
+}
+for (const key10026 in require("useRedeemVirtualCurrency")) {
+  arg5[key10026] = require("useRedeemVirtualCurrency")[key10026];
   continue;
 }

@@ -1,13 +1,13 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17739
+// Function ID: 17740
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1074, 17705, 17706, 1115, 2111, 4519, 17707, 2]
+// Dependencies: [5, 19, 1074, 17740, 17741, 1115, 2111, 4549, 17742, 2]
 // Exports: default
 
-// Module 17704 (useCreatorMonetizationEligibilityItems)
+// Module 17739 (useCreatorMonetizationEligibilityItems)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import formatDurationFromDaysDefault from "formatDurationFromDays" /* 17707 */;
+import formatDurationFromDaysDefault from "formatDurationFromDays" /* 17742 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -139,7 +139,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = onEligibilityBecameStale(4519);
+          const tmp = onEligibilityBecameStale(4549);
           return tmp(onEligibilityBecameStale(2111).getSubmitRequestURL());
         };
       }

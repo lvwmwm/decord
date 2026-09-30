@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8049
+// Function ID: 8050
 // Name: StageInstanceActionCreators
 // Dependencies: [5, 1074, 1271, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8019 (StageInstanceActionCreators)
+// Module 8049 (StageInstanceActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

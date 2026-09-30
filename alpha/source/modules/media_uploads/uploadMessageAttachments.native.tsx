@@ -1,12 +1,12 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 7451
+// Function ID: 7452
 // Name: uploadMessageAttachments
-// Dependencies: [5, 7422, 7423, 5058, 573, 2]
+// Dependencies: [5, 7452, 7453, 5088, 573, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7421 (uploadMessageAttachments)
+// Module 7451 (uploadMessageAttachments)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploadStore from "UploadStore" /* 7422 */;
+import UploadStore from "UploadStore" /* 7452 */;
 
 const require = fn;
 let closure_6 = async function _uploadMessageAttachments(arg0, value) {

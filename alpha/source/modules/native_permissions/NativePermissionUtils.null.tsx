@@ -1,10 +1,10 @@
-// Module ID: 5621
-// Function ID: 5622
+// Module ID: 5651
+// Function ID: 5652
 // Name: requestPermissionCore
-// Dependencies: [5622, 2]
+// Dependencies: [5652, 2]
 
-// Module 5621 (requestPermissionCore)
-import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 5622 */;
+// Module 5651 (requestPermissionCore)
+import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 5652 */;
 import size from "module_2" /* 2 */;
 
 const NativePermissionBaseUtils = NativePermissionBaseUtils2.NativePermissionBaseUtils;

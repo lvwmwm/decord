@@ -1,17 +1,17 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 6952
+// Function ID: 6953
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5485, 5487, 1074, 1084, 1271, 5494, 573, 6923, 4736, 6924, 1241, 2026, 12, 5369, 1115, 6925, 2]
+// Dependencies: [5, 5515, 5517, 1074, 1084, 1271, 5524, 573, 6953, 4766, 6954, 1241, 2026, 12, 5399, 1115, 6955, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 6922 (SoundboardActionCreators)
+// Module 6952 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5369 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5485 */;
+import SoundboardStore from "SoundboardStore" /* 5515 */;
 
 const require = globalThis.__r;
 
@@ -69,7 +69,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  const guildIdsToFetchSoundsFor = SOUNDBOARD_SOUNDS_RECEIVED(6924).getGuildIdsToFetchSoundsFor();
+  const guildIdsToFetchSoundsFor = SOUNDBOARD_SOUNDS_RECEIVED(6954).getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
   } else {
@@ -87,7 +87,7 @@ function _maybeFetchGuildSoundboardSounds() {
     DispatcherDefault.dispatch(obj4);
     return promise;
   }
-  const obj = SOUNDBOARD_SOUNDS_RECEIVED(6924);
+  const obj = SOUNDBOARD_SOUNDS_RECEIVED(6954);
 }
 let closure_14 = async function _maybeFetchSoundboardSounds() {
   closure_3 = tmp3;
@@ -395,7 +395,7 @@ let closure_18 = async function _fetchSoundGuildData(arg0, value) {
     }
   }
 };
-const DEFAULT_SOUND_GUILD_ID = fn(5487).DEFAULT_SOUND_GUILD_ID;
+const DEFAULT_SOUND_GUILD_ID = fn(5517).DEFAULT_SOUND_GUILD_ID;
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const UserSettingsConstants = fn(1084);

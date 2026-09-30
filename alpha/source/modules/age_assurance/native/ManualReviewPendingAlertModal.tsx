@@ -1,13 +1,13 @@
-// Module ID: 8210
-// Function ID: 8211
+// Module ID: 8241
+// Function ID: 8242
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 5375, 1115, 3103, 5375, 2]
+// Dependencies: [19, 21, 5405, 1115, 3103, 5405, 2]
 // Exports: default
 
-// Module 8210 (ManualReviewPendingAlertModal)
+// Module 8241 (ManualReviewPendingAlertModal)
 import util from "util" /* 1115 */;
 import _modDef3103 from "module_3103" /* 3103 */;
-import AlertModal from "AlertModal" /* 5375 */;
+import AlertModal from "AlertModal" /* 5405 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 10758
+// Function ID: 10759
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4825, 504, 7885, 2]
+// Dependencies: [32, 19, 4855, 504, 7915, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 10724 (useVirtualCurrencyBalanceAnimationData)
+// Module 10758 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 const require = fn;
 const size = fn(2);

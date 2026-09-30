@@ -1,12 +1,12 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11971
+// Function ID: 11972
 // Name: GuildOnboardingHomeTypes
-// Dependencies: [2045, 1074, 1370, 4474, 2]
+// Dependencies: [2045, 1074, 1370, 4504, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 11937 (GuildOnboardingHomeTypes)
+// Module 11971 (GuildOnboardingHomeTypes)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;

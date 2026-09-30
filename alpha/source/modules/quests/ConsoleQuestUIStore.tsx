@@ -1,9 +1,9 @@
-// Module ID: 7282
-// Function ID: 7283
+// Module ID: 7312
+// Function ID: 7313
 // Name: ConsoleQuestUIStore
 // Dependencies: [560, 2]
 
-// Module 7282 (ConsoleQuestUIStore)
+// Module 7312 (ConsoleQuestUIStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

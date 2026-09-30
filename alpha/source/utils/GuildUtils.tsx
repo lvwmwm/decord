@@ -1,14 +1,14 @@
-// Module ID: 5998
-// Function ID: 5999
+// Module ID: 6028
+// Function ID: 6029
 // Name: GuildUtils
-// Dependencies: [2067, 1372, 1439, 1091, 5999, 4678, 1115, 2]
+// Dependencies: [2067, 1372, 1439, 1091, 6029, 4708, 1115, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5998 (GuildUtils)
+// Module 6028 (GuildUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
-import UserUtilsAll from "UserUtils" /* 4678 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
+import UserUtilsAll from "UserUtils" /* 4708 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6029 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 import priv from "priv" /* 1439 */;

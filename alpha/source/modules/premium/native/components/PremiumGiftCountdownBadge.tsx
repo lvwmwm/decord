@@ -1,20 +1,20 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10423
+// Function ID: 10424
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 1364, 4862, 2]
 // Exports: default
 
-// Module 10389 (PremiumGiftCountdownBadge)
+// Module 10423 (PremiumGiftCountdownBadge)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Text_Text from "Text/Text" /* 4862 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { badge: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, text: null };
   const obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };

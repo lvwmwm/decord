@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16623
+// Function ID: 16624
 // Name: useVibegrationsElapsedMs
 // Dependencies: [32, 19, 2]
 // Exports: useVibegrationsElapsedMs
 
-// Module 16587 (useVibegrationsElapsedMs)
+// Module 16623 (useVibegrationsElapsedMs)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

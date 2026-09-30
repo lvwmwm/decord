@@ -1,10 +1,10 @@
-// Module ID: 8777
-// Function ID: 8778
+// Module ID: 8811
+// Function ID: 8812
 // Name: buildFileSizeLimitEventProperties
 // Dependencies: [2]
 // Exports: buildFileSizeLimitEventProperties
 
-// Module 8777 (buildFileSizeLimitEventProperties)
+// Module 8811 (buildFileSizeLimitEventProperties)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/buildFileSizeLimitEventProperties.tsx");

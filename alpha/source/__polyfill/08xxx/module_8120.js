@@ -1,16 +1,20 @@
 // Module ID: 8120
 // Function ID: 8121
-// Dependencies: [41, 42, 93, 95, 98, 8090, 8113]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8114, 8121, 8128, 8129, 8130]
 
 // Module 8120
-import _modDef8113 from "module_8113" /* 8113 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import appendTransformPropsDefault from "appendTransformProps" /* 8114 */;
+import extractPropsDefault from "extractProps" /* 8121 */;
+import _modDef8130 from "module_8130" /* 8130 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const FeDiffuseLighting = arg1;
+const _modDef8129 = tmp4(8129);
+const G = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,38 +34,85 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDiffuseLighting {
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class G {
   constructor() {
     self = this;
-    tmp = c2(this, FeDiffuseLighting);
-    tmp2 = closure_4;
-    obj = closure_4(FeDiffuseLighting);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = closure_3(this, G);
+    items1 = [...items];
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(G);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items1);
     }
-    return tmp3(self, constructResult);
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      matrix = matrix.matrix;
+      let tmp = !matrix;
+      if (!matrix) {
+        tmp = appendTransformPropsDefault(matrix);
+      }
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(matrix);
+      }
+    };
+    return tmp3Result;
   }
 }
-_inherits(FeDiffuseLighting, _modDef8113);
+_inherits(G, _modDef8130);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeDiffuseLighting(8090).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const props = this.props;
+    const propsAndStylesResult = G(8121).propsAndStyles(props);
+    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
+    const obj = G(8121);
+    const extractFontResult = G(8128).extractFont(propsAndStylesResult);
+    if (typeof hasProps === "function") {
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        let flag = true;
+        if (flag) {
+          tmp5.font = extractFontResult;
+        }
+        const obj3 = {
+          ref(arg0) {
+                return self.refMethod(arg0);
+              }
+        };
+        const merged = Object.assign(tmp5);
+        obj3.children = props.children;
+        return jsx(_modDef8129, {
+          ref(arg0) {
+                return self.refMethod(arg0);
+              }
+        });
+      }
+      flag = false;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   }
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(FeDiffuseLighting, items);
-importDefaultResultResult.displayName = "FeDiffuseLighting";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
+let items = [entry];
+const importDefaultResultResult = _createClass(G, items);
+importDefaultResultResult.displayName = "G";
+function hasProps(arg0) {
+
+}
 
 export default importDefaultResultResult;

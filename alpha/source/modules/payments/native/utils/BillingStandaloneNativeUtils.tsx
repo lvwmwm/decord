@@ -1,15 +1,15 @@
-// Module ID: 6991
-// Function ID: 6992
+// Module ID: 7021
+// Function ID: 7022
 // Name: BillingStandaloneNativeUtils
-// Dependencies: [4815, 1074, 3, 6992, 6993, 1610, 1094, 4525, 2]
+// Dependencies: [4845, 1074, 3, 7022, 7023, 1610, 1094, 4555, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 6991 (BillingStandaloneNativeUtils)
+// Module 7021 (BillingStandaloneNativeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1074 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import PaymentConstants from "PaymentConstants" /* 4815 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 6992 */;
+import LinkingDefault from "Linking" /* 4555 */;
+import PaymentConstants from "PaymentConstants" /* 4845 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7022 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

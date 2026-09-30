@@ -1,54 +1,54 @@
-// Module ID: 17592
-// Function ID: 17593
+// Module ID: 17627
+// Function ID: 17628
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 1182, 2103, 502, 4754, 2102, 2067, 4469, 6715, 17593, 17594, 1074, 21, 4836, 576, 6003, 1241, 17595, 504, 15951, 9213, 1485, 6530, 4474, 5016, 17596, 17605, 17606, 6165, 1115, 5602, 11802, 4832, 4685, 17607, 17608, 17609, 17610, 6065, 5447, 17611, 6961, 12460, 1364, 17603, 5999, 6716, 6637, 8218, 1177, 9200, 16190, 6627, 2]
+// Dependencies: [32, 19, 17, 1182, 2103, 502, 4784, 2102, 2067, 4499, 6745, 17628, 17629, 1074, 21, 4866, 576, 6033, 1241, 17630, 504, 15976, 9247, 1485, 6560, 4504, 5046, 17631, 17640, 17641, 6195, 1115, 5632, 11836, 4862, 4715, 17642, 17643, 17644, 17645, 6095, 5477, 17646, 6991, 12490, 1364, 17638, 6029, 6746, 6667, 8249, 1177, 9234, 16219, 6657, 2]
 // Exports: default
 
-// Module 17592 (GuildSettingsRoles)
+// Module 17627 (GuildSettingsRoles)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import shared from "shared" /* 4685 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import components_Button_Button from "components/Button/Button" /* 5447 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5999 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import TableRowGroup from "TableRowGroup" /* 6165 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6530 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6716 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9213 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 15951 */;
-import SortableListViewDefault from "SortableListView" /* 16190 */;
-import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17595 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17603 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17605 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17606 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17611 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
+import shared from "shared" /* 4715 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
+import components_Button_Button from "components/Button/Button" /* 5477 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6029 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import TableRowGroup from "TableRowGroup" /* 6195 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6560 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6746 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 15976 */;
+import SortableListViewDefault from "SortableListView" /* 16219 */;
+import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17630 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17638 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17640 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17641 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17646 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4784 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6715 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17593 */;
-import TextStyles from "TextStyles" /* 6003 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6745 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17628 */;
+import TextStyles from "TextStyles" /* 6033 */;
 
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17596);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17631);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, StyleSheet } = get_ActivityIndicator);
 const isEveryoneRole = fn(2103).isEveryoneRole;
-let closure_16 = fn(17594).GuildSettingsRoleEditSections;
+let closure_16 = fn(17629).GuildSettingsRoleEditSections;
 const Constants = fn(1074);
 ({ GuildSettingsSections: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1 }, scrollContainer: { paddingHorizontal: 12 }, searchWrapper: { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 }, subheaderContainer: null, emptySubheaderContainer: null, emptyIlloContainer: null, emptyIllo: null, emptyIlloLarge: null, emptySubheaderBody: null, subheader: null, subheaderBody: null, subheaderButton: null, subheaderDescription: null, divider: null, everyoneWrapper: null, edittingRolesHeader: null, rolesHeader: null, reorderButton: null, reorderButtonText: null, rolesBody: null, emptyRolesIcon: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 };
 obj2.subheaderContainer = { paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
@@ -150,7 +150,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   highestRole = stateFromStoresObject.highestRole;
   closure_129_0 = ref;
   let obj4 = guildId(504);
-  const guildSettingsRolesManagerState = guildId(17595).useGuildSettingsRolesManagerState((roleJustCreated) => roleJustCreated.roleJustCreated);
+  const guildSettingsRolesManagerState = guildId(17630).useGuildSettingsRolesManagerState((roleJustCreated) => roleJustCreated.roleJustCreated);
   closure_129_1 = guildSettingsRolesManagerState;
   let items2 = [ref, guildSettingsRolesManagerState];
   const layoutEffect = guild.useLayoutEffect(() => {
@@ -176,7 +176,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     }
   }, items2);
   closure_130_0 = guildId;
-  let obj5 = guildId(17595);
+  let obj5 = guildId(17630);
   let items3 = [highestRole, sorting];
   const stateFromStoresObject1 = guildId(504).useStateFromStoresObject(items3, () => {
     guild = GuildStore.getGuild(guildId);
@@ -369,13 +369,13 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         obj4.onPress = callback5;
         obj4.style = tmp3.reorderButton;
         const obj5 = { color: nativeDefault.colors.TEXT_LINK, size: "sm" };
-        const items2 = [tmp6(tmp7(11802).ArrowsUpDownIcon, obj5), ];
+        const items2 = [tmp6(tmp7(11836).ArrowsUpDownIcon, obj5), ];
         const obj6 = { style: tmp3.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: null };
         const intl3 = tmp7(1115).intl;
         obj6.children = intl3.string(tmp7(1115).t["0dOFq+"]);
-        items2[1] = tmp6(tmp7(4832).Text, obj6);
+        items2[1] = tmp6(tmp7(4862).Text, obj6);
         obj4.children = items2;
-        tmpResult = tmp(tmp7(5602).PressableOpacity, obj4);
+        tmpResult = tmp(tmp7(5632).PressableOpacity, obj4);
       }
     }
     items1[1] = tmpResult;
@@ -386,7 +386,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       const obj7 = { style: tmp3.rolesBody, variant: "text-sm/medium", color: "interactive-text-default", children: null };
       const intl4 = tmp7(1115).intl;
       obj7.children = intl4.string(tmp7(1115).t.nHcwVl);
-      tmp6Result = tmp6(tmp7(4832).Text, obj7);
+      tmp6Result = tmp6(tmp7(4862).Text, obj7);
     }
     children[1] = tmp6Result;
     return __initData2(timestampProducer, { children });
@@ -398,16 +398,16 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp4 = dependencyMap;
     if (closure_3) {
       if (isThemeDarkResult) {
-        tmp4 = 17607;
+        tmp4 = 17642;
         let tmp3Result = tmp3(tmp4);
       } else {
-        tmp3Result = tmp3(17608);
+        tmp3Result = tmp3(17643);
       }
     } else {
       if (isThemeDarkResult) {
-        let tmp3Result2 = tmp3(17609);
+        let tmp3Result2 = tmp3(17644);
       } else {
-        tmp3Result2 = tmp3(17610);
+        tmp3Result2 = tmp3(17645);
       }
       if (hasRoles) {
         const items = [closure_1.subheaderContainer, ];
@@ -499,7 +499,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       return hasRoles(callback2, {});
     } else {
       role = role.role;
-      const obj = navigation(4474);
+      const obj = navigation(4504);
       const diff = roleData.length - 1;
       const obj2 = { sorting, isEveryoneRole: null, role: null, locked: null, guildId: null, numMembers: null, isFirstRole: null, isLastRole: null, onPress: null, onLongPress: null, onMoveUp: null, onMoveDown: null };
       let tmp3 = null != tmp;
@@ -535,7 +535,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         };
       }
       obj2.onMoveDown = fn2;
-      return tmp22(closure_1(17611), obj2, role.id);
+      return tmp22(closure_1(17646), obj2, role.id);
     }
   }, items19);
   const items20 = [callback2, callback6, callback5, hasRoles, sorting, navigation];
@@ -547,7 +547,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         const obj = { onPress: onPress2, text: null };
         const intl = guildId(1115).intl;
         obj.text = intl.string(guildId(1115).t["ETE/oC"]);
-        return hasRoles(guildId(6961).HeaderActionButton, obj);
+        return hasRoles(guildId(6991).HeaderActionButton, obj);
       };
     }
     let obj = { headerLeft: fn, headerRight: null, headerTitle: null };
@@ -556,14 +556,14 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         const obj = { onPress: onPress3, text: null };
         const intl = guildId(1115).intl;
         obj.text = intl.string(guildId(1115).t["R3BPH+"]);
-        return hasRoles(guildId(6961).HeaderActionButton, obj);
+        return hasRoles(guildId(6991).HeaderActionButton, obj);
       };
     } else if (hasRoles) {
       fn2 = () => {
-        const obj = { onPress, source: closure_1(12460), accessibilityLabel: null };
+        const obj = { onPress, source: closure_1(12490), accessibilityLabel: null };
         const intl = guildId(1115).intl;
         obj.accessibilityLabel = intl.string(guildId(1115).t.JZZjQK);
-        return hasRoles(guildId(6961).HeaderActionButton, obj);
+        return hasRoles(guildId(6991).HeaderActionButton, obj);
       };
     }
     obj.headerRight = fn2;
@@ -605,7 +605,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   if (!tmp25) {
     let obj8 = { style: tmp.searchWrapper, children: null };
     let obj9 = { size: "md", onChange: callback1 };
-    obj8.children = hasRoles(tmp3(6637).SearchField, obj9);
+    obj8.children = hasRoles(tmp3(6667).SearchField, obj9);
     tmp44 = hasRoles(guildEveryoneRole, obj8);
   }
   const items24 = [tmp44, , , ];
@@ -615,13 +615,13 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp47Result = null;
     if (!hasRoles) {
       let obj10 = { leading: null, label: null };
-      let obj11 = { style: tmp.emptyRolesIcon, size: tmp3(1177).Icon.Sizes.LARGE, source: tmp6(9200) };
+      let obj11 = { style: tmp.emptyRolesIcon, size: tmp3(1177).Icon.Sizes.LARGE, source: tmp6(9234) };
       obj10.leading = tmp47(tmp3(1177).Icon, obj11);
       let obj12 = { variant: "text-md/semibold", color: "interactive-text-default", children: null };
       let intl = tmp3(1115).intl;
       obj12.children = intl.string(tmp3(1115).t.nZfHsf);
-      obj10.label = tmp47(tmp3(4832).Text, obj12);
-      tmp47Result = tmp47(tmp3(8218).FormRow, obj10);
+      obj10.label = tmp47(tmp3(4862).Text, obj12);
+      tmp47Result = tmp47(tmp3(8249).FormRow, obj10);
     }
     let obj13 = { children: null };
     items25[1] = tmp47Result;
@@ -670,7 +670,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   obj15.renderRow = callback11;
   obj14.children = hasRoles(SortableListViewDefault, obj15);
   items24[2] = hasRoles(guildEveryoneRole, obj14);
-  items24[3] = hasRoles(guildId(6627).NavScrim, {});
+  items24[3] = hasRoles(guildId(6657).NavScrim, {});
   obj17.children = items24;
   return closure_22(callback2, obj17);
 };

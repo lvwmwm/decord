@@ -1,20 +1,20 @@
-// Module ID: 7787
-// Function ID: 7788
+// Module ID: 7817
+// Function ID: 7818
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 7128, 1076, 1074, 1085, 21, 3, 4836, 576, 5452, 4540, 4685, 1115, 6555, 1974, 7788, 7789, 7786, 7139, 8831, 6749, 6769, 12873, 12874, 8394, 8395, 1249, 1241, 504, 12875, 8458, 8460, 7140, 8462, 8463, 6211, 8465, 12876, 12886, 12895, 1177, 12896, 12907, 6737, 8504, 10365, 7843, 5447, 12910, 7784, 2]
+// Dependencies: [32, 19, 17, 7158, 1076, 1074, 1085, 21, 3, 4866, 576, 5482, 4570, 4715, 1115, 6585, 1974, 7818, 7819, 7816, 7169, 8865, 6779, 6799, 12900, 12901, 8425, 8426, 1249, 1241, 504, 12902, 8489, 8491, 7170, 8493, 8494, 6241, 8496, 12903, 12913, 12922, 1177, 12923, 12934, 6767, 8538, 10399, 7873, 5477, 12937, 7814, 2]
 // Exports: default
 
-// Module 7787 (ProductDetailsActionSheet)
+// Module 7817 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6737 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7139 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8394 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6767 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7169 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8425 */;
 import _slicedToArray from "module_32" /* 32 */;
 import "module_19";
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
 
 require = fn;
 function PreviewProfileTrigger(handlePreviewPress) {
@@ -22,9 +22,9 @@ function PreviewProfileTrigger(handlePreviewPress) {
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_17();
   dependencyMap = tmp;
-  const theme = handlePreviewPress(4540).useThemeContext().theme;
-  const obj = handlePreviewPress(4540);
-  const isThemeLightResult = handlePreviewPress(4685).isThemeLight(theme);
+  const theme = handlePreviewPress(4570).useThemeContext().theme;
+  const obj = handlePreviewPress(4570);
+  const isThemeLightResult = handlePreviewPress(4715).isThemeLight(theme);
   closure_3 = theme === ThemeTypes.ONYX;
   noop = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
@@ -54,8 +54,8 @@ function PreviewProfileTrigger(handlePreviewPress) {
   };
   const intl = tmp2(1115).intl;
   obj3.accessibilityLabel = intl.string(handlePreviewPress(1115).t["3Qcx6K"]);
-  const obj2 = handlePreviewPress(4685);
-  obj3.children = closure_13(handlePreviewPress(6555).EyeIcon, { size: "md", color: onTrackPress(576).colors.INTERACTIVE_ICON_DEFAULT });
+  const obj2 = handlePreviewPress(4715);
+  obj3.children = closure_13(handlePreviewPress(6585).EyeIcon, { size: "md", color: onTrackPress(576).colors.INTERACTIVE_ICON_DEFAULT });
   return closure_13(closure_7, obj3);
 }
 function ProductDetailsActionSheetInner(arg0) {
@@ -89,14 +89,14 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   skuId = skuId.skuId;
   const initialVariantIndex = skuId.initialVariantIndex;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  const collectiblesShopProduct = skuId(8504).useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
+  const collectiblesShopProduct = skuId(8538).useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj = skuId(8504);
-  const getOrFetchPurchases = skuId(10365).useGetOrFetchPurchases();
+  const obj = skuId(8538);
+  const getOrFetchPurchases = skuId(10399).useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
-  const obj2 = skuId(10365);
+  const obj2 = skuId(10399);
   const ref1 = noop.useRef(null);
   const items = [product, skuId, initialVariantIndex];
   if ("ready" === state) {
@@ -125,22 +125,22 @@ function ManagedProductDetailsActionSheetInner(skuId) {
           ref,
           children: closure_13(closure_19, obj3)
         };
-        return closure_13(tmp(6737).BottomSheet, obj4);
+        return closure_13(tmp(6767).BottomSheet, obj4);
       }
     }
   }
   if ("error" === state) {
-    const obj5 = { Illustration: tmp(7843).NoResults, body: null, children: null };
+    const obj5 = { Illustration: tmp(7873).NoResults, body: null, children: null };
     const intl = tmp(1115).intl;
     obj5.body = intl.string(tmp(1115).t.eAn6z2);
     const obj6 = { text: null, onPress: null };
     const intl2 = tmp(1115).intl;
     obj6.text = intl2.string(tmp(1115).t["+hivLW"]);
     obj6.onPress = retry;
-    obj5.children = closure_13(tmp(5447).Button, obj6);
+    obj5.children = closure_13(tmp(5477).Button, obj6);
     closure_13(tmp(1177).EmptyState, obj5);
   } else {
-    closure_13(initialVariantIndex(12910), {});
+    closure_13(initialVariantIndex(12937), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(arg0) {
@@ -178,18 +178,18 @@ const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = {};
 const logger = new LoggerDefault("ProductDetailsActionSheet");
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: { position: "relative", flex: 1 }, actionButtons: null, previewProfileButton: null, previewProfileButtonLight: null, previewProfileButtonLightPressed: null, previewProfileButtonDark: null, previewProfileButtonDarkPressed: null, previewProfileButtonMidnight: null, badgeWrapper: null };
 const rect = { position: "absolute", top: 0, right: nativeDefault.space.PX_16, zIndex: 2, flexDirection: "row", gap: nativeDefault.space.PX_8 };
 obj.actionButtons = rect;
-let size = { width: fn(5452).MEDIUM_BUTTON_HEIGHT, height: fn(5452).MEDIUM_BUTTON_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };
+let size = { width: fn(5482).MEDIUM_BUTTON_HEIGHT, height: fn(5482).MEDIUM_BUTTON_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };
 obj.previewProfileButton = size;
 let obj3 = { backgroundColor: null };
-let native = fn(4540);
+let native = fn(4570);
 obj3.backgroundColor = native.setColorOpacity("white", 0.72);
 obj.previewProfileButtonLight = obj3;
 let obj4 = { backgroundColor: null };
-native = fn(4540);
+native = fn(4570);
 obj4.backgroundColor = native.setColorOpacity("white", 0.62);
 obj.previewProfileButtonLightPressed = obj4;
 const tmp5 = new LoggerDefault("ProductDetailsActionSheet");

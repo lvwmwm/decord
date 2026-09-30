@@ -1,15 +1,15 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6054
+// Function ID: 6055
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4817, 4656, 1074, 504, 6025, 2]
+// Dependencies: [5, 32, 19, 4847, 4686, 1074, 504, 6055, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 6024 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 6054 (useCanReapplyToRejectedMemberVerificationApplication)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4817 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+import InviteStore from "InviteStore" /* 4847 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4686 */;
 
 const require = globalThis.__r;
 

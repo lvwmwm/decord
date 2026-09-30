@@ -1,9 +1,9 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8042
+// Function ID: 8043
 // Name: Constants
 // Dependencies: [2]
 
-// Module 8012 (Constants)
+// Module 8042 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_common/Constants.tsx");

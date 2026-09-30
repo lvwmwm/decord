@@ -1,12 +1,12 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8699
+// Function ID: 8700
 // Name: FramesConstants
-// Dependencies: [1074, 8666, 2]
+// Dependencies: [1074, 8700, 2]
 // Exports: asLaunched, getChannelIdForSurface, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 8665 (FramesConstants)
+// Module 8699 (FramesConstants)
 import Constants from "Constants" /* 1074 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8666 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8700 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -29,10 +29,10 @@ export const makeFrameId = function makeFrameId(arg0, type) {
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
     const _HermesInternal3 = HermesInternal;
     return "main:" + arg0;
-  } else if (tmp(8666).EmbeddedSurfaceType.APP_CHANNEL === type) {
+  } else if (tmp(8700).EmbeddedSurfaceType.APP_CHANNEL === type) {
     const _HermesInternal2 = HermesInternal;
     return "app-channel:" + arg0 + ":" + type.channelId;
-  } else if (tmp(8666).EmbeddedSurfaceType.VOICE_CHANNEL === type) {
+  } else if (tmp(8700).EmbeddedSurfaceType.VOICE_CHANNEL === type) {
     const _HermesInternal = HermesInternal;
     return "voice-channel:" + arg0 + ":" + type.channelId;
   }

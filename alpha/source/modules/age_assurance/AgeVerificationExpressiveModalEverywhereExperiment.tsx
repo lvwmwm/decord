@@ -1,10 +1,10 @@
-// Module ID: 8197
-// Function ID: 8198
+// Module ID: 8229
+// Function ID: 8230
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
 // Dependencies: [1435, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8197 (AgeVerificationExpressiveModalEverywhereExperiment)
+// Module 8229 (AgeVerificationExpressiveModalEverywhereExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

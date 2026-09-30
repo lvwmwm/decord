@@ -1,20 +1,20 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13273
+// Function ID: 13274
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2112, 1372, 4493, 4494, 6824, 1074, 1374, 21, 4836, 504, 4488, 13109, 573, 7005, 6827, 4832, 1364, 6822, 6821, 1115, 1882, 2]
+// Dependencies: [32, 19, 17, 2112, 1372, 4523, 4524, 6854, 1074, 1374, 21, 4866, 504, 4518, 13136, 573, 7035, 6857, 4862, 1364, 6852, 6851, 1115, 1882, 2]
 // Exports: default
 
-// Module 13246 (PremiumSubscriptionPricingUpsell)
+// Module 13273 (PremiumSubscriptionPricingUpsell)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13109 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13136 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import IAPStore from "IAPStore" /* 6824 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4523 */;
+import SubscriptionStore from "SubscriptionStore" /* 4524 */;
+import IAPStore from "IAPStore" /* 6854 */;
 
 require = fn;
 function PricingSubheadingCopy() {
@@ -201,7 +201,7 @@ const PremiumConstants = fn(1374);
 ({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: map1, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_21 = createStyles.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");

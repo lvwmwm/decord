@@ -1,24 +1,24 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14729
+// Function ID: 14730
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1074, 7003, 11146, 4488, 13106, 11175, 1115, 14699, 14697, 2]
+// Dependencies: [19, 1074, 7033, 11182, 4518, 13133, 11211, 1115, 14730, 14728, 2]
 
-// Module 14698 (PremiumManageSubscriptionsSetting)
+// Module 14729 (PremiumManageSubscriptionsSetting)
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7003 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11146 */;
+import PremiumUtils from "PremiumUtils" /* 4518 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7033 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11182 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SettingBuilders = fn(11175);
+const SettingBuilders = fn(11211);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["z5YcJ+"]);
   },
   parent: null,
-  IconComponent: fn(14699).SubscriptionIcon,
+  IconComponent: fn(14730).SubscriptionIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return noop.useCallback(() => {
       const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();

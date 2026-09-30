@@ -1,14 +1,14 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13720
+// Function ID: 13721
 // Name: AgeKeyReturnHandler
-// Dependencies: [8025, 8040, 4692, 5039, 2]
+// Dependencies: [8055, 8070, 4722, 5069, 2]
 // Exports: handleAgeKeyReturn
 
-// Module 13693 (AgeKeyReturnHandler)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8040 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8025 */;
+// Module 13720 (AgeKeyReturnHandler)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4722 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8070 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8055 */;
 import size from "module_2" /* 2 */;
 
 ({ AGE_VERIFICATION_GET_STARTED_MODAL_KEY: c3, AGE_VERIFICATION_MODAL_KEY: closure_4 } = AgeVerificationConstants);
@@ -30,12 +30,12 @@ export const handleAgeKeyReturn = function handleAgeKeyReturn(arg0) {
   if (!set.has(combined)) {
     set.add(combined);
     if (obj2.getIsAgeVerificationCustomTabOpen()) {
-      const result1 = tmp3(8040).releaseAgeVerificationCustomTab();
-      const tmp3Result = tmp3(8040);
+      const result1 = tmp3(8070).releaseAgeVerificationCustomTab();
+      const tmp3Result = tmp3(8070);
       if (tmp3Result3.isModalOpen(React3)) {
         ModalActionCreatorsDefault.pop();
       }
-      tmp3Result3 = tmp3(4692);
+      tmp3Result3 = tmp3(4722);
     }
     obj2 = AgeVerificationCustomTab;
     if (tmp3Result4.isModalOpen(React4)) {

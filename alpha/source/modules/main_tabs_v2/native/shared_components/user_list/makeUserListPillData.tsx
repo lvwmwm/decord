@@ -1,12 +1,12 @@
-// Module ID: 10492
-// Function ID: 10493
+// Module ID: 10526
+// Function ID: 10527
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4678, 1177, 2]
+// Dependencies: [19, 21, 4708, 1177, 2]
 // Exports: default
 
-// Module 10492 (makeUserListPillData)
+// Module 10526 (makeUserListPillData)
 import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

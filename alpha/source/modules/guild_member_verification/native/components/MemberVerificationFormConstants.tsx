@@ -1,10 +1,10 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6081
+// Function ID: 6082
 // Name: MemberVerificationFormConstants
 // Dependencies: [1479, 2]
 // Exports: useBannerHeight
 
-// Module 6051 (MemberVerificationFormConstants)
+// Module 6081 (MemberVerificationFormConstants)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import size from "module_2" /* 2 */;
 

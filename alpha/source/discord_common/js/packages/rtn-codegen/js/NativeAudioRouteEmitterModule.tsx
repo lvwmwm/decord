@@ -1,9 +1,9 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9299
+// Function ID: 9300
 // Name: NativeAudioRouteEmitterModule
 // Dependencies: [17, 2]
 
-// Module 9265 (NativeAudioRouteEmitterModule)
+// Module 9299 (NativeAudioRouteEmitterModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

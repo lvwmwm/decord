@@ -1,10 +1,10 @@
-// Module ID: 16792
-// Function ID: 16793
+// Module ID: 16827
+// Function ID: 16828
 // Name: you/tracking/Tracking
 // Dependencies: [1074, 1241, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 16792 (you/tracking/Tracking)
+// Module 16827 (you/tracking/Tracking)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import size from "module_2" /* 2 */;

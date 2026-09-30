@@ -1,12 +1,12 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16123
+// Function ID: 16124
 // Name: GuildsBarConstants
-// Dependencies: [4531, 576, 2]
+// Dependencies: [4561, 576, 2]
 // Exports: useGuildWrapperSize
 
-// Module 16094 (GuildsBarConstants)
+// Module 16123 (GuildsBarConstants)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
+import useToken from "useToken" /* 4561 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");

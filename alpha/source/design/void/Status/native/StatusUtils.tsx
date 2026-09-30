@@ -1,11 +1,11 @@
-// Module ID: 13814
-// Function ID: 13815
+// Module ID: 13841
+// Function ID: 13842
 // Name: Status/StatusUtils
-// Dependencies: [1178, 13815, 2]
+// Dependencies: [1178, 13842, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 13814 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13815 */;
+// Module 13841 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13842 */;
 import StatusConstants from "StatusConstants" /* 1178 */;
 import size from "module_2" /* 2 */;
 

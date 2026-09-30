@@ -1,13 +1,13 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16816
+// Function ID: 16817
 // Name: UserSettingsFriendRequests
-// Dependencies: [19, 17, 1074, 21, 2021, 6582, 6165, 1115, 6787, 1385, 2]
+// Dependencies: [19, 17, 1074, 21, 2021, 6612, 6195, 1115, 6817, 1385, 2]
 // Exports: default
 
-// Module 16781 (UserSettingsFriendRequests)
+// Module 16816 (UserSettingsFriendRequests)
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6582 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6612 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [closure_7(setting(6787).TableSwitchRow, obj3), , ];
+  const items1 = [closure_7(setting(6817).TableSwitchRow, obj3), , ];
   const obj4 = { label: null, value: null, onValueChange: null };
   const intl3 = setting(1115).intl;
   obj4.label = intl3.string(setting(1115).t.IqlCSq);
@@ -56,7 +56,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = closure_7(setting(6787).TableSwitchRow, obj4);
+  items1[1] = closure_7(setting(6817).TableSwitchRow, obj4);
   const obj5 = { label: null, value: null, onValueChange: null };
   const intl4 = setting(1115).intl;
   obj5.label = intl4.string(setting(1115).t.mozb8f);
@@ -71,8 +71,8 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = closure_7(setting(6787).TableSwitchRow, obj5);
+  items1[2] = closure_7(setting(6817).TableSwitchRow, obj5);
   obj2.children = items1;
-  obj.children = closure_8(setting(6165).TableRowGroup, obj2);
+  obj.children = closure_8(setting(6195).TableRowGroup, obj2);
   return closure_7(View, obj);
 };

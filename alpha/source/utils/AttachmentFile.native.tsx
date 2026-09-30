@@ -1,14 +1,14 @@
-// Module ID: 5616
-// Function ID: 5617
+// Module ID: 5646
+// Function ID: 5647
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 5607, 5617, 5608, 2]
+// Dependencies: [5, 3, 38, 5637, 5647, 5638, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 5616 (AttachmentFile)
+// Module 5646 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import Upload from "Upload" /* 5607 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5617 */;
+import Upload from "Upload" /* 5637 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5647 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -61,9 +61,7 @@ let closure_5 = async function _getAttachmentFile(arg0, arg1) {
           c6 = 0;
           closure_131_5 = closure_5;
           closure_132_4.error("Failed to get attachment file", closure_131_5);
-          c8 = 3;
-          const obj5 = { value: undefined, done: true };
-          return obj5;
+          throw closure_131_5;
         } else if (2 === tmp7) {
           if (arg0 === 1) {
             c8 = 3;
@@ -71,17 +69,17 @@ let closure_5 = async function _getAttachmentFile(arg0, arg1) {
           } else if (arg0 === 2) {
             c6 = 0;
             c8 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             closure_131_3 = value;
             attachmentPayload = closure_132_0(closure_132_2[5]).getAttachmentPayload(closure_131_0, closure_131_1, closure_131_3.name);
             c6 = 2;
-            const obj10 = closure_132_0(closure_132_2[5]);
+            const obj9 = closure_132_0(closure_132_2[5]);
             c7 = 4;
             c8 = 1;
-            const obj7 = { value: closure_132_0(closure_132_2[4]).getFileSize(closure_131_3.uri), done: false };
-            return obj7;
+            const obj6 = { value: closure_132_0(closure_132_2[4]).getFileSize(closure_131_3.uri), done: false };
+            return obj6;
           }
         } else {
           if (3 === tmp7) {
@@ -98,25 +96,25 @@ let closure_5 = async function _getAttachmentFile(arg0, arg1) {
             closure_131_2 = value;
             c6 = 1;
           }
-          const obj8 = { file: closure_131_3, uri: closure_131_3.uri, name: null, fileSize: null };
+          const obj7 = { file: closure_131_3, uri: closure_131_3.uri, name: null, fileSize: null };
           const filename = attachmentPayload.filename;
           name = filename;
           if (filename == null) {
             name = "";
           }
-          obj8.name = name;
-          obj8.fileSize = closure_131_2;
+          obj7.name = name;
+          obj7.fileSize = closure_131_2;
           c6 = 0;
           c8 = 3;
-          const obj9 = { value: obj8, done: true };
-          return obj9;
+          const obj8 = { value: obj7, done: true };
+          return obj8;
         }
-      } catch (tmp24) {
-        closure_5 = tmp24;
+      } catch (tmp25) {
+        closure_5 = tmp25;
         if (tmp4 === c6) {
           c8 = tmp2;
-          throw tmp24;
-        } else if (tmp === tmp26) {
+          throw tmp25;
+        } else if (tmp === tmp27) {
           c7 = tmp;
         } else {
           c7 = tmp2;

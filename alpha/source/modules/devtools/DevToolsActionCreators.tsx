@@ -1,12 +1,12 @@
-// Module ID: 15305
-// Function ID: 15306
+// Module ID: 15338
+// Function ID: 15339
 // Name: DevToolsActionCreators
-// Dependencies: [7297, 573, 2]
+// Dependencies: [7327, 573, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools, updateDevToolsSettings
 
-// Module 15305 (DevToolsActionCreators)
+// Module 15338 (DevToolsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7297 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7327 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/DevToolsActionCreators.tsx");

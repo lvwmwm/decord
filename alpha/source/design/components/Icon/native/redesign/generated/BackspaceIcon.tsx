@@ -1,13 +1,13 @@
-// Module ID: 9990
-// Function ID: 9991
+// Module ID: 10024
+// Function ID: 10025
 // Name: BackspaceIcon
-// Dependencies: [19, 21, 576, 4530, 9991, 2]
+// Dependencies: [19, 21, 576, 4560, 10025, 2]
 // Exports: BackspaceIcon
 
-// Module 9990 (BackspaceIcon)
+// Module 10024 (BackspaceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod9991 from "module_9991" /* 9991 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod10025 from "module_10025" /* 10025 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BackspaceIcon = function BackspaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9991, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10025, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

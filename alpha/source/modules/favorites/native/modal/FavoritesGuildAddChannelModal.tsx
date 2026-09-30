@@ -1,10 +1,10 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10644
+// Function ID: 10645
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 2058, 10489, 21, 4836, 576, 10611, 10612, 10613, 1370, 4527, 1115, 9851, 10608, 1479, 1364, 10615, 3361, 5604, 10616, 10627, 10629, 2]
+// Dependencies: [5, 32, 19, 17, 2058, 10523, 21, 4866, 576, 10645, 10646, 10647, 1370, 4557, 1115, 9885, 10642, 1479, 1364, 10649, 3361, 5634, 10650, 10661, 10663, 2]
 // Exports: default
 
-// Module 10610 (FavoritesGuildAddChannelModal)
+// Module 10644 (FavoritesGuildAddChannelModal)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -13,10 +13,10 @@ import noop from "module_19" /* 19 */;
 const require = fn;
 const View = fn(17).View;
 let closure_7 = fn(2058).MAX_FAVORITES_ADD_CHANNEL_COUNT;
-const UserRowModes = fn(10489).UserRowModes;
+const UserRowModes = fn(10523).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -28,7 +28,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   dependencyMap = undefined;
   let height;
   const tmp = closure_11();
-  first(10612)(parentId.source);
+  first(10646)(parentId.source);
   [first, dependencyMap] = noop.useState([]);
   const callback = noop.useCallback((arg0) => {
     closure_2(arg0);
@@ -64,7 +64,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             closure_129_0 = undefined;
             c3 = 1;
             c4 = 1;
-            const obj6 = { value: Promise.all(first.map(parentId(10613).getOrResolveChannelIdFromDestinationId)), done: false };
+            const obj6 = { value: Promise.all(first.map(parentId(10647).getOrResolveChannelIdFromDestinationId)), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -83,14 +83,14 @@ export default function FavoritesGuildAddChannelModal(parentId) {
               parentId = null;
             }
             obj8.parentId = parentId;
-            parentId(9851).addFavoriteChannels(obj8);
-            const obj2 = parentId(9851);
-            const result = parentId(10608).closeFavoritesGuildAddChannelModal();
-            const obj4 = parentId(10608);
+            parentId(9885).addFavoriteChannels(obj8);
+            const obj2 = parentId(9885);
+            const result = parentId(10642).closeFavoritesGuildAddChannelModal();
+            const obj4 = parentId(10642);
           } else {
             const intl = parentId(1115).intl;
-            parentId(4527).presentError(intl.string(parentId(1115).t.R0RpRX));
-            const obj = parentId(4527);
+            parentId(4557).presentError(intl.string(parentId(1115).t.R0RpRX));
+            const obj = parentId(4557);
           }
           c4 = 3;
         }
@@ -111,27 +111,27 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   };
   let obj2 = { title: null, onClose: null };
   const tmp2 = first;
-  const tmp4 = first(10611)();
+  const tmp4 = first(10645)();
   let intl = parentId(1115).intl;
   obj2.title = intl.string(first(3361).Rp35U1);
-  obj2.onClose = parentId(10608).closeFavoritesGuildAddChannelModal;
-  const items2 = [closure_9(first(10615), obj2), ];
+  obj2.onClose = parentId(10642).closeFavoritesGuildAddChannelModal;
+  const items2 = [closure_9(first(10649), obj2), ];
   let obj3 = { style: tmp.container, children: null };
-  const items3 = [closure_9(first(5604), { absolute: true }), , ];
+  const items3 = [closure_9(first(5634), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: null, disableGradient: true, disableStickySections: true, disableSelection: null };
   let num = 0;
-  const tmp12 = first(10615);
+  const tmp12 = first(10649);
   if (first.length > 0) {
     num = tmp2(576).space.PX_80;
   }
   obj4.insetEnd = num;
   obj4.disableSelection = first.length >= closure_7;
-  items3[1] = closure_9(first(10616), obj4);
+  items3[1] = closure_9(first(10650), obj4);
   let obj5 = { isVisible: first.length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: null, onPress: null };
-  const tmp14 = first(10616);
-  obj5.text = parentId(10629).getFavoritesAddButtonLabel(first.length);
+  const tmp14 = first(10650);
+  obj5.text = parentId(10663).getFavoritesAddButtonLabel(first.length);
   obj5.onPress = callback1;
-  items3[2] = closure_9(parentId(10627).ModalFloatingAction, obj5);
+  items3[2] = closure_9(parentId(10661).ModalFloatingAction, obj5);
   obj3.children = items3;
   items2[1] = closure_10(View, obj3);
   obj.children = items2;

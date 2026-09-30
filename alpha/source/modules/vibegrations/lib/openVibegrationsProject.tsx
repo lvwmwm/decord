@@ -1,10 +1,10 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16829
+// Function ID: 16830
 // Name: openVibegrationsProject
 // Dependencies: [1074, 2052, 1101, 2]
 // Exports: openVibegrationsProject
 
-// Module 16794 (openVibegrationsProject)
+// Module 16829 (openVibegrationsProject)
 import Constants from "Constants" /* 1074 */;
 import router_utils from "router_utils" /* 1101 */;
 import ChannelConstants from "ChannelConstants" /* 2052 */;

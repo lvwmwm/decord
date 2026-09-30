@@ -1,13 +1,13 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15150
+// Function ID: 15151
 // Name: EmojiUpsideDownFaceIcon
-// Dependencies: [19, 21, 576, 4530, 15120, 2]
+// Dependencies: [19, 21, 576, 4560, 15151, 2]
 // Exports: EmojiUpsideDownFaceIcon
 
-// Module 15119 (EmojiUpsideDownFaceIcon)
+// Module 15150 (EmojiUpsideDownFaceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod15120 from "module_15120" /* 15120 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod15151 from "module_15151" /* 15151 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiUpsideDownFaceIcon = function EmojiUpsideDownFaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15120, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15151, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

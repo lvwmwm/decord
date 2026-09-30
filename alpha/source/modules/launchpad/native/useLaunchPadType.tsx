@@ -1,13 +1,13 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11208
+// Function ID: 11209
 // Name: useLaunchPadType
-// Dependencies: [11171, 2021, 1186, 2]
+// Dependencies: [11207, 2021, 1186, 2]
 // Exports: default
 
-// Module 11172 (useLaunchPadType)
+// Module 11208 (useLaunchPadType)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11171 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11207 */;
 import size from "module_2" /* 2 */;
 
 const LaunchPadTypes = LaunchPadConstants.LaunchPadTypes;

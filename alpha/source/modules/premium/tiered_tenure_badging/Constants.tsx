@@ -1,9 +1,9 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 7834
+// Function ID: 7835
 // Name: Constants
 // Dependencies: [2]
 
-// Module 7804 (Constants)
+// Module 7834 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/Constants.tsx");

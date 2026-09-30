@@ -1,18 +1,18 @@
-// Module ID: 17834
-// Function ID: 17835
+// Module ID: 17869
+// Function ID: 17870
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2112, 502, 1364, 17835, 5754, 17836, 1241, 17837, 1271, 6705, 2]
+// Dependencies: [17, 2112, 502, 1364, 17870, 5784, 17871, 1241, 17872, 1271, 6735, 2]
 
-// Module 17834 (NativeExperimentBridgeManager)
+// Module 17869 (NativeExperimentBridgeManager)
 import _mod17 from "module_17" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import YYTextReplacementExperiment from "YYTextReplacementExperiment" /* 17835 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 17837 */;
+import YYTextReplacementExperiment from "YYTextReplacementExperiment" /* 17870 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 17872 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
 import size from "module_2" /* 2 */;
 
 function syncYYTextReplacementExperiment() {
@@ -33,8 +33,8 @@ function updateIOSExperiments() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        const result = setShouldEnableYYTextReplacement(tmp(17835).shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
-        const tmpResult = tmp(17835);
+        const result = setShouldEnableYYTextReplacement(tmp(17870).shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
+        const tmpResult = tmp(17870);
       }
     }
   }
@@ -42,8 +42,8 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      const result1 = setShouldFixPushNotificationRawPayload(tmp(5754).isIOSPushNotificationRawPayloadFixExperimentEnabled());
-      const tmpResult2 = tmp(5754);
+      const result1 = setShouldFixPushNotificationRawPayload(tmp(5784).isIOSPushNotificationRawPayloadFixExperimentEnabled());
+      const tmpResult2 = tmp(5784);
     }
   }
   obj = PlatformUtils;

@@ -1,22 +1,22 @@
-// Module ID: 10783
-// Function ID: 10784
+// Module ID: 10817
+// Function ID: 10818
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1372, 7793, 6795, 1074, 7551, 7804, 21, 4836, 576, 10526, 10527, 8906, 5602, 10784, 4832, 10786, 7312, 4693, 10818, 1115, 10820, 7794, 10821, 6966, 4528, 7853, 7318, 7307, 7317, 5926, 1241, 7306, 1364, 10822, 10823, 10824, 10828, 10939, 1479, 5447, 8497, 7775, 9370, 4678, 2]
+// Dependencies: [19, 17, 1372, 7823, 6825, 1074, 7581, 7834, 21, 4866, 576, 10560, 10561, 8940, 5632, 10818, 4862, 10820, 7342, 4723, 10852, 1115, 10854, 7824, 10855, 6996, 4558, 7883, 7348, 7337, 7347, 5956, 1241, 7336, 1364, 10857, 10858, 10859, 10863, 10975, 1479, 5477, 8531, 7805, 9404, 4708, 2]
 // Exports: default
 
-// Module 10783 (UserProfilePrimaryInfo)
+// Module 10817 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 576 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5602 */;
-import GuildTagUtils from "GuildTagUtils" /* 7775 */;
-import BadgeId from "BadgeId" /* 7794 */;
-import BotTagDefault from "BotTag" /* 8906 */;
-import GuildTagDefault from "GuildTag" /* 9370 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10526 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10824 */;
-import BadgeUtils from "BadgeUtils" /* 10828 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import Pressables from "Pressables" /* 5632 */;
+import GuildTagUtils from "GuildTagUtils" /* 7805 */;
+import BadgeId from "BadgeId" /* 7824 */;
+import BotTagDefault from "BotTag" /* 8940 */;
+import GuildTagDefault from "GuildTag" /* 9404 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10560 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10859 */;
+import BadgeUtils from "BadgeUtils" /* 10863 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -285,15 +285,15 @@ function ProfileBadge(source) {
               obj.content = label;
               obj.icon = source;
               ToastActionCreatorsDefault.open(obj);
-              if (tmp3 === tmp5(7853).QUEST_COMPLETED_BADGE) {
-                if (tmp5Result.shouldMigrateToAdAnalyticsInterface(tmp5(7318).AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_completed_badge_toast")) {
-                  const obj2 = { type: tmp5(7317).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION, surfaceId: tmp5(5926).QuestContent.QUEST_BADGE, isTargeted: false };
-                  tmp5(7307).captureAdUserAction(obj2);
-                  const tmp5Result6 = tmp5(7307);
+              if (tmp3 === tmp5(7883).QUEST_COMPLETED_BADGE) {
+                if (tmp5Result.shouldMigrateToAdAnalyticsInterface(tmp5(7348).AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_completed_badge_toast")) {
+                  const obj2 = { type: tmp5(7347).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION, surfaceId: tmp5(5956).QuestContent.QUEST_BADGE, isTargeted: false };
+                  tmp5(7337).captureAdUserAction(obj2);
+                  const tmp5Result6 = tmp5(7337);
                 } else {
                   const obj4 = {};
                   const tmp9Result = tmp9(1241);
-                  const merged = Object.assign(tmp5(7306).getContentProperties(tmp5(5926).QuestContent.QUEST_BADGE));
+                  const merged = Object.assign(tmp5(7336).getContentProperties(tmp5(5956).QuestContent.QUEST_BADGE));
                   let advertisingId = null;
                   if (null != closure_4) {
                     advertisingId = null;
@@ -314,15 +314,15 @@ function ProfileBadge(source) {
                   obj4.android_advertising_id = advertisingId1;
                   obj4.is_targeted = false;
                   tmp9Result.track(constants.QUEST_CONTENT_VIEWED, obj4);
-                  const tmp5Result7 = tmp5(7306);
+                  const tmp5Result7 = tmp5(7336);
                 }
-                tmp5Result = tmp5(7318);
+                tmp5Result = tmp5(7348);
               }
               tmp9 = importDefault;
             } else {
               const obj5 = { screen: constants2.PREMIUM_GIFTING, params: {} };
-              tmp5(6966).openUserSettings(obj5);
-              const tmp5Result10 = tmp5(6966);
+              tmp5(6996).openUserSettings(obj5);
+              const tmp5Result10 = tmp5(6996);
             }
             tmp3 = id;
           } else {
@@ -660,16 +660,16 @@ function GuildTag(style) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const getBadgeName = fn(7793).getBadgeName;
-let Constants = fn(6795);
+const getBadgeName = fn(7823).getBadgeName;
+let Constants = fn(6825);
 ({ DIVIDER_DOT: closure_8, PROFILE_SIDE_PADDING: closure_9, UserProfileThemeTypes } = Constants);
 Constants = fn(1074);
 ({ AnalyticEvents: closure_11, UserSettingsSections: closure_12 } = Constants);
-const GuildTagBadgeSize = fn(7551).GuildTagBadgeSize;
-const DEFAULT_PREMIUM_BADGE_ID = fn(7804).DEFAULT_PREMIUM_BADGE_ID;
+const GuildTagBadgeSize = fn(7581).GuildTagBadgeSize;
+const DEFAULT_PREMIUM_BADGE_ID = fn(7834).DEFAULT_PREMIUM_BADGE_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flexDirection: "column" }, displayName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, displayNameText: { flexShrink: 1, minWidth: 0 }, details: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, detailsText: { flexDirection: "row", flexWrap: "wrap", alignContent: "center", paddingVertical: 2 }, botTag: { marginLeft: 4 }, guildTag: { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, columnGap: 4 }, transparentBackground: { backgroundColor: "transparent" }, badge: { resizeMode: "contain" }, badges: { alignSelf: "center", flexDirection: "column", justifyContent: "flex-start", rowGap: 8 }, badgeRow: null, limitedBadgeRow: null };
 let obj3 = { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, columnGap: 4 };
 obj2.badgeRow = { borderRadius: nativeDefault.radii.sm, paddingVertical: 2, justifyContent: "flex-start", flexDirection: "row", marginRight: "auto", columnGap: 4 };

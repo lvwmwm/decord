@@ -1,18 +1,10 @@
 // Module ID: 6460
 // Function ID: 6461
-// Dependencies: [19]
-// Exports: useFlashListContext, useRecyclerViewContext
+// Dependencies: [17]
 
 // Module 6460
-import noop from "module_19" /* 19 */;
+import _mod17 from "module_17" /* 17 */;
 
-const useContext = noop.useContext;
-const context = noop.createContext(undefined);
+const StyleSheet = _mod17.StyleSheet;
 
-export const RecyclerViewContextProvider = context.Provider;
-export const useRecyclerViewContext = function useRecyclerViewContext() {
-  return useContext(context);
-};
-export const useFlashListContext = function useFlashListContext() {
-  return useContext(context);
-};
+export const styles = StyleSheet.create({ container: { flex: 1, overflow: "visible" } });

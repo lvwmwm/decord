@@ -1,10 +1,10 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4842
+// Function ID: 4843
 // Name: DeviceUtils
 // Dependencies: [1342, 1364, 510, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4812 (DeviceUtils)
+// Module 4842 (DeviceUtils)
 import NativeDeviceModule from "NativeDeviceModule" /* 1342 */;
 
 const require = fn;

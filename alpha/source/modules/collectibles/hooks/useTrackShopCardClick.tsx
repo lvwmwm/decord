@@ -1,17 +1,17 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8486
+// Function ID: 8487
 // Name: useTrackShopCardClick
-// Dependencies: [19, 8456, 1074, 8394, 7788, 7140, 7139, 1241, 2]
+// Dependencies: [19, 8487, 1074, 8425, 7818, 7170, 7169, 1241, 2]
 // Exports: useTrackShopCardClick
 
-// Module 8455 (useTrackShopCardClick)
+// Module 8486 (useTrackShopCardClick)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7139 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7140 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7169 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7170 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useSelectedVariantIndex = fn(8456).useSelectedVariantIndex;
+const useSelectedVariantIndex = fn(8487).useSelectedVariantIndex;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");

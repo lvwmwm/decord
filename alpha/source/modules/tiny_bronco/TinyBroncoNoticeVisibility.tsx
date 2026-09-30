@@ -1,13 +1,13 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14482
+// Function ID: 14483
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1372, 1979, 5902, 5903, 504, 2]
+// Dependencies: [1372, 1979, 5932, 5933, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 14451 (TinyBroncoNoticeVisibility)
+// Module 14482 (TinyBroncoNoticeVisibility)
 import Server from "Server" /* 1979 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5902 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5903 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5932 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5933 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

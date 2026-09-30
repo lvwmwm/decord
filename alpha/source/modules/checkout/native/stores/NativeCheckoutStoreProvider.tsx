@@ -1,14 +1,14 @@
-// Module ID: 10438
-// Function ID: 10439
+// Module ID: 10472
+// Function ID: 10473
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7010, 1074, 4815, 1085, 21, 4836, 6076, 8832, 573, 7015, 7016, 6055, 1255, 1231, 5464, 10439, 1241, 10441, 2]
+// Dependencies: [5, 32, 19, 17, 7040, 1074, 4845, 1085, 21, 4866, 6106, 8866, 573, 7045, 7046, 6085, 1255, 1231, 5494, 10473, 1241, 10475, 2]
 // Exports: default
 
-// Module 10438 (NativeCheckoutStoreProvider)
+// Module 10472 (NativeCheckoutStoreProvider)
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10439 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10473 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ require = fn;
 function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: asyncGeneratorStep, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
-  const contextMetadata = order(6076)(() => {
+  const contextMetadata = order(6106)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -32,7 +32,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj3 = { message: "Checkout session ID: " + id };
     return { loadId: id, startTime: Date.now() };
   });
-  redux = order(6076)(() => {
+  redux = order(6106)(() => {
     const obj = {};
     const merged = Object.assign(View);
     obj.load_id = contextMetadata.loadId;
@@ -40,7 +40,7 @@ function NativeCheckoutStoreProvider(children) {
     return obj;
   });
   value = _slicedToArray(noop.useState(() => React5({ order, checkoutInitParameters, contextMetadata, analyticsFields, paymentGateway: dependencyMap, orderRequired, onOrderRetryCancellation, initialSubscriptionFacet })), 1)[0];
-  order(5464)(() => {
+  order(5494)(() => {
     if (null != View) {
       const result = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
       const obj3 = {};
@@ -84,21 +84,21 @@ function NativeCheckoutStoreProvider(children) {
       const obj2 = { checkoutSucceeded: tmp2, order: null };
       ({ id: obj3.id, status: obj3.status } = orderRecord);
       obj2.order = { id: null, status: null };
-      checkoutInitParameters(10441).discardDraftOrder(obj2);
-      const obj = checkoutInitParameters(10441);
+      checkoutInitParameters(10475).discardDraftOrder(obj2);
+      const obj = checkoutInitParameters(10475);
       const obj5 = { id: null, status: null };
     }
   }, items1);
   return <contextMetadata value={value}><redux.Provider value={value}>{arg0.children}</redux.Provider></contextMetadata>;
 }
 const View = fn(17).View;
-const NativeCheckoutStore = fn(7010);
+const NativeCheckoutStore = fn(7040);
 ({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ItemPurchaseType = fn(4815).ItemPurchaseType;
+const ItemPurchaseType = fn(4845).ItemPurchaseType;
 const PaymentGateways = fn(1085).PaymentGateways;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_14 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx");

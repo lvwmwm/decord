@@ -1,10 +1,10 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 12652
+// Function ID: 12653
 // Name: VibegrationsCreateErrors
 // Dependencies: [1074, 1115, 3715, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getVibegrationsCreateErrorMessage
 
-// Module 12622 (VibegrationsCreateErrors)
+// Module 12652 (VibegrationsCreateErrors)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;

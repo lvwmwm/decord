@@ -1,12 +1,12 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14658
+// Function ID: 14659
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4836, 14628, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 14659, 4862, 2]
 // Exports: default
 
-// Module 14627 (FamilyCenterEmpty)
-import Text_Text from "Text/Text" /* 4832 */;
-import _modDef14628 from "module_14628" /* 14628 */;
+// Module 14658 (FamilyCenterEmpty)
+import Text_Text from "Text/Text" /* 4862 */;
+import _modDef14659 from "module_14659" /* 14659 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_7 = createStyles.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCen
 export default function FamilyCenterEmpty(children) {
   const tmp = closure_7();
   const obj = { style: tmp.empty, children: null };
-  const items = [hasOwnProperty(React4, { source: _modDef14628, style: tmp.art, resizeMethod: "scale" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
+  const items = [hasOwnProperty(React4, { source: _modDef14659, style: tmp.art, resizeMethod: "scale" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
   obj.children = items;
   return timestampProducer(React3, obj);
 };

@@ -1,8 +1,8 @@
-// Module ID: 5168
-// Function ID: 5169
+// Module ID: 5198
+// Function ID: 5199
 // Dependencies: [2]
 
-// Module 5168
+// Module 5198
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/trash_can_caution.png.js");

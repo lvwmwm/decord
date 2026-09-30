@@ -1,11 +1,11 @@
-// Module ID: 6899
-// Function ID: 6900
+// Module ID: 6929
+// Function ID: 6930
 // Name: isAccessibleNonStaticChannelPath
-// Dependencies: [2100, 4990, 2]
+// Dependencies: [2100, 5020, 2]
 // Exports: default
 
-// Module 6899 (isAccessibleNonStaticChannelPath)
-import LinkUtils from "LinkUtils" /* 4990 */;
+// Module 6929 (isAccessibleNonStaticChannelPath)
+import LinkUtils from "LinkUtils" /* 5020 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 
 require = fn;

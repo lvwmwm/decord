@@ -1,18 +1,18 @@
-// Module ID: 9225
-// Function ID: 9226
+// Module ID: 9259
+// Function ID: 9260
 // Name: getChannelA11yLabel
-// Dependencies: [4479, 1372, 1074, 1115, 4989, 5539, 4678, 7757, 2]
+// Dependencies: [4509, 1372, 1074, 1115, 5019, 5569, 4708, 7787, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9225 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 4678 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5539 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+// Module 9259 (getChannelA11yLabel)
+import UserUtils from "UserUtils" /* 4708 */;
+import useChannelName from "useChannelName" /* 5019 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5569 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const util = tmp(1115);
-const utils = tmp(7757);
+const utils = tmp(7787);
 require = fn;
 const Constants = fn(1074);
 ({ ChannelTypes: hasOwnProperty, StatusTypes: metroRequire } = Constants);

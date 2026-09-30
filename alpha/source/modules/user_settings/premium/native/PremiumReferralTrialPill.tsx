@@ -1,16 +1,16 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 13134
+// Function ID: 13135
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4836, 576, 4832, 1115, 2]
+// Dependencies: [17, 21, 4866, 576, 4862, 1115, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 13107 (PremiumReferralTrialPill)
+// Module 13134 (PremiumReferralTrialPill)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import createStyles from "createStyles" /* 4836 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import createStyles from "createStyles" /* 4866 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

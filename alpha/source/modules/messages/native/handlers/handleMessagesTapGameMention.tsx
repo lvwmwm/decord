@@ -1,12 +1,12 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11313
+// Function ID: 11314
 // Name: handleMessagesTapGameMention
-// Dependencies: [8298, 8304, 2]
+// Dependencies: [8329, 8335, 2]
 // Exports: handleMessagesTapGameMention
 
-// Module 11277 (handleMessagesTapGameMention)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8298 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8304 */;
+// Module 11313 (handleMessagesTapGameMention)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8329 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8335 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapGameMention.tsx");

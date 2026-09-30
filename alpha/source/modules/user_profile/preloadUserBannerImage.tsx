@@ -1,10 +1,10 @@
-// Module ID: 7798
-// Function ID: 7799
+// Module ID: 7828
+// Function ID: 7829
 // Name: preloadUserBannerImage
 // Dependencies: [1397, 2021, 2]
 // Exports: default
 
-// Module 7798 (preloadUserBannerImage)
+// Module 7828 (preloadUserBannerImage)
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import size from "module_2" /* 2 */;

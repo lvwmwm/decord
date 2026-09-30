@@ -1,14 +1,14 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 10972
+// Function ID: 10973
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 4566, 12285, 1364, 6239, 5441, 5400, 2]
+// Dependencies: [32, 19, 17, 21, 4596, 10973, 1364, 6269, 5471, 5430, 2]
 // Exports: SegmentedControlPages
 
-// Module 12284 (SegmentedControlPages)
+// Module 10972 (SegmentedControlPages)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5441 */;
-import MathUtils from "MathUtils" /* 12285 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4596 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5471 */;
+import MathUtils from "MathUtils" /* 10973 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -304,9 +304,9 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
       }
       if (tmp4) {
         const result2 = sharedValue1.set(obj2.get());
-        const tmp13Result = tmp13(4566);
-        tmp13(4566).runOnJS(callback1)(obj2.get());
-        const runOnJSResult = tmp13(4566).runOnJS(callback1);
+        const tmp13Result = tmp13(4596);
+        tmp13(4596).runOnJS(callback1)(obj2.get());
+        const runOnJSResult = tmp13(4596).runOnJS(callback1);
       }
     }
   }
@@ -344,8 +344,8 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
         const result = obj.set(-1);
       } else {
         value = obj.get();
-        tmp(4566).runOnJS(callback2)(value);
-        const tmpResult = tmp(4566);
+        tmp(4596).runOnJS(callback2)(value);
+        const tmpResult = tmp(4596);
       }
       obj2 = MathUtils;
       tmp = require;

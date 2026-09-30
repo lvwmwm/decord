@@ -1,30 +1,30 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12079
+// Function ID: 12080
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 7364, 5938, 5756, 5981, 1074, 5471, 9893, 5472, 10054, 1375, 21, 5588, 6625, 10055, 4836, 1364, 576, 12046, 1479, 6568, 6160, 504, 4531, 9745, 12052, 12053, 2021, 6164, 10053, 12054, 6918, 9892, 5995, 9961, 12055, 7107, 11642, 1979, 7261, 1611, 5016, 12056, 12057, 8779, 5496, 11882, 4566, 12058, 7109, 12065, 4832, 1115, 8224, 12066, 12067, 2]
+// Dependencies: [32, 19, 17, 7394, 5968, 5786, 6011, 1074, 5501, 9927, 5502, 10088, 1375, 21, 5618, 6655, 10089, 4866, 1364, 576, 12080, 1479, 6598, 6190, 504, 4561, 9779, 12086, 12087, 2021, 6194, 10087, 12088, 6948, 9926, 6025, 9995, 12089, 7137, 11676, 1979, 7291, 1611, 5046, 12090, 12091, 8813, 5526, 11916, 4596, 12092, 7139, 12099, 4862, 1115, 8255, 12100, 12101, 2]
 
-// Module 12045 (AutocompleteWrapper)
+// Module 12079 (AutocompleteWrapper)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import Server from "Server" /* 1979 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5995 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6625 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7109 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8779 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9892 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 10053 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10055 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11882 */;
-import Autocomplete from "Autocomplete" /* 12046 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12056 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6025 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6655 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7139 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8813 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9926 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10087 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10089 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11916 */;
+import Autocomplete from "Autocomplete" /* 12080 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12090 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7364 */;
-import EmojiStore from "EmojiStore" /* 5938 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
-import StickersStore from "StickersStore" /* 5981 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7394 */;
+import EmojiStore from "EmojiStore" /* 5968 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
+import StickersStore from "StickersStore" /* 6011 */;
 
 require = fn;
 function getStickersItemLayout(arg0, index) {
@@ -39,12 +39,12 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, FlatList: metroRequire, StyleSheet } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AutoCompleteResultTypes: closure_11, WHITESPACE_RE: closure_12, AnalyticEvents: map1, UpsellTypes: closure_14 } = Constants);
-const BOOLEAN_CHOICES = fn(5471).BOOLEAN_CHOICES;
-const ApplicationCommandsConstants = fn(9893);
+const BOOLEAN_CHOICES = fn(5501).BOOLEAN_CHOICES;
+const ApplicationCommandsConstants = fn(9927);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_16, AUTOCOMPLETE_ROW_HEIGHT: closure_17 } = ApplicationCommandsConstants);
-const ChannelAutocompleteConstants = fn(5472);
+const ChannelAutocompleteConstants = fn(5502);
 ({ MENTION_SENTINEL: closure_18, CHANNEL_SENTINEL: closure_19, EMOJI_SENTINEL: closure_20, COMMAND_SENTINEL: closure_21, GAME_MENTION_INPUT_PREFIX: closure_22, TIMESTAMP_MENTION_INPUT_PREFIX: closure_23 } = ChannelAutocompleteConstants);
-const AutocompleteTypes = fn(10054).AutocompleteTypes;
+const AutocompleteTypes = fn(10088).AutocompleteTypes;
 const EmojiInteractionPoint = fn(1375).EmojiInteractionPoint;
 const jsxProd = fn(21);
 ({ jsx: closure_26, Fragment: closure_27, jsxs: closure_28 } = jsxProd);
@@ -52,8 +52,8 @@ let c29 = "text-sm/semibold";
 const hairlineWidth = StyleSheet.hairlineWidth;
 let c31 = 200;
 let closure_32 = { allowSpaces: true, maxQueryLength: 64 };
-let obj = { allowSpaces: true, maxQueryLength: fn(5588).GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH };
-const createStyles = fn(4836);
+let obj = { allowSpaces: true, maxQueryLength: fn(5618).GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH };
+const createStyles = fn(4866);
 let closure_34 = createStyles.createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
   obj = { autocompletePositionRelative: { position: "relative" }, autocompleteWrapper: null, autocompleteContainer: null, autocomplete: null, sectionDivider: null, sectionTitle: null, stickersAutocompleteList: null };
   let str = "absolute";
@@ -175,7 +175,7 @@ const forwardRefResult = noop.forwardRef((analyticsLocations, ref) => {
               if ("gameMentionInput" === result1) {
                 if (setting1) {
                   if (null == anchor) {
-                    const tmp33Result = tmp33(9892);
+                    const tmp33Result = tmp33(9926);
                     if (tmp33Result.isSpaceJustTypedAtCaret(text, selectionEnd, tmp, tmp2)) {
                       const current2 = chatInputRef.current;
                       current2.insertText(__initData2, result.tokenStart, false, undefined, tmp2);
@@ -186,7 +186,7 @@ const forwardRefResult = noop.forwardRef((analyticsLocations, ref) => {
               } else if ("timestampMentionInput" === result1) {
                 if (enabled) {
                   if (null == anchor2) {
-                    const tmp33Result2 = tmp33(9892);
+                    const tmp33Result2 = tmp33(9926);
                     if (tmp33Result2.isSpaceJustTypedAtCaret(text, selectionEnd, tmp, tmp2)) {
                       const current = chatInputRef.current;
                       current.insertText(__initData3, result.tokenStart, false, undefined, tmp2);
@@ -850,7 +850,7 @@ const forwardRefResult = noop.forwardRef((analyticsLocations, ref) => {
         tmp18 = autocompleteResultText;
         tmp19 = tmp13;
         if (null != applicationCommandManager) {
-          const result = tmp8(5496).formatTimestampMention(type.mention);
+          const result = tmp8(5526).formatTimestampMention(type.mention);
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != result) {
@@ -859,7 +859,7 @@ const forwardRefResult = noop.forwardRef((analyticsLocations, ref) => {
             tmp18 = addTimestampMentionResult;
             tmp19 = items1;
           }
-          const tmp8Result = tmp8(5496);
+          const tmp8Result = tmp8(5526);
         }
       }
       let result1;

@@ -1,18 +1,18 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10673
+// Function ID: 10674
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 7010, 3, 10331, 7015, 4503, 2]
+// Dependencies: [32, 19, 7040, 3, 10365, 7045, 4533, 2]
 // Exports: default
 
-// Module 10639 (useSyncGiftOptionsToOrder)
+// Module 10673 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4503 */;
-import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10331 */;
+import BillingUtils from "BillingUtils" /* 4533 */;
+import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10365 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_5 = fn(7010).useNativeCheckoutStoreOrNull;
+let closure_5 = fn(7040).useNativeCheckoutStoreOrNull;
 let closure_6 = new LoggerDefault("useSyncGiftOptionsToOrder");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");

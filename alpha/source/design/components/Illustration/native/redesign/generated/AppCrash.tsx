@@ -1,12 +1,12 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9505
+// Function ID: 9506
 // Name: AppCrash
-// Dependencies: [19, 17, 21, 7844, 9472, 9473, 9474, 4685, 2]
+// Dependencies: [19, 17, 21, 7874, 9506, 9507, 9508, 4715, 2]
 // Exports: AppCrash, getAppCrashSource, useAppCrashSource
 
-// Module 9471 (AppCrash)
-import shared from "shared" /* 4685 */;
-import _mod7844 from "module_7844" /* 7844 */;
+// Module 9505 (AppCrash)
+import shared from "shared" /* 4715 */;
+import _mod7874 from "module_7874" /* 7874 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 
 export const getAppCrashSource = function getAppCrashSource(theme) {
-  return _mod7844.getIllustrationSource(theme, {
+  return _mod7874.getIllustrationSource(theme, {
     dark() {
-      return require("module_9472");
+      return require("module_9506");
     },
     darker() {
-      return require("module_9473");
+      return require("module_9507");
     },
     light() {
-      return require("module_9474");
+      return require("module_9508");
     }
   });
 };
 export const useAppCrashSource = function useAppCrashSource() {
   const obj = shared;
-  return _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7874.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_9472");
+      return require("module_9506");
     },
     darker() {
-      return require("module_9473");
+      return require("module_9507");
     },
     light() {
-      return require("module_9474");
+      return require("module_9508");
     }
   });
 };
 export const AppCrash = function AppCrash(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod7844.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7874.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_9472");
+      return require("module_9506");
     },
     darker() {
-      return require("module_9473");
+      return require("module_9507");
     },
     light() {
-      return require("module_9474");
+      return require("module_9508");
     }
   });
   const merged = Object.assign(arg0);

@@ -1,12 +1,12 @@
-// Module ID: 14290
-// Function ID: 14291
+// Module ID: 14319
+// Function ID: 14320
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [8395, 1249, 2]
+// Dependencies: [8426, 1249, 2]
 // Exports: useTrackNavigatorScreenImpression
 
-// Module 14290 (useTrackNavigatorScreenImpression)
+// Module 14319 (useTrackNavigatorScreenImpression)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8395 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8426 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");

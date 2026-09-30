@@ -1,10 +1,10 @@
-// Module ID: 4905
-// Function ID: 4906
+// Module ID: 4935
+// Function ID: 4936
 // Name: MediaSinkWantsLadder
-// Dependencies: [4861, 2]
+// Dependencies: [4891, 2]
 
-// Module 4905 (MediaSinkWantsLadder)
-import Constants from "Constants" /* 4861 */;
+// Module 4935 (MediaSinkWantsLadder)
+import Constants from "Constants" /* 4891 */;
 import size from "module_2" /* 2 */;
 
 ({ defaultVideoQualityOptions: closure_0, VIDEO_QUALITY_FRAMERATE: closure_1, VIDEO_QUALITY_FRAMERATE_MUTED_2: c2, VIDEO_QUALITY_FRAMERATE_MUTED: c3 } = Constants);

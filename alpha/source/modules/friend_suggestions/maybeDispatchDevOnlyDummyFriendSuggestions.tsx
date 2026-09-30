@@ -1,10 +1,10 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7272
+// Function ID: 7273
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
 // Dependencies: [1372, 2]
 // Exports: default
 
-// Module 7242 (maybeDispatchDevOnlyDummyFriendSuggestions)
+// Module 7272 (maybeDispatchDevOnlyDummyFriendSuggestions)
 import UserStore from "UserStore" /* 1372 */;
 
 const size = fn(2);

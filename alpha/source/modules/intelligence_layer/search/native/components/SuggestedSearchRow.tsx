@@ -1,21 +1,21 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16676
+// Function ID: 16677
 // Name: SuggestedSearchRow
-// Dependencies: [19, 17, 12016, 21, 4836, 576, 12013, 11990, 12029, 4832, 16642, 6638, 2]
+// Dependencies: [19, 17, 12050, 21, 4866, 576, 12047, 12024, 12063, 4862, 16677, 6668, 2]
 
-// Module 16641 (SuggestedSearchRow)
+// Module 16676 (SuggestedSearchRow)
 import nativeDefault from "native" /* 576 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11990 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12013 */;
-import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 12029 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12024 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12047 */;
+import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 12063 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const SmartSearchConstants = fn(12016);
+const SmartSearchConstants = fn(12050);
 ({ SUGGESTED_SEARCHES_WINDOW_SIZE: hasOwnProperty, SUGGESTED_SEARCH_COMPACT_LABEL_HEIGHT } = SmartSearchConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { iconCircle: null, text: null, compactLabel: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center" };
 obj.iconCircle = size;
@@ -50,13 +50,13 @@ export default noop.memo((suggestedSearch) => {
   if ("compact" === str) {
     compactLabel = tmp.compactLabel;
   }
-  obj2.label = <View style={compactLabel}>{jsx(suggestedSearch(4832).Text, { lineClamp: 2, variant: str2, color: "redesign-channel-name-muted-text", style: tmp.text, children: suggestedSearch.suggestedSearchText })}</View>;
+  obj2.label = <View style={compactLabel}>{jsx(suggestedSearch(4862).Text, { lineClamp: 2, variant: str2, color: "redesign-channel-name-muted-text", style: tmp.text, children: suggestedSearch.suggestedSearchText })}</View>;
   let iconCircle;
   if ("default" === str) {
     iconCircle = tmp.iconCircle;
   }
   let obj = { lineClamp: 2, variant: str2, color: "redesign-channel-name-muted-text", style: tmp.text, children: suggestedSearch.suggestedSearchText };
-  const tmp3Result = jsx(suggestedSearch(4832).Text, { lineClamp: 2, variant: str2, color: "redesign-channel-name-muted-text", style: tmp.text, children: suggestedSearch.suggestedSearchText });
-  obj2.icon = <View style={iconCircle}>{jsx(suggestedSearch(6638).MagnifyingGlassIcon, { size: "sm", color: "icon-muted" })}</View>;
-  return jsx(suggestedSearch(16642).SearchListRow, { onPress: callback, accessibilityLabel: suggestedSearch.suggestedSearchText, label: null, icon: null });
+  const tmp3Result = jsx(suggestedSearch(4862).Text, { lineClamp: 2, variant: str2, color: "redesign-channel-name-muted-text", style: tmp.text, children: suggestedSearch.suggestedSearchText });
+  obj2.icon = <View style={iconCircle}>{jsx(suggestedSearch(6668).MagnifyingGlassIcon, { size: "sm", color: "icon-muted" })}</View>;
+  return jsx(suggestedSearch(16677).SearchListRow, { onPress: callback, accessibilityLabel: suggestedSearch.suggestedSearchText, label: null, icon: null });
 });

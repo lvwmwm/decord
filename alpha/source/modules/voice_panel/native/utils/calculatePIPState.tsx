@@ -1,18 +1,18 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 17133
+// Function ID: 17134
 // Name: calculatePIPState
-// Dependencies: [4852, 4858, 11924, 4857, 4888, 17099, 2]
+// Dependencies: [4882, 4888, 11958, 4887, 4918, 17134, 2]
 // Exports: default
 
-// Module 17098 (calculatePIPState)
-import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17099 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+// Module 17133 (calculatePIPState)
+import StreamKeyUtils from "StreamKeyUtils" /* 4918 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17134 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4882 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4888 */;
 
 require = fn;
-const VoicePanelModes = fn(11924).VoicePanelModes;
-const ParticipantTypes = fn(4857).ParticipantTypes;
+const VoicePanelModes = fn(11958).VoicePanelModes;
+const ParticipantTypes = fn(4887).ParticipantTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/calculatePIPState.tsx");
 
@@ -67,7 +67,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(17099).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(17134).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;

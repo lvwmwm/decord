@@ -1,30 +1,83 @@
 // Module ID: 6323
 // Function ID: 6324
-// Dependencies: [6307, 6324, 6282, 6326]
-// Exports: useGestureCallbacks
+// Dependencies: [41, 42, 93, 95, 98, 19, 6274, 6312]
 
 // Module 6323
-import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6307 */;
-import _mod6324 from "module_6324" /* 6324 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const useGestureCallbacks = function useGestureCallbacks(handlerTag, disableReanimated) {
-  const memoizedGestureCallbacks = DEFAULT_PROPS_TRANSFORMER.useMemoizedGestureCallbacks(disableReanimated);
-  let reanimatedEventHandler;
-  if (!disableReanimated.disableReanimated) {
-    const Reanimated = tmp(6282).Reanimated;
-    let handler;
-    if (Reanimated != null) {
-      handler = Reanimated.useHandler(memoizedGestureCallbacks);
+const Wrap = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    const tmpResult = tmp(6326);
-    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let animatedEventHandler;
-  if (disableReanimated.dispatchesAnimatedEvents) {
-    animatedEventHandler = disableReanimated.onUpdate;
+}
+class Wrap {
+  constructor() {
+    self = this;
+    tmp = c2(this, Wrap);
+    tmp2 = closure_4;
+    obj = closure_4(Wrap);
+    tmp3 = closure_3;
+    if (metroRequire()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  return { jsEventHandler: _mod6324.useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated), reanimatedEventHandler, animatedEventHandler };
+}
+_inherits(Wrap, noop.Component);
+const entry = {
+  key: "render",
+  value: function render() {
+    try {
+      const self = this;
+      const Children = noop.Children;
+      const onlyResult = Children.only(this.props.children);
+      return noop.cloneElement(onlyResult, { collapsable: false }, onlyResult.props.children);
+    } catch (err) {
+      const _Error = Error;
+      const error = new Error(Wrap(6274).tagMessage("GestureDetector got more than one view as a child. If you want the gesture to work on multiple views, wrap them with a common parent and attach the gesture to that view."));
+      throw error;
+    }
+  }
 };
+const items = [entry];
+const importDefaultResultResult = _createClass(Wrap, items);
+const Reanimated = fn(6312).Reanimated;
+let animatedComponent;
+if (Reanimated != null) {
+  if (Reanimated.default != null) {
+    animatedComponent = _default.createAnimatedComponent(importDefaultResultResult);
+  }
+}
+if (animatedComponent == null) {
+  animatedComponent = importDefaultResultResult;
+}
+
+export const Wrap = importDefaultResultResult;
+export const AnimatedWrap = animatedComponent;

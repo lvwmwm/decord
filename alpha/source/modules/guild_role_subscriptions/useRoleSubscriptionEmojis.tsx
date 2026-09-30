@@ -1,12 +1,12 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17802
+// Function ID: 17803
 // Name: useRoleSubscriptionEmojis
-// Dependencies: [19, 5938, 504, 5943, 2]
+// Dependencies: [19, 5968, 504, 5973, 2]
 // Exports: default
 
-// Module 17767 (useRoleSubscriptionEmojis)
+// Module 17802 (useRoleSubscriptionEmojis)
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5938 */;
+import EmojiStore from "EmojiStore" /* 5968 */;
 
 const require = globalThis.__r;
 

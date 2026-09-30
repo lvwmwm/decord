@@ -1,11 +1,11 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8881
+// Function ID: 8882
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1085, 8848, 6827, 6821, 2]
+// Dependencies: [19, 1085, 8882, 6857, 6851, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 8847 (useDiscountedPremiumProductInfo)
-import ProductIds from "ProductIds" /* 6827 */;
+// Module 8881 (useDiscountedPremiumProductInfo)
+import ProductIds from "ProductIds" /* 6857 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProd
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    return tmp6(6821).formatPrice(result, USD, { convertToMajorUnits: false });
+                    return tmp6(6851).formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }
               }

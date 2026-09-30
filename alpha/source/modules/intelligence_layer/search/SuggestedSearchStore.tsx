@@ -1,14 +1,14 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12061
+// Function ID: 12062
 // Name: SuggestedSearchStore
-// Dependencies: [12016, 1439, 12018, 504, 573, 2]
+// Dependencies: [12050, 1439, 12052, 504, 573, 2]
 
-// Module 12027 (SuggestedSearchStore)
+// Module 12061 (SuggestedSearchStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1439 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12018 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12016 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12052 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12050 */;
 import size from "module_2" /* 2 */;
 
 function handleReset() {

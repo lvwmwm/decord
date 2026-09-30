@@ -1,22 +1,22 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10058
+// Function ID: 10059
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 9903, 1074, 6738, 21, 4836, 1479, 1613, 12, 1241, 6737, 10025, 10029, 6741, 6211, 10030, 5602, 9803, 2]
+// Dependencies: [32, 19, 9937, 1074, 6768, 21, 4866, 1479, 1613, 12, 1241, 6767, 10059, 10063, 6771, 6241, 10064, 5632, 9837, 2]
 
-// Module 10024 (StickerPackDetailActionSheet)
+// Module 10058 (StickerPackDetailActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10030 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10064 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const StickerPickerConstants = fn(9903);
+const StickerPickerConstants = fn(9937);
 ({ MIN_MARGIN: hasOwnProperty, STICKER_SIZE: metroRequire } = StickerPickerConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ACTION_SHEET_MAX_WIDTH = fn(6738).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6768).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "sa" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stickers/native/StickerPackDetailActionSheet.tsx");

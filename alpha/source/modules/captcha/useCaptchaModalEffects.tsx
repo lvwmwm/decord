@@ -1,10 +1,10 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17288
+// Function ID: 17289
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1074, 5464, 5343, 1241, 2]
+// Dependencies: [19, 1074, 5494, 5373, 1241, 2]
 // Exports: default
 
-// Module 17253 (useCaptchaModalEffects)
+// Module 17288 (useCaptchaModalEffects)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ export default function useCaptchaModalEffects(arg0) {
     analyticsType = "Guild Join Captcha";
   }
   dependencyMap = noop.useRef(true);
-  analyticsType(5464)(() => () => {
+  analyticsType(5494)(() => () => {
     if (ref.current) {
       if (closure_1_0 != null) {
         tmp(require("SharedCaptchaUtils").CaptchaError.CANCEL);

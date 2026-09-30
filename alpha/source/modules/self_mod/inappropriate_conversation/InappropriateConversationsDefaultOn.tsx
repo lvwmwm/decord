@@ -1,10 +1,10 @@
-// Module ID: 10603
-// Function ID: 10604
+// Module ID: 10637
+// Function ID: 10638
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1436, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 10603 (InappropriateConversationsDefaultOn)
+// Module 10637 (InappropriateConversationsDefaultOn)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const tmp2 = apex_ApexExperimentDefault({ name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

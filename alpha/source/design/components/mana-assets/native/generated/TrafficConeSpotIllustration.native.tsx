@@ -1,13 +1,13 @@
-// Module ID: 6170
-// Function ID: 6171
+// Module ID: 6200
+// Function ID: 6201
 // Name: TrafficConeSpotIllustration
-// Dependencies: [21, 6065, 6171, 2]
+// Dependencies: [21, 6095, 6201, 2]
 // Exports: TrafficConeSpotIllustration
 
-// Module 6170 (TrafficConeSpotIllustration)
+// Module 6200 (TrafficConeSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 6065 */;
-import _modDef6171 from "module_6171" /* 6171 */;
+import FastImageDefault from "FastImage" /* 6095 */;
+import _modDef6201 from "module_6201" /* 6201 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const TrafficConeSpotIllustration = function TrafficConeSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6171 };
+  const obj2 = { uri: _modDef6201 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

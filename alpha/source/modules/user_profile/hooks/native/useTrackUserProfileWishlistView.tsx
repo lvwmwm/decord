@@ -1,12 +1,12 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12876
+// Function ID: 12877
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 8404, 504, 2]
+// Dependencies: [19, 8435, 504, 2]
 // Exports: default
 
-// Module 12849 (useTrackUserProfileWishlistView)
+// Module 12876 (useTrackUserProfileWishlistView)
 import noop from "module_19" /* 19 */;
-import WishlistStore from "WishlistStore" /* 8404 */;
+import WishlistStore from "WishlistStore" /* 8435 */;
 import size from "module_2" /* 2 */;
 
 ({ useEffect: c2, useRef: c3 } = noop);

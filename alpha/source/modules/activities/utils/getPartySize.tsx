@@ -1,10 +1,10 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 11460
+// Function ID: 11461
 // Name: getPartySize
 // Dependencies: [32, 2]
 // Exports: getPartySize
 
-// Module 11424 (getPartySize)
+// Module 11460 (getPartySize)
 import _slicedToArray from "module_32" /* 32 */;
 
 const size = fn(2);

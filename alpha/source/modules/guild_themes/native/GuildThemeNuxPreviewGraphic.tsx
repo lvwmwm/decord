@@ -1,17 +1,17 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 15994
+// Function ID: 15995
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 4836, 576, 15971, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 15995, 2]
 // Exports: default
 
-// Module 15970 (GuildThemeNuxPreviewGraphic)
+// Module 15994 (GuildThemeNuxPreviewGraphic)
 import nativeDefault from "native" /* 576 */;
-import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 15971 */;
+import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 15995 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj2 = { container: { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);

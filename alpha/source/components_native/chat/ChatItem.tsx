@@ -1,19 +1,19 @@
-// Module ID: 8277
-// Function ID: 8278
+// Module ID: 8308
+// Function ID: 8309
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 4825, 1074, 7540, 21, 576, 8278, 1090, 8279, 6854, 8280, 4836, 1364, 7748, 4531, 672, 5459, 2]
+// Dependencies: [32, 19, 17, 4855, 1074, 7570, 21, 576, 8309, 1090, 8310, 6884, 8311, 4866, 1364, 7778, 4561, 672, 5489, 2]
 // Exports: default
 
-// Module 8277 (ChatItem)
+// Module 8308 (ChatItem)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import MessageTypes2 from "MessageTypes" /* 1090 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6854 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7748 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8278 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6884 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7778 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8309 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 require = fn;
 function DCDChatItem(message) {
@@ -28,27 +28,27 @@ function DCDChatItem(message) {
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       const obj3 = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = closure_1_10(tmp21(8279).default, obj3);
+      tmp3Result = closure_1_10(tmp21(8310).default, obj3);
     } else if (isSystemMessageDefault(message)) {
       const obj4 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8280).default, obj4);
+      tmp3Result = tmp3(tmp21(8311).default, obj4);
     } else {
       const obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8279).default, obj);
+      tmp3Result = tmp3(tmp21(8310).default, obj);
     }
   }
   return tmp3Result;
 }
 const View = fn(17).View;
 const MessageTypes = fn(1074).MessageTypes;
-const RowGeneratorConstants = fn(7540);
+const RowGeneratorConstants = fn(7570);
 ({ RowType: closure_8, Changeset: closure_9 } = RowGeneratorConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_4 = nativeDefault.space.PX_4;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_14 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
   const obj = { container: { position: "relative", overflow: "hidden", paddingTop }, offset: { marginTop: -marginTop, marginLeft: -marginLeft }, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
   return obj;
@@ -196,6 +196,6 @@ export default function _default(rowGenerator) {
     const tmp9Result2 = tmp9(tmp10[14]);
   }
 };
-export const DCDMessageView = fn(8279).default;
-export const DCDSystemMessageView = fn(8280).default;
-export const DCDAutoModerationSystemMessageView = fn(8278).default;
+export const DCDMessageView = fn(8310).default;
+export const DCDSystemMessageView = fn(8311).default;
+export const DCDAutoModerationSystemMessageView = fn(8309).default;

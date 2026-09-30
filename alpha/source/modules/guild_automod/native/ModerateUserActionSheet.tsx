@@ -1,27 +1,27 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11517
+// Function ID: 11518
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 2108, 2067, 4469, 1372, 1074, 21, 4836, 504, 11482, 8871, 4988, 4800, 6786, 1115, 6964, 5039, 11483, 1981, 11480, 4456, 11501, 11487, 4773, 11503, 8901, 11505, 6737, 6736, 11507, 6165, 2]
+// Dependencies: [19, 2108, 2067, 4499, 1372, 1074, 21, 4866, 504, 11518, 8905, 5018, 4830, 6816, 1115, 6994, 5069, 11519, 1981, 11516, 4486, 11537, 11523, 4803, 11539, 8935, 11541, 6767, 6766, 11543, 6195, 2]
 
-// Module 11481 (ModerateUserActionSheet)
+// Module 11517 (ModerateUserActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8871 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 11482 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11487 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11503 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11505 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8905 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 11518 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11523 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11539 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11541 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_11 = createStyles.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
@@ -106,7 +106,7 @@ export default noop.memo((user) => {
         obj2.icon = closure_9(tmp2(tmp3[13]).ActionSheetRow.Icon, obj3);
         obj2.onPress = function onPress() {
           hideActionSheet();
-          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11483, dependencyMap.paths), {
+          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11519, dependencyMap.paths), {
             userId: user.id,
             guildId: guild.id,
             onClose() {

@@ -1,10 +1,10 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7545
+// Function ID: 7546
 // Name: resolveSelectedConversation
 // Dependencies: [2]
 // Exports: default
 
-// Module 7515 (resolveSelectedConversation)
+// Module 7545 (resolveSelectedConversation)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/resolveSelectedConversation.tsx");

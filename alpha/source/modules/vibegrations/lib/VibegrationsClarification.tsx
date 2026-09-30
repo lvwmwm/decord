@@ -1,10 +1,10 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16599
+// Function ID: 16600
 // Name: VibegrationsClarification
 // Dependencies: [2]
 // Exports: clarificationAnswersPayload, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 16566 (VibegrationsClarification)
+// Module 16599 (VibegrationsClarification)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsClarification.tsx");

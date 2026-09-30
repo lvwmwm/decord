@@ -1,15 +1,15 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7388
+// Function ID: 7389
 // Name: ThreadAnalyticsUtils
-// Dependencies: [7354, 6890, 2049, 4469, 1074, 1101, 11, 2]
+// Dependencies: [7384, 6920, 2049, 4499, 1074, 1101, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7358 (ThreadAnalyticsUtils)
+// Module 7388 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 7354 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6890 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 7384 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6920 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
 
 require = fn;
 const THREAD_CHANNEL_TYPES = fn(2049).THREAD_CHANNEL_TYPES;

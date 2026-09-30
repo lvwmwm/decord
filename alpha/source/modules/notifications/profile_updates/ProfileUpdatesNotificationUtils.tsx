@@ -1,14 +1,14 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15267
+// Function ID: 15268
 // Name: ProfileUpdatesNotificationUtils
-// Dependencies: [4482, 1074, 2021, 1241, 2]
+// Dependencies: [4512, 1074, 2021, 1241, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 15234 (ProfileUpdatesNotificationUtils)
+// Module 15267 (ProfileUpdatesNotificationUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4482 */;
+import NotificationConstants from "NotificationConstants" /* 4512 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

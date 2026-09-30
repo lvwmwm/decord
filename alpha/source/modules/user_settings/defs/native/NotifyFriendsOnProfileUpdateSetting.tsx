@@ -1,15 +1,15 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15738
+// Function ID: 15739
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [7582, 11175, 1115, 2685, 2021, 15706, 2]
+// Dependencies: [7612, 11211, 1115, 2685, 2021, 15739, 2]
 
-// Module 15705 (NotifyFriendsOnProfileUpdateSetting)
+// Module 15738 (NotifyFriendsOnProfileUpdateSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import _modDef2685 from "module_2685" /* 2685 */;
-import SettingsConstants from "SettingsConstants" /* 7582 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 15706 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
+import SettingsConstants from "SettingsConstants" /* 7612 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 15739 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

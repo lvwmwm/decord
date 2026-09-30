@@ -1,22 +1,22 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15527
+// Function ID: 15528
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10330, 1372, 7128, 7143, 7813, 1074, 1374, 21, 4836, 576, 8391, 4832, 5448, 11145, 563, 10365, 15495, 1177, 10711, 2]
+// Dependencies: [32, 19, 17, 10364, 1372, 7158, 7173, 7843, 1074, 1374, 21, 4866, 576, 8422, 4862, 5478, 11181, 563, 10399, 15528, 1177, 10745, 2]
 // Exports: default
 
-// Module 15494 (CollectiblesTool)
+// Module 15527 (CollectiblesTool)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import BaseTextButton from "BaseTextButton" /* 5448 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8391 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10711 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11145 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import BaseTextButton from "BaseTextButton" /* 5478 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8422 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10745 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11181 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10330 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10364 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7128 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7143 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7173 */;
 
 const require = globalThis.__r;
 
@@ -122,12 +122,12 @@ function FramePreviewOverrideSection() {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_11 = fn(7813).useFramePreviewOverrideStore;
+let closure_11 = fn(7843).useFramePreviewOverrideStore;
 const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const PremiumGiftStyles = fn(1374).PremiumGiftStyles;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scrollContainer: null, contentContainer: null, section: null, sectionHeader: null, sectionTitle: null, inputContainer: null, inputWrapper: null, inputLabel: null, statusText: null, statusSuccess: null, statusError: null, statusLoading: null, previewContainer: null, previewButton: null, secondaryButton: null, description: null, placeholder: null, placeholderText: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollContainer = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };

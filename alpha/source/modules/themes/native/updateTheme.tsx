@@ -1,11 +1,11 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 17011
+// Function ID: 17012
 // Name: updateTheme
-// Dependencies: [14172, 2]
+// Dependencies: [14201, 2]
 // Exports: updateTheme
 
-// Module 16976 (updateTheme)
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14172 */;
+// Module 17011 (updateTheme)
+import NativeThemeModuleDefault from "NativeThemeModule" /* 14201 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/native/updateTheme.tsx");

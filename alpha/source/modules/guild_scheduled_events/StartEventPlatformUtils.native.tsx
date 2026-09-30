@@ -1,17 +1,17 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9468
+// Function ID: 9469
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 2045, 4859, 4655, 2051, 1074, 38, 8006, 8011, 5890, 1101, 2]
+// Dependencies: [5, 2045, 4889, 4685, 2051, 1074, 38, 8036, 8041, 5920, 1101, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9434 (StartEventPlatformUtils)
+// Module 9468 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
 import router_utils from "router_utils" /* 1101 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 8006 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 8036 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
 
 require = fn;
 let closure_10 = async function _navigateToEvent(arg0, value) {
@@ -62,8 +62,8 @@ let closure_10 = async function _navigateToEvent(arg0, value) {
               const channel1 = ChannelStore.getChannel(tmp52.channel_id);
               _modDef38(null != channel1, "could not find channel");
               if (channelId1 !== channel1.id) {
-                const voiceChannel = tmp21(5890).selectVoiceChannel(channel1.id);
-                const tmp21Result = tmp21(5890);
+                const voiceChannel = tmp21(5920).selectVoiceChannel(channel1.id);
+                const tmp21Result = tmp21(5920);
               }
               if (tmp27 != null) {
                 tmp27 = tmp27();

@@ -1,10 +1,10 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9652
+// Function ID: 9653
 // Name: getEffectiveNoiseCancellation
-// Dependencies: [1364, 9619, 2]
+// Dependencies: [1364, 9653, 2]
 // Exports: default
 
-// Module 9618 (getEffectiveNoiseCancellation)
+// Module 9652 (getEffectiveNoiseCancellation)
 import size from "module_2" /* 2 */;
 
 const deep_noise_suppression = "deep_noise_suppression";
@@ -28,8 +28,8 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
           tmp5 = arg1 !== deep_noise_suppression;
         }
         if (!tmp5) {
-          tmp5 = !tmp(9619).getWindowsAudioEffectsExperimentConfig({ location: "setNoiseCancellation" }).preferSystemEffects;
-          const tmpResult4 = tmp(9619);
+          tmp5 = !tmp(9653).getWindowsAudioEffectsExperimentConfig({ location: "setNoiseCancellation" }).preferSystemEffects;
+          const tmpResult4 = tmp(9653);
         }
         if (tmp5) {
           tmp5 = arg0;

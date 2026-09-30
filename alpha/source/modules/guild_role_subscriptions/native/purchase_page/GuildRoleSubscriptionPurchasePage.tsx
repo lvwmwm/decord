@@ -1,18 +1,18 @@
-// Module ID: 16362
-// Function ID: 16363
+// Module ID: 16391
+// Function ID: 16392
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1182, 2045, 2067, 1074, 21, 4836, 576, 4832, 1115, 1177, 9563, 6566, 14930, 14932, 14933, 563, 16363, 4989, 16365, 16366, 16367, 5501, 6065, 6062, 16368, 9974, 16370, 16371, 4525, 16372, 2]
+// Dependencies: [19, 17, 1182, 2045, 2067, 1074, 21, 4866, 576, 4862, 1115, 1177, 9597, 6596, 14961, 14963, 14964, 563, 16392, 5019, 16394, 16395, 16396, 5531, 6095, 6092, 16397, 10008, 16399, 16400, 4555, 16401, 2]
 // Exports: default
 
-// Module 16362 (GuildRoleSubscriptionPurchasePage)
+// Module 16391 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5501 */;
-import _modDef9563 from "module_9563" /* 9563 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16372 */;
+import LinkingDefault from "Linking" /* 4555 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5531 */;
+import _modDef9597 from "module_9597" /* 9597 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16401 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -44,7 +44,7 @@ function SocialBadge(onPress) {
   obj.onPress = onPress;
   const items = [closure_1_14(native.Icon, { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true }), closure_1_14(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
-    const obj3 = { source: _modDef9563, style: tmp.socialBadgeArrow };
+    const obj3 = { source: _modDef9597, style: tmp.socialBadgeArrow };
     tmp5Result = closure_1_14(native.Icon, obj3);
   }
   items[2] = tmp5Result;
@@ -57,7 +57,7 @@ const Constants = fn(1074);
 ({ AnalyticsLocations: closure_11, GuildFeatures: closure_12, MarketingURLs: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, heroImage: { aspectRatio: 4, width: "100%" }, guildIconContainer: null, guildIcon: null, contentCard: null, loadingContainer: null, socialContainer: null, socialBadge: null, socialBadgeIcon: null, socialBadgeArrow: null, separator: null, moneyBirbPlaceholder: null, gatedChannel: null, gatedChannelIcon: null };
 const rect = { borderWidth: 3, borderRadius: nativeDefault.radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute" };
 obj2.guildIconContainer = rect;

@@ -1,16 +1,16 @@
-// Module ID: 9670
-// Function ID: 9671
+// Module ID: 9704
+// Function ID: 9705
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4836, 576, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 2]
 // Exports: default
 
-// Module 9670 (StageChannelBackground)
+// Module 9704 (StageChannelBackground)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BLACK } };
 let closure_2 = createStyles.createStyles(obj2);
 const size = fn(2);

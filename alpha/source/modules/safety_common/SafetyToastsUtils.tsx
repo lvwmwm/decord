@@ -1,17 +1,17 @@
-// Module ID: 8018
-// Function ID: 8019
+// Module ID: 8048
+// Function ID: 8049
 // Name: SafetyToastsUtils
-// Dependencies: [2045, 1372, 8012, 4988, 4678, 1115, 3039, 2619, 2]
+// Dependencies: [2045, 1372, 8042, 5018, 4708, 1115, 3039, 2619, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 8018 (SafetyToastsUtils)
+// Module 8048 (SafetyToastsUtils)
 import util from "util" /* 1115 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SafetyToastType = fn(8012).SafetyToastType;
+const SafetyToastType = fn(8042).SafetyToastType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_common/SafetyToastsUtils.tsx");
 
@@ -28,8 +28,8 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
   }
   let name = NicknameUtilsDefault.getName(guild_id, id, user);
   if (name == null) {
-    name = tmp3(4678).getGlobalName(user);
-    const tmp3Result = tmp3(4678);
+    name = tmp3(4708).getGlobalName(user);
+    const tmp3Result = tmp3(4708);
   }
   if (SafetyToastType.IGNORE_SUCCESS === BLOCK_SUCCESS) {
     const intl18 = util.intl;

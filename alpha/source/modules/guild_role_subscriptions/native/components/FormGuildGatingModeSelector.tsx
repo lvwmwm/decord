@@ -1,20 +1,20 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17775
+// Function ID: 17776
 // Name: FormGuildGatingModeSelector
-// Dependencies: [19, 17, 21, 4836, 17741, 5370, 1115, 4832, 17743, 11451, 17744, 2]
+// Dependencies: [19, 17, 21, 4866, 17776, 5400, 1115, 4862, 17778, 11487, 17779, 2]
 // Exports: default
 
-// Module 17740 (FormGuildGatingModeSelector)
+// Module 17775 (FormGuildGatingModeSelector)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles({ container: { padding: 16 }, space: { height: 8 }, alertHeader: { paddingBottom: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
@@ -24,7 +24,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   const onChange = isFullServerGating.onChange;
   const tmp = closure_8();
   dependencyMap = tmp;
-  const roleSubscriptionSettingsDisabled = isFullServerGating(17741).useRoleSubscriptionSettingsDisabled();
+  const roleSubscriptionSettingsDisabled = isFullServerGating(17776).useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
   const callback = noop.useCallback(() => {
@@ -52,8 +52,8 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
     onChange(true);
   }, items1);
   let obj3 = { icon: null, title: null, description: null, selected: null, onPress: null, disabled: null };
-  let obj = isFullServerGating(17741);
-  obj3.icon = onChange(11451);
+  let obj = isFullServerGating(17776);
+  obj3.icon = onChange(11487);
   let intl = isFullServerGating(1115).intl;
   obj3.title = intl.string(isFullServerGating(1115).t.rXqxhF);
   let intl2 = isFullServerGating(1115).intl;
@@ -61,11 +61,11 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   obj3.selected = !isFullServerGating;
   obj3.onPress = callback;
   obj3.disabled = roleSubscriptionSettingsDisabled;
-  const items2 = [closure_5(onChange(17743), obj3), closure_5(View, { style: tmp.space }), ];
+  const items2 = [closure_5(onChange(17778), obj3), closure_5(View, { style: tmp.space }), ];
   let obj5 = { icon: null, title: null, description: null, selected: null, onPress: null, disabled: null };
   let obj4 = { style: tmp.space };
-  const tmp5 = onChange(17743);
-  obj5.icon = onChange(17744);
+  const tmp5 = onChange(17778);
+  obj5.icon = onChange(17779);
   let intl3 = isFullServerGating(1115).intl;
   obj5.title = intl3.string(isFullServerGating(1115).t.WzC9s6);
   const intl4 = isFullServerGating(1115).intl;
@@ -73,7 +73,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   obj5.selected = isFullServerGating;
   obj5.onPress = callback1;
   obj5.disabled = roleSubscriptionSettingsDisabled;
-  items2[2] = closure_5(onChange(17743), obj5);
+  items2[2] = closure_5(onChange(17778), obj5);
   obj2.children = items2;
   return closure_7(View, obj2);
 };

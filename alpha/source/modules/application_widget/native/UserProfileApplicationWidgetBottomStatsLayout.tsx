@@ -1,20 +1,20 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8681
+// Function ID: 8682
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4836, 576, 8555, 8642, 4832, 8643, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 8589, 8676, 4862, 8677, 2]
 // Exports: default
 
-// Module 8647 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 8681 (UserProfileApplicationWidgetBottomStatsLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8555 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8642 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8589 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8676 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { statsGrid: { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_12 }, stat: null };
 let obj3 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_12 };
 obj2.stat = { width: "47%", gap: nativeDefault.space.PX_4 };
@@ -40,7 +40,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         const obj2 = { field: iter.value, variant: "text-sm/medium", color: "text-default", skeletonWidthChars: 8 };
         const items = [React3(UserProfileApplicationWidgetFieldUtils.FieldText, obj2), ];
         if ("value" === iter.label.status) {
-          Text = Text(4832).Text;
+          Text = Text(4862).Text;
           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: null };
           iter = iter.label.text;
           obj3.children = iter;
@@ -48,7 +48,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         } else {
           tmp5Result = null;
           if ("skeleton" === iter.label.status) {
-            tmp5Result = tmp5(Text(8643).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(Text(8677).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

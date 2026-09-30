@@ -1,21 +1,21 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13042
+// Function ID: 13043
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 4825, 5756, 5056, 2099, 1372, 1980, 1074, 21, 4836, 576, 5370, 5466, 1981, 504, 4832, 13016, 4566, 4837, 1115, 5602, 2]
+// Dependencies: [32, 19, 17, 4855, 5786, 5086, 2099, 1372, 1980, 1074, 21, 4866, 576, 5400, 5496, 1981, 504, 4862, 13043, 4596, 4867, 1115, 5632, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 13015 (ChatLoadingIndicator)
+// Module 13042 (ChatLoadingIndicator)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import timing from "timing" /* 4837 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import timing from "timing" /* 4867 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5756 */;
-import MessageStore from "MessageStore" /* 5056 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
+import MessageStore from "MessageStore" /* 5086 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1372 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
@@ -60,7 +60,7 @@ const View = fn(17).View;
 const AppStates = fn(1074).AppStates;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { container: { flexDirection: "row", alignItems: "center", gap: 4 }, pulse: null };
 let size = { height: 8, width: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj.pulse = size;
@@ -101,7 +101,7 @@ let closure_18 = noop.memo(() => {
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
     obj3.children = items2;
-    tmp4Result = tmp4(tmp(4832).Text, obj3);
+    tmp4Result = tmp4(tmp(4862).Text, obj3);
   }
   items1[4] = tmp4Result;
   const items3 = [closure_1_14(__initData, { children: items1 }), "\n", , , , , ];
@@ -122,7 +122,7 @@ let closure_18 = noop.memo(() => {
     const obj5 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj5.children = items5;
-    tmp4Result3 = tmp4(tmp(4832).Text, obj5);
+    tmp4Result3 = tmp4(tmp(4862).Text, obj5);
   }
   items4[4] = tmp4Result3;
   items3[2] = closure_1_14(__initData, { children: items4 });
@@ -144,7 +144,7 @@ let closure_18 = noop.memo(() => {
     const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj7.children = items7;
-    tmp4Result4 = tmp4(tmp(4832).Text, obj7);
+    tmp4Result4 = tmp4(tmp(4862).Text, obj7);
   }
   items6[4] = tmp4Result4;
   items3[4] = closure_1_14(__initData, { children: items6 });
@@ -266,8 +266,8 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return tmp7;
   };
-  let obj3 = stateFromStores(4566);
-  fn.__closure = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4566).withRepeat, withSequence: stateFromStores(4566).withSequence, withTiming: stateFromStores(4837).withTiming, Easing: stateFromStores(4566).Easing };
+  let obj3 = stateFromStores(4596);
+  fn.__closure = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4596).withRepeat, withSequence: stateFromStores(4596).withSequence, withTiming: stateFromStores(4867).withTiming, Easing: stateFromStores(4596).Easing };
   fn.__workletHash = 17454673879926;
   fn.__initData = __initData;
   let obj5 = { style: tmp.container, children: null };
@@ -279,13 +279,13 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
   let obj7 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl = stateFromStores(1115).intl;
   obj7.children = intl.string(stateFromStores(1115).t.JwIJMV);
-  items3[1] = closure_13(stateFromStores(4832).Text, obj7);
+  items3[1] = closure_13(stateFromStores(4862).Text, obj7);
   obj5.children = items3;
   const tmp8 = closure_14(View, obj5);
   let tmp7Result = tmp8;
   if (stateFromStores1) {
     let obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = closure_13(tmp2(5602).PressableOpacity, obj8);
+    tmp7Result = closure_13(tmp2(5632).PressableOpacity, obj8);
   }
   return tmp7Result;
 };

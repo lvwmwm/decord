@@ -1,12 +1,12 @@
-// Module ID: 16559
-// Function ID: 16560
+// Module ID: 16589
+// Function ID: 16590
 // Name: useVibegrationsPublishedAppName
-// Dependencies: [5063, 8660, 504, 2]
+// Dependencies: [5093, 8694, 504, 2]
 // Exports: default
 
-// Module 16559 (useVibegrationsPublishedAppName)
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8660 */;
+// Module 16589 (useVibegrationsPublishedAppName)
+import ApplicationStore from "ApplicationStore" /* 5093 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8694 */;
 
 const require = globalThis.__r;
 

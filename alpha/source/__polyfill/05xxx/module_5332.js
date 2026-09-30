@@ -1,19 +1,19 @@
 // Module ID: 5332
 // Function ID: 5333
-// Dependencies: [5264]
+// Dependencies: [1313, 5324, 1306, 1307]
 
 // Module 5332
-import _mod5264 from "module_5264" /* 5264 */;
+import _mod1313 from "module_1313" /* 1313 */;
 
 
-export default function Type(arg0) {
-  let str = "Symbol";
-  if (typeof arg0 !== "symbol") {
-    let str2 = "BigInt";
-    if (typeof arg0 !== "bigint") {
-      str2 = _mod5264(arg0);
+export default function isInteger(num) {
+  if (typeof num === "number") {
+    if (!_mod1313(num)) {
+      if (tmp2(5324)(num)) {
+        const tmp = tmp2(1306)(num);
+        return tmp2(1307)(tmp) === tmp;
+      }
     }
-    str = str2;
   }
-  return str;
+  return false;
 };

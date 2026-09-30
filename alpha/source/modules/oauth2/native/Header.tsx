@@ -1,14 +1,14 @@
-// Module ID: 8905
-// Function ID: 8906
+// Module ID: 8939
+// Function ID: 8940
 // Name: oauth2/Header
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 1397, 1177, 4832, 8906, 1385, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4866, 576, 1397, 1177, 4862, 8940, 1385, 1115, 2]
 // Exports: default
 
-// Module 8905 (oauth2/Header)
+// Module 8939 (oauth2/Header)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Text_Text from "Text/Text" /* 4862 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const UserFlags = fn(1074).UserFlags;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { header: { paddingBottom: 16, marginHorizontal: 16, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, flexDirection: "column", justifyContent: "center", alignItems: "center" }, applicationNameWrapper: { flexDirection: "row" }, headerIcons: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 24 }, ellipseGroup: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 24 }, ellipse: null, botTag: null };
 let size = { width: 4, height: 4, marginHorizontal: 2, backgroundColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, opacity: 0.1, borderRadius: 2 };
 obj2.ellipse = size;
@@ -60,8 +60,8 @@ export default function Header(accountScopes) {
       const tmp9Result = tmp9(1385);
     }
     obj13.verified = hasFlagResult;
-    tmp8Result = tmp8(tmp2(8906), obj13);
-    const tmp2Result2 = tmp2(8906);
+    tmp8Result = tmp8(tmp2(8940), obj13);
+    const tmp2Result2 = tmp2(8940);
   }
   items3[1] = tmp8Result;
   obj11.children = items3;

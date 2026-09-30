@@ -1,19 +1,19 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 14639
+// Function ID: 14640
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1372, 21, 4836, 7177, 6083, 4678, 1177, 6784, 4832, 1115, 2487, 6165, 2]
+// Dependencies: [19, 1372, 21, 4866, 7207, 6113, 4708, 1177, 6814, 4862, 1115, 2487, 6195, 2]
 // Exports: default
 
-// Module 14608 (FamilyCenterTopUsersBottomSheet)
+// Module 14639 (FamilyCenterTopUsersBottomSheet)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import _modDef2487 from "module_2487" /* 2487 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TableRow from "TableRow" /* 6083 */;
-import TableRowGroup from "TableRowGroup" /* 6165 */;
-import ActionSheet from "ActionSheet" /* 6784 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7177 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import TableRow from "TableRow" /* 6113 */;
+import TableRowGroup from "TableRowGroup" /* 6195 */;
+import ActionSheet from "ActionSheet" /* 6814 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7207 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -28,14 +28,14 @@ function UserRow(userActivity) {
     const obj2 = { label: null, subLabel: null, icon: null };
     obj2.label = UserUtilsDefault.getName(user);
     obj2.subLabel = topUserOrGuildDescription;
-    const obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
+    const obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
     obj2.icon = React4(native.Avatar, obj4);
     return React4(TableRow.TableRow, obj2);
   }
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_6 = createStyles.createStyles({ header: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopUsersBottomSheet.tsx");

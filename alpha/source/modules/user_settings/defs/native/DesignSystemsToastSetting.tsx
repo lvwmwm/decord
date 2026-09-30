@@ -1,12 +1,12 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15593
+// Function ID: 15594
 // Name: DesignSystemsToastSetting
-// Dependencies: [7582, 1074, 11175, 15561, 2]
+// Dependencies: [7612, 1074, 11211, 15594, 2]
 
-// Module 15560 (DesignSystemsToastSetting)
+// Module 15593 (DesignSystemsToastSetting)
 import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7582 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
+import SettingsConstants from "SettingsConstants" /* 7612 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

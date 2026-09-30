@@ -1,13 +1,13 @@
-// Module ID: 4795
-// Function ID: 4796
+// Module ID: 4825
+// Function ID: 4826
 // Name: ClockIcon
-// Dependencies: [19, 21, 576, 4530, 4796, 2]
+// Dependencies: [19, 21, 576, 4560, 4826, 2]
 // Exports: ClockIcon
 
-// Module 4795 (ClockIcon)
+// Module 4825 (ClockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod4796 from "module_4796" /* 4796 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod4826 from "module_4826" /* 4826 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ClockIcon = function ClockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4796, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4826, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

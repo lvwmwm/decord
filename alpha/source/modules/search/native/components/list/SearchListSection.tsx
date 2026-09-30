@@ -1,19 +1,19 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16725
+// Function ID: 16726
 // Name: SearchListSection
-// Dependencies: [19, 17, 7468, 21, 4836, 4832, 2]
+// Dependencies: [19, 17, 7499, 21, 4866, 4862, 2]
 
-// Module 16690 (SearchListSection)
-import Text_Text from "Text/Text" /* 4832 */;
+// Module 16725 (SearchListSection)
+import Text_Text from "Text/Text" /* 4862 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let closure_5 = createStyles.createStyles({ section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: fn(7468).SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } });
-let obj = { section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: fn(7468).SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } };
+const createStyles = fn(4866);
+let closure_5 = createStyles.createStyles({ section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: fn(7499).SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } });
+let obj = { section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: fn(7499).SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchListSection.tsx");
 

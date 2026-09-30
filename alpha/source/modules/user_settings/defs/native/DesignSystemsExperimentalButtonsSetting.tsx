@@ -1,12 +1,12 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15577
+// Function ID: 15578
 // Name: DesignSystemsExperimentalButtonsSetting
-// Dependencies: [7582, 1074, 11175, 15545, 2]
+// Dependencies: [7612, 1074, 11211, 15578, 2]
 
-// Module 15544 (DesignSystemsExperimentalButtonsSetting)
+// Module 15577 (DesignSystemsExperimentalButtonsSetting)
 import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7582 */;
-import SettingBuilders from "SettingBuilders" /* 11175 */;
+import SettingsConstants from "SettingsConstants" /* 7612 */;
+import SettingBuilders from "SettingBuilders" /* 11211 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

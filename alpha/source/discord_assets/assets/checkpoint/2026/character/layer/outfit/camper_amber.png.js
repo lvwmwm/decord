@@ -1,8 +1,8 @@
-// Module ID: 5146
-// Function ID: 5147
+// Module ID: 5176
+// Function ID: 5177
 // Dependencies: [2]
 
-// Module 5146
+// Module 5176
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/camper_amber.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11242
+// Function ID: 11243
 // Name: ConversationHeaderDismissTracker
 // Dependencies: [2]
 
-// Module 11206 (ConversationHeaderDismissTracker)
+// Module 11242 (ConversationHeaderDismissTracker)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/native/ConversationHeaderDismissTracker.tsx");

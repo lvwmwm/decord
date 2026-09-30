@@ -1,13 +1,13 @@
-// Module ID: 7811
-// Function ID: 7812
+// Module ID: 7841
+// Function ID: 7842
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 7812, 7822, 7127, 2]
+// Dependencies: [19, 7842, 7852, 7157, 2]
 // Exports: default
 
-// Module 7811 (useMaybeFetchProfileFrame)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7127 */;
-import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 7812 */;
-import useProfileFrameDefault from "useProfileFrame" /* 7822 */;
+// Module 7841 (useMaybeFetchProfileFrame)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7157 */;
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 7842 */;
+import useProfileFrameDefault from "useProfileFrame" /* 7852 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

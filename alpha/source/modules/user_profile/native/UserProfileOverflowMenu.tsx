@@ -1,45 +1,45 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12744
+// Function ID: 12745
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4852, 2045, 4479, 2099, 6795, 1074, 4857, 11095, 21, 504, 12715, 12721, 12722, 7800, 6749, 6769, 7796, 7824, 7825, 12723, 12724, 12725, 9352, 6775, 7789, 1115, 4849, 4800, 5039, 12731, 1981, 9360, 11097, 1249, 8017, 11096, 12732, 12732, 8254, 1364, 12288, 1241, 9359, 2021, 6776, 4678, 4527, 8486, 8755, 11783, 6782, 12733, 4566, 7523, 12729, 7528, 7530, 576, 12734, 2]
+// Dependencies: [32, 19, 17, 4882, 2045, 4509, 2099, 6825, 1074, 4887, 11131, 21, 504, 12745, 12751, 12752, 7830, 6779, 6799, 7826, 7854, 7855, 12753, 12754, 12755, 9386, 6805, 7819, 1115, 4879, 4830, 5069, 12761, 1981, 9394, 11133, 1249, 8047, 11132, 12762, 12762, 8285, 1364, 12318, 1241, 9393, 2021, 6806, 4708, 4557, 8517, 8789, 11817, 6812, 12763, 4596, 7553, 12759, 7558, 7560, 576, 12764, 2]
 // Exports: default
 
-// Module 12714 (UserProfileOverflowMenu)
+// Module 12744 (UserProfileOverflowMenu)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8017 */;
-import ReportModals from "ReportModals" /* 8254 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9359 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9360 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11783 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12288 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 12715 */;
-import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 12725 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12729 */;
-import BotReportChooser from "BotReportChooser" /* 12732 */;
-import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 12733 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import UserUtilsDefault from "UserUtils" /* 4708 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8047 */;
+import ReportModals from "ReportModals" /* 8285 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9393 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9394 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11817 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12318 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 12745 */;
+import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 12755 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12759 */;
+import BotReportChooser from "BotReportChooser" /* 12762 */;
+import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 12763 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4882 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const discord_common_AnalyticsUtils = tmp2(1249);
 require = fn;
 const View = fn(17).View;
-const UserProfileThemeTypes = fn(6795).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(6825).UserProfileThemeTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, ApplicationFlags: closure_12, AVATAR_MAX_SIZE: map1, ChannelTypesSets: closure_14, NOOP: closure_15, RelationshipTypes: closure_16 } = Constants);
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const RestrictionConfirmationConstants = fn(11095);
+const ParticipantTypes = fn(4887).ParticipantTypes;
+const RestrictionConfirmationConstants = fn(11131);
 ({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_18, IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_19 } = RestrictionConfirmationConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_20, jsxs: closure_21 } = jsxProd);
@@ -297,7 +297,7 @@ export default function UserProfileOverflowMenu(user) {
             };
             obj2.onSuccess = onSuccess;
             obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION;
-            obj.openLazy(asyncRequireImpl(11096, dependencyMap.paths), collapsedCategories, obj2, "stack");
+            obj.openLazy(asyncRequireImpl(11132, dependencyMap.paths), collapsedCategories, obj2, "stack");
           };
           push(obj10);
           if (result) {
@@ -310,7 +310,7 @@ export default function UserProfileOverflowMenu(user) {
                           trackUserProfileAction({ action: "REPORT", analyticsLocations });
                           if (user.bot) {
                             const obj4 = ActionSheetActionCreatorsDefault;
-                            const tmp18 = asyncRequireImpl(12732, dependencyMap.paths);
+                            const tmp18 = asyncRequireImpl(12762, dependencyMap.paths);
                             const BOT_REPORT_CHOOSER_KEY = BotReportChooser.BOT_REPORT_CHOOSER_KEY;
                             const obj5 = { user: tmp5, entrypoint: "UserProfileOverflowMenu", contextualGuildId: tmp3, contextualChannelId: null };
                             id = undefined;
@@ -378,7 +378,7 @@ export default function UserProfileOverflowMenu(user) {
           };
           obj2.onSuccess = onSuccess;
           obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION;
-          obj.openLazy(asyncRequireImpl(11097, dependencyMap.paths), closure_2_19, obj2, "stack");
+          obj.openLazy(asyncRequireImpl(11133, dependencyMap.paths), closure_2_19, obj2, "stack");
         };
         items6.push(obj14);
       }
@@ -395,7 +395,7 @@ export default function UserProfileOverflowMenu(user) {
         label: stringResult,
         action() {
               trackUserProfileAction({ action: "PRESS_SET_FRIEND_NICKNAME", analyticsLocations });
-              ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12731, dependencyMap.paths), { userId: id, showUserProfile });
+              ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12761, dependencyMap.paths), { userId: id, showUserProfile });
               const obj = { action: "PRESS_SET_FRIEND_NICKNAME", analyticsLocations };
               const obj3 = { userId: id, showUserProfile };
               ActionSheetActionCreatorsDefault.hideActionSheet();

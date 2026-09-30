@@ -1,12 +1,12 @@
-// Module ID: 16963
-// Function ID: 16964
+// Module ID: 16998
+// Function ID: 16999
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 4836, 576, 5464, 6966, 9589, 9858, 16961, 1115, 2587, 5447, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 4866, 576, 5494, 6996, 9623, 9892, 16996, 1115, 2587, 5477, 2]
 // Exports: default
 
-// Module 16963 (NitroFileUploadUpsellPromoSheet)
+// Module 16998 (NitroFileUploadUpsellPromoSheet)
 import nativeDefault from "native" /* 576 */;
-import openUserSettings from "openUserSettings" /* 6966 */;
+import openUserSettings from "openUserSettings" /* 6996 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const Constants = fn(1074);
 ({ AnalyticsPages: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);

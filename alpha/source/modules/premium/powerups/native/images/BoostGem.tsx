@@ -1,11 +1,11 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12221
+// Function ID: 12222
 // Name: BoostGem
-// Dependencies: [19, 21, 8074, 2]
+// Dependencies: [19, 21, 8106, 2]
 // Exports: default
 
-// Module 12189 (BoostGem)
-import inlineStyles from "inlineStyles" /* 8074 */;
+// Module 12221 (BoostGem)
+import inlineStyles from "inlineStyles" /* 8106 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

@@ -1,11 +1,11 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17239
+// Function ID: 17240
 // Name: CircleWithCutout
-// Dependencies: [19, 17, 21, 9022, 8074, 2]
+// Dependencies: [19, 17, 21, 9056, 8106, 2]
 
-// Module 17204 (CircleWithCutout)
-import inlineStyles from "inlineStyles" /* 8074 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9022 */;
+// Module 17239 (CircleWithCutout)
+import inlineStyles from "inlineStyles" /* 8106 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9056 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -71,5 +71,5 @@ export default noop.memo(function CircleWithCutout(arg0) {
   size.children = items2;
   return tmp10(inlineStylesDefault, size);
 });
-export const getBadgeLeft = fn(9022).getBadgeLeft;
-export const getBadgeTop = fn(9022).getBadgeTop;
+export const getBadgeLeft = fn(9056).getBadgeLeft;
+export const getBadgeTop = fn(9056).getBadgeTop;

@@ -1,20 +1,20 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15551
+// Function ID: 15552
 // Name: InternalBuildActiveSetting
-// Dependencies: [14054, 14553, 11175, 15287, 2]
+// Dependencies: [14081, 14584, 11211, 15320, 2]
 
-// Module 15518 (InternalBuildActiveSetting)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14553 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14054 */;
+// Module 15551 (InternalBuildActiveSetting)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14584 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14081 */;
 
 require = fn;
-const SettingBuilders = fn(11175);
+const SettingBuilders = fn(11211);
 const obj2 = {
   useTitle() {
     return "Internal Build Active";
   },
   parent: null,
-  IconComponent: fn(15287).MobilePhoneSettingsIcon,
+  IconComponent: fn(15320).MobilePhoneSettingsIcon,
   useDescription: function useInternalBuildActiveDescription() {
     return "Build installed from builds.discord.tools";
   },
@@ -30,7 +30,7 @@ export default SettingBuilders.createStatic({
     return "Internal Build Active";
   },
   parent: null,
-  IconComponent: fn(15287).MobilePhoneSettingsIcon,
+  IconComponent: fn(15320).MobilePhoneSettingsIcon,
   useDescription: function useInternalBuildActiveDescription() {
     return "Build installed from builds.discord.tools";
   },

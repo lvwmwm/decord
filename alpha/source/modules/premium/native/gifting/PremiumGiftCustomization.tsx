@@ -1,10 +1,10 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10712
+// Function ID: 10713
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1374, 21, 4836, 576, 1485, 10329, 10679, 1115, 10458, 10680, 4832, 10485, 10487, 10681, 2]
+// Dependencies: [32, 19, 17, 1374, 21, 4866, 576, 1485, 10363, 10713, 1115, 10492, 10714, 4862, 10519, 10521, 10715, 2]
 // Exports: default
 
-// Module 10678 (PremiumGiftCustomization)
+// Module 10712 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scrollViewContainer: null, senderHeaderTitle: null };
 const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollViewContainer = { paddingBottom: nativeDefault.space.PX_24 };

@@ -1,20 +1,20 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10373
+// Function ID: 10374
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7006, 7007, 502, 4494, 6824, 8834, 6825, 1074, 4815, 1374, 21, 3, 6827, 573, 8833, 1240, 4421, 7015, 4503, 5340, 1241, 5370, 1115, 10340, 1981, 5039, 6998, 2]
+// Dependencies: [109, 5, 19, 17, 7036, 7037, 502, 4524, 6854, 8868, 6855, 1074, 4845, 1374, 21, 3, 6857, 573, 8867, 1240, 4451, 7045, 4533, 5370, 1241, 5400, 1115, 10374, 1981, 5069, 7028, 2]
 
-// Module 10339 (GPlayManager)
+// Module 10373 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5340 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 8833 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5370 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 8867 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7006 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import IAPStore from "IAPStore" /* 6824 */;
+import SubscriptionStore from "SubscriptionStore" /* 4524 */;
+import IAPStore from "IAPStore" /* 6854 */;
 
 require = fn;
 function handleConnectionStateUpdated(connectionState) {
@@ -738,14 +738,14 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
 let closure_3 = ["succeededOnlyFields"];
 get_ActivityIndicator = fn(17);
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-const PremiumPlanPurchasedStore = fn(7007);
+const PremiumPlanPurchasedStore = fn(7037);
 ({ setPaymentSuccess: closure_7, showOldPaymentFlowSuccess: closure_8 } = PremiumPlanPurchasedStore);
-const useGPlayAnalyticsStore = fn(8834).useGPlayAnalyticsStore;
-let Constants = fn(6825);
+const useGPlayAnalyticsStore = fn(8868).useGPlayAnalyticsStore;
+let Constants = fn(6855);
 ({ GPlayConnectionState: map1, GPlayDowngradeCommand: closure_14, GPlayPurchaseState: closure_15 } = Constants);
 Constants = fn(1074);
 ({ AnalyticEvents: closure_16, AppStates: closure_17, PaymentGateways: closure_18 } = Constants);
-const OrderStatus = fn(4815).OrderStatus;
+const OrderStatus = fn(4845).OrderStatus;
 const SubscriptionPlanInfo = fn(1374).SubscriptionPlanInfo;
 const jsx = fn(21).jsx;
 let closure_22 = new LoggerDefault("GPlayManager.android");
@@ -756,7 +756,7 @@ let closure_26 = null;
 let closure_27 = null;
 let closure_28 = null;
 let closure_29 = null;
-const items = [fn(6827).ProductIds.PREMIUM_TIER_2_MONTHLY];
+const items = [fn(6857).ProductIds.PREMIUM_TIER_2_MONTHLY];
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/gplay/native/GPlayManager.android.tsx");
 

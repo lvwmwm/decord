@@ -1,13 +1,13 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9752
+// Function ID: 9753
 // Name: setUserStatus
-// Dependencies: [5, 6702, 5758, 1074, 4678, 1115, 9719, 2026, 1217, 4686, 1241, 2]
+// Dependencies: [5, 6732, 5788, 1074, 4708, 1115, 9753, 2026, 1217, 4716, 1241, 2]
 // Exports: default
 
-// Module 9718 (setUserStatus)
+// Module 9752 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6702 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5758 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6732 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5788 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -36,13 +36,13 @@ let closure_7 = async function _setUserStatus() {
     statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
   }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
   closure_129_6 = (function getStatusUpdateAnnouncement(DND, arg1) {
-    const humanizeStatusResult = value(4678).humanizeStatus(DND);
+    const humanizeStatusResult = value(4708).humanizeStatus(DND);
     if ("0" === arg1) {
       const intl3 = tmp(1115).intl;
       const obj2 = { statusLabel: humanizeStatusResult };
       return intl3.formatToPlainString(tmp(1115).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(9719).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(9753).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
         const intl2 = tmp(1115).intl;
@@ -55,7 +55,7 @@ let closure_7 = async function _setUserStatus() {
       }
       return formatToPlainStringResult;
     }
-    const obj = value(4678);
+    const obj = value(4708);
   })(closure_129_0, closure_129_5);
   const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(closure_129_6);

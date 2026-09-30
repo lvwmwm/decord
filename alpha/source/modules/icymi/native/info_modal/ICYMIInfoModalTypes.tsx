@@ -1,9 +1,9 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16311
+// Function ID: 16312
 // Name: ICYMIInfoModalTypes
 // Dependencies: [2]
 
-// Module 16282 (ICYMIInfoModalTypes)
+// Module 16311 (ICYMIInfoModalTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModalTypes.tsx");

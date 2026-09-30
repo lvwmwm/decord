@@ -1,17 +1,17 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7668
+// Function ID: 7669
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5897, 2045, 4469, 1074, 1115, 2111, 7567, 11, 4983, 7569, 7571, 2]
+// Dependencies: [5927, 2045, 4499, 1074, 1115, 2111, 7597, 11, 5013, 7599, 7601, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7638 (StageRaiseHandSystemMessage)
+// Module 7668 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7567 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7569 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5897 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7597 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7599 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5927 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -42,7 +42,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(4983).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(5013).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -71,6 +71,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     }
   }
   obj3.ephemeralIndication = tmp10;
-  const merged = Object.assign(tmp6(7571)(roleStyle));
+  const merged = Object.assign(tmp6(7601)(roleStyle));
   return obj3;
 };

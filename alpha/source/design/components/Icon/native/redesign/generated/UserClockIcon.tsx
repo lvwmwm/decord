@@ -1,13 +1,13 @@
-// Module ID: 12866
-// Function ID: 12867
+// Module ID: 12893
+// Function ID: 12894
 // Name: UserClockIcon
-// Dependencies: [19, 21, 576, 4530, 12867, 2]
+// Dependencies: [19, 21, 576, 4560, 12894, 2]
 // Exports: UserClockIcon
 
-// Module 12866 (UserClockIcon)
+// Module 12893 (UserClockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod12867 from "module_12867" /* 12867 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod12894 from "module_12894" /* 12894 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const UserClockIcon = function UserClockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12867, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12894, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

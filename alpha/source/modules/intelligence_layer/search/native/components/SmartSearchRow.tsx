@@ -1,17 +1,17 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16726
+// Function ID: 16727
 // Name: SmartSearchRow
-// Dependencies: [32, 5, 19, 17, 4825, 12015, 12016, 7468, 21, 4836, 576, 16647, 16692, 12017, 16698, 16699, 16678, 16639, 8344, 12018, 16700, 16702, 504, 2]
+// Dependencies: [32, 5, 19, 17, 4855, 12049, 12050, 7499, 21, 4866, 576, 16682, 16727, 12051, 16733, 16734, 16713, 16674, 8375, 12052, 16735, 16737, 504, 2]
 // Exports: default
 
-// Module 16691 (SmartSearchRow)
+// Module 16726 (SmartSearchRow)
 import nativeDefault from "native" /* 576 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12015 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16692 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12049 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16727 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 
 const require = fn;
 function SmartSearchContent(entry) {
@@ -170,11 +170,11 @@ function SmartSearchContent(entry) {
 }
 const View = fn(17).View;
 SmartSearchResultsStoreDefault;
-const MAX_PRESENTED_CITATIONS = fn(12016).MAX_PRESENTED_CITATIONS;
-let closure_10 = fn(7468).SEARCH_MESSAGES_DEFAULT_LINE_CLAMP;
+const MAX_PRESENTED_CITATIONS = fn(12050).MAX_PRESENTED_CITATIONS;
+let closure_10 = fn(7499).SEARCH_MESSAGES_DEFAULT_LINE_CLAMP;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { collapsedFrame: { height: 217, overflow: "hidden" }, expandedContent: { paddingBottom: nativeDefault.space.PX_40 }, divider: null };
 let obj3 = { paddingBottom: nativeDefault.space.PX_40 };
 obj.divider = { height: 1, marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };

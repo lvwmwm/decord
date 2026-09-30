@@ -1,14 +1,14 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13843
+// Function ID: 13844
 // Name: Status
-// Dependencies: [32, 19, 17, 1178, 1074, 12773, 21, 4836, 13814, 576, 13817, 13818, 13819, 13820, 13821, 13822, 13823, 13815, 13824, 4566, 5446, 13801, 2]
+// Dependencies: [32, 19, 17, 1178, 1074, 12803, 21, 4866, 13841, 576, 13844, 13845, 13846, 13847, 13848, 13849, 13850, 13842, 13851, 4596, 5476, 13828, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13816 (Status)
+// Module 13843 (Status)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5446 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13814 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13815 */;
+import spring from "spring" /* 5476 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13841 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13842 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,13 +19,13 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const STATUS_PADDING = fn(1178).STATUS_PADDING;
 const StatusTypes = fn(1074).StatusTypes;
-const ChannelAnimationConstants = fn(12773);
+const ChannelAnimationConstants = fn(12803);
 ({ TYPING_ENTERING: closure_8, TYPING_EXITING: closure_9, CHANNEL_SPRING_CONFIG: c10 } = ChannelAnimationConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let closure_13 = createStyles.createStyles({ statusIcon: { width: "100%", height: "100%" } });
-createStyles = fn(4836);
+createStyles = fn(4866);
 let closure_14 = createStyles.createStyles((items, arg1) => {
   const statusTypingDimensions = Status_StatusUtils.getStatusTypingDimensions(items);
   ({ height, dotSize } = statusTypingDimensions);
@@ -78,23 +78,23 @@ export default function Status(isMobileOnline) {
   obj.style = items;
   const obj2 = { style: closure_13().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(13817);
+    let tmp4Result = tmp4(13844);
   } else if (flag2) {
-    tmp4Result = tmp4(13818);
+    tmp4Result = tmp4(13845);
   } else if (flag) {
-    tmp4Result = tmp4(13819);
+    tmp4Result = tmp4(13846);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13820);
+    tmp4Result = tmp4(13847);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(13821);
+    tmp4Result = tmp4(13848);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13823);
+        tmp4Result = tmp4(13850);
       }
     }
-    tmp4Result = tmp4(13822);
+    tmp4Result = tmp4(13849);
   }
   obj2.source = tmp4Result;
   obj.children = closure_1_11(React4, obj2);

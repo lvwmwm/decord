@@ -1,19 +1,19 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16464
+// Function ID: 16465
 // Name: vibegrationsProjectActions
-// Dependencies: [5, 12812, 8660, 2052, 16422, 4527, 5375, 1115, 3715, 14681, 9536, 9807, 6543, 16436, 4781, 15266, 16438, 14813, 8752, 4775, 6776, 4981, 10259, 4528, 4779, 6964, 4790, 8661, 2]
+// Dependencies: [5, 12842, 8694, 2052, 16451, 4557, 5405, 1115, 3715, 14712, 9570, 9841, 6573, 16465, 4811, 15299, 16467, 14844, 8786, 4805, 6806, 5011, 10293, 4558, 4809, 6994, 4820, 8695, 2]
 // Exports: vibegrationsProjectActions
 
-// Module 16435 (vibegrationsProjectActions)
+// Module 16464 (vibegrationsProjectActions)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import CopyIcon from "CopyIcon" /* 4779 */;
-import ChannelUtils from "ChannelUtils" /* 4981 */;
-import AlertModal from "AlertModal" /* 5375 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import VibegrationsArchivePicker from "VibegrationsArchivePicker" /* 16422 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
+import CopyIcon from "CopyIcon" /* 4809 */;
+import ChannelUtils from "ChannelUtils" /* 5011 */;
+import AlertModal from "AlertModal" /* 5405 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import VibegrationsArchivePicker from "VibegrationsArchivePicker" /* 16451 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -86,13 +86,13 @@ let closure_9 = async function _importIntoProject(arg0, value) {
             closure_2_1();
           }
           const intl2 = tmp3(1115).intl;
-          await tmp3(16422).sendVibegrationsArchiveImport(id.id, closure_2_2, intl2.string(v2(3715).C7GU2r));
+          await tmp3(16451).sendVibegrationsArchiveImport(id.id, closure_2_2, intl2.string(v2(3715).C7GU2r));
           if (1 === tmp7) {
             dependencyMap = 0;
             const intl = tmp3(1115).intl;
-            tmp3(4527).presentError(intl.string(v2(3715)["02GpNr"]));
+            tmp3(4557).presentError(intl.string(v2(3715)["02GpNr"]));
             c3 = 3;
-            tmp3(4527);
+            tmp3(4557);
           } else if (arg0 === 1) {
             c3 = 3;
             throw arg1;
@@ -120,9 +120,9 @@ let closure_9 = async function _importIntoProject(arg0, value) {
     }
   }
 };
-const VibegrationsConnectionStore = fn(12812);
+const VibegrationsConnectionStore = fn(12842);
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty } = VibegrationsConnectionStore);
-const VibegrationsProjectStore = fn(8660);
+const VibegrationsProjectStore = fn(8694);
 ({ canRemixProject: metroRequire, isProjectOwner: closure_7 } = VibegrationsProjectStore);
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const size = fn(2);
@@ -137,7 +137,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     let obj = { label: null, IconComponent: null, action: null };
     let intl = project(1115).intl;
     obj.label = intl.string(_modDef3715.xKexN1);
-    obj.IconComponent = project(14681).RefreshIcon;
+    obj.IconComponent = project(14712).RefreshIcon;
     obj.action = onRefresh;
     items1.push(obj);
   }
@@ -145,7 +145,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     let obj2 = { label: null, IconComponent: null, action: null };
     let intl2 = project(1115).intl;
     obj2.label = intl2.string(_modDef3715.Ea0Wrr);
-    obj2.IconComponent = project(9536).DoorExitIcon;
+    obj2.IconComponent = project(9570).DoorExitIcon;
     obj2.action = onClose;
     items1.push(obj2);
   }
@@ -155,9 +155,9 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
       closure_0 = iter;
       const obj = { label: iter.label, IconComponent: null, action: null };
       if ("refresh" === iter.kind) {
-        let KeyIcon = project(9807).RetryIcon;
+        let KeyIcon = project(9841).RetryIcon;
       } else {
-        KeyIcon = project(6543).KeyIcon;
+        KeyIcon = project(6573).KeyIcon;
       }
       obj.IconComponent = KeyIcon;
       obj.action = function action() {
@@ -175,14 +175,14 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     let obj3 = { label: null, IconComponent: null, action: null };
     let intl3 = project(1115).intl;
     obj3.label = intl3.string(_modDef3715.vPI794);
-    obj3.IconComponent = project(16436).RemixIcon;
+    obj3.IconComponent = project(16465).RemixIcon;
     obj3.action = project.onRemix;
     items1.push(obj3);
   }
   const obj4 = { label: null, IconComponent: null, action: null };
   const intl4 = project(1115).intl;
   obj4.label = intl4.string(_modDef3715["7iamDC"]);
-  obj4.IconComponent = project(4781).DownloadIcon;
+  obj4.IconComponent = project(4811).DownloadIcon;
   obj4.action = function action() {
     if (dependencyMap != null) {
       tmp();
@@ -196,7 +196,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj5 = { label: null, IconComponent: null, action: null };
     const intl5 = tmp18(1115).intl;
     obj5.label = intl5.string(tmp20(3715).lf8HqE);
-    obj5.IconComponent = tmp18(15266).FileUpIcon;
+    obj5.IconComponent = tmp18(15299).FileUpIcon;
     obj5.action = function action() {
       (function importIntoProject() {
         const self = this;
@@ -209,7 +209,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
         return applyArgumentsResult;
       })(project, dependencyMap).catch(() => {
         const intl = project(1115).intl;
-        project(4527).presentError(intl.string(closure_1_1(3715)["02GpNr"]));
+        project(4557).presentError(intl.string(closure_1_1(3715)["02GpNr"]));
       });
     };
     items1.push(obj5);
@@ -218,7 +218,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj6 = { label: null, IconComponent: null, action: null };
     const intl6 = tmp18(1115).intl;
     obj6.label = intl6.string(tmp20(3715)["3qelzD"]);
-    obj6.IconComponent = tmp18(16438).LinkPlusIcon;
+    obj6.IconComponent = tmp18(16467).LinkPlusIcon;
     obj6.action = onConnectTool;
     items1.push(obj6);
   }
@@ -226,7 +226,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj7 = { label: null, IconComponent: null, action: null };
     const intl7 = tmp18(1115).intl;
     obj7.label = intl7.string(tmp20(3715).jAWwzi);
-    obj7.IconComponent = tmp18(14813).UndoIcon;
+    obj7.IconComponent = tmp18(14844).UndoIcon;
     obj7.action = onVersionHistory;
     items1.push(obj7);
   }
@@ -234,14 +234,14 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj8 = { label: null, IconComponent: null, action: null };
     const intl8 = tmp18(1115).intl;
     obj8.label = intl8.string(tmp20(3715).FRjicO);
-    obj8.IconComponent = tmp18(8752).ServerIcon;
+    obj8.IconComponent = tmp18(8786).ServerIcon;
     obj8.action = onRestorePoints;
     items1.push(obj8);
   }
   const obj9 = { label: null, IconComponent: null, action: null };
   const intl9 = tmp18(1115).intl;
   obj9.label = intl9.string(project(1115).t.WqhZss);
-  obj9.IconComponent = project(4775).LinkIcon;
+  obj9.IconComponent = project(4805).LinkIcon;
   obj9.action = function action() {
     const obj = ClipboardUtils;
     obj.copy(ChannelUtils.getChannelPermalink(importDefault, StaticChannelRoute.VIBEGRATIONS, project.id));
@@ -251,7 +251,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
   const obj10 = { label: null, IconComponent: null, action: null };
   const intl10 = tmp18(1115).intl;
   obj10.label = intl10.string(_modDef3715.b4TqpT);
-  obj10.IconComponent = project(10259).IdIcon;
+  obj10.IconComponent = project(10293).IdIcon;
   obj10.action = function action() {
     ClipboardUtils.copy(project.id);
     const obj3 = { key: "VIBEGRATIONS_PROJECT_ID_COPIED", content: null, IconComponent: null };
@@ -269,7 +269,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj11 = { label: null, IconComponent: null, action: null };
     const intl11 = tmp18(1115).intl;
     obj11.label = intl11.string(tmp20(3715)["xhcY+n"]);
-    obj11.IconComponent = tmp18(6964).SettingsIcon;
+    obj11.IconComponent = tmp18(6994).SettingsIcon;
     obj11.action = onOpenSettings;
     items1.push(obj11);
   }
@@ -277,7 +277,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     const obj12 = { label: null, IconComponent: null, destructive: true, action: null };
     const intl12 = tmp18(1115).intl;
     obj12.label = intl12.string(tmp18(1115).t.oyYWHE);
-    obj12.IconComponent = tmp18(4790).TrashIcon;
+    obj12.IconComponent = tmp18(4820).TrashIcon;
     obj12.action = function action() {
       const obj2 = { key: "VibegrationsProjectDelete", title: null, content: null, confirmText: null, onConfirm: null };
       let intl = util.intl;
@@ -287,9 +287,9 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
       const intl3 = util.intl;
       obj2.confirmText = intl3.string(util.t.oyYWHE);
       obj2.onConfirm = function onConfirm() {
-        const result = project(8661).deleteProjectInBackground(id.id, () => {
+        const result = project(8695).deleteProjectInBackground(id.id, () => {
           const intl = id(1115).intl;
-          return id(4527).presentError(intl.string(closure_1_1(3715).tqKZCi));
+          return id(4557).presentError(intl.string(closure_1_1(3715).tqKZCi));
         });
       };
       AlertModal.showConfirmModal(obj2);

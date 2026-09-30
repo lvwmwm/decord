@@ -1,13 +1,13 @@
-// Module ID: 16178
-// Function ID: 16179
+// Module ID: 16207
+// Function ID: 16208
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1074, 2042, 21, 4836, 16179, 1186, 1115, 8269, 2021, 2029, 6966, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 4866, 16208, 1186, 1115, 8300, 2021, 2029, 6996, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 16178 (usePrivateProfileCoachmarkProps)
+// Module 16207 (usePrivateProfileCoachmarkProps)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 16179 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 16208 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");

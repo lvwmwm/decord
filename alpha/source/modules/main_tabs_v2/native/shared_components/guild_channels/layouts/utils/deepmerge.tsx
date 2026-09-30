@@ -1,9 +1,9 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 9783
+// Function ID: 9784
 // Name: deepmerge
 // Dependencies: [2]
 
-// Module 9749 (deepmerge)
+// Module 9783 (deepmerge)
 import size from "module_2" /* 2 */;
 
 function merge() {

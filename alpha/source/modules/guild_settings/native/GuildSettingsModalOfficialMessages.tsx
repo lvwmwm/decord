@@ -1,26 +1,26 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 17842
+// Function ID: 17843
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6081, 4825, 2067, 9214, 4829, 1085, 21, 4836, 576, 1115, 14989, 11031, 14991, 1485, 504, 9213, 6102, 6961, 4800, 16103, 1981, 9248, 4566, 6083, 14326, 1092, 4832, 9249, 4512, 6851, 672, 1177, 15004, 2]
+// Dependencies: [32, 19, 17, 6111, 4855, 2067, 9248, 4859, 1085, 21, 4866, 576, 1115, 15020, 11067, 15022, 1485, 504, 9247, 6132, 6991, 4830, 16132, 1981, 9282, 4596, 6113, 14355, 1092, 4862, 9283, 4542, 6881, 672, 1177, 15035, 2]
 // Exports: default
 
-// Module 17807 (GuildSettingsModalOfficialMessages)
+// Module 17842 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6851 */;
-import HeaderActionButton from "HeaderActionButton" /* 6961 */;
-import _modDef15004 from "module_15004" /* 15004 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6881 */;
+import HeaderActionButton from "HeaderActionButton" /* 6991 */;
+import _modDef15035 from "module_15035" /* 15035 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9214 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -50,7 +50,7 @@ function MessagePreview(theme) {
   const items1 = [tmp.chatContainerInner, { backgroundColor: _modDef672(selectedColor).alpha(closure_1_10).hex() }];
   obj4.style = items1;
   const hexResult1 = _modDef672(selectedColor).alpha(closure_1_10).hex();
-  const items2 = [closure_1_12(native.Avatar, { source: _modDef15004 }), ];
+  const items2 = [closure_1_12(native.Avatar, { source: _modDef15035 }), ];
   const obj6 = { style: tmp.chatContent, children: null };
   const obj7 = { style: tmp.chatHeader, children: null };
   const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: null };
@@ -75,20 +75,20 @@ function MessagePreview(theme) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const MessageConstants = fn(4829);
+const MessageConstants = fn(4859);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MessageConstants);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let createStyles = fn(4836);
+let createStyles = fn(4866);
 let obj2 = { container: { gap: nativeDefault.space.PX_8, height: "100%" }, segmentedControlContainer: null, trailingColorContainer: null, colorBlock: null, chatSection: null, chatContainer: null, chatContainerInner: null, chatContent: null, chatHeader: null, chatTimestamp: null };
 let obj3 = { gap: nativeDefault.space.PX_8, height: "100%" };
 obj2.segmentedControlContainer = { gap: nativeDefault.space.PX_16, alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
 obj2.trailingColorContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center" };
 obj2.colorBlock = { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 };
 let obj4 = { gap: nativeDefault.space.PX_16, alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
-obj2.chatSection = { paddingHorizontal: fn(6081).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
-let obj5 = { paddingHorizontal: fn(6081).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
+obj2.chatSection = { paddingHorizontal: fn(6111).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
+let obj5 = { paddingHorizontal: fn(6111).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
 obj2.chatContainer = { paddingVertical: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.xl, borderWidth: StyleSheet.hairlineWidth };
 let obj6 = { paddingVertical: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.xl, borderWidth: StyleSheet.hairlineWidth };
 obj2.chatContainerInner = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, gap: nativeDefault.space.PX_8 };
@@ -96,16 +96,16 @@ obj2.chatContent = { flex: 1 };
 obj2.chatHeader = { flexDirection: "row", alignItems: "baseline", gap: 6 };
 obj2.chatTimestamp = { marginTop: -8 };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
+createStyles = fn(4866);
 let obj7 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, gap: nativeDefault.space.PX_8 };
 let closure_15 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
-createStyles = fn(4836);
+createStyles = fn(4866);
 let obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_16 = createStyles.createAnimatedThemedStyles({ borderColor: nativeDefault.colors.BORDER_STRONG });
-createStyles = fn(4836);
+createStyles = fn(4866);
 let obj11 = { borderColor: nativeDefault.colors.BORDER_STRONG };
 let closure_17 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_DEFAULT });
-createStyles = fn(4836);
+createStyles = fn(4866);
 const obj13 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_18 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_MUTED });
 const __initData = { code: "function GuildSettingsModalOfficialMessagesTsx1(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
@@ -187,7 +187,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
     obj2.onSelect = function onSelect(officialMessageColor) {
       navigation(submitting[18]).updateGuild({ officialMessageColor });
     };
-    obj.openLazy(asyncRequireImpl(16103, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequireImpl(16132, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items5);
   const tmp8 = hasChanges(officialMessageColor.useState(0), 2);
   [tmp15, c7] = hasChanges(officialMessageColor.useState(0), 2);

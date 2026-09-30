@@ -1,10 +1,10 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16095
+// Function ID: 16096
 // Name: ServerOnboardingSetupProgressSkipStore
 // Dependencies: [504, 573, 2]
 // Exports: skipServerOnboardingSetupProgress, useIsServerOnboardingSetupProgressSkipped
 
-// Module 16066 (ServerOnboardingSetupProgressSkipStore)
+// Module 16095 (ServerOnboardingSetupProgressSkipStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

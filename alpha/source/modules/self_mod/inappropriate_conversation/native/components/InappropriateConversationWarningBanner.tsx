@@ -1,15 +1,15 @@
-// Module ID: 11100
-// Function ID: 11101
+// Module ID: 11136
+// Function ID: 11137
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 4479, 10545, 21, 11081, 504, 11082, 5370, 11101, 1981, 11104, 11083, 1115, 2]
+// Dependencies: [19, 4509, 10579, 21, 11117, 504, 11118, 5400, 11137, 1981, 11140, 11119, 1115, 2]
 
-// Module 11100 (InappropriateConversationWarningBanner)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5370 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11081 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11082 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11104 */;
+// Module 11136 (InappropriateConversationWarningBanner)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11117 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11118 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11140 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 
 require = fn;
 class InappropriateConversationWarningBanner {
@@ -73,9 +73,9 @@ class InappropriateConversationWarningBanner {
               obj.warningId = warningId;
               obj.warningType = closure_3_5.INAPPROPRIATE_CONVERSATION_TIER_2;
               obj.senderId = senderId;
-              obj.analyticsBlockContext = closure_3_0(11081).CtaEventTypes.USER_BANNER_BLOCK_CONFIRM;
-              obj.analyticsBlockAndReportContext = closure_3_0(11081).CtaEventTypes.USER_BANNER_BLOCK_AND_REPORT_CONFIRM;
-              obj.analyticsCancelContext = closure_3_0(11081).CtaEventTypes.USER_BANNER_BLOCK_CANCEL;
+              obj.analyticsBlockContext = closure_3_0(11117).CtaEventTypes.USER_BANNER_BLOCK_CONFIRM;
+              obj.analyticsBlockAndReportContext = closure_3_0(11117).CtaEventTypes.USER_BANNER_BLOCK_AND_REPORT_CONFIRM;
+              obj.analyticsCancelContext = closure_3_0(11117).CtaEventTypes.USER_BANNER_BLOCK_CANCEL;
               obj.onDismiss = onDismiss;
               return closure_3_6(closure_0, obj);
             };
@@ -117,7 +117,7 @@ class InappropriateConversationWarningBanner {
     return tmp9(tmp10, obj1);
   }
 }
-const SafetyWarningTypes = fn(10545).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10579).SafetyWarningTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/InappropriateConversationWarningBanner.tsx");

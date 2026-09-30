@@ -1,10 +1,10 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15836
+// Function ID: 15837
 // Name: isJankScreenReportingEnabled
 // Dependencies: [1364, 2071, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 15811 (isJankScreenReportingEnabled)
+// Module 15836 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import size from "module_2" /* 2 */;

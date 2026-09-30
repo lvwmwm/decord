@@ -1,10 +1,10 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16558
+// Function ID: 16559
 // Name: vibegrationsPageVisibility
 // Dependencies: [1980, 1074, 2]
 // Exports: isPageHidden, subscribePageVisibility
 
-// Module 16528 (vibegrationsPageVisibility)
+// Module 16558 (vibegrationsPageVisibility)
 import AppStateStore from "AppStateStore" /* 1980 */;
 
 const AppStates = fn(1074).AppStates;

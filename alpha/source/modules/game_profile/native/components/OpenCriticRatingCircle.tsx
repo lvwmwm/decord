@@ -1,12 +1,12 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8387
+// Function ID: 8388
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 8074, 2]
+// Dependencies: [21, 8106, 2]
 // Exports: default
 
-// Module 8356 (OpenCriticRatingCircle)
+// Module 8387 (OpenCriticRatingCircle)
 import jsxProd from "jsxProd" /* 21 */;
-import inlineStyles from "inlineStyles" /* 8074 */;
+import inlineStyles from "inlineStyles" /* 8106 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;

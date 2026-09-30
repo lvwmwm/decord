@@ -1,31 +1,31 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14627
+// Function ID: 14628
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 4836, 576, 11567, 1115, 2487, 14597, 14598, 12036, 6555, 9483, 14593, 5445, 4832, 6165, 6083, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 11603, 1115, 2487, 14628, 14629, 12070, 6585, 9517, 14624, 5475, 4862, 6195, 6113, 2]
 // Exports: default
 
-// Module 14596 (FamilyCenterFeatureRow)
+// Module 14627 (FamilyCenterFeatureRow)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5445 */;
-import TableRow from "TableRow" /* 6083 */;
-import TableRowGroup from "TableRowGroup" /* 6165 */;
-import EyeIcon from "EyeIcon" /* 6555 */;
-import _modDef9483 from "module_9483" /* 9483 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11567 */;
-import _modDef12036 from "module_12036" /* 12036 */;
-import QrCodeIcon from "QrCodeIcon" /* 14593 */;
-import _modDef14597 from "module_14597" /* 14597 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 14598 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import Stack_Stack from "Stack/Stack" /* 5475 */;
+import TableRow from "TableRow" /* 6113 */;
+import TableRowGroup from "TableRowGroup" /* 6195 */;
+import EyeIcon from "EyeIcon" /* 6585 */;
+import _modDef9517 from "module_9517" /* 9517 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11603 */;
+import _modDef12070 from "module_12070" /* 12070 */;
+import QrCodeIcon from "QrCodeIcon" /* 14624 */;
+import _modDef14628 from "module_14628" /* 14628 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 14629 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { tableGroup: { marginTop: 20, marginBottom: nativeDefault.space.PX_24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -48,18 +48,18 @@ export default function FamilyCenterFeatureRows() {
   const intl6 = util.intl;
   const obj4 = { icon: null, IconComponent: null, header: null, description: null };
   const ageSpecificText2 = obj3.useAgeSpecificText(intl5.string(_modDef2487["+pi4Yt"]), intl6.string(_modDef2487["1xPTwE"]));
-  obj4.icon = _modDef14597;
+  obj4.icon = _modDef14628;
   obj4.IconComponent = ChatCheckIcon.ChatCheckIcon;
   const intl7 = util.intl;
   obj4.header = intl7.string(_modDef2487["001l3m"]);
   obj4.description = ageSpecificText;
   const items = [obj4, , ];
-  const obj5 = { icon: _modDef12036, IconComponent: EyeIcon.EyeIcon, header: null, description: null };
+  const obj5 = { icon: _modDef12070, IconComponent: EyeIcon.EyeIcon, header: null, description: null };
   const intl8 = util.intl;
   obj5.header = intl8.string(_modDef2487.yipAeP);
   obj5.description = ageSpecificText1;
   items[1] = obj5;
-  const obj6 = { icon: _modDef9483, IconComponent: QrCodeIcon.QrCodeIcon, header: null, description: null };
+  const obj6 = { icon: _modDef9517, IconComponent: QrCodeIcon.QrCodeIcon, header: null, description: null };
   const intl9 = util.intl;
   obj6.header = intl9.string(_modDef2487.hhOuMe);
   obj6.description = ageSpecificText2;

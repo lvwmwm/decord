@@ -1,19 +1,19 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7727
+// Function ID: 7728
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [2045, 1372, 4836, 576, 4457, 7604, 4988, 7567, 1115, 7569, 7553, 7698, 7571, 2]
+// Dependencies: [2045, 1372, 4866, 576, 4487, 7634, 5018, 7597, 1115, 7599, 7583, 7728, 7601, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 7697 (GuildSpaceLeaderboardSystemMessage)
+// Module 7727 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 576 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4457 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7604 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4487 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7634 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_5 = createStyles.createNativeStyleProperties({ iconTintColor: nativeDefault.colors.ICON_MUTED });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceLeaderboardSystemMessage.tsx");
@@ -45,12 +45,12 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
       if (null != guildId) {
         ({ subject, previousLeader } = guildSpaceLeaderboardMessage);
         const obj2 = { username: null, previousUsername: null };
-        const tmpResult5 = tmp(7604);
+        const tmpResult5 = tmp(7634);
         obj2.username = NicknameUtilsDefault.getName(guildId, channel.id, subject);
         let str = "";
         if (null != previousLeader) {
-          str = tmp18(4988).getName(guildId, channel.id, previousLeader);
-          const tmp18Result = tmp18(4988);
+          str = tmp18(5018).getName(guildId, channel.id, previousLeader);
+          const tmp18Result = tmp18(5018);
         }
         obj2.previousUsername = str;
         const mobileLeaderboardSystemMessage = tmpResult5.getMobileLeaderboardSystemMessage(guildSpaceLeaderboardMessage.data, obj2);
@@ -58,28 +58,28 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
           return null;
         } else {
           let userAuthorWithProcessedColor1 = null;
-          const userAuthorWithProcessedColor = tmp(7567).getUserAuthorWithProcessedColor(subject, channel);
+          const userAuthorWithProcessedColor = tmp(7597).getUserAuthorWithProcessedColor(subject, channel);
           if (null != previousLeader) {
-            userAuthorWithProcessedColor1 = tmp(7567).getUserAuthorWithProcessedColor(previousLeader, channel);
-            const tmpResult7 = tmp(7567);
+            userAuthorWithProcessedColor1 = tmp(7597).getUserAuthorWithProcessedColor(previousLeader, channel);
+            const tmpResult7 = tmp(7597);
           }
-          const tmpResult6 = tmp(7567);
+          const tmpResult6 = tmp(7597);
           const intl = tmp(1115).intl;
           const obj4 = {};
           const merged = Object.assign(mobileLeaderboardSystemMessage.values);
           const obj5 = { userId: subject.id, message, author: userAuthorWithProcessedColor, roleStyle };
-          obj4.usernameOnClick = tmp18(7569)(obj5);
+          obj4.usernameOnClick = tmp18(7599)(obj5);
           if (null != userAuthorWithProcessedColor1) {
             if (null != previousLeader) {
               const obj6 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-              let obj8 = tmp18(7569)(obj6);
+              let obj8 = tmp18(7599)(obj6);
             }
             const obj7 = { content: null, iconUrl: null, iconTintColor: null };
             obj4.previousUsernameOnClick = obj8;
             obj7.content = intl.formatToParts(mobileLeaderboardSystemMessage.message, obj4);
-            obj7.iconUrl = tmp(7553).getAssetUriForEmbed(tmp18(7698));
+            obj7.iconUrl = tmp(7583).getAssetUriForEmbed(tmp18(7728));
             obj7.iconTintColor = tmp13.iconTintColor;
-            const merged1 = Object.assign(tmp18(7571)(theme));
+            const merged1 = Object.assign(tmp18(7601)(theme));
             return obj7;
           }
           obj8 = {};

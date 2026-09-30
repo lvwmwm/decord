@@ -1,13 +1,13 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 16522
+// Function ID: 16523
 // Name: VibegrationsSelectModeIcon
-// Dependencies: [19, 21, 576, 4531, 8074, 2]
+// Dependencies: [19, 21, 576, 4561, 8106, 2]
 // Exports: VibegrationsSelectModeActiveIcon
 
-// Module 16492 (VibegrationsSelectModeIcon)
+// Module 16522 (VibegrationsSelectModeIcon)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
-import inlineStyles from "inlineStyles" /* 8074 */;
+import useToken from "useToken" /* 4561 */;
+import inlineStyles from "inlineStyles" /* 8106 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

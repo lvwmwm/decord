@@ -1,13 +1,13 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8072
+// Function ID: 8073
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 5375, 1115, 3039, 5375, 2]
+// Dependencies: [19, 21, 5405, 1115, 3039, 5405, 2]
 // Exports: default
 
-// Module 8042 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8072 (AgeVerificationQuestUnsupportedAlertModal)
 import util from "util" /* 1115 */;
 import _modDef3039 from "module_3039" /* 3039 */;
-import AlertModal from "AlertModal" /* 5375 */;
+import AlertModal from "AlertModal" /* 5405 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

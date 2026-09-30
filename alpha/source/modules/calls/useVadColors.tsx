@@ -1,10 +1,10 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9103
+// Function ID: 9104
 // Name: useVadColors
 // Dependencies: [2108, 1372, 504, 2]
 // Exports: default
 
-// Module 9069 (useVadColors)
+// Module 9103 (useVadColors)
 import initialize from "initialize" /* 504 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;

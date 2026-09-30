@@ -1,10 +1,10 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16559
+// Function ID: 16560
 // Name: VibegrationsTimelineTree
 // Dependencies: [32, 3715, 1115, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 16529 (VibegrationsTimelineTree)
+// Module 16559 (VibegrationsTimelineTree)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import _slicedToArray from "module_32" /* 32 */;

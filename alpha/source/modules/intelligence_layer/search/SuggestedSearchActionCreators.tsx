@@ -1,15 +1,15 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 12063
+// Function ID: 12064
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 12027, 12016, 1074, 559, 12028, 573, 1271, 2]
+// Dependencies: [5, 12061, 12050, 1074, 559, 12062, 573, 1271, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 12029 (SuggestedSearchActionCreators)
+// Module 12063 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 12028 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 12062 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12027 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12061 */;
 
 require = fn;
 function canFetchSuggestedSearches(guildId, channelIds) {
@@ -177,7 +177,7 @@ let closure_12 = async function _fetchInitialSuggestedSearches(arg0, value) {
     }
   }
 };
-const SmartSearchConstants = fn(12016);
+const SmartSearchConstants = fn(12050);
 ({ SUGGESTED_SEARCHES_REQUEST_LIMIT: hasOwnProperty, SUGGESTED_SEARCHES_RETRY_MIN_MS, SUGGESTED_SEARCHES_RETRY_MAX_MS } = SmartSearchConstants);
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, NOOP: closure_7 } = Constants);

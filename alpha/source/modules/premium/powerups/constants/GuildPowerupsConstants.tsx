@@ -1,19 +1,19 @@
-// Module ID: 4724
-// Function ID: 4725
+// Module ID: 4754
+// Function ID: 4755
 // Name: GuildPowerupsConstants
-// Dependencies: [1374, 1074, 4725, 4727, 2029, 4728, 1115, 4760, 4761, 4747, 2]
+// Dependencies: [1374, 1074, 4755, 4757, 2029, 4758, 1115, 4790, 4791, 4777, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4724 (GuildPowerupsConstants)
+// Module 4754 (GuildPowerupsConstants)
 import util from "util" /* 1115 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import GameServerConstants from "GameServerConstants" /* 4725 */;
-import Powerups from "Powerups" /* 4727 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
-import GameServerExperiment from "GameServerExperiment" /* 4747 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4760 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4761 */;
+import GameServerConstants from "GameServerConstants" /* 4755 */;
+import Powerups from "Powerups" /* 4757 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4758 */;
+import GameServerExperiment from "GameServerExperiment" /* 4777 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4790 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4791 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ let obj5 = {
 };
 let obj6 = {
   boostPrice: 3,
-  isEnabled(id) {
-    return GameServerExperiment.getGameServerEnabled(id, "GuildPowerupsConstants");
+  isEnabled(guildId) {
+    return GameServerExperiment.getGameServerEnabled(guildId, "GuildPowerupsConstants");
   }
 };
 const set3 = new Set(items11);

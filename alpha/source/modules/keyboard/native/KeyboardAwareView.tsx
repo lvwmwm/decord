@@ -1,10 +1,10 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6086
+// Function ID: 6087
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1481, 21, 1879, 4703, 1611, 6057, 6058, 6059, 2]
+// Dependencies: [32, 19, 17, 1481, 21, 1879, 4733, 1611, 6087, 6088, 6089, 2]
 
-// Module 6056 (KeyboardAwareView)
-import useKeyboardDuration from "useKeyboardDuration" /* 6058 */;
+// Module 6086 (KeyboardAwareView)
+import useKeyboardDuration from "useKeyboardDuration" /* 6088 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
@@ -74,8 +74,8 @@ export default noop.memo(function KeyboardAwareView(style) {
         tmp5 = keyboardDuration > 0;
       }
       if (tmp5) {
-        const result = tmp2(6059).DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-        const tmp2Result = tmp2(6059);
+        const result = tmp2(6089).DeprecatedLayoutAnimationKeyboard(keyboardDuration);
+        const tmp2Result = tmp2(6089);
       }
       tmp2 = require;
     } else {

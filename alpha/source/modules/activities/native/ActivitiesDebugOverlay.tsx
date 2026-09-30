@@ -1,14 +1,14 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17191
+// Function ID: 17192
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4836, 4683, 576, 8946, 1613, 4832, 2]
+// Dependencies: [19, 17, 21, 4866, 4713, 576, 8980, 1613, 4862, 2]
 // Exports: default
 
-// Module 17156 (ActivitiesDebugOverlay)
+// Module 17191 (ActivitiesDebugOverlay)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useThermalState from "useThermalState" /* 8946 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import useThermalState from "useThermalState" /* 8980 */;
 import noop from "module_19" /* 19 */;
 
 const useThermalStateDefault = useThermalState;
@@ -17,10 +17,10 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj2 = { container: null, row: null };
 let rect = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
-const ColorUtils = fn(4683);
+const ColorUtils = fn(4713);
 rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
 obj2.container = rect;
 obj2.row = { flexDirection: "row" };
@@ -36,14 +36,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(8946).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(8980).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(8946).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(8980).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(8946).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(8946).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(8980).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(8980).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

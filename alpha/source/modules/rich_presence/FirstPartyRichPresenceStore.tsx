@@ -1,13 +1,13 @@
-// Module ID: 8980
-// Function ID: 8981
+// Module ID: 9014
+// Function ID: 9015
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [8981, 1331, 504, 573, 2]
+// Dependencies: [9015, 1331, 504, 573, 2]
 
-// Module 8980 (FirstPartyRichPresenceStore)
+// Module 9014 (FirstPartyRichPresenceStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 8981 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 9015 */;
 
 function updateActivities() {
   items = [];

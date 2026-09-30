@@ -1,13 +1,13 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17405
+// Function ID: 17406
 // Name: LoginRequiredActionManager
-// Dependencies: [1372, 2036, 1074, 6705, 6966, 6176, 2]
+// Dependencies: [1372, 2036, 1074, 6735, 6996, 6206, 2]
 
-// Module 17370 (LoginRequiredActionManager)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6176 */;
+// Module 17405 (LoginRequiredActionManager)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6206 */;
 import UserStore from "UserStore" /* 1372 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6705 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
 
 const require = fn;
 const Constants = fn(1074);
@@ -37,8 +37,8 @@ LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleCo
                   }
                 }
         };
-        currentUser(6966).openUserSettings(obj3);
-        const obj2 = currentUser(6966);
+        currentUser(6996).openUserSettings(obj3);
+        const obj2 = currentUser(6996);
       }
     }
     if (result1) {

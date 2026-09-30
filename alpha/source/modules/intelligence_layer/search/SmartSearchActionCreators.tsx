@@ -1,14 +1,14 @@
-// Module ID: 12026
-// Function ID: 12027
+// Module ID: 12060
+// Function ID: 12061
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 1372, 12015, 12027, 1074, 12018, 12028, 12029, 573, 1271, 12017, 2]
+// Dependencies: [5, 1372, 12049, 12061, 1074, 12052, 12062, 12063, 573, 1271, 12051, 2]
 // Exports: fetchAnswer
 
-// Module 12026 (SmartSearchActionCreators)
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12015 */;
+// Module 12060 (SmartSearchActionCreators)
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12049 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12027 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12061 */;
 
 const require = fn;
 let closure_9 = async function _fetchAnswer(arg0, value) {

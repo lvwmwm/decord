@@ -1,11 +1,11 @@
-// Module ID: 4566
-// Function ID: 4567
+// Module ID: 4596
+// Function ID: 4597
 // Name: ReanimatedRexport
-// Dependencies: [1365, 1638, 4567, 2]
+// Dependencies: [1365, 1638, 4597, 2]
 
-// Module 4566 (ReanimatedRexport)
+// Module 4596 (ReanimatedRexport)
 import cancelAnimationDefault from "cancelAnimation" /* 1638 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4567 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4597 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import size from "module_2" /* 2 */;
 

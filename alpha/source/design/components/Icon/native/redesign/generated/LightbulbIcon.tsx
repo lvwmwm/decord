@@ -1,13 +1,13 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16262
+// Function ID: 16263
 // Name: LightbulbIcon
-// Dependencies: [19, 21, 576, 4530, 16234, 2]
+// Dependencies: [19, 21, 576, 4560, 16263, 2]
 // Exports: LightbulbIcon
 
-// Module 16233 (LightbulbIcon)
+// Module 16262 (LightbulbIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod16234 from "module_16234" /* 16234 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod16263 from "module_16263" /* 16263 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LightbulbIcon = function LightbulbIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16234, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16263, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

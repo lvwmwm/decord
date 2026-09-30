@@ -1,10 +1,10 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13471
+// Function ID: 13472
 // Name: PremiumRewardsOrbsExperiment
 // Dependencies: [1436, 2]
 // Exports: getPremiumRewardsOrbsExperiment, usePremiumRewardsOrbsExperiment
 
-// Module 13444 (PremiumRewardsOrbsExperiment)
+// Module 13471 (PremiumRewardsOrbsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const PremiumRewardsOrbsTreatment = { CONTROL: "control", TREATMENT_A: "treatment_a", TREATMENT_B: "treatment_b", TREATMENT_C: "treatment_c", TREATMENT_D: "treatment_d" };

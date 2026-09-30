@@ -1,12 +1,12 @@
-// Module ID: 12635
-// Function ID: 12636
+// Module ID: 12665
+// Function ID: 12666
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 4836, 576, 12, 4832, 8257, 1115, 2619, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 12, 4862, 8288, 1115, 2619, 2]
 // Exports: default
 
-// Module 12635 (InAppReportsBreadCrumbs)
+// Module 12665 (InAppReportsBreadCrumbs)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Text_Text from "Text/Text" /* 4862 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
 let size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.breadCrumbDot = size;

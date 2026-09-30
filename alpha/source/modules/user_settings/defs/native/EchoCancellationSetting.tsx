@@ -1,26 +1,26 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 15008
+// Function ID: 15009
 // Name: EchoCancellationSetting
-// Dependencies: [1993, 7582, 504, 11175, 1115, 9616, 2]
+// Dependencies: [1993, 7612, 504, 11211, 1115, 9650, 2]
 
-// Module 14977 (EchoCancellationSetting)
+// Module 15008 (EchoCancellationSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
-const SettingBuilders = fn(11175);
+const SettingBuilders = fn(11211);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.iWTwu6);
   },
-  parent: fn(7582).MobileUserSettings.VOICE,
+  parent: fn(7612).MobileUserSettings.VOICE,
   useValue: function useEchoCancellationSettingValue() {
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => echoCancellation.getEchoCancellation());
   },
-  onValueChange: fn(9616).handleEchoCancellationChange
+  onValueChange: fn(9650).handleEchoCancellationChange
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EchoCancellationSetting.tsx");

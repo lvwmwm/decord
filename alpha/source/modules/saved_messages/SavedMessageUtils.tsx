@@ -1,13 +1,13 @@
-// Module ID: 11380
-// Function ID: 11381
+// Module ID: 11416
+// Function ID: 11417
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2049, 2045, 1074, 1115, 4421, 504, 4849, 6831, 2]
+// Dependencies: [5, 19, 2049, 2045, 1074, 1115, 4451, 504, 4879, 6861, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11380 (SavedMessageUtils)
+// Module 11416 (SavedMessageUtils)
 import util from "util" /* 1115 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
+import _modDef4451 from "module_4451" /* 4451 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -157,7 +157,7 @@ export const useDueInString = function useDueInString(arg0) {
     const obj2 = { duration: null };
     const time = dueAt.getTime();
     tmp9 = obj;
-    obj2.duration = _modDef4421.duration(time - now.getTime(), "millisecond").humanize();
+    obj2.duration = _modDef4451.duration(time - now.getTime(), "millisecond").humanize();
     obj.dueInText = intl.formatToPlainString(H4gnX9, obj2);
     obj.isOverdue = now > dueAt;
     return obj;

@@ -1,9 +1,35 @@
 // Module ID: 14119
 // Function ID: 14120
-// Dependencies: [1121]
+// Dependencies: [14102]
+// Exports: default
 
 // Module 14119
-import registerAsset from "module_1121" /* 1121 */;
+import emptyPromise from "emptyPromise" /* 14102 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42c5142fba4f2f3f3d86c5b7ea6fd4ac", name: "YouTab", type: "lottie" });
+export default () => (arg0) => {
+  const result = emptyPromise.assertHasLoggerPlugin(arg0);
+  closure_0 = arg0;
+  return {
+    onConnect() {
+      console.log = () => {
+        const items = [...arguments];
+        log(...items);
+        const items1 = [...items];
+        log.log.apply(items1);
+      };
+      console.warn = () => {
+        const items = [...arguments];
+        warn(...items);
+        log.warn(items[0]);
+      };
+      console.debug = () => {
+        const items = [...arguments];
+        debug(...items);
+        log.debug(items[0]);
+      };
+    }
+  };
+};

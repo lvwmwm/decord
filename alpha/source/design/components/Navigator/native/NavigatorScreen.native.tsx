@@ -1,11 +1,11 @@
-// Module ID: 6622
-// Function ID: 6623
+// Module ID: 6652
+// Function ID: 6653
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 6623, 6624, 2]
+// Dependencies: [19, 21, 6653, 6654, 2]
 
-// Module 6622 (NavigatorScreen)
-import config from "config" /* 6623 */;
-import PostponeRender from "PostponeRender" /* 6624 */;
+// Module 6652 (NavigatorScreen)
+import config from "config" /* 6653 */;
+import PostponeRender from "PostponeRender" /* 6654 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

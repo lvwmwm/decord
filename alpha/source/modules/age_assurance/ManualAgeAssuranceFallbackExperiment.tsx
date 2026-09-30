@@ -1,11 +1,11 @@
-// Module ID: 8052
-// Function ID: 8053
+// Module ID: 8082
+// Function ID: 8083
 // Name: ManualAgeAssuranceFallbackExperiment
-// Dependencies: [8046, 1435, 8032, 2]
+// Dependencies: [8076, 1435, 8062, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 8052 (ManualAgeAssuranceFallbackExperiment)
-import SafetyHubStore from "SafetyHubStore" /* 8046 */;
+// Module 8082 (ManualAgeAssuranceFallbackExperiment)
+import SafetyHubStore from "SafetyHubStore" /* 8076 */;
 
 const require = fn;
 const ApexExperiment = fn(1435);

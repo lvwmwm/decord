@@ -1,17 +1,17 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17275
+// Function ID: 17276
 // Name: executeRunnable
-// Dependencies: [5, 17241, 3, 13380, 7341, 15, 9, 10, 504, 2]
+// Dependencies: [5, 17276, 3, 13407, 7371, 15, 9, 10, 504, 2]
 // Exports: default
 
-// Module 17240 (executeRunnable)
+// Module 17275 (executeRunnable)
 import LoggerDefault from "Logger" /* 3 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7341 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13380 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7371 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13407 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-const NativeAppStartup = fn(17241);
+const NativeAppStartup = fn(17276);
 ({ init: hasOwnProperty, applicationReady: metroRequire } = NativeAppStartup);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_startup/native/executeRunnable.tsx");
@@ -29,7 +29,7 @@ export default function executeRunnable(arg0, arg1) {
     await init.measureAsync(closure_1_5);
     await promise.promise;
     const _HermesInternal = HermesInternal;
-    v2(7341).startBridgeTo("AppContainer:" + closure_129_0.toLowerCase());
+    v2(7371).startBridgeTo("AppContainer:" + closure_129_0.toLowerCase());
     return closure_1(10).time("\u{1F3C3}", "Run", () => {
       const Emitter = closure_1(c3[8]).Emitter;
       return Emitter.batched(closure_1_1);

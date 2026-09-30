@@ -1,12 +1,12 @@
-// Module ID: 9525
-// Function ID: 9526
+// Module ID: 9559
+// Function ID: 9560
 // Name: SoundpackStore
-// Dependencies: [9526, 504, 573, 2]
+// Dependencies: [9560, 504, 573, 2]
 
-// Module 9525 (SoundpackStore)
+// Module 9559 (SoundpackStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 9526 */;
+import Constants from "Constants" /* 9560 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;

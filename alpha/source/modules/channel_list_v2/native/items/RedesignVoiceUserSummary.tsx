@@ -1,14 +1,14 @@
-// Module ID: 15938
-// Function ID: 15939
+// Module ID: 15963
+// Function ID: 15964
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 2099, 4860, 21, 504, 4981, 15937, 2]
+// Dependencies: [19, 2099, 4890, 21, 504, 5011, 15962, 2]
 // Exports: default
 
-// Module 15938 (RedesignVoiceUserSummary)
-import ChannelUtils from "ChannelUtils" /* 4981 */;
+// Module 15963 (RedesignVoiceUserSummary)
+import ChannelUtils from "ChannelUtils" /* 5011 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4890 */;
 
 require = fn;
 const jsx = fn(21).jsx;

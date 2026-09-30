@@ -1,17 +1,17 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 10315
+// Function ID: 10316
 // Name: Caption
-// Dependencies: [17, 1074, 21, 4836, 576, 4683, 1177, 2]
+// Dependencies: [17, 1074, 21, 4866, 576, 4713, 1177, 2]
 // Exports: Caption
 
-// Module 10281 (Caption)
+// Module 10315 (Caption)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
-import createStyles from "createStyles" /* 4836 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
+import createStyles from "createStyles" /* 4866 */;
+import ColorUtils from "ColorUtils" /* 4713 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

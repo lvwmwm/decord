@@ -1,22 +1,22 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14826
+// Function ID: 14827
 // Name: QuestHooks
-// Dependencies: [5, 19, 4521, 5063, 7280, 7281, 5923, 5351, 8665, 1085, 14796, 504, 5926, 14822, 7279, 7277, 5930, 9716, 4692, 14806, 6530, 10850, 10851, 10858, 7302, 6749, 8948, 7300, 8988, 6750, 8925, 10909, 2]
+// Dependencies: [5, 19, 4551, 5093, 7310, 7311, 5953, 5381, 8699, 1085, 14827, 504, 5956, 14853, 7309, 7307, 5960, 9750, 4722, 14837, 6560, 10885, 10886, 10893, 7332, 6779, 8982, 7330, 9022, 6780, 8959, 10944, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14795 (QuestHooks)
-import QuestTypes from "QuestTypes" /* 5926 */;
-import AdCreativeType from "AdCreativeType" /* 5930 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6750 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7302 */;
-import AssetUtils from "AssetUtils" /* 10858 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 14822 */;
+// Module 14826 (QuestHooks)
+import QuestTypes from "QuestTypes" /* 5956 */;
+import AdCreativeType from "AdCreativeType" /* 5960 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6780 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7332 */;
+import AssetUtils from "AssetUtils" /* 10893 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 14853 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4521 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import BountyStore from "BountyStore" /* 7280 */;
-import QuestStore from "QuestStore" /* 7281 */;
+import ActionSheetStore from "ActionSheetStore" /* 4551 */;
+import ApplicationStore from "ApplicationStore" /* 5093 */;
+import BountyStore from "BountyStore" /* 7310 */;
+import QuestStore from "QuestStore" /* 7311 */;
 
 const require = globalThis.__r;
 
@@ -82,7 +82,7 @@ function useDeliveredDockCreative() {
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   _require = mobileQuestDock;
   const deliveredQuest = require("QuestDockCreativeContext").getDeliveredQuest(mobileQuestDock);
-  const tmp4 = deliveredAdCreativeId(6530)();
+  const tmp4 = deliveredAdCreativeId(6560)();
   const obj = require("QuestDockCreativeContext");
   const items = [QuestStore];
   let userStatus1;
@@ -92,8 +92,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
-    isDismissedResult = tmp(7277).isDismissed(deliveredQuest.userStatus, tmp(5926).QuestContent.QUEST_BAR_MOBILE);
-    const tmpResult = tmp(7277);
+    isDismissedResult = tmp(7307).isDismissed(deliveredQuest.userStatus, tmp(5956).QuestContent.QUEST_BAR_MOBILE);
+    const tmpResult = tmp(7307);
   }
   let claimedAt;
   if (deliveredQuest != null) {
@@ -132,7 +132,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }, items4);
   if (require("AdCreativeType").AdCreativeType.NO_FILL === type) {
     return false;
-  } else if (tmp(5930).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(5960).AdCreativeType.BOUNTY === type) {
     if (isEligibleForQuests) {
       isEligibleForQuests = !stateFromStores1;
     }
@@ -143,7 +143,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       isEligibleForQuests = !tmp4;
     }
     return isEligibleForQuests;
-  } else if (tmp(5930).AdCreativeType.QUEST === type) {
+  } else if (tmp(5960).AdCreativeType.QUEST === type) {
     if (stateFromStores) {
       if (!tmp10) {
         let tmp16 = null != deliveredQuest && !tmp4;
@@ -154,10 +154,10 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
     const tmp17 = null != deliveredQuest && isEligibleForQuests && !isQuestExpired && !tmp10 && !isDismissedResult && !tmp4;
   }
 }
-const QuestConstants = fn(5923);
+const QuestConstants = fn(5953);
 ({ QUEST_REWARD_CODE_CLAIM_BOTTOM_SHEET_KEY: closure_9, QuestVariants: c10 } = QuestConstants);
-const CAPTCHA_MODAL_KEY = fn(5351).CAPTCHA_MODAL_KEY;
-const MAIN_SURFACE = fn(8665).MAIN_SURFACE;
+const CAPTCHA_MODAL_KEY = fn(5381).CAPTCHA_MODAL_KEY;
+const MAIN_SURFACE = fn(8699).MAIN_SURFACE;
 const ThemeTypes = fn(1085).ThemeTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestHooks.native.tsx");
@@ -232,11 +232,11 @@ export const useQuestDockHeroAsset = function useQuestDockHeroAsset(quest) {
     const questAsset = AssetUtils.getQuestAsset(quest, AssetUtils.QuestAssetType.QUEST_BAR_HERO);
     let videoAsset = null;
     if (null != quest.config.assets.questBarHeroVideo) {
-      videoAsset = tmp(10858).resolveAsset(tmp3.id, tmp3.config.assets.questBarHeroVideo);
-      const tmpResult = tmp(10858);
+      videoAsset = tmp(10893).resolveAsset(tmp3.id, tmp3.config.assets.questBarHeroVideo);
+      const tmpResult = tmp(10893);
     }
     if (questAsset.isAnimated) {
-      let staticUrl = str.replace(tmp(10858).EXTENSION_RE, ".png");
+      let staticUrl = str.replace(tmp(10893).EXTENSION_RE, ".png");
     } else {
       staticUrl = str;
     }
@@ -342,7 +342,7 @@ export const useMobileActivityQuest = function useMobileActivityQuest(quest) {
                 obj5.analyticsContext = obj7;
                 v2 = 1;
                 v3 = 1;
-                const obj8 = { value: v2(8925).launchFrame(obj5), done: false };
+                const obj8 = { value: v2(8959).launchFrame(obj5), done: false };
                 return obj8;
               } else {
                 let id;
@@ -356,7 +356,7 @@ export const useMobileActivityQuest = function useMobileActivityQuest(quest) {
                   const obj9 = { appId: tmp6.id, botId: tmp6.bot.id, analyticsLocations: [] };
                   v2 = 2;
                   v3 = 1;
-                  const obj10 = { value: v3(10909).launchActivityInBotDM(obj9), done: false };
+                  const obj10 = { value: v3(10944).launchActivityInBotDM(obj9), done: false };
                   return obj10;
                 }
               }

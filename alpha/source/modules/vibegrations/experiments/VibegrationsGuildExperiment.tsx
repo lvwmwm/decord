@@ -1,10 +1,10 @@
-// Module ID: 5538
-// Function ID: 5539
+// Module ID: 5568
+// Function ID: 5569
 // Name: VibegrationsGuildExperiment
 // Dependencies: [2067, 1074, 1435, 504, 2]
 // Exports: useHasVibegrationsGuild, useIsVibegrationsGuildEnabled
 
-// Module 5538 (VibegrationsGuildExperiment)
+// Module 5568 (VibegrationsGuildExperiment)
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;

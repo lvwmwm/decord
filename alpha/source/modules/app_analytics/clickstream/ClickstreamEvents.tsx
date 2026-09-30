@@ -1,10 +1,10 @@
-// Module ID: 7053
-// Function ID: 7054
+// Module ID: 7083
+// Function ID: 7084
 // Name: ClickstreamEvents
 // Dependencies: [1074, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 7053 (ClickstreamEvents)
+// Module 7083 (ClickstreamEvents)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

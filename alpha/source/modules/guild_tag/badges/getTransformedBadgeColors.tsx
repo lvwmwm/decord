@@ -1,10 +1,10 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13659
+// Function ID: 13660
 // Name: getTransformedBadgeColors
 // Dependencies: [672, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 13632 (getTransformedBadgeColors)
+// Module 13659 (getTransformedBadgeColors)
 import _modDef672 from "module_672" /* 672 */;
 import size from "module_2" /* 2 */;
 

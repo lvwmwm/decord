@@ -1,24 +1,24 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11274
+// Function ID: 11275
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2112, 1386, 4679, 7200, 1074, 1181, 5887, 21, 4836, 576, 5886, 11239, 5762, 1397, 4685, 1177, 11242, 11243, 4531, 11244, 11245, 4801, 6776, 4527, 1115, 7983, 5016, 4525, 5602, 4832, 4540, 504, 7089, 11246, 2]
+// Dependencies: [19, 17, 2112, 1386, 4709, 7230, 1074, 1181, 5917, 21, 4866, 576, 5916, 11275, 5792, 1397, 4715, 1177, 11278, 11279, 4561, 11280, 11281, 4831, 6806, 4557, 1115, 8013, 5046, 4555, 5632, 4862, 4570, 504, 7119, 11282, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11238 (LegacyUserProfileConnections)
+// Module 11274 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import PlatformsDefault from "Platforms" /* 5762 */;
-import ClipboardUtils from "ClipboardUtils" /* 6776 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7983 */;
+import ToastUtils from "ToastUtils" /* 4557 */;
+import HapticUtils from "HapticUtils" /* 4831 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import PlatformsDefault from "Platforms" /* 5792 */;
+import ClipboardUtils from "ClipboardUtils" /* 6806 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8013 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import StreamerModeStore from "StreamerModeStore" /* 4679 */;
-import UserProfileStore from "UserProfileStore" /* 7200 */;
+import StreamerModeStore from "StreamerModeStore" /* 4709 */;
+import UserProfileStore from "UserProfileStore" /* 7230 */;
 
 const require = globalThis.__r;
 
@@ -212,10 +212,10 @@ class ConnectedUserAccount {
             href: tmp,
             trusted: account.type !== constants.DOMAIN,
             onConfirm() {
-                account(5016).trackWithMetadata(constants.CONNECTED_ACCOUNT_VIEWED, { platform_type: type.type, other_user_id });
-                const obj = account(5016);
+                account(5046).trackWithMetadata(constants.CONNECTED_ACCOUNT_VIEWED, { platform_type: type.type, other_user_id });
+                const obj = account(5046);
                 const obj2 = { platform_type: type.type, other_user_id };
-                userId(4525).openURL(platformUserUrl);
+                userId(4555).openURL(platformUserUrl);
               }
           };
           MaskedLinkUtils.handleClick(obj2);
@@ -387,10 +387,10 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, PlatformTypes: closure_11, ThemeTypes: closure_12 } = Constants);
-const MetadataFields = fn(5887).MetadataFields;
+const MetadataFields = fn(5917).MetadataFields;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { connectedAccountContainer: { paddingHorizontal: 10, paddingVertical: fn(1181).FORM_ROW_VERTICAL_PADDING / 2 }, connectedAccount: { flexDirection: "row", alignItems: "center" }, connectedAccountNameContainer: { flex: 1, marginLeft: 8 }, connectedAccountName: { flexDirection: "row", alignItems: "center" }, connectedAccountNameText: null, connectedAccountNameCreatedAtText: null, connectedAccountOpenLink: null, connectedAccountOpenHide: null, verifiedCheckContainer: null, verifiedCheck: null, connectedAccountChildren: null, metadataItem: null, appConnectionNameContainer: null, connectedAccountPoweredByContainer: null, connectedAccountPoweredByAvatar: null, connectedAccountPoweredByText: null };
 let obj3 = { paddingHorizontal: 10, paddingVertical: fn(1181).FORM_ROW_VERTICAL_PADDING / 2 };
 obj.connectedAccountNameText = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
@@ -459,8 +459,8 @@ export default function LegacyUserProfileConnections(user) {
   }, items3);
   closure_129_0 = undefined;
   const obj2 = user(504);
-  const theme = user(4540).useThemeContext().theme;
-  const tmpResult = user(4540);
+  const theme = user(4570).useThemeContext().theme;
+  const tmpResult = user(4570);
   const items4 = [LocaleStore];
   closure_129_2 = user(504).useStateFromStores(items4, () => LocaleStore.locale);
   const mapped = memo.map((applicationRoleConnection, index) => {
@@ -470,12 +470,12 @@ export default function LegacyUserProfileConnections(user) {
   const id = user.id;
   closure_130_1 = undefined;
   const tmpResult5 = user(504);
-  const theme2 = user(4540).useThemeContext().theme;
-  const tmpResult6 = user(4540);
+  const theme2 = user(4570).useThemeContext().theme;
+  const tmpResult6 = user(4570);
   const items5 = [LocaleStore];
   closure_130_3 = user(504).useStateFromStores(items5, () => LocaleStore.locale);
   const tmpResult7 = user(504);
-  closure_130_4 = user(7089).usePlatformAllowed({ forUserProfile: true });
+  closure_130_4 = user(7119).usePlatformAllowed({ forUserProfile: true });
   const found = memo1.filter((type) => {
     value = PlatformsDefault.get(type.type);
     let tmp2 = null != value;
@@ -497,8 +497,8 @@ export default function LegacyUserProfileConnections(user) {
         const intl = tmp(1115).intl;
         obj4.title = intl.string(tmp(1115).t.PHjkRE);
         obj4.children = mapped;
-        tmp10 = closure_14(stateFromStores(11246), obj4);
-        const tmp13 = stateFromStores(11246);
+        tmp10 = closure_14(stateFromStores(11282), obj4);
+        const tmp13 = stateFromStores(11282);
       }
       const obj5 = { children: null };
       const items6 = [tmp10, ];
@@ -506,10 +506,10 @@ export default function LegacyUserProfileConnections(user) {
       const intl2 = tmp(1115).intl;
       obj6.title = intl2.string(tmp(1115).t["3fe7U5"]);
       obj6.children = tmp8;
-      items6[1] = closure_14(stateFromStores(11246), obj6);
+      items6[1] = closure_14(stateFromStores(11282), obj6);
       obj5.children = items6;
       tmp17Result = closure_15(closure_16, obj5);
-      const tmp16 = stateFromStores(11246);
+      const tmp16 = stateFromStores(11282);
     }
   }
   return tmp17Result;

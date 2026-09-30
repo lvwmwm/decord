@@ -1,16 +1,16 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11573
+// Function ID: 11574
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4836, 11538, 2]
+// Dependencies: [19, 17, 21, 4866, 11574, 2]
 // Exports: default
 
-// Module 11537 (AppealIngestionActivitySummary)
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11538 */;
+// Module 11573 (AppealIngestionActivitySummary)
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11574 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_4 = createStyles.createStyles({ activity: { marginBottom: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionActivitySummary.tsx");

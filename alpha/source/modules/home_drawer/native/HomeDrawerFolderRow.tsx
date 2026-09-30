@@ -1,19 +1,19 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 16146
+// Function ID: 16147
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 7215, 2067, 5917, 5017, 4855, 1074, 21, 4836, 504, 9780, 4832, 1115, 16118, 4698, 4695, 2]
+// Dependencies: [19, 17, 7245, 2067, 5947, 5047, 4885, 1074, 21, 4866, 504, 9814, 4862, 1115, 16147, 4728, 4725, 2]
 // Exports: default
 
-// Module 16117 (HomeDrawerFolderRow)
+// Module 16146 (HomeDrawerFolderRow)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 9780 */;
+import Text_Text from "Text/Text" /* 4862 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 9814 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7215 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7245 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5917 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import SortedGuildStore from "SortedGuildStore" /* 5947 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+import VoiceStateStore from "VoiceStateStore" /* 4885 */;
 
 require = fn;
 function Wrapper(folder) {
@@ -209,7 +209,7 @@ const View = fn(17).View;
 const NOOP = fn(1074).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_13 = createStyles.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerFolderRow.tsx");
@@ -224,7 +224,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4698).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4728).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

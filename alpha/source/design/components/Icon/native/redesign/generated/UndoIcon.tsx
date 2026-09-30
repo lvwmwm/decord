@@ -1,13 +1,13 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14844
+// Function ID: 14845
 // Name: UndoIcon
-// Dependencies: [19, 21, 576, 4530, 14814, 2]
+// Dependencies: [19, 21, 576, 4560, 14845, 2]
 // Exports: UndoIcon
 
-// Module 14813 (UndoIcon)
+// Module 14844 (UndoIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod14814 from "module_14814" /* 14814 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod14845 from "module_14845" /* 14845 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const UndoIcon = function UndoIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14814, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14845, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

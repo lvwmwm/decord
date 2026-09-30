@@ -1,16 +1,16 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7785
+// Function ID: 7786
 // Name: useHeroColors
-// Dependencies: [32, 19, 4825, 1182, 7754, 7138, 7756, 1092, 672, 504, 2]
+// Dependencies: [32, 19, 4855, 1182, 7784, 7168, 7786, 1092, 672, 504, 2]
 // Exports: default, getHeroColors
 
-// Module 7755 (useHeroColors)
+// Module 7785 (useHeroColors)
 import _modDef672 from "module_672" /* 672 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import tinycolorDefault from "tinycolor" /* 7138 */;
+import tinycolorDefault from "tinycolor" /* 7168 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4855 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
@@ -25,9 +25,9 @@ export default function useHeroColors(pendingAvatarSrc) {
   const items1 = [ThemeStore];
   const stateFromStores1 = first(504).useStateFromStores(items1, () => theme.theme);
   let obj2 = first(504);
-  const fallbackHeroColor = first(7756).getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj3 = first(7756);
-  let tmp4 = _slicedToArray(first(7754).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
+  const fallbackHeroColor = first(7786).getFallbackHeroColor(stateFromStores1, stateFromStores);
+  let obj3 = first(7786);
+  let tmp4 = _slicedToArray(first(7784).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [first, tmp4[1]];
@@ -81,12 +81,12 @@ export default function useHeroColors(pendingAvatarSrc) {
   }, items2);
 };
 export const getHeroColors = function getHeroColors(game_name) {
-  const fallbackHeroColor = num(7756).getFallbackHeroColor(ThemeStore.theme, AccessibilityStore.saturation);
+  const fallbackHeroColor = num(7786).getFallbackHeroColor(ThemeStore.theme, AccessibilityStore.saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(7754).useColorStore;
+  const useColorStore = tmp2(7784).useColorStore;
   const arr = useColorStore.getState().palette[game_name];
   let mapped;
   if (arr != null) {
@@ -103,7 +103,7 @@ export const getHeroColors = function getHeroColors(game_name) {
     const items = [fallbackHeroColor, fallbackHeroColor];
     mapped = items;
   }
-  let obj = num(7756);
+  let obj = num(7786);
   tmp = AccessibilityStore;
   [tmp7, tmp8] = mapped;
   const tmp6 = _slicedToArray(mapped, 2);

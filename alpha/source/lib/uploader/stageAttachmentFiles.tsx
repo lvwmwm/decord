@@ -1,10 +1,10 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7458
+// Function ID: 7459
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1074, 5606, 2]
+// Dependencies: [5, 1074, 5636, 2]
 // Exports: default
 
-// Module 7427 (stageAttachmentFiles)
+// Module 7458 (stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

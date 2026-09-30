@@ -1,13 +1,13 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15214
+// Function ID: 15215
 // Name: ImageTextIcon
-// Dependencies: [19, 21, 576, 4530, 15182, 2]
+// Dependencies: [19, 21, 576, 4560, 15215, 2]
 // Exports: ImageTextIcon
 
-// Module 15181 (ImageTextIcon)
+// Module 15214 (ImageTextIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod15182 from "module_15182" /* 15182 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod15215 from "module_15215" /* 15215 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ImageTextIcon = function ImageTextIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15182, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15215, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

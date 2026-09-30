@@ -1,11 +1,11 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11655
+// Function ID: 11656
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 4836, 5445, 6065, 4832, 1115, 11622, 2]
+// Dependencies: [19, 17, 21, 4866, 5475, 6095, 4862, 1115, 11656, 2]
 // Exports: default
 
-// Module 11621 (CustomTypingIndicatorDynamicAsset)
-import FastImageDefault from "FastImage" /* 6065 */;
+// Module 11655 (CustomTypingIndicatorDynamicAsset)
+import FastImageDefault from "FastImage" /* 6095 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_6 = createStyles.createStyles((width, gap) => {
   const obj = { emojiRow: { flexDirection: "row", gap }, emoji: { width, height: width }, text: { flexShrink: 1 } };
   return obj;

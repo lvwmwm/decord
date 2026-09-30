@@ -1,13 +1,13 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9774
+// Function ID: 9775
 // Name: StickerIcon
-// Dependencies: [19, 21, 576, 4530, 9741, 2]
+// Dependencies: [19, 21, 576, 4560, 9775, 2]
 // Exports: StickerIcon
 
-// Module 9740 (StickerIcon)
+// Module 9774 (StickerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod9741 from "module_9741" /* 9741 */;
+import BaseIconImage from "BaseIconImage" /* 4560 */;
+import _mod9775 from "module_9775" /* 9775 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StickerIcon = function StickerIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9741, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9775, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

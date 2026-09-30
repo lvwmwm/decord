@@ -1,16 +1,16 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11289
+// Function ID: 11290
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2045, 4469, 4479, 1372, 9841, 1074, 21, 4836, 563, 9181, 6636, 11254, 11263, 11264, 1115, 9658, 9659, 4654, 2029, 11266, 11271, 6964, 11272, 1876, 9442, 8220, 2]
+// Dependencies: [32, 19, 17, 2045, 4499, 4509, 1372, 9875, 1074, 21, 4866, 563, 9215, 6666, 11290, 11299, 11300, 1115, 9692, 9693, 4684, 2029, 11302, 11307, 6994, 11308, 1876, 9476, 8251, 2]
 // Exports: default
 
-// Module 11253 (useMemberListAction)
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11254 */;
+// Module 11289 (useMemberListAction)
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11290 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -20,9 +20,9 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "current", listActionHeight: "channel" };
-const createStyles = fn(4836);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(9841).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "add" };
+const createStyles = fn(4866);
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(9875).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

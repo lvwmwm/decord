@@ -1,15 +1,15 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16958
+// Function ID: 16959
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 7368, 4801, 4802, 573, 4566, 4837, 10255, 2029, 1177, 7410, 4832, 1115, 4540, 2]
+// Dependencies: [32, 19, 17, 2042, 21, 4866, 576, 7398, 4831, 4832, 573, 4596, 4867, 10289, 2029, 1177, 7440, 4862, 1115, 4570, 2]
 // Exports: default
 
-// Module 16923 (BurstReactionAnimationContainer)
+// Module 16958 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4540 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
+import native from "native" /* 4570 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import timing from "timing" /* 4867 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,7 +33,7 @@ function BurstReactionAnimationContainerInner() {
       dependencyMap({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
       closure_1_4(true);
       ref.current = true;
-      const result = handleEffectReceived(4801).triggerHapticFeedback(first(4802).IMPACT_HEAVY);
+      const result = handleEffectReceived(4831).triggerHapticFeedback(first(4832).IMPACT_HEAVY);
     }
     const subscription = first(573).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     return () => {
@@ -86,7 +86,7 @@ function BurstReactionAnimationContainerInner() {
       const items = [markAsDismissed.fill, closure_7];
       obj2.style = items;
       const obj3 = {
-        activeOpacity: closure_0(7368).BACKDROP_OPACITY,
+        activeOpacity: closure_0(7398).BACKDROP_OPACITY,
         onPress() {
           closure_4(false);
           closure_5.current = false;
@@ -107,7 +107,7 @@ function BurstReactionAnimationContainerInner() {
             ref.current = false;
           }
         };
-        tmpResult = tmp(first(7410), obj7);
+        tmpResult = tmp(first(7440), obj7);
       }
       obj5.children = tmpResult;
       items1[1] = closure_1_8(handleComponentFinish, obj5);
@@ -117,7 +117,7 @@ function BurstReactionAnimationContainerInner() {
         const obj9 = { style: tmp4.dismissTextContainer, variant: "text-sm/medium", children: null };
         const intl = tmp2(1115).intl;
         obj9.children = intl.string(tmp2(1115).t.QpPMih);
-        const items2 = [tmp(tmp2(4832).Text, obj9), ];
+        const items2 = [tmp(tmp2(4862).Text, obj9), ];
         const obj17 = { style: tmp4.dismissTextBackground };
         items2[1] = tmp(tmp8, obj17);
         obj8.children = items2;
@@ -126,11 +126,11 @@ function BurstReactionAnimationContainerInner() {
       items1[2] = tmp6Result;
       obj3.children = items1;
       obj2.children = closure_1_10(closure_5, obj3);
-      obj.children = closure_1_8(first(4566).View, obj2);
+      obj.children = closure_1_8(first(4596).View, obj2);
       return closure_1_8(closure_0(1177).OverlayView, obj);
     };
-    tmp8 = closure_8(animationData(10255), obj3);
-    let tmp11 = animationData(10255);
+    tmp8 = closure_8(animationData(10289), obj3);
+    let tmp11 = animationData(10289);
   }
   return tmp8;
 }
@@ -139,12 +139,12 @@ get_ActivityIndicator = fn(17);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj2 = { background: null, fill: null, dismissTextContainer: null, dismissTextBackground: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3.backgroundColor = nativeDefault.colors.BLACK;
-obj3.opacity = fn(7368).BACKDROP_OPACITY;
+obj3.opacity = fn(7398).BACKDROP_OPACITY;
 obj2.background = obj3;
 let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);

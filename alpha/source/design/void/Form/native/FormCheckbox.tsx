@@ -1,16 +1,16 @@
-// Module ID: 6733
-// Function ID: 6734
+// Module ID: 6763
+// Function ID: 6764
 // Name: Form/FormCheckbox
-// Dependencies: [19, 21, 4836, 1177, 2]
+// Dependencies: [19, 21, 4866, 1177, 2]
 // Exports: default
 
-// Module 6733 (Form/FormCheckbox)
+// Module 6763 (Form/FormCheckbox)
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_3 = createStyles.createStyles({ checkbox: { width: 22, height: 22 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormCheckbox.tsx");

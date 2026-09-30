@@ -1,10 +1,10 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15808
+// Function ID: 15809
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6177, 21, 4836, 4548, 15784, 1115, 6095, 4832, 2]
+// Dependencies: [19, 17, 6207, 21, 4866, 4578, 15809, 1115, 6125, 4862, 2]
 // Exports: default
 
-// Module 15783 (PromotionalEmailCheckBox)
+// Module 15808 (PromotionalEmailCheckBox)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -12,11 +12,11 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c2, Pressable: c3 } = get_ActivityIndicator);
-const PromoEmailConsentStore = fn(6177);
+const PromoEmailConsentStore = fn(6207);
 ({ usePromoEmailConsentStore: closure_4, setPromoEmailConsentChecked: hasOwnProperty } = PromoEmailConsentStore);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_8 = createStyles.createStyles({ checkboxRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, checkboxLabel: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/PromotionalEmailCheckBox.tsx");
@@ -44,9 +44,9 @@ export default function PromotionalEmailCheckBox(style) {
       children: null
     };
     const obj5 = { checked: tmp3 };
-    const items = [closure_6(tmp4(6095).FormCheckbox, obj5), ];
+    const items = [closure_6(tmp4(6125).FormCheckbox, obj5), ];
     const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: promoEmailOptInLabel };
-    items[1] = closure_6(tmp4(4832).Text, obj6);
+    items[1] = closure_6(tmp4(4862).Text, obj6);
     obj4.children = items;
     obj3.children = closure_7(closure_3, obj4);
     tmp8 = closure_6(closure_2, obj3);

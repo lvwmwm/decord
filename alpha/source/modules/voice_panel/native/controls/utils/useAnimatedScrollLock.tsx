@@ -1,11 +1,11 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11788
+// Function ID: 11789
 // Name: useAnimatedScrollLock
-// Dependencies: [19, 1364, 4566, 2]
+// Dependencies: [19, 1364, 4596, 2]
 // Exports: useAnimatedScrollLock
 
-// Module 11754 (useAnimatedScrollLock)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+// Module 11788 (useAnimatedScrollLock)
+import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

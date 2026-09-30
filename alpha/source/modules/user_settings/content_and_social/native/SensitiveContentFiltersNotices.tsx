@@ -1,21 +1,21 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 14565
+// Function ID: 14566
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 8012, 21, 14526, 6885, 14421, 1115, 4525, 2111, 8024, 8026, 2]
+// Dependencies: [19, 8042, 21, 14557, 6915, 14452, 1115, 4555, 2111, 8054, 8056, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14534 (SensitiveContentFiltersNotices)
+// Module 14565 (SensitiveContentFiltersNotices)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14421 */;
+import LinkingDefault from "Linking" /* 4555 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8054 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14452 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SafetySettingsNoticeType = fn(8012).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8042).SafetySettingsNoticeType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
@@ -25,7 +25,7 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
   let obj = require("TinyBroncoSettingsNoticesLazy");
   _require = require("SensitiveMediaGoreRedactionSettingsUtils").useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    let tmp4Result = tmp4(tmp(14526).ContentFiltersTeenNotice, {});
+    let tmp4Result = tmp4(tmp(14557).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1115).t.EUo0yj,

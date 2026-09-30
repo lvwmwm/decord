@@ -1,9 +1,9 @@
 // Module ID: 10241
 // Function ID: 10242
-// Dependencies: [41, 42, 93, 95, 98, 10083]
+// Dependencies: [41, 42, 93, 95, 98, 10110]
 
 // Module 10241
-import _mod10083 from "module_10083" /* 10083 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10110 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -30,27 +30,12 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class ENMergeDateTimeRefiner {
+class ESTimeExpressionParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, ENMergeDateTimeRefiner);
+    tmp = closure_0(this, ESTimeExpressionParser);
     tmp2 = c2;
-    obj = c2(ENMergeDateTimeRefiner);
+    obj = c2(ESTimeExpressionParser);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -65,15 +50,22 @@ class ENMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ENMergeDateTimeRefiner;
-_inherits(ENMergeDateTimeRefiner, fn(_mod10083).default);
+_classCallCheck = ESTimeExpressionParser;
+_inherits(ESTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(T|alle|dopo|prima|il|di|del|delle|,|-)?\\s*$");
-    return regExp;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:aslas|deslas|las?|al?|de|del)\\s*)?";
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:l)?|\\?)\\s*";
+    }
+  }
+];
 
-export default _createClass(ENMergeDateTimeRefiner, items);
+export default _createClass(ESTimeExpressionParser, items);

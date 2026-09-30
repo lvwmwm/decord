@@ -1,14 +1,14 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 14983
+// Function ID: 14984
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 14925, 1374, 1115, 14951, 2]
+// Dependencies: [19, 14956, 1374, 1115, 14982, 2]
 // Exports: default
 
-// Module 14952 (useTrialIntervalOptions)
+// Module 14983 (useTrialIntervalOptions)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const TIER_TRIAL_INTERVALS = fn(14925).TIER_TRIAL_INTERVALS;
+const TIER_TRIAL_INTERVALS = fn(14956).TIER_TRIAL_INTERVALS;
 const SubscriptionIntervalTypes = fn(1374).SubscriptionIntervalTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
@@ -22,9 +22,9 @@ export default function useTrialIntervalOptions(arg0) {
       if (value.interval === constants.DAY) {
         if (7 === value.interval_count) {
           const intl = closure_1_0(1115).intl;
-          const obj3 = { defaultLimit: closure_1_0(14951).formatPlanIntervalDuration(value) };
+          const obj3 = { defaultLimit: closure_1_0(14982).formatPlanIntervalDuration(value) };
           let formatToPlainStringResult = intl.formatToPlainString(closure_1_0(1115).t.XfSsr1, obj3);
-          const obj4 = closure_1_0(14951);
+          const obj4 = closure_1_0(14982);
         }
         obj.label = formatToPlainStringResult;
         let tmp5 = value.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj.isDefault = tmp5;
         return obj;
       }
-      formatToPlainStringResult = closure_1_0(14951).formatPlanIntervalDuration(value);
+      formatToPlainStringResult = closure_1_0(14982).formatPlanIntervalDuration(value);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

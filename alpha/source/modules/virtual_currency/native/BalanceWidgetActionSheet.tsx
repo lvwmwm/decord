@@ -1,18 +1,18 @@
-// Module ID: 10733
-// Function ID: 10734
+// Module ID: 10767
+// Function ID: 10768
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 10734, 10735, 10736, 1115, 4519, 2111, 4550, 4531, 576, 1241, 4654, 2029, 4540, 6737, 6065, 7920, 6741, 10737, 8463, 4832, 5447, 4836, 1364, 2]
+// Dependencies: [19, 17, 1074, 2042, 21, 10768, 10769, 10770, 1115, 4549, 2111, 4580, 4561, 576, 1241, 4684, 2029, 4570, 6767, 6095, 7950, 6771, 10771, 8494, 4862, 5477, 4866, 1364, 2]
 // Exports: default
 
-// Module 10733 (BalanceWidgetActionSheet)
+// Module 10767 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import _mod10734 from "module_10734" /* 10734 */;
-import _mod10735 from "module_10735" /* 10735 */;
-import _mod10736 from "module_10736" /* 10736 */;
+import _mod10768 from "module_10768" /* 10768 */;
+import _mod10769 from "module_10769" /* 10769 */;
+import _mod10770 from "module_10770" /* 10770 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ const Constants = fn(1074);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_13 = createStyles.createStyles((color) => {
   const obj = { actions: { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, balanceHeader: null, balanceText: null, content: null, header: null, infoIconBackground: null, infoIconContainer: null, promotionalBackground: null, promotionalBackgroundContainer: null, promotionalBannerAsset: null, promotionalBannerContainer: null, promotionalBannerText: null };
   const obj2 = { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -74,7 +74,7 @@ export default function _default(balance) {
     }
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod10734.default, backgroundImage: _mod10735.default, bannerImage: _mod10736.default, bannerText: null };
+      const obj = { backgroundVideo: _mod10768.default, backgroundImage: _mod10769.default, bannerImage: _mod10770.default, bannerText: null };
       const intl = util.intl;
       obj.bannerText = intl.string(util.t.LaMEFL);
       tmp = obj;
@@ -91,8 +91,8 @@ export default function _default(balance) {
     const obj2 = { type: "VIEW", source, balance: num };
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
-      const result = tmp3(4654).UNSAFE_markDismissibleContentAsDismissed(tmp3(2029).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
-      const tmp3Result = tmp3(4654);
+      const result = tmp3(4684).UNSAFE_markDismissibleContentAsDismissed(tmp3(2029).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const tmp3Result = tmp3(4684);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: null };

@@ -1,17 +1,17 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14516
+// Function ID: 14517
 // Name: AccountEditPassword
-// Dependencies: [19, 17, 21, 4836, 576, 14486, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 14517, 2]
 
-// Module 14485 (AccountEditPassword)
+// Module 14516 (AccountEditPassword)
 import nativeDefault from "native" /* 576 */;
-import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14486 */;
+import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14517 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);
 ({ View: c2, StyleSheet } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 const obj = { container: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };

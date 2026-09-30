@@ -1,10 +1,10 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15898
+// Function ID: 15899
 // Name: isActivityTemporaryCustomStatus
 // Dependencies: [1074, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 15873 (isActivityTemporaryCustomStatus)
+// Module 15898 (isActivityTemporaryCustomStatus)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

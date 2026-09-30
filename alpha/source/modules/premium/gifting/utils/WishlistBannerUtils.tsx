@@ -1,10 +1,10 @@
-// Module ID: 10430
-// Function ID: 10431
+// Module ID: 10464
+// Function ID: 10465
 // Name: WishlistBannerUtils
-// Dependencies: [19, 1115, 8403, 6813, 2]
+// Dependencies: [19, 1115, 8434, 6843, 2]
 // Exports: getBannerMode, useWishlistBannerConfig
 
-// Module 10430 (WishlistBannerUtils)
+// Module 10464 (WishlistBannerUtils)
 import _mod19 from "module_19" /* 19 */;
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;

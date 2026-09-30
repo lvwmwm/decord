@@ -1,22 +1,22 @@
-// Module ID: 4467
-// Function ID: 4468
+// Module ID: 4497
+// Function ID: 4498
 // Name: GuildChannelStore
-// Dependencies: [2100, 2048, 4468, 2049, 502, 2045, 2108, 2067, 4469, 4479, 1372, 1074, 2070, 12, 4989, 1086, 4474, 504, 573, 2]
+// Dependencies: [2100, 2048, 4498, 2049, 502, 2045, 2108, 2067, 4499, 4509, 1372, 1074, 2070, 12, 5019, 1086, 4504, 504, 573, 2]
 
-// Module 4467 (GuildChannelStore)
+// Module 4497 (GuildChannelStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import useChannelName from "useChannelName" /* 4989 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
+import useChannelName from "useChannelName" /* 5019 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import PermissionStore from "PermissionStore" /* 4499 */;
+import RelationshipStore from "RelationshipStore" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -192,7 +192,7 @@ function hasElevatedPermissions(user, context) {
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_1_17);
 }
-let closure_6 = fn(4468).createFavoritesGuildChannelRecord;
+let closure_6 = fn(4498).createFavoritesGuildChannelRecord;
 const ChannelRecord = fn(2049);
 ({ isGuildSelectableChannelType: closure_7, GUILD_NON_CATEGORY_CHANNEL_TYPES: closure_8, isGuildVocalChannelType: closure_9, createChannelRecord } = ChannelRecord);
 const Constants = fn(1074);

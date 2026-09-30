@@ -1,8 +1,8 @@
-// Module ID: 5143
-// Function ID: 5144
+// Module ID: 5173
+// Function ID: 5174
 // Dependencies: [2]
 
-// Module 5143
+// Module 5173
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/camper_plaid.png.js");

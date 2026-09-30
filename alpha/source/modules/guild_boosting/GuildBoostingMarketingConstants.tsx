@@ -1,12 +1,12 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12265
+// Function ID: 12266
 // Name: GuildBoostingMarketingConstants
-// Dependencies: [1074, 1374, 4728, 1115, 2]
+// Dependencies: [1074, 1374, 4758, 1115, 2]
 
-// Module 12233 (GuildBoostingMarketingConstants)
+// Module 12265 (GuildBoostingMarketingConstants)
 import util from "util" /* 1115 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4758 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

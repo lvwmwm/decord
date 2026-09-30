@@ -1,15 +1,15 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9331
+// Function ID: 9332
 // Name: VoiceStateIcons
-// Dependencies: [19, 17, 21, 4836, 576, 9298, 9299, 9301, 9303, 9305, 1370, 1177, 8074, 9307, 9308, 2]
+// Dependencies: [19, 17, 21, 4866, 576, 9332, 9333, 9335, 9337, 9339, 1370, 1177, 8106, 9341, 9342, 2]
 
-// Module 9297 (VoiceStateIcons)
+// Module 9331 (VoiceStateIcons)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import inlineStyles from "inlineStyles" /* 8074 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9298 */;
-import _modDef9307 from "module_9307" /* 9307 */;
-import _modDef9308 from "module_9308" /* 9308 */;
+import inlineStyles from "inlineStyles" /* 8106 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9332 */;
+import _modDef9341 from "module_9341" /* 9341 */;
+import _modDef9342 from "module_9342" /* 9342 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -43,11 +43,11 @@ function VideoDisabledSvgIcon(size) {
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let obj = { redTint: { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, defaultTint: null, noTint: null };
 let obj3 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 obj.defaultTint = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-obj.noTint = { tintColor: "r" };
+obj.noTint = { tintColor: "Array" };
 let closure_6 = createStyles.createStyles(obj);
 let obj4 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 const memoResult = noop.memo((arg0) => {
@@ -65,13 +65,13 @@ const memoResult = noop.memo((arg0) => {
     const obj = { style: null, size: "xs" };
     items[1] = redTint;
     obj.style = items;
-    return React4(tmp2(9299).HeadphonesDenyIcon, obj);
-  } else if (tmp2(9298).MuteDeafenIconState.DEAFENED === state) {
+    return React4(tmp2(9333).HeadphonesDenyIcon, obj);
+  } else if (tmp2(9332).MuteDeafenIconState.DEAFENED === state) {
     const obj2 = { style: null, size: "xs" };
     const items1 = [style];
     obj2.style = items1;
-    return React4(tmp2(9301).HeadphonesSlashIcon, obj2);
-  } else if (tmp2(9298).MuteDeafenIconState.MUTED_SERVER === state) {
+    return React4(tmp2(9335).HeadphonesSlashIcon, obj2);
+  } else if (tmp2(9332).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
@@ -80,17 +80,17 @@ const memoResult = noop.memo((arg0) => {
     const obj3 = { style: null, size: "xs" };
     items2[1] = redTint1;
     obj3.style = items2;
-    return React4(tmp2(9303).MicrophoneDenyIcon, obj3);
-  } else if (tmp2(9298).MuteDeafenIconState.MUTED_LOCAL === state) {
+    return React4(tmp2(9337).MicrophoneDenyIcon, obj3);
+  } else if (tmp2(9332).MuteDeafenIconState.MUTED_LOCAL === state) {
     const obj4 = { style: null, size: "xs" };
     const items3 = [style];
     obj4.style = items3;
-    return React4(tmp2(9303).MicrophoneDenyIcon, obj4);
-  } else if (tmp2(9298).MuteDeafenIconState.MUTED === state) {
+    return React4(tmp2(9337).MicrophoneDenyIcon, obj4);
+  } else if (tmp2(9332).MuteDeafenIconState.MUTED === state) {
     const obj5 = { style: null, size: "xs" };
     const items4 = [style];
     obj5.style = items4;
-    return React4(tmp2(9305).MicrophoneSlashIcon, obj5);
+    return React4(tmp2(9339).MicrophoneSlashIcon, obj5);
   } else {
     tmp2(1370).assertNever(state);
   }
@@ -105,18 +105,18 @@ export const VideoIcon = noop.memo((state) => {
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = {};
     const merged1 = Object.assign(merged);
-    obj.source = _modDef9307;
+    obj.source = _modDef9341;
     const items = [merged.style, tmp2.noTint];
     obj.style = items;
     return React4(tmp3(1177).Icon, obj);
-  } else if (tmp3(9298).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+  } else if (tmp3(9332).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     const obj2 = {};
     const merged2 = Object.assign(merged);
     return React4(VideoDisabledSvgIcon, obj2);
-  } else if (tmp3(9298).VideoIconState.VIDEO_ACTIVE === state) {
+  } else if (tmp3(9332).VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = {};
     const merged3 = Object.assign(merged);
-    obj3.source = _modDef9308;
+    obj3.source = _modDef9342;
     return React4(tmp3(1177).Icon, obj3);
   } else {
     tmp3(1370).assertNever(state);

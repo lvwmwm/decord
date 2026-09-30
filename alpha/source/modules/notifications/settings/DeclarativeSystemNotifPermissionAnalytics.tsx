@@ -1,15 +1,15 @@
-// Module ID: 15716
-// Function ID: 15717
+// Module ID: 15749
+// Function ID: 15750
 // Name: DeclarativeSystemNotifPermissionAnalytics
-// Dependencies: [14177, 1074, 14183, 14179, 1241, 2]
+// Dependencies: [14206, 1074, 14212, 14208, 1241, 2]
 // Exports: trackSystemNotifSettingsOpened, trackSystemNotifSettingsReenabled
 
-// Module 15716 (DeclarativeSystemNotifPermissionAnalytics)
+// Module 15749 (DeclarativeSystemNotifPermissionAnalytics)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14177 */;
-import NotifTypes from "NotifTypes" /* 14179 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14183 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14206 */;
+import NotifTypes from "NotifTypes" /* 14208 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14212 */;
 import size from "module_2" /* 2 */;
 
 function getNotifTypesUsingSettings(items) {

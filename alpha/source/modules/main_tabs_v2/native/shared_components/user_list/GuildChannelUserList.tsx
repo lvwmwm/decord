@@ -1,19 +1,19 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11288
+// Function ID: 11289
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 6863, 2045, 2108, 2067, 2099, 1372, 1074, 21, 9457, 5998, 550, 6896, 6749, 504, 6636, 4474, 11253, 9181, 4988, 4678, 1115, 7789, 576, 6637, 10495, 2]
+// Dependencies: [32, 19, 17, 6893, 2045, 2108, 2067, 2099, 1372, 1074, 21, 9491, 6028, 550, 6926, 6779, 504, 6666, 4504, 11289, 9215, 5018, 4708, 1115, 7819, 576, 6667, 10529, 2]
 
-// Module 11252 (GuildChannelUserList)
+// Module 11288 (GuildChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
 import util from "util" /* 1115 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import GuildUtilsDefault from "GuildUtils" /* 5998 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7789 */;
-import sortByMatchScore from "sortByMatchScore" /* 9457 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
+import GuildUtilsDefault from "GuildUtils" /* 6028 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import sortByMatchScore from "sortByMatchScore" /* 9491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 6863 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 6893 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -24,7 +24,7 @@ const sortByMatchScoreDefault = sortByMatchScore;
 
 require = fn;
 const View = fn(17).View;
-let ChannelMemberStore = fn(6863);
+let ChannelMemberStore = fn(6893);
 ({ EVERYONE_CHANNEL_ID: closure_7, MemberListRowTypes: closure_8 } = ChannelMemberStore);
 let ChannelMemberStore = ChannelMemberStore_mod;
 const Constants = fn(1074);
@@ -259,15 +259,15 @@ export default noop.memo(function GuildChannelUserList(searchable) {
           const user1 = UserStore.getUser(userId2.userId);
           let str = NicknameUtilsDefault.getNickname(guildId, closure_0, user);
           if (str == null) {
-            str = tmp3(4678).getGlobalName(user);
-            const tmp3Result = tmp3(4678);
+            str = tmp3(4708).getGlobalName(user);
+            const tmp3Result = tmp3(4708);
           }
           const tmp5 = guildId;
           const tmp6 = closure_0;
           let str2 = NicknameUtilsDefault.getNickname(tmp5, tmp6, user1);
           if (str2 == null) {
-            str2 = tmp3(4678).getGlobalName(user1);
-            const tmp3Result4 = tmp3(4678);
+            str2 = tmp3(4708).getGlobalName(user1);
+            const tmp3Result4 = tmp3(4708);
           }
           if (str == null) {
             str = "";

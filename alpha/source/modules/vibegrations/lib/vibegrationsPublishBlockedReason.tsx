@@ -1,9 +1,9 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16446
+// Function ID: 16447
 // Name: vibegrationsPublishBlockedReason
 // Dependencies: [2]
 
-// Module 16417 (vibegrationsPublishBlockedReason)
+// Module 16446 (vibegrationsPublishBlockedReason)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPublishBlockedReason.tsx");

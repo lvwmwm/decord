@@ -1,10 +1,10 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16838
+// Function ID: 16839
 // Name: ShopCoachmark
-// Dependencies: [19, 2042, 21, 4836, 1177, 576, 1115, 10758, 2]
+// Dependencies: [19, 2042, 21, 4866, 1177, 576, 1115, 10792, 2]
 // Exports: default
 
-// Module 16803 (ShopCoachmark)
+// Module 16838 (ShopCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -18,7 +18,7 @@ function CoachmarkImg(arg0) {
 }
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const createStyles = fn(4866);
 let closure_6 = createStyles.createStyles({ image: { marginTop: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/ShopCoachmark.tsx");
