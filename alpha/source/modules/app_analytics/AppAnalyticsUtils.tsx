@@ -1,35 +1,35 @@
-// Module ID: 5046
-// Function ID: 5047
+// Module ID: 5025
+// Function ID: 5026
 // Name: AppAnalyticsUtils
-// Dependencies: [2049, 502, 2045, 4497, 4784, 2108, 2102, 2067, 1993, 4499, 4906, 4889, 4881, 4509, 2099, 4685, 5047, 1372, 4885, 1074, 2052, 4504, 1086, 5049, 1241, 1091, 5050, 5052, 12, 2]
+// Dependencies: [2048, 502, 2044, 4496, 4765, 2107, 2101, 2066, 1993, 4498, 4885, 4868, 4860, 4508, 2098, 4684, 5026, 1372, 4864, 1074, 2051, 4503, 1086, 5028, 1241, 1091, 5029, 5031, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 5046 (AppAnalyticsUtils)
+// Module 5025 (AppAnalyticsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5050 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 5052 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import ChannelConstants from "ChannelConstants" /* 2051 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5029 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 5031 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4497 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4784 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4765 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import PresenceStore from "PresenceStore" /* 4906 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
-import ReadStateStore from "ReadStateStore" /* 4881 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import PresenceStore from "PresenceStore" /* 4885 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+import ReadStateStore from "ReadStateStore" /* 4860 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -276,7 +276,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
       });
       const merged = Object.assign(obj3);
       const tmp9Result = obj3(12)(VoiceStateStore.getVoiceStates(guildId));
-      const merged1 = Object.assign(id(5049).getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(id(5028).getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }

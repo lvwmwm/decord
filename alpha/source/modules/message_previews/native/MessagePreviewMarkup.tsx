@@ -1,17 +1,17 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9768
+// Function ID: 9769
 // Name: MessagePreviewMarkup
-// Dependencies: [5499, 5500, 9777, 1930, 4853, 7500, 1439, 2]
+// Dependencies: [5487, 5488, 9769, 1930, 4832, 7478, 1439, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 9776 (MessagePreviewMarkup)
+// Module 9768 (MessagePreviewMarkup)
 import privDefault from "priv" /* 1439 */;
 import _modDef1930 from "module_1930" /* 1930 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4853 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5499 */;
-import MarkupRulesDefault from "MarkupRules" /* 5500 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7500 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 9777 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4832 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5487 */;
+import MarkupRulesDefault from "MarkupRules" /* 5488 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7478 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 9769 */;
 
 require = fn;
 function getOrParseMessagePreviewMarkupAST(arg0) {

@@ -1,12 +1,12 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16584
+// Function ID: 16585
 // Name: VibegrationsSubagentMark
-// Dependencies: [32, 16563, 576, 16565, 16567, 16569, 16571, 16573, 16575, 16577, 16579, 16581, 16583, 16585, 2]
+// Dependencies: [32, 16585, 576, 16587, 16589, 16591, 16593, 16595, 16597, 16599, 16601, 16603, 16605, 16607, 2]
 // Exports: familiarMark, subagentIllocons
 
-// Module 16562 (VibegrationsSubagentMark)
+// Module 16584 (VibegrationsSubagentMark)
 import nativeDefault from "native" /* 576 */;
-import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 16585 */;
+import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 16607 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -16,27 +16,27 @@ function mark(key) {
   obj.name = VibegrationsSubagentMarks.subagentMarkName(key);
   return obj;
 }
-let obj = { snail: { Illocon: fn(16563).SnailIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 }, goat: null, frog: null, bunny: null, cat: null, caterpillar: null, butterfly: null, dog: null, spider: null, bee: null, bot: null };
-let obj2 = { Illocon: fn(16563).SnailIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
-obj.goat = { Illocon: fn(16565).GoatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
-const obj3 = { Illocon: fn(16565).GoatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
-obj.frog = { Illocon: fn(16567).FrogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
-const obj4 = { Illocon: fn(16567).FrogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
-obj.bunny = { Illocon: fn(16569).BunnyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
-const obj5 = { Illocon: fn(16569).BunnyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
-obj.cat = { Illocon: fn(16571).CatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
-const obj6 = { Illocon: fn(16571).CatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
-obj.caterpillar = { Illocon: fn(16573).CaterpillarIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
-const obj7 = { Illocon: fn(16573).CaterpillarIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
-obj.butterfly = { Illocon: fn(16575).ButterflyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
-const obj8 = { Illocon: fn(16575).ButterflyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
-obj.dog = { Illocon: fn(16577).DogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
-const obj9 = { Illocon: fn(16577).DogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
-obj.spider = { Illocon: fn(16579).SpiderIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
-const obj10 = { Illocon: fn(16579).SpiderIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
-obj.bee = { Illocon: fn(16581).BeeIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
-const obj11 = { Illocon: fn(16581).BeeIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
-obj.bot = { Illocon: fn(16583).BotIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
+let obj = { snail: { Illocon: fn(16585).SnailIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 }, goat: null, frog: null, bunny: null, cat: null, caterpillar: null, butterfly: null, dog: null, spider: null, bee: null, bot: null };
+let obj2 = { Illocon: fn(16585).SnailIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
+obj.goat = { Illocon: fn(16587).GoatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
+const obj3 = { Illocon: fn(16587).GoatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
+obj.frog = { Illocon: fn(16589).FrogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
+const obj4 = { Illocon: fn(16589).FrogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
+obj.bunny = { Illocon: fn(16591).BunnyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
+const obj5 = { Illocon: fn(16591).BunnyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
+obj.cat = { Illocon: fn(16593).CatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
+const obj6 = { Illocon: fn(16593).CatIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PINK_40 };
+obj.caterpillar = { Illocon: fn(16595).CaterpillarIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
+const obj7 = { Illocon: fn(16595).CaterpillarIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_GREEN_40 };
+obj.butterfly = { Illocon: fn(16597).ButterflyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
+const obj8 = { Illocon: fn(16597).ButterflyIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
+obj.dog = { Illocon: fn(16599).DogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
+const obj9 = { Illocon: fn(16599).DogIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
+obj.spider = { Illocon: fn(16601).SpiderIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
+const obj10 = { Illocon: fn(16601).SpiderIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_ORANGE_40 };
+obj.bee = { Illocon: fn(16603).BeeIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
+const obj11 = { Illocon: fn(16603).BeeIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_YELLOW_40 };
+obj.bot = { Illocon: fn(16605).BotIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSubagentMark.tsx");
 

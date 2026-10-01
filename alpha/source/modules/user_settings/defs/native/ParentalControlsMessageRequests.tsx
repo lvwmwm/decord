@@ -1,20 +1,20 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15737
+// Function ID: 15738
 // Name: ParentalControlsMessageRequests
-// Dependencies: [7153, 7612, 8303, 14560, 15706, 8054, 8056, 14559, 11211, 1115, 2487, 2]
+// Dependencies: [7145, 7590, 8293, 14566, 15723, 8043, 8045, 14565, 11215, 1115, 2486, 2]
 
-// Module 15720 (ParentalControlsMessageRequests)
+// Module 15737 (ParentalControlsMessageRequests)
 import util from "util" /* 1115 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8054 */;
-import useSelectedTeen from "useSelectedTeen" /* 8303 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14559 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14560 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15706 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7153 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8043 */;
+import useSelectedTeen from "useSelectedTeen" /* 8293 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14566 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15723 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
 
 require = fn;
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -22,9 +22,9 @@ const toggle = SettingBuilders.createToggle({
   },
   useDescription() {
     const intl = util.intl;
-    return intl.string(_modDef2487["7aYkh1"]);
+    return intl.string(_modDef2486["7aYkh1"]);
   },
-  parent: fn(7612).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: fn(7590).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
     const defaultGuildsRestricted = useParentalControlSettings.useDefaultGuildsRestricted();
     const selectedTeenId = useSelectedTeen.useSelectedTeenId();
@@ -43,7 +43,7 @@ const toggle = SettingBuilders.createToggle({
     if (null != selectedTeenId) {
       if (!arg0) {
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          const obj3 = { entryPoint: tmp2(8056).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const obj3 = { entryPoint: tmp2(8045).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
           const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj3);
         }
         obj = DefaultDMSettingsExperiment;

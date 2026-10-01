@@ -1,13 +1,13 @@
-// Module ID: 4770
-// Function ID: 4771
+// Module ID: 5272
+// Function ID: 5273
 // Name: AppliedGuildBoostError
-// Dependencies: [4541, 4542, 1091, 1115, 2]
+// Dependencies: [4540, 4541, 1091, 1115, 2]
 
-// Module 4770 (AppliedGuildBoostError)
+// Module 5272 (AppliedGuildBoostError)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
-import DateUtils from "DateUtils" /* 4542 */;
-import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4541 */;
+import DateUtils from "DateUtils" /* 4541 */;
+import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4540 */;
 
 require = fn;
 class AppliedGuildBoostError extends tmp2 {

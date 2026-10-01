@@ -1,17 +1,17 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7649
+// Function ID: 7650
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [2045, 2067, 1074, 5279, 7597, 7635, 7636, 7629, 1400, 1397, 7599, 1115, 7601, 2]
+// Dependencies: [2044, 2066, 1074, 5258, 7575, 7613, 7614, 7607, 1400, 1397, 7577, 1115, 7579, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 7661 (RoleSubscriptionPurchaseSystemMessage)
+// Module 7649 (RoleSubscriptionPurchaseSystemMessage)
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import useMessageAuthor from "useMessageAuthor" /* 5279 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7597 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7599 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7601 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import useMessageAuthor from "useMessageAuthor" /* 5258 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7575 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7577 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7579 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 const SystemChannelFlags = fn(1074).SystemChannelFlags;
@@ -39,11 +39,11 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
         if (tmp9) {
           tmp9 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
         }
-        const tmp5Result = tmp5(7635);
+        const tmp5Result = tmp5(7613);
         if (tmp5Result.computeIsStickerReplyEnabled(guildId, channel, message, tmp9)) {
-          const tmp5Result7 = tmp5(7636);
-          const tmp5Result8 = tmp5(7629);
-          const transformStickerResult = tmp5Result7.transformSticker(tmp5(7629).pickRoleSubscriptionPurchaseSticker(message.id));
+          const tmp5Result7 = tmp5(7614);
+          const tmp5Result8 = tmp5(7607);
+          const transformStickerResult = tmp5Result7.transformSticker(tmp5(7607).pickRoleSubscriptionPurchaseSticker(message.id));
         }
       }
     }
@@ -74,13 +74,13 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
       obj5.usernameOnClickHandler = formatUsernameOnClickDefault(obj7);
       obj5.roleSubscriptionOnClickHandler = obj4;
       obj5.roleSubscriptionData = roleSubscriptionData;
-      obj6.content = tmp5(7629).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj5);
+      obj6.content = tmp5(7607).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj5);
       obj6.totalMonthsSubscribed = roleSubscriptionData.total_months_subscribed;
       obj6.username = messageAuthorWithProcessedColor.nick;
       obj6.avatarURL = tmp17Result.uri;
       obj6.sticker = transformStickerResult;
-      const tmp5Result11 = tmp5(7629);
-      obj6.stickerLabel = tmp5(7629).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
+      const tmp5Result11 = tmp5(7607);
+      obj6.stickerLabel = tmp5(7607).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
       const intl = tmp5(1115).intl;
       obj6.welcomeLabel = intl.string(tmp5(1115).t.piPHvY);
       const merged = Object.assign(createCommonMessageDefault(message));

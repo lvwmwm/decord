@@ -1,12 +1,12 @@
-// Module ID: 7689
-// Function ID: 7690
-// Dependencies: [4523, 4518, 6851, 2]
+// Module ID: 7677
+// Function ID: 7678
+// Dependencies: [4522, 4517, 6842, 2]
 // Exports: getPriceString
 
-// Module 7689
-import PremiumUtils from "PremiumUtils" /* 4518 */;
-import PriceUtils from "PriceUtils" /* 6851 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4523 */;
+// Module 7677
+import PremiumUtils from "PremiumUtils" /* 4517 */;
+import PriceUtils from "PriceUtils" /* 6842 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4522 */;
 
 require = fn;
 const size = fn(2);
@@ -28,7 +28,7 @@ export const getPriceString = function getPriceString(hasAnyPremiumGroup, arg1) 
           const formatPriceResult = PriceUtils.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(6851).formatRate(formatPriceResult, interval, intervalCount);
+            return tmp2(6842).formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }

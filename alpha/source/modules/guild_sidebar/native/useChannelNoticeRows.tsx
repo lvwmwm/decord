@@ -1,25 +1,25 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16117
+// Function ID: 16118
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12173, 4497, 2067, 1372, 7150, 1074, 2042, 563, 6780, 6782, 16098, 7002, 2029, 4684, 16016, 16099, 2]
+// Dependencies: [32, 19, 12181, 4496, 2066, 1372, 7142, 1074, 2041, 563, 6770, 6772, 16118, 6993, 2029, 4683, 16031, 16119, 2]
 // Exports: default
 
-// Module 16097 (useChannelNoticeRows)
+// Module 16117 (useChannelNoticeRows)
 import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4684 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4683 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildProgressStore from "GuildProgressStore" /* 12173 */;
-import GuildChannelStore from "GuildChannelStore" /* 4497 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildProgressStore from "GuildProgressStore" /* 12181 */;
+import GuildChannelStore from "GuildChannelStore" /* 4496 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_9 = fn(7150).ChannelListChannelNoticeRow;
+let closure_9 = fn(7142).ChannelListChannelNoticeRow;
 const MFALevels = fn(1074).MFALevels;
-const DismissibleContentConstants = fn(2042);
+const DismissibleContentConstants = fn(2041);
 ({ ContentDismissActionType: closure_11, DismissibleContentGroupName: closure_12 } = DismissibleContentConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/native/useChannelNoticeRows.tsx");

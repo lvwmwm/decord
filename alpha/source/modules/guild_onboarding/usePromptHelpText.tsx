@@ -1,14 +1,14 @@
-// Module ID: 6742
-// Function ID: 6743
+// Module ID: 6732
+// Function ID: 6733
 // Name: usePromptHelpText
-// Dependencies: [2045, 2102, 4499, 4509, 1372, 1074, 1115, 504, 5019, 2]
+// Dependencies: [2044, 2101, 4498, 4508, 1372, 1074, 1115, 504, 4998, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 6742 (usePromptHelpText)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+// Module 6732 (usePromptHelpText)
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;

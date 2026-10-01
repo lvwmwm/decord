@@ -1,23 +1,23 @@
-// Module ID: 14997
-// Function ID: 14998
+// Module ID: 15003
+// Function ID: 15004
 // Name: VoiceSetting
-// Dependencies: [1993, 1074, 504, 1115, 11211, 9666, 14998, 2]
+// Dependencies: [1993, 1074, 504, 1115, 11215, 9660, 15004, 2]
 
-// Module 14997 (VoiceSetting)
+// Module 15003 (VoiceSetting)
 import util from "util" /* 1115 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ InputModes: c3, UserSettingsSections } = Constants);
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.B1fFpf);
   },
   parent: null,
-  IconComponent: fn(9666).MicrophoneIcon,
+  IconComponent: fn(9660).MicrophoneIcon,
   useTrailing: function useVoiceSettingTrailing() {
     const items = [MediaEngineStore];
     if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {

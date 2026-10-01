@@ -1,13 +1,13 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17575
+// Function ID: 17576
 // Name: getRuleInfo
-// Dependencies: [11546, 5600, 17541, 17543, 15663, 8937, 17544, 4805, 2]
+// Dependencies: [11554, 5588, 17576, 17578, 15680, 8930, 17579, 4784, 2]
 // Exports: getRuleInfo
 
-// Module 17540 (getRuleInfo)
-import Constants from "Constants" /* 11546 */;
-import _modDef17543 from "module_17543" /* 17543 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 17544 */;
+// Module 17575 (getRuleInfo)
+import Constants from "Constants" /* 11554 */;
+import _modDef17578 from "module_17578" /* 17578 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 17579 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -22,28 +22,28 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
       const obj2 = {};
       const merged = Object.assign(baseRuleInfo);
       if (AutomodTriggerType.MENTION_SPAM === triggerType) {
-        const obj3 = { IconComponent: tmp(5600).AtIcon };
+        const obj3 = { IconComponent: tmp(5588).AtIcon };
         let tmp9 = obj3;
       } else if (tmp8.KEYWORD === triggerType) {
-        const obj4 = { IconComponent: tmp(17541).ChannelListPlusIcon };
+        const obj4 = { IconComponent: tmp(17576).ChannelListPlusIcon };
         tmp9 = obj4;
       } else {
         if (tmp8.ML_SPAM !== triggerType) {
           if (tmp8.USER_PROFILE !== triggerType) {
             if (tmp8.DEFAULT_KEYWORD_LIST === triggerType) {
-              const obj5 = { IconComponent: tmp(15663).MenuIcon };
+              const obj5 = { IconComponent: tmp(15680).MenuIcon };
               tmp9 = obj5;
             } else if (tmp8.APPLICATION === triggerType) {
-              const obj6 = { IconComponent: tmp(8937).RobotIcon };
+              const obj6 = { IconComponent: tmp(8930).RobotIcon };
               tmp9 = obj6;
             }
           }
         }
-        const obj7 = { source: _modDef17543 };
+        const obj7 = { source: _modDef17578 };
         tmp9 = obj7;
       }
       if (tmp9 == null) {
-        const obj8 = { IconComponent: tmp(4805).LinkIcon };
+        const obj8 = { IconComponent: tmp(4784).LinkIcon };
         tmp9 = obj8;
       }
       obj2.icon = tmp9;

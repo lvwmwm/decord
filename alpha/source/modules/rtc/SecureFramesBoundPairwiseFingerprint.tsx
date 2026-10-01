@@ -1,13 +1,13 @@
-// Module ID: 9369
-// Function ID: 9370
+// Module ID: 9363
+// Function ID: 9364
 // Name: SecureFramesBoundPairwiseFingerprint
-// Dependencies: [5, 502, 4889, 9364, 206, 9347, 2]
+// Dependencies: [5, 502, 4868, 9358, 206, 9341, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 9369 (SecureFramesBoundPairwiseFingerprint)
+// Module 9363 (SecureFramesBoundPairwiseFingerprint)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
 
 const require = fn;
 let closure_8 = async function _computeBoundPairwiseFingerprint(arg0, value) {
@@ -60,7 +60,7 @@ let closure_8 = async function _computeBoundPairwiseFingerprint(arg0, value) {
                               if (null != value2) {
                                 return value2;
                               } else {
-                                const obj4 = joined(9347);
+                                const obj4 = joined(9341);
                                 const _Uint8Array = Uint8Array;
                                 const uint8Array2 = new Uint8Array(secureFramesRosterMapEntry1);
                                 const _Uint8Array2 = Uint8Array;
@@ -108,7 +108,7 @@ let closure_8 = async function _computeBoundPairwiseFingerprint(arg0, value) {
     }
   }
 };
-let closure_6 = fn(9364).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
+let closure_6 = fn(9358).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
 const map = new Map();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rtc/SecureFramesBoundPairwiseFingerprint.tsx");

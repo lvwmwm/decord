@@ -1,19 +1,19 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17543
+// Function ID: 17544
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2067, 9248, 1074, 21, 15976, 9247, 1249, 1115, 6132, 17512, 17524, 17528, 17529, 17546, 17565, 17570, 17585, 17586, 17598, 17610, 17612, 16886, 16895, 17620, 17624, 17625, 16897, 15977, 17626, 17627, 17647, 17668, 17672, 17675, 17678, 11519, 11533, 11535, 17679, 17684, 17685, 17707, 17730, 17770, 17771, 17787, 17826, 17830, 17831, 17834, 17842, 17843, 1613, 6106, 504, 6617, 2]
+// Dependencies: [32, 19, 2066, 9242, 1074, 21, 15992, 9241, 1249, 1115, 6122, 17544, 17556, 17561, 17562, 17581, 17600, 17605, 17620, 17621, 17633, 17645, 17647, 16907, 16916, 17655, 17659, 17660, 16918, 15993, 17661, 17662, 17682, 17703, 17707, 17710, 17713, 11527, 11541, 11543, 17714, 17719, 17720, 17742, 17765, 17805, 17806, 17822, 17861, 17865, 17866, 17869, 17877, 17878, 1613, 6096, 504, 6607, 2]
 // Exports: default
 
-// Module 17511 (GuildSettingsModal)
+// Module 17543 (GuildSettingsModal)
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import NavigatorHeader from "NavigatorHeader" /* 6132 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 15976 */;
+import NavigatorHeader from "NavigatorHeader" /* 6122 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9241 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 15992 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9242 */;
 
 const require = globalThis.__r;
 

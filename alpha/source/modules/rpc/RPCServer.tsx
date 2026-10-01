@@ -1,19 +1,19 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14297
+// Function ID: 14298
 // Name: RPCServer
-// Dependencies: [5, 4769, 1074, 12, 8975, 8969, 14265, 1241, 38, 12649, 1091, 2]
+// Dependencies: [5, 5270, 1074, 12, 8968, 8962, 14273, 1241, 38, 12660, 1091, 2]
 
-// Module 14289 (RPCServer)
+// Module 14297 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RPCErrorDefault from "RPCError" /* 8969 */;
-import transformUserDefault from "transformUser" /* 8975 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 12649 */;
-import validateScopeDefault from "validateScope" /* 14265 */;
+import RPCErrorDefault from "RPCError" /* 8962 */;
+import transformUserDefault from "transformUser" /* 8968 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 12660 */;
+import validateScopeDefault from "validateScope" /* 14273 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const TransportTypes = fn(4769).TransportTypes;
+const TransportTypes = fn(5270).TransportTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, RPCCloseCodes: metroRequire, RPCCommands: closure_7, RPCErrors: closure_8, RPCEvents: closure_9 } = Constants);
 const RPC_STORE_WAIT = "RPC_STORE_WAIT";
@@ -101,7 +101,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(8969)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(8962)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -132,7 +132,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(8969)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(8962)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -239,7 +239,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(8969)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(8962)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -371,7 +371,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(8969)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(8962)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }

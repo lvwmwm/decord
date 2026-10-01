@@ -1,23 +1,23 @@
-// Module ID: 14405
-// Function ID: 14406
+// Module ID: 14410
+// Function ID: 14411
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 4866, 576, 6779, 6799, 8894, 8862, 14367, 1115, 5605, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 6769, 6789, 8886, 8854, 14411, 1115, 5593, 2]
 // Exports: default
 
-// Module 14405 (UserProfilePremiumTryItOutSection)
+// Module 14410 (UserProfilePremiumTryItOutSection)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6779 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6799 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8862 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8894 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 14367 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6769 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8854 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8886 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 14411 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, divider: null, dividerLine: null, lockCircle: null, lockIcon: null };
 let obj3 = { marginTop: nativeDefault.space.PX_16 };
 obj2.divider = { height: 28, marginVertical: nativeDefault.space.PX_24, marginHorizontal: -nativeDefault.space.PX_16, justifyContent: "center", alignItems: "center" };
@@ -51,7 +51,7 @@ export default function UserProfilePremiumTryItOutSection(arg0) {
   const obj4 = { style: tmp.lockCircle, children: null };
   const obj3 = { style: tmp.dividerLine };
   const tmp4 = UserProfileUpsellCardV2Default;
-  obj4.children = closure_5(analyticsLocations(5605).LockIcon, { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon });
+  obj4.children = closure_5(analyticsLocations(5593).LockIcon, { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon });
   items1[1] = closure_5(View, obj4);
   obj2.children = items1;
   obj.children = closure_6(View, obj2);

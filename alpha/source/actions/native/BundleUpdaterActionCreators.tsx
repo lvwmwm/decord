@@ -1,12 +1,12 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17985
+// Function ID: 17986
 // Name: BundleUpdaterActionCreators
-// Dependencies: [17, 5399, 1115, 2]
+// Dependencies: [17, 5387, 1115, 2]
 
-// Module 17949 (BundleUpdaterActionCreators)
+// Module 17985 (BundleUpdaterActionCreators)
 import _mod17 from "module_17" /* 17 */;
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

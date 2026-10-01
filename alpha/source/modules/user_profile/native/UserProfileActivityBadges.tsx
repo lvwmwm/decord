@@ -1,14 +1,14 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12788
+// Function ID: 12789
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 1074, 21, 4866, 12657, 7353, 5570, 10545, 9567, 8734, 12780, 12781, 576, 12782, 7787, 5599, 4862, 11353, 2]
+// Dependencies: [19, 17, 1074, 21, 4845, 12668, 7331, 5558, 10537, 9561, 8726, 12789, 12790, 576, 12791, 7774, 5587, 4841, 11361, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 12779 (UserProfileActivityBadges)
+// Module 12788 (UserProfileActivityBadges)
 import nativeDefault from "native" /* 576 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7353 */;
-import utils from "utils" /* 7787 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12781 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7331 */;
+import utils from "utils" /* 7774 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12790 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const ActivityTypes = fn(1074).ActivityTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_7 = createStyles.createStyles({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, bold: { fontWeight: "bold" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityBadges.tsx");
@@ -58,15 +58,15 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        let GameControllerIcon = tmp2(12657).HourglassIcon;
-      } else if (tmp10(7353)(activity)) {
-        GameControllerIcon = tmp2(5570).AppsIcon;
+        let GameControllerIcon = tmp2(12668).HourglassIcon;
+      } else if (tmp10(7331)(activity)) {
+        GameControllerIcon = tmp2(5558).AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
-        GameControllerIcon = tmp2(10545).TvIcon;
+        GameControllerIcon = tmp2(10537).TvIcon;
       } else if (activity.type === tmp6.LISTENING) {
-        GameControllerIcon = tmp2(9567).MusicIcon;
+        GameControllerIcon = tmp2(9561).MusicIcon;
       } else {
-        GameControllerIcon = tmp2(8734).GameControllerIcon;
+        GameControllerIcon = tmp2(8726).GameControllerIcon;
       }
       const obj2 = { style: tmp.container, children: null };
       const obj3 = { size: "xxs", color: tmp10(576).colors.TEXT_FEEDBACK_POSITIVE };
@@ -75,7 +75,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       const obj5 = { start, end, isCountDown: flag };
       obj4.entry = obj5;
       obj4.style = tmp.bold;
-      items[1] = hasOwnProperty(tmp2(12782).ActiveTimestamp, obj4);
+      items[1] = hasOwnProperty(tmp2(12791).ActiveTimestamp, obj4);
       obj2.children = items;
       return timestampProducer(View, obj2);
     }
@@ -91,9 +91,9 @@ export const PartyBadge = function PartyBadge(activity) {
       if (null != richGameStateBadgeText) {
         const obj = { style: tmp.container, children: null };
         const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const items = [hasOwnProperty(tmp9(5599).GroupIcon, obj2), ];
+        const items = [hasOwnProperty(tmp9(5587).GroupIcon, obj2), ];
         const obj3 = { variant: "text-sm/medium", color: "text-muted", children: richGameStateBadgeText };
-        items[1] = hasOwnProperty(tmp9(4862).Text, obj3);
+        items[1] = hasOwnProperty(tmp9(4841).Text, obj3);
         obj.children = items;
         tmp8 = timestampProducer(View, obj);
       }
@@ -114,9 +114,9 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj2 = { style: tmp.container, children: null };
     const obj3 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const items = [hasOwnProperty(tmp2(11353).TopicsIcon, obj3), ];
+    const items = [hasOwnProperty(tmp2(11361).TopicsIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
-    items[1] = hasOwnProperty(tmp2(4862).Text, obj4);
+    items[1] = hasOwnProperty(tmp2(4841).Text, obj4);
     obj2.children = items;
     tmp6 = timestampProducer(View, obj2);
   }

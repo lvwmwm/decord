@@ -1,33 +1,33 @@
-// Module ID: 13212
-// Function ID: 13213
+// Module ID: 13220
+// Function ID: 13221
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1074, 1374, 21, 4866, 576, 5950, 4797, 4715, 1177, 13213, 13214, 4862, 1115, 5489, 8864, 4518, 13215, 13216, 6095, 13217, 13218, 13219, 13220, 13221, 2]
+// Dependencies: [32, 19, 17, 1074, 1374, 21, 4845, 576, 5939, 4776, 4714, 1177, 13221, 13222, 4841, 1115, 5477, 8856, 4517, 13223, 13224, 6085, 13225, 13226, 13227, 13228, 13229, 2]
 // Exports: default
 
-// Module 13212 (PremiumFeaturesTable)
+// Module 13220 (PremiumFeaturesTable)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import shared from "shared" /* 4715 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import LinearGradientDefault from "LinearGradient" /* 5489 */;
-import _modDef13214 from "module_13214" /* 13214 */;
+import shared from "shared" /* 4714 */;
+import useThemeDefault from "useTheme" /* 4776 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import LinearGradientDefault from "LinearGradient" /* 5477 */;
+import _modDef13222 from "module_13222" /* 13222 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const _modDef13213 = tmp(13213);
+const _modDef13221 = tmp(13221);
 require = fn;
 function CheckIcon() {
   const tmp3 = useThemeDefault();
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const isThemeDarkResult = shared.isThemeDark(tmp3);
   const tmp6 = shared.isThemeDark(tmp3) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
-  return closure_1_11(native.Icon, { source: _modDef13213, color: shared.isThemeDark(tmp3) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860, size: native.IconSizes.SMALL });
+  return closure_1_11(native.Icon, { source: _modDef13221, color: shared.isThemeDark(tmp3) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860, size: native.IconSizes.SMALL });
 }
 function CloseIcon() {
   const tmp = closure_16();
-  return closure_1_11(native.Icon, { source: _modDef13214, style: closure_16().icon, size: native.IconSizes.SMALL });
+  return closure_1_11(native.Icon, { source: _modDef13222, style: closure_16().icon, size: native.IconSizes.SMALL });
 }
 function CellText(children) {
   return closure_1_11(Text_Text.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
@@ -214,7 +214,7 @@ const PremiumConstants = fn(1374);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let c13 = "rgba(184, 69, 193, 0.5)";
-let createStyles = fn(4866);
+let createStyles = fn(4845);
 let obj2 = { container: { display: "flex", flex: 1, width: "100%" }, headerText: { textAlign: "center" }, logo: { marginTop: 8, marginBottom: -6 }, table: { marginTop: 16 }, row: { display: "flex", flexDirection: "row" }, bottomBorder: { borderBottomColor: "rgba(106, 116, 128, 0.24)", borderBottomWidth: 1 }, topBorderRadius: { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm }, bottomBorderRadius: null, cell: null, labelCell: null, dataCell: null, themedHighlightedCell: null, nitroHomeHightlightedBorderLeftRight: null, premiumGroupCard: null, priceContainer: null };
 let obj3 = { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 obj2.bottomBorderRadius = { borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
@@ -222,14 +222,14 @@ obj2.cell = { paddingVertical: 12 };
 obj2.labelCell = { flex: 1, justifyContent: "flex-start" };
 obj2.dataCell = { flexDirection: "row", justifyContent: "center", alignItems: "center", width: 82 };
 let obj4 = { borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
-obj2.themedHighlightedCell = { backgroundColor: fn(5950).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
+obj2.themedHighlightedCell = { backgroundColor: fn(5939).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
 obj2.nitroHomeHightlightedBorderLeftRight = { borderLeftColor: "rgba(184, 69, 193, 0.5)", borderLeftWidth: 2, borderRightColor: "rgba(184, 69, 193, 0.5)", borderRightWidth: 2 };
 obj2.premiumGroupCard = { marginTop: 16 };
 obj2.priceContainer = { alignItems: "center" };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj7 = { icon: null };
-let obj5 = { backgroundColor: fn(5950).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
+let obj5 = { backgroundColor: fn(5939).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
 obj7.icon = { tintColor: nativeDefault.colors.TEXT_MUTED };
 let closure_16 = createStyles.createStyles(obj7);
 let size = fn(2);

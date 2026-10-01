@@ -1,9 +1,9 @@
-// Module ID: 6783
-// Function ID: 6784
+// Module ID: 6773
+// Function ID: 6774
 // Name: ApplicationAccountLinkingConstants
 // Dependencies: [2]
 
-// Module 6783 (ApplicationAccountLinkingConstants)
+// Module 6773 (ApplicationAccountLinkingConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/ApplicationAccountLinkingConstants.tsx");

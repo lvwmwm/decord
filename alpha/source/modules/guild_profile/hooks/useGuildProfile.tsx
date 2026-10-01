@@ -1,13 +1,13 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9222
+// Function ID: 9223
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9227, 504, 9229, 2]
+// Dependencies: [5, 19, 9221, 504, 9223, 2]
 // Exports: useGuildProfile
 
-// Module 9228 (useGuildProfile)
+// Module 9222 (useGuildProfile)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9227 */;
+import GuildProfileStore from "GuildProfileStore" /* 9221 */;
 
 const require = globalThis.__r;
 
@@ -19,78 +19,20 @@ export const useGuildProfile = function useGuildProfile(guildId) {
   _require = guildId;
   const items = [GuildProfileStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildProfileStore.getProfile(closure_0));
-  let obj = require("initialize");
+  const obj = require("initialize");
   const items1 = [GuildProfileStore];
   const obj3 = { guildProfile: stateFromStores, fetchGuildProfile: null, fetchStatus: null };
   const stateFromStores1 = require("initialize").useStateFromStores(items1, () => GuildProfileStore.getFetchStatus(closure_0));
   const items2 = [guildId];
-  obj3.fetchGuildProfile = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp5;
-            closure_129_0 = undefined;
-            let flag = guildId;
-            if (guildId === undefined) {
-              flag = false;
-            }
-            closure_129_0 = flag;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flex", done: true };
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: guildId(tmp2[4]).getGuildProfile(closure_130_0, closure_129_0), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          c4 = 3;
-          const obj = { value, done: true };
-          return obj;
-        }
-      } catch (tmp12) {
-        c4 = tmp;
-        throw tmp12;
-      }
+  obj3.fetchGuildProfile = noop.useCallback(asyncGeneratorStep(async () => {
+    let flag = guildId;
+    if (guildId === undefined) {
+      flag = false;
     }
+    closure_129_0 = flag;
+    await "flex";
+    await closure_0(tmp2[4]).getGuildProfile(closure_130_0, closure_129_0);
+    return arg1;
   }), items2);
   obj3.fetchStatus = stateFromStores1;
   return obj3;

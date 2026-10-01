@@ -1,12 +1,12 @@
-// Module ID: 4521
-// Function ID: 4522
+// Module ID: 4520
+// Function ID: 4521
 // Name: PaymentSourceStore
-// Dependencies: [4522, 504, 573, 2]
+// Dependencies: [4521, 504, 573, 2]
 
-// Module 4521 (PaymentSourceStore)
+// Module 4520 (PaymentSourceStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4522 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4521 */;
 
 function handlePaymentSourceUpdate(paymentSource) {
   paymentSource = paymentSource.paymentSource;

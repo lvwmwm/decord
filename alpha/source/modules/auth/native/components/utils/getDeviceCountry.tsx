@@ -1,10 +1,10 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15804
+// Function ID: 15805
 // Name: getDeviceCountry
 // Dependencies: [1116, 2]
 // Exports: getDeviceCountry
 
-// Module 15788 (getDeviceCountry)
+// Module 15804 (getDeviceCountry)
 import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13180
+// Function ID: 13181
 // Name: Constants
 // Dependencies: [2]
 
-// Module 13172 (Constants)
+// Module 13180 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/referral_program/Constants.tsx");

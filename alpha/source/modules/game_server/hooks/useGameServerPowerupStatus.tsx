@@ -1,14 +1,14 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12282
+// Function ID: 12283
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 4774, 504, 12258, 1115, 2519, 2]
+// Dependencies: [19, 7628, 504, 12266, 1115, 2518, 2]
 // Exports: default
 
-// Module 12274 (useGameServerPowerupStatus)
+// Module 12282 (useGameServerPowerupStatus)
 import util from "util" /* 1115 */;
-import _modDef2519 from "module_2519" /* 2519 */;
+import _modDef2518 from "module_2518" /* 2518 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4774 */;
+import GameServerStore from "GameServerStore" /* 7628 */;
 
 const require = globalThis.__r;
 
@@ -28,7 +28,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(12258)(arg0);
+  const tmp2 = stateFromStores(12266)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return noop.useMemo(() => {
@@ -43,7 +43,7 @@ export default function useGameServerPowerupStatus(arg0) {
       } else {
         obj3 = { type: "active", statusText: null };
         const intl = util.intl;
-        obj3.statusText = intl.string(_modDef2519.FFLkmx);
+        obj3.statusText = intl.string(_modDef2518.FFLkmx);
       }
       return obj3;
     }

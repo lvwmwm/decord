@@ -1,10 +1,10 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12245
+// Function ID: 12246
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1074, 3, 7022, 10327, 7021, 1241, 5400, 1115, 5943, 2]
+// Dependencies: [5, 19, 1074, 3, 7014, 10319, 7013, 1241, 5388, 1115, 5932, 2]
 // Exports: default
 
-// Module 12237 (useGuildBoostPurchaseHandler)
+// Module 12245 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -47,8 +47,8 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           } else {
             let newAnalyticsLoadId = tmp2;
             newAnalyticsLoadId = undefined;
-            newAnalyticsLoadId = args(10327).getNewAnalyticsLoadId();
-            const obj7 = args(7021);
+            newAnalyticsLoadId = args(10319).getNewAnalyticsLoadId();
+            const obj7 = args(7013);
             c3 = 1;
             c4 = 1;
             const obj4 = {
@@ -81,7 +81,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          args(5943).closeApplyBoostModal();
+          args(5932).closeApplyBoostModal();
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

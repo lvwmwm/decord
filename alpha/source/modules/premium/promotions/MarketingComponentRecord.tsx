@@ -1,13 +1,13 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10323
+// Function ID: 10324
 // Name: MarketingComponentRecord
-// Dependencies: [1387, 1223, 10332, 1091, 1240, 2]
+// Dependencies: [1387, 1223, 10324, 1091, 1240, 2]
 
-// Module 10331 (MarketingComponentRecord)
+// Module 10323 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1091 */;
 import ProtoUtils from "ProtoUtils" /* 1223 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10332 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10324 */;
 import Record from "Record" /* 1387 */;
 
 require = fn;

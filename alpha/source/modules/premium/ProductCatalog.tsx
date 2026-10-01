@@ -1,18 +1,18 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13730
+// Function ID: 13731
 // Name: ProductCatalog
-// Dependencies: [1374, 3, 13723, 7469, 8859, 13724, 1380, 13725, 1378, 2]
+// Dependencies: [1374, 3, 13731, 7447, 8851, 13732, 1380, 13733, 1378, 2]
 // Exports: canUserUse
 
-// Module 13722 (ProductCatalog)
+// Module 13730 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import user from "user" /* 1380 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7469 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8859 */;
-import SKUListingDefault from "SKUListing" /* 13724 */;
-import DenormalizedPerksReadExperimentDefault from "DenormalizedPerksReadExperiment" /* 13725 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7447 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8851 */;
+import SKUListingDefault from "SKUListing" /* 13732 */;
+import DenormalizedPerksReadExperimentDefault from "DenormalizedPerksReadExperiment" /* 13733 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 13723 */;
+import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 13731 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = require;
@@ -1109,14 +1109,14 @@ export const canUserUse = function canUserUse(COLLECTIBLES, isPremiumWithFractio
     }
     if (null != perks) {
       const config = DenormalizedPerksReadExperimentDefault.getConfig({ location: "product_catalog_can_user_use" });
-      if (config !== closure_0(13725).DenormalizedPerksReadConfig.CONTROL) {
+      if (config !== closure_0(13733).DenormalizedPerksReadConfig.CONTROL) {
         let featureValue = COLLECTIBLES.getFeatureValue(isPremiumWithFractionalPremiumOnly);
         let perks1;
         if (isPremiumWithFractionalPremiumOnly != null) {
           perks1 = isPremiumWithFractionalPremiumOnly.perks;
         }
         const tmp9Result = tmp9(1378);
-        if (config === tmp9(13725).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
+        if (config === tmp9(13733).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
           featureValue = hasPerkResult;
         }
         return featureValue;

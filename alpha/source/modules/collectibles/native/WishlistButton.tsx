@@ -1,18 +1,18 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8488
+// Function ID: 8489
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1372, 1076, 1085, 21, 4596, 5482, 4866, 576, 4570, 6234, 4715, 4580, 4558, 1115, 4867, 5476, 5480, 8497, 8432, 504, 8428, 8488, 8499, 8427, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1372, 1076, 1085, 21, 4595, 5470, 4845, 576, 4569, 6224, 4714, 4579, 4557, 1115, 4846, 5464, 5468, 8489, 8424, 504, 8420, 8480, 8491, 8419, 2]
 // Exports: default
 
-// Module 8496 (WishlistButton)
+// Module 8488 (WishlistButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
-import native from "native" /* 4570 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import spring from "spring" /* 5476 */;
-import springPresets from "springPresets" /* 5480 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8427 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
+import native from "native" /* 4569 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import spring from "spring" /* 5464 */;
+import springPresets from "springPresets" /* 5468 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8419 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -390,11 +390,11 @@ const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 let obj = { duration: 400, easing: null };
-const Easing = fn(4596).Easing;
+const Easing = fn(4595).Easing;
 obj.easing = Easing.bezier(0.67, 0, 0.26, 1);
-let obj2 = { sm: fn(5482).SMALL_BUTTON_HEIGHT, md: fn(5482).MEDIUM_BUTTON_HEIGHT };
+let obj2 = { sm: fn(5470).SMALL_BUTTON_HEIGHT, md: fn(5470).MEDIUM_BUTTON_HEIGHT };
 let value = { sm: "sm", md: "md" };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_17 = createStyles.createStyles((arg0) => {
   obj = { button: null, light: null, lightPressed: null, dark: null, darkPressed: null, midnight: null, disabled: null, iconContainer: null, animationFill: null };
   const size = { width: obj2[arg0], height: obj2[arg0], display: "flex", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };

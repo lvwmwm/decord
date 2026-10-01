@@ -1,18 +1,18 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10764
+// Function ID: 10765
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 10768, 10769, 10770, 1115, 4549, 2111, 4580, 4561, 576, 1241, 4684, 2029, 4570, 6767, 6095, 7950, 6771, 10771, 8494, 4862, 5477, 4866, 1364, 2]
+// Dependencies: [19, 17, 1074, 2041, 21, 10765, 10766, 10767, 1115, 4548, 2110, 4579, 4560, 576, 1241, 4683, 2029, 4569, 6757, 6085, 7937, 6761, 10768, 8486, 4841, 5465, 4845, 1364, 2]
 // Exports: default
 
-// Module 10767 (BalanceWidgetActionSheet)
+// Module 10764 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import _mod10768 from "module_10768" /* 10768 */;
-import _mod10769 from "module_10769" /* 10769 */;
-import _mod10770 from "module_10770" /* 10770 */;
+import _mod10765 from "module_10765" /* 10765 */;
+import _mod10766 from "module_10766" /* 10766 */;
+import _mod10767 from "module_10767" /* 10767 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -22,10 +22,10 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, TouchableOpacity: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Fonts: closure_7, HelpdeskArticles: closure_8, ThemeTypes: closure_9 } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_13 = createStyles.createStyles((color) => {
   const obj = { actions: { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, balanceHeader: null, balanceText: null, content: null, header: null, infoIconBackground: null, infoIconContainer: null, promotionalBackground: null, promotionalBackgroundContainer: null, promotionalBannerAsset: null, promotionalBannerContainer: null, promotionalBannerText: null };
   const obj2 = { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -74,7 +74,7 @@ export default function _default(balance) {
     }
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod10768.default, backgroundImage: _mod10769.default, bannerImage: _mod10770.default, bannerText: null };
+      const obj = { backgroundVideo: _mod10765.default, backgroundImage: _mod10766.default, bannerImage: _mod10767.default, bannerText: null };
       const intl = util.intl;
       obj.bannerText = intl.string(util.t.LaMEFL);
       tmp = obj;
@@ -91,8 +91,8 @@ export default function _default(balance) {
     const obj2 = { type: "VIEW", source, balance: num };
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
-      const result = tmp3(4684).UNSAFE_markDismissibleContentAsDismissed(tmp3(2029).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
-      const tmp3Result = tmp3(4684);
+      const result = tmp3(4683).UNSAFE_markDismissibleContentAsDismissed(tmp3(2029).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const tmp3Result = tmp3(4683);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: null };

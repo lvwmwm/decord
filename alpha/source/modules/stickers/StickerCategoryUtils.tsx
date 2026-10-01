@@ -1,11 +1,11 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10045
+// Function ID: 10046
 // Name: StickerCategoryUtils
-// Dependencies: [5778, 6951, 2]
+// Dependencies: [5767, 6942, 2]
 // Exports: isStickerCategoryNitroLocked
 
-// Module 10053 (StickerCategoryUtils)
-import StickerSendability from "StickerSendability" /* 6951 */;
+// Module 10045 (StickerCategoryUtils)
+import StickerSendability from "StickerSendability" /* 6942 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

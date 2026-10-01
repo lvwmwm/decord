@@ -1,10 +1,10 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16049
+// Function ID: 16050
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2035, 1074, 2042, 560, 9886, 7002, 2029, 2]
+// Dependencies: [32, 19, 2035, 1074, 2041, 560, 9878, 6993, 2029, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 16034 (FavoritesGuildSuggestionsStore)
+// Module 16049 (FavoritesGuildSuggestionsStore)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2035 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const NOOP = fn(1074).NOOP;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 let items = [];
 const module_560 = fn(560);
 const state = module_560.create(() => ({ suggestions: items, dismiss: NOOP }));

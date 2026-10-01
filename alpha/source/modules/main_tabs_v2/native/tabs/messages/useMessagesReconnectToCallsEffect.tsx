@@ -1,16 +1,16 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15898
+// Function ID: 15899
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5786, 2045, 6835, 573, 2]
+// Dependencies: [32, 19, 5775, 2044, 6826, 573, 2]
 // Exports: default
 
-// Module 15882 (useMessagesReconnectToCallsEffect)
+// Module 15898 (useMessagesReconnectToCallsEffect)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6835 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6826 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");

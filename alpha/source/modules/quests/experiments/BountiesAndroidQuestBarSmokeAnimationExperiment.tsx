@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 14946
+// Function ID: 14947
 // Name: BountiesAndroidQuestBarSmokeAnimationExperiment
 // Dependencies: [1435, 2]
 // Exports: useIsBountiesAndroidQuestBarSmokeAnimationEnabled
 
-// Module 14940 (BountiesAndroidQuestBarSmokeAnimationExperiment)
+// Module 14946 (BountiesAndroidQuestBarSmokeAnimationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

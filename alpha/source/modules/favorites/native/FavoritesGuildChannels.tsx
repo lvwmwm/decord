@@ -1,22 +1,22 @@
-// Module ID: 16113
-// Function ID: 16114
+// Module ID: 16133
+// Function ID: 16134
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 16034, 21, 6666, 5484, 16114, 16101, 16115, 15884, 15967, 16033, 16120, 15935, 2]
+// Dependencies: [19, 16049, 21, 6656, 5472, 16134, 16121, 16135, 15900, 15983, 16048, 16140, 15951, 2]
 // Exports: default
 
-// Module 16113 (FavoritesGuildChannels)
-import useFontScale from "useFontScale" /* 5484 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 6666 */;
-import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 16114 */;
+// Module 16133 (FavoritesGuildChannels)
+import useFontScale from "useFontScale" /* 5472 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 6656 */;
+import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 16134 */;
 import noop from "module_19" /* 19 */;
 
-const ChannelListPanelBackdropDefault = tmp2(15884);
-const ChannelListStickyHeaderDefault = tmp2(15967);
-const FavoritesGuildSuggestedChannelsDefault = tmp2(16033);
-const FavoritesGuildSuggestionsLoaderDefault = tmp2(16115);
-const FavoritesGuildSidebarHeaderDefault = tmp2(16120);
+const ChannelListPanelBackdropDefault = tmp2(15900);
+const ChannelListStickyHeaderDefault = tmp2(15983);
+const FavoritesGuildSuggestedChannelsDefault = tmp2(16048);
+const FavoritesGuildSuggestionsLoaderDefault = tmp2(16135);
+const FavoritesGuildSidebarHeaderDefault = tmp2(16140);
 require = fn;
-let closure_3 = fn(16034).useFavoritesGuildSuggestionCount;
+let closure_3 = fn(16049).useFavoritesGuildSuggestionCount;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = jsxProd);
 const size = fn(2);
@@ -58,9 +58,9 @@ export default function FavoritesGuildChannels(arg0) {
       const merged = Object.assign(tmp2Result2);
       obj9.guildChannels = guildChannels;
       obj9.guildChannelsVersion = 0;
-      obj9.favoritesSuggestionsNoticeHeight = tmp4(16033).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
-      tmp10Result1 = tmp10(tmp4(15935).ChannelList, obj9);
-      const tmp4Result = tmp4(16033);
+      obj9.favoritesSuggestionsNoticeHeight = tmp4(16048).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
+      tmp10Result1 = tmp10(tmp4(15951).ChannelList, obj9);
+      const tmp4Result = tmp4(16048);
     }
     const obj10 = { children: null };
     items[1] = tmp10Result1;

@@ -1,16 +1,16 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16086
+// Function ID: 16087
 // Name: RTCConnectionDesyncHooks
-// Dependencies: [32, 19, 502, 13496, 4889, 4885, 12, 504, 9004, 2]
+// Dependencies: [32, 19, 502, 13504, 4868, 4864, 12, 504, 8997, 2]
 // Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 16068 (RTCConnectionDesyncHooks)
+// Module 16086 (RTCConnectionDesyncHooks)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 13496 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 13504 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 const require = globalThis.__r;
 

@@ -1,13 +1,13 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17255
+// Function ID: 17256
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 5405, 5405, 17234, 1115, 2]
+// Dependencies: [19, 21, 5393, 5393, 17256, 1115, 2]
 // Exports: default
 
-// Module 17233 (VoicePanelNoJoinPermissionsAlert)
+// Module 17255 (VoicePanelNoJoinPermissionsAlert)
 import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5405 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17234 */;
+import AlertModal from "AlertModal" /* 5393 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17256 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

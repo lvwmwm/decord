@@ -1,15 +1,15 @@
-// Module ID: 13128
-// Function ID: 13129
+// Module ID: 13136
+// Function ID: 13137
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1074, 21, 4866, 576, 4531, 4862, 1115, 4518, 13125, 6779, 6799, 13129, 7020, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4845, 576, 4530, 4841, 1115, 4517, 13133, 6769, 6789, 13137, 7012, 2]
 // Exports: default
 
-// Module 13128 (PremiumBillingInfo)
+// Module 13136 (PremiumBillingInfo)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6779 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6799 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 13125 */;
-import BillingInformation from "BillingInformation" /* 13129 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6769 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 13133 */;
+import BillingInformation from "BillingInformation" /* 13137 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -46,7 +46,7 @@ const Constants = fn(1074);
 ({ SubscriptionStatusTypes: hasOwnProperty, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, billingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, marginTop: 8 }, billingRenewalInfo: { marginTop: 4 }, billingManageGoogle: { marginTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -62,19 +62,19 @@ export default function PremiumBillingInfo(subscription) {
   if (null == _slicedToArray(obj.useFetchSubscriptionInvoicePreview(obj2), 1)[0]) {
     return null;
   } else {
-    const externalManagementMessage = tmp2(7020).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
+    const externalManagementMessage = tmp2(7012).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     const obj5 = { style: subscription.style, children: null };
     const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
     const intl = tmp2(1115).intl;
     obj6.children = intl.string(tmp2(1115).t.Sb6wI1);
-    const items = [timestampProducer(tmp2(4862).Text, obj6), , ];
+    const items = [timestampProducer(tmp2(4841).Text, obj6), , ];
     const obj7 = { style: tmp.billingContainer, children: null };
     const obj8 = { variant: "text-md/semibold", children: null };
     const intl2 = tmp2(1115).intl;
     obj8.children = intl2.string(tmp2(1115).t.KXQjfc);
-    const items1 = [timestampProducer(tmp2(4862).Text, obj8), , ];
+    const items1 = [timestampProducer(tmp2(4841).Text, obj8), , ];
     const obj9 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: tmp6 };
-    items1[1] = timestampProducer(tmp2(4862).Text, obj9);
+    items1[1] = timestampProducer(tmp2(4841).Text, obj9);
     const obj10 = { style: tmp.billingManageGoogle, subscription };
     items1[2] = timestampProducer(GoogleManagementLink, obj10);
     obj7.children = items1;
@@ -82,7 +82,7 @@ export default function PremiumBillingInfo(subscription) {
     let tmp11Result = null;
     if (null != externalManagementMessage) {
       const obj11 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp11Result = timestampProducer(tmp2(4862).Text, obj11);
+      tmp11Result = timestampProducer(tmp2(4841).Text, obj11);
     }
     items[2] = tmp11Result;
     obj5.children = items;

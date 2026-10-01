@@ -1,18 +1,70 @@
 // Module ID: 5751
 // Function ID: 5752
-// Dependencies: [5748]
+// Dependencies: [32, 5712, 5729, 5752]
 
 // Module 5751
-import _mod5748 from "module_5748" /* 5748 */;
+import _mod5712 from "module_5712" /* 5712 */;
+import _modDef5729 from "module_5729" /* 5729 */;
+import _slicedToArray from "module_32" /* 32 */;
 
 require = arg1;
-const dependencyMap = arg6;
-const obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
-obj[45056] = {
-  name: "MPFVersion",
-  description(value) {
-    return _mod5748.getStringValue(value);
+function getTagName(dataView, sum1) {
+  const tmp = _slicedToArray(_mod5712.getPascalStringFromDataView(dataView, sum1), 2);
+  const first = tmp[0];
+  const obj2 = { tagName: tmp[1], tagNameSize: null };
+  let num = 0;
+  const sum = 1 + first;
+  if (first % 2 === 0) {
+    num = 1;
+  }
+  obj2.tagNameSize = sum + num;
+  return obj2;
+}
+let c4 = "8BIM";
+let c5 = 2;
+let c6 = 4;
+({ length, length: closure_7 } = "8BIM");
+
+export default {
+  read(arg0, arg1) {
+    const uint8Array = new Uint8Array(arg0);
+    const dataView = _mod5712.getDataView(uint8Array.buffer);
+    const obj2 = {};
+    let num = 0;
+    if (0 < arg0.length) {
+      const sum = num + React5;
+      const stringFromDataView = _mod5712.getStringFromDataView(dataView, num, React5);
+      const shortAt = _modDef5729.getShortAt(dataView, sum);
+      const sum1 = sum + c5;
+      const tmp15 = getTagName(dataView, sum1);
+      let name = tmp15.tagName;
+      const sum2 = sum1 + tmp15.tagNameSize;
+      const longAt = _modDef5729.getLongAt(dataView, sum2);
+      const sum3 = sum2 + c6;
+      if (stringFromDataView === c4) {
+        const dataView1 = tmp5(5712).getDataView(dataView.buffer, sum3, longAt);
+        const obj7 = { id: shortAt, value: null };
+        const tmp5Result = tmp5(5712);
+        obj7.value = tmp5(5712).getStringFromDataView(dataView1, 0, longAt);
+        if (tmp10(5752)[shortAt]) {
+          try {
+            obj7.description = tmp10(5752)[shortAt].description(dataView1);
+            if (!name) {
+              name = tmp10(5752)[shortAt].name;
+            }
+            obj2[name] = obj7;
+            const obj6 = tmp10(5752)[shortAt];
+          } catch (err) {
+            tmp.description = tmp2;
+          }
+        } else if (arg1) {
+          const _HermesInternal = HermesInternal;
+          obj2["undefined-" + shortAt] = obj7;
+        }
+        const tmp5Result2 = tmp5(5712);
+      }
+      num = sum3 + (longAt + longAt % 2);
+    }
+    return obj2;
   }
 };
-
-export default obj;

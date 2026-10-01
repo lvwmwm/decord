@@ -1,16 +1,16 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15894
+// Function ID: 15895
 // Name: useMessagesData
-// Dependencies: [32, 19, 5786, 502, 4509, 6835, 504, 15879, 2021, 2]
+// Dependencies: [32, 19, 5775, 502, 4508, 6826, 504, 15895, 2021, 2]
 // Exports: default
 
-// Module 15878 (useMessagesData)
+// Module 15894 (useMessagesData)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6835 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6826 */;
 
 const require = fn;
 const MessagesDataHeader = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };

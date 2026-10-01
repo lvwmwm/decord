@@ -1,12 +1,12 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13514
+// Function ID: 13515
 // Name: VoiceActionSheetManager
-// Dependencies: [1993, 4885, 1983, 573, 5073, 2]
+// Dependencies: [1993, 4864, 1983, 573, 5052, 2]
 
-// Module 13506 (VoiceActionSheetManager)
+// Module 13514 (VoiceActionSheetManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 let require = fn;
@@ -19,9 +19,9 @@ class VoiceActionSheetManager extends tmp2 {
       const channel = applyArgumentsResult.channel;
       if (null != channel) {
         DispatcherDefault.wait(() => {
-          const result = applyArgumentsResult(5073).dismissVoiceChannelScreens(channel);
-          const obj = applyArgumentsResult(5073);
-          applyArgumentsResult(5073).openChannelCallModal(channel);
+          const result = applyArgumentsResult(5052).dismissVoiceChannelScreens(channel);
+          const obj = applyArgumentsResult(5052);
+          applyArgumentsResult(5052).openChannelCallModal(channel);
         });
         applyArgumentsResult.terminate();
       }

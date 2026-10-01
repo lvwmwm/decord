@@ -1,44 +1,48 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10706
+// Function ID: 10707
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7163, 1972, 21, 4866, 576, 7818, 4578, 10711, 5632, 8483, 8469, 8454, 4862, 1115, 2]
+// Dependencies: [19, 17, 7155, 1972, 21, 576, 4845, 7805, 4577, 10707, 5621, 8475, 8461, 8446, 4841, 1115, 1479, 12, 2]
 // Exports: default
 
-// Module 10710 (GiftingSKUCardsGrid)
+// Module 10706 (GiftingSKUCardsGrid)
+import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4578 */;
-import useCurrentUser from "useCurrentUser" /* 7818 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8469 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8483 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10711 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4577 */;
+import useCurrentUser from "useCurrentUser" /* 7805 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8461 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8475 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10707 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const isAvatarDecorationRecord = fn(7163).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7155).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1972).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let createStyles = fn(4866);
-let obj = { card: { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE, margin: nativeDefault.space.PX_4 }, previewContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: 100, overflow: "hidden" }, preview: null, selected: null, claimed: null, checkmark: null, textContainer: null };
+const PX_12 = nativeDefault.space.PX_12;
+let closure_10 = 2 * nativeDefault.space.PX_24;
+let createStyles = fn(4845);
+let obj = { card: { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE }, previewContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: 100, overflow: "hidden" }, preview: null, selected: null, claimed: null, checkmark: null, textContainer: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4.display = "flex";
 obj4.justifyContent = "center";
 obj4.alignItems = "center";
 obj.preview = obj4;
-let obj3 = { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE, margin: nativeDefault.space.PX_4 };
+let obj3 = { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.selected = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj.claimed = { opacity: 0.4 };
 obj.checkmark = { position: "absolute", opacity: 1, fontWeight: "bold" };
 let obj5 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj.textContainer = { alignSelf: "stretch", paddingHorizontal: nativeDefault.space.PX_16, alignItems: "flex-start" };
-let closure_9 = createStyles.createStyles(obj);
-let closure_10 = noop.memo((rewardSkuId) => {
+let closure_11 = createStyles.createStyles(obj);
+let closure_12 = noop.memo((rewardSkuId) => {
   rewardSkuId = rewardSkuId.rewardSkuId;
   ({ claimed, onSelect: importDefault, isSelected } = rewardSkuId);
-  const tmp = closure_9();
+  const tmp = closure_11();
   const currentUser = useCurrentUser.useCurrentUser();
   const radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected: isSelected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -83,14 +87,14 @@ let closure_10 = noop.memo((rewardSkuId) => {
     let tmp8Result2 = claimed;
     if (claimed) {
       const obj9 = { size: "lg", style: tmp.checkmark };
-      tmp8Result2 = tmp8(tmp2(8454).CheckmarkLargeBoldIcon, obj9);
+      tmp8Result2 = tmp8(tmp2(8446).CheckmarkLargeBoldIcon, obj9);
     }
     items3[1] = tmp8Result2;
     obj5.children = items3;
     const items4 = [React6(React4, obj5), ];
     const obj10 = { style: tmp.textContainer, children: null };
     const obj11 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
-    const items5 = [React5(tmp2(4862).Text, obj11), ];
+    const items5 = [React5(tmp2(4841).Text, obj11), ];
     const intl = tmp2(1115).intl;
     const string = intl.string;
     const t = tmp2(1115).t;
@@ -100,25 +104,39 @@ let closure_10 = noop.memo((rewardSkuId) => {
       stringResult = string(t.QQsaCc);
     }
     const obj12 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: stringResult };
-    items5[1] = React5(tmp2(4862).Text, obj12);
+    items5[1] = React5(tmp2(4841).Text, obj12);
     obj10.children = items5;
     items4[1] = React6(React4, obj10);
     obj4.children = items4;
-    return React6(tmp2(5632).PressableOpacity, obj4);
+    return React6(tmp2(5621).PressableOpacity, obj4);
   }
 });
-createStyles = fn(4866);
-let closure_11 = createStyles.createStyles({ grid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
+createStyles = fn(4845);
+let closure_13 = createStyles.createStyles({ grid: { flexDirection: "column", alignSelf: "center", gap: PX_12 }, row: { flexDirection: "row", gap: PX_12 } });
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
+let result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
 
-export default function GiftingSKUCardsGrid(arg0) {
-  ({ rewardsToDisplay, claimableRewards: require, onSelect: importDefault, highlightedSkuId: dependencyMap } = arg0);
-  return closure_7(closure_4, {
-    style: closure_11().grid,
-    children: rewardsToDisplay.map((rewardSkuId) => {
+export default function GiftingSKUCardsGrid(rewardsToDisplay) {
+  rewardsToDisplay = rewardsToDisplay.rewardsToDisplay;
+  ({ claimableRewards: importDefault, onSelect: dependencyMap, highlightedSkuId: noop } = rewardsToDisplay);
+  const tmp = closure_13();
+  const row = tmp;
+  let length = Math.max(1, Math.floor((useWindowDimensionsDefault().width - closure_10 + PX_12) / (150 + PX_12)));
+  const items = [rewardsToDisplay, length];
+  const memo = noop.useMemo(() => _modDef12.chunk(rewardsToDisplay, length), items);
+  if (memo.length <= 1) {
+    length = rewardsToDisplay.length;
+  }
+  const result = 150 * length;
+  const obj = { style: null, children: null };
+  const items1 = [tmp.grid, { width: result + Math.max(0, length - 1) * PX_12 }];
+  obj.style = items1;
+  obj.children = memo.map((arr, index) => React5(React4, {
+    style: row.row,
+    children: arr.map((rewardSkuId) => {
       closure_0 = rewardSkuId;
-      return React5(closure_10, { rewardSkuId, claimed: !require.some((item) => item === closure_0), isSelected: dependencyMap === rewardSkuId, onSelect }, rewardSkuId);
+      return closure_2_7(closure_2_12, { rewardSkuId, claimed: !closure_1_1.some((item) => item === closure_0), isSelected: closure_1_3 === rewardSkuId, onSelect }, rewardSkuId);
     })
-  });
+  }, index));
+  return closure_7(row, obj);
 };

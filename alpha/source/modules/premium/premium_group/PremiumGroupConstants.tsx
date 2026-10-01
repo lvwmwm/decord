@@ -1,14 +1,14 @@
-// Module ID: 4532
-// Function ID: 4533
+// Module ID: 4531
+// Function ID: 4532
 // Name: PremiumGroupConstants
-// Dependencies: [1074, 2111, 1115, 3199, 2]
+// Dependencies: [1074, 2110, 1115, 3198, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 4532 (PremiumGroupConstants)
+// Module 4531 (PremiumGroupConstants)
 import util from "util" /* 1115 */;
-import _modDef3199 from "module_3199" /* 3199 */;
+import _modDef3198 from "module_3198" /* 3198 */;
 import Constants from "Constants" /* 1074 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2111 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2110 */;
 import size from "module_2" /* 2 */;
 
 ({ SubscriptionStatusTypes, HelpdeskArticles } = Constants);
@@ -25,7 +25,7 @@ export const HELP_CENTER_LINK = articleURL;
 export const CANNOT_INVITE_STATUSES = items;
 export const getPremiumGroupProductName = function getPremiumGroupProductName() {
   const intl = util.intl;
-  return intl.string(_modDef3199.aFBQ3d);
+  return intl.string(_modDef3198.aFBQ3d);
 };
 export const getPremiumGroupCountryName = function getPremiumGroupCountryName() {
   const intl = util.intl;

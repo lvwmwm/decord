@@ -1,13 +1,13 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12732
+// Function ID: 12733
 // Name: MoreVerticalIcon
-// Dependencies: [19, 21, 576, 4560, 12724, 2]
+// Dependencies: [19, 21, 576, 4559, 12733, 2]
 // Exports: MoreVerticalIcon
 
-// Module 12723 (MoreVerticalIcon)
+// Module 12732 (MoreVerticalIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod12724 from "module_12724" /* 12724 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod12733 from "module_12733" /* 12733 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MoreVerticalIcon = function MoreVerticalIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12724, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12733, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

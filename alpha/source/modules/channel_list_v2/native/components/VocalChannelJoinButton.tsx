@@ -1,13 +1,13 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 11986
+// Function ID: 11987
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4499, 4885, 1074, 21, 4866, 576, 1364, 7494, 4797, 4715, 9032, 563, 5940, 5934, 5926, 11980, 4862, 1115, 5477, 5607, 5611, 2]
+// Dependencies: [19, 17, 4498, 4864, 1074, 21, 4845, 576, 1364, 7472, 4776, 4714, 9026, 563, 5929, 5923, 5915, 11987, 4841, 1115, 5465, 5595, 5599, 2]
 
-// Module 11979 (VocalChannelJoinButton)
+// Module 11986 (VocalChannelJoinButton)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 const Constants = fn(1074);
 ({ NOOP: closure_8, Permissions: closure_9 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_11 = createStyles.createStyles((arg0, arg1) => {
   const obj = { borderRadius: nativeDefault.radii.xxl, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, marginVertical: -nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center", elevation: null, shadowRadius: 4, shadowOffset: null, shadowColor: null, shadowOpacity: null, borderColor: null, borderWidth: 1 };
   let num = 1;
@@ -60,20 +60,20 @@ export default noop.memo(function VocalChannelJoinButton(channel) {
     small = false;
   }
   let VJlc0S = dependencyMap;
-  const tmp = voiceStates(7494)();
-  const tmp2 = voiceStates(4797)();
-  let joinButtonText = closure_11(tmp, channel(4715).isThemeLight(tmp2));
-  const obj = channel(4715);
-  const isConnectedToVoiceChannel = channel(9032).useIsConnectedToVoiceChannel(channel);
-  const obj2 = channel(9032);
+  const tmp = voiceStates(7472)();
+  const tmp2 = voiceStates(4776)();
+  let joinButtonText = closure_11(tmp, channel(4714).isThemeLight(tmp2));
+  const obj = channel(4714);
+  const isConnectedToVoiceChannel = channel(9026).useIsConnectedToVoiceChannel(channel);
+  const obj2 = channel(9026);
   const items = [PermissionStore];
   const stateFromStores = channel(563).useStateFromStores(items, () => !PermissionStore.can(constants.CONNECT, channel));
   const obj3 = channel(563);
-  const stageParticipantsCount = channel(5940).useStageParticipantsCount(channel.id, channel(5934).StageChannelParticipantNamedIndex.AUDIENCE);
+  const stageParticipantsCount = channel(5929).useStageParticipantsCount(channel.id, channel(5923).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const obj4 = channel(5940);
-  const obj5 = channel(5926);
-  const tmp8 = channel(5926).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
+  const obj4 = channel(5929);
+  const obj5 = channel(5915);
+  const tmp8 = channel(5915).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   const items1 = [VoiceStateStore];
   const stateFromStores1 = channel(563).useStateFromStores(items1, () => VoiceStateStore.hasVideo(channel.id));
   const sum = stageParticipantsCount + voiceStates.length;
@@ -90,9 +90,9 @@ export default noop.memo(function VocalChannelJoinButton(channel) {
     tmp12 = tmp8;
   }
   const tmp3Result = channel(563);
-  const connectedUserLimit = channel(11980).useConnectedUserLimit({ channel, video: tmp12 });
-  const tmp3Result3 = channel(11980);
-  let connectedUserLimitFormatted = channel(11980).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
+  const connectedUserLimit = channel(11987).useConnectedUserLimit({ channel, video: tmp12 });
+  const tmp3Result3 = channel(11987);
+  let connectedUserLimitFormatted = channel(11987).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
   let tmp15 = !stateFromStores;
   if (!stateFromStores) {
     tmp15 = !isConnectedToVoiceChannel;
@@ -120,7 +120,7 @@ export default noop.memo(function VocalChannelJoinButton(channel) {
       connectedUserLimitFormatted = intl2.string(VJlc0S);
     }
     obj8.children = connectedUserLimitFormatted;
-    obj7.children = tmp17(tmp3(4862).Text, obj8);
+    obj7.children = tmp17(tmp3(4841).Text, obj8);
     obj6.children = tmp17(closure_4, obj7);
     let tmp17Result = tmp17(closure_5, obj6);
   } else if (tmp15) {
@@ -132,9 +132,9 @@ export default noop.memo(function VocalChannelJoinButton(channel) {
         }
         const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
         if (isGuildStageVoiceResult) {
-          let VoiceNormalIcon = tmp3(5607).StageIcon;
+          let VoiceNormalIcon = tmp3(5595).StageIcon;
         } else {
-          VoiceNormalIcon = tmp3(5611).VoiceNormalIcon;
+          VoiceNormalIcon = tmp3(5599).VoiceNormalIcon;
         }
         const obj10 = { size: "xs", style: items3 };
         tmp17(VoiceNormalIcon, obj10);

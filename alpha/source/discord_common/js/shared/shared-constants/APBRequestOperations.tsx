@@ -1,9 +1,9 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 13092
+// Function ID: 13093
 // Name: APBRequestOperations
 // Dependencies: [2]
 
-// Module 13084 (APBRequestOperations)
+// Module 13092 (APBRequestOperations)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/APBRequestOperations.tsx");

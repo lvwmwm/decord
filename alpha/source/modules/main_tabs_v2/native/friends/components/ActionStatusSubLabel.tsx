@@ -1,13 +1,13 @@
-// Module ID: 16284
-// Function ID: 16285
+// Module ID: 16304
+// Function ID: 16305
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 4866, 4571, 4596, 4862, 5484, 4867, 2]
+// Dependencies: [19, 21, 4845, 4570, 4595, 4841, 5472, 4846, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 16284 (ActionStatusSubLabel)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4571 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4596 */;
-import timing from "timing" /* 4867 */;
+// Module 16304 (ActionStatusSubLabel)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4570 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4595 */;
+import timing from "timing" /* 4846 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -19,9 +19,9 @@ function announceActioned(intl) {
 }
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_5 = createStyles.createStyles(() => ({ container: { overflow: "hidden" }, actionStatus: { position: "absolute" } }));
-let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(4862).Text);
+let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(4841).Text);
 const __initData = { code: "function ActionStatusSubLabelTsx1(){const{hasSecondLine,actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const currentlyHasSecondLine=hasSecondLine&&!actioned.get();const lineHeightValue=lineHeight*fontScale;const currentLineHeightValue=currentlyHasSecondLine?lineHeightValue*2:lineHeightValue;return{height:!animate||!actioned.get()?currentLineHeightValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[currentlyHasSecondLine?lineHeightValue*2:lineHeightValue,lineHeightValue]))};}" };
 const __initData2 = { code: "function ActionStatusSubLabelTsx2(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?lineHeight*fontScale:0;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[0,translateYValue]))}]};}" };
 const __initData3 = { code: "function ActionStatusSubLabelTsx3(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?0:-lineHeight*fontScale;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[translateYValue,0]))}],opacity:!animate?actioned.get()?1:0:withTiming(actioned.get()?1:0)};}" };

@@ -1,17 +1,17 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8744
+// Function ID: 8745
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1074, 21, 4866, 8737, 2111, 8753, 4862, 1115, 6740, 5477, 2]
+// Dependencies: [19, 17, 1074, 21, 4845, 8729, 2110, 8745, 4841, 1115, 6730, 5465, 2]
 // Exports: default
 
-// Module 8752 (XboxLinkEducation)
+// Module 8744 (XboxLinkEducation)
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6740 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8737 */;
-import _modDef8753 from "module_8753" /* 8753 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6730 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8729 */;
+import _modDef8745 from "module_8745" /* 8745 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
@@ -31,7 +31,7 @@ export default function XboxLinkEducation(onClose) {
   const articleURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   const obj3 = { style: twoWayLinkStyles.container, children: null };
   const obj4 = { style: twoWayLinkStyles.content, children: null };
-  const items = [React5(React4, { source: noop.useMemo(() => ({ uri: _modDef8753 }), []), style: tmp.image }), , ];
+  const items = [React5(React4, { source: noop.useMemo(() => ({ uri: _modDef8745 }), []), style: tmp.image }), , ];
   const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = util.intl;
   obj6.children = intl.string(util.t.jHytat);

@@ -1,14 +1,14 @@
-// Module ID: 6829
-// Function ID: 6830
+// Module ID: 6819
+// Function ID: 6820
 // Name: GuildCapUpsellHooks
-// Dependencies: [2067, 1372, 1074, 504, 6830, 4518, 2]
+// Dependencies: [2066, 1372, 1074, 504, 6820, 4517, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 6829 (GuildCapUpsellHooks)
+// Module 6819 (GuildCapUpsellHooks)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4518 */;
-import HotspotStore2 from "HotspotStore" /* 6830 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4517 */;
+import HotspotStore2 from "HotspotStore" /* 6820 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

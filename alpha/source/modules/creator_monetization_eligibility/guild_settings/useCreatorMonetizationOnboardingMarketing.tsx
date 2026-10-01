@@ -1,11 +1,11 @@
-// Module ID: 17768
-// Function ID: 17769
+// Module ID: 17803
+// Function ID: 17804
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 17737, 4765, 2]
+// Dependencies: [5, 32, 19, 17772, 5266, 2]
 // Exports: default
 
-// Module 17768 (useCreatorMonetizationOnboardingMarketing)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17737 */;
+// Module 17803 (useCreatorMonetizationOnboardingMarketing)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17772 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -63,7 +63,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
           if (2 === tmp8) {
             c4 = 1;
             closure_129_1 = tmp45;
-            const aPIError = new closure_0(4765).APIError(closure_129_1);
+            const aPIError = new closure_0(5266).APIError(closure_129_1);
             tmp4(aPIError);
             c4 = 0;
             closure_1(false);

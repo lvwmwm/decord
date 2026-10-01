@@ -1,22 +1,22 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16131
+// Function ID: 16132
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2067, 4685, 1074, 21, 4866, 576, 4862, 12406, 16112, 1115, 5475, 5477, 1486, 563, 8426, 1249, 2070, 4724, 5635, 14835, 2]
+// Dependencies: [32, 19, 17, 502, 2066, 4684, 1074, 21, 4845, 576, 4841, 12418, 16132, 1115, 5463, 5465, 1486, 563, 8418, 1249, 2069, 4723, 5624, 14841, 2]
 
-// Module 16111 (GuildsEmpty)
+// Module 16131 (GuildsEmpty)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import Stack_Stack from "Stack/Stack" /* 5475 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12406 */;
-import _modDef16112 from "module_16112" /* 16112 */;
+import FavoritesUtils from "FavoritesUtils" /* 2069 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import Stack_Stack from "Stack/Stack" /* 5463 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12418 */;
+import _modDef16132 from "module_16132" /* 16132 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 
 require = fn;
 function handleJoinGuild() {
@@ -83,7 +83,7 @@ const Constants = fn(1074);
 ({ ME: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { scrollView: { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm }, header: null, headerTitle: null, scrollViewContentContainer: null, headerInner: null, content: null, illustrationWrapper: null, illustration: null, buttonContainer: null, textWrapper: null, headerText: null, text: null };
 let obj3 = { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm };
 obj.header = { zIndex: 100, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
@@ -101,7 +101,7 @@ obj.buttonContainer = { paddingBottom: nativeDefault.space.PX_16, paddingHorizon
 let obj8 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.textWrapper = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
 let obj10 = {};
-const merged = Object.assign(fn(4862).TextStyleSheet["heading-md/bold"]);
+const merged = Object.assign(fn(4841).TextStyleSheet["heading-md/bold"]);
 obj10.fontSize = 18;
 obj10.marginBottom = 8;
 obj.headerText = obj10;
@@ -129,7 +129,7 @@ export default noop.memo(function GuildsEmpty(arg0) {
   let obj2 = navigation(563);
   obj3.type = navigation(1249).ImpressionTypes.VIEW;
   obj3.name = navigation(1249).ImpressionNames.GUILDS_EMPTY_NUX;
-  selectedGuildId(8426)(obj3);
+  selectedGuildId(8418)(obj3);
   const items1 = [tmp6, navigation];
   const effect = noop.useEffect(() => {
     if (null != selectedGuildId) {
@@ -149,12 +149,12 @@ export default noop.memo(function GuildsEmpty(arg0) {
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                closure_0 = _slicedToArray(tmp10(4724).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                closure_0 = _slicedToArray(tmp10(4723).getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(dependencyMap[16]).CommonActions;
                   return CommonActions.reset(closure_0);
                 });
-                const tmp10Result = tmp10(4724);
+                const tmp10Result = tmp10(4723);
               }
             }
           }
@@ -165,9 +165,9 @@ export default noop.memo(function GuildsEmpty(arg0) {
       obj2 = navigation;
     }
   }, items1);
-  const tmp7 = selectedGuildId(8426);
-  const isScreenLandscape = navigation(5635).useIsScreenLandscape();
-  navigation(14835);
+  const tmp7 = selectedGuildId(8418);
+  const isScreenLandscape = navigation(5624).useIsScreenLandscape();
+  navigation(14841);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: null, children: null };
@@ -178,7 +178,7 @@ export default noop.memo(function GuildsEmpty(arg0) {
     const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl = tmp2(1115).intl;
     obj7.children = intl.string(tmp2(1115).t["7hB4kg"]);
-    obj6.children = closure_13(tmp2(4862).Text, obj7);
+    obj6.children = closure_13(tmp2(4841).Text, obj7);
     obj5.children = closure_13(closure_6, obj6);
     const items3 = [closure_13(closure_6, obj5), ];
     let tmp18;

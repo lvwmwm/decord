@@ -1,16 +1,16 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6775
+// Function ID: 6776
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 5093, 558, 6780, 12, 1370, 504, 2]
+// Dependencies: [19, 5072, 558, 6770, 12, 1370, 504, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 6785 (useGetOrFetchApplications)
+// Module 6775 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6780 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6770 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5093 */;
+import ApplicationStore from "ApplicationStore" /* 5072 */;
 
 const require = globalThis.__r;
 

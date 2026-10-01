@@ -1,18 +1,18 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11172
+// Function ID: 11173
 // Name: updateChannelUnreadSettings
-// Dependencies: [5047, 1074, 5048, 1084, 6736, 9809, 6731, 2]
+// Dependencies: [5026, 1074, 5027, 1084, 6726, 9801, 6721, 2]
 // Exports: default
 
-// Module 11168 (updateChannelUnreadSettings)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6731 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6736 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9809 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+// Module 11172 (updateChannelUnreadSettings)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6721 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6726 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9801 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
 
 require = fn;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
-const UnreadSetting = fn(5048).UnreadSetting;
+const UnreadSetting = fn(5027).UnreadSetting;
 const constants = fn(1084).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx");

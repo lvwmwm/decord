@@ -1,16 +1,16 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16572
+// Function ID: 16573
 // Name: VibegrationsMessageActionSheet
-// Dependencies: [19, 21, 7819, 4830, 6806, 4558, 1115, 4809, 6814, 6816, 11508, 3715, 14844, 2]
+// Dependencies: [19, 21, 7806, 4809, 6796, 4557, 1115, 4788, 6804, 6806, 11516, 3714, 14850, 2]
 // Exports: openMessageAuthorProfile, showVibegrationsMessageActions
 
-// Module 16550 (VibegrationsMessageActionSheet)
+// Module 16572 (VibegrationsMessageActionSheet)
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
-import CopyIcon from "CopyIcon" /* 4809 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4830 */;
-import ClipboardUtils from "ClipboardUtils" /* 6806 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
+import CopyIcon from "CopyIcon" /* 4788 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4809 */;
+import ClipboardUtils from "ClipboardUtils" /* 6796 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7806 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;

@@ -1,14 +1,14 @@
-// Module ID: 6605
-// Function ID: 6606
+// Module ID: 6595
+// Function ID: 6596
 // Name: trackUserAvatarUpdated
-// Dependencies: [1074, 6606, 1241, 1397, 2]
+// Dependencies: [1074, 6596, 1241, 1397, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 6605 (trackUserAvatarUpdated)
+// Module 6595 (trackUserAvatarUpdated)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6606 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6596 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

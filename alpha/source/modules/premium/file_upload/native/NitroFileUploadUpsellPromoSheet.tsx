@@ -1,12 +1,12 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17020
+// Function ID: 17021
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 4866, 576, 5494, 6996, 9623, 9892, 16996, 1115, 2587, 5477, 2]
+// Dependencies: [19, 17, 1074, 2041, 21, 4845, 576, 5482, 6987, 9617, 9884, 17018, 1115, 2586, 5465, 2]
 // Exports: default
 
-// Module 16998 (NitroFileUploadUpsellPromoSheet)
+// Module 17020 (NitroFileUploadUpsellPromoSheet)
 import nativeDefault from "native" /* 576 */;
-import openUserSettings from "openUserSettings" /* 6996 */;
+import openUserSettings from "openUserSettings" /* 6987 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,9 +15,9 @@ require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticsPages: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -60,13 +60,13 @@ export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
   const tmp5 = require("usePremiumFeatureUpsellGetNitro")(false, callback1, constants.PREMIUM_UPSELL_FILE_UPLOAD);
   obj2.illustration = <onPress style={tmp.illustration}>{jsx(markAsDismissed(callback[11]).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" })}</onPress>;
   const intl = markAsDismissed(callback[12]).intl;
-  obj2.title = intl.string(require("module_2587")["Uty2/X"]);
+  obj2.title = intl.string(require("module_2586")["Uty2/X"]);
   const intl2 = markAsDismissed(callback[12]).intl;
-  obj2.description = intl2.string(require("module_2587").VAgI8Q);
+  obj2.description = intl2.string(require("module_2586").VAgI8Q);
   obj2.onDismiss = callback3;
   const obj4 = { grow: true, size: "lg", variant: "primary", loading, text: null, onPress: null };
   const intl3 = markAsDismissed(callback[12]).intl;
-  obj4.text = intl3.string(require("module_2587").mRy6sO);
+  obj4.text = intl3.string(require("module_2586").mRy6sO);
   let tmp9 = null;
   if (!loading) {
     tmp9 = callback2;

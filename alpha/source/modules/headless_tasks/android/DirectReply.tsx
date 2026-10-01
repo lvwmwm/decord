@@ -1,14 +1,14 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 18023
+// Function ID: 18024
 // Name: DirectReply
-// Dependencies: [5, 17, 4859, 3, 17981, 7072, 2]
+// Dependencies: [5, 17, 4838, 3, 18017, 7064, 2]
 
-// Module 17987 (DirectReply)
+// Module 18023 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const NativeModules = fn(17).NativeModules;
-const MessageSendLocation = fn(4859).MessageSendLocation;
+const MessageSendLocation = fn(4838).MessageSendLocation;
 let closure_5 = new LoggerDefault("DirectReply");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/headless_tasks/android/DirectReply.tsx");

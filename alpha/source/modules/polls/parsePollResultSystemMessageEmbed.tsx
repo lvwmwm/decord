@@ -1,10 +1,10 @@
-// Module ID: 7681
-// Function ID: 7682
+// Module ID: 7669
+// Function ID: 7670
 // Name: parsePollResultSystemMessageEmbed
 // Dependencies: [2]
 // Exports: default
 
-// Module 7681 (parsePollResultSystemMessageEmbed)
+// Module 7669 (parsePollResultSystemMessageEmbed)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/parsePollResultSystemMessageEmbed.tsx");

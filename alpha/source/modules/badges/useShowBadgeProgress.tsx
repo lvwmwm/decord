@@ -1,13 +1,13 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10870
+// Function ID: 10871
 // Name: useShowBadgeProgress
-// Dependencies: [6208, 1074, 504, 10863, 2]
+// Dependencies: [6198, 1074, 504, 10859, 2]
 // Exports: default
 
-// Module 10869 (useShowBadgeProgress)
+// Module 10870 (useShowBadgeProgress)
 import initialize from "initialize" /* 504 */;
-import BadgeUtils from "BadgeUtils" /* 10863 */;
-import ConsentStore from "ConsentStore" /* 6208 */;
+import BadgeUtils from "BadgeUtils" /* 10859 */;
+import ConsentStore from "ConsentStore" /* 6198 */;
 
 require = fn;
 const Consents = fn(1074).Consents;

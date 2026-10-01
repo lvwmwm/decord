@@ -1,13 +1,13 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8686
+// Function ID: 8687
 // Name: VibegrationsProjectStore
-// Dependencies: [32, 1372, 5567, 504, 573, 2]
+// Dependencies: [32, 1372, 5555, 504, 573, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 8694 (VibegrationsProjectStore)
+// Module 8686 (VibegrationsProjectStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5567 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -128,8 +128,8 @@ prototype["isAppChannelPending"] = function isAppChannelPending(projectId) {
 prototype["isProjectDeleting"] = function isProjectDeleting(id) {
   return set2.has(id);
 };
-prototype["getSelectedProjectId"] = function getSelectedProjectId(guildId) {
-  value = map3.get(guildId);
+prototype["getSelectedProjectId"] = function getSelectedProjectId(guildId1) {
+  value = map3.get(guildId1);
   if (value == null) {
     value = null;
   }

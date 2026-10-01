@@ -1,10 +1,10 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9790
+// Function ID: 9791
 // Name: InAppNotificationContext
 // Dependencies: [19, 2]
 // Exports: useInAppNotificationContext
 
-// Module 9798 (InAppNotificationContext)
+// Module 9790 (InAppNotificationContext)
 import noop from "module_19" /* 19 */;
 
 let context = noop.createContext(undefined);

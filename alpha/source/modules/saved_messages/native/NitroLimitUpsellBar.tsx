@@ -1,19 +1,19 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11913
+// Function ID: 11914
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 4866, 576, 8244, 9620, 4862, 1115, 9626, 5477, 2]
+// Dependencies: [17, 21, 4845, 576, 8234, 9614, 4841, 1115, 9620, 5465, 2]
 // Exports: default
 
-// Module 11906 (NitroLimitUpsellBar)
+// Module 11913 (NitroLimitUpsellBar)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import WarningIcon from "WarningIcon" /* 8244 */;
-import _modDef9620 from "module_9620" /* 9620 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9626 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import WarningIcon from "WarningIcon" /* 8234 */;
+import _modDef9614 from "module_9614" /* 9614 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9620 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4866 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
@@ -32,7 +32,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
     let tmp4Result = tmp4(WarningIcon.WarningIcon, obj2);
     let tmp9 = tmp4;
   } else {
-    const obj3 = { source: _modDef9620, style: tmp.icon };
+    const obj3 = { source: _modDef9614, style: tmp.icon };
     tmp4Result = tmp4(React3, obj3);
     tmp9 = tmp4;
   }
@@ -47,7 +47,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   if (isAtLimit) {
     let Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5477).Button;
+    Button = tmp12(5465).Button;
   }
   const obj6 = { size: "sm", text: null, onPress: null, loading: null };
   const intl2 = tmp12(1115).intl;

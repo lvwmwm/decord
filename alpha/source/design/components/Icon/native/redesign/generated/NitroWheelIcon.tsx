@@ -1,13 +1,13 @@
-// Module ID: 8318
-// Function ID: 8319
+// Module ID: 8309
+// Function ID: 8310
 // Name: NitroWheelIcon
-// Dependencies: [19, 21, 576, 4560, 7690, 2]
+// Dependencies: [19, 21, 576, 4559, 7678, 2]
 // Exports: NitroWheelIcon
 
-// Module 8318 (NitroWheelIcon)
+// Module 8309 (NitroWheelIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod7690 from "module_7690" /* 7690 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod7678 from "module_7678" /* 7678 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const NitroWheelIcon = function NitroWheelIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7690, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod7678, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

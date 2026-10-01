@@ -1,10 +1,10 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8358
+// Function ID: 8359
 // Name: useGameProfileHeroBackgroundURL
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 8367 (useGameProfileHeroBackgroundURL)
+// Module 8358 (useGameProfileHeroBackgroundURL)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

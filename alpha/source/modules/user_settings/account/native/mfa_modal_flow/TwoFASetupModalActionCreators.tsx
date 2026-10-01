@@ -1,11 +1,11 @@
-// Module ID: 14521
-// Function ID: 14522
+// Module ID: 14527
+// Function ID: 14528
 // Name: TwoFASetupModalActionCreators
-// Dependencies: [5069, 14522, 1981, 2]
+// Dependencies: [5048, 14528, 1981, 2]
 
-// Module 14521 (TwoFASetupModalActionCreators)
+// Module 14527 (TwoFASetupModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
 import size from "module_2" /* 2 */;
 
 const TWO_FA_SETUP_MODAL_KEY = "TWO_FA_SETUP_MODAL_KEY";
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/user_settings/account/native/
 
 export default {
   open(initialRouteName) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14522, dependencyMap.paths), { initialRouteName }, TWO_FA_SETUP_MODAL_KEY);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14528, dependencyMap.paths), { initialRouteName }, TWO_FA_SETUP_MODAL_KEY);
   },
   close() {
     ModalActionCreatorsDefault.popWithKey(TWO_FA_SETUP_MODAL_KEY);

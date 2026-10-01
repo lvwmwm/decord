@@ -1,35 +1,35 @@
-// Module ID: 13852
-// Function ID: 13853
+// Module ID: 13860
+// Function ID: 13861
 // Name: Avatar
-// Dependencies: [19, 17, 1074, 1178, 21, 4866, 576, 12802, 13841, 13842, 8472, 7797, 13853, 8471, 13843, 5479, 9105, 9106, 2]
+// Dependencies: [19, 17, 1074, 1178, 21, 4845, 576, 12811, 13849, 13850, 8464, 7784, 13861, 8463, 13851, 5467, 9099, 9100, 2]
 
-// Module 13852 (Avatar)
+// Module 13860 (Avatar)
 import nativeDefault from "native" /* 576 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7797 */;
-import ClipView from "ClipView" /* 8472 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12802 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13841 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13842 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7784 */;
+import ClipView from "ClipView" /* 8464 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12811 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13849 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13850 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function getStatusSize(arg0) {
   if (CutoutableAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12802).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12802).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12802).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12802).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(12811).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12811).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12811).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12811).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return React5.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12802).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12802).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12802).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12802).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12802).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12802).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12802).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12802).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12802).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12811).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12811).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12811).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12811).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12811).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12811).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12811).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12811).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12811).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -55,7 +55,7 @@ const StatusConstants = fn(1178);
 ({ STATUS_PADDING: metroRequire, StatusSizes: closure_7 } = StatusConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_10 = createStyles.createStyles((NORMAL) => {
   const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
   const rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
@@ -320,5 +320,5 @@ export default noop.memo((isMobileOnline) => {
     }
   }
 });
-export const AvatarSizes = fn(12802).AvatarSizes;
+export const AvatarSizes = fn(12811).AvatarSizes;
 export { getStatusSize };

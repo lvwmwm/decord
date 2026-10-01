@@ -1,22 +1,22 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16208
+// Function ID: 16209
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4686, 2063, 4685, 5947, 21, 4866, 576, 16135, 4561, 504, 6092, 16169, 16138, 4688, 6035, 16150, 16179, 16127, 4596, 16158, 6095, 2]
+// Dependencies: [19, 4685, 2062, 4684, 5936, 21, 4845, 576, 16155, 4560, 504, 6082, 16189, 16158, 4687, 6024, 16170, 16199, 16147, 4595, 16178, 6085, 2]
 
-// Module 16187 (GuildsBarPendingGuild)
+// Module 16208 (GuildsBarPendingGuild)
 import nativeDefault from "native" /* 576 */;
-import GuildIcon from "GuildIcon" /* 6092 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16127 */;
+import GuildIcon from "GuildIcon" /* 6082 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16147 */;
 import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4686 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
-import SortedGuildStore from "SortedGuildStore" /* 5947 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4685 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
+import SortedGuildStore from "SortedGuildStore" /* 5936 */;
 
 require = fn;
-const GuildRecord = fn(2063);
+const GuildRecord = fn(2062);
 ({ getGuildIconSource: hasOwnProperty, getGuildIconURL: metroRequire } = GuildRecord);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { guildIcon: null };
 let size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = size;

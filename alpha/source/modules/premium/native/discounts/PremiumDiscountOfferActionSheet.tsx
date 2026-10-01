@@ -1,14 +1,14 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17000
+// Function ID: 17001
 // Name: PremiumDiscountOfferActionSheet
-// Dependencies: [19, 1374, 1074, 2042, 21, 6779, 6799, 1241, 7701, 8894, 7038, 6767, 16979, 2]
+// Dependencies: [19, 1374, 1074, 2041, 21, 6769, 6789, 1241, 7689, 8886, 7030, 6757, 17001, 2]
 // Exports: default
 
-// Module 16978 (PremiumDiscountOfferActionSheet)
+// Module 17000 (PremiumDiscountOfferActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7038 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 7701 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8894 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7030 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 7689 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8886 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const PremiumConstants = fn(1374);
 ({ PremiumTypes: closure_4, SubscriptionPlanInfo: hasOwnProperty } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, AnalyticsObjectTypes, AnalyticsPages, AnalyticsSections } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let closure_9 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 const size = fn(2);

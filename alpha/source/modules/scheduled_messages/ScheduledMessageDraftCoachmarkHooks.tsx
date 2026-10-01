@@ -1,19 +1,19 @@
-// Module ID: 11671
-// Function ID: 11672
+// Module ID: 11679
+// Function ID: 11680
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5786, 5396, 2042, 2029, 4684, 504, 2031, 2]
+// Dependencies: [32, 19, 5775, 5384, 2041, 2029, 4683, 504, 2031, 2]
 // Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 11671 (ScheduledMessageDraftCoachmarkHooks)
+// Module 11679 (ScheduledMessageDraftCoachmarkHooks)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4684 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4683 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
-import DraftStore from "DraftStore" /* 5396 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
+import DraftStore from "DraftStore" /* 5384 */;
 
 require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 let closure_7 = fn(2029).DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageDraftCoachmarkHooks.tsx");
@@ -25,9 +25,9 @@ export const useScheduledMessageDraftCoachmarkState = function useScheduledMessa
   let first;
   let connected;
   let isCoachmarkVisible;
-  let result = channel(4684).useIsDismissibleContentDismissed_UNSAFE(closure_7);
+  let result = channel(4683).useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
-  let obj = channel(4684);
+  let obj = channel(4683);
   const items = [isCoachmarkVisible];
   const stateFromStores = channel(504).useStateFromStores(items, () => null != DraftStore.getScheduledMessage(channel.id));
   let obj2 = channel(504);

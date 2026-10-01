@@ -1,13 +1,13 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14492
+// Function ID: 14493
 // Name: useDismissOnce
-// Dependencies: [19, 2042, 2]
+// Dependencies: [19, 2041, 2]
 // Exports: useDismissOnce
 
-// Module 14486 (useDismissOnce)
+// Module 14492 (useDismissOnce)
 import noop from "module_19" /* 19 */;
 
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/useDismissOnce.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 10865
+// Function ID: 10866
 // Name: PendingBadgeSettings
-// Dependencies: [32, 1372, 7832, 10863, 573, 7833, 2]
+// Dependencies: [32, 1372, 7819, 10859, 573, 7820, 2]
 // Exports: applyPendingBadgeSettings, getPendingProfileBadges, hasPendingBadgeSettings, moveBadgeInDisplayOrder, resetPendingBadgeSettings, setPendingBadgeDisplayOrder, setPendingBadgeHiddenBadges, setPendingBadgeVisibility
 
-// Module 12858 (PendingBadgeSettings)
+// Module 10865 (PendingBadgeSettings)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7833 */;
-import BadgeUtils from "BadgeUtils" /* 10863 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7820 */;
+import BadgeUtils from "BadgeUtils" /* 10859 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7832 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7819 */;
 
 require = fn;
 function getSavedBadgeSettings() {
@@ -88,11 +88,11 @@ function applyPendingBadgeSettingsToProfileBadges(items, arg1) {
     for (const item10027 of found) {
       let tmp11 = item10027;
       let tmp12 = set;
-      let obj = set(7833);
+      let obj = set(7820);
       let profileBadgeId = obj.resolveProfileBadgeId(item10027.id);
       let tmp15 = profileBadgeId;
       if (null != profileBadgeId) {
-        let tmp12Result = tmp12(10863);
+        let tmp12Result = tmp12(10859);
         if (!tmp12Result.isPinnedBadge(tmp15)) {
           if (!map.has(tmp15)) {
             let result = map.set(tmp15, tmp11);
@@ -222,7 +222,7 @@ export const setPendingBadgeVisibility = function setPendingBadgeVisibility(badg
   DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeHiddenBadges: tmp20 });
 };
 export const resetPendingBadgeSettings = function resetPendingBadgeSettings() {
-  DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "channel", pendingBadgeHiddenBadges: "formatToPlainString" });
+  DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "paddingHorizontal", pendingBadgeHiddenBadges: "View" });
 };
 export const hasPendingBadgeSettings = function hasPendingBadgeSettings(pendingBadgeDisplayOrder) {
   return undefined !== pendingBadgeDisplayOrder.pendingBadgeDisplayOrder || undefined !== pendingBadgeDisplayOrder.pendingBadgeHiddenBadges;
@@ -258,7 +258,7 @@ export const applyPendingBadgeSettings = function applyPendingBadgeSettings(stat
     const map = new Map();
     for (const item10026 of mapped) {
       let tmp11 = item10026;
-      let obj = set(10863);
+      let obj = set(10859);
       if (obj.isPinnedBadge(item10026.badge_id)) {
         let arr = items1.push(tmp11);
       } else {

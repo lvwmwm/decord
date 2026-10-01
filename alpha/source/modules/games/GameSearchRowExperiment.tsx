@@ -1,9 +1,9 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12090
+// Function ID: 12091
 // Name: GameSearchRowExperiment
 // Dependencies: [1435, 2]
 
-// Module 12082 (GameSearchRowExperiment)
+// Module 12090 (GameSearchRowExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

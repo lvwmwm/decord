@@ -1,11 +1,11 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 17626
+// Function ID: 17627
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4866, 6814, 1397, 4862, 6195, 6113, 4820, 1115, 9998, 9914, 4765, 4557, 6188, 2]
+// Dependencies: [5, 19, 17, 21, 4845, 6804, 1397, 4841, 6185, 6103, 4799, 1115, 9990, 9906, 5266, 4556, 6178, 2]
 // Exports: default
 
-// Module 17591 (EmojiOverflowActionSheet)
-import EmojiActionCreators from "EmojiActionCreators" /* 9998 */;
+// Module 17626 (EmojiOverflowActionSheet)
+import EmojiActionCreators from "EmojiActionCreators" /* 9990 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_8 = createStyles.createStyles({ header: { paddingHorizontal: 8, flexDirection: "row", alignItems: "center", gap: 16 }, emojiImage: { width: 30, height: 30, resizeMode: "contain" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/native/EmojiOverflowActionSheet.tsx");

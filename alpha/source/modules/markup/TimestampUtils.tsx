@@ -1,13 +1,13 @@
-// Module ID: 5526
-// Function ID: 5527
+// Module ID: 5514
+// Function ID: 5515
 // Name: TimestampUtils
-// Dependencies: [4542, 4451, 1091, 2]
+// Dependencies: [4541, 4450, 1091, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 5526 (TimestampUtils)
+// Module 5514 (TimestampUtils)
 import DurationsDefault from "Durations" /* 1091 */;
-import _modDef4451 from "module_4451" /* 4451 */;
-import DateUtils from "DateUtils" /* 4542 */;
+import _modDef4450 from "module_4450" /* 4450 */;
+import DateUtils from "DateUtils" /* 4541 */;
 import size from "module_2" /* 2 */;
 
 const TIMESTAMP_FORMATS = {
@@ -36,25 +36,25 @@ const TIMESTAMP_FORMATS = {
     return DateUtils.dateFormat(date, "L LTS");
   },
   R(toDate) {
-    const result = _modDef4451.relativeTimeThreshold("s");
-    const result1 = _modDef4451.relativeTimeThreshold("s", 60);
-    const result2 = _modDef4451.relativeTimeThreshold("ss");
-    const result3 = _modDef4451.relativeTimeThreshold("ss", -1);
-    const result4 = _modDef4451.relativeTimeThreshold("m");
-    const result5 = _modDef4451.relativeTimeThreshold("m", 60);
+    const result = _modDef4450.relativeTimeThreshold("s");
+    const result1 = _modDef4450.relativeTimeThreshold("s", 60);
+    const result2 = _modDef4450.relativeTimeThreshold("ss");
+    const result3 = _modDef4450.relativeTimeThreshold("ss", -1);
+    const result4 = _modDef4450.relativeTimeThreshold("m");
+    const result5 = _modDef4450.relativeTimeThreshold("m", 60);
     try {
-      const tmpResult = tmp(4451);
-      let fromNowResult = tmp(4451)(toDate.toDate()).fromNow();
-      const tmpResultResult = tmp(4451)(toDate.toDate());
-      const result6 = tmp(4451).relativeTimeThreshold("s", result);
-      const tmpResult5 = tmp(4451);
-      const result7 = tmp(4451).relativeTimeThreshold("ss", result2);
-      const tmpResult6 = tmp(4451);
-      const result8 = tmp(4451).relativeTimeThreshold("m", result4);
+      const tmpResult = tmp(4450);
+      let fromNowResult = tmp(4450)(toDate.toDate()).fromNow();
+      const tmpResultResult = tmp(4450)(toDate.toDate());
+      const result6 = tmp(4450).relativeTimeThreshold("s", result);
+      const tmpResult5 = tmp(4450);
+      const result7 = tmp(4450).relativeTimeThreshold("ss", result2);
+      const tmpResult6 = tmp(4450);
+      const result8 = tmp(4450).relativeTimeThreshold("m", result4);
       if (fromNowResult == null) {
-        const tmpResult8 = tmp(4451);
-        fromNowResult = tmp(4451)(toDate.toDate()).fromNow();
-        const tmpResult4Result = tmp(4451)(toDate.toDate());
+        const tmpResult8 = tmp(4450);
+        fromNowResult = tmp(4450)(toDate.toDate()).fromNow();
+        const tmpResult4Result = tmp(4450)(toDate.toDate());
       }
       return fromNowResult;
     } catch (err) {
@@ -71,7 +71,7 @@ export const DEFAULT_TIMESTAMP_FORMAT = "f";
 export const TIMESTAMP_REGEX = regExp;
 export const formatTimestampMention = function formatTimestampMention(mention) {
   ({ timestamp, format } = mention);
-  const tmp = _modDef4451;
+  const tmp = _modDef4450;
   const tmpResult = tmp(Number(timestamp) * DurationsDefault.Millis.SECOND);
   if (tmpResult.isValid()) {
     let f;
@@ -91,7 +91,7 @@ export const formatTimestampMention = function formatTimestampMention(mention) {
   const NumberResult = Number(timestamp);
 };
 export const parseTimestamp = function parseTimestamp(timestamp, format) {
-  const tmp = _modDef4451;
+  const tmp = _modDef4450;
   const tmpResult = tmp(Number(timestamp) * DurationsDefault.Millis.SECOND);
   let tmp3 = null;
   if (tmpResult.isValid()) {

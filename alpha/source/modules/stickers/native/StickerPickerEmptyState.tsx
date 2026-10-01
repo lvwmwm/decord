@@ -1,18 +1,18 @@
-// Module ID: 10076
-// Function ID: 10077
+// Module ID: 10068
+// Function ID: 10069
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 6011, 2024, 1074, 1374, 21, 4866, 10049, 9837, 6779, 6799, 504, 1241, 4862, 1115, 5632, 4831, 4832, 5477, 6095, 8860, 10070, 2]
+// Dependencies: [32, 19, 17, 6000, 2024, 1074, 1374, 21, 4845, 10041, 9829, 6769, 6789, 504, 1241, 4841, 1115, 5621, 4810, 4811, 5465, 6085, 8852, 10062, 2]
 // Exports: default
 
-// Module 10076 (StickerPickerEmptyState)
+// Module 10068 (StickerPickerEmptyState)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HapticUtils from "HapticUtils" /* 4831 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4832 */;
-import StickerDefault from "Sticker" /* 9837 */;
-import StickersHooks from "StickersHooks" /* 10049 */;
+import HapticUtils from "HapticUtils" /* 4810 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4811 */;
+import StickerDefault from "Sticker" /* 9829 */;
+import StickersHooks from "StickersHooks" /* 10041 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 6011 */;
+import StickersStore from "StickersStore" /* 6000 */;
 
 const require = globalThis.__r;
 
@@ -34,7 +34,7 @@ const Constants = fn(1074);
 const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
@@ -44,8 +44,8 @@ export default function _default() {
   _require = tmp;
   const fetchStickerPacks = require("StickersHooks").useFetchStickerPacks();
   let obj = require("StickersHooks");
-  analyticsLocations = analyticsLocations(6779)(analyticsLocations(6799).EMPTY_STATE).analyticsLocations;
-  const tmp3 = analyticsLocations(6779);
+  analyticsLocations = analyticsLocations(6769)(analyticsLocations(6789).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6769);
   const items = [StickersStore];
   const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
     const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
@@ -84,7 +84,7 @@ export default function _default() {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5632).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5621).PressableOpacity, obj, id);
     })
   });
   const obj7 = { style: tmp.premiumButton, children: null };
@@ -106,16 +106,16 @@ export default function _default() {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5632).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5621).PressableOpacity, obj, id);
     })
   };
-  obj9.source = analyticsLocations(8860);
+  obj9.source = analyticsLocations(8852);
   obj9.style = tmp.nitroWheel;
-  obj8.icon = closure_11(analyticsLocations(6095), obj9);
+  obj8.icon = closure_11(analyticsLocations(6085), obj9);
   const intl3 = require("util").intl;
   obj8.text = intl3.string(require("util").t.pj0XBN);
   obj8.onPress = function onPress() {
-    return analyticsLocations(10070)({ section: constants.EXPRESSION_PICKER });
+    return analyticsLocations(10062)({ section: constants.EXPRESSION_PICKER });
   };
   obj7.children = closure_11(require("components/Button/Button").Button, obj8);
   items2[3] = closure_11(View, obj7);

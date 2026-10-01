@@ -1,10 +1,10 @@
-// Module ID: 10998
-// Function ID: 10999
+// Module ID: 11002
+// Function ID: 11003
 // Name: FilePickerUtils
-// Dependencies: [5, 1074, 10999, 1364, 5400, 1115, 5046, 2]
+// Dependencies: [5, 1074, 11003, 1364, 5388, 1115, 5025, 2]
 // Exports: handleDocumentSelection
 
-// Module 10998 (FilePickerUtils)
+// Module 11002 (FilePickerUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -51,7 +51,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
           closure_129_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

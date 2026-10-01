@@ -1,17 +1,17 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17743
+// Function ID: 17744
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 4784, 2067, 17709, 1074, 504, 1115, 17727, 1882, 2]
+// Dependencies: [19, 4765, 2066, 17744, 1074, 504, 1115, 17762, 1882, 2]
 // Exports: getGuildAnalyticsCardProps, useGuildAnalyticsOverview
 
-// Module 17708 (GuildSettingsAnalyticsUtils)
+// Module 17743 (GuildSettingsAnalyticsUtils)
 import util from "util" /* 1115 */;
 import NumberUtils from "NumberUtils" /* 1882 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 17727 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 17762 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4784 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 17709 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4765 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 17744 */;
 
 const require = globalThis.__r;
 

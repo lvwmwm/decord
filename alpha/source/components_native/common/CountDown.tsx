@@ -1,12 +1,12 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10586
+// Function ID: 10587
 // Name: CountDown
-// Dependencies: [19, 21, 1115, 1091, 4862, 2]
+// Dependencies: [19, 21, 1115, 1091, 4841, 2]
 
-// Module 10594 (CountDown)
+// Module 10586 (CountDown)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4862 */;
+import Text_Text from "Text/Text" /* 4841 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

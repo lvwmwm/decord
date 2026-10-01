@@ -1,10 +1,10 @@
-// Module ID: 5112
-// Function ID: 5113
+// Module ID: 5091
+// Function ID: 5092
 // Name: CheckpointExperiment
 // Dependencies: [1435, 2]
 // Exports: getIsCheckpointEnabled, useIsCheckpointEnabled
 
-// Module 5112 (CheckpointExperiment)
+// Module 5091 (CheckpointExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

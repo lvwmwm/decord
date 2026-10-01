@@ -1,14 +1,14 @@
-// Module ID: 6732
-// Function ID: 6733
+// Module ID: 6722
+// Function ID: 6723
 // Name: LastMentionTimestampStore
-// Dependencies: [2108, 5047, 1372, 573, 504, 2]
+// Dependencies: [2107, 5026, 1372, 573, 504, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 6732 (LastMentionTimestampStore)
+// Module 6722 (LastMentionTimestampStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
 import UserStore from "UserStore" /* 1372 */;
 
 let timestamp = null;

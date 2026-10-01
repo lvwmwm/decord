@@ -1,5 +1,15 @@
 // Module ID: 6539
 // Function ID: 6540
-// Dependencies: []
+// Dependencies: [17]
 
 // Module 6539
+import _mod17 from "module_17" /* 17 */;
+
+const StyleSheet = _mod17.StyleSheet;
+const obj = { backdrop: null };
+const obj2 = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj2.backgroundColor = "black";
+obj.backdrop = obj2;
+
+export const styles = StyleSheet.create(obj);

@@ -1,11 +1,11 @@
-// Module ID: 14561
-// Function ID: 14562
+// Module ID: 14567
+// Function ID: 14568
 // Name: ParentalControlledUserSettingsDefinitions
-// Dependencies: [7156, 7155, 504, 2]
+// Dependencies: [7148, 7147, 504, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 14561 (ParentalControlledUserSettingsDefinitions)
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7156 */;
+// Module 14567 (ParentalControlledUserSettingsDefinitions)
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7148 */;
 
 const require = fn;
 const size = fn(2);

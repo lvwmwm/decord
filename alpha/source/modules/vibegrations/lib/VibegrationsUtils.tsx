@@ -1,16 +1,16 @@
-// Module ID: 5566
-// Function ID: 5567
+// Module ID: 5554
+// Function ID: 5555
 // Name: VibegrationsUtils
-// Dependencies: [4497, 2067, 4499, 4685, 1074, 5567, 5568, 504, 2]
+// Dependencies: [4496, 2066, 4498, 4684, 1074, 5555, 5556, 504, 2]
 // Exports: canAccessVibegrations, canStartVibegrationsProject, eligibleVibegrationsGuilds, findVibegrationChannelId, getVibegrationsProjectAccessSettings, isVibegrationsChannelCandidate, isVibegrationsGuildEligible, isVibegrationsProjectInGuild, resolveVibegrationsWorkspaceGuildId, useCanAccessVibegrations, useIsVibegrationsChannelCandidate, vibegrationsSettingChannels, vibegrationsSettingsGuildId, vibegrationsTopicForApp
 
-// Module 5566 (VibegrationsUtils)
-import VibegrationsTypes from "VibegrationsTypes" /* 5567 */;
-import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5568 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4497 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+// Module 5554 (VibegrationsUtils)
+import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
+import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5556 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -147,14 +147,14 @@ export const eligibleVibegrationsGuilds = function eligibleVibegrationsGuilds(gu
     return num;
   });
 };
-export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsWorkspaceGuildId(VibegrationsCustomWidgetSheet) {
+export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsWorkspaceGuildId(VibegrationsChatStore) {
   const guildId = SelectedGuildStore.getGuildId();
   let guild = null;
   if (null != guildId) {
     guild = GuildStore.getGuild(guildId);
   }
   if (null != guild) {
-    const obj2 = { guildId: guild.id, location: VibegrationsCustomWidgetSheet };
+    const obj2 = { guildId: guild.id, location: VibegrationsChatStore };
     let result = require("VibegrationsGuildExperiment").isVibegrationsGuildEnabled(obj2);
     if (result) {
       let features = guild.features;
@@ -166,7 +166,7 @@ export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsW
     return id;
   }
   const guildsArray = GuildStore.getGuildsArray();
-  _require = VibegrationsCustomWidgetSheet;
+  _require = VibegrationsChatStore;
   const found = guildsArray.filter((guildId) => {
     let result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled({ guildId: guildId.id, location: _location });
     if (result) {

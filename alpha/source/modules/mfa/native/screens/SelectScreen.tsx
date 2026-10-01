@@ -1,23 +1,23 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15440
+// Function ID: 15441
 // Name: SelectScreen
-// Dependencies: [19, 17, 15432, 21, 4866, 6190, 8251, 6559, 1485, 6740, 4862, 1115, 2]
+// Dependencies: [19, 17, 15437, 21, 4845, 6180, 8241, 6549, 1485, 6730, 4841, 1115, 2]
 // Exports: default
 
-// Module 15435 (SelectScreen)
-import NavigatorConstants from "NavigatorConstants" /* 6190 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6559 */;
-import RowButton from "RowButton" /* 8251 */;
+// Module 15440 (SelectScreen)
+import NavigatorConstants from "NavigatorConstants" /* 6180 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6549 */;
+import RowButton from "RowButton" /* 8241 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const SELECT_NAMES = fn(15432).SELECT_NAMES;
+const SELECT_NAMES = fn(15437).SELECT_NAMES;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { container: { marginLeft: 16, marginRight: 16 }, selectContainer: null };
   const NAV_BAR_HEIGHT = NavigatorConstants.NAV_BAR_HEIGHT;

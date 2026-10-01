@@ -1,22 +1,22 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13240
+// Function ID: 13241
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4855, 1074, 21, 4866, 576, 1613, 504, 13230, 6799, 672, 4596, 4867, 5489, 9626, 2]
+// Dependencies: [19, 17, 4834, 1074, 21, 4845, 576, 1613, 504, 13238, 6789, 672, 4595, 4846, 5477, 9620, 2]
 // Exports: default
 
-// Module 13232 (PremiumMarketingFloatingSubscribeButton)
+// Module 13240 (PremiumMarketingFloatingSubscribeButton)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import timing from "timing" /* 4867 */;
+import timing from "timing" /* 4846 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const View = fn(17).View;
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 1 }, gradient: { position: "absolute", left: 0, right: 0, bottom: 0, top: -64 }, buttonContainer: { marginLeft: "auto", marginRight: "auto", width: "100%", paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_12 } };
 let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function PremiumMarketingFloatingSubscribeButtonTsx1(){const{withTiming,isVisible,useReducedMotion,FADE_DURATION_MS,ENTER_TRANSLATE_PX}=this.__closure;return{opacity:withTiming(isVisible.get()?1:0,{duration:useReducedMotion?0:FADE_DURATION_MS}),transform:[{translateY:withTiming(isVisible.get()?0:ENTER_TRANSLATE_PX,{duration:useReducedMotion?0:FADE_DURATION_MS})}]};}" };

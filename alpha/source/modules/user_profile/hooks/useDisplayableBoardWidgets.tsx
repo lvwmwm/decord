@@ -1,26 +1,26 @@
-// Module ID: 12659
-// Function ID: 12660
+// Module ID: 12670
+// Function ID: 12671
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7242, 7239, 7232, 12660, 2]
+// Dependencies: [19, 7220, 7217, 7210, 12671, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 12659 (useDisplayableBoardWidgets)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7242 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12660 */;
+// Module 12670 (useDisplayableBoardWidgets)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7220 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12671 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7239).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7217).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7232).isGameWidget(games);
+      let isGameWidgetResult = tmp(7210).isGameWidget(games);
       if (isGameWidgetResult) {
         isGameWidgetResult = games.games.length > 0;
       }
       tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7232);
+      const tmpResult = tmp(7210);
     }
     tmp3 = tmp4;
   }

@@ -1,18 +1,18 @@
-// Module ID: 9017
-// Function ID: 9018
+// Module ID: 9011
+// Function ID: 9012
 // Name: ExternalStreamingStore
-// Dependencies: [5, 5790, 4709, 1074, 1091, 1271, 5915, 573, 7790, 5792, 1331, 504, 2]
+// Dependencies: [5, 5779, 4708, 1074, 1091, 1271, 5904, 573, 7777, 5781, 1331, 504, 2]
 
-// Module 9017 (ExternalStreamingStore)
+// Module 9011 (ExternalStreamingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _modDef1331 from "module_1331" /* 1331 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5915 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5904 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5790 */;
-import StreamerModeStore from "StreamerModeStore" /* 4709 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5779 */;
+import StreamerModeStore from "StreamerModeStore" /* 4708 */;
 
 require = fn;
 function makeTwitchRequest(arg0, query, arg2) {

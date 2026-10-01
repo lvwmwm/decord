@@ -1,26 +1,26 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17851
+// Function ID: 17852
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 17781, 21, 4866, 576, 13638, 17793, 17785, 1115, 9472, 6095, 4862, 17817, 2]
+// Dependencies: [5, 32, 19, 17, 17816, 21, 4845, 576, 13646, 17828, 17820, 1115, 9466, 6085, 4841, 17852, 2]
 // Exports: default
 
-// Module 17816 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 17851 (GuildRoleSubscriptionTierConfirmationModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import FormStylesDefault from "FormStyles" /* 13638 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17785 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 17793 */;
-import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 17817 */;
+import FormStylesDefault from "FormStyles" /* 13646 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17820 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 17828 */;
+import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 17852 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17781 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17816 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { description: { paddingHorizontal: 16 }, coverPhotoContainer: { marginHorizontal: 16 }, coverPhoto: null };
 let size = { height: 114, width: "100%", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj2.coverPhoto = size;
@@ -123,26 +123,26 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       let obj4 = { style: tmp5.header, children: null };
       const intl3 = tmp6(1115).intl;
       obj4.children = intl3.string(tmp6(1115).t["3S8gA7"]);
-      const items1 = [React6(tmp3(9472), obj4), ];
+      const items1 = [React6(tmp3(9466), obj4), ];
       const obj5 = { style: tmp2.coverPhotoContainer, children: null };
       const obj6 = { style: tmp2.coverPhoto, resizeMode: "cover", source: first };
-      obj5.children = React6(tmp3(6095), obj6);
+      obj5.children = React6(tmp3(6085), obj6);
       items1[1] = React6(View, obj5);
       obj3.children = items1;
       tmp13Result = tmp13(tmp16, obj3);
-      const tmp3Result = tmp3(9472);
+      const tmp3Result = tmp3(9466);
     }
     const obj7 = { children: null };
     const items2 = [tmp13Result, , ];
     const obj8 = { style: tmp5.header, children: null };
     const intl4 = tmp6(1115).intl;
     obj8.children = intl4.string(tmp6(1115).t["74JctW"]);
-    items2[1] = React6(tmp3(9472), obj8);
+    items2[1] = React6(tmp3(9466), obj8);
     const obj9 = { style: tmp2.description, variant: "text-md/medium", color: "interactive-text-active", children: _slicedToArray(RoleTierEditStore.useGroupDescriptionState(), 1)[0] };
-    items2[2] = React6(tmp6(4862).Text, obj9);
+    items2[2] = React6(tmp6(4841).Text, obj9);
     obj7.children = items2;
     flag = tmp13(tmp16, obj7);
-    const tmp3Result2 = tmp3(9472);
+    const tmp3Result2 = tmp3(9466);
   }
   const items3 = [flag, React6(GuildRoleSubscriptionListingPreview.GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   obj2.children = items3;

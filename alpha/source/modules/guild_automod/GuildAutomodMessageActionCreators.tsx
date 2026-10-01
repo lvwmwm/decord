@@ -1,10 +1,10 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11326
+// Function ID: 11327
 // Name: GuildAutomodMessageActionCreators
 // Dependencies: [573, 2]
 // Exports: removeAutomodMessageNotice
 
-// Module 11318 (GuildAutomodMessageActionCreators)
+// Module 11326 (GuildAutomodMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

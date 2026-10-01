@@ -1,26 +1,26 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9136
+// Function ID: 9137
 // Name: useGuildScheduledEvents
-// Dependencies: [32, 19, 2045, 2067, 4499, 7142, 9143, 2051, 1074, 1091, 504, 9145, 9144, 9148, 2]
+// Dependencies: [32, 19, 2044, 2066, 4498, 7134, 9137, 2050, 1074, 1091, 504, 9139, 9138, 9142, 2]
 // Exports: default, getGuildActiveEvent, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 9142 (useGuildScheduledEvents)
+// Module 9136 (useGuildScheduledEvents)
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7142 */;
-import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 9143 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7134 */;
+import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 9137 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let GuildScheduledEventStore = fn(7142);
+let GuildScheduledEventStore = fn(7134);
 ({ isGuildScheduledEventActive: closure_7, StaticGuildEventIndexes: closure_8 } = GuildScheduledEventStore);
 let GuildScheduledEventStore = GuildScheduledEventStore_mod;
-const GuildScheduledEventsConstants = fn(2051);
+const GuildScheduledEventsConstants = fn(2050);
 ({ GuildScheduledEventEntityTypes: closure_11, GuildScheduledEventStatus: closure_12 } = GuildScheduledEventsConstants);
 const Constants = fn(1074);
 ({ BasicPermissions: map1, GuildFeatures: closure_14 } = Constants);
@@ -329,11 +329,11 @@ export const useImminentUpcomingGuildEvents = function useImminentUpcomingGuildE
   }, items1);
   const items2 = [stateFromStores];
   return noop.useMemo(() => stateFromStores.filter((status) => {
-    const eventSchedule = id(9148).getEventSchedule(status);
+    const eventSchedule = id(9142).getEventSchedule(status);
     ({ startTime, endTime } = eventSchedule);
-    const obj = id(9148);
+    const obj = id(9142);
     let toISOStringResult1;
-    const obj2 = id(9145);
+    const obj2 = id(9139);
     if (endTime != null) {
       toISOStringResult1 = endTime.toISOString();
     }

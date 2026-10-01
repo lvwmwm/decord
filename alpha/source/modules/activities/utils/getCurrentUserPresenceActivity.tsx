@@ -1,10 +1,10 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11474
+// Function ID: 11475
 // Name: getCurrentUserPresenceActivity
 // Dependencies: [2]
 // Exports: default
 
-// Module 11466 (getCurrentUserPresenceActivity)
+// Module 11474 (getCurrentUserPresenceActivity)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getCurrentUserPresenceActivity.tsx");

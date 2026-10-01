@@ -1,10 +1,10 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13512
+// Function ID: 13513
 // Name: ReactiveCheckActionCreators
 // Dependencies: [5, 1074, 1271, 573, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 13504 (ReactiveCheckActionCreators)
+// Module 13512 (ReactiveCheckActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

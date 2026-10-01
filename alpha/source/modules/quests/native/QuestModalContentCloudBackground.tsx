@@ -1,14 +1,14 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14870
+// Function ID: 14871
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 4866, 4568, 4797, 5489, 6095, 14865, 14866, 2]
+// Dependencies: [19, 17, 21, 4845, 4567, 4776, 5477, 6085, 14871, 14872, 2]
 // Exports: default
 
-// Module 14864 (QuestModalContentCloudBackground)
-import themes from "themes" /* 4568 */;
-import useTheme from "useTheme" /* 4797 */;
-import LinearGradientDefault from "LinearGradient" /* 5489 */;
-import FastImageDefault from "FastImage" /* 6095 */;
+// Module 14870 (QuestModalContentCloudBackground)
+import themes from "themes" /* 4567 */;
+import useTheme from "useTheme" /* 4776 */;
+import LinearGradientDefault from "LinearGradient" /* 5477 */;
+import FastImageDefault from "FastImage" /* 6085 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,18 +16,18 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_7 = createStyles.createStyles((arg0) => {
   const obj = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: null, cloudsImage: null, cloudsImageLight: null, gradient: null, solidBackground: null };
-  const merged1 = Object.assign(arg0 ? { top: "Array" } : { bottom: "Array" });
+  const merged1 = Object.assign(arg0 ? { top: "r" } : { bottom: "r" });
   obj.height = 380;
   obj.zIndex = 1;
   obj2.wrapper = obj;
   const obj3 = {};
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const merged3 = Object.assign(arg0 ? { top: "Array" } : { bottom: "Array" });
+  const merged3 = Object.assign(arg0 ? { top: "r" } : { bottom: "r" });
   if (arg0) {
     let obj4 = {};
   } else {
@@ -84,7 +84,7 @@ export default function QuestModalContentCloudBackground(align) {
     const obj6 = { style: null, source: null, resizeMode: null };
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj6.style = items2;
-    obj6.source = importDefault(isThemeDarkResult ? 14865 : 14866);
+    obj6.source = importDefault(isThemeDarkResult ? 14871 : 14872);
     obj6.resizeMode = str2;
     items1[1] = tmp6(FastImageDefault, obj6);
     obj3.children = items1;

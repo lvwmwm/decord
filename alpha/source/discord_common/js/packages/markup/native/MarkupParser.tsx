@@ -1,11 +1,11 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7603
+// Function ID: 7604
 // Name: markup/MarkupParser
-// Dependencies: [7626, 1930, 2]
+// Dependencies: [7604, 1930, 2]
 
-// Module 7625 (markup/MarkupParser)
+// Module 7603 (markup/MarkupParser)
 import _modDef1930 from "module_1930" /* 1930 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 7626 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 7604 */;
 import size from "module_2" /* 2 */;
 
 function saferParse(fn, arg1, inline, arg3, arg4) {

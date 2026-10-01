@@ -1,9 +1,9 @@
-// Module ID: 5377
-// Function ID: 5378
+// Module ID: 5365
+// Function ID: 5366
 // Name: ReleaseChannels
 // Dependencies: [2]
 
-// Module 5377 (ReleaseChannels)
+// Module 5365 (ReleaseChannels)
 import size from "module_2" /* 2 */;
 
 const obj = { WEB_AND_IOS: new Set(["canary", "ptb", "stable"]), ANDROID: null, QUEST_VR: null, OTHER: null, ALL: null };

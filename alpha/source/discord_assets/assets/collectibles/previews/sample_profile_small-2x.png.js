@@ -1,8 +1,8 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8474
+// Function ID: 8475
 // Dependencies: [2]
 
-// Module 8482
+// Module 8474
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/collectibles/previews/sample_profile_small-2x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 13689
-// Function ID: 13690
+// Module ID: 13697
+// Function ID: 13698
 // Name: GuildBadgeDollarSign
-// Dependencies: [19, 21, 13658, 8106, 2]
+// Dependencies: [19, 21, 13666, 8095, 2]
 // Exports: GuildBadgeDollarSign
 
-// Module 13689 (GuildBadgeDollarSign)
-import inlineStyles from "inlineStyles" /* 8106 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13658 */;
+// Module 13697 (GuildBadgeDollarSign)
+import inlineStyles from "inlineStyles" /* 8095 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13666 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

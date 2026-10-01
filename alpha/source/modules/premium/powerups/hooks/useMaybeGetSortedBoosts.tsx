@@ -1,19 +1,19 @@
-// Module ID: 12279
-// Function ID: 12280
+// Module ID: 12287
+// Function ID: 12288
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 12261, 5935, 2108, 2067, 504, 12280, 4762, 11, 1115, 2]
+// Dependencies: [32, 19, 12269, 5924, 2107, 2066, 504, 12288, 7624, 11, 1115, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 12279 (useMaybeGetSortedBoosts)
+// Module 12287 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 4762 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 7624 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12261 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5935 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12269 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5924 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 
@@ -89,7 +89,7 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
   const items10 = [arg0, stateFromStores, memo1, stateFromStores1];
   const effect1 = memo.useEffect(() => {
     if (!tmp) {
-      const appliedGuildBoostsForGuild = BoostingActionCreators.fetchAppliedGuildBoostsForGuild(closure_0, { includeEnded: true });
+      const appliedGuildBoostsForGuild = actions_BoostingActionCreators.fetchAppliedGuildBoostsForGuild(closure_0, { includeEnded: true });
     }
   }, items10);
   return memo;

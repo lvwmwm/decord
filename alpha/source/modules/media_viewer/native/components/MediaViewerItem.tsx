@@ -1,13 +1,13 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12747
+// Function ID: 12748
 // Name: MediaViewerItem
-// Dependencies: [32, 19, 17, 21, 1364, 4731, 12739, 12740, 7908, 7907, 11362, 7903, 6269, 12741, 9089, 2]
+// Dependencies: [32, 19, 17, 21, 1364, 4730, 12748, 12749, 7895, 7894, 11370, 7890, 6259, 12750, 9083, 2]
 
-// Module 12738 (MediaViewerItem)
+// Module 12747 (MediaViewerItem)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6269 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 7903 */;
-import useEntranceAnimation from "useEntranceAnimation" /* 12740 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6259 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 7890 */;
+import useEntranceAnimation from "useEntranceAnimation" /* 12749 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -166,7 +166,7 @@ export const MediaViewerItem = noop.memo((index) => {
     }
     obj5 = PlatformUtils2;
     const maxDistanceResult = numberOfTapsResult.maxDistance(num2);
-    const Gesture2 = tmp(6269).Gesture;
+    const Gesture2 = tmp(6259).Gesture;
     const onStartResult = numberOfTapsResult.maxDistance(num2).onStart(callback5);
     const TapResult1 = Gesture2.Tap();
     const runOnJSResult1 = Gesture2.Tap().runOnJS(true);
@@ -178,7 +178,7 @@ export const MediaViewerItem = noop.memo((index) => {
     }
     tmpResult = PlatformUtils2;
     const maxDistanceResult1 = numberOfTapsResult1.maxDistance(num3);
-    const Gesture3 = tmp(6269).Gesture;
+    const Gesture3 = tmp(6259).Gesture;
     const onStartResult1 = numberOfTapsResult1.maxDistance(num3).onStart(callback4);
     const TapResult2 = Gesture3.Tap();
     let tmp6 = tmp3;
@@ -193,14 +193,14 @@ export const MediaViewerItem = noop.memo((index) => {
     }
     tmpResult2 = PlatformUtils2;
     const maxDistanceResult2 = numberOfTapsResult2.maxDistance(num);
-    const Gesture4 = tmp(6269).Gesture;
+    const Gesture4 = tmp(6259).Gesture;
     const onStartResult2 = numberOfTapsResult2.maxDistance(num).onStart(callback6);
-    const Gesture5 = tmp(6269).Gesture;
+    const Gesture5 = tmp(6259).Gesture;
     const ExclusiveResult = Gesture4.Exclusive(numberOfTapsResult2.maxDistance(num).onStart(callback6), onStartResult, onStartResult1);
     const LongPressResult = Gesture5.LongPress();
     const runOnJSResult3 = Gesture5.LongPress().runOnJS(true);
     const enabledResult3 = Gesture5.LongPress().runOnJS(true).enabled(!mediaItemHasSpoiler);
-    const Gesture6 = tmp(6269).Gesture;
+    const Gesture6 = tmp(6259).Gesture;
     return Gesture6.Simultaneous(ExclusiveResult, Gesture5.LongPress().runOnJS(true).enabled(!mediaItemHasSpoiler).onStart(callback3), panGesture);
   }, items6);
   zoomed.useRef(false);

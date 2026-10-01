@@ -1,16 +1,16 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12249
+// Function ID: 12250
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4784, 2102, 2067, 504, 6744, 4757, 1115, 2519, 2]
+// Dependencies: [19, 4765, 2101, 2066, 504, 6734, 4756, 1115, 2518, 2]
 // Exports: default
 
-// Module 12241 (useDeactivateWarningText)
-import _modDef2519 from "module_2519" /* 2519 */;
-import Powerups from "Powerups" /* 4757 */;
+// Module 12249 (useDeactivateWarningText)
+import _modDef2518 from "module_2518" /* 2518 */;
+import Powerups from "Powerups" /* 4756 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4784 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4765 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 
@@ -71,17 +71,17 @@ export default function useDeactivateWarningText(arg0, skuId) {
       if (stateFromStores2 > 0) {
         const intl5 = tmp2(1115).intl;
         const obj2 = { perk: tmp.title, memberCount: tmp14 };
-        let formatToPlainStringResult = intl5.formatToPlainString(_modDef2519["4jSvr1"], obj2);
+        let formatToPlainStringResult = intl5.formatToPlainString(_modDef2518["4jSvr1"], obj2);
       } else {
         const intl4 = tmp2(1115).intl;
         const obj3 = { perk: tmp.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2519.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2518.cavtEo, obj3);
       }
     } else {
-      if (tmp2(4757).VANITY_URL_POWERUP_SKU_ID === skuId) {
+      if (tmp2(4756).VANITY_URL_POWERUP_SKU_ID === skuId) {
         const intl3 = tmp2(1115).intl;
         const string = intl3.string;
-        const tmp11 = _modDef2519;
+        const tmp11 = _modDef2518;
         if (stateFromStores1) {
           let stringResult = string(tmp11.hN75yb);
           let tmp13 = tmp10;
@@ -92,10 +92,10 @@ export default function useDeactivateWarningText(arg0, skuId) {
         let tmp7 = tmp13;
         let formatToPlainStringResult1 = stringResult;
       } else {
-        if (tmp2(4757).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
-          if (tmp2(4757).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
-            if (tmp2(4757).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
-              if (tmp2(4757).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
+        if (tmp2(4756).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
+          if (tmp2(4756).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
+            if (tmp2(4756).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
+              if (tmp2(4756).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
                 const intl = tmp2(1115).intl;
                 const obj = { perk: tmp.title, memberCount: null };
                 let num = stateFromStores;
@@ -103,26 +103,26 @@ export default function useDeactivateWarningText(arg0, skuId) {
                   num = 0;
                 }
                 obj.memberCount = num;
-                formatToPlainStringResult1 = intl.formatToPlainString(_modDef2519["4jSvr1"], obj);
+                formatToPlainStringResult1 = intl.formatToPlainString(_modDef2518["4jSvr1"], obj);
                 tmp7 = importDefault;
               }
             }
           }
         }
         const intl2 = tmp2(1115).intl;
-        formatToPlainStringResult1 = intl2.string(_modDef2519.Vf2ZcR);
+        formatToPlainStringResult1 = intl2.string(_modDef2518.Vf2ZcR);
         tmp7 = importDefault;
       }
-      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4757).VANITY_URL_POWERUP_SKU_ID };
+      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4756).VANITY_URL_POWERUP_SKU_ID };
       const items = [obj4];
       let tmp20 = stateFromStores1;
       if (stateFromStores1) {
-        tmp20 = tmp.skuId === tmp2(4757).GUILD_POWERUP_LEVEL_3_SKU_ID;
+        tmp20 = tmp.skuId === tmp2(4756).GUILD_POWERUP_LEVEL_3_SKU_ID;
       }
       if (tmp20) {
         const obj5 = { text: null, critical: true };
         const intl6 = tmp2(1115).intl;
-        obj5.text = intl6.string(tmp7(2519).M4XL5n);
+        obj5.text = intl6.string(tmp7(2518).M4XL5n);
         items.push(obj5);
       }
       return items;

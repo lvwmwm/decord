@@ -1,17 +1,17 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10625
+// Function ID: 10626
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1372, 10579, 10634, 504, 10635, 2]
+// Dependencies: [1372, 10571, 10626, 504, 10627, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 10633 (useInappropriateConversationsTiers)
+// Module 10625 (useInappropriateConversationsTiers)
 import initialize from "initialize" /* 504 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10634 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10635 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10626 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10627 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SafetyWarningTypes = fn(10579).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10571).SafetyWarningTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
 

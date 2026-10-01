@@ -1,10 +1,10 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7805
+// Function ID: 7806
 // Name: useCurrentUser
 // Dependencies: [1372, 504, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 7818 (useCurrentUser)
+// Module 7805 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import UserStore from "UserStore" /* 1372 */;

@@ -1,13 +1,13 @@
-// Module ID: 7598
-// Function ID: 7599
+// Module ID: 7576
+// Function ID: 7577
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1182, 1085, 672, 1370, 5506, 2]
+// Dependencies: [32, 19, 17, 1182, 1085, 672, 1370, 5494, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7598 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 7576 (enhanced_role_colors/EnhancedRoleColorUtils)
 import _modDef672 from "module_672" /* 672 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5506 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5494 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;

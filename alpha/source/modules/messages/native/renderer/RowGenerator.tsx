@@ -1,22 +1,22 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7547
+// Function ID: 7548
 // Name: RowGenerator
-// Dependencies: [1182, 7570, 7571, 12, 7572, 7574, 13018, 13019, 1370, 2]
+// Dependencies: [1182, 7548, 7549, 12, 7550, 7552, 13026, 13027, 1370, 2]
 
-// Module 7569 (RowGenerator)
+// Module 7547 (RowGenerator)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import BlockedGroup from "BlockedGroup" /* 7572 */;
-import MessageWithContent from "MessageWithContent" /* 7574 */;
-import Separator from "Separator" /* 13018 */;
-import Loading from "Loading" /* 13019 */;
+import BlockedGroup from "BlockedGroup" /* 7550 */;
+import MessageWithContent from "MessageWithContent" /* 7552 */;
+import Separator from "Separator" /* 13026 */;
+import Loading from "Loading" /* 13027 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const RowGeneratorConstants = fn(7570);
+const RowGeneratorConstants = fn(7548);
 ({ RowType: closure_4, SeparatorType: hasOwnProperty, LoadingType: metroRequire } = RowGeneratorConstants);
 let obj = { constrainedWidth: 0, animatingStickerMessageId: null, forcedTheme: null, shouldObscureSpoiler: true, shouldDisableInteractiveComponents: true };
-let merged = Object.assign(fn(7571).DEFAULT_OPTIONS);
+let merged = Object.assign(fn(7549).DEFAULT_OPTIONS);
 class RowManager {
   constructor() {
     merged = Object.assign({ options: null });
@@ -45,12 +45,14 @@ prototype["generate"] = function generate(rowType) {
           if (constants2.DAY !== rowType) {
             if (tmp12.UNREAD !== rowType) {
               if (tmp12.SUMMARY !== rowType) {
-                if (constants3.LOAD_BEFORE !== rowType) {
-                  if (constants3.LOAD_AFTER !== rowType) {
-                    GlobalUtils.assertNever(rowType);
+                if (tmp12.CONVERSATION !== rowType) {
+                  if (constants3.LOAD_BEFORE !== rowType) {
+                    if (constants3.LOAD_AFTER !== rowType) {
+                      GlobalUtils.assertNever(rowType);
+                    }
                   }
+                  return Loading.generateLoadingRowData(rowType, theme);
                 }
-                return Loading.generateLoadingRowData(rowType, theme);
               }
             }
           }

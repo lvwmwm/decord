@@ -1,18 +1,19 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14358
+// Function ID: 14359
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 4866, 576, 6779, 7830, 7819, 5632, 1115, 4862, 9914, 7871, 7887, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 6769, 7817, 7806, 5621, 1115, 4841, 9906, 7858, 7874, 14359, 2]
 // Exports: default
 
-// Module 14349 (UserProfileEditBannerButton)
+// Module 14358 (UserProfileEditBannerButton)
 import nativeDefault from "native" /* 576 */;
-import Pressables from "Pressables" /* 5632 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 7871 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 7887 */;
-import PencilIcon from "PencilIcon" /* 9914 */;
+import Pressables from "Pressables" /* 5621 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7806 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 7858 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 7874 */;
+import PencilIcon from "PencilIcon" /* 9906 */;
 import noop from "module_19" /* 19 */;
 
+const EditButtonDefault = tmp(14359);
 require = fn;
 function ProfilePreviewButton(userId) {
   userId = userId.userId;
@@ -49,39 +50,52 @@ function EditButton(disabled) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
-let obj2 = { container: { position: "relative" }, editButton: null, previewButton: null };
+const createStyles = fn(4845);
+let obj2 = { container: { position: "relative" }, editButton: null, previewButton: null, refreshEditButtonContainer: null };
 let size = { position: "absolute", top: 12, right: 12, width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round };
 obj2.editButton = size;
 const rect = { position: "absolute", justifyContent: "center", minHeight: 28, top: 12, right: 48, paddingVertical: 4, paddingHorizontal: 12, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, zIndex: 1 };
 obj2.previewButton = rect;
+obj2.refreshEditButtonContainer = { position: "absolute", top: 12, right: 12 };
 let closure_7 = createStyles.createStyles(obj2);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditBannerButton.tsx");
 
-export default function UserProfileEditBannerButton(arg0) {
-  ({ user, showProfilePreviewButton, showEditButton } = arg0);
-  ({ displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea } = arg0);
+export default function UserProfileEditBannerButton(isUserProfileEditingRefresh) {
+  ({ user, showProfilePreviewButton, showEditButton } = isUserProfileEditingRefresh);
+  ({ displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea } = isUserProfileEditingRefresh);
   if (showEditButton === undefined) {
     showEditButton = true;
   }
-  ({ editDisabled, onPressEdit, editButtonAccessibilityLabel } = arg0);
+  ({ onPressEdit, editButtonAccessibilityLabel, editDisabled } = isUserProfileEditingRefresh);
   if (editDisabled === undefined) {
     editDisabled = false;
   }
-  const obj = { style: closure_7().container, children: null };
-  const tmp = closure_7();
+  let refreshEditButtonContainer = closure_7();
+  let tmp = importDefault;
+  let obj = dependencyMap;
+  const obj2 = { style: refreshEditButtonContainer.container, children: null };
   const items = [hasOwnProperty(UserProfileBannerDefault, { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: useUserProfileBannerHeightDefault(), bannerSafeArea }), , ];
   if (showProfilePreviewButton) {
-    const obj2 = { userId: user.id };
-    showProfilePreviewButton = tmp5(ProfilePreviewButton, obj2);
+    const obj3 = { userId: user.id };
+    showProfilePreviewButton = tmp5(ProfilePreviewButton, obj3);
   }
   items[1] = showProfilePreviewButton;
-  if (showEditButton) {
-    const obj3 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
-    showEditButton = tmp5(EditButton, obj3);
+  if (!showEditButton) {
+    items[2] = showEditButton;
+    obj2.children = items;
+    return timestampProducer(View, obj2);
+  } else if (isUserProfileEditingRefresh.isUserProfileEditingRefresh) {
+    tmp = EditButtonDefault;
+    obj = { style: null, onPress: null, accessibilityLabel: null, disabled: null, variant: "secondary-overlay" };
+    refreshEditButtonContainer = refreshEditButtonContainer.refreshEditButtonContainer;
+    obj.style = refreshEditButtonContainer;
+    obj.onPress = onPressEdit;
+    obj.accessibilityLabel = editButtonAccessibilityLabel;
+    obj.disabled = editDisabled;
+    let tmp5Result = tmp5(tmp, obj);
+  } else {
+    const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
+    tmp5Result = tmp5(EditButton, obj4);
   }
-  items[2] = showEditButton;
-  obj.children = items;
-  return timestampProducer(View, obj);
 };

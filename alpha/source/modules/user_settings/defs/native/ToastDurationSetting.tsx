@@ -1,26 +1,26 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15174
+// Function ID: 15175
 // Name: ToastDurationSetting
-// Dependencies: [19, 4855, 7612, 1074, 21, 504, 14199, 1115, 15065, 10979, 11211, 15170, 2]
+// Dependencies: [19, 4834, 7590, 1074, 21, 504, 14207, 1115, 15071, 10983, 11215, 15175, 2]
 
-// Module 15169 (ToastDurationSetting)
+// Module 15174 (ToastDurationSetting)
 import util from "util" /* 1115 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10979 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15065 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 15170 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15071 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 15175 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const Accessibility = fn(1074).Accessibility;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const slider = SettingBuilders.createSlider({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["3oxlia"]);
   },
-  parent: fn(7612).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(7590).MobileUserSettings.ACCESSIBILITY,
   usePredicate() {
     return DesignSystemsNotificationComponentsExperiment.useDesignSystemsNotificationComponents("ToastDurationSettingNative");
   },

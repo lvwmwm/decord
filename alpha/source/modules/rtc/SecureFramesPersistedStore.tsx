@@ -1,9 +1,9 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9357
+// Function ID: 9358
 // Name: SecureFramesPersistedStore
 // Dependencies: [504, 573, 2]
 
-// Module 9363 (SecureFramesPersistedStore)
+// Module 9357 (SecureFramesPersistedStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

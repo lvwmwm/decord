@@ -1,27 +1,27 @@
-// Module ID: 12478
-// Function ID: 12479
+// Module ID: 12489
+// Function ID: 12490
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12479, 2045, 4499, 4881, 6016, 7380, 4501, 1085, 7395, 504, 12, 1370, 11, 7379, 7519, 2]
+// Dependencies: [32, 19, 12490, 2044, 4498, 4860, 6005, 7358, 4500, 1085, 7373, 504, 12, 1370, 11, 7357, 7497, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 12478 (ThreadBrowserHooks)
+// Module 12489 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7379 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7519 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7357 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7497 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import ReadStateStore from "ReadStateStore" /* 4881 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6016 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7380 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4501 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import ReadStateStore from "ReadStateStore" /* 4860 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6005 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7358 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4500 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(12479).useShouldShowResolvedFlagsForChannel;
+let closure_5 = fn(12490).useShouldShowResolvedFlagsForChannel;
 const Permissions = fn(1085).Permissions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");

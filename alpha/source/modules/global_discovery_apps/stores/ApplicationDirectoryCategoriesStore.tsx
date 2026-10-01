@@ -1,9 +1,9 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11765
+// Function ID: 11766
 // Name: ApplicationDirectoryCategoriesStore
 // Dependencies: [504, 573, 2]
 
-// Module 11757 (ApplicationDirectoryCategoriesStore)
+// Module 11765 (ApplicationDirectoryCategoriesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

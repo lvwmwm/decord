@@ -1,14 +1,14 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16459
+// Function ID: 16460
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4866, 576, 4688, 4822, 6230, 16438, 4862, 1115, 16434, 4542, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4687, 4801, 6220, 16460, 4841, 1115, 16456, 4541, 2]
 
-// Module 16437 (JoinRequestOtherApplications)
+// Module 16459 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4542 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4688 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16434 */;
+import DateUtils from "DateUtils" /* 4541 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4687 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16456 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,10 +18,10 @@ function ApplicationStatusIcon(status) {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    return timestampProducer(tmp(4822).CircleCheckIcon, obj2);
-  } else if (tmp(4688).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+    return timestampProducer(tmp(4801).CircleCheckIcon, obj2);
+  } else if (tmp(4687).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    return timestampProducer(tmp(6230).CircleXIcon, obj);
+    return timestampProducer(tmp(6220).CircleXIcon, obj);
   } else {
     return null;
   }
@@ -30,7 +30,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { label: { marginHorizontal: 16, marginBottom: 8 }, container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: nativeDefault.radii.md }, row: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 }, divider: null };
 let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.divider = size;
@@ -50,7 +50,7 @@ export default noop.memo((arg0) => {
     let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: null };
     const intl = tmp2(1115).intl;
     obj3.children = intl.string(tmp2(1115).t["hxa+G3"]);
-    let items = [closure_6(tmp2(4862).Text, obj3), ];
+    let items = [closure_6(tmp2(4841).Text, obj3), ];
     let obj4 = {
       style: tmp.container,
       children: otherGuildJoinRequestsForUser.map((createdAt, index) => {

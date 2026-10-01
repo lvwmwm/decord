@@ -1,22 +1,22 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11591
+// Function ID: 11592
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4866, 576, 8062, 4713, 4862, 1115, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 8051, 4712, 4841, 1115, 2]
 // Exports: default
 
-// Module 11583 (AppealIngestionPolicySummary)
+// Module 11591 (AppealIngestionPolicySummary)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ColorUtils from "ColorUtils" /* 4713 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8062 */;
+import ColorUtils from "ColorUtils" /* 4712 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8051 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { sectionTitle: { marginBottom: 8 }, policy: { marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, userContainer: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.userContainer = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 18 };

@@ -1,13 +1,13 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10878
+// Function ID: 10879
 // Name: ExperimentalEpicIcon
-// Dependencies: [19, 21, 576, 4560, 10878, 2]
+// Dependencies: [19, 21, 576, 4559, 10879, 2]
 // Exports: ExperimentalEpicIcon
 
-// Module 10877 (ExperimentalEpicIcon)
+// Module 10878 (ExperimentalEpicIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod10878 from "module_10878" /* 10878 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod10879 from "module_10879" /* 10879 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ExperimentalEpicIcon = function ExperimentalEpicIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10878, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10879, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

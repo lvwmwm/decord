@@ -1,18 +1,18 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 11258
+// Function ID: 11259
 // Name: OptInOnboardingUtils
-// Dependencies: [1220, 4497, 2108, 5047, 4485, 7151, 1385, 6730, 6722, 1186, 2]
+// Dependencies: [1220, 4496, 2107, 5026, 4484, 7143, 1385, 6720, 6712, 1186, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 11255 (OptInOnboardingUtils)
+// Module 11258 (OptInOnboardingUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6722 */;
-import isOptInEnabled from "isOptInEnabled" /* 7151 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6712 */;
+import isOptInEnabled from "isOptInEnabled" /* 7143 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4497 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
 
 require = fn;
 function optIntoAllChannelsForExistingMember(id, arg1) {
@@ -46,10 +46,10 @@ function optIntoAllChannelsForExistingMember(id, arg1) {
   const obj2 = GuildOnboardingActionCreatorsDefault;
   const result = obj2.onboardExistingMember(id, new Set(mapped));
 }
-let GuildChannelStore = fn(4497);
+let GuildChannelStore = fn(4496);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: closure_4, GUILD_VOCAL_CHANNELS_KEY: hasOwnProperty } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
-const GuildMemberFlags = fn(4485).GuildMemberFlags;
+const GuildMemberFlags = fn(4484).GuildMemberFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/opt_in_channels/OptInOnboardingUtils.tsx");
 
@@ -96,10 +96,10 @@ export const toggleShowAllChannels = function toggleShowAllChannels(id) {
   if (tmp7) {
     optIntoAllChannelsForExistingMember(id);
   } else {
-    const result1 = tmp(7151).isOptInEnabledForGuild(id);
-    const tmpResult3 = tmp(7151);
-    tmp(6730).setGuildOptIn(id, !result1);
-    const tmpResult4 = tmp(6730);
+    const result1 = tmp(7143).isOptInEnabledForGuild(id);
+    const tmpResult3 = tmp(7143);
+    tmp(6720).setGuildOptIn(id, !result1);
+    const tmpResult4 = tmp(6720);
   }
 };
 export { optIntoAllChannelsForExistingMember };

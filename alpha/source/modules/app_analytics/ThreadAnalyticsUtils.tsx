@@ -1,18 +1,18 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7366
+// Function ID: 7367
 // Name: ThreadAnalyticsUtils
-// Dependencies: [7384, 6920, 2049, 4499, 1074, 1101, 11, 2]
+// Dependencies: [7362, 6911, 2048, 4498, 1074, 1101, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7388 (ThreadAnalyticsUtils)
+// Module 7366 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 7384 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6920 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 7362 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6911 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 require = fn;
-const THREAD_CHANNEL_TYPES = fn(2049).THREAD_CHANNEL_TYPES;
+const THREAD_CHANNEL_TYPES = fn(2048).THREAD_CHANNEL_TYPES;
 const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");

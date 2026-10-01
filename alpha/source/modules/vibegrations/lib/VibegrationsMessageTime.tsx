@@ -1,11 +1,11 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16571
+// Function ID: 16572
 // Name: VibegrationsMessageTime
-// Dependencies: [4542, 2]
+// Dependencies: [4541, 2]
 // Exports: describeMessageTime
 
-// Module 16549 (VibegrationsMessageTime)
-import DateUtils from "DateUtils" /* 4542 */;
+// Module 16571 (VibegrationsMessageTime)
+import DateUtils from "DateUtils" /* 4541 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsMessageTime.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 7546
-// Function ID: 7547
+// Module ID: 7524
+// Function ID: 7525
 // Name: ConversationNavigatorUtils
-// Dependencies: [4723, 7528, 4877, 2]
+// Dependencies: [4722, 7506, 4856, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 7546 (ConversationNavigatorUtils)
-import RootNavigationRef from "RootNavigationRef" /* 4723 */;
-import transitionToChannel from "transitionToChannel" /* 4877 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7528 */;
+// Module 7524 (ConversationNavigatorUtils)
+import RootNavigationRef from "RootNavigationRef" /* 4722 */;
+import transitionToChannel from "transitionToChannel" /* 4856 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 7506 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10936
+// Function ID: 10937
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 10921, 3, 10918, 10919, 10922, 2]
+// Dependencies: [5, 10937, 3, 10935, 10938, 10939, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 10920 (IosAttributionImpressionRegistry)
+// Module 10936 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10918 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 10919 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10935 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 10938 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -65,7 +65,7 @@ let closure_9 = async function _startNativeImpression(arg0, value) {
           closure_129_7 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -246,105 +246,43 @@ let closure_11 = async function _getStoreKitCredential(arg0) {
   let impressionId = arg0;
   c3 = 0;
   c4 = 0;
-  let iter = (async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_2 = tmp5;
-            closure_1 = tmp2;
-            let impressionId2;
-            impressionId2 = impressionId.impressionId;
-            let activeIosAttributionFramework;
-            closure_129_2 = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flex", done: true };
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            activeIosAttributionFramework = closure_130_0(closure_130_1[3]).getActiveIosAttributionFramework();
-            if (null != activeIosAttributionFramework) {
-              if (null != closure_130_3[activeIosAttributionFramework]) {
-                c3 = 2;
-                c4 = 1;
-                const obj5 = {
-                  value: (function getImpressionToken() {
-                                const self = this;
-                                const apply = closure_1_10.apply;
-                                if (typeof apply === "unknown") {
-                                  let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                                } else {
-                                  applyArgumentsResult = apply(self, arguments);
-                                }
-                                return applyArgumentsResult;
-                              })(impressionId2),
-                  done: false
-                };
-                return obj5;
-              }
-            }
-            c4 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
-        } else {
-          closure_129_2 = value;
-          let tmp9;
-          if (null != closure_129_2) {
-            obj = { impressionToken: closure_129_2 };
-            tmp9 = obj;
-          }
-          c4 = 3;
-          const obj7 = { value: tmp9, done: true };
-          return obj7;
-        }
-      } catch (tmp19) {
-        c4 = tmp;
-        throw tmp19;
+  let iter = (async (arg0) => {
+    closure_1 = tmp2;
+    const impressionId2 = impressionId.impressionId;
+    await "flex";
+    const activeIosAttributionFramework = closure_130_0(closure_130_1[3]).getActiveIosAttributionFramework();
+    if (null != activeIosAttributionFramework) {
+      if (null != closure_130_3[activeIosAttributionFramework]) {
+        c3 = 2;
+        c4 = 1;
+        return {
+          value: (function getImpressionToken() {
+                const self = this;
+                const apply = closure_1_10.apply;
+                if (typeof apply === "unknown") {
+                  let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                } else {
+                  applyArgumentsResult = apply(self, arguments);
+                }
+                return applyArgumentsResult;
+              })(impressionId2),
+          done: false
+        };
       }
     }
+    closure_129_2 = await "HermesInternal";
+    if (null != closure_129_2) {
+      const tmp9 = { impressionToken: closure_129_2 };
+    }
+    return tmp9;
   })();
   iter.next();
   return iter;
 };
 let obj = {};
-let obj2 = { viewThroughSpec: { kind: fn(10921).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
-obj[fn(10921).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
-let obj3 = { kind: fn(10921).IosAttributionFramework.AD_ATTRIBUTION_KIT };
+let obj2 = { viewThroughSpec: { kind: fn(10937).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
+obj[fn(10937).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
+let obj3 = { kind: fn(10937).IosAttributionFramework.AD_ATTRIBUTION_KIT };
 let closure_4 = new LoggerDefault("IosAttribution");
 const map = new Map();
 const size = fn(2);

@@ -1,22 +1,22 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11529
+// Function ID: 11530
 // Name: RoleName
-// Dependencies: [19, 17, 4855, 21, 4866, 576, 504, 7598, 1177, 4862, 2]
+// Dependencies: [19, 17, 4834, 21, 4845, 576, 504, 7576, 1177, 4841, 2]
 // Exports: default
 
-// Module 11521 (RoleName)
+// Module 11529 (RoleName)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7598 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7576 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,9 +1,9 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8963
+// Function ID: 8964
 // Name: shared/RPCError
 // Dependencies: [2]
 
-// Module 8970 (shared/RPCError)
+// Module 8963 (shared/RPCError)
 import size from "module_2" /* 2 */;
 
 const prototype = function RPCError(arg0, message) {

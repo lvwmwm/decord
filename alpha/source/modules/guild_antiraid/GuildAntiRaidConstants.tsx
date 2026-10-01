@@ -1,10 +1,10 @@
-// Module ID: 7654
-// Function ID: 7655
+// Module ID: 7642
+// Function ID: 7643
 // Name: GuildAntiRaidConstants
 // Dependencies: [1085, 1115, 1086, 2]
 // Exports: getTimeframes
 
-// Module 7654 (GuildAntiRaidConstants)
+// Module 7642 (GuildAntiRaidConstants)
 import Constants from "Constants" /* 1085 */;
 import util from "util" /* 1115 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;

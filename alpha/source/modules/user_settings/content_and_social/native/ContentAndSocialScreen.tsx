@@ -1,28 +1,28 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15709
+// Function ID: 15710
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 7612, 1074, 21, 4866, 576, 1115, 2111, 15693, 14557, 12378, 15698, 6915, 11211, 14555, 14454, 15699, 4862, 2]
+// Dependencies: [32, 19, 17, 7590, 1074, 21, 4845, 576, 1115, 2110, 15710, 14563, 12390, 15715, 6906, 11215, 14561, 14460, 15716, 4841, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15692 (ContentAndSocialScreen)
+// Module 15709 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12378 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15699 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12390 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15716 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const MobileUserSettings = fn(7612).MobileUserSettings;
+const MobileUserSettings = fn(7590).MobileUserSettings;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { loadingIndicator: { marginTop: nativeDefault.space.PX_32 }, emptyContainer: null };
 let obj3 = { marginTop: nativeDefault.space.PX_32 };
 obj2.emptyContainer = { flex: 1, gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -120,7 +120,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp9 = items6;
     if (!allServersOptionSelected) {
       const items11 = [];
-      HermesBuiltin.arraySpread(tmp2(15693).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
+      HermesBuiltin.arraySpread(tmp2(15710).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
       tmp9 = items11;
       const arraySpreadResult = HermesBuiltin.arraySpread(items6, 0);
     }
@@ -128,7 +128,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp15;
     if (tmp7) {
       if (tmp8) {
-        tmp15 = React7(tmp2(14557).MessageRequestsNotice, {});
+        tmp15 = React7(tmp2(14563).MessageRequestsNotice, {});
       }
     }
     obj14.subLabel = tmp15;
@@ -207,15 +207,15 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let items = [React7(Text_Text.Text, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-muted", children: null };
     let intl2 = util.intl;
-    let obj6 = { helpdeskArticle: tmp2(2111).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
+    let obj6 = { helpdeskArticle: tmp2(2110).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     obj5.children = intl2.format(util.t.V8wClM, obj6);
     items[1] = React7(Text_Text.Text, obj5);
     obj3.children = items;
     tmp7 = closure_1_11(timestampProducer, obj3);
-    const tmp2Result = tmp2(2111);
+    const tmp2Result = tmp2(2110);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React7(tmp2(14454), obj);
+    tmp7 = React7(tmp2(14460), obj);
   }
   return tmp7;
 };

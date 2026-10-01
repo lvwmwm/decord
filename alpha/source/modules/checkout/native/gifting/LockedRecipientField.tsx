@@ -1,21 +1,21 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 10511
+// Function ID: 10512
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4866, 576, 1177, 4862, 4708, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 1177, 4841, 4707, 2]
 // Exports: default
 
-// Module 10519 (LockedRecipientField)
+// Module 10511 (LockedRecipientField)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4708 */;
-import Text_Text from "Text/Text" /* 4862 */;
+import UserUtilsDefault from "UserUtils" /* 4707 */;
+import Text_Text from "Text/Text" /* 4841 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 }, avatar: null };
 let obj3 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 };
 obj2.avatar = { marginEnd: nativeDefault.space.PX_8 };

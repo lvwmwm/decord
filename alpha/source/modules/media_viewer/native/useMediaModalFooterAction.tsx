@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 10931
+// Function ID: 10932
 // Name: useMediaModalFooterAction
 // Dependencies: [560, 1248, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 10936 (useMediaModalFooterAction)
+// Module 10931 (useMediaModalFooterAction)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -23,5 +23,5 @@ export const setMediaModalFooterAction = function setMediaModalFooterAction(foot
   });
 };
 export const clearMediaModalFooterAction = function clearMediaModalFooterAction() {
-  ReactBatchUpdates.batchUpdates(() => state.setState({ footerAction: "Array" }));
+  ReactBatchUpdates.batchUpdates(() => state.setState({ footerAction: "r" }));
 };

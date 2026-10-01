@@ -1,10 +1,10 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8001
+// Function ID: 8002
 // Name: MediaViewerOverlayButton
-// Dependencies: [19, 21, 7558, 2]
+// Dependencies: [19, 21, 7536, 2]
 
-// Module 8012 (MediaViewerOverlayButton)
-import IconButton from "IconButton" /* 7558 */;
+// Module 8001 (MediaViewerOverlayButton)
+import IconButton from "IconButton" /* 7536 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

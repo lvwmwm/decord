@@ -1,16 +1,16 @@
-// Module ID: 17406
-// Function ID: 17407
+// Module ID: 17432
+// Function ID: 17433
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7073, 2045, 4847, 4846, 4851, 17407, 8021, 6938, 17414, 11756, 6735, 17416, 2]
+// Dependencies: [5, 7065, 2044, 4826, 4825, 4830, 17433, 8010, 6929, 17440, 17441, 17446, 11764, 6725, 17448, 2]
 
-// Module 17406 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 4846 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17416 */;
+// Module 17432 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 4825 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17448 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7073 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import InviteStore from "InviteStore" /* 4847 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7065 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import InviteStore from "InviteStore" /* 4826 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 const require = fn;
 function resolveMessageCodedLinks(content) {
@@ -27,8 +27,8 @@ function resolveMessageCodedLinks(content) {
   if (tmp2) {
     let item = arr.forEach((item) => {
       ({ type, code } = item);
-      if (code(dependencyMap[5]).CodedLinkType.INVITE === type) {
-        const result = tmp(tmp2[6]).queueMessageLinkFetch(closure_3(function*(arg0, value) {
+      if (code(4830).CodedLinkType.INVITE === type) {
+        const result = tmp(17433).queueMessageLinkFetch(closure_3(function*(arg0, value) {
           if (c0 === 2) {
             c0 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
@@ -77,9 +77,9 @@ function resolveMessageCodedLinks(content) {
             }
           }
         }));
-        const tmpResult = tmp(tmp2[6]);
-      } else if (tmp(tmp2[5]).CodedLinkType.TEMPLATE === type) {
-        const result1 = tmp(tmp2[6]).queueMessageLinkFetch(closure_3(function*(arg0, value) {
+        const tmpResult = tmp(17433);
+      } else if (tmp(4830).CodedLinkType.TEMPLATE === type) {
+        const result1 = tmp(17433).queueMessageLinkFetch(closure_3(function*(arg0, value) {
           if (c0 === 2) {
             c0 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
@@ -128,37 +128,49 @@ function resolveMessageCodedLinks(content) {
             }
           }
         }));
-        const tmpResult3 = tmp(tmp2[6]);
-      } else if (tmp(tmp2[5]).CodedLinkType.BUILD_OVERRIDE !== type) {
-        if (tmp(tmp2[5]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-          if (tmp(tmp2[5]).CodedLinkType.EVENT !== type) {
-            if (tmp(tmp2[5]).CodedLinkType.CHANNEL_LINK !== type) {
-              if (tmp(tmp2[5]).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
-                if (tmp(tmp2[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                  if (tmp(tmp2[5]).CodedLinkType.GUILD_PRODUCT !== type) {
-                    if (tmp(tmp2[5]).CodedLinkType.SERVER_SHOP !== type) {
-                      if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
-                        if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                          if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                            if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                              if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
-                                  if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
-                                    if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                      if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
-                                        if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                                          if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                                            if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                              const embedApplication = tmp(tmp2[10]).getEmbedApplication(code);
-                                              const tmpResult4 = tmp(tmp2[10]);
-                                            } else {
-                                              const _Error = Error;
-                                              const _HermesInternal = HermesInternal;
-                                              throw Error("Unknown coded link type: " + type);
+        const tmpResult5 = tmp(17433);
+      } else if (tmp(4830).CodedLinkType.BUILD_OVERRIDE !== type) {
+        if (tmp(4830).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+          if (tmp(4830).CodedLinkType.EVENT !== type) {
+            if (tmp(4830).CodedLinkType.CHANNEL_LINK !== type) {
+              if (tmp(4830).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
+                if (tmp(4830).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                  if (tmp(4830).CodedLinkType.GUILD_PRODUCT !== type) {
+                    if (tmp(4830).CodedLinkType.SERVER_SHOP !== type) {
+                      if (tmp(4830).CodedLinkType.QUESTS_EMBED !== type) {
+                        if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                          if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                            if (tmp(4830).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                              if (tmp(4830).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                if (tmp(4830).CodedLinkType.EXPERIMENT !== type) {
+                                  if (tmp(4830).CodedLinkType.GAME_PROFILE !== type) {
+                                    if (tmp(4830).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                      if (tmp(4830).CodedLinkType.USER_PROFILE !== type) {
+                                        if (tmp(4830).CodedLinkType.GAME_ORGANIZATION_INVITE === type) {
+                                          if (tmpResult6.getLinkedGameOrgInvitesEnabled("MessageCodedLinkManager")) {
+                                            const result2 = tmp(17433).queueMessageLinkFetch(() => {
+                                              const useGameOrganizationInviteFetch = content(17441).useGameOrganizationInviteFetch;
+                                              const items = [code];
+                                              return useGameOrganizationInviteFetch.fetchMany(items);
+                                            });
+                                            const tmpResult7 = tmp(17433);
+                                          }
+                                          tmpResult6 = tmp(17440);
+                                        } else {
+                                          if (tmp(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                            if (tmp(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                                              if (tmp(4830).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                                                const embedApplication = tmp(11764).getEmbedApplication(code);
+                                                const tmpResult8 = tmp(11764);
+                                              } else {
+                                                const _Error = Error;
+                                                const _HermesInternal = HermesInternal;
+                                                throw Error("Unknown coded link type: " + type);
+                                              }
                                             }
                                           }
+                                          closure_1(17446)(type, code);
                                         }
-                                        closure_1(tmp2[9])(type, code);
                                       }
                                     }
                                   }
@@ -189,8 +201,8 @@ function resolveMessageCodedLinks(content) {
       if (tmp) {
         const item = arr.forEach((item) => {
           ({ type, code } = item);
-          if (code(dependencyMap[5]).CodedLinkType.INVITE === type) {
-            const result = tmp(tmp2[6]).queueMessageLinkFetch(closure_3(function*(arg0, value) {
+          if (code(4830).CodedLinkType.INVITE === type) {
+            const result = tmp(17433).queueMessageLinkFetch(closure_3(function*(arg0, value) {
               if (c0 === 2) {
                 c0 = 3;
                 throw new TypeError("Generator functions may not be called on executing generators");
@@ -239,9 +251,9 @@ function resolveMessageCodedLinks(content) {
                 }
               }
             }));
-            const tmpResult = tmp(tmp2[6]);
-          } else if (tmp(tmp2[5]).CodedLinkType.TEMPLATE === type) {
-            const result1 = tmp(tmp2[6]).queueMessageLinkFetch(closure_3(function*(arg0, value) {
+            const tmpResult = tmp(17433);
+          } else if (tmp(4830).CodedLinkType.TEMPLATE === type) {
+            const result1 = tmp(17433).queueMessageLinkFetch(closure_3(function*(arg0, value) {
               if (c0 === 2) {
                 c0 = 3;
                 throw new TypeError("Generator functions may not be called on executing generators");
@@ -290,37 +302,49 @@ function resolveMessageCodedLinks(content) {
                 }
               }
             }));
-            const tmpResult3 = tmp(tmp2[6]);
-          } else if (tmp(tmp2[5]).CodedLinkType.BUILD_OVERRIDE !== type) {
-            if (tmp(tmp2[5]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-              if (tmp(tmp2[5]).CodedLinkType.EVENT !== type) {
-                if (tmp(tmp2[5]).CodedLinkType.CHANNEL_LINK !== type) {
-                  if (tmp(tmp2[5]).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
-                    if (tmp(tmp2[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                      if (tmp(tmp2[5]).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp(tmp2[5]).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
-                            if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                              if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                  if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                    if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
-                                      if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
-                                        if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                          if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
-                                            if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                                              if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                                                if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                                  const embedApplication = tmp(tmp2[10]).getEmbedApplication(code);
-                                                  const tmpResult4 = tmp(tmp2[10]);
-                                                } else {
-                                                  const _Error = Error;
-                                                  const _HermesInternal = HermesInternal;
-                                                  throw Error("Unknown coded link type: " + type);
+            const tmpResult5 = tmp(17433);
+          } else if (tmp(4830).CodedLinkType.BUILD_OVERRIDE !== type) {
+            if (tmp(4830).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+              if (tmp(4830).CodedLinkType.EVENT !== type) {
+                if (tmp(4830).CodedLinkType.CHANNEL_LINK !== type) {
+                  if (tmp(4830).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
+                    if (tmp(4830).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                      if (tmp(4830).CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (tmp(4830).CodedLinkType.SERVER_SHOP !== type) {
+                          if (tmp(4830).CodedLinkType.QUESTS_EMBED !== type) {
+                            if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                              if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                if (tmp(4830).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                  if (tmp(4830).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                    if (tmp(4830).CodedLinkType.EXPERIMENT !== type) {
+                                      if (tmp(4830).CodedLinkType.GAME_PROFILE !== type) {
+                                        if (tmp(4830).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                          if (tmp(4830).CodedLinkType.USER_PROFILE !== type) {
+                                            if (tmp(4830).CodedLinkType.GAME_ORGANIZATION_INVITE === type) {
+                                              if (tmpResult6.getLinkedGameOrgInvitesEnabled("MessageCodedLinkManager")) {
+                                                const result2 = tmp(17433).queueMessageLinkFetch(() => {
+                                                  const useGameOrganizationInviteFetch = content(17441).useGameOrganizationInviteFetch;
+                                                  const items = [code];
+                                                  return useGameOrganizationInviteFetch.fetchMany(items);
+                                                });
+                                                const tmpResult7 = tmp(17433);
+                                              }
+                                              tmpResult6 = tmp(17440);
+                                            } else {
+                                              if (tmp(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                                if (tmp(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                                                  if (tmp(4830).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                                                    const embedApplication = tmp(11764).getEmbedApplication(code);
+                                                    const tmpResult8 = tmp(11764);
+                                                  } else {
+                                                    const _Error = Error;
+                                                    const _HermesInternal = HermesInternal;
+                                                    throw Error("Unknown coded link type: " + type);
+                                                  }
                                                 }
                                               }
+                                              closure_1(17446)(type, code);
                                             }
-                                            closure_1(tmp2[9])(type, code);
                                           }
                                         }
                                       }
@@ -346,7 +370,7 @@ function resolveMessageCodedLinks(content) {
 class MessageCodedLinkManager extends tmp7 {
   constructor() {
     tmp3 = new MessageCodedLinkManager(tmp2, tmp, new.target);
-    tmp4 = closure_1(closure_2[12])(tmp3, resolveMessageCodedLinks);
+    tmp4 = closure_1(closure_2[14])(tmp3, resolveMessageCodedLinks);
     return tmp3;
   }
 }

@@ -1,30 +1,30 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12254
+// Function ID: 12255
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 4866, 576, 672, 4568, 4797, 12212, 12201, 12197, 12218, 12247, 12219, 12233, 12234, 12238, 12222, 1177, 1115, 4862, 12223, 5477, 2519, 1613, 12248, 6767, 6241, 12251, 12244, 2]
+// Dependencies: [17, 21, 4845, 576, 672, 4567, 4776, 12220, 12209, 12205, 12226, 12255, 12227, 12241, 12242, 12246, 12230, 1177, 1115, 4841, 12231, 5465, 2518, 1613, 12256, 6757, 6231, 12259, 12252, 2]
 // Exports: default
 
-// Module 12246 (GuildPowerupsMultiPerkBottomSheet)
+// Module 12254 (GuildPowerupsMultiPerkBottomSheet)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import themes from "themes" /* 4568 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12197 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12201 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12212 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12218 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12219 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12222 */;
-import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12233 */;
-import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12234 */;
-import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12238 */;
-import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12247 */;
-import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12248 */;
+import themes from "themes" /* 4567 */;
+import useThemeDefault from "useTheme" /* 4776 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12205 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12209 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12220 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12226 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12227 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12230 */;
+import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12241 */;
+import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12242 */;
+import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12246 */;
+import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12255 */;
+import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12256 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles_mod from "createStyles" /* 4866 */;
+import createStyles_mod from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const usePowerupActiveStatusDefault = usePowerupActiveStatus;
@@ -94,10 +94,10 @@ function GuildPowerupsMultiPerkCard(arg0) {
   const items4 = [React4(Text_Text.Text, { variant: "heading-md/semibold", color: useGuildPowerupColorConfigDefault(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
     const obj11 = { status: calculatePowerupCardStatus };
-    let tmp18Result = tmp18(tmp(12223).GuildPowerupCardFooterStatus, obj11);
+    let tmp18Result = tmp18(tmp(12231).GuildPowerupCardFooterStatus, obj11);
   } else {
     const obj12 = { cost: powerup.cost };
-    tmp18Result = tmp18(tmp(12223).GuildPowerupCardFooterCost, obj12);
+    tmp18Result = tmp18(tmp(12231).GuildPowerupCardFooterCost, obj12);
   }
   items4[1] = tmp18Result;
   obj9.children = items4;
@@ -116,7 +116,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
     }
     obj13.variant = str2;
     const intl2 = tmp(1115).intl;
-    const tmp3Result2 = tmp3(2519);
+    const tmp3Result2 = tmp3(2518);
     obj13.text = intl2.string(result ? tmp3Result2.TZsu1U : tmp3Result2.gSxlHf);
     obj13.onPress = function onPress() {
       if (c0) {
@@ -125,7 +125,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
         _undefined();
       }
     };
-    tmp18(tmp(5477).Button, obj13);
+    tmp18(tmp(5465).Button, obj13);
   }
 }
 const View = _mod17.View;
@@ -190,12 +190,12 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     const obj3 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj2.contentContainerStyle = obj3;
     ({ title: obj4.title, description: obj4.description } = tmp4);
-    const items = [closure_4(tmp2(12251), { title: null, description: null }), , ];
+    const items = [closure_4(tmp2(12259), { title: null, description: null }), , ];
     let tmp6Result = null != tmp4.disabledReason;
     if (tmp6Result) {
       const obj6 = { style: tmp.disabledReasonContainer, children: null };
       const obj7 = { text: tmp4.disabledReason };
-      obj6.children = tmp6(tmp2(12244), obj7);
+      obj6.children = tmp6(tmp2(12252), obj7);
       tmp6Result = tmp6(View, obj6);
     }
     items[1] = tmp6Result;
@@ -204,8 +204,8 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     obj13.children = powerups.map((powerup) => React4(GuildPowerupsMultiPerkCard, { guildId, powerup, forceStaticImage: forceStaticImages.forceStaticImages }, powerup.skuId));
     items[2] = closure_4(View, obj13);
     obj2.children = items;
-    obj.children = closure_5(guildId(6241).BottomSheetScrollView, obj2);
-    tmp6Result2 = tmp6(guildId(6767).BottomSheet, obj);
+    obj.children = closure_5(guildId(6231).BottomSheetScrollView, obj2);
+    tmp6Result2 = tmp6(guildId(6757).BottomSheet, obj);
     const obj5 = { title: null, description: null };
   }
   return tmp6Result2;

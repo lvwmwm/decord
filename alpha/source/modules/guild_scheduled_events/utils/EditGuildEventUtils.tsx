@@ -1,16 +1,16 @@
-// Module ID: 9181
-// Function ID: 9182
+// Module ID: 9175
+// Function ID: 9176
 // Name: EditGuildEventUtils
-// Dependencies: [502, 2051, 9145, 9182, 2]
+// Dependencies: [502, 2050, 9139, 9176, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 9181 (EditGuildEventUtils)
-import ScheduleUtils from "ScheduleUtils" /* 9145 */;
-import EntityUtils from "EntityUtils" /* 9182 */;
+// Module 9175 (EditGuildEventUtils)
+import ScheduleUtils from "ScheduleUtils" /* 9139 */;
+import EntityUtils from "EntityUtils" /* 9176 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const GuildScheduledEventsConstants = fn(2051);
+const GuildScheduledEventsConstants = fn(2050);
 ({ GuildScheduledEventEntityTypes: c3, GuildScheduledEventStatus: closure_4, GuildScheduledEventPrivacyLevel: hasOwnProperty, FAKE_EVENT_ID: metroRequire } = GuildScheduledEventsConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6887
+// Function ID: 6888
 // Name: SidebarActionTypes
 // Dependencies: [2]
 
-// Module 6896 (SidebarActionTypes)
+// Module 6887 (SidebarActionTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");

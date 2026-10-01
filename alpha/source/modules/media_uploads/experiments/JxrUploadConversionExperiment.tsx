@@ -1,9 +1,9 @@
-// Module ID: 5683
-// Function ID: 5684
+// Module ID: 5672
+// Function ID: 5673
 // Name: JxrUploadConversionExperiment
 // Dependencies: [1435, 2]
 
-// Module 5683 (JxrUploadConversionExperiment)
+// Module 5672 (JxrUploadConversionExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

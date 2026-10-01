@@ -1,16 +1,16 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16687
+// Function ID: 16688
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 7498, 21, 4866, 576, 16665, 6113, 4862, 4596, 5476, 5480, 4570, 16659, 16668, 12024, 2]
+// Dependencies: [32, 19, 17, 7476, 21, 4845, 576, 16688, 6103, 4841, 4595, 5464, 5468, 4569, 16682, 16691, 12031, 2]
 
-// Module 16664 (SearchFilterSuggestions)
+// Module 16687 (SearchFilterSuggestions)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4570 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import spring from "spring" /* 5476 */;
-import springPresets from "springPresets" /* 5480 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12024 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 16665 */;
+import native from "native" /* 4569 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import spring from "spring" /* 5464 */;
+import springPresets from "springPresets" /* 5468 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12031 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 16688 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -92,9 +92,9 @@ function AnimatedEnterExitContainer(children) {
   return jsx(cleanUp(sharedValue[10]).View, { style, children: children.children });
 }
 const View = fn(17).View;
-const SearchFilterAddLocations = fn(7498).SearchFilterAddLocations;
+const SearchFilterAddLocations = fn(7476).SearchFilterAddLocations;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { card: null };
 let merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj.card = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1 };
@@ -115,12 +115,12 @@ export default noop.memo(function SearchFilterSuggestions(searchContext) {
   let memo;
   const tmp = closure_8();
   dependencyMap = tmp;
-  const searchSuggestionsContext = searchContext(16659).useSearchSuggestionsContext();
+  const searchSuggestionsContext = searchContext(16682).useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj = searchContext(16659);
-  const validFilterTokens = searchContext(16668).useValidFilterTokens(searchContext);
+  let obj = searchContext(16682);
+  const validFilterTokens = searchContext(16691).useValidFilterTokens(searchContext);
   const tmp4 = suggestionsRef(suggestionsMounted.useState([]), 2);
   const first = tmp4[0];
   closure_8 = tmp6;
@@ -158,7 +158,7 @@ export default noop.memo(function SearchFilterSuggestions(searchContext) {
     }
     closure_8(closure_1_14);
   }), items);
-  let obj2 = searchContext(16668);
+  let obj2 = searchContext(16691);
   const fn = function f() {
     return dismissed.get();
   };
@@ -178,8 +178,8 @@ export default noop.memo(function SearchFilterSuggestions(searchContext) {
       return;
     }
   }
-  const obj3 = searchContext(4596);
-  T.__closure = { runOnJS: searchContext(4596).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS };
+  const obj3 = searchContext(4595);
+  T.__closure = { runOnJS: searchContext(4595).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS };
   T.__workletHash = 8991360021943;
   T.__initData = __initData3;
   const animatedReaction = obj3.useAnimatedReaction(fn, T);
@@ -217,5 +217,5 @@ export default noop.memo(function SearchFilterSuggestions(searchContext) {
       return first(memo, {}, text.text);
     })}</View></AnimatedEnterExitContainer>;
   }, items4);
-  return first(searchContext(4570).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
+  return first(searchContext(4569).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
 });

@@ -1,20 +1,20 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12209
+// Function ID: 12210
 // Name: usePowerupActiveStatus
-// Dependencies: [2067, 4753, 4754, 1074, 4755, 504, 2]
+// Dependencies: [2066, 4752, 4753, 1074, 4754, 504, 2]
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 12201 (usePowerupActiveStatus)
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4753 */;
+// Module 12209 (usePowerupActiveStatus)
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4752 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4754);
+const GuildPowerupsConstants = fn(4753);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_7 } = GuildPowerupsConstants);
 const GuildFeatures = fn(1074).GuildFeatures;
-let closure_9 = fn(4755).GAME_SERVER_POWERUP_SKU_ID;
+let closure_9 = fn(4754).GAME_SERVER_POWERUP_SKU_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
 

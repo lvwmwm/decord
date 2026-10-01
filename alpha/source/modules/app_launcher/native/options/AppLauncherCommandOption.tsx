@@ -1,20 +1,20 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11856
+// Function ID: 11857
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1484, 21, 4866, 576, 1979, 11849, 11855, 11857, 11860, 11862, 11863, 11865, 6025, 11868, 11869, 11875, 5632, 6230, 2]
+// Dependencies: [19, 17, 1484, 21, 4845, 576, 1979, 11857, 11863, 11865, 11868, 11870, 11871, 11873, 6014, 11876, 11877, 11883, 5621, 6220, 2]
 // Exports: default
 
-// Module 11848 (AppLauncherCommandOption)
+// Module 11856 (AppLauncherCommandOption)
 import nativeDefault from "native" /* 576 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6025 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11849 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11860 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11862 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11863 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11865 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11868 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11869 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11875 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6014 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11857 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11868 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11870 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11871 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11873 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11876 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11877 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11883 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ const View = fn(17).View;
 let closure_4 = fn(1484).AppLauncherOptionAutoFocusType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round }, option: { flex: 1 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -92,11 +92,11 @@ export default function AppLauncherCommandOption(option) {
                 const obj2 = { type: "userMention", userId: mentionable.result.user.id };
                 const items = [obj2];
                 View(name, items);
-              } else if (tmp4(11865).MentionableItemTypes.ROLE === type) {
+              } else if (tmp4(11873).MentionableItemTypes.ROLE === type) {
                 const obj3 = { type: "roleMention", roleId: mentionable.result.id };
                 const items1 = [obj3];
                 View(name, items1);
-              } else if (tmp4(11865).MentionableItemTypes.GLOBAL === type) {
+              } else if (tmp4(11873).MentionableItemTypes.GLOBAL === type) {
                 const result = mentionable.result;
                 if (result.text === obj4.MENTION_EVERYONE().text) {
                   const items2 = [{ type: "textMention", text: "@everyone" }];
@@ -217,9 +217,9 @@ export default function AppLauncherCommandOption(option) {
             onPress() {
                       return onDismiss(name);
                     },
-            children: tmp13(tmp2(6230).CircleXIcon, { size: "md" })
+            children: tmp13(tmp2(6220).CircleXIcon, { size: "md" })
           };
-          items[1] = tmp13(tmp2(5632).PressableOpacity, obj9);
+          items[1] = tmp13(tmp2(5621).PressableOpacity, obj9);
           obj7.children = items;
           tmp62 = closure_6(View, obj7);
         }
@@ -288,8 +288,8 @@ export default function AppLauncherCommandOption(option) {
       return dependencyMap(name);
     };
     obj11.hasError = hasError;
-    tmp63(tmp64(11855), obj11, name.name);
-    const tmp64Result = tmp64(11855);
+    tmp63(tmp64(11863), obj11, name.name);
+    const tmp64Result = tmp64(11863);
   } else {
     const obj12 = { style: tmp.option, option: name, guildId: channel.guild_id, initialValue: null, onEndEditing: null, onChangeText: null, onFocus: null, autoFocus: null, hasError: null, onPressIn: null };
     let first7;
@@ -311,7 +311,7 @@ export default function AppLauncherCommandOption(option) {
     obj12.autoFocus = items1.includes(autoFocusType);
     obj12.hasError = hasError;
     obj12.onPressIn = onPress;
-    tmp63(tmp64(11857), obj12, name.name);
-    const tmp64Result2 = tmp64(11857);
+    tmp63(tmp64(11865), obj12, name.name);
+    const tmp64Result2 = tmp64(11865);
   }
 };

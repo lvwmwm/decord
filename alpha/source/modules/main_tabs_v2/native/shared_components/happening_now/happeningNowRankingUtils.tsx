@@ -1,19 +1,19 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15916
+// Function ID: 15917
 // Name: happeningNowRankingUtils
-// Dependencies: [4509, 4885, 15047, 1370, 12, 2]
+// Dependencies: [4508, 4864, 15053, 1370, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 15900 (happeningNowRankingUtils)
+// Module 15916 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 const _modDef12 = _mod12;
 
 require = fn;
-const HappeningNowConstants = fn(15047);
+const HappeningNowConstants = fn(15053);
 ({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: hasOwnProperty, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: metroRequire, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_7 } = HappeningNowConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");

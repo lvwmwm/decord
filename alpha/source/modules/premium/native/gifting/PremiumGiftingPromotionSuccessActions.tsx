@@ -1,20 +1,20 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10741
+// Function ID: 10742
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 21, 4866, 576, 10363, 1485, 10405, 10711, 10326, 10745, 10421, 1115, 2551, 5477, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 10355, 1485, 10397, 10707, 10318, 10742, 10413, 1115, 2550, 5465, 2]
 // Exports: default
 
-// Module 10744 (PremiumGiftingPromotionSuccessActions)
+// Module 10741 (PremiumGiftingPromotionSuccessActions)
 import nativeDefault from "native" /* 576 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10326 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10745 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10318 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10742 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16 }, promoDetails: null };
 let obj3 = { flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.promoDetails = { alignSelf: "stretch", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };

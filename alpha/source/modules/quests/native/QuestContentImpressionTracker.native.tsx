@@ -1,10 +1,10 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 10958
+// Function ID: 10959
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 1980, 7341, 1074, 21, 8375, 7915, 504, 10915, 10916, 5960, 2]
+// Dependencies: [32, 19, 1980, 7319, 1074, 21, 8367, 7902, 504, 10916, 10959, 5949, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 10957 (QuestContentImpressionTracker)
+// Module 10958 (QuestContentImpressionTracker)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
@@ -16,8 +16,8 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let obj = adContentIds2(504);
   const ref = noop.useRef(null);
   const tmp5 = visibilityRef;
-  let tmp6 = visibilityRef(7915)(tmp3);
-  const adContentImpressionTrackerProps = adContentIds2(10915).useAdContentImpressionTrackerProps(skipRemountKey);
+  let tmp6 = visibilityRef(7902)(tmp3);
+  const adContentImpressionTrackerProps = adContentIds2(10916).useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   const obj3 = {};
   let merged = Object.assign(skipRemountKey);
@@ -26,9 +26,9 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   visibilityRef = obj3.visibilityRef;
   let overrideVisibility = obj3.overrideVisibility;
   const joined = adContentIds2.join("_");
-  const obj2 = adContentIds2(10915);
+  const obj2 = adContentIds2(10916);
   let items1 = [joined];
-  const tmp10 = _slicedToArray(adContentIds2(8375).useRecyclingState(false, items1), 2);
+  const tmp10 = _slicedToArray(adContentIds2(8367).useRecyclingState(false, items1), 2);
   dependencyMap = tmp11;
   let items2 = [adContentIds2, tmp10[1], visibilityRef];
   const effect = noop.useEffect(() => {
@@ -131,10 +131,10 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   if (overrideVisibility == null) {
     overrideVisibility = tmp10[0];
   }
-  const obj4 = adContentIds2(8375);
+  const obj4 = adContentIds2(8367);
   const obj6 = {};
   const merged1 = Object.assign(skipRemountKey);
-  const merged2 = Object.assign({ visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(7915)(overrideVisibility) });
+  const merged2 = Object.assign({ visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(7902)(overrideVisibility) });
   obj6.focused = tmp3;
   obj6.focusedChanged = tmp3 !== tmp6;
   obj6.reference = ref;
@@ -148,15 +148,15 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   obj7.key = key;
   obj7.adContentIds = adContentIds;
   if (tmp17) {
-    obj7.adCreativeType = tmp(5960).AdCreativeType.QUEST;
+    obj7.adCreativeType = tmp(5949).AdCreativeType.QUEST;
     let tmp19 = obj7;
   } else {
     obj7.adCreativeType = skipRemountKey.adCreativeType;
     tmp19 = obj7;
   }
-  return createElement(adContentIds2(10916).QuestContentImpressionTracker, tmp19);
+  return createElement(adContentIds2(10959).QuestContentImpressionTracker, tmp19);
 }
-let closure_6 = fn(7341).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
+let closure_6 = fn(7319).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
 const AppStates = fn(1074).AppStates;
 const createElement = fn(19).createElement;
 const jsx = fn(21).jsx;

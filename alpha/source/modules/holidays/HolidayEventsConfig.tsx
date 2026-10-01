@@ -1,13 +1,13 @@
-// Module ID: 17372
-// Function ID: 17373
+// Module ID: 17396
+// Function ID: 17397
 // Name: HolidayEventsConfig
-// Dependencies: [9560, 17373, 1115, 17374, 17375, 2029, 2]
+// Dependencies: [9554, 17397, 1115, 17398, 17399, 2029, 2]
 
-// Module 17372 (HolidayEventsConfig)
+// Module 17396 (HolidayEventsConfig)
 import util from "util" /* 1115 */;
-import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 17373 */;
-import _modDef17374 from "module_17374" /* 17374 */;
-import _modDef17375 from "module_17375" /* 17375 */;
+import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 17397 */;
+import _modDef17398 from "module_17398" /* 17398 */;
+import _modDef17399 from "module_17399" /* 17399 */;
 
 require = fn;
 const obj = {
@@ -21,9 +21,9 @@ const obj = {
   startTimeMs: 1791388800000,
   endTimeMs: 1793638800000,
   isDesktopOnly: true,
-  soundpack: fn(9560).Soundpacks.HALLOWEEN,
+  soundpack: fn(9554).Soundpacks.HALLOWEEN,
   soundpackLabel: fn(1115).t["+LasFV"],
-  appSpinnerSources: { webmDark: _modDef17374, webmLight: _modDef17375 },
+  appSpinnerSources: { webmDark: _modDef17398, webmLight: _modDef17399 },
   getLoadingTips() {
     const intl = util.intl;
     const items = [intl.string(util.t.ydMZ2o), , , , , , , , , , , , ];

@@ -1,34 +1,34 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12435
+// Function ID: 12436
 // Name: CreationIntent
-// Dependencies: [19, 17, 6595, 1074, 21, 4866, 6190, 576, 1485, 5462, 5471, 12381, 1241, 6740, 4862, 1115, 6195, 12010, 12424, 12426, 2]
+// Dependencies: [19, 17, 6585, 1074, 21, 4845, 6180, 576, 1485, 5450, 5459, 12393, 1241, 6730, 4841, 1115, 6185, 12017, 12436, 12438, 2]
 // Exports: default
 
-// Module 12423 (CreationIntent)
+// Module 12435 (CreationIntent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5471 */;
-import TableRowGroup from "TableRowGroup" /* 6195 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6740 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12381 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5450 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5459 */;
+import TableRowGroup from "TableRowGroup" /* 6185 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6730 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12393 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(6595);
+const CreateGuildConstants = fn(6585);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: closure_7, NUXGuildTemplatesAnalytics: closure_8 } = CreateGuildConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsLocations: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
-let obj2 = { contentContainer: { flex: 1, marginTop: fn(6190).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
-let obj3 = { flex: 1, marginTop: fn(6190).NAV_BAR_HEIGHT };
+const createStyles = fn(4845);
+let obj2 = { contentContainer: { flex: 1, marginTop: fn(6180).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
+let obj3 = { flex: 1, marginTop: fn(6180).NAV_BAR_HEIGHT };
 obj2.scrollContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.headerContainer = { alignItems: "center", paddingVertical: 20, paddingHorizontal: 16 };
 obj2.headerTitle = { textAlign: "center", marginBottom: 8 };
@@ -113,44 +113,44 @@ export default function CreationIntent(arg0) {
   const items3 = [closure_12(ref, obj4), , ];
   let obj7 = { style: tmp.sections, children: null };
   const obj8 = { hasIcons: true, children: null };
-  const tmp13 = trigger(12010);
+  const tmp13 = trigger(12017);
   const obj9 = { Icon: null, message: null, onPress: null };
   if (closure_14) {
-    obj9.Icon = tmp2(12424).ChairIllocon;
+    obj9.Icon = tmp2(12436).ChairIllocon;
     const intl5 = tmp2(1115).intl;
     obj9.message = intl5.string(tmp2(1115).t.uE7zcu);
     obj9.onPress = function onPress() {
       onPress(false);
     };
     const items4 = [tmp8(tmp13, obj9), ];
-    const obj10 = { Icon: tmp2(12426).WorldIllocon, message: null, onPress: null };
+    const obj10 = { Icon: tmp2(12438).WorldIllocon, message: null, onPress: null };
     const intl6 = tmp2(1115).intl;
     obj10.message = intl6.string(tmp2(1115).t.h9Q1lG);
     obj10.onPress = function onPress() {
       onPress(true);
     };
-    items4[1] = tmp8(tmp12(12010), obj10);
+    items4[1] = tmp8(tmp12(12017), obj10);
     obj8.children = items4;
     let tmp15 = obj8;
-    const tmp12Result = tmp12(12010);
+    const tmp12Result = tmp12(12017);
   } else {
-    obj9.Icon = tmp2(12426).WorldIllocon;
+    obj9.Icon = tmp2(12438).WorldIllocon;
     const intl3 = tmp2(1115).intl;
     obj9.message = intl3.string(tmp2(1115).t.h9Q1lG);
     obj9.onPress = function onPress() {
       onPress(true);
     };
     const items5 = [tmp8(tmp13, obj9), ];
-    const obj11 = { Icon: tmp2(12424).ChairIllocon, message: null, onPress: null };
+    const obj11 = { Icon: tmp2(12436).ChairIllocon, message: null, onPress: null };
     const intl4 = tmp2(1115).intl;
     obj11.message = intl4.string(tmp2(1115).t.uE7zcu);
     obj11.onPress = function onPress() {
       onPress(false);
     };
-    items5[1] = tmp8(tmp12(12010), obj11);
+    items5[1] = tmp8(tmp12(12017), obj11);
     obj8.children = items5;
     tmp15 = obj8;
-    const tmp12Result2 = tmp12(12010);
+    const tmp12Result2 = tmp12(12017);
   }
   obj7.children = closure_12(TableRowGroup.TableRowGroup, tmp15);
   items3[1] = closure_11(ref, obj7);

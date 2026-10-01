@@ -1,23 +1,23 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 9990
+// Function ID: 9991
 // Name: EmojiActionCreators
-// Dependencies: [5, 5968, 5786, 5397, 1074, 1084, 2026, 1217, 573, 1271, 5679, 4715, 1115, 4766, 4513, 1370, 5975, 12, 5399, 2]
+// Dependencies: [5, 5957, 5775, 5385, 1074, 1084, 2026, 1217, 573, 1271, 5668, 4714, 1115, 5267, 4512, 1370, 5964, 12, 5387, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 9998 (EmojiActionCreators)
+// Module 9990 (EmojiActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import wrappers from "wrappers" /* 1217 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4513 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import InlineUploaderDefault from "InlineUploader" /* 5679 */;
-import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 5975 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4512 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
+import InlineUploaderDefault from "InlineUploader" /* 5668 */;
+import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 5964 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import EmojiStore from "EmojiStore" /* 5968 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5397 */;
+import EmojiStore from "EmojiStore" /* 5957 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5385 */;
 
 const require = globalThis.__r;
 
@@ -56,7 +56,7 @@ let closure_10 = async function _updateEmoji(arg0, value) {
           ({ guildId: closure_129_0, emojiId: closure_129_1, name: closure_129_2, roles: closure_129_3 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

@@ -1,12 +1,12 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16367
+// Function ID: 16368
 // Name: reactionUtils
-// Dependencies: [7290, 7072, 2]
+// Dependencies: [7268, 7064, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 16347 (reactionUtils)
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7072 */;
-import MessageParserDefault from "MessageParser" /* 7290 */;
+// Module 16367 (reactionUtils)
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
+import MessageParserDefault from "MessageParser" /* 7268 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");

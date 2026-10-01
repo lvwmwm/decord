@@ -1,14 +1,14 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 11984
+// Function ID: 11985
 // Name: renderChannelBadge
-// Dependencies: [2, 11978, 11979, 11981, 11982, 11983]
+// Dependencies: [2, 11985, 11986, 11988, 11989, 11990]
 
-// Module 11977 (renderChannelBadge)
-import components_ChannelBadge from "components/ChannelBadge" /* 11978 */;
-import VocalChannelJoinButtonDefault from "VocalChannelJoinButton" /* 11979 */;
-import Divider from "Divider" /* 11981 */;
-import NewBadgeDefault from "NewBadge" /* 11982 */;
-import GuildSearchAndInviteDefault from "GuildSearchAndInvite" /* 11983 */;
+// Module 11984 (renderChannelBadge)
+import components_ChannelBadge from "components/ChannelBadge" /* 11985 */;
+import VocalChannelJoinButtonDefault from "VocalChannelJoinButton" /* 11986 */;
+import Divider from "Divider" /* 11988 */;
+import NewBadgeDefault from "NewBadge" /* 11989 */;
+import GuildSearchAndInviteDefault from "GuildSearchAndInvite" /* 11990 */;
 import size from "module_2" /* 2 */;
 
 const DividerDefault = Divider;

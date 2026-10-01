@@ -1,11 +1,11 @@
-// Module ID: 6613
-// Function ID: 6614
+// Module ID: 6603
+// Function ID: 6604
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [1255, 6614, 2]
+// Dependencies: [1255, 6604, 2]
 
-// Module 6613 (SettingSearchSessionAnalyticsManager)
+// Module 6603 (SettingSearchSessionAnalyticsManager)
 import v1 from "v1" /* 1255 */;
-import Tracking from "Tracking" /* 6614 */;
+import Tracking from "Tracking" /* 6604 */;
 import size from "module_2" /* 2 */;
 
 class SettingSearchSessionAnalyticsManager {

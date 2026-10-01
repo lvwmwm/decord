@@ -1,16 +1,16 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7243
+// Function ID: 7244
 // Name: UserSearchItems
-// Dependencies: [5, 7266, 7267, 4509, 1372, 1074, 3, 2074, 7269, 2]
+// Dependencies: [5, 7244, 7245, 4508, 1372, 1074, 3, 2073, 7247, 2]
 
-// Module 7265 (UserSearchItems)
+// Module 7243 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
-import UserSearchUtils from "UserSearchUtils" /* 7269 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
+import UserSearchUtils from "UserSearchUtils" /* 7247 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7266 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7267 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7244 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7245 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

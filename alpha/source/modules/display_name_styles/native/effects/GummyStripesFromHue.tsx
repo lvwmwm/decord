@@ -1,11 +1,11 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15108
+// Function ID: 15109
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 4866, 1389, 4596, 14356, 2]
+// Dependencies: [32, 19, 21, 4845, 1389, 4595, 14366, 2]
 // Exports: default
 
-// Module 15102 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 14356 */;
+// Module 15108 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 14366 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -38,7 +38,7 @@ function AnimatedStripe(hue) {
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_6 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
 const __initData = { code: "function GummyStripesFromHueTsx1(){const{hue,shift,hslToRgbWorklet,saturation,lightness}=this.__closure;const h=((hue.get()+shift)%360+360)%360;const[r,g,b]=hslToRgbWorklet({h:h,s:saturation,l:lightness});return{backgroundColor:\"rgb(\"+r+\", \"+g+\", \"+b+\")\"};}" };
 const size = fn(2);

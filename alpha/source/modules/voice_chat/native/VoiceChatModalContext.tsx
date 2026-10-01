@@ -1,10 +1,10 @@
-// Module ID: 9066
-// Function ID: 9067
+// Module ID: 9060
+// Function ID: 9061
 // Name: VoiceChatModalContext
 // Dependencies: [19, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 9066 (VoiceChatModalContext)
+// Module 9060 (VoiceChatModalContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext(null);

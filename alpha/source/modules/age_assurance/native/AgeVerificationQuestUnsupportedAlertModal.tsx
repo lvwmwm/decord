@@ -1,13 +1,13 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8061
+// Function ID: 8062
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 5405, 1115, 3039, 5405, 2]
+// Dependencies: [19, 21, 5393, 1115, 3038, 5393, 2]
 // Exports: default
 
-// Module 8072 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8061 (AgeVerificationQuestUnsupportedAlertModal)
 import util from "util" /* 1115 */;
-import _modDef3039 from "module_3039" /* 3039 */;
-import AlertModal from "AlertModal" /* 5405 */;
+import _modDef3038 from "module_3038" /* 3038 */;
+import AlertModal from "AlertModal" /* 5393 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,9 +18,9 @@ const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerif
 export default function AgeVerificationQuestUnsupportedAlertModal() {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3039.gUqXQN);
+  obj.title = intl.string(_modDef3038.gUqXQN);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3039.yBHwMy);
+  obj.content = intl2.string(_modDef3038.yBHwMy);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;

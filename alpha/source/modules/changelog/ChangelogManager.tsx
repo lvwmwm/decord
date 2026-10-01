@@ -1,14 +1,14 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17353
+// Function ID: 17354
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2112, 4880, 6735, 7734, 17333, 573, 11, 17335, 2]
+// Dependencies: [5, 32, 2111, 4859, 6725, 7721, 17354, 573, 11, 17356, 2]
 
-// Module 17332 (ChangelogManager)
+// Module 17353 (ChangelogManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import ChangelogStore from "ChangelogStore" /* 4880 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import ChangelogStore from "ChangelogStore" /* 4859 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 let require = fn;
 const prototype = function ChangelogManager() {

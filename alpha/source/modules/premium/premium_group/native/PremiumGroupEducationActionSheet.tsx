@@ -1,20 +1,20 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 13260
+// Function ID: 13261
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4532, 21, 4866, 576, 6767, 6224, 4862, 1115, 3199, 2]
+// Dependencies: [17, 4531, 21, 4845, 576, 6757, 6214, 4841, 1115, 3198, 2]
 // Exports: default
 
-// Module 13252 (PremiumGroupEducationActionSheet)
+// Module 13260 (PremiumGroupEducationActionSheet)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3199 from "module_3199" /* 3199 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4532 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6224 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6767 */;
+import _modDef3198 from "module_3198" /* 3198 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4531 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6214 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6757 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4866 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -34,7 +34,7 @@ export default function PremiumGroupEducationActionSheet(children) {
   const items1 = [timestampProducer(View, obj3), ];
   const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: null };
   const intl = util.intl;
-  obj6.children = intl.format(_modDef3199.ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
+  obj6.children = intl.format(_modDef3198.ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
   items1[1] = hasOwnProperty(Text_Text.Text, obj6);
   obj2.children = items1;
   obj.children = timestampProducer(View, obj2);

@@ -1,18 +1,18 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14182
+// Function ID: 14183
 // Name: TagGroup
-// Dependencies: [19, 17, 21, 4866, 576, 14175, 14177, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 14183, 14185, 2]
 // Exports: TagGroup
 
-// Module 14174 (TagGroup)
+// Module 14182 (TagGroup)
 import nativeDefault from "native" /* 576 */;
-import Tag from "Tag" /* 14177 */;
+import Tag from "Tag" /* 14185 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { group: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 }, inline: { flexWrap: "nowrap", flexShrink: 1, overflow: "hidden" } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);

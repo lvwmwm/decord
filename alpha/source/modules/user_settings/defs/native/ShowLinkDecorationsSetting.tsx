@@ -1,14 +1,14 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15170
+// Function ID: 15171
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4855, 7612, 504, 14199, 11211, 1115, 2]
+// Dependencies: [4834, 7590, 504, 14207, 11215, 1115, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 15165 (ShowLinkDecorationsSetting)
+// Module 15170 (ShowLinkDecorationsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14199 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14207 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 function useShowLinkDecorationsSettingValue() {
@@ -18,13 +18,13 @@ function useShowLinkDecorationsSettingValue() {
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
   const result = AccessibilityActionCreators.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.OLZFB8);
   },
-  parent: fn(7612).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(7590).MobileUserSettings.ACCESSIBILITY,
   useValue: useShowLinkDecorationsSettingValue,
   onValueChange: onShowLinkDecorationsValueChange
 });

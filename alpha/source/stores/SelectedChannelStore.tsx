@@ -1,10 +1,10 @@
-// Module ID: 2099
-// Function ID: 2100
+// Module ID: 2098
+// Function ID: 2099
 // Name: SelectedChannelStore
-// Dependencies: [2100, 2049, 502, 2045, 4497, 2067, 1993, 4499, 4685, 1074, 2052, 510, 12, 1370, 1086, 4722, 1101, 6929, 504, 573, 2]
+// Dependencies: [2099, 2048, 502, 2044, 4496, 2066, 1993, 4498, 4684, 1074, 2051, 510, 12, 1370, 1086, 4721, 1101, 6920, 504, 573, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 2099 (SelectedChannelStore)
+// Module 2098 (SelectedChannelStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
@@ -12,16 +12,16 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import router_utils from "router_utils" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4722 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 6929 */;
-import GatedChannelStore from "GatedChannelStore" /* 2100 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4721 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 6920 */;
+import GatedChannelStore from "GatedChannelStore" /* 2099 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore from "GuildChannelStore" /* 4497 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildChannelStore from "GuildChannelStore" /* 4496 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 
 require = fn;
 function handleConnectionOpen(sessionId) {
@@ -315,11 +315,11 @@ function navigateAwayFromSelectedIfInaccessible(guildId) {
 function handleGuildRoleChange(guildId) {
   return navigateAwayFromSelectedIfInaccessible(guildId.guildId);
 }
-const ChannelRecord = fn(2049);
+const ChannelRecord = fn(2048);
 ({ isGuildTextChannelType: closure_12, THREAD_CHANNEL_TYPES: map1 } = ChannelRecord);
 const Constants = fn(1074);
 ({ ChannelTypes: closure_21, ME: closure_22, Permissions: closure_23, Routes: closure_24 } = Constants);
-const isGuildHomeChannel = fn(2052).isGuildHomeChannel;
+const isGuildHomeChannel = fn(2051).isGuildHomeChannel;
 const SelectedChannelStore = "SelectedChannelStore";
 let selectedChannelIds = {};
 const dependencyMap = {};

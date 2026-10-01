@@ -1,9 +1,9 @@
 // Module ID: 13775
 // Function ID: 13776
-// Dependencies: [13769]
+// Dependencies: [13763]
 
 // Module 13775
-import _mod13769 from "module_13769" /* 13769 */;
+import _mod13763 from "module_13763" /* 13763 */;
 
 
-export default (arg0, arg1, arg2) => _mod13769(arg0, arg1, arg2) > 0;
+export default (arg0, arg1) => new _mod13763(arg0, arg1).patch;

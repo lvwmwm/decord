@@ -1,16 +1,16 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12872
+// Function ID: 12873
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4866, 576, 4862, 1115, 2]
+// Dependencies: [17, 21, 4845, 576, 4841, 1115, 2]
 // Exports: default
 
-// Module 12864 (UserProfilePrivateInfoBanner)
+// Module 12872 (UserProfilePrivateInfoBanner)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import createStyles from "createStyles" /* 4866 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

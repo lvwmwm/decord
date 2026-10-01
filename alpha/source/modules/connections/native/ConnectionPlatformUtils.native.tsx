@@ -1,10 +1,10 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14709
+// Function ID: 14710
 // Name: ConnectionPlatformUtils
 // Dependencies: [1074, 576, 2]
 // Exports: getConnectionBackgroundColor
 
-// Module 14703 (ConnectionPlatformUtils)
+// Module 14709 (ConnectionPlatformUtils)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;

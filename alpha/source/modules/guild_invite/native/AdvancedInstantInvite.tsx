@@ -1,24 +1,24 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 17883
+// Function ID: 17884
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4509, 1372, 21, 4866, 5531, 5019, 17849, 9480, 17850, 4830, 17851, 1981, 17852, 1115, 6092, 6119, 5475, 576, 6195, 6113, 6817, 1385, 8035, 2]
+// Dependencies: [19, 17, 4508, 1372, 21, 4845, 5519, 4998, 17884, 9474, 17885, 4809, 17886, 1981, 17887, 1115, 6082, 6109, 5463, 576, 6185, 6103, 6807, 1385, 8024, 2]
 // Exports: default
 
-// Module 17848 (AdvancedInstantInvite)
+// Module 17883 (AdvancedInstantInvite)
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8035 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8024 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles({ container: { flexGrow: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
@@ -71,14 +71,14 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequireImpl(17851, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(17886, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
   const callback1 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxAge) {
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequireImpl(17852, dependencyMap.paths);
+      const tmp5 = asyncRequireImpl(17887, dependencyMap.paths);
       const obj2 = { title: null, options: null, value: null, onChange: null };
       const intl = util.intl;
       obj2.title = intl.string(util.t.gKmKP0);
@@ -92,7 +92,7 @@ export default function AdvancedInstantInvite(maxAge) {
   const callback2 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxUses) {
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequireImpl(17852, dependencyMap.paths);
+      const tmp5 = asyncRequireImpl(17887, dependencyMap.paths);
       const obj2 = { title: null, options: null, value: null, onChange: null };
       const intl = util.intl;
       obj2.title = intl.string(util.t["+3vH1h"]);

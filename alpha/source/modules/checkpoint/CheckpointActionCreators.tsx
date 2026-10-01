@@ -1,10 +1,10 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15454
+// Function ID: 15455
 // Name: CheckpointActionCreators
-// Dependencies: [5, 1074, 573, 15450, 1271, 15451, 2]
+// Dependencies: [5, 1074, 573, 15455, 1271, 15456, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, toggleMute
 
-// Module 15449 (CheckpointActionCreators)
+// Module 15454 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -46,7 +46,7 @@ let closure_5 = async function _fetchCheckpointData(arg0, value) {
           let body;
           c4 = 1;
           c5 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {

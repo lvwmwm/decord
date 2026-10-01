@@ -1,20 +1,20 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17653
+// Function ID: 17654
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 7581, 21, 576, 4866, 1115, 5475, 4862, 17616, 17619, 13656, 14712, 15105, 2]
+// Dependencies: [19, 17, 7559, 21, 576, 4845, 1115, 5463, 4841, 17651, 17654, 13664, 14718, 15111, 2]
 // Exports: default
 
-// Module 17618 (GuildSettingsServerTagColorGrid)
+// Module 17653 (GuildSettingsServerTagColorGrid)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const GuildTagConstants = fn(7581);
+const GuildTagConstants = fn(7559);
 ({ GUILD_TAG_BADGE_PALETTE_PRESETS: closure_4, GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: hasOwnProperty, GuildTagBadgeSize: metroRequire } = GuildTagConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { grid: { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 }, defaultIcon: null };
 const rect = { position: "absolute", right: nativeDefault.space.PX_4, bottom: nativeDefault.space.PX_4 };
 obj2.defaultIcon = rect;

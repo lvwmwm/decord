@@ -1,21 +1,21 @@
-// Module ID: 11045
-// Function ID: 11046
+// Module ID: 11049
+// Function ID: 11050
 // Name: computeScrollData
-// Dependencies: [4855, 7570, 11046, 4793, 2]
+// Dependencies: [4834, 7548, 11050, 4772, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 11045 (computeScrollData)
-import NativeChatUtils from "NativeChatUtils" /* 11046 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+// Module 11049 (computeScrollData)
+import NativeChatUtils from "NativeChatUtils" /* 11050 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
-const RowGeneratorConstants = fn(7570);
+const RowGeneratorConstants = fn(7548);
 ({ RowType: c3, SeparatorType: closure_4 } = RowGeneratorConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/computeScrollData.tsx");
 
 export default function computeScrollData(shouldInitialScroll) {
-  ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, jumpType } = shouldInitialScroll);
+  ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, scrollToRowIndexOverride, jumpType } = shouldInitialScroll);
   if (shouldInitialScroll.shouldInitialScroll) {
     if (null == jumpTargetId) {
       const findIndexResult = rows.findIndex((type) => {
@@ -42,29 +42,32 @@ export default function computeScrollData(shouldInitialScroll) {
   }
   let tmp4;
   if (null != scrollToMessageId) {
-    focusTargetId = scrollToMessageId;
-    const findIndexResult1 = rows.findIndex((message) => {
-      let tmp = null != message.message;
-      if (tmp) {
-        tmp = message.message.id === focusTargetId;
+    if (scrollToRowIndexOverride == null) {
+      focusTargetId = scrollToMessageId;
+      const findIndexResult1 = rows.findIndex((message) => {
+        let tmp = null != message.message;
+        if (tmp) {
+          tmp = message.message.id === focusTargetId;
+        }
+        return tmp;
+      });
+      let tmp6;
+      if (-1 !== findIndexResult1) {
+        tmp6 = findIndexResult1;
       }
-      return tmp;
-    });
-    let tmp6;
-    if (-1 !== findIndexResult1) {
-      tmp6 = findIndexResult1;
+      scrollToRowIndexOverride = tmp6;
     }
-    if (null != tmp6) {
-      const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp6, animate: null, highlight: null, position: null };
+    if (null != scrollToRowIndexOverride) {
+      const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: scrollToRowIndexOverride, animate: null, highlight: null, position: null };
       const useReducedMotion = AccessibilityStore.useReducedMotion;
       let tmp10 = !useReducedMotion;
       if (!useReducedMotion) {
-        tmp10 = jumpType !== tmp7(4793).JumpType.INSTANT;
+        tmp10 = jumpType !== tmp7(4772).JumpType.INSTANT;
       }
       obj.animate = tmp10;
       obj.highlight = scrollToMessageId === jumpTargetId;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(11046).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(11050).ChatScrollPosition.TOP;
       }
       obj.position = scrollPosition;
       tmp4 = obj;
@@ -93,8 +96,8 @@ export default function computeScrollData(shouldInitialScroll) {
   }
   return tmp4;
 };
-export const findMessageRowIndex = function findMessageRowIndex(previousRows, ChatTTITracker) {
-  closure_0 = ChatTTITracker;
+export const findMessageRowIndex = function findMessageRowIndex(previousRows, startMessageId) {
+  closure_0 = startMessageId;
   const findIndexResult = previousRows.findIndex((message) => {
     let tmp = null != message.message;
     if (tmp) {

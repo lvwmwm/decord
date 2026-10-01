@@ -1,10 +1,10 @@
-// Module ID: 5049
-// Function ID: 5050
+// Module ID: 5028
+// Function ID: 5029
 // Name: AppAnalyticsUtilsAdditional
 // Dependencies: [2]
 // Exports: getVoiceAnalyticsMetadataAdditional
 
-// Module 5049 (AppAnalyticsUtilsAdditional)
+// Module 5028 (AppAnalyticsUtilsAdditional)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtilsAdditional.native.tsx");

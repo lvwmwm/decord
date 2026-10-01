@@ -1,10 +1,10 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7824
+// Function ID: 7825
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 5375, 5380, 1231, 559, 1091, 2]
+// Dependencies: [5, 1372, 1074, 573, 1271, 5363, 5368, 1231, 559, 1091, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 7837 (BadgeDirectoryActionCreators)
+// Module 7824 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -66,7 +66,7 @@ let closure_10 = async function _fetchBadgeDirectory(arg0, value) {
           closure_131_8 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {

@@ -1,13 +1,13 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 12405
+// Function ID: 12406
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 12376, 6138, 2]
+// Dependencies: [17, 12388, 6128, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 12393 (useBackHandlerSkipPhoneScreens)
+// Module 12405 (useBackHandlerSkipPhoneScreens)
 import _mod17 from "module_17" /* 17 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6138 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12376 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6128 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

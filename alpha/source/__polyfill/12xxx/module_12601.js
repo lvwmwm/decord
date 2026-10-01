@@ -1,20 +1,25 @@
 // Module ID: 12601
 // Function ID: 12602
-// Dependencies: []
-// Exports: severityLevelFromString
+// Dependencies: [12602, 12585, 12581]
 
 // Module 12601
+import eventFromMessage from "eventFromMessage" /* 12585 */;
+import _mod12602 from "module_12602" /* 12602 */;
+import setupIntegration from "module_12581" /* 12581 */;
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
+
+export const linkedErrorsIntegration = setupIntegration.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  return str;
-};
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+  closure_0 = obj.limit || 5;
+  closure_1 = obj.key || "cause";
+  return {
+    name: "LinkedErrors",
+    preprocessEvent(arg0, arg1, getOptions) {
+      const options = getOptions.getOptions();
+      const result = _mod12602.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
+    }
+  };
+});

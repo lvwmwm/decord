@@ -1,14 +1,14 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16857
+// Function ID: 16858
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1074, 2042, 21, 4866, 6095, 16837, 4684, 2029, 7695, 7002, 1115, 576, 6996, 2]
+// Dependencies: [32, 19, 17, 1074, 2041, 21, 4845, 6085, 16858, 4683, 2029, 7683, 6993, 1115, 576, 6987, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 16836 (useReferralProgramCoachmark)
+// Module 16857 (useReferralProgramCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import FastImageDefault from "FastImage" /* 6095 */;
-import _modDef16837 from "module_16837" /* 16837 */;
+import FastImageDefault from "FastImage" /* 6085 */;
+import _modDef16858 from "module_16858" /* 16858 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,15 +18,15 @@ require = fn;
 function ReferralProgramCoachmarkImg() {
   const tmp = closure_9();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: _modDef16837, style: tmp.coachmarkImage };
-  obj.children = jsx(FastImageDefault, { source: _modDef16837, style: tmp.coachmarkImage });
+  const obj2 = { source: _modDef16858, style: tmp.coachmarkImage };
+  obj.children = jsx(FastImageDefault, { source: _modDef16858, style: tmp.coachmarkImage });
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 const View = fn(17).View;
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 200, height: 112 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/referral_program/hooks/native/useReferralProgramCoachmark.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16360
+// Function ID: 16361
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 1074, 21, 7518, 7500, 7571, 6916, 4797, 4866, 576, 2021, 7569, 8308, 7778, 1115, 2]
+// Dependencies: [19, 1074, 21, 7496, 7478, 7549, 6907, 4776, 4845, 576, 2021, 7547, 8299, 7765, 1115, 2]
 
-// Module 16340 (ICYMIMessageRowPreview)
+// Module 16360 (ICYMIMessageRowPreview)
 import UserSettings from "UserSettings" /* 2021 */;
-import createStyles from "createStyles" /* 4866 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7500 */;
-import RowGeneratorDefault from "RowGenerator" /* 7569 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7778 */;
+import createStyles from "createStyles" /* 4845 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7478 */;
+import RowGeneratorDefault from "RowGenerator" /* 7547 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7765 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   if (str === undefined) {
     str = "none";
   }
-  const tmp = messageOptions(4797)();
+  const tmp = messageOptions(4776)();
   let obj = createStyles;
   dependencyMap = obj.createNativeStyleProperties({ seeMoreLabelColor: messageOptions(576).colors.TEXT_DEFAULT })(tmp);
   const RenderEmbeds = UserSettings.RenderEmbeds;
@@ -35,7 +35,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     obj.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay: false, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true });
     return obj;
   }, items);
-  return setting2(messageOptions(8308), {
+  return setting2(messageOptions(8299), {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {
@@ -163,11 +163,11 @@ export const MessageRowPreview = noop.memo((message) => {
     obj.pointerEvents = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(6916)(message);
+  const tmp3 = merged(6907)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   const obj2 = {};
-  const merged2 = Object.assign(message(7571).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7549).DEFAULT_OPTIONS);
   obj2.ignoreMentioned = true;
   obj2.renderReplies = false;
   obj2.renderThreadEmbeds = false;

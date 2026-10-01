@@ -1,10 +1,10 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11435
+// Function ID: 11436
 // Name: buildPollResources
-// Dependencies: [11423, 12, 2]
+// Dependencies: [11431, 12, 2]
 
-// Module 11427 (buildPollResources)
-import buildPlatformPollResources from "buildPlatformPollResources" /* 11423 */;
+// Module 11435 (buildPollResources)
+import buildPlatformPollResources from "buildPlatformPollResources" /* 11431 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

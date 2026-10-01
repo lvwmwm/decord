@@ -1,13 +1,13 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14743
+// Function ID: 14744
 // Name: QuestsIcon
-// Dependencies: [19, 21, 576, 4560, 14738, 2]
+// Dependencies: [19, 21, 576, 4559, 14744, 2]
 // Exports: QuestsIcon
 
-// Module 14737 (QuestsIcon)
+// Module 14743 (QuestsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod14738 from "module_14738" /* 14738 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod14744 from "module_14744" /* 14744 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const QuestsIcon = function QuestsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14738, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14744, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

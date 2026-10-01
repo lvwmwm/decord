@@ -1,12 +1,12 @@
-// Module ID: 9032
-// Function ID: 9033
+// Module ID: 9026
+// Function ID: 9027
 // Name: VoiceChatHooks
-// Dependencies: [502, 4885, 504, 2]
+// Dependencies: [502, 4864, 504, 2]
 // Exports: useIsConnectedToVoiceChannel, useIsConnectedToVoiceChannelForId
 
-// Module 9032 (VoiceChatHooks)
+// Module 9026 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 const require = globalThis.__r;
 

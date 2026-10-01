@@ -1,11 +1,11 @@
-// Module ID: 10762
-// Function ID: 10763
+// Module ID: 10759
+// Function ID: 10760
 // Name: SpendEarnOrbsLottie
-// Dependencies: [19, 21, 9606, 10763, 2]
+// Dependencies: [19, 21, 9600, 10760, 2]
 
-// Module 10762 (SpendEarnOrbsLottie)
-import LottieIcon from "LottieIcon" /* 9606 */;
-import _mod10763 from "module_10763" /* 10763 */;
+// Module 10759 (SpendEarnOrbsLottie)
+import LottieIcon from "LottieIcon" /* 9600 */;
+import _mod10760 from "module_10760" /* 10760 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 
 export const SpendEarnOrbsLottie = noop.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod10763, ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod10760, ref, layers, markers: items });
 });

@@ -1,14 +1,14 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11218
+// Function ID: 11219
 // Name: PresenceSubscriptionsStore
-// Dependencies: [32, 4906, 2005, 11215, 2040, 504, 573, 2]
+// Dependencies: [32, 4885, 2005, 11219, 2039, 504, 573, 2]
 
-// Module 11214 (PresenceSubscriptionsStore)
+// Module 11218 (PresenceSubscriptionsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11215 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11219 */;
 import _slicedToArray from "module_32" /* 32 */;
-import PresenceStore from "PresenceStore" /* 4906 */;
+import PresenceStore from "PresenceStore" /* 4885 */;
 
 function handleConnectionOpenOrResumed() {
   closure_5 = {};
@@ -17,7 +17,7 @@ function handleConnectionOpenOrResumed() {
 const INVITE_EXPIRATION_MS = fn(2005).INVITE_EXPIRATION_MS;
 let closure_5 = {};
 let closure_6 = {};
-const delayedCall = new fn(2040).DelayedCall(3000, function flush() {
+const delayedCall = new fn(2039).DelayedCall(3000, function flush() {
   const items = [];
   const entries = Object.entries(closure_6);
   while (tmp4 !== undefined) {

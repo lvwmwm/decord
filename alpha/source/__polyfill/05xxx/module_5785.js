@@ -1,0 +1,9 @@
+// Module ID: 5785
+// Function ID: 5786
+// Dependencies: [1121]
+
+// Module 5785
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "2735b94e62f2bc71613cf7e1aec9c3fe", name: "img_account_sync_twitch_white", type: "svg" });

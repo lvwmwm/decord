@@ -1,14 +1,14 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15109
+// Function ID: 15110
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1074, 21, 4866, 576, 15104, 10563, 1389, 15099, 4831, 1241, 4830, 14353, 6767, 15096, 5477, 1115, 5489, 1092, 15105, 12, 5632, 4813, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4845, 576, 15110, 10555, 1389, 15105, 4810, 1241, 4809, 14363, 6757, 15102, 5465, 1115, 5477, 1092, 15111, 12, 5621, 4792, 2]
 // Exports: default
 
-// Module 15103 (DisplayNameStylesGradientPickerSheet)
+// Module 15109 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import HapticUtils from "HapticUtils" /* 4831 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import HapticUtils from "HapticUtils" /* 4810 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { body: { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 }, gradientContainer: null, dropperContainer: null, dropper: null, gradient: null, optionContainer: null, swatchWrapper: null, pressable: null, selectedRing: null, option: null, checkmarkOverlay: null, checkmark: null, resetButtonContainer: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.gradientContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };
@@ -48,7 +48,7 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj10.alignItems = "center";
 obj10.justifyContent = "center";
 obj2.checkmarkOverlay = obj10;
-const size1 = { width: fn(15104).CHECKMARK_SIZE, height: fn(15104).CHECKMARK_SIZE };
+const size1 = { width: fn(15110).CHECKMARK_SIZE, height: fn(15110).CHECKMARK_SIZE };
 obj2.checkmark = size1;
 let obj8 = { height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj2.resetButtonContainer = { alignSelf: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.space.PX_8 };

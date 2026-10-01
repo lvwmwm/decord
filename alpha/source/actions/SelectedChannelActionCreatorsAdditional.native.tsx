@@ -1,25 +1,25 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 5910
+// Function ID: 5911
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [2045, 2067, 5922, 4499, 2099, 4685, 1372, 4885, 5923, 5011, 5924, 4557, 5925, 5926, 4830, 5939, 1981, 13367, 1255, 573, 2]
+// Dependencies: [2044, 2066, 5911, 4498, 2098, 4684, 1372, 4864, 5912, 4990, 5913, 4556, 5914, 5915, 4809, 5928, 1981, 13375, 1255, 573, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 5921 (SelectedChannelActionCreatorsAdditional)
+// Module 5910 (SelectedChannelActionCreatorsAdditional)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import v1 from "v1" /* 1255 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5922 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5911 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5923).STAGE_BOOSTING_SHEET_KEY;
+const STAGE_BOOSTING_SHEET_KEY = fn(5912).STAGE_BOOSTING_SHEET_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
 

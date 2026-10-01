@@ -1,12 +1,12 @@
-// Module ID: 13703
-// Function ID: 13704
+// Module ID: 13711
+// Function ID: 13712
 // Name: LeaveServerAlert
-// Dependencies: [1074, 21, 5405, 1115, 5405, 9247, 2]
+// Dependencies: [1074, 21, 5393, 1115, 5393, 9241, 2]
 // Exports: default
 
-// Module 13703 (LeaveServerAlert)
+// Module 13711 (LeaveServerAlert)
 import Constants from "Constants" /* 1074 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9241 */;
 import jsxProd from "jsxProd" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -39,12 +39,12 @@ export default function LeaveServerAlert(guild) {
   };
   const intl3 = tmp2(1115).intl;
   obj4.text = intl3.string(guild(1115).t.p89ACt);
-  const items = [closure_4(guild(5405).AlertActionButton, obj4, "confirm"), ];
+  const items = [closure_4(guild(5393).AlertActionButton, obj4, "confirm"), ];
   const obj5 = { variant: "secondary", text: null };
   const intl4 = tmp2(1115).intl;
   obj5.text = intl4.string(guild(1115).t.gm1Vej);
-  items[1] = closure_4(guild(5405).AlertActionButton, obj5, "cancel");
+  items[1] = closure_4(guild(5393).AlertActionButton, obj5, "cancel");
   obj3.children = items;
-  obj.actions = closure_5(guild(5405).AlertActions, obj3);
-  return closure_4(guild(5405).AlertModal, obj);
+  obj.actions = closure_5(guild(5393).AlertActions, obj3);
+  return closure_4(guild(5393).AlertModal, obj);
 };

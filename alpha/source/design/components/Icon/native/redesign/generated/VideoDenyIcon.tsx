@@ -1,13 +1,13 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13062
+// Function ID: 13063
 // Name: VideoDenyIcon
-// Dependencies: [19, 21, 576, 4560, 13055, 2]
+// Dependencies: [19, 21, 576, 4559, 13063, 2]
 // Exports: VideoDenyIcon
 
-// Module 13054 (VideoDenyIcon)
+// Module 13062 (VideoDenyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod13055 from "module_13055" /* 13055 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod13063 from "module_13063" /* 13063 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const VideoDenyIcon = function VideoDenyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13055, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13063, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

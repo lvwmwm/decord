@@ -1,10 +1,10 @@
-// Module ID: 5641
-// Function ID: 5642
+// Module ID: 5630
+// Function ID: 5631
 // Name: ClipsConstants
 // Dependencies: [1091, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds, getDefaultImageTrackWidthFraction, snapTrackRotationDeg
 
-// Module 5641 (ClipsConstants)
+// Module 5630 (ClipsConstants)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
 

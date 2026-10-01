@@ -1,12 +1,12 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12039
+// Function ID: 12040
 // Name: SearchTokenStreamerModeUtils
-// Dependencies: [4709, 1074, 12026, 2]
+// Dependencies: [4708, 1074, 12036, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 12031 (SearchTokenStreamerModeUtils)
-import SearchUtils from "SearchUtils" /* 12026 */;
-import StreamerModeStore from "StreamerModeStore" /* 4709 */;
+// Module 12039 (SearchTokenStreamerModeUtils)
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12036 */;
+import StreamerModeStore from "StreamerModeStore" /* 4708 */;
 
 require = fn;
 function getValidOrderedFilterTokens(type, items) {
@@ -19,7 +19,7 @@ function getValidOrderedFilterTokens(type, items) {
   }
   const items2 = [tmp];
   [tmp5] = items2;
-  let result = SearchUtils.isGuildLikeSearchContext(type);
+  let result = isGuildLikeSearchContext.isGuildLikeSearchContext(type);
   if (!result) {
     result = type.type === constants2.DMS && !tmp5.hidePersonalInformation;
     const tmp8 = type.type === constants2.DMS && !tmp5.hidePersonalInformation;
@@ -69,7 +69,7 @@ export const isInChannelFilterSupported = function isInChannelFilterSupported(se
     tmp = items;
   }
   [tmp3] = tmp;
-  let result = SearchUtils.isGuildLikeSearchContext(selectedSearchContext);
+  let result = isGuildLikeSearchContext.isGuildLikeSearchContext(selectedSearchContext);
   if (!result) {
     result = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;
     const tmp6 = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;

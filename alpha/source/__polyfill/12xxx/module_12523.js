@@ -1,148 +1,58 @@
 // Module ID: 12523
 // Function ID: 12524
-// Dependencies: [12521]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: [12524, 12525, 12528]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 12523
-import _mod12521 from "module_12521" /* 12521 */;
+import _mod12524 from "module_12524" /* 12524 */;
 
 require = arg1;
-const dependencyMap = arg6;
+const dependencyMap = {};
+let closure_3 = {};
 
-export const isMatchingPattern = function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const isStringResult = _mod12521.isString(arr);
-  if (!isStringResult) {
-    return isStringResult;
-  } else {
-    if (tmpResult.isRegExp(test)) {
-      let isMatch = test.test(arr);
-    } else {
-      isMatch = tmp(12521).isString(test);
-      if (isMatch) {
-        if (flag) {
-          let hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
-        }
+export const addHandler = function addHandler(arg0, arg1) {
+  dependencyMap[arg0] = dependencyMap[arg0] || [];
+  dependencyMap[arg0].push(arg1);
+};
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp2[arg0] = true;
+    try {
+      fn();
+    } catch (tmp5) {
+      if (_mod12524.DEBUG_BUILD) {
+        const logger = tmp6(12525).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + tmp, tmp5);
       }
-      const tmpResult2 = tmp(12521);
+      tmp6 = require;
     }
-    tmpResult = tmp(12521);
   }
 };
-export const safeJoin = function safeJoin(arg0, arg1) {
-  if (Array.isArray(arg0)) {
-    const items = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      try {
-        const push = items.push;
-        if (obj.isVueViewModel(tmp2)) {
-          push("[VueViewModel]");
-        } else {
-          const _String = String;
-          push(String(tmp2));
-        }
-        num = num + 1;
-        obj = _mod12521;
-      } catch (err) {
-        arr.push(tmp);
-      }
-    }
-    return items.join(arg1);
-  } else {
-    return "";
-  }
-};
-export const snipLine = function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > length - 5) {
-      bound = length;
-    }
-    if (bound === length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
-  }
-};
-export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  return items.some((test) => {
-    if (flag === undefined) {
-      flag = false;
-    }
-    const isStringResult = _mod12521.isString(closure_0);
-    if (!isStringResult) {
-      return isStringResult;
-    } else {
-      if (tmpResult.isRegExp(test)) {
-        let isMatch = test.test(obj);
-      } else {
-        isMatch = tmp(12521).isString(test);
-        if (isMatch) {
-          if (flag) {
-            let hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
-          }
-        }
-        const tmpResult2 = tmp(12521);
-      }
-      tmpResult = tmp(12521);
-    }
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    dependencyMap[item] = undefined;
   });
 };
-export const truncate = function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  let tmp8 = arg0;
+  if (arg0) {
+    tmp8 = dependencyMap[arg0];
   }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
+  if (tmp8) {
+    const iter = tmp8[Symbol.iterator]();
+    if (iter !== undefined) {
+      try {
+        tmp15(arg1);
+      } catch (tmp18) {
+        if (_mod12524.DEBUG_BUILD) {
+          const logger = tmp19(12525).logger;
+          logger.error(tmp2 + tmp6 + tmp3 + tmp19(12528).getFunctionName(tmp7) + tmp4, tmp18);
+          const tmp19Result = tmp19(12528);
+        }
       }
     }
+    const nextResult = iter.next();
   }
-  return combined;
 };

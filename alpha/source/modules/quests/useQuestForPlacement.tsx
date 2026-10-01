@@ -1,16 +1,16 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14859
+// Function ID: 14860
 // Name: useQuestForPlacement
-// Dependencies: [19, 7308, 7311, 1091, 10886, 10908, 10887, 504, 14854, 7309, 7307, 2]
+// Dependencies: [19, 7286, 7289, 1091, 10887, 10909, 10888, 504, 14860, 7287, 7285, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop
 
-// Module 14853 (useQuestForPlacement)
+// Module 14859 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1091 */;
-import QuestsEligibility from "QuestsEligibility" /* 10886 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10908 */;
+import QuestsEligibility from "QuestsEligibility" /* 10887 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 10909 */;
 import noop from "module_19" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7308 */;
-import QuestStore from "QuestStore" /* 7311 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7286 */;
+import QuestStore from "QuestStore" /* 7289 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,16 +30,16 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, arg2) {
     if ("active" === obj2.getState()) {
       if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
         if (obj4.canRefreshAd(MOBILE_HOME_DOCK_AREA)) {
-          const currentQuests = tmp(10887).fetchCurrentQuests();
-          const tmpResult = tmp(10887);
-          const questToDeliver = tmp(10887).fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, arg2);
-          const tmpResult3 = tmp(10887);
+          const currentQuests = tmp(10888).fetchCurrentQuests();
+          const tmpResult = tmp(10888);
+          const questToDeliver = tmp(10888).fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, arg2);
+          const tmpResult3 = tmp(10888);
         }
       }
       obj4 = AdDeliveryStore;
     } else if (null != fetchedAt) {
-      tmp(10887).clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
-      const tmpResult4 = tmp(10887);
+      tmp(10888).clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
+      const tmpResult4 = tmp(10888);
     }
     obj2 = DiscordAppStateDefault;
   }

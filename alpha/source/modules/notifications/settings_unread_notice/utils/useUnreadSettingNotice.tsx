@@ -1,18 +1,18 @@
-// Module ID: 11160
-// Function ID: 11161
+// Module ID: 11164
+// Function ID: 11165
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 2049, 9806, 504, 11161, 2]
+// Dependencies: [32, 19, 2048, 9798, 504, 11165, 2]
 // Exports: default
 
-// Module 11160 (useUnreadSettingNotice)
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11161 */;
+// Module 11164 (useUnreadSettingNotice)
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11165 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let closure_5 = fn(2049).CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;
+let closure_5 = fn(2048).CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");
 

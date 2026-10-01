@@ -1,15 +1,15 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17502
+// Function ID: 17503
 // Name: FriendsActionCreators
-// Dependencies: [1074, 573, 1101, 16800, 2]
+// Dependencies: [1074, 573, 1101, 16823, 2]
 
-// Module 17470 (FriendsActionCreators)
+// Module 17502 (FriendsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const router_utils = tmp(1101);
-const trackFriendListClickedDefault = tmp5(16800);
+const trackFriendListClickedDefault = tmp5(16823);
 const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("actions/FriendsActionCreators.tsx");
 

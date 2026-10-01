@@ -1,10 +1,10 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14603
+// Function ID: 14604
 // Name: ConsentActionCreators
 // Dependencies: [1074, 573, 1115, 1271, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 14597 (ConsentActionCreators)
+// Module 14603 (ConsentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;

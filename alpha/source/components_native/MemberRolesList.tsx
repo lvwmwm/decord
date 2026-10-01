@@ -1,18 +1,18 @@
-// Module ID: 11543
-// Function ID: 11544
+// Module ID: 11551
+// Function ID: 11552
 // Name: MemberRolesList
-// Dependencies: [19, 17, 2102, 21, 4866, 504, 10612, 2]
+// Dependencies: [19, 17, 2101, 21, 4845, 504, 10604, 2]
 // Exports: default
 
-// Module 11543 (MemberRolesList)
-import RolePillDefault from "RolePill" /* 10612 */;
+// Module 11551 (MemberRolesList)
+import RolePillDefault from "RolePill" /* 10604 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_6 = createStyles.createStyles({ wrapper: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/MemberRolesList.tsx");

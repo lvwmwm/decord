@@ -1,13 +1,13 @@
-// Module ID: 11922
-// Function ID: 11923
+// Module ID: 11929
+// Function ID: 11930
 // Name: ThreadPlusIcon
-// Dependencies: [19, 21, 576, 4560, 11923, 2]
+// Dependencies: [19, 21, 576, 4559, 11930, 2]
 // Exports: ThreadPlusIcon
 
-// Module 11922 (ThreadPlusIcon)
+// Module 11929 (ThreadPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod11923 from "module_11923" /* 11923 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod11930 from "module_11930" /* 11930 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ThreadPlusIcon = function ThreadPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11923, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11930, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

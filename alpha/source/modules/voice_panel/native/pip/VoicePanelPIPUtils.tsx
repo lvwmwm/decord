@@ -1,27 +1,27 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17156
+// Function ID: 17157
 // Name: VoicePanelPIPUtils
-// Dependencies: [4882, 4888, 502, 11958, 17135, 4887, 11959, 9098, 13727, 576, 2]
+// Dependencies: [4861, 4867, 502, 11965, 17157, 4866, 11966, 9092, 13735, 576, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 17134 (VoicePanelPIPUtils)
+// Module 17156 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 576 */;
-import participantHasVideo from "participantHasVideo" /* 9098 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 13727 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4882 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4888 */;
+import participantHasVideo from "participantHasVideo" /* 9092 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 13735 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const VoicePanelConstants = fn(11958);
+const VoicePanelConstants = fn(11965);
 const SECONDARY_PIP_TOP_MARGIN = VoicePanelConstants.SECONDARY_PIP_TOP_MARGIN;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-const VoicePanelPIPConstants = fn(17135);
+const VoicePanelPIPConstants = fn(17157);
 ({ VoicePanelPIPModes: closure_7, PIPReferenceDimensions } = VoicePanelPIPConstants);
 const SquarePIPReferenceDimensions = VoicePanelPIPConstants.SquarePIPReferenceDimensions;
 const SquareActivityPIPReferenceDimensions = VoicePanelPIPConstants.SquareActivityPIPReferenceDimensions;
-const ParticipantTypes = fn(4887).ParticipantTypes;
-const MorphablePanelConstants = fn(11959);
+const ParticipantTypes = fn(4866).ParticipantTypes;
+const MorphablePanelConstants = fn(11966);
 const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;
 const set = new Set();

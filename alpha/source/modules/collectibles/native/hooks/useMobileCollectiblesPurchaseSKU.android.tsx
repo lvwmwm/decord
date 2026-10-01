@@ -1,13 +1,13 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10679
+// Function ID: 10680
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1372, 504, 8509, 10478, 2]
+// Dependencies: [1372, 504, 8501, 10470, 2]
 // Exports: default
 
-// Module 10683 (useMobileCollectiblesPurchaseSKU)
+// Module 10679 (useMobileCollectiblesPurchaseSKU)
 import initialize from "initialize" /* 504 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8509 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10478 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8501 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10470 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

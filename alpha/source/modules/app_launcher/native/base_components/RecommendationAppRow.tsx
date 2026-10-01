@@ -1,12 +1,12 @@
-// Module ID: 11778
-// Function ID: 11779
+// Module ID: 11786
+// Function ID: 11787
 // Name: RecommendationAppRow
-// Dependencies: [19, 21, 1397, 11768, 2]
+// Dependencies: [19, 21, 1397, 11776, 2]
 // Exports: default
 
-// Module 11778 (RecommendationAppRow)
+// Module 11786 (RecommendationAppRow)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import AppLauncherHomeScreen from "AppLauncherHomeScreen" /* 11768 */;
+import AppLauncherHomeScreen from "AppLauncherHomeScreen" /* 11776 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

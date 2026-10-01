@@ -1,29 +1,29 @@
-// Module ID: 10414
-// Function ID: 10415
+// Module ID: 10406
+// Function ID: 10407
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4855, 7832, 1074, 21, 4866, 576, 1613, 504, 7824, 1241, 6767, 4862, 1115, 2583, 10409, 10415, 2]
+// Dependencies: [19, 17, 4834, 7819, 1074, 21, 4845, 576, 1613, 504, 7811, 1241, 6757, 4841, 1115, 2582, 10401, 10407, 2]
 // Exports: default
 
-// Module 10414 (GiftingBadgeInfoActionSheet)
+// Module 10406 (GiftingBadgeInfoActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import _modDef2583 from "module_2583" /* 2583 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10409 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10415 */;
+import _modDef2582 from "module_2582" /* 2582 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10401 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10407 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7832 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7819 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(7832).getSingleRequirementThreshold;
+let closure_7 = fn(7819).getSingleRequirementThreshold;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, headerContainer: null, title: null, description: null, tierCards: null, tierCard: null, iconWrapper: null };
 let obj3 = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.headerContainer = { paddingHorizontal: nativeDefault.space.PX_8 };
@@ -45,7 +45,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const tmp = closure_11();
   _require = tmp;
   let items = [BadgeDirectoryStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(7824).BadgeId.GIFTING));
+  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(7811).BadgeId.GIFTING));
   let obj = require("initialize");
   const items1 = [AccessibilityStore];
   importDefault = require("initialize").useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -60,11 +60,11 @@ export default function GiftingBadgeInfoActionSheet() {
   const obj5 = { style: tmp.headerContainer, children: null };
   let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
   let intl = require("util").intl;
-  obj6.children = intl.string(_modDef2583["0MB2C6"]);
+  obj6.children = intl.string(_modDef2582["0MB2C6"]);
   const items3 = [closure_9(require("Text/Text").Text, obj6), ];
   let obj7 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = require("util").intl;
-  obj7.children = intl2.string(_modDef2583.k9sNVH);
+  obj7.children = intl2.string(_modDef2582.k9sNVH);
   items3[1] = closure_9(require("Text/Text").Text, obj7);
   obj5.children = items3;
   const items4 = [closure_10(View, obj5), ];
@@ -104,8 +104,8 @@ export default function GiftingBadgeInfoActionSheet() {
           const obj6 = { variant: "text-md/normal", color: "text-subtle", children: null };
           const intl = tmp7(1115).intl;
           const obj7 = { count: tmp3 };
-          obj6.children = intl.formatToPlainString(_modDef2583.qvx9E4, obj7);
-          tmp12Result = React7(tmp7(4862).Text, obj6);
+          obj6.children = intl.formatToPlainString(_modDef2582.qvx9E4, obj7);
+          tmp12Result = React7(tmp7(4841).Text, obj6);
         }
         items[2] = tmp12Result;
         obj.children = items;

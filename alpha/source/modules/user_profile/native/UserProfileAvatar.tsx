@@ -1,19 +1,19 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 7884
+// Function ID: 7885
 // Name: UserProfileAvatar
-// Dependencies: [19, 17, 7823, 6825, 21, 7882, 7898, 7830, 7901, 1115, 2]
+// Dependencies: [19, 17, 7810, 6815, 21, 7869, 7885, 7817, 7888, 1115, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 7897 (UserProfileAvatar)
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7882 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 7898 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7901 */;
+// Module 7884 (UserProfileAvatar)
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7869 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 7885 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7888 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const TrackUserProfileActions = fn(7823).TrackUserProfileActions;
-const AVATAR_SIZE_VARIANT = fn(6825).AVATAR_SIZE_VARIANT;
+const TrackUserProfileActions = fn(7810).TrackUserProfileActions;
+const AVATAR_SIZE_VARIANT = fn(6815).AVATAR_SIZE_VARIANT;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const forwardRefResult = noop.forwardRef((backgroundColor, ref) => {

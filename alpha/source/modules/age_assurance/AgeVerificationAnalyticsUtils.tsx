@@ -1,12 +1,12 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8045
+// Function ID: 8046
 // Name: AgeVerificationAnalyticsUtils
-// Dependencies: [2045, 1074, 1241, 2, 8057]
+// Dependencies: [2044, 1074, 1241, 2, 8046]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 8056 (AgeVerificationAnalyticsUtils)
+// Module 8045 (AgeVerificationAnalyticsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
@@ -16,7 +16,7 @@ export const AgeVerificationModalEntryPoint = { GET_STARTED_MODAL: "get_started_
 export const AgeVerificationModalVersion = { PRIMARY: 1, [1]: "PRIMARY", RETRY: 2, [2]: "RETRY", EXPRESSIVE_PRIMARY: 3, [3]: "EXPRESSIVE_PRIMARY", SAFETY_FLOWS: 4, [4]: "SAFETY_FLOWS", EXPRESSIVE_V2: 5, [5]: "EXPRESSIVE_V2" };
 export const AgeVerificationModalCta = { LEARN_MORE: "learn_more", GET_STARTED: "get_started", SYSTEM_DMS_LEARN_MORE: "system_dms_learn_more", TRUSTED_PROVIDERS: "trusted_providers", METHOD_SELECT: "method_select", LOG_OUT: "log_out" };
 export const AgeVerificationDmCta = { RETRY: "retry", CONNECT_TO_TEEN: "connect_to_teen", MANUAL_REVIEW: "manual_review" };
-export const NsfwSpaceWarningModalType = fn(8057).NsfwSpaceWarningModalType;
+export const NsfwSpaceWarningModalType = fn(8046).NsfwSpaceWarningModalType;
 export const NsfwSpaceWarningModalCta = { NSFW_CHANNEL_AGREE_CTA: "nsfw_channel_agree_cta", NSFW_CHANNEL_DISAGREE_CTA: "nsfw_channel_disagree_cta" };
 export const trackAgeVerificationModalViewed = function trackAgeVerificationModalViewed(memo, EXPRESSIVE_PRIMARY, entryPoint) {
   AnalyticsUtilsDefault.track(AnalyticEvents.AGE_VERIFICATION_MODAL_VIEWED, { modal_session_id: memo, modal_version: EXPRESSIVE_PRIMARY, entry_point: entryPoint });

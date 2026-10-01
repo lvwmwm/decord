@@ -1,11 +1,11 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16608
+// Function ID: 16609
 // Name: VibegrationsTodoAgents
-// Dependencies: [16559, 2]
+// Dependencies: [16581, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 16586 (VibegrationsTodoAgents)
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16559 */;
+// Module 16608 (VibegrationsTodoAgents)
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16581 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTodoAgents.tsx");

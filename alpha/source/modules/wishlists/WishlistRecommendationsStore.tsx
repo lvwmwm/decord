@@ -1,12 +1,12 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10453
+// Function ID: 10454
 // Name: WishlistRecommendationsStore
-// Dependencies: [2112, 504, 573, 2]
+// Dependencies: [2111, 504, 573, 2]
 
-// Module 10461 (WishlistRecommendationsStore)
+// Module 10453 (WishlistRecommendationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
 function handleUserSettingsStoreUpdate() {
   if (locale === LocaleStore.locale) {

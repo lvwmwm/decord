@@ -1,15 +1,15 @@
-// Module ID: 6778
-// Function ID: 6779
+// Module ID: 6768
+// Function ID: 6769
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 5093, 1074, 21, 504, 6779, 6780, 1115, 6782, 6789, 1241, 5046, 6794, 2]
+// Dependencies: [19, 5072, 1074, 21, 504, 6769, 6770, 1115, 6772, 6779, 1241, 5025, 6784, 2]
 // Exports: default
 
-// Module 6778 (ApplicationConnectionCard)
+// Module 6768 (ApplicationConnectionCard)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6780 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6770 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5093 */;
+import ApplicationStore from "ApplicationStore" /* 5072 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

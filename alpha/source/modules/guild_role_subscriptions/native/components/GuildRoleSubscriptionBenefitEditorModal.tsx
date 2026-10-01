@@ -1,23 +1,23 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 17840
+// Function ID: 17841
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4509, 1372, 17804, 14956, 1074, 21, 4866, 576, 6033, 13638, 5632, 4820, 1177, 1115, 1613, 17806, 5019, 8249, 17808, 9472, 17809, 2]
+// Dependencies: [5, 32, 19, 17, 4508, 1372, 17839, 14962, 1074, 21, 4845, 576, 6022, 13646, 5621, 4799, 1177, 1115, 1613, 17841, 4998, 8239, 17843, 9466, 17844, 2]
 
-// Module 17805 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 17840 (GuildRoleSubscriptionBenefitEditorModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import TrashIcon from "TrashIcon" /* 4820 */;
-import useChannelName from "useChannelName" /* 5019 */;
-import Pressables from "Pressables" /* 5632 */;
-import FormStylesDefault from "FormStyles" /* 13638 */;
+import TrashIcon from "TrashIcon" /* 4799 */;
+import useChannelName from "useChannelName" /* 4998 */;
+import Pressables from "Pressables" /* 5621 */;
+import FormStylesDefault from "FormStyles" /* 13646 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17804 */;
-import TextStyles from "TextStyles" /* 6033 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17839 */;
+import TextStyles from "TextStyles" /* 6022 */;
 
 const require = globalThis.__r;
 
@@ -38,11 +38,11 @@ function DeleteButton(onDelete) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildRoleSubscriptionsConstants = fn(14956);
+const GuildRoleSubscriptionsConstants = fn(14962);
 ({ GuildRoleSubscriptionBenefitTypes: c10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: closure_11, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = GuildRoleSubscriptionsConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }, scrollContainer: { flexGrow: 1 }, deleteButton: { flexDirection: "row", marginTop: 16, alignItems: "center", justifyContent: "center" }, deleteIcon: { width: 20, height: 20 }, deleteLabel: null };
 let obj4 = {};
 const merged = Object.assign(TextStyles(fn(1074).Fonts.PRIMARY_SEMIBOLD, nativeDefault.unsafe_rawColors.RED_400, 16));
@@ -145,7 +145,7 @@ export default noop.forwardRef((benefitType) => {
     return arg1;
   };
   const tmp = closure_15();
-  const tmp4 = value(13638)();
+  const tmp4 = value(13646)();
   [value] = GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState();
   dependencyMap = tmp6;
   [first1, _slicedToArray] = GuildRoleSubscriptionBenefitEditorModalStateStore.useEmojiIdState();
@@ -204,7 +204,7 @@ export default noop.forwardRef((benefitType) => {
               closure_2(useChannelName.computeChannelName(id, UserStore, RelationshipStore));
             }
       };
-      let tmp25 = closure_13(tmp2(17806), obj);
+      let tmp25 = closure_13(tmp2(17841), obj);
       let tmp26 = closure_13;
     } else {
       let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength: maxLength2, value, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -212,7 +212,7 @@ export default noop.forwardRef((benefitType) => {
       obj2.placeholder = intl9.string(tmp20(1115).t["kV54/Y"]);
       obj2.onChange = tmp6;
       obj2.clearButtonVisibility = tmp20(1177).ClearButtonVisibility.WITH_CONTENT;
-      tmp25 = closure_13(tmp20(8249).FormInput, obj2);
+      tmp25 = closure_13(tmp20(8239).FormInput, obj2);
       tmp26 = closure_13;
     }
     let obj3 = { style: tmp.container, children: null };
@@ -232,18 +232,18 @@ export default noop.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [tmp26(tmp2(17808), obj4), ];
+    const items = [tmp26(tmp2(17843), obj4), ];
     let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj6 = { paddingBottom: value(1613)().bottom + 32 + 16 };
     items1[1] = obj6;
     obj5.contentContainerStyle = items1;
     const obj7 = { style: tmp4.header, children: stringResult1 };
-    const items2 = [tmp26(tmp2(9472), obj7), tmp25, , , , , ];
+    const items2 = [tmp26(tmp2(9466), obj7), tmp25, , , , , ];
     const obj8 = { style: tmp4.header, children: null };
     const intl7 = tmp20(1115).intl;
     obj8.children = intl7.string(tmp20(1115).t.sMOuuS);
-    items2[2] = tmp26(tmp2(9472), obj8);
+    items2[2] = tmp26(tmp2(9466), obj8);
     const obj9 = { emoji: null, guildId: null, onChange: null };
     const obj10 = { emojiId: first1, emojiName: first2 };
     obj9.emoji = obj10;
@@ -252,16 +252,16 @@ export default noop.forwardRef((benefitType) => {
       closure_4(emojiId.emojiId);
       closure_6(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(17809), obj9);
+    items2[3] = tmp26(tmp2(17844), obj9);
     const obj11 = { style: tmp4.header, children: null };
     const tmp28 = first2;
     const tmp29 = closure_6;
-    const tmp2Result = tmp2(9472);
+    const tmp2Result = tmp2(9466);
     const intl8 = tmp20(1115).intl;
     obj11.children = intl8.string(tmp20(1115).t["74JctW"]);
-    items2[4] = tmp26(tmp2(9472), obj11);
+    items2[4] = tmp26(tmp2(9466), obj11);
     const obj12 = { style: tmp4.textInput, showTopContainer: false, multiline: true, maxLength, numberOfLines: 3, value: first3, onChange: tmp9[1], placeholder: stringResult2 };
-    items2[5] = tmp26(tmp20(8249).FormInput, obj12);
+    items2[5] = tmp26(tmp20(8239).FormInput, obj12);
     let tmp26Result = null;
     if (null != benefitType.onDelete) {
       const obj13 = {

@@ -1,24 +1,24 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16688
+// Function ID: 16689
 // Name: SearchFilterUtils
-// Dependencies: [7499, 7498, 1074, 1115, 11508, 9772, 13584, 5600, 9275, 16666, 11894, 8937, 12027, 12047, 12024, 4830, 9194, 1981, 12044, 2]
+// Dependencies: [7477, 7476, 1074, 1115, 11516, 9764, 13592, 5588, 9269, 16689, 11901, 8930, 12034, 12055, 12031, 4809, 9188, 1981, 12052, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 16665 (SearchFilterUtils)
+// Module 16688 (SearchFilterUtils)
 import util from "util" /* 1115 */;
-import AtIcon from "AtIcon" /* 5600 */;
-import TrackingConstants from "TrackingConstants" /* 7498 */;
-import RobotIcon from "RobotIcon" /* 8937 */;
-import CalendarIcon from "CalendarIcon" /* 9275 */;
-import AttachmentIcon from "AttachmentIcon" /* 9772 */;
-import UserIcon from "UserIcon" /* 11508 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11894 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12024 */;
-import SearchTokensDefault from "SearchTokens" /* 12027 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12047 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13584 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 16666 */;
-import SearchConstants from "SearchConstants" /* 7499 */;
+import AtIcon from "AtIcon" /* 5588 */;
+import TrackingConstants from "TrackingConstants" /* 7476 */;
+import RobotIcon from "RobotIcon" /* 8930 */;
+import CalendarIcon from "CalendarIcon" /* 9269 */;
+import AttachmentIcon from "AttachmentIcon" /* 9764 */;
+import UserIcon from "UserIcon" /* 11516 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11901 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12031 */;
+import SearchTokensDefault from "SearchTokens" /* 12034 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12055 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13592 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 16689 */;
+import SearchConstants from "SearchConstants" /* 7477 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -216,7 +216,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ar
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(12027));
+  const keys = Object.keys(items(12034));
   const item = keys.forEach((token) => {
     if (obj.isSearchFilterTokenType(token)) {
       const plainText = SearchTokensDefault[token].plainText;

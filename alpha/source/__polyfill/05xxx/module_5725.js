@@ -1,90 +1,111 @@
 // Module ID: 5725
 // Function ID: 5726
-// Dependencies: [5726, 5727, 5729, 5730, 5731, 5735, 5736, 5737, 5738, 5723]
+// Dependencies: [5712, 5715]
 
 // Module 5725
-import _mod5723 from "module_5723" /* 5723 */;
-import _modDef5726 from "module_5726" /* 5726 */;
+import _mod5712 from "module_5712" /* 5712 */;
+import _modDef5715 from "module_5715" /* 5715 */;
 
 require = arg1;
 importDefault = arg2;
 const dependencyMap = arg6;
 
 export default {
-  parseAppMarkers(byteLength, flag2) {
-    if (_modDef5726.USE_TIFF) {
-      if (tmpResult.isTiffFile(byteLength)) {
-        const tmpResult16 = tmp(5727);
-        const findTiffOffsetsResult = tmp(5727).findTiffOffsets();
-        const obj = { fileType: { value: "tiff", description: "TIFF" } };
-        return _mod5723.objectAssign({}, findTiffOffsetsResult, obj);
-      }
-      tmpResult = tmp(5727);
+  isWebpFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      tmp = _mod5712.getStringFromDataView(dataView, 0, 4) === "RIFF";
     }
-    if (_modDef5726.USE_JPEG) {
-      if (tmpResult17.isJpegFile(byteLength)) {
-        const tmpResult18 = tmp(5729);
-        const findJpegOffsetsResult = tmp(5729).findJpegOffsets(byteLength);
-        const obj2 = { fileType: { value: "jpeg", description: "JPEG" } };
-        return _mod5723.objectAssign({}, findJpegOffsetsResult, obj2);
-      }
-      tmpResult17 = tmp(5729);
+    if (tmp) {
+      tmp = _mod5712.getStringFromDataView(dataView, 8, 4) === "WEBP";
     }
-    if (_modDef5726.USE_PNG) {
-      if (tmpResult19.isPngFile(byteLength)) {
-        const tmpResult20 = tmp(5730);
-        const findPngOffsetsResult = tmp(5730).findPngOffsets(byteLength, flag2);
-        const obj3 = { fileType: { value: "png", description: "PNG" } };
-        return _mod5723.objectAssign({}, findPngOffsetsResult, obj3);
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    let flag = false;
+    let num = 12;
+    let hasAppMarkers = false;
+    let vp8xChunkOffset;
+    let iccChunks;
+    let xmpChunks;
+    let tiffHeaderOffset;
+    if (20 < byteLength.byteLength) {
+      while (true) {
+        let tmp9 = require;
+        let obj = _mod5712;
+        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
+        let uint32 = byteLength.getUint32(num + 4, true);
+        let tmp13 = importDefault;
+        let flag3 = flag;
+        if (_modDef5715.USE_EXIF) {
+          if ("EXIF" === stringFromDataView) {
+            let tmp9Result = tmp9(5712);
+            let sum = num + 8;
+            let sum1 = sum;
+            if (tmp9Result.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
+              sum1 = sum + 6;
+            }
+            let tmp22 = sum1;
+            flag3 = true;
+            let sum4 = tmp;
+            let tmp20 = tmp2;
+            let tmp21 = tmp3;
+            let sum2 = uint32;
+            if (uint32 % 2 !== 0) {
+              sum2 = uint32 + 1;
+            }
+            let sum3 = num + (8 + sum2);
+            flag = flag3;
+            num = sum3;
+            tmp = sum4;
+            tmp2 = tmp20;
+            tmp3 = tmp21;
+            let tmp4 = tmp22;
+            hasAppMarkers = flag3;
+            vp8xChunkOffset = sum4;
+            iccChunks = tmp20;
+            xmpChunks = tmp21;
+            tiffHeaderOffset = tmp22;
+            if (sum3 + 8 >= byteLength.byteLength) {
+              break;
+            }
+          }
+        }
+        if (tmp13(5715).USE_XMP) {
+          if ("XMP " === stringFromDataView) {
+            let obj2 = { dataOffset: num + 8, length: uint32 };
+            let items = [obj2];
+            flag3 = true;
+            sum4 = tmp;
+            tmp20 = tmp2;
+            tmp21 = items;
+            tmp22 = tmp4;
+          }
+        }
+        if (tmp13(5715).USE_ICC) {
+          if ("ICCP" === stringFromDataView) {
+            let obj3 = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
+            let items1 = [obj3];
+            flag3 = true;
+            sum4 = tmp;
+            tmp20 = items1;
+            tmp21 = tmp3;
+            tmp22 = tmp4;
+          }
+        }
+        sum4 = tmp;
+        tmp20 = tmp2;
+        tmp21 = tmp3;
+        tmp22 = tmp4;
+        if ("VP8X" === stringFromDataView) {
+          sum4 = num + 8;
+          flag3 = true;
+          tmp20 = tmp2;
+          tmp21 = tmp3;
+          tmp22 = tmp4;
+        }
       }
-      tmpResult19 = tmp(5730);
     }
-    if (_modDef5726.USE_HEIC) {
-      if (tmpResult21.isHeicFile(byteLength)) {
-        const tmpResult22 = tmp(5731);
-        const findHeicOffsetsResult = tmp(5731).findHeicOffsets(byteLength);
-        const obj4 = { fileType: { value: "heic", description: "HEIC" } };
-        return _mod5723.objectAssign({}, findHeicOffsetsResult, obj4);
-      }
-      tmpResult21 = tmp(5731);
-    }
-    if (_modDef5726.USE_AVIF) {
-      if (tmpResult23.isAvifFile(byteLength)) {
-        const tmpResult24 = tmp(5735);
-        const findAvifOffsetsResult = tmp(5735).findAvifOffsets(byteLength);
-        const obj5 = { fileType: { value: "avif", description: "AVIF" } };
-        return _mod5723.objectAssign({}, findAvifOffsetsResult, obj5);
-      }
-      tmpResult23 = tmp(5735);
-    }
-    if (_modDef5726.USE_WEBP) {
-      if (tmpResult25.isWebpFile(byteLength)) {
-        const tmpResult26 = tmp(5736);
-        const findOffsetsResult = tmp(5736).findOffsets(byteLength);
-        const obj6 = { fileType: { value: "webp", description: "WebP" } };
-        return _mod5723.objectAssign({}, findOffsetsResult, obj6);
-      }
-      tmpResult25 = tmp(5736);
-    }
-    if (_modDef5726.USE_GIF) {
-      if (tmpResult27.isGifFile(byteLength)) {
-        const tmpResult28 = tmp(5737);
-        const findOffsetsResult1 = tmp(5737).findOffsets(byteLength);
-        const obj7 = { fileType: { value: "gif", description: "GIF" } };
-        return _mod5723.objectAssign({}, findOffsetsResult1, obj7);
-      }
-      tmpResult27 = tmp(5737);
-    }
-    if (_modDef5726.USE_XMP) {
-      if (tmpResult29.isXMLFile(byteLength)) {
-        const tmpResult30 = tmp(5738);
-        const findOffsetsResult2 = tmp(5738).findOffsets(byteLength);
-        const obj8 = { fileType: { value: "xml", description: "XML" } };
-        return _mod5723.objectAssign({}, findOffsetsResult2, obj8);
-      }
-      tmpResult29 = tmp(5738);
-    }
-    const error = new Error("Invalid image format");
-    throw error;
+    return { hasAppMarkers, tiffHeaderOffset, xmpChunks, iccChunks, vp8xChunkOffset };
   }
 };

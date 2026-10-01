@@ -1,11 +1,11 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13385
+// Function ID: 13386
 // Name: getCachedUseAltGateway
-// Dependencies: [13378, 2]
+// Dependencies: [13386, 2]
 // Exports: default
 
-// Module 13377 (getCachedUseAltGateway)
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13378 */;
+// Module 13385 (getCachedUseAltGateway)
+import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gateway/getCachedUseAltGateway.native.tsx");

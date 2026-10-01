@@ -1,14 +1,14 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14658
+// Function ID: 14659
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4862, 1115, 2487, 2]
+// Dependencies: [21, 4841, 1115, 2486, 2]
 // Exports: default
 
-// Module 14652 (useScheduleTimeControlsRowProps)
+// Module 14658 (useScheduleTimeControlsRowProps)
 import jsxProd from "jsxProd" /* 21 */;
 import util from "util" /* 1115 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import Text_Text from "Text/Text" /* 4862 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import Text_Text from "Text/Text" /* 4841 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -16,20 +16,20 @@ const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSchedul
 
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "a" };
+    const obj2 = { subLabel: null, trailing: "Array" };
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = util.intl;
-    obj3.children = intl.string(_modDef2487.fOBIZH);
+    obj3.children = intl.string(_modDef2486.fOBIZH);
     obj2.subLabel = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
     return obj2;
   } else {
     const obj4 = { subLabel: null, trailing: null };
     const intl2 = util.intl;
     const obj5 = { count: arr.length };
-    obj4.subLabel = intl2.formatToPlainString(_modDef2487.XfwcpX, obj5);
+    obj4.subLabel = intl2.formatToPlainString(_modDef2486.XfwcpX, obj5);
     const intl3 = util.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2487;
+    const tmp11 = _modDef2486;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {

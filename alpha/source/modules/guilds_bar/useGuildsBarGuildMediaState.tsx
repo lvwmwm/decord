@@ -1,13 +1,13 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16191
+// Function ID: 16192
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [19, 13449, 504, 16172, 16173, 16174, 2]
+// Dependencies: [19, 13458, 504, 16192, 16193, 16194, 2]
 // Exports: default
 
-// Module 16171 (useGuildsBarGuildMediaState)
-import GuildMediaStateShadowCompare from "GuildMediaStateShadowCompare" /* 16173 */;
+// Module 16191 (useGuildsBarGuildMediaState)
+import GuildMediaStateShadowCompare from "GuildMediaStateShadowCompare" /* 16193 */;
 import noop from "module_19" /* 19 */;
-import GuildMediaStateStore from "GuildMediaStateStore" /* 13449 */;
+import GuildMediaStateStore from "GuildMediaStateStore" /* 13458 */;
 
 const require = globalThis.__r;
 

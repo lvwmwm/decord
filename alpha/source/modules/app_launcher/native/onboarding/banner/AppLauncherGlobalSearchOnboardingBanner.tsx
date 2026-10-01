@@ -1,20 +1,20 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11809
+// Function ID: 11810
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1484, 2042, 21, 4866, 576, 5570, 10800, 1115, 2]
+// Dependencies: [19, 17, 1484, 2041, 21, 4845, 576, 5558, 10797, 1115, 2]
 // Exports: default
 
-// Module 11801 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 11809 (AppLauncherGlobalSearchOnboardingBanner)
 import nativeDefault from "native" /* 576 */;
-import AppsIcon from "AppsIcon" /* 5570 */;
+import AppsIcon from "AppsIcon" /* 5558 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const DEFAULT_CONTENT_PADDING = fn(1484).DEFAULT_CONTENT_PADDING;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { appsIcon: null, appsIconImage: null };
 let size = { height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
 obj2.appsIcon = size;
@@ -62,7 +62,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj.targetMeasurements = size;
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = size1;
-    tmp3 = jsx(markAsDismissed(10800).Coachmark, {
+    tmp3 = jsx(markAsDismissed(10797).Coachmark, {
       renderImgComponent: function appsIcon() {
           const obj = { style: closure_2.appsIcon, children: jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }) };
           return <View style={closure_2.appsIcon}>{jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE })}</View>;

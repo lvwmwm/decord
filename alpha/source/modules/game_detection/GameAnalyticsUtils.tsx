@@ -1,12 +1,12 @@
-// Module ID: 4995
-// Function ID: 4996
+// Module ID: 4974
+// Function ID: 4975
 // Name: GameAnalyticsUtils
-// Dependencies: [2017, 4996, 1364, 2]
+// Dependencies: [2017, 4975, 1364, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4995 (GameAnalyticsUtils)
+// Module 4974 (GameAnalyticsUtils)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4996 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4975 */;
 import DetectableGameStore from "DetectableGameStore" /* 2017 */;
 
 require = fn;
@@ -25,7 +25,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "channelId", gameId: "cursor", exe: "justifyContent", distributor: "max", sku: "add", gameMetadata: "data", rawExePath: "Array" };
+    return { gameName: "Array", gameId: "channel", exe: "HTTP", distributor: "o", sku: "WireType", gameMetadata: "track", rawExePath: "channel" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

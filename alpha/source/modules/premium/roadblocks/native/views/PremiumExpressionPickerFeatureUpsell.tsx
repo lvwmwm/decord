@@ -1,20 +1,20 @@
-// Module ID: 9989
-// Function ID: 9990
+// Module ID: 9981
+// Function ID: 9982
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 4866, 576, 1613, 6239, 1094, 4596, 9621, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 1613, 6229, 1094, 4595, 9615, 2]
 // Exports: default
 
-// Module 9989 (PremiumExpressionPickerFeatureUpsell)
+// Module 9981 (PremiumExpressionPickerFeatureUpsell)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6239 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6229 */;
 import noop from "module_19" /* 19 */;
 
-const PremiumFeatureUpsellDefault = tmp(9621);
+const PremiumFeatureUpsellDefault = tmp(9615);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { container: null };
   const rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0 };
@@ -29,9 +29,10 @@ export default function PremiumExpressionPickerFeatureUpsell(bottomSheetIndex) {
   bottomSheetIndex = bottomSheetIndex.bottomSheetIndex;
   const inPortalKeyboard = bottomSheetIndex.inPortalKeyboard;
   const shouldShow = bottomSheetIndex.shouldShow;
+  ({ featureName, analyticsLocation } = bottomSheetIndex);
   const tmp3 = useKeyboardIsOpenDefault();
   ReanimatedRexport;
-  const fn = function b() {
+  const fn = function _() {
     const value1 = shouldShow.get();
     if (!value1) {
       return value1;
@@ -50,8 +51,8 @@ export default function PremiumExpressionPickerFeatureUpsell(bottomSheetIndex) {
   let tmp7 = null;
   if (!tmp3) {
     const obj = { style: tmp4.container, children: null };
-    const obj2 = { shouldShow: tmp6, featureName: bottomSheetIndex.featureName };
-    obj.children = jsx(PremiumFeatureUpsellDefault, { shouldShow: tmp6, featureName: bottomSheetIndex.featureName });
+    const obj2 = { shouldShow: tmp6, featureName, analyticsLocation };
+    obj.children = jsx(PremiumFeatureUpsellDefault, { shouldShow: tmp6, featureName, analyticsLocation });
     tmp7 = <View style={tmp4.container}>{null}</View>;
   }
   return tmp7;

@@ -1,16 +1,16 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12226
+// Function ID: 12227
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4754, 1115, 2519, 2]
+// Dependencies: [19, 4753, 1115, 2518, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 12218 (useCalculatePowerupCardStatus)
+// Module 12226 (useCalculatePowerupCardStatus)
 import util from "util" /* 1115 */;
-import _modDef2519 from "module_2519" /* 2519 */;
+import _modDef2518 from "module_2518" /* 2518 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const PowerupActiveStatusType = fn(4754).PowerupActiveStatusType;
+const PowerupActiveStatusType = fn(4753).PowerupActiveStatusType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/useCalculatePowerupCardStatus.tsx");
 
@@ -47,12 +47,12 @@ export const useCalculatePowerupCardStatus = function useCalculatePowerupCardSta
         }
         const obj4 = { type: "active", statusText: null };
         const obj5 = { perkName: title };
-        obj4.statusText = intl2.formatToPlainString(_modDef2519.WRRYUT, obj5);
+        obj4.statusText = intl2.formatToPlainString(_modDef2518.WRRYUT, obj5);
         tmp5 = obj4;
       } else if (tmp.type !== tmp4.INACTIVE) {
         const obj = { type: "active", statusText: null };
         const intl = util.intl;
-        obj.statusText = intl.string(_modDef2519.FFLkmx);
+        obj.statusText = intl.string(_modDef2518.FFLkmx);
         tmp5 = obj;
       }
     }

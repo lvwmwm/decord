@@ -1,13 +1,13 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16118
+// Function ID: 16119
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 1980, 1074, 504, 4827, 7915, 4558, 1115, 3231, 2]
+// Dependencies: [19, 1980, 1074, 504, 4806, 7902, 4557, 1115, 3230, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 16098 (useDefaultAuthorizationNotifiers)
+// Module 16118 (useDefaultAuthorizationNotifiers)
 import util from "util" /* 1115 */;
-import _modDef3231 from "module_3231" /* 3231 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
+import _modDef3230 from "module_3230" /* 3230 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 
@@ -60,7 +60,7 @@ export const useDefaultAuthorizationNotifiers = function useDefaultAuthorization
             if (flag) {
               const obj2 = { content: null, key: "account-linked-toast" };
               const intl = util.intl;
-              obj2.content = intl.string(_modDef3231.uG6teD);
+              obj2.content = intl.string(_modDef3230.uG6teD);
               ToastActionCreatorsDefault.open(obj2);
             }
           }

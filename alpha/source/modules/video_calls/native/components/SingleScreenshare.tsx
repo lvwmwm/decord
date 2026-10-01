@@ -1,18 +1,18 @@
-// Module ID: 9684
-// Function ID: 9685
+// Module ID: 9678
+// Function ID: 9679
 // Name: SingleScreenshare
-// Dependencies: [19, 9028, 21, 4866, 576, 5494, 9685, 5067, 2]
+// Dependencies: [19, 9022, 21, 4845, 576, 5482, 9679, 5046, 2]
 // Exports: default
 
-// Module 9684 (SingleScreenshare)
+// Module 9678 (SingleScreenshare)
 import nativeDefault from "native" /* 576 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5067 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5046 */;
 import noop from "module_19" /* 19 */;
 
-const ChannelCallStore = fn(9028);
+const ChannelCallStore = fn(9022);
 ({ resetFocus: c2, toggleFocus: c3 } = ChannelCallStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/video_calls/native/components
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(5494)(() => {
+  channel(5482)(() => {
     closure_1_2();
   });
   const obj = {
@@ -41,5 +41,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(9685), obj);
+  return tmp3(channel(9679), obj);
 };

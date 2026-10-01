@@ -1,13 +1,13 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9428
+// Function ID: 9429
 // Name: NsfwServerInviteWarningAlert
-// Dependencies: [19, 21, 5405, 9435, 8054, 8056, 5405, 1115, 5401, 2]
+// Dependencies: [19, 21, 5393, 9429, 8043, 8045, 5393, 1115, 5389, 2]
 // Exports: showNsfwServerInviteWarningAlert
 
-// Module 9434 (NsfwServerInviteWarningAlert)
-import useAlertStore from "useAlertStore" /* 5401 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8054 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8056 */;
+// Module 9428 (NsfwServerInviteWarningAlert)
+import useAlertStore from "useAlertStore" /* 5389 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8043 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8045 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

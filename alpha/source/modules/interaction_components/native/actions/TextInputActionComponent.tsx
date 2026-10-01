@@ -1,12 +1,12 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17409
+// Function ID: 17410
 // Name: TextInputActionComponent
-// Dependencies: [32, 19, 21, 7764, 17382, 1979, 6227, 6703, 6221, 2]
+// Dependencies: [32, 19, 21, 7751, 17406, 1979, 6217, 6693, 6211, 2]
 
-// Module 17385 (TextInputActionComponent)
+// Module 17409 (TextInputActionComponent)
 import Server from "Server" /* 1979 */;
-import ComponentStateContext from "ComponentStateContext" /* 7764 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 17382 */;
+import ComponentStateContext from "ComponentStateContext" /* 7751 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 17406 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,16 +49,16 @@ export default noop.memo((type) => {
   if (Server.TextInputComponentStyle.SMALL === style) {
     const obj5 = {};
     const merged = Object.assign(obj3);
-    let tmp7 = jsx(tmp(6227).TextField, {});
+    let tmp7 = jsx(tmp(6217).TextField, {});
   } else if (tmp(1979).TextInputComponentStyle.PARAGRAPH === style) {
     const obj6 = {};
     const merged1 = Object.assign(obj3);
-    tmp7 = jsx(tmp(6703).TextAreaField, {});
+    tmp7 = jsx(tmp(6693).TextAreaField, {});
   }
   let tmp16 = tmp7;
   if (null != label) {
     const obj7 = { label, required, errorMessage: error, children: tmp7 };
-    tmp16 = jsx(tmp(6221).Input, { label, required, errorMessage: error, children: tmp7 });
+    tmp16 = jsx(tmp(6211).Input, { label, required, errorMessage: error, children: tmp7 });
   }
   return tmp16;
 });

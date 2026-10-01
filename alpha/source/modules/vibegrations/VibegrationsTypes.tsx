@@ -1,10 +1,10 @@
-// Module ID: 5567
-// Function ID: 5568
+// Module ID: 5555
+// Function ID: 5556
 // Name: VibegrationsTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesNativeAppChannels, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit, vibegrationsCreateFlags
 
-// Module 5567 (VibegrationsTypes)
+// Module 5555 (VibegrationsTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2, NATIVE_APP_CHANNELS: 4 });
@@ -33,8 +33,8 @@ export const isProjectShared = function isProjectShared(flags) {
   }
   return num & frozen.SHAREABLE;
 };
-export const projectUsesNativeAppChannels = function projectUsesNativeAppChannels(flags) {
-  let num = flags.flags;
+export const projectUsesNativeAppChannels = function projectUsesNativeAppChannels(project) {
+  let num = project.flags;
   if (num == null) {
     num = 0;
   }

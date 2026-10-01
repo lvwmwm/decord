@@ -126,7 +126,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                       closure_129_4 = undefined;
                       c3 = 1;
                       c4 = 1;
-                      return { value: "flex", done: true };
+                      return { value: "flex", done: null };
                     }
                   } else if (arg0 === 1) {
                     c4 = 3;
@@ -155,7 +155,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                       obj9.op = str(tmp2[2]).getSpanOperation(tmp2);
                       obj9.attributes = closure_129_1;
                       obj5.startSpanManual(obj9, (() => {
-                        closure_0 = closure_2(/* F128609 */ function() { ... });
+                        closure_0 = closure_2(/* F128811 */ function() { ... });
                         return () => { ... };
                       })());
                       let obj7 = str(tmp2[2]);
@@ -168,7 +168,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                     obj10.op = str(tmp2[2]).getSpanOperation(tmp2);
                     obj10.attributes = closure_129_1;
                     obj2.startSpan(obj10, (() => {
-                      closure_0 = closure_2(/* F128611 */ function() { ... });
+                      closure_0 = closure_2(/* F128813 */ function() { ... });
                       return () => { ... };
                     })());
                     let obj4 = str(tmp2[2]);
@@ -252,7 +252,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                                       closure_129_4 = undefined;
                                       c3 = 1;
                                       c4 = 1;
-                                      return { value: "flex", done: true };
+                                      return { value: "flex", done: null };
                                     }
                                   } else if (arg0 === 1) {
                                     c4 = 3;
@@ -339,7 +339,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                                             closure_0 = [...arguments];
                                             c3 = 0;
                                             c4 = 0;
-                                            const iter = (/* F123195 */ function*() { ... })();
+                                            const iter = (/* F123387 */ function*() { ... })();
                                             iter.next();
                                             return iter;
                                           });

@@ -1,13 +1,13 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15854
+// Function ID: 15855
 // Name: getJankScreenName
-// Dependencies: [15839, 4723, 15840, 2]
+// Dependencies: [15855, 4722, 15856, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 15838 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 4723 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 15840 */;
-import JankScreenConstants from "JankScreenConstants" /* 15839 */;
+// Module 15854 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 4722 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 15856 */;
+import JankScreenConstants from "JankScreenConstants" /* 15855 */;
 import size from "module_2" /* 2 */;
 
 function resolveScreenName(items) {
@@ -188,7 +188,7 @@ export default function getJankScreenName() {
         obj7.rendered = items.concat(items2);
         ({ focused, rendered } = obj7);
         if (0 === focused.length) {
-          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "channel" };
+          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "paddingHorizontal" };
           obj9.screen = screen;
           let obj15 = obj9;
         } else {
@@ -348,10 +348,10 @@ export const getBaseScreenName = function getBaseScreenName() {
   }
   return tmp6;
 };
-export const isModalScreenName = function isModalScreenName(baseScreenName) {
-  return baseScreenName.startsWith("" + modal + ":") || baseScreenName === modal;
+export const isModalScreenName = function isModalScreenName(str) {
+  return str.startsWith("" + modal + ":") || str === modal;
 };
-export const getWideViewScreenName = function getWideViewScreenName(baseScreenName) {
+export const getWideViewScreenName = function getWideViewScreenName(arg0) {
   const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
   let rootState = null;
   if (null != rootNavigationRef) {
@@ -409,9 +409,9 @@ export const getWideViewScreenName = function getWideViewScreenName(baseScreenNa
       }
       combined = null;
       if (name2 === guilds) {
-        if (baseScreenName != null) {
+        if (arg0 != null) {
           const _HermesInternal = HermesInternal;
-          combined = "" + tmp24 + tmp25 + baseScreenName;
+          combined = "" + tmp24 + tmp25 + arg0;
         } else {
           const found = items.find((name) => name.name === guilds);
           let channelId;

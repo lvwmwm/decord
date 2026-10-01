@@ -1,11 +1,11 @@
-// Module ID: 8339
-// Function ID: 8340
+// Module ID: 8330
+// Function ID: 8331
 // Name: useSteamWebsiteUrl
-// Dependencies: [2001, 1074, 504, 8340, 8338, 2011, 2]
+// Dependencies: [2001, 1074, 504, 8331, 8329, 2011, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8339 (useSteamWebsiteUrl)
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8340 */;
+// Module 8330 (useSteamWebsiteUrl)
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8331 */;
 import GameStore from "GameStore" /* 2001 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
         return null;
       } else {
         const websites = game.websites;
-        const found = websites.find((category) => category.category === id(8338).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+        const found = websites.find((category) => category.category === id(8329).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         if (found != null) {
           const url = found.url;
         }

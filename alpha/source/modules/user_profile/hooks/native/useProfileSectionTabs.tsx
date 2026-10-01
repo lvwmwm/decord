@@ -1,14 +1,14 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12869
+// Function ID: 12870
 // Name: useProfileSectionTabs
-// Dependencies: [32, 19, 7823, 2]
-// Exports: useProfileSectionTabs, useProfileTabIndices
+// Dependencies: [32, 19, 7810, 2]
+// Exports: getProfileTabSectionIndex, useProfileSectionTabs, useProfileTabIndices
 
-// Module 12861 (useProfileSectionTabs)
+// Module 12869 (useProfileSectionTabs)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const UserProfileSections = fn(7823).UserProfileSections;
+const UserProfileSections = fn(7810).UserProfileSections;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 
@@ -34,6 +34,17 @@ export function useProfileTabIndices(arg0, isRecentActivityMobileEnabled, arg2) 
   obj.wishlistTabIndex = num;
   return obj;
 }
+export const getProfileTabSectionIndex = function getProfileTabSectionIndex(initialTab, wishlistTabIndex) {
+  if (UserProfileSections.WISHLIST === initialTab) {
+    return wishlistTabIndex.wishlistTabIndex;
+  } else if (tmp3.WIDGETS === initialTab) {
+    return tmp;
+  } else if (tmp3.ACTIVITY === initialTab) {
+    return tmp2;
+  } else if (tmp3.MAIN === initialTab) {
+    return 0;
+  }
+};
 export const useProfileSectionTabs = function useProfileSectionTabs(boardTabIndex) {
   ({ initialUserProfileSection: _slicedToArray, wishlistTabIndex } = boardTabIndex);
   boardTabIndex = boardTabIndex.boardTabIndex;

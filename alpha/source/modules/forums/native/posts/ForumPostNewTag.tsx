@@ -1,17 +1,17 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 11708
+// Function ID: 11709
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4866, 576, 1177, 2]
+// Dependencies: [19, 21, 4845, 576, 1177, 2]
 // Exports: default
 
-// Module 11700 (ForumPostNewTag)
+// Module 11708 (ForumPostNewTag)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { container: { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND } };
 let closure_3 = createStyles.createStyles(obj2);
 const size = fn(2);

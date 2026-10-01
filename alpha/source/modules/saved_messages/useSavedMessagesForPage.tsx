@@ -1,16 +1,16 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13065
+// Function ID: 13066
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 11360, 7481, 13058, 504, 1370, 2]
+// Dependencies: [32, 19, 11368, 7459, 13066, 504, 1370, 2]
 // Exports: default
 
-// Module 13057 (useSavedMessagesForPage)
+// Module 13065 (useSavedMessagesForPage)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7481 */;
-import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13058 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7459 */;
+import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13066 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11360 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11368 */;
 
 require = fn;
 function getSavedMessagesForType(arg0) {
@@ -28,7 +28,7 @@ const result = size.fileFinishedImporting("modules/saved_messages/useSavedMessag
 export default function useSavedMessagesForPage() {
   let ALL = arg0;
   if (arg0 === undefined) {
-    ALL = ALL(7481).SavedMessageSortTypes.ALL;
+    ALL = ALL(7459).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;

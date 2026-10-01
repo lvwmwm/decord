@@ -1,10 +1,10 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16110
+// Function ID: 16111
 // Name: useForwardedRef
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 16092 (useForwardedRef)
+// Module 16110 (useForwardedRef)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

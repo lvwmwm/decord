@@ -1,13 +1,13 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16806
+// Function ID: 16807
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1372, 10580, 1074, 21, 1364, 4866, 16784, 4596, 5476, 4853, 5632, 4862, 5489, 504, 4708, 5011, 2]
+// Dependencies: [32, 19, 17, 1372, 10572, 1074, 21, 1364, 4845, 16807, 4595, 5464, 4832, 5621, 4841, 5477, 504, 4707, 4990, 2]
 
-// Module 16783 (ChannelDetailsTopic)
-import UserUtilsDefault from "UserUtils" /* 4708 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4853 */;
-import ChannelUtils from "ChannelUtils" /* 5011 */;
-import spring from "spring" /* 5476 */;
+// Module 16806 (ChannelDetailsTopic)
+import UserUtilsDefault from "UserUtils" /* 4707 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4832 */;
+import ChannelUtils from "ChannelUtils" /* 4990 */;
+import spring from "spring" /* 5464 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -187,7 +187,7 @@ function PrivateChannelDetailsTopic(channel) {
     const obj3 = { textAlign: channel.textAlign };
     obj2.style = obj3;
     obj2.children = stateFromStores;
-    tmp4 = closure_11(channel(4862).Text, obj2);
+    tmp4 = closure_11(channel(4841).Text, obj2);
   }
   return tmp4;
 }
@@ -201,19 +201,19 @@ function GroupDMChannelDetailsTopic(channel) {
     const obj3 = { textAlign: channel.textAlign };
     obj2.style = obj3;
     obj2.children = stateFromStores;
-    tmp4 = closure_11(channel(4862).Text, obj2);
+    tmp4 = closure_11(channel(4841).Text, obj2);
   }
   return tmp4;
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const ChannelDetailsConstants = fn(10580);
+const ChannelDetailsConstants = fn(10572);
 ({ CHANNEL_TOPIC_LINE_CLAMP: closure_8, SPRING_CHANNEL_DETAILS: closure_9 } = ChannelDetailsConstants);
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const PlatformUtils = fn(1364);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_15 = createStyles.createStyles({ hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, topic: { overflow: "hidden" }, gradient: { flex: 1, flexGrow: 1 }, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
 const EMPTY_STYLE = {};
 const constants = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };

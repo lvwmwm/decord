@@ -1,11 +1,11 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7508
+// Function ID: 7509
 // Name: ConversationsAnalytics
-// Dependencies: [2045, 1074, 1241, 2]
+// Dependencies: [2044, 1074, 1241, 2]
 
-// Module 7530 (ConversationsAnalytics)
+// Module 7508 (ConversationsAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

@@ -1,16 +1,16 @@
-// Module ID: 11932
-// Function ID: 11933
+// Module ID: 11939
+// Function ID: 11940
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 11647, 4596, 4867, 5476, 2]
+// Dependencies: [32, 19, 11655, 4595, 4846, 5464, 2]
 // Exports: default
 
-// Module 11932 (useChatInputFloatingBounce)
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+// Module 11939 (useChatInputFloatingBounce)
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ChatInputConstants = fn(11647);
+const ChatInputConstants = fn(11655);
 ({ CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: closure_4, CHAT_INPUT_FLOATING_COLLAPSED_SCALE: hasOwnProperty, CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG: metroRequire, CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG: closure_7 } = ChatInputConstants);
 let closure_8 = { code: "function useChatInputFloatingBounceTsx1(finished){const{runOnJS,setEnterFinished}=this.__closure;if(finished===true){runOnJS(setEnterFinished)(true);}}" };
 let closure_9 = { code: "function useChatInputFloatingBounceTsx2(finished){const{runOnJS,handleExitFinished}=this.__closure;if(finished===true){runOnJS(handleExitFinished)();}}" };

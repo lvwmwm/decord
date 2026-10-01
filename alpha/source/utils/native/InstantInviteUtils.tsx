@@ -1,20 +1,20 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 9473
+// Function ID: 9474
 // Name: utils/InstantInviteUtils
-// Dependencies: [2045, 4497, 4499, 1074, 1115, 9263, 504, 2]
+// Dependencies: [2044, 4496, 4498, 1074, 1115, 9257, 504, 2]
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 9479 (utils/InstantInviteUtils)
+// Module 9473 (utils/InstantInviteUtils)
 import util from "util" /* 1115 */;
-import canViewInviteModal from "canViewInviteModal" /* 9263 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4497 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+import canViewInviteModal from "canViewInviteModal" /* 9257 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let GuildChannelStore = fn(4497);
+let GuildChannelStore = fn(4496);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
 const Permissions = fn(1074).Permissions;

@@ -1,16 +1,16 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 7697
+// Function ID: 7698
 // Name: VoiceSessionUtils
-// Dependencies: [19, 7267, 2045, 1372, 7710, 504, 7617, 5279, 1115, 12, 2]
+// Dependencies: [19, 7245, 2044, 1372, 7698, 504, 7595, 5258, 1115, 12, 2]
 // Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent, useSortedVoiceSessionParticipants
 
-// Module 7709 (VoiceSessionUtils)
-import useMessageAuthor from "useMessageAuthor" /* 5279 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7617 */;
-import maybeSortByProbability from "maybeSortByProbability" /* 7710 */;
+// Module 7697 (VoiceSessionUtils)
+import useMessageAuthor from "useMessageAuthor" /* 5258 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7595 */;
+import maybeSortByProbability from "maybeSortByProbability" /* 7698 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7267 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7245 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 9967
+// Function ID: 9968
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 576, 4866, 5632, 4862, 2]
+// Dependencies: [19, 17, 21, 576, 4845, 5621, 4841, 2]
 // Exports: default
 
-// Module 9975 (PremiumExpressionPickerSearchUpsell)
+// Module 9967 (PremiumExpressionPickerSearchUpsell)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import Pressables from "Pressables" /* 5632 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import Pressables from "Pressables" /* 5621 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const sum = 56 + nativeDefault.space.PX_8;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_8 }, upsell: null, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_8 };
 obj2.upsell = { height: 56, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flexDirection: "row", justifyContent: "space-between", alignItems: "center", alignContent: "center" };

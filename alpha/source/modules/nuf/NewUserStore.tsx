@@ -1,9 +1,9 @@
-// Module ID: 6067
-// Function ID: 6068
+// Module ID: 6056
+// Function ID: 6057
 // Name: NewUserStore
 // Dependencies: [504, 573, 2]
 
-// Module 6067 (NewUserStore)
+// Module 6056 (NewUserStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

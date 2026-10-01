@@ -1,11 +1,11 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8671
+// Function ID: 8672
 // Name: MarkupLiteralImageRule
-// Dependencies: [1930, 5498, 2]
+// Dependencies: [1930, 5486, 2]
 
-// Module 8679 (MarkupLiteralImageRule)
+// Module 8671 (MarkupLiteralImageRule)
 import _modDef1930 from "module_1930" /* 1930 */;
-import MarkupTypes from "MarkupTypes" /* 5498 */;
+import MarkupTypes from "MarkupTypes" /* 5486 */;
 
 require = fn;
 const obj = {};

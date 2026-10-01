@@ -1,22 +1,22 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17768
+// Function ID: 17769
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 14956, 1074, 17734, 21, 4866, 576, 11908, 1115, 17735, 4862, 17736, 1485, 4830, 17738, 1981, 17738, 8249, 5477, 1177, 5478, 9104, 17746, 17750, 17759, 17762, 17767, 17768, 1486, 8426, 1249, 6190, 17732, 4557, 6740, 6095, 17769, 2]
+// Dependencies: [32, 19, 17, 14962, 1074, 17769, 21, 4845, 576, 11915, 1115, 17770, 4841, 17771, 1485, 4809, 17773, 1981, 17773, 8239, 5465, 1177, 5466, 9098, 17781, 17785, 17794, 17797, 17802, 17803, 1486, 8418, 1249, 6180, 17767, 4556, 6730, 6085, 17804, 2]
 // Exports: default
 
-// Module 17733 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 17768 (GuildSettingsRoleSubscriptionWelcomeView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import NavigatorConstants from "NavigatorConstants" /* 6190 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11908 */;
-import WarningNoticeDefault from "WarningNotice" /* 17735 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 17738 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 17746 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 17750 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 17759 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import NavigatorConstants from "NavigatorConstants" /* 6180 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11915 */;
+import WarningNoticeDefault from "WarningNotice" /* 17770 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 17773 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 17781 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 17785 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 17794 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -105,7 +105,7 @@ function StartEarningButton(isTermsAccepted) {
   const callback = noop.useCallback(() => submitAcceptTermsRequest(), items);
   const callback1 = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    return obj.openLazy(asyncRequireImpl(17738, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
+    return obj.openLazy(asyncRequireImpl(17773, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
       eligibility,
       onRequireModeratorMFAClick() {
         navigation.push(constants.SECURITY);
@@ -239,12 +239,12 @@ class MarketingSections {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const React6 = fn(14956).CREATOR_REVENUE_PORTAL_URL;
+const React6 = fn(14962).CREATOR_REVENUE_PORTAL_URL;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
-const constants = fn(17734).CreatorMonetizationOnboardingMarketingSection;
+const constants = fn(17769).CreatorMonetizationOnboardingMarketingSection;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { resizeMode: "cover", width: "100%" }, subtitle: { marginTop: 8 }, tos: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, marginTop: 10 }, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: null, sectionTitle: null, sectionFooter: null, statusNoticeContainer: null };
 let size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj2.divider = size;

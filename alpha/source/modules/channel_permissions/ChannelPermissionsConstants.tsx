@@ -1,14 +1,14 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8033
+// Function ID: 8034
 // Name: ChannelPermissionsConstants
-// Dependencies: [1074, 1115, 8045, 2111, 8046, 2]
+// Dependencies: [1074, 1115, 8034, 2110, 8035, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 8044 (ChannelPermissionsConstants)
+// Module 8033 (ChannelPermissionsConstants)
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 8045 */;
-import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 8046 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 8034 */;
+import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 8035 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

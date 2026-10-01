@@ -1,19 +1,19 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 14939
+// Function ID: 14940
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 7311, 14828, 5953, 14830, 21, 4866, 576, 14834, 14831, 7910, 14826, 14861, 5956, 14858, 14857, 14859, 14837, 1613, 7332, 2]
+// Dependencies: [5, 19, 17, 7289, 14834, 5942, 14836, 21, 4845, 576, 14840, 14837, 7897, 14832, 14867, 5945, 14864, 14863, 14865, 14843, 1613, 7310, 2]
 
-// Module 14933 (QuestDockEnrolledBody)
+// Module 14939 (QuestDockEnrolledBody)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import QuestTypes from "QuestTypes" /* 5956 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 14857 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14858 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14859 */;
+import QuestTypes from "QuestTypes" /* 5945 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 14863 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14864 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14865 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7311 */;
-import QuestDockStore from "QuestDockStore" /* 14828 */;
+import QuestStore from "QuestStore" /* 7289 */;
+import QuestDockStore from "QuestDockStore" /* 14834 */;
 
 require = fn;
 function EnrolledBodyWatchTask(quest) {
@@ -79,10 +79,10 @@ function EnrolledBodyWatchTask(quest) {
                 tmp12 = tmp16;
               }
               if (tmp12) {
-                const obj4 = { questId: tmp2.id, sourceQuestContent: quest(5956).QuestContent.QUEST_BAR_MOBILE };
+                const obj4 = { questId: tmp2.id, sourceQuestContent: quest(5945).QuestContent.QUEST_BAR_MOBILE };
                 v1 = 1;
                 c2 = 1;
-                const obj5 = { value: setRestingQuestDockMode(14861)(obj4), done: false };
+                const obj5 = { value: setRestingQuestDockMode(14867)(obj4), done: false };
                 return obj5;
               } else {
                 c2 = 3;
@@ -164,14 +164,14 @@ function EnrolledBodyPlayStreamTask(quest) {
   return closure_1_14(map1, obj3);
 }
 const View = fn(17).View;
-const QuestConstants = fn(5953);
+const QuestConstants = fn(5942);
 ({ QuestDockMode: closure_8, QuestsExperimentLocations: closure_9 } = QuestConstants);
-const QuestDockConstants = fn(14830);
+const QuestDockConstants = fn(14836);
 ({ QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT: c10, QUEST_DOCK_EXPANDED_PADDING_BOTTOM } = QuestDockConstants);
 ({ QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP } = QuestDockConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { wrapper: { flexGrow: 0, flexShrink: 0, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, paddingTop: QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP, paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL }, headerWrapper: { marginBottom: nativeDefault.space.PX_16 }, contentWrapper: null, footer: null, footerWrapper: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_16 };
 obj.contentWrapper = { display: "flex", gap: nativeDefault.space.PX_16, flexGrow: 0, flexShrink: 0 };
@@ -185,9 +185,9 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockEnrolledBody.tsx");
 
 export default noop.memo(function QuestDockEnrolledBody() {
-  const questDockQuest = minExpandedContentHeight(14837).useQuestDockQuest();
-  const obj = minExpandedContentHeight(14837);
-  minExpandedContentHeight = noop.useContext(minExpandedContentHeight(14831).QuestDockGestureContext).minExpandedContentHeight;
+  const questDockQuest = minExpandedContentHeight(14843).useQuestDockQuest();
+  const obj = minExpandedContentHeight(14843);
+  minExpandedContentHeight = noop.useContext(minExpandedContentHeight(14837).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const items1 = [minExpandedContentHeight];
   const callback = noop.useCallback((nativeEvent) => {

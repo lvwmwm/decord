@@ -1,17 +1,17 @@
-// Module ID: 4843
-// Function ID: 4844
+// Module ID: 4822
+// Function ID: 4823
 // Name: parseURL
-// Dependencies: [32, 1074, 1076, 4844, 4845, 1473, 1930, 1368, 4846, 4851, 12701, 5285, 13589, 1366, 5020, 8715, 7022, 1610, 1364, 9372, 1241, 1254, 13590, 2]
+// Dependencies: [32, 1074, 1076, 4823, 4824, 1473, 1930, 1368, 4825, 4830, 12712, 5264, 13597, 1366, 4999, 8707, 7014, 1610, 1364, 9366, 1241, 1254, 13598, 2]
 // Exports: default
 
-// Module 4843 (parseURL)
+// Module 4822 (parseURL)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef1473 from "module_1473" /* 1473 */;
 import _modDef1930 from "module_1930" /* 1930 */;
-import findCodedLinks from "findCodedLinks" /* 4846 */;
-import LinkUtils from "LinkUtils" /* 5020 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5285 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13590 */;
+import findCodedLinks from "findCodedLinks" /* 4825 */;
+import LinkUtils from "LinkUtils" /* 4999 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5264 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13598 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -38,8 +38,8 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, GuildSettingsSections: hasOwnProperty, GuildSettingsSubsections: metroRequire, LinkingTypes: closure_7 } = Constants);
 const CollectiblesShopConstants = fn(1076);
 ({ CollectibleShopTab: closure_8, CollectiblesMobileShopScreen: closure_9 } = CollectiblesShopConstants);
-const UPDATE_CONFIG = fn(4844).UPDATE_CONFIG;
-const PaymentConstants = fn(4845);
+const UPDATE_CONFIG = fn(4823).UPDATE_CONFIG;
+const PaymentConstants = fn(4824);
 ({ MobileWebRedirectCheckoutDeepLinkActions: closure_11, MobileWebRedirectCheckoutDeepLinkQueryKeys: closure_12 } = PaymentConstants);
 const re13 = /feature\/([\w-]+)/;
 const re14 = /feature\/boost\/([0-9]+)/;
@@ -87,44 +87,44 @@ export default function parseURL(arg0) {
     const findCodedLinkResult = findCodedLinks.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
       const type = findCodedLinkResult.type;
-      if (tmp5(4851).CodedLinkType.INVITE === type) {
+      if (tmp5(4830).CodedLinkType.INVITE === type) {
         const obj5 = { fingerprint, attemptId, installationId, didRegister: "true" === didRegister, payload: null };
         const obj6 = { type: React5.INVITE, inviteCode: findCodedLinkResult.code, username, deeplinkAttemptId: attemptId };
         obj5.payload = obj6;
         return obj5;
-      } else if (tmp5(4851).CodedLinkType.TEMPLATE === type) {
+      } else if (tmp5(4830).CodedLinkType.TEMPLATE === type) {
         const obj7 = { fingerprint, attemptId, installationId, payload: null };
         const obj8 = { type: React5.GUILD_TEMPLATE, guildTemplateCode: findCodedLinkResult.code };
         obj7.payload = obj8;
         return obj7;
       } else {
-        if (tmp5(4851).CodedLinkType.BUILD_OVERRIDE !== type) {
-          if (tmp5(4851).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-            if (tmp5(4851).CodedLinkType.EXPERIMENT !== type) {
-              if (tmp5(4851).CodedLinkType.EVENT !== type) {
-                if (tmp5(4851).CodedLinkType.CHANNEL_LINK !== type) {
-                  if (tmp5(4851).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-                    if (tmp5(4851).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        if (tmp5(4830).CodedLinkType.BUILD_OVERRIDE !== type) {
+          if (tmp5(4830).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+            if (tmp5(4830).CodedLinkType.EXPERIMENT !== type) {
+              if (tmp5(4830).CodedLinkType.EVENT !== type) {
+                if (tmp5(4830).CodedLinkType.CHANNEL_LINK !== type) {
+                  if (tmp5(4830).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+                    if (tmp5(4830).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                       const obj9 = { fingerprint, attemptId, installationId, payload: null };
                       const obj10 = { type: React5.ACTIVITY, applicationId: findCodedLinkResult.code, customId: custom_id, referrerId: referrer_id, linkId: link_id, isDeepLink: flag };
                       obj9.payload = obj10;
                       return obj9;
-                    } else if (tmp5(4851).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                      if (tmp5(4851).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp5(4851).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp5(4851).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp5(4851).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp5(4851).CodedLinkType.QUESTS_EMBED !== type) {
-                                if (tmp5(4851).CodedLinkType.GAME_PROFILE === type) {
+                    } else if (tmp5(4830).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                      if (tmp5(4830).CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (tmp5(4830).CodedLinkType.SERVER_SHOP !== type) {
+                          if (tmp5(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                            if (tmp5(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                              if (tmp5(4830).CodedLinkType.QUESTS_EMBED !== type) {
+                                if (tmp5(4830).CodedLinkType.GAME_PROFILE === type) {
                                   const obj11 = { fingerprint, attemptId, installationId, payload: null };
                                   const obj12 = { type: React5.GAME_PROFILE, gameId: findCodedLinkResult.code };
                                   obj11.payload = obj12;
                                   return obj11;
-                                } else if (tmp5(4851).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp5(4851).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp5(4851).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                      if (tmp5(4851).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                        const tmp5Result = tmp5(12701);
+                                } else if (tmp5(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                  if (tmp5(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                    if (tmp5(4830).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                      if (tmp5(4830).CodedLinkType.COLLECTIBLES_SHOP === type) {
+                                        const tmp5Result = tmp5(12712);
                                         const tmp10 = _slicedToArray(findCodedLinkResult.code.split("-"), 2)[1];
                                         if (tmp5Result.isVirtualCurrencyEnabled().enabled) {
                                           if (tmp9 === constants2.ORBS) {
@@ -142,11 +142,13 @@ export default function parseURL(arg0) {
                                         }
                                         FEATURED_PAGE = constants3.FEATURED_PAGE;
                                         const tmp8 = _slicedToArray(findCodedLinkResult.code.split("-"), 2);
-                                      } else if (tmp5(4851).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                        if (tmp5(4851).CodedLinkType.USER_PROFILE !== type) {
-                                          const _Error2 = Error;
-                                          const _HermesInternal = HermesInternal;
-                                          throw Error("Unknown coded link type: " + findCodedLinkResult.type);
+                                      } else if (tmp5(4830).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                        if (tmp5(4830).CodedLinkType.GAME_ORGANIZATION_INVITE !== type) {
+                                          if (tmp5(4830).CodedLinkType.USER_PROFILE !== type) {
+                                            const _Error2 = Error;
+                                            const _HermesInternal = HermesInternal;
+                                            throw Error("Unknown coded link type: " + findCodedLinkResult.type);
+                                          }
                                         }
                                       }
                                     }
@@ -177,7 +179,7 @@ export default function parseURL(arg0) {
       obj17.payload = obj18;
       return obj17;
     } else {
-      const result = tmp5(13589).findRemoteAuthFingerprint(host, pathname);
+      const result = tmp5(13597).findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
           const obj19 = { fingerprint, attemptId, installationId, payload: null };
@@ -186,7 +188,7 @@ export default function parseURL(arg0) {
           return obj19;
         }
       }
-      const tmp5Result9 = tmp5(13589);
+      const tmp5Result9 = tmp5(13597);
       if (!tmpResult6.isDiscordHostname(host)) {
         if (!tmpResult7.isDiscordProtocol(protocol)) {
           const tmpResult8 = tmp(1366);
@@ -219,7 +221,7 @@ export default function parseURL(arg0) {
         return obj26;
       }
       if (null != pathname) {
-        const tryParseDiceRollLinkResult = tmp5(5020).tryParseDiceRollLink(pathname);
+        const tryParseDiceRollLinkResult = tmp5(4999).tryParseDiceRollLink(pathname);
         if (null != tryParseDiceRollLinkResult) {
           const obj28 = { fingerprint, attemptId, installationId, payload: null };
           const obj29 = { type: React5.ROLL_DICE, guildId: null, channelId: null, diceCount: null, diceSides: null };
@@ -227,7 +229,7 @@ export default function parseURL(arg0) {
           obj28.payload = obj29;
           return obj28;
         } else {
-          const tryParseChannelPathResult = tmp5(5020).tryParseChannelPath(pathname);
+          const tryParseChannelPathResult = tmp5(4999).tryParseChannelPath(pathname);
           if (null != tryParseChannelPathResult) {
             if (query == null) {
               query = "";
@@ -323,7 +325,7 @@ export default function parseURL(arg0) {
                 if (query == null) {
                   str6 = "";
                 }
-                const result1 = tmp5(8715).parseOAuth2AuthorizeProps(str6);
+                const result1 = tmp5(8707).parseOAuth2AuthorizeProps(str6);
                 if (null != result1) {
                   const obj49 = { fingerprint, attemptId, installationId, payload: null };
                   const element = { type: React5.OAUTH2_AUTHORIZE, props: null };
@@ -334,7 +336,7 @@ export default function parseURL(arg0) {
                   obj49.payload = element;
                   return obj49;
                 }
-                const tmp5Result12 = tmp5(8715);
+                const tmp5Result12 = tmp5(8707);
               }
               if (null != pathname.match(re17)) {
                 let str24 = query;
@@ -456,7 +458,7 @@ export default function parseURL(arg0) {
                         tmp28 = obj72;
                       break;
                       case "mobile-web-redirect-checkout":
-                        let result2 = tmp5(7022).isMobileWebRedirectCheckoutEnabled();
+                        let result2 = tmp5(7014).isMobileWebRedirectCheckoutEnabled();
                         if (result2) {
                           result2 = !tmp5(1610).isMetaQuest();
                           const tmp5Result14 = tmp5(1610);
@@ -465,7 +467,7 @@ export default function parseURL(arg0) {
                         if (query == null) {
                           str12 = "";
                         }
-                        const tmp5Result13 = tmp5(7022);
+                        const tmp5Result13 = tmp5(7014);
                         let DEFAULT = tmp139(str12)[constants5.DEEP_LINK_ACTION];
                         tmp28 = null;
                         if (result2) {
@@ -535,7 +537,7 @@ export default function parseURL(arg0) {
                               const obj76 = { type: React5.DAVE_PROTOCOL_VERIFICATION, userId, fingerprint: fingerprint2 };
                               tmp28 = obj76;
                             }
-                            tmp5Result16 = tmp5(9372);
+                            tmp5Result16 = tmp5(9366);
                           }
                         }
                         const tmp139Result11 = tmp139(str10);
@@ -684,9 +686,9 @@ export default function parseURL(arg0) {
               }
             }
           }
-          const tmp5Result11 = tmp5(5020);
+          const tmp5Result11 = tmp5(4999);
         }
-        const tmp5Result10 = tmp5(5020);
+        const tmp5Result10 = tmp5(4999);
       }
       tmpResult6 = tmp(1366);
     }

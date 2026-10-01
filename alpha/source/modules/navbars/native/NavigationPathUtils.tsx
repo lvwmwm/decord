@@ -1,12 +1,12 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12503
+// Function ID: 12504
 // Name: NavigationPathUtils
-// Dependencies: [1074, 4696, 2]
+// Dependencies: [1074, 4695, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 12492 (NavigationPathUtils)
+// Module 12503 (NavigationPathUtils)
 import Constants from "Constants" /* 1074 */;
-import _mod4696 from "module_4696" /* 4696 */;
+import _mod4695 from "module_4695" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -20,7 +20,7 @@ export const getSelectedSpecialNavigationPath = function getSelectedSpecialNavig
   }
 };
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  const obj = _mod4696;
+  const obj = _mod4695;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {
     FRIENDS = obj.FRIENDS;

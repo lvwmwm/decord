@@ -1,14 +1,14 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7493
+// Function ID: 7494
 // Name: experiment
-// Dependencies: [32, 1187, 1216, 1217, 7516, 7517, 2]
+// Dependencies: [32, 1187, 1216, 1217, 7494, 7495, 2]
 
-// Module 7515 (experiment)
+// Module 7493 (experiment)
 import _mod1187 from "module_1187" /* 1187 */;
 import timestamp from "timestamp" /* 1216 */;
 import wrappers from "wrappers" /* 1217 */;
-import rules from "rules" /* 7516 */;
-import duration from "duration" /* 7517 */;
+import rules from "rules" /* 7494 */;
+import duration from "duration" /* 7495 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

@@ -1,18 +1,18 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15756
+// Function ID: 15757
 // Name: VideoBackgroundSetting
-// Dependencies: [7612, 1074, 9313, 9658, 9309, 9311, 11211, 1115, 9639, 2]
+// Dependencies: [7590, 1074, 9307, 9652, 9303, 9305, 11215, 1115, 9633, 2]
 
-// Module 15740 (VideoBackgroundSetting)
+// Module 15756 (VideoBackgroundSetting)
 import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7612 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9309 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9311 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9313 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9639 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9658 */;
+import SettingsConstants from "SettingsConstants" /* 7590 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 9303 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9305 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9307 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9633 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9652 */;
 import Constants from "Constants" /* 1074 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 ({ AnalyticsSections: c2, NOOP: c3, AnalyticsPages: closure_4 } = Constants);

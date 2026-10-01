@@ -1,12 +1,12 @@
-// Module ID: 11167
-// Function ID: 11168
+// Module ID: 11171
+// Function ID: 11172
 // Name: UnreadSettingNoticeImpressionTracking
-// Dependencies: [8426, 1249, 2]
+// Dependencies: [8418, 1249, 2]
 // Exports: default
 
-// Module 11167 (UnreadSettingNoticeImpressionTracking)
+// Module 11171 (UnreadSettingNoticeImpressionTracking)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8426 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8418 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/UnreadSettingNoticeImpressionTracking.tsx");

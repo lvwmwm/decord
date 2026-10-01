@@ -1,19 +1,19 @@
-// Module ID: 6082
-// Function ID: 6083
+// Module ID: 6072
+// Function ID: 6073
 // Name: MemberVerificationModalHooks
-// Dependencies: [19, 1372, 6083, 504, 4688, 2]
+// Dependencies: [19, 1372, 6073, 504, 4687, 2]
 // Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
 
-// Module 6082 (MemberVerificationModalHooks)
+// Module 6072 (MemberVerificationModalHooks)
 import initialize from "initialize" /* 504 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import InitialMemberVerificationStore from "InitialMemberVerificationStore" /* 6083 */;
+import InitialMemberVerificationStore from "InitialMemberVerificationStore" /* 6073 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const setInitialVerification = fn(6083).setInitialVerification;
+const setInitialVerification = fn(6073).setInitialVerification;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
 

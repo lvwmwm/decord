@@ -1,28 +1,28 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11983
+// Function ID: 11984
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 4855, 2042, 1375, 21, 4866, 576, 1364, 563, 6747, 1397, 4862, 1115, 11977, 5632, 6188, 8426, 1249, 4596, 4867, 1177, 4830, 12075, 1981, 7915, 5495, 8569, 2021, 7608, 7605, 10289, 2029, 2]
+// Dependencies: [32, 19, 17, 4834, 2041, 1375, 21, 4845, 576, 1364, 563, 6737, 1397, 4841, 1115, 11984, 5621, 6178, 8418, 1249, 4595, 4846, 1177, 4809, 12083, 1981, 7902, 5483, 8561, 2021, 7586, 7583, 10281, 2029, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11976 (DoubleTapToReactChatInputBanner)
+// Module 11983 (DoubleTapToReactChatInputBanner)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import timing from "timing" /* 4867 */;
-import Pressables from "Pressables" /* 5632 */;
-import XSmallIcon from "XSmallIcon" /* 6188 */;
-import EmojiDefault from "Emoji" /* 6747 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7608 */;
-import renderChannelBadge from "renderChannelBadge" /* 11977 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import timing from "timing" /* 4846 */;
+import Pressables from "Pressables" /* 5621 */;
+import XSmallIcon from "XSmallIcon" /* 6178 */;
+import EmojiDefault from "Emoji" /* 6737 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7586 */;
+import renderChannelBadge from "renderChannelBadge" /* 11984 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 const AvatarUtilsDefault = tmp8(1397);
 require = fn;
@@ -146,7 +146,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   }, []);
   const items3 = [markAsDismissed];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12075, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12083, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items2);
   const callback2 = noop.useCallback(() => {
@@ -184,12 +184,12 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   return closure_10(closure_11, obj7);
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const androidRippleConfig = { cornerRadius: 0 };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { animatedContainer: { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, measurement: { opacity: 0, position: "absolute" }, container: { display: "flex", flexDirection: "row", alignItems: "center", padding: 12 }, highlight: null, text: null, emojiContainer: null, emoji: null, textEmoji: null, header: null, closeButton: null };
 let obj3 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.highlight = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

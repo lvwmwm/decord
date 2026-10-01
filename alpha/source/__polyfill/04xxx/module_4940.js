@@ -1,27 +1,24 @@
 // Module ID: 4940
 // Function ID: 4941
-// Dependencies: []
+// Dependencies: [523]
 
 // Module 4940
+import _mod523 from "module_523" /* 523 */;
 
-export default function initCloneArray(arg0) {
-  let length = arg0.length;
-  const constructor = new arg0.constructor(length);
-  if (length) {
-    length = typeof arg0[0] === "string";
-  }
-  if (!length) {
-    if (length) {
-      ({ index: tmp.index, input: tmp.input } = arg0);
-    }
-    return constructor;
+let prototype;
+if (_mod523) {
+  prototype = _mod523.prototype;
+}
+let valueOf;
+if (prototype) {
+  valueOf = prototype.valueOf;
+}
+
+export default function cloneSymbol(arg0) {
+  if (valueOf) {
+    const call = tmp.call;
+    Object(typeof call === "unknown" ? tmp() : call(arg0));
   } else {
-    const call = hasOwnProperty.call;
-    if (typeof call === "unknown") {
-      let callResult = tmp2("index");
-    } else {
-      callResult = call(arg0, "index");
-    }
-    tmp2 = hasOwnProperty;
+    return {};
   }
 };

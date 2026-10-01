@@ -1,13 +1,13 @@
-// Module ID: 9283
-// Function ID: 9284
+// Module ID: 9277
+// Function ID: 9278
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4866, 576, 4561, 4596, 5476, 9284, 6269, 1364, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4560, 4595, 5464, 9278, 6259, 1364, 2]
 // Exports: SegmentedControl
 
-// Module 9283 (SegmentedControl)
+// Module 9277 (SegmentedControl)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import spring from "spring" /* 5476 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import spring from "spring" /* 5464 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 0.04;
 let SELECTED_INDICATOR_SPRING = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_10 = createStyles.createStyles((borderRadius, paddingVertical) => {
   const obj = { scrollContentContainer: { flexGrow: 1 }, controlsContainer: { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" }, indicatorContainer: { position: "absolute", width: "100%", height: "100%", borderRadius, flexDirection: "row" }, indicator: null };
   const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" };

@@ -1,16 +1,16 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16904
+// Function ID: 16905
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 2049, 2045, 1074, 21, 1485, 6785, 6195, 1115, 6113, 9222, 4866, 576, 504, 8249, 5475, 16777, 16884, 2]
+// Dependencies: [19, 2048, 2044, 1074, 21, 1485, 6775, 6185, 1115, 6103, 9216, 4845, 576, 504, 8239, 5463, 16800, 16905, 2]
 // Exports: default
 
-// Module 16883 (ChannelSettingsIntegrationsOverview)
+// Module 16904 (ChannelSettingsIntegrationsOverview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9222 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9216 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 function LinkedLobbyFormSection(channel) {
@@ -22,7 +22,7 @@ function LinkedLobbyFormSection(channel) {
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
-  const getOrFetchApplication = channel(6785).useGetOrFetchApplication(application_id);
+  const getOrFetchApplication = channel(6775).useGetOrFetchApplication(application_id);
   let tmp5 = null;
   if (null != getOrFetchApplication) {
     const obj3 = { title: null, hasIcons: true, children: null };
@@ -34,16 +34,16 @@ function LinkedLobbyFormSection(channel) {
     obj4.onPress = function onPress() {
       closure_1.push(ChannelSettingsSections.EDIT_LINKED_LOBBY, { channel, numScreensToPop: 1 });
     };
-    obj3.children = closure_6(tmp(6113).TableRow, obj4);
-    tmp5 = closure_6(tmp(6195).TableRowGroup, obj3);
+    obj3.children = closure_6(tmp(6103).TableRow, obj4);
+    tmp5 = closure_6(tmp(6185).TableRowGroup, obj3);
   }
   return tmp5;
 }
-fn(2049).GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES;
+fn(2048).GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES;
 const ChannelSettingsSections = fn(1074).ChannelSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: nativeDefault.space.PX_16 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -67,11 +67,11 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj6.label = intl.string(tmp(1115).t.jp25Id);
       const intl2 = tmp(1115).intl;
       obj6.subLabel = intl2.string(tmp(1115).t.mKIOkI);
-      obj6.icon = tmp6(tmp(16777).WebhookIcon, {});
+      obj6.icon = tmp6(tmp(16800).WebhookIcon, {});
       obj6.onPress = function onPress() {
         return closure_1.push(ChannelSettingsSections.WEBHOOKS);
       };
-      const items1 = [tmp6(tmp(6113).TableRow, obj6), ];
+      const items1 = [tmp6(tmp(6103).TableRow, obj6), ];
       let hasItem = set.has(stateFromStores.type);
       if (hasItem) {
         const obj7 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
@@ -79,16 +79,16 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
         obj7.label = intl3.string(tmp(1115).t.OrV60r);
         const intl4 = tmp(1115).intl;
         obj7.subLabel = intl4.string(tmp(1115).t.rQREJl);
-        obj7.icon = tmp6(tmp(16884).ChannelsFollowedIcon, {});
+        obj7.icon = tmp6(tmp(16905).ChannelsFollowedIcon, {});
         obj7.onPress = function onPress() {
           return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
         };
-        hasItem = tmp6(tmp(6113).TableRow, obj7);
+        hasItem = tmp6(tmp(6103).TableRow, obj7);
       }
       const obj8 = { hasIcons: true, children: null };
       items1[1] = hasItem;
       obj8.children = items1;
-      canManageWebhooks = tmp7(tmp(6195).TableRowGroup, obj8);
+      canManageWebhooks = tmp7(tmp(6185).TableRowGroup, obj8);
     }
     const items2 = [canManageWebhooks, ];
     if (canUnlinkLobby) {
@@ -100,8 +100,8 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     }
     items2[1] = canUnlinkLobby;
     obj4.children = items2;
-    obj3.children = closure_7(tmp(5475).Stack, obj4);
-    tmp6Result = tmp6(tmp(8249).Form, obj3);
+    obj3.children = closure_7(tmp(5463).Stack, obj4);
+    tmp6Result = tmp6(tmp(8239).Form, obj3);
   }
   return tmp6Result;
 };

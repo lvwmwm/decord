@@ -1,10 +1,10 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6047
+// Function ID: 6048
 // Name: GuildProfileTypes
-// Dependencies: [2, 6059]
+// Dependencies: [2, 6048]
 
-// Module 6058 (GuildProfileTypes)
-import GuildProfileVisibility from "GuildProfileVisibility" /* 6059 */;
+// Module 6047 (GuildProfileTypes)
+import GuildProfileVisibility from "GuildProfileVisibility" /* 6048 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_profile/GuildProfileTypes.tsx");

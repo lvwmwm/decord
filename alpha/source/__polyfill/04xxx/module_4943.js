@@ -1,17 +1,17 @@
 // Module ID: 4943
 // Function ID: 4944
-// Dependencies: [545, 4944, 4945]
+// Dependencies: [539, 540, 4944]
 
 // Module 4943
-import _mod545 from "module_545" /* 545 */;
+import _process from "_process" /* 539 */;
+import baseUnary from "baseUnary" /* 540 */;
+import baseIsMap from "baseIsMap" /* 4944 */;
 
+const tmp = _process && _process.isMap;
+if (tmp) {
+  let _module = baseUnary(tmp);
+} else {
+  _module = baseIsMap;
+}
 
-export default function initCloneObject(arg0) {
-  if (typeof arg0.constructor === "function") {
-    if (!_mod545(arg0)) {
-      tmp3(4944)(tmp3(4945)(arg0));
-      const tmp = tmp3(4944);
-    }
-    return {};
-  }
-};
+export default _module;

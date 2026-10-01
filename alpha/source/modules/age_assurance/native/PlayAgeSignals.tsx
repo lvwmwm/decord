@@ -1,11 +1,11 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8215
+// Function ID: 8216
 // Name: PlayAgeSignals
-// Dependencies: [5, 8227, 8228, 2]
+// Dependencies: [5, 8216, 8217, 2]
 // Exports: getAgeSignals
 
-// Module 8226 (PlayAgeSignals)
-import NativePlayAgeSignalsModuleDefault from "NativePlayAgeSignalsModule" /* 8227 */;
+// Module 8215 (PlayAgeSignals)
+import NativePlayAgeSignalsModuleDefault from "NativePlayAgeSignalsModule" /* 8216 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

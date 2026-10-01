@@ -1,14 +1,14 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10680
+// Function ID: 10681
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 17, 1074, 21, 4866, 576, 10685, 10405, 5069, 10696, 1981, 6996, 5496, 4862, 1115, 5478, 2]
+// Dependencies: [19, 17, 1074, 21, 4845, 576, 10681, 10397, 5048, 10692, 1981, 6987, 5484, 4841, 1115, 5466, 2]
 // Exports: default
 
-// Module 10684 (UnifiedGiftModalSuccessScreen)
+// Module 10680 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
-import openUserSettings from "openUserSettings" /* 6996 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+import openUserSettings from "openUserSettings" /* 6987 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const Image = fn(17).Image;
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { alertContainer: { paddingHorizontal: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_24, alignItems: "center" }, image: { position: "relative", top: -50 }, title: null, description: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_24, alignItems: "center" };
 obj2.title = { marginTop: -nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_8 };
@@ -42,7 +42,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     }
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10696, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10692, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];

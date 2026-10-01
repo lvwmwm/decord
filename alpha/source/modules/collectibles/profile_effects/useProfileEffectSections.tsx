@@ -1,15 +1,15 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 14394
+// Function ID: 14395
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7158, 7173, 563, 7170, 1115, 2]
+// Dependencies: [32, 19, 7150, 7165, 563, 7162, 1115, 2]
 // Exports: default
 
-// Module 14389 (useProfileEffectSections)
+// Module 14394 (useProfileEffectSections)
 import util from "util" /* 1115 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7170 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7162 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7173 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7150 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7165 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;

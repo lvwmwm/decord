@@ -1,30 +1,30 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12467
+// Function ID: 12468
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 2067, 21, 4866, 4558, 9539, 12456, 10992, 12, 12447, 1115, 4765, 6956, 12442, 12457, 4862, 6697, 2]
+// Dependencies: [32, 5, 19, 17, 2066, 21, 4845, 4557, 9533, 12468, 10996, 12, 12459, 1115, 5266, 6947, 12454, 12469, 4841, 6687, 2]
 // Exports: default
 
-// Module 12455 (HubEmailConnectionPinVerify)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4558 */;
-import _modDef9539 from "module_9539" /* 9539 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 12456 */;
+// Module 12467 (HubEmailConnectionPinVerify)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
+import _modDef9533 from "module_9533" /* 9533 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 12468 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 function presentResendToast(content) {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "HUB_EMAIL_RESET", content, icon: _modDef9539 });
+  obj.open({ key: "HUB_EMAIL_RESET", content, icon: _modDef9533 });
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_11 = createStyles.createStyles({ container: { alignItems: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 24 }, label: { textAlign: "center", marginBottom: 12 }, error: { alignSelf: "center", marginVertical: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionPinVerify.tsx");
@@ -63,7 +63,7 @@ export default function HubEmailConnectionPinVerify(email) {
       require("navigateToLastChannel")();
     });
     return () => {
-      closure_1_1(12456).terminate();
+      closure_1_1(12468).terminate();
     };
   }, items);
   const obj = require("module_12");
@@ -101,7 +101,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const obj3 = { style: tmp.container, children: null };
   const tmp5 = _slicedToArray(noop.useState(null), 2);
   const tmp7 = email;
-  const items1 = [closure_9(closure_7, { source: require("module_12457") }), , , , , ];
+  const items1 = [closure_9(closure_7, { source: require("module_12469") }), , , , , ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = email(onClose[13]).intl;
   obj5.children = intl.string(email(onClose[13]).t.SJ3Lxc);
@@ -114,7 +114,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const intl3 = email(onClose[13]).intl;
   obj7.children = intl3.string(email(onClose[13]).t.rpWT1s);
   items1[3] = closure_9(email(onClose[18]).Text, obj7);
-  const obj4 = { source: require("module_12457") };
+  const obj4 = { source: require("module_12469") };
   const tmp8 = closure_10;
   const tmp9 = closure_6;
   items1[4] = closure_9(email(onClose[19]).CodeBlocks, {

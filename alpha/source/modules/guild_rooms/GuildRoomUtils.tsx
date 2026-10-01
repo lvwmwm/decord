@@ -1,19 +1,19 @@
-// Module ID: 5027
-// Function ID: 5028
+// Module ID: 5006
+// Function ID: 5007
 // Name: GuildRoomUtils
-// Dependencies: [5024, 5028, 5029, 5026, 5025, 2]
+// Dependencies: [5003, 5007, 5008, 5005, 5004, 2]
 // Exports: findSeat, serverGuildRoomToClient
 
-// Module 5027 (GuildRoomUtils)
-import GuildRoomTypes from "GuildRoomTypes" /* 5025 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 5026 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 5029 */;
-import GuildRoomStore from "GuildRoomStore" /* 5024 */;
+// Module 5006 (GuildRoomUtils)
+import GuildRoomTypes from "GuildRoomTypes" /* 5004 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 5005 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 5008 */;
+import GuildRoomStore from "GuildRoomStore" /* 5003 */;
 
 require = fn;
 function serverGuildRoomObjectToClient(object_type) {
   if (object_type.object_type === GuildRoomTypes.GuildRoomObjectTypes.PLANT) {
-    const obj = { objectType: tmp(5025).GuildRoomObjectTypes.PLANT };
+    const obj = { objectType: tmp(5004).GuildRoomObjectTypes.PLANT };
     const obj7 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj2.objectId, created_by: obj2.createdBy } = object_type);
     let date;
@@ -26,7 +26,7 @@ function serverGuildRoomObjectToClient(object_type) {
     const merged = Object.assign(obj7);
     let obj8 = obj;
   } else {
-    obj8 = { objectType: tmp(5025).GuildRoomObjectTypes.NOTE };
+    obj8 = { objectType: tmp(5004).GuildRoomObjectTypes.NOTE };
     const obj9 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj4.objectId, created_by: obj4.createdBy } = object_type);
     let date1;
@@ -41,7 +41,7 @@ function serverGuildRoomObjectToClient(object_type) {
   }
   return obj8;
 }
-let closure_3 = fn(5028).GUILD_ROOM_BACKGROUND_CONFIG;
+let closure_3 = fn(5007).GUILD_ROOM_BACKGROUND_CONFIG;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomUtils.tsx");
 

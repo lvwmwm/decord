@@ -1,9 +1,9 @@
-// Module ID: 11324
-// Function ID: 11325
+// Module ID: 11332
+// Function ID: 11333
 // Name: Constants
 // Dependencies: [2]
 
-// Module 11324 (Constants)
+// Module 11332 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/native/Constants.tsx");

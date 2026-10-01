@@ -1,14 +1,14 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15772
+// Function ID: 15773
 // Name: useIsNotifSettingDisabled
-// Dependencies: [15747, 15749, 15748, 504, 1115, 2813, 2]
+// Dependencies: [15763, 15765, 15764, 504, 1115, 2812, 2]
 // Exports: default
 
-// Module 15756 (useIsNotifSettingDisabled)
-import _modDef2813 from "module_2813" /* 2813 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15748 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15749 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15747 */;
+// Module 15772 (useIsNotifSettingDisabled)
+import _modDef2812 from "module_2812" /* 2812 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15764 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15765 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15763 */;
 
 const require = globalThis.__r;
 
@@ -28,7 +28,7 @@ export default function useIsNotifSettingDisabled(arg0) {
   if (!tmp4) {
     const obj2 = { label: null, onPress: null };
     const intl = require("util").intl;
-    obj2.label = intl.string(_modDef2813.TVZ0Fm);
+    obj2.label = intl.string(_modDef2812.TVZ0Fm);
     obj2.onPress = function handleOpenSystem() {
       const result = DeclarativeSystemNotifPermissionAnalytics.trackSystemNotifSettingsOpened(closure_0);
       const tmp = closure_0;

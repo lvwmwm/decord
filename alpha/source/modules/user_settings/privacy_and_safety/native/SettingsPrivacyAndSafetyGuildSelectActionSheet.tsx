@@ -1,21 +1,21 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15712
+// Function ID: 15713
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 2067, 5947, 15694, 21, 4866, 576, 5097, 2059, 1115, 504, 4830, 11505, 14457, 6092, 5951, 2]
+// Dependencies: [32, 19, 2066, 5936, 15711, 21, 4845, 576, 5076, 2058, 1115, 504, 4809, 11513, 14463, 6082, 5940, 2]
 // Exports: default
 
-// Module 15695 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 15712 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5947 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import SortedGuildStore from "SortedGuildStore" /* 5936 */;
 
 const require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(15694);
+const UserSettingsSafetySelectedGuildStore = fn(15711);
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = UserSettingsSafetySelectedGuildStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { iconContainer: { marginRight: nativeDefault.space.PX_12 } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -55,7 +55,7 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
         let reduced = flattenedGuildIds.reduce((arr, item) => {
           guild = guild.getGuild(item);
           if (null != guild) {
-            const obj = { type: first(5097).SelectOptionType.GUILD, value: null, label: null, guild: null };
+            const obj = { type: first(5076).SelectOptionType.GUILD, value: null, label: null, guild: null };
             ({ id: obj.value, name: obj.label } = guild);
             obj.guild = guild;
             arr.push(obj);
@@ -67,7 +67,7 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
         const obj5 = { query };
         reduced = obj4.queryGuilds(obj5).map((record) => {
           record = record.record;
-          return { type: first(5097).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+          return { type: first(5076).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
         });
         const queryGuildsResult = obj4.queryGuilds(obj5);
       }

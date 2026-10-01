@@ -1,19 +1,19 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14682
+// Function ID: 14683
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4830, 9194, 1981, 4866, 576, 1177, 5475, 4862, 1115, 2487, 1485, 6611, 9744, 563, 14677, 14678, 4820, 6195, 6817, 6113, 6740, 5477, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4809, 9188, 1981, 4845, 576, 1177, 5463, 4841, 1115, 2486, 1485, 6601, 9738, 563, 14683, 14684, 4799, 6185, 6807, 6103, 6730, 5465, 2]
 // Exports: default
 
-// Module 14676 (ScheduleDowntimeScreen)
+// Module 14682 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import Stack_Stack from "Stack/Stack" /* 5475 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9744 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import Stack_Stack from "Stack/Stack" /* 5463 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9738 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -30,7 +30,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
     const obj2 = { spacing: 8, children: null };
     const obj3 = { variant: "text-sm/medium", children: null };
     const intl = util.intl;
-    obj3.children = intl.string(_modDef2487["26A0Df"]);
+    obj3.children = intl.string(_modDef2486["26A0Df"]);
     const items = [closure_1_11(Text_Text.Text, obj3), ];
     const obj4 = {
       spacing: 4,
@@ -51,7 +51,7 @@ get_ActivityIndicator = fn(17);
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flex: 1 }, scrollContent: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, section: null, sectionHeader: null, daysContainer: null, dayButton: null, dayButtonSelected: null, overlapWarningContent: null, footer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 obj2.section = { gap: nativeDefault.space.PX_8 };
@@ -530,16 +530,16 @@ export default function ScheduleDowntimeScreen() {
     obj13.trailing = closure_11(tmp2(stringResult[14]).Text, obj14);
     obj13.onPress = function handleStartTimePress() {
       const intl = util.intl;
-      const f118882 = (first1) => {
+      const f119048 = (first1) => {
         closure_1_11(first1);
         const result = (closure_0(rule[19]).timeToMinutes(first1) + 540) % 1440;
         const time = { hours: Math.floor(result / 60), minutes: result % 60 };
         closure_1_13(time);
       };
-      const stringResult = intl.string(_modDef2487["8bLRt0"]);
+      const stringResult = intl.string(_modDef2486["8bLRt0"]);
       const obj2 = { title: stringResult, mode: "time", startDate: null, onSubmit: null };
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequireImpl(9194, dependencyMap.paths);
+      const tmp2 = asyncRequireImpl(9188, dependencyMap.paths);
       obj2.startDate = new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
       obj2.onSubmit = function onSubmit(hours) {
         const time = { hours: hours.hours(), minutes: hours.minutes() };
@@ -559,10 +559,10 @@ export default function ScheduleDowntimeScreen() {
     obj15.onPress = function handleEndTimePress() {
       const intl = util.intl;
       closure_0 = closure_13;
-      const stringResult = intl.string(_modDef2487["+JkWJV"]);
+      const stringResult = intl.string(_modDef2486["+JkWJV"]);
       const obj2 = { title: stringResult, mode: "time", startDate: null, onSubmit: null };
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequireImpl(9194, dependencyMap.paths);
+      const tmp2 = asyncRequireImpl(9188, dependencyMap.paths);
       obj2.startDate = new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
       obj2.onSubmit = function onSubmit(hours) {
         const time = { hours: hours.hours(), minutes: hours.minutes() };

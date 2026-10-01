@@ -1,13 +1,13 @@
-// Module ID: 8095
-// Function ID: 8096
+// Module ID: 8084
+// Function ID: 8085
 // Name: AppleNeutralIcon
-// Dependencies: [19, 21, 576, 4560, 8096, 2]
+// Dependencies: [19, 21, 576, 4559, 8085, 2]
 // Exports: AppleNeutralIcon
 
-// Module 8095 (AppleNeutralIcon)
+// Module 8084 (AppleNeutralIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod8096 from "module_8096" /* 8096 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod8085 from "module_8085" /* 8085 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AppleNeutralIcon = function AppleNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8096, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8085, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

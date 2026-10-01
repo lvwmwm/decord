@@ -1,24 +1,24 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12851
+// Function ID: 12852
 // Name: VibegrationsConnectionStore
-// Dependencies: [32, 5, 1372, 12843, 8694, 573, 8696, 12844, 8697, 12846, 1115, 3715, 8695, 12847, 559, 7367, 12848, 12849, 504, 2]
-// Exports: closeConnection, createDatabaseRestorePoint, deleteStagedAttachment, draftPatchNotes, ensureConnection, exportProjectArchive, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchProjectMcpConnection, fetchSourceHistory, forceCompaction, getPreviewScreenshotUrl, interruptTurn, isAttachmentAvailable, publishProject, remixProjectWorkspace, requestDebugStatus, requestExternalAuthorizeUrl, requestProjectRebuild, resetHistoryPaging, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry, sendModelSettings, sendUserMessage, stageModelSettings, submitProjectSecrets, submitProjectSettings, uploadAttachment
+// Dependencies: [32, 5, 1372, 12852, 8686, 573, 8688, 12853, 8689, 12855, 1115, 3714, 8687, 12856, 559, 7345, 12857, 12858, 504, 2]
+// Exports: closeConnection, createDatabaseRestorePoint, deleteStagedAttachment, draftPatchNotes, ensureConnection, exportProjectArchive, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchProjectMcpConnection, fetchSourceHistory, forceCompaction, formatMcpConnectionExpiry, getPreviewScreenshotUrl, interruptTurn, isAttachmentAvailable, publishProject, remixProjectWorkspace, requestDebugStatus, requestExternalAuthorizeUrl, requestProjectRebuild, resetHistoryPaging, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry, sendModelSettings, sendUserMessage, stageModelSettings, submitProjectSecrets, submitProjectSettings, uploadAttachment
 
-// Module 12842 (VibegrationsConnectionStore)
+// Module 12851 (VibegrationsConnectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import createNonce from "createNonce" /* 7367 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8695 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8696 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8697 */;
-import vibegrationsPreviewClaims from "vibegrationsPreviewClaims" /* 12846 */;
-import VibegrationsWebSocket from "VibegrationsWebSocket" /* 12847 */;
+import createNonce from "createNonce" /* 7345 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8687 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8688 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8689 */;
+import vibegrationsPreviewClaims from "vibegrationsPreviewClaims" /* 12855 */;
+import VibegrationsWebSocket from "VibegrationsWebSocket" /* 12856 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12843 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8694 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12852 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8686 */;
 
 require = fn;
 function rejectPendingPublish(pendingPublish, arg1) {
@@ -465,7 +465,7 @@ function handleEvent(projectId, pendingEvents, type) {
         const obj68 = attachment_id(573);
       } else {
         const intl2 = require("util").intl;
-        sendFailedStep(projectId, intl2.string(attachment_id(3715).Z8Eo8I), obj2);
+        sendFailedStep(projectId, intl2.string(attachment_id(3714).Z8Eo8I), obj2);
       }
     } else if ("thinking_lifecycle" === type.kind) {
       ({ phase, session, seq, ticks, elapsed_ms, text } = type);
@@ -590,7 +590,7 @@ function handleEvent(projectId, pendingEvents, type) {
         const obj51 = attachment_id(573);
       } else {
         const intl = require("util").intl;
-        sendFailedStep(projectId, intl.string(attachment_id(3715).IHCafX), obj2);
+        sendFailedStep(projectId, intl.string(attachment_id(3714).IHCafX), obj2);
       }
     } else if ("ideas" === type.kind) {
       let tmp117 = null != type.ideas;
@@ -915,11 +915,11 @@ function handleEvent(projectId, pendingEvents, type) {
       if ("capture_claim" !== type.type) {
         if ("preview_operation" === type.type) {
           if ("begin" === type.phase) {
-            const result3 = attachment_id(8697).beginPreviewOperation(projectId);
-            const obj18 = attachment_id(8697);
+            const result3 = attachment_id(8689).beginPreviewOperation(projectId);
+            const obj18 = attachment_id(8689);
           } else {
-            attachment_id(8697).endPreviewOperation(projectId);
-            const obj17 = attachment_id(8697);
+            attachment_id(8689).endPreviewOperation(projectId);
+            const obj17 = attachment_id(8689);
           }
         } else if ("model_settings" === type.type) {
           const obj175 = { type: "VIBEGRATIONS_MODEL_SETTINGS_SET", projectId, settings: null, tierSettings: null, tiers: null, choices: null };
@@ -1056,9 +1056,9 @@ function handleEvent(projectId, pendingEvents, type) {
                     value.add(combined);
                     ({ location: obj3.location, code: obj3.code } = tmp2);
                     ({ message: obj3.message, source: obj3.details } = historical);
-                    const result1 = pendingEvents(8696).trackVibegrationErrored(projectId, { location: null, code: null, message: null, details: null });
+                    const result1 = pendingEvents(8688).trackVibegrationErrored(projectId, { location: null, code: null, message: null, details: null });
                     const obj = { location: null, code: null, message: null, details: null };
-                    obj2 = pendingEvents(8696);
+                    obj2 = pendingEvents(8688);
                   }
                   obj4 = map6;
                 }
@@ -2310,9 +2310,10 @@ let closure_62 = async function _fetchProjectMcpConnection(arg0, value) {
           closure_130_5 = undefined;
           closure_130_6 = undefined;
           closure_130_7 = undefined;
+          closure_130_8 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -2334,8 +2335,8 @@ let closure_62 = async function _fetchProjectMcpConnection(arg0, value) {
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          obj7 = { value, done: true };
-          return obj7;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
           closure_130_2 = value;
           ticket = closure_130_2.ticket;
@@ -2385,14 +2386,20 @@ let closure_62 = async function _fetchProjectMcpConnection(arg0, value) {
         return obj13;
       } else {
         closure_130_7 = value;
-        value = { url: closure_130_7.url, token: closure_130_7.token, expiresAt: closure_130_7.expires_at };
+        if (typeof closure_130_7.expires_in === "number") {
+          const _Date = Date;
+          let sum = Date.now() + 1000 * closure_130_7.expires_in;
+        } else {
+          const _Date2 = Date;
+          sum = Date.parse(closure_130_7.expires_at);
+        }
+        closure_130_8 = sum;
+        const obj = { url: closure_130_7.url, expiresAtMs: closure_130_8 };
         c5 = 3;
-        const obj14 = { value, done: true };
-        return obj14;
       }
-    } catch (tmp29) {
+    } catch (tmp32) {
       c5 = tmp;
-      throw tmp29;
+      throw tmp32;
     }
   }
 };
@@ -2672,95 +2679,31 @@ function getAttachmentUrl(arg0, arg1) {
   }
   return applyArgumentsResult;
 }
-let closure_67 = async function _getAttachmentUrl(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_4 = tmp5;
-          closure_3 = tmp2;
-          closure_131_2 = undefined;
-          closure_131_0 = closure_0;
-          closure_131_1 = closure_1;
-          let obj4 = closure_2;
-          if (closure_2 === undefined) {
-            obj4 = {};
-          }
-          let flag = obj4.download;
-          if (flag === undefined) {
-            flag = false;
-          }
-          closure_131_2 = flag;
-          closure_131_3 = undefined;
-          let ticket;
-          let baseUrl;
-          closure_131_6 = undefined;
-          c5 = 1;
-          c6 = 1;
-          return { value: "flex", done: true };
-        }
-      } else if (1 === tmp5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          c5 = 2;
-          c6 = 1;
-          const obj6 = { value: closure_132_43(closure_131_0), done: false };
-          return obj6;
-        }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        obj7 = { value, done: true };
-        return obj7;
-      } else {
-        closure_131_3 = value;
-        ticket = closure_131_3.ticket;
-        baseUrl = closure_131_3.baseUrl;
-        const _URLSearchParams = URLSearchParams;
-        const obj8 = { ticket };
-        const uRLSearchParams = new URLSearchParams(obj8);
-        closure_131_6 = uRLSearchParams;
-        if (closure_131_2) {
-          const result = closure_131_6.set("download", "1");
-        }
-        const _HermesInternal = HermesInternal;
-        c6 = 3;
-        const obj = { value: "" + closure_132_53(baseUrl, closure_131_1) + "?" + closure_131_6, done: true };
-        return obj;
-      }
-    } catch (tmp21) {
-      c6 = tmp;
-      throw tmp21;
-    }
+let closure_67 = async function _getAttachmentUrl() {
+  closure_3 = tmp2;
+  closure_131_0 = closure_0;
+  closure_131_1 = closure_1;
+  let obj4 = closure_2;
+  if (closure_2 === undefined) {
+    obj4 = {};
   }
+  let flag = obj4.download;
+  if (flag === undefined) {
+    flag = false;
+  }
+  closure_131_2 = flag;
+  await "flex";
+  closure_131_3 = await closure_132_43(closure_131_0);
+  const ticket = closure_131_3.ticket;
+  const baseUrl = closure_131_3.baseUrl;
+  const _URLSearchParams = URLSearchParams;
+  const uRLSearchParams = new URLSearchParams({ ticket });
+  closure_131_6 = uRLSearchParams;
+  if (closure_131_2) {
+    const result = closure_131_6.set("download", "1");
+  }
+  const _HermesInternal = HermesInternal;
+  return "" + closure_132_53(baseUrl, closure_131_1) + "?" + closure_131_6;
 };
 let closure_68 = async function _isAttachmentAvailable(arg0, value) {
   if (c5 === 2) {
@@ -2882,7 +2825,7 @@ function closeAllConnections() {
   map5.clear();
   map8.clear();
 }
-const getOlderHistoryCursor = fn(12843).getOlderHistoryCursor;
+const getOlderHistoryCursor = fn(12852).getOlderHistoryCursor;
 const map = new Map();
 let set = new Set(["activity", "automod", "widget", "bot"]);
 const map1 = new Map();
@@ -2890,20 +2833,20 @@ const map2 = new Map();
 const set1 = new Set();
 const map3 = new Map();
 const map4 = new Map();
-let value = { location: "connection", code: fn(8696).VibegrationErrorCodes.SEND_FAILED };
-let obj2 = { location: "agent", code: fn(8696).VibegrationErrorCodes.AGENT_ERROR };
+let value = { location: "connection", code: fn(8688).VibegrationErrorCodes.SEND_FAILED };
+let obj2 = { location: "agent", code: fn(8688).VibegrationErrorCodes.AGENT_ERROR };
 const map5 = new Map();
 let closure_26 = { steered: true, queued: true, restarting: true, answered: true };
-let obj3 = { build_error: { location: "build", code: fn(8696).VibegrationErrorCodes.BUILD_FAILED }, healthcheck_failed: null, error: null };
-let obj4 = { location: "build", code: fn(8696).VibegrationErrorCodes.BUILD_FAILED };
-obj3.healthcheck_failed = { location: "healthcheck", code: fn(8696).VibegrationErrorCodes.HEALTHCHECK_FAILED };
-let obj5 = { location: "healthcheck", code: fn(8696).VibegrationErrorCodes.HEALTHCHECK_FAILED };
-obj3.error = { location: "agent", code: fn(8696).VibegrationErrorCodes.AGENT_ERROR };
+let obj3 = { build_error: { location: "build", code: fn(8688).VibegrationErrorCodes.BUILD_FAILED }, healthcheck_failed: null, error: null };
+let obj4 = { location: "build", code: fn(8688).VibegrationErrorCodes.BUILD_FAILED };
+obj3.healthcheck_failed = { location: "healthcheck", code: fn(8688).VibegrationErrorCodes.HEALTHCHECK_FAILED };
+let obj5 = { location: "healthcheck", code: fn(8688).VibegrationErrorCodes.HEALTHCHECK_FAILED };
+obj3.error = { location: "agent", code: fn(8688).VibegrationErrorCodes.AGENT_ERROR };
 let obj7 = { web: null, preview: null };
-let obj6 = { location: "agent", code: fn(8696).VibegrationErrorCodes.AGENT_ERROR };
-obj7.web = { location: "runtime_frame", code: fn(8696).VibegrationErrorCodes.RUNTIME_FRAME_ERROR };
-let obj8 = { location: "runtime_frame", code: fn(8696).VibegrationErrorCodes.RUNTIME_FRAME_ERROR };
-obj7.preview = { location: "runtime_worker", code: fn(8696).VibegrationErrorCodes.RUNTIME_WORKER_ERROR };
+let obj6 = { location: "agent", code: fn(8688).VibegrationErrorCodes.AGENT_ERROR };
+obj7.web = { location: "runtime_frame", code: fn(8688).VibegrationErrorCodes.RUNTIME_FRAME_ERROR };
+let obj8 = { location: "runtime_frame", code: fn(8688).VibegrationErrorCodes.RUNTIME_FRAME_ERROR };
+obj7.preview = { location: "runtime_worker", code: fn(8688).VibegrationErrorCodes.RUNTIME_WORKER_ERROR };
 const map6 = new Map();
 const map7 = new Map();
 const map8 = new Map();
@@ -3560,6 +3503,9 @@ export const requestProjectRebuild = function requestProjectRebuild(arg0) {
   })().catch((error) => {
 
   });
+};
+export const formatMcpConnectionExpiry = function formatMcpConnectionExpiry(connection) {
+  return new Date(connection.expiresAtMs).toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 };
 export const fetchProjectMcpConnection = function fetchProjectMcpConnection(arg0) {
   const self = this;

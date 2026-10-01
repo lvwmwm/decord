@@ -1,11 +1,15 @@
 // Module ID: 6254
 // Function ID: 6255
-// Dependencies: [19]
+// Dependencies: []
+// Exports: isFabricInstalled
 
 // Module 6254
-import _mod19 from "module_19" /* 19 */;
+const global = arg0;
 
-const context = _mod19.createContext(null);
-
-export const BottomSheetModalContext = context;
-export const BottomSheetModalProvider = context.Provider;
+export const isFabricInstalled = function isFabricInstalled() {
+  let prop;
+  if (global != null) {
+    prop = global.nativeFabricUIManager;
+  }
+  return null != prop;
+};

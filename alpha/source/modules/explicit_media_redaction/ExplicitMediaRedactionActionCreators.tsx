@@ -1,10 +1,10 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 8897
+// Function ID: 8898
 // Name: ExplicitMediaRedactionActionCreators
 // Dependencies: [1074, 1271, 2]
 // Exports: reportFailedSendFalsePositive, reportFalsePositive, sendMessagesForScanning, sendMultiChannelMessagesForScanning
 
-// Module 7219 (ExplicitMediaRedactionActionCreators)
+// Module 8897 (ExplicitMediaRedactionActionCreators)
 import Constants from "Constants" /* 1074 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import size from "module_2" /* 2 */;

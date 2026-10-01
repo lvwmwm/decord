@@ -1,11 +1,11 @@
 // Module ID: 4242
 // Function ID: 4243
-// Dependencies: [3948, 3949]
+// Dependencies: [3947, 3948]
 // Exports: default
 
 // Module 4242
-import _typeof_mod from "module_3948" /* 3948 */;
-import requiredArgs_mod from "requiredArgs" /* 3949 */;
+import _typeof_mod from "module_3947" /* 3947 */;
+import requiredArgs_mod from "requiredArgs" /* 3948 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,10 +24,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isAfter(arg0, arg1) {
+export default function isBefore(arg0, arg1) {
   requiredArgs.default(2, arguments);
   const defaultResult1 = _typeof.default(arg0);
   const time = defaultResult1.getTime();
-  return time > _typeof.default(arg1).getTime();
+  return time < _typeof.default(arg1).getTime();
 };
 export default exports.default;

@@ -1,13 +1,13 @@
-// Module ID: 15345
-// Function ID: 15346
+// Module ID: 15350
+// Function ID: 15351
 // Name: HashmarkIcon
-// Dependencies: [19, 21, 576, 4560, 15346, 2]
+// Dependencies: [19, 21, 576, 4559, 15351, 2]
 // Exports: HashmarkIcon
 
-// Module 15345 (HashmarkIcon)
+// Module 15350 (HashmarkIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod15346 from "module_15346" /* 15346 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod15351 from "module_15351" /* 15351 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HashmarkIcon = function HashmarkIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15346, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15351, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

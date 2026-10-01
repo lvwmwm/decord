@@ -1,19 +1,19 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12112
+// Function ID: 12113
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 7393, 7394, 2001, 5616, 1372, 5502, 4866, 576, 11677, 12, 6923, 504, 5620, 11678, 11676, 8918, 1979, 12104, 2]
+// Dependencies: [32, 19, 7371, 7372, 2001, 5604, 1372, 5490, 4845, 576, 11685, 12, 6914, 504, 5608, 11686, 11684, 8911, 1979, 12113, 2]
 
-// Module 12103 (ChatInputAppCommandManager)
+// Module 12112 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 576 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5620 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11676 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12104 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5608 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11684 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12113 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7393 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7394 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7371 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7372 */;
 import GameStore from "GameStore" /* 2001 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5616 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5604 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -41,9 +41,9 @@ function areResolvedGamesEqual(size, size2) {
     return false;
   }
 }
-const ChannelAutocompleteConstants = fn(5502);
+const ChannelAutocompleteConstants = fn(5490);
 ({ extractGameMentionIds: closure_11, GAME_MENTION_RAW_RE_GLOBAL: closure_12, GAME_MENTION_SENTINEL: map1 } = ChannelAutocompleteConstants);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { commandOption: { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.xs, fontSize: 14 }, commandErrorOption: null, gameMention: null, timestampMention: null, autocomplete: null };
 let obj3 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
 obj.commandErrorOption = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.xs, fontSize: 14 };

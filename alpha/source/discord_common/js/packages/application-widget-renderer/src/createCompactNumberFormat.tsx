@@ -1,10 +1,10 @@
-// Module ID: 8590
-// Function ID: 8591
+// Module ID: 8582
+// Function ID: 8583
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 8590 (createCompactNumberFormat)
+// Module 8582 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
 
 function toAsciiDigits(arg0, get) {

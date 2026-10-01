@@ -1,9 +1,0 @@
-// Module ID: 8814
-// Function ID: 8815
-// Dependencies: [1121]
-
-// Module 8814
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "e92f31ca34ceaeec68c2321f683014ca", name: "img_nitro_global_emoji", type: "png" });

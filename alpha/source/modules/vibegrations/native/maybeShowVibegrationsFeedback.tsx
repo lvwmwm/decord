@@ -1,13 +1,13 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16545
+// Function ID: 16546
 // Name: maybeShowVibegrationsFeedback
-// Dependencies: [11326, 16513, 16524, 16542, 1981, 6655, 4830, 2]
+// Dependencies: [11334, 16534, 16546, 16564, 1981, 6645, 4809, 2]
 // Exports: default
 
-// Module 16523 (maybeShowVibegrationsFeedback)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import Constants from "Constants" /* 11326 */;
-import FeedbackManagerDefault from "FeedbackManager" /* 16524 */;
+// Module 16545 (maybeShowVibegrationsFeedback)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import Constants from "Constants" /* 11334 */;
+import FeedbackManagerDefault from "FeedbackManager" /* 16546 */;
 import size from "module_2" /* 2 */;
 
 const FeedbackType = Constants.FeedbackType;
@@ -16,12 +16,12 @@ let result = size.fileFinishedImporting("modules/vibegrations/native/maybeShowVi
 export default function maybeShowVibegrationsFeedback(arg0) {
   _require = arg0;
   if (!obj.consumeFeedbackSkipForProject(arg0)) {
-    const countSettledTurnsResult = tmp(16513).countSettledTurns(arg0);
+    const countSettledTurnsResult = tmp(16534).countSettledTurns(arg0);
     importDefault = countSettledTurnsResult;
-    let result = countSettledTurnsResult < tmp(16513).MINIMUM_SETTLED_TURNS_FOR_FEEDBACK;
+    let result = countSettledTurnsResult < tmp(16534).MINIMUM_SETTLED_TURNS_FOR_FEEDBACK;
     if (!result) {
-      result = tmp(16513).hasShownFeedbackForProject(arg0);
-      const tmpResult2 = tmp(16513);
+      result = tmp(16534).hasShownFeedbackForProject(arg0);
+      const tmpResult2 = tmp(16534);
     }
     if (!result) {
       const result1 = FeedbackManagerDefault.possiblyShowFeedbackModal(FeedbackType.VIBEGRATIONS, () => {
@@ -33,6 +33,6 @@ export default function maybeShowVibegrationsFeedback(arg0) {
         });
       });
     }
-    const tmpResult = tmp(16513);
+    const tmpResult = tmp(16534);
   }
 };

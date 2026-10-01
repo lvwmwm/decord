@@ -1,19 +1,19 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12124
+// Function ID: 12125
 // Name: NotificationUtils
-// Dependencies: [5, 17, 12107, 1074, 12110, 1241, 8945, 9558, 2]
+// Dependencies: [5, 17, 12116, 1074, 12119, 1241, 8938, 9552, 2]
 
-// Module 12116 (NotificationUtils)
+// Module 12124 (NotificationUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PushNotificationDefault from "PushNotification" /* 8945 */;
-import SoundUtils from "SoundUtils" /* 9558 */;
+import PushNotificationDefault from "PushNotification" /* 8938 */;
+import SoundUtils from "SoundUtils" /* 9552 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
-const PermissionStateType = fn(12107).PermissionStateType;
+const PermissionStateType = fn(12116).PermissionStateType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("utils/native/NotificationUtils.tsx");

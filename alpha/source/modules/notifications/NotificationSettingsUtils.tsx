@@ -1,12 +1,12 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14220
+// Function ID: 14221
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 14206, 14213, 14214, 504, 1435, 2]
+// Dependencies: [32, 19, 14214, 14221, 14222, 504, 1435, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 14212 (notifications/NotificationSettingsUtils)
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 14213 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14214 */;
+// Module 14220 (notifications/NotificationSettingsUtils)
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 14221 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14222 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -24,7 +24,7 @@ function getNamedExperiment(experiment) {
     return tmp;
   }
 }
-const NotificationSettingsConstants = fn(14206);
+const NotificationSettingsConstants = fn(14214);
 ({ NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: hasOwnProperty } = NotificationSettingsConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");

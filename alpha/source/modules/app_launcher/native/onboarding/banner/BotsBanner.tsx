@@ -1,12 +1,12 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11758
+// Function ID: 11759
 // Name: BotsBanner
-// Dependencies: [19, 21, 11751, 11735, 11746, 1115, 2]
+// Dependencies: [19, 21, 11759, 11743, 11754, 1115, 2]
 // Exports: default
 
-// Module 11750 (BotsBanner)
-import BannerBaseDefault from "BannerBase" /* 11746 */;
-import useBannerBots from "useBannerBots" /* 11751 */;
+// Module 11758 (BotsBanner)
+import BannerBaseDefault from "BannerBase" /* 11754 */;
+import useBannerBots from "useBannerBots" /* 11759 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

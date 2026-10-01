@@ -1,17 +1,24 @@
 // Module ID: 13762
 // Function ID: 13763
-// Dependencies: [13754]
+// Dependencies: [13763]
 
 // Module 13762
-import _mod13754 from "module_13754" /* 13754 */;
+import _mod13763 from "module_13763" /* 13763 */;
 
 
-export default (str, arg1) => {
-  const tmp = _mod13754;
-  const tmpResult = tmp(str.trim().replace(/^[=v]+/, ""), arg1);
-  let version = null;
-  if (tmpResult) {
-    version = tmpResult.version;
+export default (arg0, arg1) => {
+  if (arg0 instanceof _mod13763) {
+    return arg0;
+  } else {
+    try {
+      const tmp8 = new _mod13763(arg0, arg1);
+      return tmp8;
+    } catch (tmp10) {
+      if (tmp) {
+        throw tmp10;
+      } else {
+        return null;
+      }
+    }
   }
-  return version;
 };

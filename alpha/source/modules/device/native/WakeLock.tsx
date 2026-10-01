@@ -1,11 +1,11 @@
-// Module ID: 9118
-// Function ID: 9119
+// Module ID: 9112
+// Function ID: 9113
 // Name: WakeLock
-// Dependencies: [19, 9119, 2]
+// Dependencies: [19, 9113, 2]
 // Exports: default, useWakeLock
 
-// Module 9118 (WakeLock)
-import NativeScreenWakeLockModuleDefault from "NativeScreenWakeLockModule" /* 9119 */;
+// Module 9112 (WakeLock)
+import NativeScreenWakeLockModuleDefault from "NativeScreenWakeLockModule" /* 9113 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

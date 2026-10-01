@@ -1,14 +1,14 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15307
+// Function ID: 15308
 // Name: ChangeLogSetting
-// Dependencies: [1074, 11211, 1115, 4817, 15303, 2]
+// Dependencies: [1074, 11215, 1115, 4796, 15308, 2]
 
-// Module 15302 (ChangeLogSetting)
+// Module 15307 (ChangeLogSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4817 */;
-import ChangeLogModal from "ChangeLogModal" /* 15303 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4796 */;
+import ChangeLogModal from "ChangeLogModal" /* 15308 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const route = SettingBuilders.createRoute({

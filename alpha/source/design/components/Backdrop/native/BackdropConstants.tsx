@@ -1,9 +1,9 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14134
+// Function ID: 14135
 // Name: BackdropConstants
 // Dependencies: [2]
 
-// Module 14126 (BackdropConstants)
+// Module 14134 (BackdropConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Backdrop/native/BackdropConstants.tsx");

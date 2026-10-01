@@ -1,18 +1,18 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12221
+// Function ID: 12222
 // Name: openGuildPowerupRollbackSheet
-// Dependencies: [4830, 12214, 1981, 2]
+// Dependencies: [4809, 12222, 1981, 2]
 // Exports: default
 
-// Module 12213 (openGuildPowerupRollbackSheet)
+// Module 12221 (openGuildPowerupRollbackSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_POWERUP_ROLLBACK_SHEET_KEY = "GUILD_POWERUP_ROLLBACK_SHEET_KEY";
 const result = size.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupRollbackSheet.tsx");
 
 export default function openGuildPowerupRollbackSheet(arg0) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12214, dependencyMap.paths), GUILD_POWERUP_ROLLBACK_SHEET_KEY, arg0);
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12222, dependencyMap.paths), GUILD_POWERUP_ROLLBACK_SHEET_KEY, arg0);
 };
 export const GUILD_POWERUP_ROLLBACK_SHEET_KEY = "GUILD_POWERUP_ROLLBACK_SHEET_KEY";

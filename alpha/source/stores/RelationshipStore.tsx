@@ -1,13 +1,13 @@
-// Module ID: 4509
-// Function ID: 4510
+// Module ID: 4508
+// Function ID: 4509
 // Name: RelationshipStore
-// Dependencies: [32, 4510, 1372, 1074, 573, 504, 2]
+// Dependencies: [32, 4509, 1372, 1074, 573, 504, 2]
 
-// Module 4509 (RelationshipStore)
+// Module 4508 (RelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4510 */;
+import MessageRecord from "MessageRecord" /* 4509 */;
 import UserStore from "UserStore" /* 1372 */;
 
 function markAllUserIdListsStale() {
@@ -98,7 +98,7 @@ let closure_14 = 0;
 const dependencyMap = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "Array", blocked: "PX_8", ignored: "y", blockedOrIgnored: "HermesInternal" };
+let closure_19 = { friends: "unicodeVersion", blocked: "disabled", ignored: "isArray", blockedOrIgnored: "current" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;

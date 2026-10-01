@@ -1,20 +1,20 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10951
+// Function ID: 10952
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 4855, 21, 4866, 576, 1364, 504, 10893, 7950, 6095, 2]
+// Dependencies: [32, 19, 17, 4834, 21, 4845, 576, 1364, 504, 10894, 7937, 6085, 2]
 
-// Module 10950 (QuestDockRewardTile)
+// Module 10951 (QuestDockRewardTile)
 import nativeDefault from "native" /* 576 */;
-import AssetUtils from "AssetUtils" /* 10893 */;
+import AssetUtils from "AssetUtils" /* 10894 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ AppState: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { container: { borderRadius: nativeDefault.radii.sm, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }, video: { overflow: "hidden", height: "100%", width: "100%" }, image: { height: "100%", width: "100%" } };
   return obj;

@@ -1,18 +1,17 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 15115
+// Function ID: 15116
 // Name: TypingIndicatorSetting
-// Dependencies: [1074, 14489, 2029, 11211, 1115, 3717, 15110, 11652, 15112, 15161, 2]
+// Dependencies: [1074, 14495, 2029, 11215, 1115, 3716, 15116, 11660, 15118, 2]
 
-// Module 15109 (TypingIndicatorSetting)
+// Module 15115 (TypingIndicatorSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import _modDef3717 from "module_3717" /* 3717 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11652 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 15110 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 15161 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14489 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+import _modDef3716 from "module_3716" /* 3716 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11660 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 15116 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14495 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +21,7 @@ const dismissibleBadgeRouteProps = DismissibleBadgeUtils.createDismissibleBadgeR
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef3717["pT+BVM"]);
+    return intl.string(_modDef3716["pT+BVM"]);
   },
   parent: null,
   IconComponent: ChatDotsIcon.ChatDotsIcon,
@@ -35,9 +34,6 @@ const route = SettingBuilders.createRoute({
     route: Constants.UserSettingsSections.TYPING_INDICATOR,
     getComponent() {
       return require("CustomTypingIndicatorEditScreen").default;
-    },
-    usePersistentBadge() {
-      return { badgeType: SettingRendererTypes.SettingsBadgeType.BETA };
     }
   }
 });

@@ -1,12 +1,12 @@
-// Module ID: 8420
-// Function ID: 8421
+// Module ID: 8412
+// Function ID: 8413
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2067, 1074, 38, 6955, 8021, 1101, 2]
+// Dependencies: [5, 2066, 1074, 38, 6946, 8010, 1101, 2]
 // Exports: default
 
-// Module 8420 (navigateToGameAnnouncement)
+// Module 8412 (navigateToGameAnnouncement)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = fn;
 let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
@@ -47,7 +47,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
           let guild3;
           c3 = 1;
           c4 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp5) {

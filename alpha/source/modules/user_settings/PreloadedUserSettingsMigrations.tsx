@@ -1,17 +1,17 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14225
+// Function ID: 14226
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [2045, 1074, 1186, 2028, 6830, 510, 1222, 504, 1217, 2029, 7137, 2]
+// Dependencies: [2044, 1074, 1186, 2028, 6820, 510, 1222, 504, 1217, 2029, 7129, 2]
 
-// Module 14217 (PreloadedUserSettingsMigrations)
+// Module 14225 (PreloadedUserSettingsMigrations)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import wrappers from "wrappers" /* 1217 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import HotspotStore2 from "HotspotStore" /* 6830 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import HotspotStore2 from "HotspotStore" /* 6820 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NOTICE_HUBLINK) {
@@ -397,7 +397,7 @@ let items = [
         if (!tmpResult.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_DOWNLOAD)) {
           userContent.userContent.dismissedContents = tmp(2028).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_DOWNLOAD);
           flag = true;
-          const tmpResult6 = tmp(2028);
+          const tmpResult4 = tmp(2028);
         }
         value = flag;
         tmpResult = tmp(2028);
@@ -407,8 +407,8 @@ let items = [
         flag2 = true;
       }
       const Storage2 = tmp(510).Storage;
-      let value3 = Storage2.get("hideConnectSpotify");
-      if (value3) {
+      value2 = Storage2.get("hideConnectSpotify");
+      if (value2) {
         const NAGBAR_NOTICE_CONNECT_SPOTIFY = tmp(2029).DismissibleContent.NAGBAR_NOTICE_CONNECT_SPOTIFY;
         if (null == userContent.userContent) {
           const UserContentSettings2 = tmp(1186).UserContentSettings;
@@ -420,40 +420,15 @@ let items = [
           userContent.userContent.dismissedContents = uint8Array1;
         }
         let flag3 = false;
-        if (!tmpResult7.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY)) {
+        if (!tmpResult5.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY)) {
           userContent.userContent.dismissedContents = tmp(2028).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY);
           flag3 = true;
-          const tmpResult8 = tmp(2028);
+          const tmpResult6 = tmp(2028);
         }
-        value3 = flag3;
-        tmpResult7 = tmp(2028);
+        value2 = flag3;
+        tmpResult5 = tmp(2028);
       }
-      if (value3) {
-        flag2 = true;
-      }
-      const Storage3 = tmp(510).Storage;
-      let value4 = Storage3.get("hideConnectPlayStation");
-      if (value4) {
-        const NAGBAR_NOTICE_CONNECT_PLAYSTATION = tmp(2029).DismissibleContent.NAGBAR_NOTICE_CONNECT_PLAYSTATION;
-        if (null == userContent.userContent) {
-          const UserContentSettings3 = tmp(1186).UserContentSettings;
-          userContent.userContent = UserContentSettings3.create();
-        }
-        if (null == userContent.userContent.dismissedContents) {
-          const _Uint8Array3 = Uint8Array;
-          const uint8Array2 = new Uint8Array();
-          userContent.userContent.dismissedContents = uint8Array2;
-        }
-        let flag4 = false;
-        if (!tmpResult9.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_PLAYSTATION)) {
-          userContent.userContent.dismissedContents = tmp(2028).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_PLAYSTATION);
-          flag4 = true;
-          const tmpResult10 = tmp(2028);
-        }
-        value4 = flag4;
-        tmpResult9 = tmp(2028);
-      }
-      if (value4) {
+      if (value2) {
         flag2 = true;
       }
       return flag2;
@@ -463,8 +438,6 @@ let items = [
       Storage.remove("hideNag");
       const Storage2 = Storage4.Storage;
       Storage2.remove("hideConnectSpotify");
-      const Storage3 = Storage4.Storage;
-      Storage3.remove("hideConnectPlayStation");
     }
   },
   {
@@ -655,7 +628,7 @@ let items = [
           Storage2.remove("lastChangeLogId");
           return false;
         }
-        tmpResult = tmp(7137);
+        tmpResult = tmp(7129);
       }
     },
     cleanup() {

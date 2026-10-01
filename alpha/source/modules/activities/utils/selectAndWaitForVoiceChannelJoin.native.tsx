@@ -1,12 +1,12 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 8996
+// Function ID: 8997
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 2099, 5920, 2]
+// Dependencies: [5, 2098, 5909, 2]
 // Exports: default
 
-// Module 9003 (selectAndWaitForVoiceChannelJoin)
+// Module 8996 (selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 let closure_5 = async function _selectAndWaitForVoiceChannelJoin(arg0, value) {
   if (c6 === 2) {
@@ -45,7 +45,7 @@ let closure_5 = async function _selectAndWaitForVoiceChannelJoin(arg0, value) {
           closure_129_2 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

@@ -1,23 +1,23 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8272
+// Function ID: 8273
 // Name: ChannelSettingsStore
-// Dependencies: [2049, 8023, 1386, 2045, 1074, 1114, 4511, 4513, 2054, 2055, 1271, 573, 12, 2059, 4451, 504, 2]
+// Dependencies: [2048, 8012, 1386, 2044, 1074, 1114, 4510, 4512, 2053, 2054, 1271, 573, 12, 2058, 4450, 504, 2]
 
-// Module 8282 (ChannelSettingsStore)
+// Module 8272 (ChannelSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ThreadConstants from "ThreadConstants" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
-import ForumLayout from "ForumLayout" /* 2055 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import _modDef4451 from "module_4451" /* 4451 */;
-import ReactionUtils from "ReactionUtils" /* 4511 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4513 */;
-import InviteRecord from "InviteRecord" /* 8023 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2053 */;
+import ForumLayout from "ForumLayout" /* 2054 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
+import _modDef4450 from "module_4450" /* 4450 */;
+import ReactionUtils from "ReactionUtils" /* 4510 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4512 */;
+import InviteRecord from "InviteRecord" /* 8012 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import Constants from "Constants" /* 1074 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ function _createInvite(code) {
   }
   obj.guild = fromInviteGuildResult;
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
-  obj.createdAt = _modDef4451(code.created_at);
+  obj.createdAt = _modDef4450(code.created_at);
   ({ type: obj.type, roles: obj.roles } = code);
   return new InviteRecord(obj);
 }

@@ -1,8 +1,8 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8378
+// Function ID: 8379
 // Dependencies: [2]
 
-// Module 8386
+// Module 8378
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-weak.png.js");

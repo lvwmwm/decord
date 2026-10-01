@@ -1,25 +1,25 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 16389
+// Function ID: 16390
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 12108, 1074, 2042, 21, 4866, 576, 1241, 4830, 12109, 6767, 16370, 4862, 5942, 5477, 1115, 2]
+// Dependencies: [19, 17, 12117, 1074, 2041, 21, 4845, 576, 1241, 4809, 12118, 6757, 16390, 4841, 5931, 5465, 1115, 2]
 // Exports: default
 
-// Module 16369 (NotificationNudgeBottomSheet)
+// Module 16389 (NotificationNudgeBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12109 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12118 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const NotificationPermissionConstants = fn(12108);
+const NotificationPermissionConstants = fn(12117);
 ({ EventActionType: hasOwnProperty, NotificationNudgeAnalyticsAction: metroRequire } = NotificationPermissionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_24, alignItems: "center" }, illustration: null, title: null, body: null, buttonsContainer: null };
 const obj3 = { marginHorizontal: nativeDefault.space.PX_24, alignItems: "center" };
 obj2.illustration = { marginVertical: nativeDefault.space.PX_24 };

@@ -1,13 +1,13 @@
-// Module ID: 10623
-// Function ID: 10624
+// Module ID: 10615
+// Function ID: 10616
 // Name: InboxIcon
-// Dependencies: [19, 21, 576, 4560, 10624, 2]
+// Dependencies: [19, 21, 576, 4559, 10616, 2]
 // Exports: InboxIcon
 
-// Module 10623 (InboxIcon)
+// Module 10615 (InboxIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod10624 from "module_10624" /* 10624 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod10616 from "module_10616" /* 10616 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const InboxIcon = function InboxIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10624, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10616, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

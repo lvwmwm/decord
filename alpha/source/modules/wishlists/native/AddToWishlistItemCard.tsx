@@ -1,13 +1,13 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12891
+// Function ID: 12892
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4866, 576, 12881, 8430, 8497, 1241, 8441, 4558, 1115, 8431, 8427, 2]
+// Dependencies: [5, 32, 19, 17, 1074, 21, 4845, 576, 12889, 8422, 8489, 1241, 8433, 4557, 1115, 8423, 8419, 2]
 // Exports: default
 
-// Module 12883 (AddToWishlistItemCard)
+// Module 12891 (AddToWishlistItemCard)
 import nativeDefault from "native" /* 576 */;
-import SKUPreviewDefault from "SKUPreview" /* 8430 */;
-import HeartOutlineIcon from "HeartOutlineIcon" /* 8497 */;
+import SKUPreviewDefault from "SKUPreview" /* 8422 */;
+import HeartOutlineIcon from "HeartOutlineIcon" /* 8489 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { heartOverlay: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_4, right: nativeDefault.space.PX_4, zIndex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 obj2.heartOverlay = rect;

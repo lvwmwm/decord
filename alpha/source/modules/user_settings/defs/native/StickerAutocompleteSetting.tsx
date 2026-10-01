@@ -1,14 +1,14 @@
-// Module ID: 15227
-// Function ID: 15228
+// Module ID: 15232
+// Function ID: 15233
 // Name: StickerAutocompleteSetting
-// Dependencies: [7612, 11211, 1115, 2021, 15220, 2]
+// Dependencies: [7590, 11215, 1115, 2021, 15225, 2]
 
-// Module 15227 (StickerAutocompleteSetting)
+// Module 15232 (StickerAutocompleteSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7612 */;
-import UserSettingsText from "UserSettingsText" /* 15220 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+import SettingsConstants from "SettingsConstants" /* 7590 */;
+import UserSettingsText from "UserSettingsText" /* 15225 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

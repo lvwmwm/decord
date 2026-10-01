@@ -1,19 +1,19 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12103
+// Function ID: 12104
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2108, 21, 4866, 576, 504, 11916, 1115, 6095, 4862, 2]
+// Dependencies: [19, 17, 2107, 21, 4845, 576, 504, 11923, 1115, 6085, 4841, 2]
 // Exports: default
 
-// Module 12094 (ApplicationSectionHeader)
+// Module 12103 (ApplicationSectionHeader)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { applicationHeaderWrapper: { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 }, applicationIcon: null };
 let size = { width: 16, height: 16, borderRadius: nativeDefault.radii.sm, marginRight: 8 };
 obj2.applicationIcon = size;
@@ -38,7 +38,7 @@ export default function ApplicationSectionHeader(section) {
     }
   });
   const obj = section(504);
-  const applicationCommandsIconSource = section(11916).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(11923).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -54,9 +54,9 @@ export default function ApplicationSectionHeader(section) {
   let tmp9 = null != applicationCommandsIconSource;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(6095), obj4);
+    tmp9 = closure_5(guildId(6085), obj4);
   }
-  const items1 = [tmp9, closure_5(section(4862).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  const items1 = [tmp9, closure_5(section(4841).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj3.children = items1;
   return closure_6(View, obj3);
 };

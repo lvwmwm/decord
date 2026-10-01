@@ -1,15 +1,15 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 8937
+// Function ID: 8938
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4866, 576, 1479, 1613, 6086, 8360, 2]
+// Dependencies: [32, 19, 17, 21, 4845, 576, 1479, 1613, 6076, 8351, 2]
 // Exports: default
 
-// Module 8944 (OAuth2AuthorizeContent)
+// Module 8937 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6086 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 8360 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6076 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 8351 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { fill: { flex: 1 }, scrollView: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 }, scrollViewContentLandscape: { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 }, scrollViewContentPortrait: { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 }, header: { paddingTop: 24 }, bodyContainer: { flexDirection: "column", gap: 16, padding: 16 }, bodyContainerBackground: null, footerPortrait: null, separator: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
 obj2.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };

@@ -1,15 +1,15 @@
-// Module ID: 8221
-// Function ID: 8222
+// Module ID: 8210
+// Function ID: 8211
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 1372, 8222, 510, 8223, 1364, 8224, 4895, 2]
+// Dependencies: [5, 1372, 8211, 510, 8212, 1364, 8213, 4874, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, getAppStoreAgeSignalAssertion, warmAgeSignalAttestation
 
-// Module 8221 (AppStoreAgeSignalAttestation)
+// Module 8210 (AppStoreAgeSignalAttestation)
 import Storage3 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8222 */;
-import NativeAppAttestModuleDefault from "NativeAppAttestModule" /* 8223 */;
-import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8224 */;
+import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8211 */;
+import NativeAppAttestModuleDefault from "NativeAppAttestModule" /* 8212 */;
+import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8213 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -150,7 +150,7 @@ let closure_11 = async function _registerAttestKey(arg0, value) {
           if (null != NativeAppAttestModuleDefault) {
             c3 = 1;
             c4 = 1;
-            const obj5 = { value: tmp26(8223).generateAndAttestKey(tmp25), done: false };
+            const obj5 = { value: tmp26(8212).generateAndAttestKey(tmp25), done: false };
             return obj5;
           }
           tmp25 = closure_0;

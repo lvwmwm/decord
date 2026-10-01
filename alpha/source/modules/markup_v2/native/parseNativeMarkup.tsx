@@ -1,16 +1,16 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7733
+// Function ID: 7734
 // Name: parseNativeMarkup
-// Dependencies: [12, 7747, 7750, 2]
+// Dependencies: [12, 7734, 7737, 2]
 // Exports: default
 
-// Module 7746 (parseNativeMarkup)
-import _mod7747 from "module_7747" /* 7747 */;
-import transformNativeMarkupNode from "transformNativeMarkupNode" /* 7750 */;
+// Module 7733 (parseNativeMarkup)
+import _mod7734 from "module_7734" /* 7734 */;
+import transformNativeMarkupNode from "transformNativeMarkupNode" /* 7737 */;
 import apply from "module_12" /* 12 */;
 
 require = fn;
-let closure_2 = apply.once(() => _mod7747.parse);
+let closure_2 = apply.once(() => _mod7734.parse);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/markup_v2/native/parseNativeMarkup.tsx");
 

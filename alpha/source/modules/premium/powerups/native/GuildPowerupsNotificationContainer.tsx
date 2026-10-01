@@ -1,18 +1,18 @@
-// Module ID: 12254
-// Function ID: 12255
+// Module ID: 12262
+// Function ID: 12263
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 4866, 576, 6597, 4862, 12255, 12256, 1115, 2519, 12259, 2]
+// Dependencies: [17, 21, 4845, 576, 6587, 4841, 12263, 12264, 1115, 2518, 12267, 2]
 // Exports: default
 
-// Module 12254 (GuildPowerupsNotificationContainer)
+// Module 12262 (GuildPowerupsNotificationContainer)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6597 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12255 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12256 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6587 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12263 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12264 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4866 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 function Tier3OverrideNotice(children) {
@@ -53,8 +53,8 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     }
     obj3.variant = str2;
     const intl = tmp6(1115).intl;
-    obj3.children = intl.string(tmp2(2519)["3FRirU"]);
-    const items = [React4(tmp6(4862).Text, obj3), , ];
+    obj3.children = intl.string(tmp2(2518)["3FRirU"]);
+    const items = [React4(tmp6(4841).Text, obj3), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       const obj4 = { text: tmp4.text };
@@ -65,7 +65,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(12259), obj9);
+      shouldShow2 = tmp11(tmp2(12267), obj9);
     }
     items[2] = shouldShow2;
     obj2.children = items;

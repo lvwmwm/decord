@@ -1,16 +1,16 @@
-// Module ID: 10656
-// Function ID: 10657
+// Module ID: 10648
+// Function ID: 10649
 // Name: ChannelTabsStore
-// Dependencies: [32, 2099, 4685, 2052, 10657, 1365, 504, 573, 2]
+// Dependencies: [32, 2098, 4684, 2051, 10649, 1365, 504, 573, 2]
 
-// Module 10656 (ChannelTabsStore)
+// Module 10648 (ChannelTabsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import TabsExperimentDefault from "TabsExperiment" /* 10657 */;
+import TabsExperimentDefault from "TabsExperiment" /* 10649 */;
 import _slicedToArray from "module_32" /* 32 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 
 require = fn;
 function handleChannelDelete(channel) {
@@ -72,7 +72,7 @@ function handleChannelDelete(channel) {
     return false;
   }
 }
-const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2051).isStaticChannelRoute;
 let tabs = [];
 let c8 = null;
 let closure_9 = 1;

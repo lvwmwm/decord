@@ -1,18 +1,18 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11906
+// Function ID: 11907
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2045, 1074, 21, 4866, 576, 504, 1101, 5069, 6115, 11900, 6085, 11901, 9772, 4862, 1115, 7461, 11902, 11894, 11903, 2]
+// Dependencies: [19, 17, 2044, 1074, 21, 4845, 576, 504, 1101, 5048, 6105, 11907, 6075, 11908, 9764, 4841, 1115, 7439, 11909, 11901, 11910, 2]
 
-// Module 11899 (ScheduledMessageCard)
+// Module 11906 (ScheduledMessageCard)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7461 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11894 */;
-import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 11902 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 11903 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7439 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11901 */;
+import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 11909 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 11910 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 function ScheduledMessageCardStatusHeader(isPendingRemoval) {
@@ -37,7 +37,7 @@ const View = fn(17).View;
 const Routes = fn(1074).Routes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, attachmentCount: { flexDirection: "row", alignItems: "center", gap: 4 }, pendingRemoval: { alignItems: "center", paddingVertical: 16 } };
 let closure_9 = createStyles.createStyles(obj);
 let obj3 = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
@@ -58,11 +58,11 @@ export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
     const obj3 = { scheduledMessage, isPendingRemoval };
     const items1 = [closure_7(ScheduledMessageCardStatusHeader, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(tmp2(11900).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(tmp2(11907).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(6085).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(6075).ActivityIndicator, { size: "small" }) };
       let tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: null };
@@ -70,21 +70,21 @@ export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
       if (length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: null };
         const obj9 = { size: "xxs", color: stateFromStores(576).colors.TEXT_MUTED };
-        const items2 = [tmp10(tmp2(9772).AttachmentIcon, obj9), ];
+        const items2 = [tmp10(tmp2(9764).AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
         const intl = tmp2(1115).intl;
         const obj11 = { count: length };
         obj10.children = intl.format(tmp2(1115).t.ZJ1tPW, obj11);
-        items2[1] = tmp10(tmp2(4862).Text, obj10);
+        items2[1] = tmp10(tmp2(4841).Text, obj10);
         obj8.children = items2;
         tmp9Result = tmp9(tmp12, obj8);
       }
       obj7.footer = tmp9Result;
-      tmp10Result = tmp10(tmp2(11901).ForLaterMessageRow, obj7);
+      tmp10Result = tmp10(tmp2(11908).ForLaterMessageRow, obj7);
     }
     items1[3] = tmp10Result;
     obj2.children = items1;
-    return closure_8(tmp2(6115).Card, obj2);
+    return closure_8(tmp2(6105).Card, obj2);
   }
   const obj = scheduledMessage(504);
 });

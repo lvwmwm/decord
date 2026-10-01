@@ -1,10 +1,10 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14346
+// Function ID: 14347
 // Name: SafeAreaProvider
 // Dependencies: [19, 17, 21, 1610, 1615, 1364, 1614, 1625, 1248, 1616, 1482, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 14338 (SafeAreaProvider)
+// Module 14346 (SafeAreaProvider)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import SafeAreaConstants from "SafeAreaConstants" /* 1615 */;
 import _mod1616 from "module_1616" /* 1616 */;

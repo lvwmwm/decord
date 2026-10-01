@@ -1,21 +1,21 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7721
+// Function ID: 7722
 // Name: ChangeLogActionCreators
-// Dependencies: [5, 4880, 1074, 2098, 573, 2021, 1271, 2]
+// Dependencies: [5, 4859, 1074, 2097, 573, 2021, 1271, 2]
 
-// Module 7734 (ChangeLogActionCreators)
+// Module 7721 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4880 */;
+import ChangelogStore from "ChangelogStore" /* 4859 */;
 
 require = fn;
 function cacheBustParam() {
   return "x=" + Math.floor(new Date().getMinutes() / 5);
 }
 const Endpoints = fn(1074).Endpoints;
-const ChangelogPlatforms = fn(2098).ChangelogPlatforms;
+const ChangelogPlatforms = fn(2097).ChangelogPlatforms;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ChangeLogActionCreators.tsx");
 

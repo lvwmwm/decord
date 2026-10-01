@@ -1,20 +1,20 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9465
+// Function ID: 9466
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4499, 1074, 2051, 1085, 504, 4504, 1086, 1115, 2111, 2]
+// Dependencies: [4498, 1074, 2050, 1085, 504, 4503, 1086, 1115, 2110, 2]
 // Exports: default
 
-// Module 9471 (usePrivacyLevelHelpText)
+// Module 9465 (usePrivacyLevelHelpText)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const constants = fn(2051).GuildScheduledEventPrivacyLevel;
+const constants = fn(2050).GuildScheduledEventPrivacyLevel;
 const Permissions = fn(1085).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/usePrivacyLevelHelpText.tsx");

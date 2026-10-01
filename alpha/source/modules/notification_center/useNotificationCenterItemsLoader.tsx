@@ -1,23 +1,23 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16275
+// Function ID: 16276
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 7246, 7248, 16254, 5048, 504, 16256, 6727, 7890, 2]
+// Dependencies: [5, 32, 19, 7224, 7226, 16274, 5027, 504, 16276, 6717, 7877, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 16255 (useNotificationCenterItemsLoader)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6727 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16256 */;
+// Module 16275 (useNotificationCenterItemsLoader)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6717 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16276 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 7246 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7248 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16254 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 7224 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7226 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16274 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ReadStateTypes = fn(5048).ReadStateTypes;
+const ReadStateTypes = fn(5027).ReadStateTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notification_center/useNotificationCenterItemsLoader.tsx");
 

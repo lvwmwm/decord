@@ -1,15 +1,15 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15166
+// Function ID: 15167
 // Name: FloatingApplyButton
-// Dependencies: [19, 4855, 1609, 21, 504, 1613, 4596, 576, 5476, 4831, 5477, 2]
+// Dependencies: [19, 4834, 1609, 21, 504, 1613, 4595, 576, 5464, 4810, 5465, 2]
 // Exports: default
 
-// Module 15160 (FloatingApplyButton)
+// Module 15166 (FloatingApplyButton)
 import nativeDefault from "native" /* 576 */;
-import HapticUtils from "HapticUtils" /* 4831 */;
-import spring from "spring" /* 5476 */;
+import HapticUtils from "HapticUtils" /* 4810 */;
+import spring from "spring" /* 5464 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const MEDIA_PICKER_SEND_BUTTON_SPRING = fn(1609).MEDIA_PICKER_SEND_BUTTON_SPRING;

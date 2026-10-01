@@ -1,11 +1,11 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6856
+// Function ID: 6857
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [2067, 1074, 504, 2]
+// Dependencies: [2066, 1074, 504, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 6865 (useIsCreatorMonetizationEnabledGuild)
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 6856 (useIsCreatorMonetizationEnabledGuild)
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 

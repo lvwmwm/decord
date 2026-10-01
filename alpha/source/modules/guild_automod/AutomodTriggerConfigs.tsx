@@ -1,20 +1,20 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 17567
+// Function ID: 17568
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11546, 1115, 16878, 9760, 2]
+// Dependencies: [19, 11554, 1115, 16899, 17568, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 17534 (AutomodTriggerConfigs)
+// Module 17567 (AutomodTriggerConfigs)
 import util from "util" /* 1115 */;
-import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 9760 */;
+import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 16899 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(11546);
+const Constants = fn(11554);
 ({ AutomodActionType, AutomodEventType, AutomodTriggerType } = Constants);
 const mentionTotalLimit = Constants.MENTION_SPAM_LIMIT_DEFAULT;
 let obj = { NEW: "new", RECOMMENDED: "recommended", BETA: "beta", ALPHA: "alpha" };
-let obj2 = {};
+const obj2 = {};
 let obj3 = {
   getDefaultRuleName() {
     const intl = util.intl;
@@ -32,7 +32,7 @@ obj3.flags = new Set();
 const set1 = new Set();
 obj3.defaultActionTypes = new Set();
 obj2[AutomodTriggerType.SPAM_LINK] = obj3;
-const obj4 = {
+let obj4 = {
   getDefaultRuleName() {
     const intl = util.intl;
     return intl.string(util.t.ffR2cM);
@@ -265,24 +265,23 @@ export const useAvailableTriggerTypes = function useAvailableTriggerTypes(guildI
   }, items);
 };
 export const getDefaultTriggerMetadataForTriggerType = function getDefaultTriggerMetadataForTriggerType(triggerType, guildId) {
-  guild_automod_ExperimentUtils;
   if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === triggerType) {
-    obj2 = { allowList: [], presets: [] };
-    return obj2;
+    const obj3 = { allowList: [], presets: [] };
+    return obj3;
   } else {
-    if (tmp3.USER_PROFILE !== triggerType) {
-      if (tmp3.KEYWORD !== triggerType) {
-        if (tmp3.MENTION_SPAM === triggerType) {
-          const obj = { mentionTotalLimit, mentionRaidProtectionEnabled: tmp2 };
+    if (tmp.USER_PROFILE !== triggerType) {
+      if (tmp.KEYWORD !== triggerType) {
+        if (tmp.MENTION_SPAM === triggerType) {
+          const obj = { mentionTotalLimit, mentionRaidProtectionEnabled: guild_automod_PermissionUtils.hasMentionRaidLimitAccess(guildId) };
           return obj;
-        } else if (tmp3.APPLICATION === triggerType) {
+        } else if (tmp.APPLICATION === triggerType) {
           return { applicationId: null };
-        } else if (tmp3.ML_SPAM !== triggerType) {
-          const SERVER_POLICY = tmp3.SERVER_POLICY;
+        } else if (tmp.ML_SPAM !== triggerType) {
+          const SERVER_POLICY = tmp.SERVER_POLICY;
         }
       }
     }
-    const obj3 = { keywordFilter: [], regexPatterns: [], allowList: [] };
-    return obj3;
+    const obj4 = { keywordFilter: [], regexPatterns: [], allowList: [] };
+    return obj4;
   }
 };

@@ -1,26 +1,26 @@
-// Module ID: 17328
-// Function ID: 17329
+// Module ID: 17349
+// Function ID: 17350
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2049, 2045, 4881, 1980, 7095, 1074, 6011, 5968, 2067, 3, 1091, 510, 7369, 1364, 573, 1231, 1241, 2074, 1271, 11, 12, 7261, 7264, 7262, 13409, 15334, 7093, 1370, 7103, 2]
+// Dependencies: [32, 5, 2048, 2044, 4860, 1980, 7087, 1074, 6000, 5957, 2066, 3, 1091, 510, 7347, 1364, 573, 1231, 1241, 2073, 1271, 11, 12, 7239, 7242, 7240, 13417, 15339, 7085, 1370, 7095, 2]
 // Exports: backgroundSync
 
-// Module 17328 (background_sync/BackgroundSync)
+// Module 17349 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
-import modules_Messages from "modules/Messages" /* 7093 */;
-import GuildVersionsDefault from "GuildVersions" /* 7261 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7262 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7264 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
+import modules_Messages from "modules/Messages" /* 7085 */;
+import GuildVersionsDefault from "GuildVersions" /* 7239 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7240 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7242 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 4881 */;
+import ReadStateStore from "ReadStateStore" /* 4860 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import FileSystemStore from "FileSystemStore" /* 7095 */;
+import FileSystemStore from "FileSystemStore" /* 7087 */;
 
 require = fn;
 let closure_17 = async function _backgroundSync(arg0) {
@@ -80,7 +80,7 @@ let closure_17 = async function _backgroundSync(arg0) {
             closure_130_7 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flex", done: true };
+            return { value: "flex", done: null };
           }
         } else if (1 === tmp8) {
           if (arg0 === 1) {
@@ -1032,14 +1032,14 @@ function writeMessageChanges(transaction, arg1, arg2, arg3, arg4) {
     }
   }, "Background Sync");
 }
-const ChannelRecord = fn(2049);
+const ChannelRecord = fn(2048);
 ({ isPrivate: hasOwnProperty, isThread: metroRequire } = ChannelRecord);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Endpoints: closure_12, MAX_MESSAGES_PER_CHANNEL: map1 } = Constants);
-const StickersStore = fn(6011);
-const ChannelStore = fn(2045);
-const EmojiStore = fn(5968);
-const GuildStore = fn(2067);
+const StickersStore = fn(6000);
+const ChannelStore = fn(2044);
+const EmojiStore = fn(5957);
+const GuildStore = fn(2066);
 let closure_14 = new LoggerDefault("BackgroundSync");
 let closure_15 = 4 * DurationsDefault.Millis.HOUR;
 const lastSyncTime = "lastSyncTime";

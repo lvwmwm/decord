@@ -1,19 +1,19 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8328
+// Function ID: 8329
 // Name: useGameProfileStoreWebsites
-// Dependencies: [19, 8338, 8339, 8341, 8340, 2]
+// Dependencies: [19, 8329, 8330, 8332, 8331, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 8337 (useGameProfileStoreWebsites)
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8338 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8340 */;
+// Module 8328 (useGameProfileStoreWebsites)
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8329 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8331 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const set = new Set(["1402418703554842694", "356877880938070016"]);
-let items = [fn(8338).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES, fn(8338).ThirdPartyGameApplicationWebsiteCategory.STEAM, fn(8338).ThirdPartyGameApplicationWebsiteCategory.ROBLOX, fn(8338).ThirdPartyGameApplicationWebsiteCategory.BATTLENET, fn(8338).ThirdPartyGameApplicationWebsiteCategory.RIOT, fn(8338).ThirdPartyGameApplicationWebsiteCategory.MINECRAFT];
+let items = [fn(8329).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES, fn(8329).ThirdPartyGameApplicationWebsiteCategory.STEAM, fn(8329).ThirdPartyGameApplicationWebsiteCategory.ROBLOX, fn(8329).ThirdPartyGameApplicationWebsiteCategory.BATTLENET, fn(8329).ThirdPartyGameApplicationWebsiteCategory.RIOT, fn(8329).ThirdPartyGameApplicationWebsiteCategory.MINECRAFT];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileStoreWebsites.tsx");
 
@@ -70,7 +70,7 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           someResult = steamReleaseStatus === SteamReleaseStatus.SteamReleaseStatus.RETIRED_ABANDONED;
         }
         if (!someResult) {
-          someResult = found.some((category) => category.category === steamWebsiteUrl(8338).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          someResult = found.some((category) => category.category === steamWebsiteUrl(8329).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         }
         if (!someResult) {
           const obj = { category: ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.STEAM, url: steamWebsiteUrl };
@@ -78,9 +78,9 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
         }
         const sorted = found.sort((category, category2) => {
           let num = -1;
-          if (category.category !== steamWebsiteUrl(8338).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+          if (category.category !== steamWebsiteUrl(8329).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
             let num2 = 0;
-            if (category2.category === steamWebsiteUrl(8338).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+            if (category2.category === steamWebsiteUrl(8329).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
               num2 = 1;
             }
             num = num2;

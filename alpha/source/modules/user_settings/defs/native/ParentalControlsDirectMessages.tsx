@@ -1,16 +1,16 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15736
+// Function ID: 15737
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7153, 7612, 14559, 14560, 11211, 1115, 2]
+// Dependencies: [7145, 7590, 14565, 14566, 11215, 1115, 2]
 
-// Module 15719 (ParentalControlsDirectMessages)
+// Module 15736 (ParentalControlsDirectMessages)
 import util from "util" /* 1115 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14559 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14560 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7153 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14566 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
 
 require = fn;
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -20,7 +20,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.wbYDfT);
   },
-  parent: fn(7612).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: fn(7590).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
     return !useParentalControlSettings.useDefaultGuildsRestricted();
   },

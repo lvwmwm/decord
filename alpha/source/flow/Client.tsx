@@ -1,9 +1,9 @@
-// Module ID: 4793
-// Function ID: 4794
+// Module ID: 4772
+// Function ID: 4773
 // Name: Client
 // Dependencies: [2, 1186]
 
-// Module 4793 (Client)
+// Module 4772 (Client)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import size from "module_2" /* 2 */;
 

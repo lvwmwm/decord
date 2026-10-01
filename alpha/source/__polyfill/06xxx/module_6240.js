@@ -1,0 +1,11 @@
+// Module ID: 6240
+// Function ID: 6241
+// Dependencies: [19]
+
+// Module 6240
+import _mod19 from "module_19" /* 19 */;
+
+const context = _mod19.createContext(null);
+
+export const BottomSheetInternalContext = context;
+export const BottomSheetInternalProvider = context.Provider;

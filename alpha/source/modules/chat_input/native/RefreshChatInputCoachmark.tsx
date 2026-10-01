@@ -1,20 +1,20 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11678
+// Function ID: 11679
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 2042, 7002, 2029, 1115, 4670, 10792, 2]
+// Dependencies: [32, 19, 2041, 6993, 2029, 1115, 4669, 10789, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11670 (RefreshChatInputCoachmark)
+// Module 11678 (RefreshChatInputCoachmark)
 import util from "util" /* 1115 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4670 */;
-import useCoachmark from "useCoachmark" /* 10792 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4669 */;
+import useCoachmark from "useCoachmark" /* 10789 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 

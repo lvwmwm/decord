@@ -1,16 +1,16 @@
-// Module ID: 8961
-// Function ID: 8962
+// Module ID: 8954
+// Function ID: 8955
 // Name: _launchFrame
-// Dependencies: [5, 8698, 8699, 8701, 8962, 573, 8981, 8963, 9010, 9011, 2]
+// Dependencies: [5, 8690, 8691, 8693, 8955, 573, 8974, 8956, 9003, 9005, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 8961 (_launchFrame)
+// Module 8954 (_launchFrame)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8962 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8981 */;
-import getFramesManagerDefault from "getFramesManager" /* 9011 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8955 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8974 */;
+import getFramesManagerDefault from "getFramesManager" /* 9005 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 8698 */;
+import FramesStore from "FramesStore" /* 8690 */;
 
 require = fn;
 let closure_11 = async function _launchFrame(arg0, value) {
@@ -54,7 +54,7 @@ let closure_11 = async function _launchFrame(arg0, value) {
           closure_129_10 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -320,9 +320,9 @@ let closure_16 = async function _refreshProxyTicket(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(8699);
+const FramesConstants = fn(8691);
 ({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getChannelIdForSurface: closure_7, getFrameIntentForSurface: closure_8, makeFrameId: closure_9 } = FramesConstants);
-const ActivityPanelModes = fn(8701).ActivityPanelModes;
+const ActivityPanelModes = fn(8693).ActivityPanelModes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 

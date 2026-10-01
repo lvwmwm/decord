@@ -1,18 +1,18 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17903
+// Function ID: 17904
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2099, 4685, 1372, 1980, 1074, 8703, 9755, 9757, 8945, 1115, 6735, 2]
+// Dependencies: [2098, 4684, 1372, 1980, 1074, 8695, 9749, 9751, 8938, 1115, 6725, 2]
 
-// Module 17868 (MessageSendFailureNotificationManager)
+// Module 17903 (MessageSendFailureNotificationManager)
 import util from "util" /* 1115 */;
-import PushNotificationDefault from "PushNotification" /* 8945 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9755 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9757 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import PushNotificationDefault from "PushNotification" /* 8938 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9749 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9751 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 import UserStore from "UserStore" /* 1372 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 require = fn;
 function handleMessageSendFailure(shouldNotify) {
@@ -79,7 +79,7 @@ function handleMessageCreate(message) {
 }
 const Constants = fn(1074);
 ({ InAppNotificationTypes: closure_7, MessageStates: closure_8 } = Constants);
-const LocalNotificationTypes = fn(8703).LocalNotificationTypes;
+const LocalNotificationTypes = fn(8695).LocalNotificationTypes;
 const prototype = function MessageSendFailureNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };

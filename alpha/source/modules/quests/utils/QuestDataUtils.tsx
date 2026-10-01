@@ -1,25 +1,25 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7285
+// Function ID: 7286
 // Name: QuestDataUtils
-// Dependencies: [7308, 2112, 7310, 7311, 5953, 5956, 1385, 7309, 1231, 2]
+// Dependencies: [7286, 2111, 7288, 7289, 5942, 5945, 1385, 7287, 1231, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7307 (QuestDataUtils)
+// Module 7285 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import QuestTypes from "QuestTypes" /* 5956 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7309 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7308 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import BountyStore from "BountyStore" /* 7310 */;
-import QuestStore from "QuestStore" /* 7311 */;
+import QuestTypes from "QuestTypes" /* 5945 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7287 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7286 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import BountyStore from "BountyStore" /* 7288 */;
+import QuestStore from "QuestStore" /* 7289 */;
 
 require = fn;
-function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adContentId) {
+function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, item) {
   let tmp = null;
   if (set.has(questPlacementFromQuestContent)) {
     tmp = null;
-    if (null != adContentId) {
-      const adDecisionByPlacementAndAdCreativeId = BountyStore.getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, adContentId);
+    if (null != item) {
+      const adDecisionByPlacementAndAdCreativeId = BountyStore.getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, item);
       let tmp5 = null;
       if (null != adDecisionByPlacementAndAdCreativeId) {
         obj = { questId: AdDecisionUtils.getDeliveredQuestId(adDecisionByPlacementAndAdCreativeId.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
@@ -37,37 +37,37 @@ function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adCont
     value = deliveryAdDecisionByPlacement.get(questPlacementFromQuestContent);
     if (questPlacementFromQuestContent === QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
-        const obj5 = { questId: tmp11(7309).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
-        const tmp11Result = tmp11(7309);
-        obj5.adCreativeId = tmp11(7309).getDeliveredAdCreativeId(value.creative);
+        const obj5 = { questId: tmp11(7287).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
+        const tmp11Result = tmp11(7287);
+        obj5.adCreativeId = tmp11(7287).getDeliveredAdCreativeId(value.creative);
         ({ adDecisionData: obj7.adDecisionData, adContext: obj7.adContext, metadataSealed: obj7.metadataSealed, trafficMetadataSealed: obj7.trafficMetadataSealed, provenanceMetadataSealed: obj7.provenanceMetadataSealed } = value);
         let tmp8 = obj5;
-        const tmp11Result4 = tmp11(7309);
+        const tmp11Result4 = tmp11(7287);
       }
       return tmp8;
     }
     tmp8 = null;
     if (null != value) {
-      const obj6 = { questId: tmp11(7309).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
-      const tmp11Result5 = tmp11(7309);
-      obj6.adCreativeId = tmp11(7309).getDeliveredAdCreativeId(value.creative);
+      const obj6 = { questId: tmp11(7287).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
+      const tmp11Result5 = tmp11(7287);
+      obj6.adCreativeId = tmp11(7287).getDeliveredAdCreativeId(value.creative);
       ({ adDecisionData: obj4.adDecisionData, adContext: obj4.adContext, metadataSealed: obj4.metadataSealed, trafficMetadataSealed: obj4.trafficMetadataSealed, provenanceMetadataSealed: obj4.provenanceMetadataSealed } = value);
       tmp8 = obj6;
-      const tmp11Result6 = tmp11(7309);
+      const tmp11Result6 = tmp11(7287);
     }
   }
 }
-const QuestConstants = fn(5953);
+const QuestConstants = fn(5942);
 ({ DismissibleQuestContentFlags: closure_7, BILLABLE_PLACEMENTS: closure_8, NON_BILLABLE_CREATIVE_TYPES: closure_9, EMPTY_AD_DECISION_DATA: c10 } = QuestConstants);
 let c11 = 2592000000;
 let obj = {};
-obj[fn(5956).QuestContent.QUEST_BAR] = fn(5956).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-obj[fn(5956).QuestContent.QUEST_BAR_V2] = fn(5956).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-obj[fn(5956).QuestContent.QUEST_BAR_MOBILE] = fn(5956).AdPlacement.MOBILE_HOME_DOCK_AREA;
-obj[fn(5956).QuestContent.QUEST_HOME_HERO] = fn(5956).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-obj[fn(5956).QuestContent.QUEST_HOME_HERO_SHELF] = fn(5956).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-obj[fn(5956).QuestContent.VIDEO_MODAL_MOBILE] = fn(5956).AdPlacement.VIDEO_MODAL_MOBILE;
-let items = [fn(5956).AdPlacement.VIDEO_MODAL_MOBILE];
+obj[fn(5945).QuestContent.QUEST_BAR] = fn(5945).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+obj[fn(5945).QuestContent.QUEST_BAR_V2] = fn(5945).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+obj[fn(5945).QuestContent.QUEST_BAR_MOBILE] = fn(5945).AdPlacement.MOBILE_HOME_DOCK_AREA;
+obj[fn(5945).QuestContent.QUEST_HOME_HERO] = fn(5945).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+obj[fn(5945).QuestContent.QUEST_HOME_HERO_SHELF] = fn(5945).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+obj[fn(5945).QuestContent.VIDEO_MODAL_MOBILE] = fn(5945).AdPlacement.VIDEO_MODAL_MOBILE;
+let items = [fn(5945).AdPlacement.VIDEO_MODAL_MOBILE];
 const set = new Set(items);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestDataUtils.tsx");
@@ -122,7 +122,7 @@ export const isDismissible = function isDismissible(arg0) {
 export const isDismissed = function isDismissed(dismissedQuestContent, arg1) {
   const keys = Object.keys(React5);
   if (keys.includes(QuestTypes.QuestContent[arg1])) {
-    return tmp2(1385).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5956).QuestContent[arg1]]);
+    return tmp2(1385).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5945).QuestContent[arg1]]);
   } else {
     return false;
   }
@@ -319,9 +319,9 @@ export const getAdTrafficMetadataSealed = function getAdTrafficMetadataSealed(so
     return prop;
   }
 };
-export const getAdContext = function getAdContext(sourceQuestContent, adContentId) {
+export const getAdContext = function getAdContext(sourceQuestContent, item) {
   if (null != obj[sourceQuestContent]) {
-    const tmp4 = getQuestDeliveryDataForPlacement(tmp, adContentId);
+    const tmp4 = getQuestDeliveryDataForPlacement(tmp, item);
     let adContext;
     if (tmp4 != null) {
       adContext = tmp4.adContext;

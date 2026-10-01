@@ -1,11 +1,11 @@
-// Module ID: 2095
-// Function ID: 2096
+// Module ID: 2094
+// Function ID: 2095
 // Name: ChannelReader
-// Dependencies: [5, 3, 2074, 2]
+// Dependencies: [5, 3, 2073, 2]
 
-// Module 2095 (ChannelReader)
+// Module 2094 (ChannelReader)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const logger = new LoggerDefault("ChannelReader");

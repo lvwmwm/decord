@@ -1,27 +1,27 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15873
+// Function ID: 15874
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4855, 15849, 1074, 2042, 4596, 2029, 1486, 15858, 504, 15851, 4684, 7002, 4867, 5476, 15855, 2]
+// Dependencies: [32, 19, 4834, 15865, 1074, 2041, 4595, 2029, 1486, 15874, 504, 15867, 4683, 6993, 4846, 5464, 15871, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 15857 (useHomeDrawerPeekHint)
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import timing from "timing" /* 4867 */;
-import spring from "spring" /* 5476 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15855 */;
+// Module 15873 (useHomeDrawerPeekHint)
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import timing from "timing" /* 4846 */;
+import spring from "spring" /* 5464 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15871 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 15849 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 15865 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const ME = fn(1074).ME;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 let c8 = 2000;
-const Easing = fn(4596).Easing;
-let closure_9 = Easing.inOut(fn(4596).Easing.cubic);
+const Easing = fn(4595).Easing;
+let closure_9 = Easing.inOut(fn(4595).Easing.cubic);
 let closure_10 = [];
 let items = [fn(2029).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let __initData = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };

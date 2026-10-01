@@ -1,15 +1,15 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7700
+// Function ID: 7701
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [2045, 1372, 7597, 7599, 4866, 576, 1115, 7583, 7713, 7601, 2]
+// Dependencies: [2044, 1372, 7575, 7577, 4845, 576, 1115, 7561, 7701, 7579, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7712 (FriendRequestAcceptedSystemMessage)
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7583 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7597 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7599 */;
-import _modDef7713 from "module_7713" /* 7713 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 7700 (FriendRequestAcceptedSystemMessage)
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7561 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7575 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7577 */;
+import _modDef7701 from "module_7701" /* 7701 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -53,8 +53,8 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
                 obj4.formattedNote = obj5;
                 formatToParts2Result = formatToParts2(t1.bNrwDM, obj4);
               }
-              const baseTextColor = tmp15(4866).createNativeStyleProperties(obj3)(message.theme).baseTextColor;
-              const tmp15Result = tmp15(4866);
+              const baseTextColor = tmp15(4845).createNativeStyleProperties(obj3)(message.theme).baseTextColor;
+              const tmp15Result = tmp15(4845);
             }
           }
           const intl = tmp15(1115).intl;
@@ -66,9 +66,9 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             formatToPartsResult = formatToParts(t.hyPOTm, obj2);
           }
           const obj6 = { content: formatToPartsResult, iconUrl: null, textColor: null };
-          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef7713);
+          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef7701);
           obj6.textColor = undefined;
-          const merged1 = Object.assign(tmp17(7601)(message));
+          const merged1 = Object.assign(tmp17(7579)(message));
           return obj6;
         }
       }

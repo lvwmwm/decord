@@ -1,14 +1,9 @@
 // Module ID: 6412
 // Function ID: 6413
-// Dependencies: []
-// Exports: clamp
+// Dependencies: [6413]
 
 // Module 6412
-const fn = function n(arg0, arg1, arg2) {
-  return Math.min(Math.max(arg1, arg0), arg2);
-};
-fn.__closure = {};
-fn.__workletHash = 4405247003092;
-fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
+import _modDef6413 from "module_6413" /* 6413 */;
 
-export const clamp = fn;
+
+export default _modDef6413;

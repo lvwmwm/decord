@@ -1,13 +1,13 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10029
+// Function ID: 10030
 // Name: ChevronLargeLeftIcon
-// Dependencies: [19, 21, 576, 4560, 10038, 2]
+// Dependencies: [19, 21, 576, 4559, 10030, 2]
 // Exports: ChevronLargeLeftIcon
 
-// Module 10037 (ChevronLargeLeftIcon)
+// Module 10029 (ChevronLargeLeftIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod10038 from "module_10038" /* 10038 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod10030 from "module_10030" /* 10030 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChevronLargeLeftIcon = function ChevronLargeLeftIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10038, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10030, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

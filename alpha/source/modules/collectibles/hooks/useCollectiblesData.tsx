@@ -1,13 +1,13 @@
-// Module ID: 7813
-// Function ID: 7814
+// Module ID: 7800
+// Function ID: 7801
 // Name: useCollectiblesData
-// Dependencies: [32, 7158, 7173, 563, 2]
+// Dependencies: [32, 7150, 7165, 563, 2]
 // Exports: default
 
-// Module 7813 (useCollectiblesData)
+// Module 7800 (useCollectiblesData)
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7158 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7173 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7150 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7165 */;
 
 const require = globalThis.__r;
 

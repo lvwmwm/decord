@@ -1,16 +1,16 @@
-// Module ID: 10535
-// Function ID: 10536
+// Module ID: 10527
+// Function ID: 10528
 // Name: AcceptFriendRequestModalActionCreators
-// Dependencies: [10536, 1074, 21, 1241, 5400, 10537, 1981, 2]
+// Dependencies: [10528, 1074, 21, 1241, 5388, 10529, 1981, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 10535 (AcceptFriendRequestModalActionCreators)
+// Module 10527 (AcceptFriendRequestModalActionCreators)
 import jsxProd from "jsxProd" /* 21 */;
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import Constants2 from "Constants" /* 10536 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
+import Constants2 from "Constants" /* 10528 */;
 import size from "module_2" /* 2 */;
 
 const type = Constants2.ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
@@ -24,7 +24,7 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
   const obj2 = { type };
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(10537, dependencyMap.paths).then((result) => {
+      return asyncRequireImpl(10529, dependencyMap.paths).then((result) => {
         closure_0 = result.default;
         return (arg0) => {
           closure_0 = arg0;

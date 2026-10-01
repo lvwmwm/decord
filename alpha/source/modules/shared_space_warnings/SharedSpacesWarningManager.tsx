@@ -1,19 +1,19 @@
-// Module ID: 13474
-// Function ID: 13475
+// Module ID: 13482
+// Function ID: 13483
 // Name: SharedSpacesWarningManager
-// Dependencies: [2045, 4889, 4509, 13475, 13473, 1091, 13476, 1094, 13480, 6735, 2]
+// Dependencies: [2044, 4868, 4508, 13483, 13481, 1091, 13484, 1094, 13488, 6725, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 13474 (SharedSpacesWarningManager)
+// Module 13482 (SharedSpacesWarningManager)
 import DurationsDefault from "Durations" /* 1091 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13476 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13480 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13473 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13484 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13488 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13481 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 require = fn;
 function handleChannelSelect(channelId) {
@@ -94,7 +94,7 @@ function handleAppStateChanged(state) {
     }
   }
 }
-const SharedSpacesWarningStore = fn(13475);
+const SharedSpacesWarningStore = fn(13483);
 ({ getChannelDismissTimestamp: hasOwnProperty, getUserDismissTimestamp: metroRequire, getGlobalDismissTimestamp: closure_7, isBlockedWarningQueued: closure_8, dequeueBlockWarning: closure_9 } = SharedSpacesWarningStore);
 let closure_11 = 3 * DurationsDefault.Millis.DAY;
 let closure_12 = 2 * DurationsDefault.Millis.DAY;

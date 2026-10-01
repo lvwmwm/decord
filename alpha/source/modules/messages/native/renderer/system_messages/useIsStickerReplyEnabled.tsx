@@ -1,13 +1,13 @@
-// Module ID: 7635
-// Function ID: 7636
+// Module ID: 7613
+// Function ID: 7614
 // Name: useIsStickerReplyEnabled
-// Dependencies: [2108, 4499, 1372, 1074, 6883, 2]
+// Dependencies: [2107, 4498, 1372, 1074, 6874, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7635 (useIsStickerReplyEnabled)
-import ThreadHooks from "ThreadHooks" /* 6883 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+// Module 7613 (useIsStickerReplyEnabled)
+import ThreadHooks from "ThreadHooks" /* 6874 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

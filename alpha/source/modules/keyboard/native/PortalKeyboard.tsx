@@ -1,11 +1,11 @@
-// Module ID: 4737
-// Function ID: 4738
+// Module ID: 4736
+// Function ID: 4737
 // Name: PortalKeyboard
-// Dependencies: [19, 21, 4722, 1364, 4738, 2]
+// Dependencies: [19, 21, 4721, 1364, 4737, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 4737 (PortalKeyboard)
-import Portal from "Portal" /* 4738 */;
+// Module 4736 (PortalKeyboard)
+import Portal from "Portal" /* 4737 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ export const PortalKeyboard = function PortalKeyboard(children) {
       let tmp3 = modal;
     }
     const obj2 = { hostName: tmp3, children: children.children };
-    return jsx(tmp(4738).Portal, { hostName: tmp3, children: children.children });
+    return jsx(tmp(4737).Portal, { hostName: tmp3, children: children.children });
   }
   tmp3 = c3;
 };

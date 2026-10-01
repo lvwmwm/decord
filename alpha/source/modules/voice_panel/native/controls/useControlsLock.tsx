@@ -1,11 +1,11 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17162
+// Function ID: 17163
 // Name: useControlsLock
-// Dependencies: [19, 11957, 2]
+// Dependencies: [19, 11964, 2]
 // Exports: default
 
-// Module 17140 (useControlsLock)
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11957 */;
+// Module 17162 (useControlsLock)
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11964 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

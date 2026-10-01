@@ -1,37 +1,38 @@
-// Module ID: 16825
-// Function ID: 16826
+// Module ID: 16848
+// Function ID: 16849
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1372, 2042, 1374, 21, 1365, 576, 4866, 13293, 7065, 4684, 2029, 504, 7826, 7868, 7879, 4715, 672, 4518, 16826, 10886, 5568, 16827, 10882, 5956, 4830, 16828, 1981, 16832, 9812, 1115, 3715, 14737, 16833, 8318, 6994, 5489, 2]
+// Dependencies: [19, 17, 1372, 2041, 1374, 21, 1365, 576, 4845, 13301, 7057, 4683, 2029, 504, 7813, 7855, 7866, 4714, 672, 4517, 16849, 10887, 5556, 16850, 10883, 5945, 4809, 16851, 1981, 16853, 9804, 1115, 3714, 14743, 16854, 8309, 6985, 5477, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 16825 (YouBannerDecorations)
+// Module 16848 (YouBannerDecorations)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4684 */;
-import QuestTypes from "QuestTypes" /* 5956 */;
-import useTrialOffer from "useTrialOffer" /* 7065 */;
-import QuestUtils from "QuestUtils" /* 10882 */;
-import PromotionsHooks from "PromotionsHooks" /* 13293 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16827 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4683 */;
+import QuestTypes from "QuestTypes" /* 5945 */;
+import useTrialOffer from "useTrialOffer" /* 7057 */;
+import QuestUtils from "QuestUtils" /* 10883 */;
+import PromotionsHooks from "PromotionsHooks" /* 13301 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16850 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 let closure_9 = fn(1374).PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_13 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   const obj = { containerFloatingWrap: null, containerFloatingGradient: null, containerFloating: null, buttonsFloating: null, loading: null };
   const obj2 = {};
   const merged = Object.assign(timestampProducer.absoluteFillObject);
   obj2.top = undefined;
   obj2.alignItems = "center";
+  obj2.paddingHorizontal = nativeDefault.space.PX_16;
   obj.containerFloatingWrap = obj2;
   const obj3 = {};
   const merged1 = Object.assign(timestampProducer.absoluteFillObject);
@@ -40,22 +41,20 @@ let closure_13 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   const space = nativeDefault.space;
   if (isIOSResult) {
     let PX_24 = space.PX_24;
-    let tmp7 = tmp5;
   } else {
     PX_24 = space.PX_4 + arg0;
-    tmp7 = tmp5;
   }
   let BACKGROUND_SURFACE_HIGH = arg1;
-  const obj5 = { marginBottom: PX_24, paddingVertical: tmp7(576).space.PX_8, paddingHorizontal: tmp7(576).space.PX_24, borderRadius: tmp7(576).radii.lg, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
+  const obj5 = { marginBottom: PX_24, maxWidth: "100%", paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.lg, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
   if (arg1 == null) {
-    BACKGROUND_SURFACE_HIGH = tmp7(576).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp2(576).colors.BACKGROUND_SURFACE_HIGH;
   }
   obj5.backgroundColor = BACKGROUND_SURFACE_HIGH;
   obj5.borderColor = borderColor;
-  const merged2 = Object.assign(tmp7(576).shadows.SHADOW_HIGH);
+  const merged2 = Object.assign(tmp2(576).shadows.SHADOW_HIGH);
   obj.containerFloating = obj5;
   isIOSResult = utils_PlatformUtils.isIOS();
-  obj.buttonsFloating = { flexDirection: "row", alignItems: "center", gap: tmp7(576).space.PX_16 };
+  obj.buttonsFloating = { flexDirection: "row", flexShrink: 1, alignItems: "flex-start", gap: nativeDefault.space.PX_8 };
   obj.loading = { height: "100%", alignItems: "center", justifyContent: "center" };
   return obj;
 });
@@ -146,12 +145,12 @@ export default noop.memo((navigateToPremium) => {
     navigateToSettings();
     let tmp5 = closure_7;
     if (closure_7) {
-      tmp5 = !tmp(4684).UNSAFE_isDismissibleContentDismissed(tmp(2029).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult = tmp(4684);
+      tmp5 = !tmp(4683).UNSAFE_isDismissibleContentDismissed(tmp(2029).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult = tmp(4683);
     }
     if (tmp5) {
-      const result1 = tmp(4684).UNSAFE_markDismissibleContentAsDismissed(tmp(2029).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult2 = tmp(4684);
+      const result1 = tmp(4683).UNSAFE_markDismissibleContentAsDismissed(tmp(2029).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult2 = tmp(4683);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];

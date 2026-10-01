@@ -1,12 +1,12 @@
-// Module ID: 9083
-// Function ID: 9084
+// Module ID: 9077
+// Function ID: 9078
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 1091, 2040, 9082, 4921, 9084, 9087, 2]
+// Dependencies: [19, 1091, 2039, 9076, 4900, 9078, 9081, 2]
 // Exports: default
 
-// Module 9083 (useVideoReadyTimeout)
+// Module 9077 (useVideoReadyTimeout)
 import DurationsDefault from "Durations" /* 1091 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9087 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9081 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

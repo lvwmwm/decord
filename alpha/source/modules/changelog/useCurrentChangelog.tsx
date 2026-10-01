@@ -1,15 +1,15 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7720
+// Function ID: 7721
 // Name: useCurrentChangelog
-// Dependencies: [19, 2112, 4880, 2098, 563, 7734, 2]
+// Dependencies: [19, 2111, 4859, 2097, 563, 7721, 2]
 // Exports: useCurrentChangelog
 
-// Module 7733 (useCurrentChangelog)
+// Module 7720 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7734 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7721 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import ChangelogStore from "ChangelogStore" /* 4880 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import ChangelogStore from "ChangelogStore" /* 4859 */;
 
 require = fn;
 function useChangelog(changelogId, stateFromStores) {
@@ -70,7 +70,7 @@ function useChangelog(changelogId, stateFromStores) {
   }
   return obj4;
 }
-const ChangelogLoadState = fn(2098).ChangelogLoadState;
+const ChangelogLoadState = fn(2097).ChangelogLoadState;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/changelog/useCurrentChangelog.tsx");
 

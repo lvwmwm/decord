@@ -1,8 +1,8 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10823
+// Function ID: 10824
 // Dependencies: [2]
 
-// Module 10826
+// Module 10823
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_bronze_badge_large.png.js");

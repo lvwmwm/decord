@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7850
+// Function ID: 7851
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6825, 1968, 6095, 7864, 7865, 2]
+// Dependencies: [5, 32, 19, 17, 6815, 1968, 6085, 7851, 7852, 2]
 // Exports: default, isProfileFrameLayerShown, usePreloadLayerImages
 
-// Module 7863 (useProfileFrameLayerAsset)
+// Module 7850 (useProfileFrameLayerAsset)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -78,7 +78,7 @@ let closure_15 = async function _preloadLayer(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const UserProfileThemeTypes = fn(6825).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(6815).UserProfileThemeTypes;
 const map = new Map();
 const map1 = new Map();
 const set = new Set();

@@ -1,15 +1,15 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17518
+// Function ID: 17519
 // Name: SubscriptionManager
-// Dependencies: [5, 1372, 4520, 4524, 7010, 1374, 6735, 1970, 5370, 7016, 2]
+// Dependencies: [5, 1372, 4519, 4523, 7001, 1374, 6725, 1970, 5358, 7007, 2]
 
-// Module 17486 (SubscriptionManager)
+// Module 17518 (SubscriptionManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
-import BillingInfoStore from "BillingInfoStore" /* 4520 */;
-import SubscriptionStore from "SubscriptionStore" /* 4524 */;
-import EntitlementStore from "EntitlementStore" /* 7010 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import BillingInfoStore from "BillingInfoStore" /* 4519 */;
+import SubscriptionStore from "SubscriptionStore" /* 4523 */;
+import EntitlementStore from "EntitlementStore" /* 7001 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 let require = fn;
 const PremiumConstants = fn(1374);
@@ -60,7 +60,7 @@ const prototype = function SubscriptionManager() {
               if (!isSubscriptionFetching) {
                 c2 = 1;
                 currentUser = 1;
-                const obj6 = { value: tmp2(5370).fetchSubscriptions(), done: false };
+                const obj6 = { value: tmp2(5358).fetchSubscriptions(), done: false };
                 return obj6;
               }
             }
@@ -97,7 +97,7 @@ const prototype = function SubscriptionManager() {
         if (!hasItem) {
           c2 = 2;
           currentUser = 1;
-          const obj8 = { value: tmp2(7016).fetchUserEntitlementsForApplication(closure_1_7), done: false };
+          const obj8 = { value: tmp2(7007).fetchUserEntitlementsForApplication(closure_1_7), done: false };
           return obj8;
         }
       } catch (tmp22) {
@@ -217,7 +217,7 @@ const prototype = function SubscriptionManager() {
             applyArgumentsResult = tmp4;
             dependencyMap = 1;
             c2 = 1;
-            const obj6 = { value: applyArgumentsResult(5370).fetchIpCountryCode(), done: false };
+            const obj6 = { value: applyArgumentsResult(5358).fetchIpCountryCode(), done: false };
             return obj6;
           }
         } else {
@@ -232,7 +232,7 @@ const prototype = function SubscriptionManager() {
             } else if (null != ipCountryCode.ipCountryCode) {
               dependencyMap = 2;
               c2 = 1;
-              const obj8 = { value: applyArgumentsResult(5370).fetchPaymentSources(), done: false };
+              const obj8 = { value: applyArgumentsResult(5358).fetchPaymentSources(), done: false };
               return obj8;
             }
           } else if (arg0 === 1) {

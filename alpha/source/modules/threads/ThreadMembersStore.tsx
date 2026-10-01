@@ -1,14 +1,14 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7362
+// Function ID: 7363
 // Name: ThreadMembersStore
-// Dependencies: [2049, 2045, 12, 504, 573, 2]
+// Dependencies: [2048, 2044, 12, 504, 573, 2]
 
-// Module 7384 (ThreadMembersStore)
+// Module 7362 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import size from "module_2" /* 2 */;
 
 function updateFromGuild(threads) {

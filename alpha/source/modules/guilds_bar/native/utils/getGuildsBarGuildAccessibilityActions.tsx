@@ -1,22 +1,22 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16200
+// Function ID: 16201
 // Name: getGuildsBarGuildAccessibilityActions
-// Dependencies: [2067, 5947, 1115, 8858, 4715, 16181, 6029, 2]
+// Dependencies: [2066, 1115, 16201, 16202, 4714, 6018, 2]
 // Exports: default
 
-// Module 16180 (getGuildsBarGuildAccessibilityActions)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6029 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8858 */;
-import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 16181 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5947 */;
+// Module 16200 (getGuildsBarGuildAccessibilityActions)
+import shared from "shared" /* 4714 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6018 */;
+import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 16201 */;
+import moveGuildNode from "moveGuildNode" /* 16202 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
+const moveGuildNodeDefault = moveGuildNode;
 
-const shared = tmp4(4715);
 require = fn;
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
+let result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
 
 export default function getGuildsBarGuildAccessibilityActions(arg0) {
   _require = arg0;
@@ -30,14 +30,14 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
   }
   let items = [];
   let formatToPlainStringResult = dependencyMap;
-  let tmp3 = getGuildBarNeighborsDefault(arg0);
+  const tmp3 = getGuildBarNeighborsDefault(arg0);
   if (null == tmp3) {
     return items;
   } else {
     ({ containingFolder, above, below } = tmp3);
     let ejhw4S = _require;
     const intl13 = require("util").intl;
-    let obj2 = { name: str };
+    const obj2 = { name: str };
     importDefault = intl13.formatToPlainString(require("util").t["2XShGC"], obj2);
     const intl14 = require("util").intl;
     const obj3 = { name: str };
@@ -49,12 +49,9 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
       obj.action = function action() {
         const items = [closure_0];
         const guildFolderLocal = GuildActionCreatorsDefault.createGuildFolderLocal(items, "");
-        const tmp3 = closure_1;
-        UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-        if (null != closure_1) {
-          const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-          AccessibilityAnnouncer.announce(tmp3);
-        }
+        const result = moveGuildNode.persistGuildsBarOrder();
+        const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
+        AccessibilityAnnouncer.announce(closure_1);
       };
       items.push(obj);
     }
@@ -81,14 +78,11 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                 }
               }
               if (null != node) {
-                const tmp3Result = GuildActionCreatorsDefault;
-                tmp3Result.moveById(tmp, node.id, true, true);
-                UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                moveGuildNodeDefault(tmp, node.id, true, true);
                 if (null != tmp2) {
-                  const AccessibilityAnnouncer = tmp10(4715).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                   AccessibilityAnnouncer.announce(tmp2);
                 }
-                tmp10 = require;
               }
             }
           };
@@ -111,9 +105,7 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                 }
               }
               if (null != node) {
-                const tmp2Result = GuildActionCreatorsDefault;
-                tmp2Result.moveById(tmp, node.id, false, false);
-                UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                moveGuildNodeDefault(tmp, node.id, false, false);
               }
             }
           };
@@ -135,9 +127,7 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
               }
             }
             if (null != node) {
-              const tmp2Result = GuildActionCreatorsDefault;
-              tmp2Result.moveById(tmp, node.id, false, false);
-              UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+              moveGuildNodeDefault(tmp, node.id, false, false);
             }
           }
         };
@@ -167,14 +157,11 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                 }
               }
               if (null != node) {
-                const tmp3Result = GuildActionCreatorsDefault;
-                tmp3Result.moveById(tmp, node.id, true, true);
-                UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                moveGuildNodeDefault(tmp, node.id, true, true);
                 if (null != tmp2) {
-                  const AccessibilityAnnouncer = tmp10(4715).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                   AccessibilityAnnouncer.announce(tmp2);
                 }
-                tmp10 = require;
               }
             }
           };
@@ -197,9 +184,7 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                 }
               }
               if (null != node) {
-                const tmp2Result = GuildActionCreatorsDefault;
-                tmp2Result.moveById(tmp, node.id, true, false);
-                UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                moveGuildNodeDefault(tmp, node.id, true, false);
               }
             }
           };
@@ -221,9 +206,7 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
               }
             }
             if (null != node) {
-              const tmp2Result = GuildActionCreatorsDefault;
-              tmp2Result.moveById(tmp, node.id, true, false);
-              UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+              moveGuildNodeDefault(tmp, node.id, true, false);
             }
           }
         };
@@ -248,14 +231,11 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
           if (null != tmp5) {
             const containingFolder = tmp5.containingFolder;
             if (null != containingFolder) {
-              const tmp3Result = GuildActionCreatorsDefault;
-              tmp3Result.moveById(tmp, containingFolder.id, false, false);
-              UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+              moveGuildNodeDefault(tmp, containingFolder.id, false, false);
               if (null != tmp2) {
-                const AccessibilityAnnouncer = tmp9(4715).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                 AccessibilityAnnouncer.announce(tmp2);
               }
-              tmp9 = require;
             }
           }
         };
@@ -273,14 +253,11 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
           if (null != tmp5) {
             const containingFolder = tmp5.containingFolder;
             if (null != containingFolder) {
-              const tmp3Result = GuildActionCreatorsDefault;
-              tmp3Result.moveById(tmp, containingFolder.id, true, false);
-              UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+              moveGuildNodeDefault(tmp, containingFolder.id, true, false);
               if (null != tmp2) {
-                const AccessibilityAnnouncer = tmp9(4715).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                 AccessibilityAnnouncer.announce(tmp2);
               }
-              tmp9 = require;
             }
           }
         };

@@ -1,16 +1,16 @@
-// Module ID: 9025
-// Function ID: 9026
+// Module ID: 9019
+// Function ID: 9020
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5093, 2045, 2099, 1372, 2044, 2005, 9026, 8963, 4488, 9027, 8992, 8991, 9002, 9003, 8988, 12645, 8981, 2]
+// Dependencies: [5, 5072, 2044, 2098, 1372, 2043, 2005, 9020, 8956, 4487, 9021, 8985, 8984, 8995, 8996, 8981, 12656, 8974, 2]
 // Exports: default
 
-// Module 9025 (handleJoinEmbeddedActivity)
+// Module 9019 (handleJoinEmbeddedActivity)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5093 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ApplicationStore from "ApplicationStore" /* 5072 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserStore from "UserStore" /* 1372 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 
 const require = globalThis.__r;
 
@@ -64,7 +64,7 @@ let closure_10 = async function _handleJoinEmbeddedActivityInternal(arg0, value)
           closure_129_18 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

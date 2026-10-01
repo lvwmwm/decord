@@ -1,10 +1,10 @@
-// Module ID: 7814
-// Function ID: 7815
+// Module ID: 7801
+// Function ID: 7802
 // Name: ShopStandalonePdpMobileExperiment
 // Dependencies: [1435, 2]
 // Exports: useIsShopStandalonePdpMobileEnabled
 
-// Module 7814 (ShopStandalonePdpMobileExperiment)
+// Module 7801 (ShopStandalonePdpMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

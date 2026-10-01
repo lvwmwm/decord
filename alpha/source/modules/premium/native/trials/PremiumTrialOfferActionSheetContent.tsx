@@ -1,21 +1,21 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15501
+// Function ID: 15502
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1374, 21, 4866, 576, 11508, 1115, 8923, 5584, 5639, 4518, 15497, 4862, 15499, 5477, 8318, 2]
+// Dependencies: [19, 17, 1374, 21, 4845, 576, 11516, 1115, 8916, 5572, 5628, 4517, 15502, 4841, 15504, 5465, 8309, 2]
 
-// Module 15496 (PremiumTrialOfferActionSheetContent)
+// Module 15501 (PremiumTrialOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4518 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
-import FolderIcon from "FolderIcon" /* 5584 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5639 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8318 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 8923 */;
-import UserIcon from "UserIcon" /* 11508 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15497 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15499 */;
+import PremiumUtils from "PremiumUtils" /* 4517 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
+import FolderIcon from "FolderIcon" /* 5572 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5628 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8309 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 8916 */;
+import UserIcon from "UserIcon" /* 11516 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15502 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15504 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ const View = fn(17).View;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 };
@@ -76,8 +76,8 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4518).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4518);
+    displayNameFromSku = tmp3(4517).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4517);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);

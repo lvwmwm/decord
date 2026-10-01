@@ -1,14 +1,14 @@
-// Module ID: 6582
-// Function ID: 6583
+// Module ID: 6572
+// Function ID: 6573
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 6235, 6228, 6229, 6233, 6237, 2]
+// Dependencies: [19, 17, 21, 6225, 6218, 6219, 6223, 6227, 2]
 
-// Module 6582 (SplitTextField)
-import useTextField from "useTextField" /* 6228 */;
-import useInputClearButton from "useInputClearButton" /* 6229 */;
-import useInputAttachments from "useInputAttachments" /* 6233 */;
-import InputFieldContainer from "InputFieldContainer" /* 6235 */;
-import BaseTextField from "BaseTextField" /* 6237 */;
+// Module 6572 (SplitTextField)
+import useTextField from "useTextField" /* 6218 */;
+import useInputClearButton from "useInputClearButton" /* 6219 */;
+import useInputAttachments from "useInputAttachments" /* 6223 */;
+import InputFieldContainer from "InputFieldContainer" /* 6225 */;
+import BaseTextField from "BaseTextField" /* 6227 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
             }
       };
       const merged = Object.assign(size.leadingPressableProps);
-      obj8.children = tmp(6233).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
+      obj8.children = tmp(6223).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
       obj7.children = <React2 style={function style(pressed) {
         let obj;
         if (pressed.pressed) {
@@ -58,7 +58,7 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
         return items;
       }} />;
       tmp8 = <React3 style={inputStyles.splitBorder}>{null}</React3>;
-      const tmpResult2 = tmp(6233);
+      const tmpResult2 = tmp(6223);
     }
   }
   const obj9 = {};

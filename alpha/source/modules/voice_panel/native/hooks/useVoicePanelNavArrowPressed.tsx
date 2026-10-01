@@ -1,13 +1,13 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17172
+// Function ID: 17173
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 11956, 11957, 2]
+// Dependencies: [19, 11963, 11964, 2]
 // Exports: default
 
-// Module 17150 (useVoicePanelNavArrowPressed)
+// Module 17172 (useVoicePanelNavArrowPressed)
 import noop from "module_19" /* 19 */;
 
-const VoicePanelControlsModes = fn(11956).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(11963).VoicePanelControlsModes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
 

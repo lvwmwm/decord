@@ -1,14 +1,14 @@
-// Module ID: 8925
-// Function ID: 8926
+// Module ID: 8918
+// Function ID: 8919
 // Name: AuthorizeFormSeparator
-// Dependencies: [17, 21, 4866, 576, 2]
+// Dependencies: [17, 21, 4845, 576, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 8925 (AuthorizeFormSeparator)
+// Module 8918 (AuthorizeFormSeparator)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import createStyles from "createStyles" /* 4866 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

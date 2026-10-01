@@ -1,15 +1,15 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16834
+// Function ID: 16835
 // Name: ContactSuggestionRow
-// Dependencies: [19, 4855, 1074, 21, 4708, 4596, 1115, 563, 15877, 15876, 10531, 16284, 16285, 1241, 2]
+// Dependencies: [19, 4834, 1074, 21, 4707, 4595, 1115, 563, 15893, 15892, 10523, 16304, 16305, 1241, 2]
 // Exports: ContactSuggestionRow
 
-// Module 16811 (ContactSuggestionRow)
+// Module 16834 (ContactSuggestionRow)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15877 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15893 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const Constants = fn(1074);

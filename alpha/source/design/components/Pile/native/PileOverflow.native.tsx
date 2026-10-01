@@ -1,22 +1,22 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10666
+// Function ID: 10667
 // Name: PileOverflow
-// Dependencies: [19, 17, 2112, 21, 4866, 576, 563, 4862, 1882, 2]
+// Dependencies: [19, 17, 2111, 21, 4845, 576, 563, 4841, 1882, 2]
 // Exports: PileOverflow
 
-// Module 10670 (PileOverflow)
+// Module 10666 (PileOverflow)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import NumberUtils from "NumberUtils" /* 1882 */;
-import Text_Text from "Text/Text" /* 4862 */;
+import Text_Text from "Text/Text" /* 4841 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, flexShrink: 0 } };
 let closure_6 = createStyles.createStyles(obj2);
 let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];

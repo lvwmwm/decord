@@ -1,13 +1,13 @@
-// Module ID: 4590
-// Function ID: 4591
+// Module ID: 4589
+// Function ID: 4590
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4591, 4580, 4641, 4642, 4643, 2]
+// Dependencies: [19, 17, 21, 4590, 4579, 4640, 4641, 4642, 2]
 // Exports: useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
-// Module 4590 (BaseRive)
-import DataBindByName from "DataBindByName" /* 4591 */;
-import ManaContext from "ManaContext" /* 4641 */;
-import useRivePlayback from "useRivePlayback" /* 4642 */;
+// Module 4589 (BaseRive)
+import DataBindByName from "DataBindByName" /* 4590 */;
+import ManaContext from "ManaContext" /* 4640 */;
+import useRivePlayback from "useRivePlayback" /* 4641 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,7 +36,7 @@ export const BaseRive = noop.forwardRef(function BaseRiveInner(renderDataBinding
   let riveFile = DataBindByName.useRiveFile(src, tmp3).riveFile;
   const rive = DataBindByName.useRive();
   const riveViewRef = rive.riveViewRef;
-  const enabled = noop.useContext(tmp(4580).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = noop.useContext(tmp(4579).AccessibilityPreferencesContext).reducedMotion.enabled;
   const tmpResult = DataBindByName;
   const experiments = ManaContext.useManaContext().experiments;
   let flag;
@@ -71,7 +71,7 @@ export const BaseRive = noop.forwardRef(function BaseRiveInner(renderDataBinding
   let instance = DataBindByName.useViewModelInstance(tmp11, { artboardName: artboard, instanceName: memo }).instance;
   let None = instance;
   if (instance == null) {
-    None = tmp(4591).DataBindMode.None;
+    None = tmp(4590).DataBindMode.None;
   }
   let reducedMotion;
   if (artboardProperties[artboard] != null) {
@@ -131,14 +131,14 @@ export const BaseRive = noop.forwardRef(function BaseRiveInner(renderDataBinding
     }
     const merged = Object.assign(obj9);
     if (null != fit) {
-      const obj10 = { fit: tmp(4643).FIT_MAP[fit] };
+      const obj10 = { fit: tmp(4642).FIT_MAP[fit] };
       let obj11 = obj10;
     } else {
       obj11 = {};
     }
     const merged1 = Object.assign(obj11);
     if (null != alignment) {
-      const obj12 = { alignment: tmp(4643).ALIGNMENT_MAP[alignment] };
+      const obj12 = { alignment: tmp(4642).ALIGNMENT_MAP[alignment] };
       let obj13 = obj12;
     } else {
       obj13 = {};
@@ -151,7 +151,7 @@ export const BaseRive = noop.forwardRef(function BaseRiveInner(renderDataBinding
       obj15 = {};
     }
     const merged3 = Object.assign(obj15);
-    timestampProducer(tmp(4591).RiveView, obj7);
+    timestampProducer(tmp(4590).RiveView, obj7);
   }
 });
 export const useNumberBinding = function useNumberBinding(AnimationState, instance, AnimationState2, AnimationState1, playIfNeeded) {

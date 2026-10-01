@@ -1,11 +1,11 @@
 // Module ID: 4291
 // Function ID: 4292
-// Dependencies: [3948, 3949]
+// Dependencies: [3947, 3948]
 // Exports: default
 
 // Module 4291
-import _typeof_mod from "module_3948" /* 3948 */;
-import requiredArgs_mod from "requiredArgs" /* 3949 */;
+import _typeof_mod from "module_3947" /* 3947 */;
+import requiredArgs_mod from "requiredArgs" /* 3948 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,9 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isMonday(arg0) {
+export default function isPast(arg0) {
   requiredArgs.default(1, arguments);
-  return 1 === _typeof.default(arg0).getDay();
+  const time = _typeof.default(arg0).getTime();
+  return time < Date.now();
 };
 export default exports.default;

@@ -1,13 +1,13 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 10547
+// Function ID: 10548
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [19, 4499, 1085, 21, 504, 7501, 5569, 5606, 5607, 5609, 5608, 5611, 2]
+// Dependencies: [19, 4498, 1085, 21, 504, 7479, 5557, 5594, 5595, 5597, 5596, 5599, 2]
 // Exports: default
 
-// Module 10555 (UserProfileVoiceActivityIcon)
-import isRoleRequiredDefault from "isRoleRequired" /* 5569 */;
+// Module 10547 (UserProfileVoiceActivityIcon)
+import isRoleRequiredDefault from "isRoleRequired" /* 5557 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = fn;
 const Permissions = fn(1085).Permissions;
@@ -37,23 +37,23 @@ export default function UserProfileVoiceActivityIcon(channel) {
         if (tmp6) {
           const obj2 = {};
           const merged1 = Object.assign(merged);
-          let tmp8Result = jsx(tmp2(5606).StageLockIcon, {});
+          let tmp8Result = jsx(tmp2(5594).StageLockIcon, {});
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
         const obj3 = {};
         const merged2 = Object.assign(merged);
-        tmp8Result = jsx(tmp2(5607).StageIcon, {});
+        tmp8Result = jsx(tmp2(5595).StageIcon, {});
       } else if (channel.isNSFW()) {
         const obj4 = {};
         const merged3 = Object.assign(merged);
-        tmp8Result = tmp8(tmp2(5609).VoiceWarningIcon, obj4);
+        tmp8Result = tmp8(tmp2(5597).VoiceWarningIcon, obj4);
       } else {
         if (tmp6) {
-          let VoiceNormalIcon = tmp2(5608).VoiceLockIcon;
+          let VoiceNormalIcon = tmp2(5596).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp2(5611).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(5599).VoiceNormalIcon;
         }
         const obj5 = {};
         const merged4 = Object.assign(merged);
@@ -62,5 +62,5 @@ export default function UserProfileVoiceActivityIcon(channel) {
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(channel(7501).PhoneCallIcon, {});
+  return jsx(channel(7479).PhoneCallIcon, {});
 };

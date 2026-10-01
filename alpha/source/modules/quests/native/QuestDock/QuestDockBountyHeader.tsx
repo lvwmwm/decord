@@ -1,27 +1,27 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14952
+// Function ID: 14953
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 5953, 14830, 21, 576, 4866, 14837, 14831, 4596, 5476, 7910, 14940, 1364, 14939, 14827, 14848, 5956, 7336, 14927, 14947, 6690, 6095, 4862, 5632, 1115, 2]
+// Dependencies: [19, 17, 5942, 14836, 21, 576, 4845, 14843, 14837, 4595, 5464, 7897, 14946, 1364, 14945, 14833, 14854, 5945, 7314, 14933, 14953, 6680, 6085, 4841, 5621, 1115, 2]
 
-// Module 14946 (QuestDockBountyHeader)
+// Module 14952 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5476 */;
-import QuestTypes from "QuestTypes" /* 5956 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7336 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14848 */;
+import spring from "spring" /* 5464 */;
+import QuestTypes from "QuestTypes" /* 5945 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7314 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14854 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const QuestConstants = fn(5953);
+const QuestConstants = fn(5942);
 ({ QuestDockMode: hasOwnProperty, QuestsExperimentLocations: metroRequire } = QuestConstants);
-const QuestDockConstants = fn(14830);
+const QuestDockConstants = fn(14836);
 ({ QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: closure_7 } = QuestDockConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const PX_32 = nativeDefault.space.PX_32;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { wrapper: { alignItems: "center", alignSelf: "stretch", display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_12, justifyContent: "flex-start", flex: 1, paddingLeft: nativeDefault.space.PX_12 - QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT }, productIcon: null, crossFadeWrapper: null, copy: null, promotedLabel: null, smokeArt: null, smokeArtFade: null, title: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, flexGrow: 0, flexShrink: 0, height: PX_32, width: PX_32 };
 obj.productIcon = size;

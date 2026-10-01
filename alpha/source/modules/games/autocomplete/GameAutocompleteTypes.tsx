@@ -1,9 +1,9 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5605
+// Function ID: 5606
 // Name: GameAutocompleteTypes
 // Dependencies: [2]
 
-// Module 5617 (GameAutocompleteTypes)
+// Module 5605 (GameAutocompleteTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteTypes.tsx");

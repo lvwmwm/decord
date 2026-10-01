@@ -1,22 +1,22 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12272
+// Function ID: 12273
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 4754, 1074, 12265, 21, 4866, 576, 5489, 8877, 6597, 12247, 12226, 4862, 1115, 2519, 12201, 12218, 12266, 12267, 12223, 2]
+// Dependencies: [19, 17, 4753, 1074, 12273, 21, 4845, 576, 5477, 8869, 6587, 12255, 12234, 4841, 1115, 2518, 12209, 12226, 12274, 12275, 12231, 2]
 // Exports: default
 
-// Module 12264 (GuildPowerupsLevelCard)
+// Module 12272 (GuildPowerupsLevelCard)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import LinearGradientDefault from "LinearGradient" /* 5489 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6597 */;
-import BoostGemIcon from "BoostGemIcon" /* 8877 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12201 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12218 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12223 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12266 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import LinearGradientDefault from "LinearGradient" /* 5477 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6587 */;
+import BoostGemIcon from "BoostGemIcon" /* 8869 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12209 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12226 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12231 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12274 */;
 import noop from "module_19" /* 19 */;
 
-const GuildPowerupsCardDefault = tmp5(12267);
+const GuildPowerupsCardDefault = tmp5(12275);
 require = fn;
 function GuildLevelPowerupHeader(arg0) {
   ({ active, nextActive, position } = arg0);
@@ -142,14 +142,14 @@ class GuildPowerupLevelBody {
   }
 }
 const View = fn(17).View;
-const GuildPowerupsConstants = fn(4754);
+const GuildPowerupsConstants = fn(4753);
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 const Constants = fn(1074);
 ({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = Constants);
-const TIER_CARDS = fn(12265).TIER_CARDS;
+const TIER_CARDS = fn(12273).TIER_CARDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { cardContainer: { flex: 1 }, card: { padding: 0, overflow: "hidden", flex: 1 }, progressContainer: { marginVertical: nativeDefault.space.PX_24, position: "relative" }, progress: null, progressStart: null, progressEnd: null, boostContainerBackground: null, boostContainer: null, boostContainerActive: null, boostContainerInactive: null, contentContainer: null, perkRowContainer: null, perkRow: null, perkRowStyle: null, perkText: null, footerContainer: null };
 let obj3 = { marginVertical: nativeDefault.space.PX_24, position: "relative" };
 obj2.progress = { height: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };

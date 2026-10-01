@@ -1,12 +1,12 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 9477
+// Function ID: 9478
 // Name: openInstantInviteActionSheet
-// Dependencies: [4830, 9484, 1981, 1249, 2]
+// Dependencies: [4809, 9478, 1981, 1249, 2]
 // Exports: default
 
-// Module 9483 (openInstantInviteActionSheet)
+// Module 9477 (openInstantInviteActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
 import size from "module_2" /* 2 */;
 
 const discord_common_AnalyticsUtils = tmp2(1249);
@@ -23,5 +23,5 @@ export default function openInstantInviteActionSheet(invite_channel_id) {
   const merged = Object.assign(invite_channel_id);
   obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.GUILD_INVITE;
   obj2.impressionProperties = { invite_channel_id: invite_channel_id.channel.id, invite_guild_id: invite_channel_id.channel.guild_id };
-  obj.openLazy(asyncRequireImpl(9484, dependencyMap.paths), combined, obj2, invite_channel_id.stackingBehavior);
+  obj.openLazy(asyncRequireImpl(9478, dependencyMap.paths), combined, obj2, invite_channel_id.stackingBehavior);
 };

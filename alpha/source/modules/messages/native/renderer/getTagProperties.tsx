@@ -1,13 +1,13 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7660
+// Function ID: 7661
 // Name: getTagProperties
-// Dependencies: [17, 4859, 7673, 1115, 7675, 7677, 2]
+// Dependencies: [17, 4838, 7661, 1115, 7663, 7665, 2]
 // Exports: default
 
-// Module 7672 (getTagProperties)
+// Module 7660 (getTagProperties)
 import _mod17 from "module_17" /* 17 */;
-import MessageConstants from "MessageConstants" /* 4859 */;
-import isCrosspostDefault from "isCrosspost" /* 7675 */;
+import MessageConstants from "MessageConstants" /* 4838 */;
+import isCrosspostDefault from "isCrosspost" /* 7663 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -36,7 +36,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1115).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(7677)).uri;
+            uri = Image.resolveAssetSource(tmp4(7665)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1115).t["9RNkeF"]);
@@ -64,7 +64,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1115).intl;
         stringResult2 = intl6.string(tmp2(1115).t.fyE8sH);
       }
-      const obj2 = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "paddingHorizontal", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2, opTagTextColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000565244049786497, opTagBackgroundColor: -0.0000000000000000000000000000000000000000000000000000000000000000000000011324019909002114 };
+      const obj2 = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "add", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2, opTagTextColor: "space", opTagBackgroundColor: "Array" };
       ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
       return obj2;
     } else {
@@ -85,7 +85,7 @@ export default function getTagProperties(arg0) {
       }
       const intl5 = tmp2(1115).intl;
       stringResult3 = intl5.string(tmp2(1115).t["7s687k"]);
-      tmp2Result = tmp2(7673);
+      tmp2Result = tmp2(7661);
     }
   }
   const intl3 = tmp2(1115).intl;

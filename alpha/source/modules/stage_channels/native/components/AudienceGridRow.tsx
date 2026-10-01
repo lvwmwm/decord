@@ -1,11 +1,11 @@
-// Module ID: 9728
-// Function ID: 9729
+// Module ID: 9722
+// Function ID: 9723
 // Name: AudienceGridRow
-// Dependencies: [19, 17, 5923, 21, 4866, 9729, 9730, 2]
+// Dependencies: [19, 17, 5912, 21, 4845, 9723, 9724, 2]
 
-// Module 9728 (AudienceGridRow)
-import BlankAudienceTileDefault from "BlankAudienceTile" /* 9729 */;
-import AudienceTileDefault from "AudienceTile" /* 9730 */;
+// Module 9722 (AudienceGridRow)
+import BlankAudienceTileDefault from "BlankAudienceTile" /* 9723 */;
+import AudienceTileDefault from "AudienceTile" /* 9724 */;
 import noop from "module_19" /* 19 */;
 
 class BlankAudience {
@@ -22,10 +22,10 @@ class BlankAudience {
   }
 }
 const View = fn(17).View;
-const MAX_AUDIENCE_ROW_LIMIT = fn(5923).MAX_AUDIENCE_ROW_LIMIT;
+const MAX_AUDIENCE_ROW_LIMIT = fn(5912).MAX_AUDIENCE_ROW_LIMIT;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_6 = createStyles.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");

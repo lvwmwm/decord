@@ -1,17 +1,17 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16899
+// Function ID: 16900
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2067, 4499, 11546, 1074, 504, 2]
-// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
+// Dependencies: [2066, 4498, 11554, 1074, 504, 2]
+// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess, useCanCurrentUserManageAutomod, useHasMentionRaidLimitAccess, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
 
-// Module 16878 (guild_automod/PermissionUtils)
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+// Module 16899 (guild_automod/PermissionUtils)
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AutomodTriggerType = fn(11546).AutomodTriggerType;
+const AutomodTriggerType = fn(11554).AutomodTriggerType;
 const Constants = fn(1074);
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
 const size = fn(2);
@@ -52,6 +52,41 @@ export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAu
         }
         return canResult;
       }
+    }
+  }, items1);
+};
+export const hasMentionRaidLimitAccess = function hasMentionRaidLimitAccess(guildId) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = GuildStore;
+  }
+  const guild = obj.getGuild(guildId);
+  let flag;
+  if (guild != null) {
+    const features = guild.features;
+    flag = features.has(constants.COMMUNITY);
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+export const useHasMentionRaidLimitAccess = function useHasMentionRaidLimitAccess(guildId) {
+  _require = guildId;
+  const items = [GuildStore];
+  const items1 = [guildId];
+  return require("initialize").useStateFromStores(items, () => {
+    if (GuildStore !== undefined) {
+      const guild = GuildStore.getGuild(tmp);
+      let flag;
+      if (guild != null) {
+        const features = guild.features;
+        flag = features.has(constants.COMMUNITY);
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
     }
   }, items1);
 };

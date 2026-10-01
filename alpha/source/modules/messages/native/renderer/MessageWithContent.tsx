@@ -1,17 +1,17 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7552
+// Function ID: 7553
 // Name: MessageWithContent
-// Dependencies: [7575, 7570, 7577, 1115, 7760, 2]
+// Dependencies: [7553, 7548, 7555, 1115, 7747, 2]
 // Exports: generateMessageRowData
 
-// Module 7574 (MessageWithContent)
+// Module 7552 (MessageWithContent)
 import util from "util" /* 1115 */;
-import createMessageContentDefault from "createMessageContent" /* 7577 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7760 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7575 */;
+import createMessageContentDefault from "createMessageContent" /* 7555 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7747 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7553 */;
 
 require = fn;
-const RowType = fn(7570).RowType;
+const RowType = fn(7548).RowType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/MessageWithContent.tsx");
 
@@ -30,8 +30,7 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
-  const obj = { type: RowType.MESSAGE, message: createMessageContentDefault({ options, message, roleStyle, isFirst, isEditing, canShowImages: undefined === canShowImages || canShowImages, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed }), canAddNewReactions, addNewReactionAccessibilityLabel: null, reactionsTheme: null, highlightLabel: null, renderContentOnly: null, separatorBefore: null, changeType: null, truncation: null, alwaysShowAddReaction: null, backgroundHighlight: null, conversationHeader: null, swipeActions: null, replyAccessibilityLabel: null, forwardAccessibilityLabel: null, threadAccessibilityLabel: null, forcedTheme: null };
-  ({ showContentInventoryEntryFallbackEmbed, conversationHeader } = canShowImages);
+  const obj = { type: RowType.MESSAGE, message: createMessageContentDefault({ options, message, roleStyle, isFirst, isEditing, canShowImages: undefined === canShowImages || canShowImages, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed }), canAddNewReactions, addNewReactionAccessibilityLabel: null, reactionsTheme: null, highlightLabel: null, renderContentOnly: null, separatorBefore: null, changeType: null, truncation: null, alwaysShowAddReaction: null, backgroundHighlight: null, swipeActions: null, replyAccessibilityLabel: null, forwardAccessibilityLabel: null, threadAccessibilityLabel: null, forcedTheme: null };
   const intl = util.intl;
   obj.addNewReactionAccessibilityLabel = intl.string(util.t.lfIHs4);
   obj.reactionsTheme = reactionsTheme;
@@ -44,11 +43,10 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj.alwaysShowAddReaction = tmp3;
   if (overrideBackgroundHighlight == null) {
     const obj3 = { message, theme, isEditing, isAutomodBlockedMessage: null != GuildAutomodMessageStore.getMessage(message.id) };
-    overrideBackgroundHighlight = tmp4(7760).createBackgroundHighlight(obj3);
-    const tmp4Result = tmp4(7760);
+    overrideBackgroundHighlight = tmp4(7747).createBackgroundHighlight(obj3);
+    const tmp4Result = tmp4(7747);
   }
   obj.backgroundHighlight = overrideBackgroundHighlight;
-  obj.conversationHeader = conversationHeader;
   let canReply = options.enableSwipeActions;
   if (canReply) {
     canReply = canShowImages.canReply;

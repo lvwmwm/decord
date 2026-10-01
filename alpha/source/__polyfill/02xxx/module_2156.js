@@ -1,9 +1,0 @@
-// Module ID: 2156
-// Function ID: 2157
-// Dependencies: [1121]
-
-// Module 2156
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/intl", scales: [1], hash: "0297621b6c1eb75f292426d8c066df33", name: "Mana.compiled.messages", type: "jsona" });

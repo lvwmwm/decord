@@ -1,19 +1,19 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15518
+// Function ID: 15519
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [19, 21, 7534, 6617, 7484, 10589, 15514, 2]
+// Dependencies: [19, 21, 7512, 6607, 7462, 10581, 15519, 2]
 
-// Module 15513 (DevToolsGuildTagBadgesModal)
-import HeaderShared from "HeaderShared" /* 7484 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10589 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15514 */;
+// Module 15518 (DevToolsGuildTagBadgesModal)
+import HeaderShared from "HeaderShared" /* 7462 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10581 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15519 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(7534);
+const NativeStackNavigator = fn(7512);
 let closure_4 = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");

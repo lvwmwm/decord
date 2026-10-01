@@ -1,0 +1,22 @@
+// Module ID: 7980
+// Function ID: 7981
+// Name: isItemUnreadInChannel
+// Dependencies: [4860, 11, 2]
+// Exports: isItemUnreadInChannel
+
+// Module 7980 (isItemUnreadInChannel)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import ReadStateStore from "ReadStateStore" /* 4860 */;
+
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/icymi/isItemUnreadInChannel.tsx");
+
+export const isItemUnreadInChannel = function isItemUnreadInChannel(channel_id, message_id) {
+  const trackedAckMessageId = ReadStateStore.getTrackedAckMessageId(channel_id);
+  let tmp2 = null == trackedAckMessageId;
+  if (!tmp2) {
+    const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(message_id);
+    tmp2 = extractTimestampResult > SnowflakeUtilsDefault.extractTimestamp(trackedAckMessageId);
+  }
+  return tmp2;
+};

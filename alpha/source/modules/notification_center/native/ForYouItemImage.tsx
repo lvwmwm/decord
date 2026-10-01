@@ -1,24 +1,24 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16287
+// Function ID: 16288
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2063, 2067, 1372, 16268, 21, 4866, 576, 7249, 9537, 16269, 16270, 16271, 16272, 6095, 16273, 1177, 16274, 16275, 6779, 504, 5632, 7819, 7888, 16276, 4862, 2]
+// Dependencies: [19, 17, 2062, 2066, 1372, 16288, 21, 4845, 576, 7227, 9531, 16289, 16290, 16291, 16292, 6085, 16293, 1177, 16294, 16295, 6769, 504, 5621, 7806, 7875, 16296, 4841, 2]
 
-// Module 16267 (ForYouItemImage)
+// Module 16287 (ForYouItemImage)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5632 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7888 */;
+import Pressables from "Pressables" /* 5621 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7875 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const getGuildAcronym = fn(2063).getGuildAcronym;
-const Constants = fn(16268);
+const getGuildAcronym = fn(2062).getGuildAcronym;
+const Constants = fn(16288);
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
 const jsx = fn(21).jsx;
-let createStyles = fn(4866);
+let createStyles = fn(4845);
 let closure_9 = createStyles.createStyles((arg0) => {
   let num = 48;
   if (arg0) {
@@ -37,7 +37,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   obj.guildFallbackImage = size1;
   return obj;
 });
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj = { fallbackImage: { color: nativeDefault.colors.WHITE }, fallbackImageV2: null, brandBackground: null, profileBackground: null, friendBackground: null, messageBackground: null, guildGridBackground: null };
 let obj4 = { color: nativeDefault.colors.WHITE };
 obj.fallbackImageV2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

@@ -1,10 +1,10 @@
-// Module ID: 5005
-// Function ID: 5006
+// Module ID: 4984
+// Function ID: 4985
 // Name: FrontierTuningExperiment
-// Dependencies: [4913, 1436, 2]
+// Dependencies: [4892, 1436, 2]
 
-// Module 5005 (FrontierTuningExperiment)
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4913 */;
+// Module 4984 (FrontierTuningExperiment)
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4892 */;
 import ApexExperiment from "apex/ApexExperiment" /* 1436 */;
 import size from "module_2" /* 2 */;
 

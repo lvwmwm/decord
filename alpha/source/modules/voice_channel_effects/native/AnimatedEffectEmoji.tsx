@@ -1,18 +1,18 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9103
+// Function ID: 9104
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 4855, 21, 1091, 4866, 576, 6095, 1177, 504, 4596, 4867, 6963, 2]
+// Dependencies: [19, 17, 4834, 21, 1091, 4845, 576, 6085, 1177, 504, 4595, 4846, 6954, 2]
 // Exports: default
 
-// Module 9109 (AnimatedEffectEmoji)
+// Module 9103 (AnimatedEffectEmoji)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import timing from "timing" /* 4867 */;
-import FastImageDefault from "FastImage" /* 6095 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import timing from "timing" /* 4846 */;
+import FastImageDefault from "FastImage" /* 6085 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 function Emoji(url) {
@@ -38,7 +38,7 @@ const View = fn(17).View;
 const jsx = fn(21).jsx;
 let closure_7 = 6 * DurationsDefault.Millis.SECOND;
 let closure_8 = 2 * DurationsDefault.Millis.SECOND;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { voiceChannelEffectEmojiContainer: null, voiceChannelEffectEmojiContainerTileNotch: null, voiceChannelEffectEmoji: null, textEmoji: null, imageEmoji: null };
 const rect = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round, position: "absolute", right: 16, top: 16 };
 obj2.voiceChannelEffectEmojiContainer = rect;

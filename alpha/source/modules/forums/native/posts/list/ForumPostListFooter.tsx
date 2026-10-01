@@ -1,23 +1,23 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11718
+// Function ID: 11719
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1074, 21, 4866, 576, 11651, 6886, 11703, 11711, 11704, 11163, 2]
+// Dependencies: [19, 17, 1074, 21, 4845, 576, 11659, 6877, 11711, 11719, 11712, 11167, 2]
 // Exports: default
 
-// Module 11710 (ForumPostListFooter)
+// Module 11718 (ForumPostListFooter)
 import nativeDefault from "native" /* 576 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6886 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11651 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11703 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6877 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11659 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11711 */;
 import noop from "module_19" /* 19 */;
 
-const ForumPostReactions = tmp2(11163);
+const ForumPostReactions = tmp2(11167);
 require = fn;
 const View = fn(17).View;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }, dot: null };
 let size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 obj2.dot = size;
@@ -35,7 +35,7 @@ export default function ForumPostListFooter(parentChannel) {
   const items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(11711), obj4);
+    isGameInvitesPost = tmp8(tmp9(11719), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {
@@ -43,7 +43,7 @@ export default function ForumPostListFooter(parentChannel) {
     const obj6 = { style: tmp.dot };
     const items1 = [tmp8(tmp7, obj6), ];
     const obj7 = { thread, typingUserIds, hasUnreads };
-    items1[1] = tmp8(tmp9(11704), obj7);
+    items1[1] = tmp8(tmp9(11712), obj7);
     obj5.children = items1;
     tmp6Result = tmp6(timestampProducer, obj5);
   }

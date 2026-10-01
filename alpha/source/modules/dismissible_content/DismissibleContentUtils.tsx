@@ -1,7 +1,7 @@
 // Module ID: 2031
 // Function ID: 2032
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1220, 2032, 2033, 2035, 2042, 1074, 2030, 2043, 11, 2026, 4706, 504, 2029, 573, 9901, 1241, 2034, 2]
+// Dependencies: [32, 5, 1220, 2032, 2033, 2035, 2041, 1074, 2030, 2042, 11, 2026, 4705, 504, 2029, 573, 9893, 1241, 2034, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
 // Module 2031 (DismissibleContentUtils)
@@ -12,8 +12,8 @@ import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /*
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 2030 */;
 import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2034 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4706 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9901 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4705 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9893 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
@@ -21,7 +21,7 @@ import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" 
 
 const require = globalThis.__r;
 
-const VersionedDismissibleContentUtils = tmp(2043);
+const VersionedDismissibleContentUtils = tmp(2042);
 require = fn;
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   const obj2 = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: null, lastDismissedObjectId: "0", numTimesDismissed: null };
@@ -435,7 +435,7 @@ function trackDismissibleContentDismissed(arg0, guildId) {
 const DCFEventTypes = fn(2032).DCFEventTypes;
 const DismissibleContentShownStateStore = fn(2035);
 ({ addCandidateContent: closure_8, removeCandidateContent: closure_9, isContentShown: c10, getCurrentlyShownCounts: closure_11 } = DismissibleContentShownStateStore);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let c14 = 2592000000;
 let items = [fn(2029).DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, fn(2029).DismissibleContent.AUTOCLIPPING_ACCOUNT_PANEL_COACHMARK];
@@ -452,8 +452,8 @@ export const getDismissedRecurringDismissibleContentState = function getDismisse
   }
   let num = 0;
   if (obj.isVersionedDismissibleContent(id)) {
-    num = tmp2(2043).getVersionedDismissibleContentCurrentVersion(id);
-    const tmp2Result = tmp2(2043);
+    num = tmp2(2042).getVersionedDismissibleContentCurrentVersion(id);
+    const tmp2Result = tmp2(2042);
   }
   const obj2 = { lastDismissedVersion: num, lastDismissedAtMs: null, lastDismissedObjectId: null, numTimesDismissed: null };
   obj = DismissibleContentTypes;
@@ -560,7 +560,7 @@ export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurri
       }
     }
     if (undefined === tmp5) {
-      return { isDismissed: false, lastDismissedAtMs: "r" };
+      return { isDismissed: false, lastDismissedAtMs: "a" };
     } else {
       let flag = true;
       if (null != cooldownConfig) {

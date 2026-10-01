@@ -1,14 +1,14 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13029
+// Function ID: 13030
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4866, 576, 4561, 7530, 7546, 1115, 4862, 5477, 13022, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4560, 7508, 7524, 1115, 4841, 5465, 13030, 2]
 // Exports: default
 
-// Module 13021 (ConversationFocusView)
+// Module 13029 (ConversationFocusView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7530 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7546 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7508 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7524 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles((backgroundColor) => {
   const obj = { container: { flex: 1, backgroundColor }, pendingContent: { flex: 1, paddingVertical: nativeDefault.space.PX_24, alignItems: "center", gap: nativeDefault.space.PX_32, backgroundColor } };
   return obj;

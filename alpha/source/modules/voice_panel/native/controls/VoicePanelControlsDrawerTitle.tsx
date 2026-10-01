@@ -1,23 +1,23 @@
-// Module ID: 11966
-// Function ID: 11967
+// Module ID: 11973
+// Function ID: 11974
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11956, 21, 4866, 576, 4596, 6097, 11967, 6690, 4862, 2]
+// Dependencies: [19, 17, 11963, 21, 4845, 576, 4595, 6087, 11974, 6680, 4841, 2]
 
-// Module 11966 (VoicePanelControlsDrawerTitle)
+// Module 11973 (VoicePanelControlsDrawerTitle)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import NativeViewDefault from "NativeView" /* 6097 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 11967 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import NativeViewDefault from "NativeView" /* 6087 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 11974 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = tmp2(4862);
-const ReanimatedNativeViewDefault = tmp7(6690);
+const Text_Text = tmp2(4841);
+const ReanimatedNativeViewDefault = tmp7(6680);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
-let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(11956).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
+const createStyles = fn(4845);
+let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(11963).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
 let obj3 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
 obj.titlePillBG = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);

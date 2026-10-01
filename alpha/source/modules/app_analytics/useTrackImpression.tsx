@@ -1,19 +1,19 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8418
+// Function ID: 8419
 // Name: useTrackImpression
-// Dependencies: [19, 2045, 2099, 4685, 1242, 1249, 1241, 573, 5046, 1331, 5070, 5494, 2]
+// Dependencies: [19, 2044, 2098, 4684, 1242, 1249, 1241, 573, 5025, 1331, 5049, 5482, 2]
 // Exports: default
 
-// Module 8426 (useTrackImpression)
+// Module 8418 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import _modDef1331 from "module_1331" /* 1331 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 
 require = fn;
 function trackImpression(type, disableTrack, arg2) {
@@ -84,7 +84,7 @@ export default function useTrackImpression(arg0, arg1, current) {
   noop = undefined;
   noop = noop.useRef(undefined);
   noop.useRef(undefined);
-  obj(5494)(() => {
+  obj(5482)(() => {
     if (obj.trackOnInitialLoad) {
       const tmp6 = _modDef1331(ref.current, closure_0);
       if (!tmp6) {
@@ -97,7 +97,7 @@ export default function useTrackImpression(arg0, arg1, current) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5070)("impression_");
+        obj.sequenceId = tmp2(5049)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {
@@ -121,7 +121,7 @@ export default function useTrackImpression(arg0, arg1, current) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5070)("impression_");
+        obj.sequenceId = tmp2(5049)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {

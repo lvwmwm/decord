@@ -1,20 +1,20 @@
-// Module ID: 4862
-// Function ID: 4863
+// Module ID: 4841
+// Function ID: 4842
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1085, 21, 4596, 576, 12, 4863, 4864, 4866, 4871, 4872, 4875, 1365, 4876, 299, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4595, 576, 12, 4842, 4843, 4845, 4850, 4851, 4854, 1365, 4855, 299, 2]
 
-// Module 4862 (Text/Text)
+// Module 4841 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4864 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 4871 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4872 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 4875 */;
-import _modDef4876 from "module_4876" /* 4876 */;
+import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4843 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 4850 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4851 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 4854 */;
+import _modDef4855 from "module_4855" /* 4855 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
 
 require = fn;
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];
@@ -42,7 +42,7 @@ obj7[800] = Fonts.GINTO_NORD_EXTRA_BOLD_ITALIC;
 ({ GINTO_DISCORD_NORD_BOLD_ITALIC: obj8[700], GINTO_DISCORD_NORD_BLACK_ITALIC: obj8[900] } = Fonts);
 const dependencyMap = { headline: obj2, nitro: obj4, primary: { 400: null, 500: null, 600: null, 700: null, 800: null }, code: { 400: null, 700: null } };
 let closure_14 = { headline: obj7, nitro: { 700: null, 900: null } };
-const TextVariantsFlat = fn(4863).TextVariantsFlat;
+const TextVariantsFlat = fn(4842).TextVariantsFlat;
 const mapped = TextVariantsFlat.map((name) => {
   let tmp = null;
   if ("code" !== name.name) {
@@ -82,9 +82,9 @@ const mapped = TextVariantsFlat.map((name) => {
   return tmp;
 });
 const fromEntriesResult = Object.fromEntries(mapped.filter(Boolean));
-const useManaTextMigrationHighlight = fn(4864);
+const useManaTextMigrationHighlight = fn(4843);
 let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntriesResult);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_16 = createStyles.createStyles((arg0, arg1) => {
   let tmp;
   if ("none" !== arg0) {
@@ -169,7 +169,7 @@ const forwardRefResult = noop.forwardRef((animated, ref) => {
     }
     obj4.ellipsizeMode = ellipsizeMode;
     const merged1 = Object.assign(merged);
-    return tmp20(_modDef4876, obj4);
+    return tmp20(_modDef4855, obj4);
   } else {
     if (flag2) {
       let NativeText = tmp4(299).NativeText;

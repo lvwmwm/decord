@@ -1,17 +1,17 @@
-// Module ID: 6728
-// Function ID: 6729
+// Module ID: 6718
+// Function ID: 6719
 // Name: GuildCategoryStore
-// Dependencies: [2048, 502, 2045, 4497, 2067, 1074, 6729, 504, 573, 2]
+// Dependencies: [2047, 502, 2044, 4496, 2066, 1074, 6719, 504, 573, 2]
 
-// Module 6728 (GuildCategoryStore)
+// Module 6718 (GuildCategoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6729 */;
-import FavoriteStore from "FavoriteStore" /* 2048 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6719 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4497 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 function setIndex(arg0, index) {
   arg0.index = index;
@@ -239,7 +239,7 @@ function handleFavoritesUpdate() {
   const item3 = getFlattedChannelListDefault(obj._categories, obj).forEach(setIndex);
   closure_12[closure_1_10] = obj;
 }
-let GuildChannelStore = fn(4497);
+let GuildChannelStore = fn(4496);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: hasOwnProperty, GUILD_VOCAL_CHANNELS_KEY: metroRequire } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
 const Constants = fn(1074);

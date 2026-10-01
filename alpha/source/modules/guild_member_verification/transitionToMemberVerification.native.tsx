@@ -1,14 +1,14 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6023
+// Function ID: 6024
 // Name: transitionToMemberVerification
-// Dependencies: [2067, 4686, 1101, 4688, 6035, 6077, 2]
+// Dependencies: [2066, 4685, 1101, 4687, 6024, 6067, 2]
 // Exports: transitionToMemberVerification
 
-// Module 6034 (transitionToMemberVerification)
+// Module 6023 (transitionToMemberVerification)
 import router_utils from "router_utils" /* 1101 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4688 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4686 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4687 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4685 */;
 
 require = fn;
 const size = fn(2);
@@ -22,18 +22,18 @@ export const transitionToMemberVerification = function transitionToMemberVerific
       applicationStatus = request.applicationStatus;
     }
     if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-      const result = tmp7(6035).openMemberVerificationPendingAlert(guildId);
-      const tmp7Result = tmp7(6035);
-    } else if (tmp7(4688).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+      const result = tmp7(6024).openMemberVerificationPendingAlert(guildId);
+      const tmp7Result = tmp7(6024);
+    } else if (tmp7(4687).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
       const obj2 = { guildId, canWithdraw: true };
-      const result1 = tmp7(6035).openMemberVerificationRejectedAlert(obj2);
-      const tmp7Result4 = tmp7(6035);
-    } else if (tmp7(4688).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+      const result1 = tmp7(6024).openMemberVerificationRejectedAlert(obj2);
+      const tmp7Result4 = tmp7(6024);
+    } else if (tmp7(4687).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
       tmp7(1101).transitionToGuild(guildId);
       const tmp7Result5 = tmp7(1101);
     } else {
-      const result2 = tmp7(6077).openMemberVerificationModal(guildId);
-      const tmp7Result6 = tmp7(6077);
+      const result2 = tmp7(6067).openMemberVerificationModal(guildId);
+      const tmp7Result6 = tmp7(6067);
     }
   } else {
     router_utils.transitionToGuild(guildId);

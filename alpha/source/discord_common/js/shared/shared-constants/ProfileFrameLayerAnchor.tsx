@@ -1,9 +1,9 @@
-// Module ID: 7849
-// Function ID: 7850
+// Module ID: 7836
+// Function ID: 7837
 // Name: ProfileFrameLayerAnchor
 // Dependencies: [2]
 
-// Module 7849 (ProfileFrameLayerAnchor)
+// Module 7836 (ProfileFrameLayerAnchor)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileFrameLayerAnchor.tsx");

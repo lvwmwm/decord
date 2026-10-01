@@ -1,19 +1,19 @@
-// Module ID: 16151
-// Function ID: 16152
+// Module ID: 16171
+// Function ID: 16172
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 4906, 4509, 1074, 21, 4866, 576, 504, 4862, 1115, 16147, 4728, 4725, 2]
+// Dependencies: [19, 17, 4885, 4508, 1074, 21, 4845, 576, 504, 4841, 1115, 16167, 4727, 4724, 2]
 // Exports: default
 
-// Module 16151 (HomeDrawerDirectMessagesRow)
+// Module 16171 (HomeDrawerDirectMessagesRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4728 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16147 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4727 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16167 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4906 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+import PresenceStore from "PresenceStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 
 require = fn;
 function HomeDrawerDMsRow() {
@@ -32,7 +32,7 @@ function HomeDrawerDMsRow() {
     const intl = tmp2(1115).intl;
     const obj5 = { numFriends: stateFromStores };
     obj4.children = intl.format(tmp2(1115).t.N5UIKr, obj5);
-    items1[1] = React5(tmp2(4862).Text, obj4);
+    items1[1] = React5(tmp2(4841).Text, obj4);
     obj2.children = items1;
     tmp5 = React6(View, obj2);
   }
@@ -48,7 +48,7 @@ const View = fn(17).View;
 const StatusTypes = fn(1074).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 obj2.onlineDot = size;

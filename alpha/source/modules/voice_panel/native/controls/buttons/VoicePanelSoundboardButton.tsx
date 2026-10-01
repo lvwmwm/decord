@@ -1,14 +1,14 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17266
+// Function ID: 17267
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 4866, 576, 11957, 17230, 17245, 17231, 1115, 6097, 12227, 2]
+// Dependencies: [19, 21, 4845, 576, 11964, 17252, 17267, 17253, 1115, 6087, 12235, 2]
 // Exports: default
 
-// Module 17244 (VoicePanelSoundboardButton)
+// Module 17266 (VoicePanelSoundboardButton)
 import nativeDefault from "native" /* 576 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11957 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17230 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17245 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11964 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17252 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17267 */;
 import noop from "module_19" /* 19 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
@@ -16,7 +16,7 @@ const useSoundboardConfigDefault = useSoundboardConfig;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { circle: null, iconContainer: null };
 let size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 obj2.circle = size;
@@ -46,15 +46,15 @@ export default function SoundboardButton(arg0) {
     const obj3 = { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor };
     items[1] = obj3;
     obj2.style = items;
-    const items1 = [React4(tmp(6097), obj2), ];
+    const items1 = [React4(tmp(6087), obj2), ];
     const obj4 = { style: tmp3.iconContainer, children: null };
-    const tmpResult = tmp(17231);
+    const tmpResult = tmp(17253);
     const obj5 = { color };
-    obj4.children = React4(tmp4(12227).SoundboardIcon, obj5);
-    items1[1] = React4(tmp(6097), obj4);
+    obj4.children = React4(tmp4(12235).SoundboardIcon, obj5);
+    items1[1] = React4(tmp(6087), obj4);
     element.children = items1;
     tmp8 = hasOwnProperty(tmpResult, element);
-    const tmpResult2 = tmp(6097);
+    const tmpResult2 = tmp(6087);
   }
   return tmp8;
 };

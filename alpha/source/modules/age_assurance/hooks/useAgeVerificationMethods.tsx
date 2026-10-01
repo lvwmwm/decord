@@ -1,21 +1,21 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 8226
+// Function ID: 8227
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 8101, 8055, 504, 5078, 8056, 8086, 5375, 5380, 8238, 8061, 1115, 2]
+// Dependencies: [5, 32, 19, 8090, 8044, 504, 5057, 8045, 8075, 5363, 5368, 8227, 8050, 1115, 2]
 // Exports: default
 
-// Module 8237 (useAgeVerificationMethods)
+// Module 8226 (useAgeVerificationMethods)
 import util from "util" /* 1115 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5375 */;
-import MetricEvents from "MetricEvents" /* 5380 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8061 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5363 */;
+import MetricEvents from "MetricEvents" /* 5368 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8050 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8101 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8090 */;
 
 require = fn;
-const AgeVerificationConstants = fn(8055);
+const AgeVerificationConstants = fn(8044);
 ({ VERIFICATION_METHOD_TITLE_MAP: closure_7, VerificationMethod: closure_8 } = AgeVerificationConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethods.tsx");
@@ -44,8 +44,8 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
         obj2.tags = items;
         MonitoringAgentDefault.increment(obj2);
         if (result) {
-          result = tmp4(8238).isGoogleWalletEnabled("age_verification_methods");
-          const tmp4Result = tmp4(8238);
+          result = tmp4(8227).isGoogleWalletEnabled("age_verification_methods");
+          const tmp4Result = tmp4(8227);
         }
         closure_4(result);
         tmp4 = require;
@@ -103,8 +103,8 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      const obj5 = id(8056);
-                      const result = obj5.trackAgeVerificationModalClicked(id, id(8056).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8056).AgeVerificationModalCta.METHOD_SELECT, id);
+                      const obj5 = id(8045);
+                      const result = obj5.trackAgeVerificationModalClicked(id, id(8045).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8045).AgeVerificationModalCta.METHOD_SELECT, id);
                       v1 = 1;
                       c1 = 1;
                       const obj4 = { value: v1(id), done: false };

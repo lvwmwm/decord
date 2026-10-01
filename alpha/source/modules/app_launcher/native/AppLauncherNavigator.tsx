@@ -1,17 +1,17 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11775
+// Function ID: 11776
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1484, 1074, 21, 7534, 4866, 576, 6779, 6799, 4733, 1611, 6617, 5046, 1486, 11768, 11812, 11838, 11880, 10990, 2]
+// Dependencies: [109, 19, 1484, 1074, 21, 7512, 4845, 576, 6769, 6789, 4732, 1611, 6607, 5025, 1486, 11776, 11820, 11846, 11888, 10994, 2]
 
-// Module 11767 (AppLauncherNavigator)
+// Module 11775 (AppLauncherNavigator)
 import nativeDefault from "native" /* 576 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6779 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6799 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11768 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11812 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11838 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11880 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6769 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11776 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11820 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11846 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11888 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,9 +21,9 @@ const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const NativeStackNavigator = fn(7534);
+const NativeStackNavigator = fn(7512);
 let closure_10 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { navigator: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingTop: 16, overflow: "visible", flex: 1 } };
 let closure_11 = createStyles.createStyles(obj);
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingTop: 16, overflow: "visible", flex: 1 };
@@ -39,8 +39,8 @@ export default noop.memo(function AppLauncherNavigator(arg0) {
   if (overrideParams == null) {
     overrideParams = obj.useKeyboardContextForType(entrypoint(1611).KeyboardTypes.APP_LAUNCHER);
   }
-  obj = entrypoint(4733);
-  const accessibilityNativeStackOptions = entrypoint(6617).useAccessibilityNativeStackOptions();
+  obj = entrypoint(4732);
+  const accessibilityNativeStackOptions = entrypoint(6607).useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj15 = _objectWithoutProperties(overrideParams, closure_3);
   const items = [entrypoint];
@@ -98,11 +98,11 @@ export default noop.memo(function AppLauncherNavigator(arg0) {
   items2[3] = closure_8(closure_10.Screen, obj13);
   obj3.children = items2;
   obj2.children = closure_9(closure_10.Navigator, obj3);
-  obj17.children = closure_8(entrypoint(6779).AnalyticsLocationProvider, obj2);
+  obj17.children = closure_8(entrypoint(6769).AnalyticsLocationProvider, obj2);
   obj16.children = closure_8(entrypoint(1486).NavigationContainer, obj17);
   let tmp19 = "customId" in overrideParams;
   const obj14 = { context };
-  const tmp5Result = entrypoint(6617);
+  const tmp5Result = entrypoint(6607);
   if (!tmp19) {
     tmp19 = "referrerId" in overrideParams;
   }
@@ -113,5 +113,5 @@ export default noop.memo(function AppLauncherNavigator(arg0) {
     const obj18 = { customId: null, referrerId: null };
   }
   const tmp8Result = closure_8(entrypoint(1486).NavigationIndependentTree, obj16);
-  return closure_8(entrypoint(10990).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp20, keyboardCloseReasonRef, onActivityItemSelected, width }, children: closure_8(entrypoint(1486).NavigationIndependentTree, obj16) });
+  return closure_8(entrypoint(10994).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp20, keyboardCloseReasonRef, onActivityItemSelected, width }, children: closure_8(entrypoint(1486).NavigationIndependentTree, obj16) });
 });

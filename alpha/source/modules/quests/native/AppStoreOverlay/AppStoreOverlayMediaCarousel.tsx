@@ -1,17 +1,17 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10928
+// Function ID: 10929
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4855, 1085, 21, 576, 4866, 10934, 10935, 1115, 6095, 504, 7950, 8372, 7326, 7336, 6269, 2]
+// Dependencies: [32, 19, 17, 4834, 1085, 21, 576, 4845, 10929, 10930, 1115, 6085, 504, 7937, 8364, 7304, 7314, 6259, 2]
 // Exports: default
 
-// Module 10933 (AppStoreOverlayMediaCarousel)
+// Module 10928 (AppStoreOverlayMediaCarousel)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsActions from "AnalyticsActions" /* 7326 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10934 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10935 */;
+import AnalyticsActions from "AnalyticsActions" /* 7304 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10929 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10930 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 function getMeasurableUrl(type) {
@@ -124,7 +124,7 @@ const NOOP = fn(1085).NOOP;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { carousel: { marginHorizontal: -nativeDefault.space.PX_16 }, carouselContent: null, mediaItem: null, media: null, playIconWrapper: null };
 let obj3 = { marginHorizontal: -nativeDefault.space.PX_16 };
 obj2.carouselContent = { gap: PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16, alignItems: "center" };
@@ -267,10 +267,10 @@ export default function AppStoreOverlayMediaCarousel(media) {
             let HorizontalScrollingDirection = dependencyMap;
             obj.carouselType = AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA;
             if (num5 > current) {
-              HorizontalScrollingDirection = tmp12(7336).HorizontalScrollingDirection;
+              HorizontalScrollingDirection = tmp12(7314).HorizontalScrollingDirection;
               let LEFT = HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7336).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7314).HorizontalScrollingDirection.LEFT;
             }
             obj.scrollingDirection = LEFT;
             obj.carouselPosition = num5;

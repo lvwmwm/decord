@@ -1,16 +1,16 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11424
+// Function ID: 11425
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2049, 2045, 1074, 1115, 4451, 504, 4879, 6861, 2]
+// Dependencies: [5, 19, 2048, 2044, 1074, 1115, 4450, 504, 4858, 6852, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11416 (SavedMessageUtils)
+// Module 11424 (SavedMessageUtils)
 import util from "util" /* 1115 */;
-import _modDef4451 from "module_4451" /* 4451 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
+import _modDef4450 from "module_4450" /* 4450 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;
 
@@ -124,7 +124,7 @@ let closure_10 = async function _savedMessageJumpToMessage(arg0, arg1) {
     }
   })();
 };
-const UnknownChannelRecord = fn(2049).UnknownChannelRecord;
+const UnknownChannelRecord = fn(2048).UnknownChannelRecord;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_7, Routes: closure_8 } = Constants);
 const DueInStringTypes = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };
@@ -157,7 +157,7 @@ export const useDueInString = function useDueInString(arg0) {
     const obj2 = { duration: null };
     const time = dueAt.getTime();
     tmp9 = obj;
-    obj2.duration = _modDef4451.duration(time - now.getTime(), "millisecond").humanize();
+    obj2.duration = _modDef4450.duration(time - now.getTime(), "millisecond").humanize();
     obj.dueInText = intl.formatToPlainString(H4gnX9, obj2);
     obj.isOverdue = now > dueAt;
     return obj;

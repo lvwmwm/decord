@@ -1,13 +1,13 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 10976
+// Function ID: 10977
 // Name: Modal
-// Dependencies: [19, 21, 1613, 6617, 6190, 2]
+// Dependencies: [19, 21, 1613, 6607, 6180, 2]
 // Exports: Modal
 
-// Module 10974 (Modal)
+// Module 10976 (Modal)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import NavigatorConstants from "NavigatorConstants" /* 6190 */;
-import Navigator from "Navigator" /* 6617 */;
+import NavigatorConstants from "NavigatorConstants" /* 6180 */;
+import Navigator from "Navigator" /* 6607 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

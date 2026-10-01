@@ -1,18 +1,18 @@
-// Module ID: 15471
-// Function ID: 15472
+// Module ID: 15476
+// Function ID: 15477
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 4855, 5091, 21, 4866, 504, 1364, 4588, 2]
+// Dependencies: [19, 17, 4834, 5070, 21, 4845, 504, 1364, 4587, 2]
 // Exports: default
 
-// Module 15471 (CheckpointKnickKnacks)
+// Module 15476 (CheckpointKnickKnacks)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 const require = fn;
 const View = fn(17).View;
-const CHECKPOINT_PRIMARY = fn(5091).CHECKPOINT_PRIMARY;
+const CHECKPOINT_PRIMARY = fn(5070).CHECKPOINT_PRIMARY;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_7 = createStyles.createStyles({ rive: { width: 143, height: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointKnickKnacks.tsx");
@@ -32,7 +32,7 @@ export default function CheckpointKnickKnacks(style) {
     const items2 = [tmp4.rive, style.style];
     obj3.style = items2;
     const obj4 = { artboard: "Entry", dataBinding: memo };
-    obj3.children = jsx(tmp(4588).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
+    obj3.children = jsx(tmp(4587).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
     tmp6 = <View style={null}>{null}</View>;
   }
   return tmp6;

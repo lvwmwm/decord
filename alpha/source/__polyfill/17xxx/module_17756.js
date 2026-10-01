@@ -1,9 +1,31 @@
 // Module ID: 17756
 // Function ID: 17757
-// Dependencies: [1121]
+// Dependencies: [626, 17757, 17758, 17761]
 
 // Module 17756
-import registerAsset from "module_1121" /* 1121 */;
+import _mod626 from "module_626" /* 626 */;
+import _mod17757 from "module_17757" /* 17757 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 138, height: 92.5, scales: [2, 3], hash: "b5e600063095a5da796a5f2ddbe5b3f0", name: "role_subscription_social", type: "png" });
+export default function createCaseFirst(arg0) {
+  closure_0 = arg0;
+  return (arg0) => {
+    const str = _mod626(arg0);
+    let tmp3;
+    if (_mod17757(str)) {
+      tmp3 = tmp(17758)(str);
+    }
+    if (tmp3) {
+      let first = tmp3[0];
+    } else {
+      first = str.charAt(0);
+    }
+    if (tmp3) {
+      let joined = tmp(17761)(tmp3, 1).join("");
+      const obj = tmp(17761)(tmp3, 1);
+    } else {
+      joined = str.slice(1);
+    }
+    return first[closure_0]() + joined;
+  };
+};

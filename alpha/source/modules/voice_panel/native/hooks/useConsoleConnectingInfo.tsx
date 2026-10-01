@@ -1,16 +1,16 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 17241
+// Function ID: 17242
 // Name: useConsoleConnectingInfo
-// Dependencies: [4883, 4884, 9161, 563, 17220, 9459, 17221, 17222, 2]
+// Dependencies: [4862, 4863, 9155, 563, 17242, 9453, 17243, 17244, 2]
 // Exports: default
 
-// Module 17219 (useConsoleConnectingInfo)
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9161 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9459 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17220 */;
-import getConsoleColorDefault from "getConsoleColor" /* 17222 */;
-import GameConsoleStore from "GameConsoleStore" /* 4883 */;
-import SessionsStore from "SessionsStore" /* 4884 */;
+// Module 17241 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9155 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9453 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17242 */;
+import getConsoleColorDefault from "getConsoleColor" /* 17244 */;
+import GameConsoleStore from "GameConsoleStore" /* 4862 */;
+import SessionsStore from "SessionsStore" /* 4863 */;
 
 const require = globalThis.__r;
 
@@ -67,7 +67,7 @@ export default function useConsoleConnectingInfo(arg0) {
   obj3.isConnectingOrConnectedToConsole = channelId2 === arg0 || channelId === arg0;
   obj3.icon = getConsoleIconDefault(str);
   const tmp9 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
-  obj3.text = tmp5(17221).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj3.text = tmp5(17243).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
   obj3.color = getConsoleColorDefault(str);
   obj3.displayCancel = tmp9;
   return obj3;

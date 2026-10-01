@@ -1,13 +1,13 @@
-// Module ID: 6874
-// Function ID: 6875
+// Module ID: 6865
+// Function ID: 6866
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [2063, 4499, 1372, 1074, 504, 6875, 6867, 2]
+// Dependencies: [2062, 4498, 1372, 1074, 504, 6866, 6858, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanManageGuildRoleSubscriptions, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 6874 (GuildRoleSubscriptionSettingUtils)
-import GuildRecord from "GuildRecord" /* 2063 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 6875 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+// Module 6865 (GuildRoleSubscriptionSettingUtils)
+import GuildRecord from "GuildRecord" /* 2062 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 6866 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;

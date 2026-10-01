@@ -1,12 +1,12 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7567
+// Function ID: 7568
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [560, 5403, 5462, 2]
+// Dependencies: [560, 5391, 5450, 2]
 // Exports: getIsAccessibilityServiceEnabled, useIsAccessibilityServiceEnabled
 
-// Module 7589 (useIsAccessibilityServiceEnabled)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5403 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
+// Module 7567 (useIsAccessibilityServiceEnabled)
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5391 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5450 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

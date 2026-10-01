@@ -1,51 +1,60 @@
-// Module ID: 8240
-// Function ID: 8241
+// Module ID: 8229
+// Function ID: 8230
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 8055, 21, 5405, 1115, 3103, 4862, 8054, 2111, 5405, 2]
+// Dependencies: [19, 8044, 21, 8230, 4841, 8043, 2110, 1115, 3102, 5393, 5393, 2]
 // Exports: default
 
-// Module 8240 (ManualReviewDecidedTeenAlertModal)
+// Module 8229 (ManualReviewDecidedTeenAlertModal)
 import util from "util" /* 1115 */;
-import _modDef3103 from "module_3103" /* 3103 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import AlertModal from "AlertModal" /* 5405 */;
+import _modDef3102 from "module_3102" /* 3102 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import AlertModal from "AlertModal" /* 5393 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8230 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const FALLBACK_TEEN_AGE_RANGE = fn(8055).FALLBACK_TEEN_AGE_RANGE;
+const FALLBACK_TEEN_AGE_RANGE = fn(8044).FALLBACK_TEEN_AGE_RANGE;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewDecidedTeenAlertModal.tsx");
 
 export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   teenAgeRange = teenAgeRange.teenAgeRange;
-  let obj = { title: null, content: null, actions: null };
-  let intl = util.intl;
-  obj.title = intl.string(_modDef3103.AA3xYb);
-  const intl2 = util.intl;
-  if (teenAgeRange == null) {
-    teenAgeRange = FALLBACK_TEEN_AGE_RANGE;
+  function contentAndSettingsHook(children, arg1) {
+    return jsx(Text_Text.Text, {
+      variant: "text-md/normal",
+      color: "text-link",
+      onPress() {
+        const obj = closure_1_1(8043);
+        const intl = closure_1_0(1115).intl;
+        return obj.openUrl(closure_1_1(2110).getArticleURL(intl.string(closure_1_1(3102).agiNYw)));
+      },
+      children
+    }, arg1);
   }
-  obj.content = intl2.format(_modDef3103["2+f8w1"], {
-    teenAgeRange,
-    contentAndSettingsHook(children, arg1) {
-      return jsx(Text_Text.Text, {
-        variant: "text-md/normal",
-        color: "text-link",
-        onPress() {
-          const obj = closure_1_1(8054);
-          const intl = closure_1_0(1115).intl;
-          return obj.openUrl(closure_1_1(2111).getArticleURL(intl.string(closure_1_1(3103).agiNYw)));
-        },
-        children
-      }, arg1);
+  const isManualReviewInconclusiveCopyEnabled = ManualReviewInconclusiveCopyExperiment.useIsManualReviewInconclusiveCopyEnabled("manual_review_decided_teen_modal");
+  const obj2 = { title: null, content: null, actions: null };
+  let intl = util.intl;
+  obj2.title = intl.string(_modDef3102.AA3xYb);
+  const intl2 = util.intl;
+  const format = intl2.format;
+  const tmp5 = _modDef3102;
+  if (isManualReviewInconclusiveCopyEnabled) {
+    const obj3 = { contentAndSettingsHook };
+    let formatResult = format(tmp5.UIbYzl, obj3);
+  } else {
+    if (teenAgeRange == null) {
+      teenAgeRange = FALLBACK_TEEN_AGE_RANGE;
     }
-  });
-  const obj3 = { children: null };
-  const obj4 = { text: null };
-  const intl3 = tmp2(1115).intl;
-  obj4.text = intl3.string(util.t["NX+WJN"]);
-  obj3.children = jsx(AlertModal.AlertActionButton, { text: null }, "got-it");
-  obj.actions = jsx(AlertModal.AlertActions, { children: null });
+    const obj4 = { teenAgeRange, contentAndSettingsHook };
+    formatResult = format(tmp5["2+f8w1"], obj4);
+  }
+  obj2.content = formatResult;
+  const obj5 = { children: null };
+  const obj6 = { text: null };
+  const intl3 = tmp(1115).intl;
+  obj6.text = intl3.string(util.t["NX+WJN"]);
+  obj5.children = jsx(AlertModal.AlertActionButton, { text: null }, "got-it");
+  obj2.actions = jsx(AlertModal.AlertActions, { children: null });
   return jsx(AlertModal.AlertModal, { title: null, content: null, actions: null });
 };

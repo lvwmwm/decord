@@ -4,4 +4,4 @@
 
 // Module 14037
 
-export const f = Object.getOwnPropertySymbols;
+export default {};

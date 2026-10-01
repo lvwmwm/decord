@@ -1,19 +1,19 @@
-// Module ID: 7453
-// Function ID: 7454
+// Module ID: 7431
+// Function ID: 7432
 // Name: CloudUploader
-// Dependencies: [5, 1074, 4859, 3, 7454, 7369, 1115, 7455, 7456, 5685, 7457, 7458, 5636, 5637, 1427, 12, 2]
+// Dependencies: [5, 1074, 4838, 3, 7432, 7347, 1115, 7433, 7434, 5674, 7435, 7436, 5625, 5626, 1427, 12, 2]
 
-// Module 7453 (CloudUploader)
+// Module 7431 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import Upload from "Upload" /* 5637 */;
+import Upload from "Upload" /* 5626 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploaderBase from "UploaderBase" /* 7454 */;
+import UploaderBase from "UploaderBase" /* 7432 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AbortCodes: closure_4, NOOP: hasOwnProperty } = Constants);
-const FileUploadErrorTypes = fn(4859).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4838).FileUploadErrorTypes;
 let closure_7 = new LoggerDefault("CloudUploader(Native).tsx");
 class CloudUploader extends tmp4 {
   constructor() {
@@ -67,7 +67,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             closure_130_5 = undefined;
             closure_130_6 = undefined;
             let uploadTarget;
-            closure_130_0 = files(7369).backgroundTaskIdentifierInvalid;
+            closure_130_0 = files(7347).backgroundTaskIdentifierInvalid;
             self.once("start", tmp4(function*(arg0, value) {
               if (c2 === 2) {
                 c2 = 3;
@@ -100,7 +100,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                       const obj5 = { count: length.length };
                       obj4.content = intl2.formatToPlainString(closure_2_0(1115).t.D0noUt, obj5);
                       c2 = 1;
-                      const obj7 = { value: files(7369).startBackgroundTask(obj4), done: false };
+                      const obj7 = { value: files(7347).startBackgroundTask(obj4), done: false };
                       return obj7;
                     }
                   } else if (arg0 === 1) {
@@ -113,8 +113,8 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                   } else {
                     closure_128_0 = value;
                     if (tmp2._aborted) {
-                      files(7369).endBackgroundTask(closure_128_0);
-                      const obj = files(7369);
+                      files(7347).endBackgroundTask(closure_128_0);
+                      const obj = files(7347);
                     }
                     c2 = 3;
                     return { value: "HermesInternal", done: null };
@@ -159,7 +159,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             }
             self._file.attachmentsCount = arr.length;
             self._handleStart(undefined);
-            obj8 = _self(7455);
+            obj8 = _self(7433);
             closure_130_3 = obj8.shouldCheckUploadSizeOnlyAfterCompression();
             closure_130_4 = 0;
             files = self.files;
@@ -198,7 +198,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
           closure_131_0._file.totalPreCompressionSize = closure_130_4;
           closure_131_0._file.currentSize = closure_130_4;
           if (!closure_130_3) {
-            uploadTarget = _self(5685).getUploadTarget(closure_130_5.item.target);
+            uploadTarget = _self(5674).getUploadTarget(closure_130_5.item.target);
             if (closure_130_6 > uploadTarget.getMaxFileSize(closure_130_5.channelId)) {
               const obj6 = { code: tmp63.ENTITY_TOO_LARGE, reason: null };
               let obj7 = { type: constants.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
@@ -222,13 +222,13 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
               const obj14 = { value: closure_130_2, done: true };
               return obj14;
             }
-            let obj = _self(5685);
+            let obj = _self(5674);
           }
           c5 = 1;
           if (_self === undefined) {
             const _HermesInternal2 = HermesInternal;
             logger.log("" + closure_131_0.id + " queued");
-            files(7457).enqueue(() => {
+            files(7435).enqueue(() => {
               closure_1_0.startUpload();
               return closure_1_0;
             });
@@ -241,7 +241,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             closure_130_5 = tmp49;
             constants = 3;
             logger = 1;
-            const obj16 = { value: _self(7456).getPreCompressionFileSize(closure_130_5.item), done: false };
+            const obj16 = { value: _self(7434).getPreCompressionFileSize(closure_130_5.item), done: false };
             return obj16;
           }
         }

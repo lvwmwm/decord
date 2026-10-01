@@ -1,46 +1,17 @@
 // Module ID: 14023
 // Function ID: 14024
-// Dependencies: [14010, 13988]
+// Dependencies: [14018, 14024]
 
 // Module 14023
-import _mod14010 from "module_14010" /* 14010 */;
+import _mod14018 from "module_14018" /* 14018 */;
 
-const re2 = /#|\.prototype\./;
-function isForced(arg0, arg1) {
-  if (typeof fn === "function") {
-    const _String = String;
-    const str3 = String(arg0).replace(re2, ".");
-    const tmp5 = tmp[str3.toLowerCase(str3)];
-    let tmp7 = tmp5 === P;
-    if (!tmp7) {
-      if (tmp5 === N) {
-        tmp7 = tmp9;
-      } else {
-        let tmp11Result = dependencyMap;
-        if (_mod14010(arg1)) {
-          tmp11Result = tmp11(13988);
-          let tmp11ResultResult = tmp11Result(arg1);
-        } else {
-          tmp11ResultResult = arg1;
-        }
-        tmp11 = require;
-      }
-    }
-    return tmp7;
+const _mod14024 = tmp(14024);
+
+export default (arg0) => {
+  if (_mod14018(arg0)) {
+    return arg0;
   } else {
-    throw new TypeError("Trying to call a non-function");
+    const tmp6 = new TypeError(_mod14024(arg0) + " is not a function");
+    throw tmp6;
   }
-}
-const normalize = (arg0) => {
-  const str = String(arg0);
-  return String(arg0).replace(re2, ".").toLowerCase();
 };
-isForced.normalize = normalize;
-const data = {};
-isForced.data = data;
-isForced.NATIVE = "N";
-const N = "N";
-isForced.POLYFILL = "P";
-const P = "P";
-
-export default isForced;

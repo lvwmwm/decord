@@ -1,16 +1,16 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9455
+// Function ID: 9456
 // Name: useIsVideoMode
-// Dependencies: [4888, 2045, 1993, 2099, 4885, 504, 2]
+// Dependencies: [4867, 2044, 1993, 2098, 4864, 504, 2]
 // Exports: default, isVideoMode
 
-// Module 9461 (useIsVideoMode)
+// Module 9455 (useIsVideoMode)
 import initialize from "initialize" /* 504 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4888 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
 
 require = fn;
 const size = fn(2);

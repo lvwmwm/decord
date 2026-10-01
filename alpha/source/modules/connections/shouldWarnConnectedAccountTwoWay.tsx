@@ -1,10 +1,10 @@
-// Module ID: 14706
-// Function ID: 14707
+// Module ID: 14712
+// Function ID: 14713
 // Name: shouldWarnConnectedAccountTwoWay
 // Dependencies: [1074, 2]
 // Exports: default
 
-// Module 14706 (shouldWarnConnectedAccountTwoWay)
+// Module 14712 (shouldWarnConnectedAccountTwoWay)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11463
+// Function ID: 11464
 // Name: SpotifyProtocolStore
 // Dependencies: [504, 573, 2]
 
-// Module 11455 (SpotifyProtocolStore)
+// Module 11463 (SpotifyProtocolStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

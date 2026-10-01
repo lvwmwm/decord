@@ -1,18 +1,18 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14728
+// Function ID: 14729
 // Name: ScanQrCodeSetting
-// Dependencies: [5, 5075, 12, 1610, 5648, 5069, 13608, 1981, 11211, 1115, 14624, 2]
+// Dependencies: [5, 5054, 12, 1610, 5637, 5048, 13616, 1981, 11215, 1115, 14630, 2]
 
-// Module 14722 (ScanQrCodeSetting)
+// Module 14728 (ScanQrCodeSetting)
 import util from "util" /* 1115 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5648 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5637 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const NativePermissionTypes = fn(5075).NativePermissionTypes;
+const NativePermissionTypes = fn(5054).NativePermissionTypes;
 const apply = fn(12);
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const debounceResult = apply.debounce(asyncGeneratorStep(async (arg0, value) => {
   if (c3 === 2) {
     c3 = 3;
@@ -87,7 +87,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.RC0kJz);
   },
   parent: null,
-  IconComponent: fn(14624).QrCodeIcon,
+  IconComponent: fn(14630).QrCodeIcon,
   onPress: apply.debounce(asyncGeneratorStep(async (arg0, value) => {
     if (c3 === 2) {
       c3 = 3;

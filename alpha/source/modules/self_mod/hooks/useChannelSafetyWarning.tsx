@@ -1,11 +1,11 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10631
+// Function ID: 10632
 // Name: useChannelSafetyWarning
-// Dependencies: [10579, 504, 2]
+// Dependencies: [10571, 504, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10639 (useChannelSafetyWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10579 */;
+// Module 10631 (useChannelSafetyWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10571 */;
 
 const require = globalThis.__r;
 

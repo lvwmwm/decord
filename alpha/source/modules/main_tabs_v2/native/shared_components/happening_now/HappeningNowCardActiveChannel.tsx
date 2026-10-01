@@ -1,29 +1,29 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15937
+// Function ID: 15938
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13447, 2045, 11650, 1372, 15047, 1074, 21, 4866, 504, 11, 1370, 12, 6925, 1241, 1101, 5019, 1115, 5531, 15048, 15915, 2]
+// Dependencies: [19, 17, 13456, 2044, 11658, 1372, 15053, 1074, 21, 4845, 504, 11, 1370, 12, 6916, 1241, 1101, 4998, 1115, 5519, 15054, 15931, 2]
 
-// Module 15921 (HappeningNowCardActiveChannel)
+// Module 15937 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import router_utils from "router_utils" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 13447 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import TypingStore from "TypingStore" /* 11650 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 13456 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import TypingStore from "TypingStore" /* 11658 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_STORED_MESSAGES = fn(13447).MAX_STORED_MESSAGES;
-let closure_10 = fn(15047).HappeningNowCardTrackingType;
+const MAX_STORED_MESSAGES = fn(13456).MAX_STORED_MESSAGES;
+let closure_10 = fn(15053).HappeningNowCardTrackingType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Routes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");

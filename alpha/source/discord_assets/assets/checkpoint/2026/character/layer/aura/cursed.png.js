@@ -1,8 +1,8 @@
-// Module ID: 5272
-// Function ID: 5273
+// Module ID: 5251
+// Function ID: 5252
 // Dependencies: [2]
 
-// Module 5272
+// Module 5251
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/cursed.png.js");

@@ -1,13 +1,13 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9811
+// Function ID: 9812
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1372, 1074, 21, 4866, 576, 504, 4708, 4596, 4867, 4870, 4862, 1115, 1177, 9820, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4845, 576, 504, 4707, 4595, 4846, 4849, 4841, 1115, 1177, 9812, 2]
 // Exports: default
 
-// Module 9819 (NotificationSettingsMockMessage)
+// Module 9811 (NotificationSettingsMockMessage)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4867 */;
-import timingPresets from "timingPresets" /* 4870 */;
+import timing from "timing" /* 4846 */;
+import timingPresets from "timingPresets" /* 4849 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -18,7 +18,7 @@ const View = fn(17).View;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: 10, padding: 16 }, cardContent: { display: "flex", flexDirection: "row" }, cardMessage: { marginLeft: 12, maxWidth: 240 }, overlay: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.overlay = rect;
@@ -32,12 +32,12 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const items = [UserStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj = require("initialize");
-  let str = sharedValue(4708).getName(stateFromStores);
+  let str = sharedValue(4707).getName(stateFromStores);
   if (str == null) {
     str = "Roka";
   }
   _require = tmp7;
-  const obj2 = sharedValue(4708);
+  const obj2 = sharedValue(4707);
   const tmp6 = UserNotificationSettings;
   let num = 0;
   if (notificationSetting.notificationSetting === UserNotificationSettings.NO_MESSAGES) {
@@ -60,7 +60,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
     const obj4 = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl = tmp2(1115).intl;
     obj4.children = intl.string(tmp2(1115).t.WYyzI5);
-    let tmp11 = closure_7(tmp2(4862).Text, obj4);
+    let tmp11 = closure_7(tmp2(4841).Text, obj4);
     let tmp12 = closure_7;
   } else {
     const obj5 = { children: null };
@@ -68,11 +68,11 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
     const obj7 = { variant: "text-sm/normal", color: "text-link", children: null };
     const items1 = ["@", str, " "];
     obj7.children = items1;
-    const items2 = [closure_8(tmp2(4862).Text, obj7), ];
+    const items2 = [closure_8(tmp2(4841).Text, obj7), ];
     const intl3 = tmp2(1115).intl;
     items2[1] = intl3.string(tmp2(1115).t.WYyzI5);
     obj6.children = items2;
-    obj5.children = closure_8(tmp2(4862).Text, obj6);
+    obj5.children = closure_8(tmp2(4841).Text, obj6);
     tmp11 = closure_7(View, obj5);
     tmp12 = closure_7;
   }
@@ -88,7 +88,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj9 = { style: tmp.cardContent, children: null };
   const obj10 = { children: null };
   const obj3 = { withTiming: require("timing").withTiming, opacity: sharedValue, timingStandard: require("timingPresets").timingStandard };
-  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(9820), size: require("native").AvatarSizes.LARGE_48 });
+  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(9812), size: require("native").AvatarSizes.LARGE_48 });
   const items4 = [tmp12(View, obj10), ];
   const obj12 = { style: tmp.cardMessage, children: null };
   const obj13 = { variant: "text-sm/semibold", children: null };
@@ -102,7 +102,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj14 = { style: null };
   const items7 = [animatedStyle, tmp.overlay];
   obj14.style = items7;
-  items6[1] = tmp12(sharedValue(4596).View, obj14);
+  items6[1] = tmp12(sharedValue(4595).View, obj14);
   obj8.children = items6;
   return closure_8(View, obj8);
 };

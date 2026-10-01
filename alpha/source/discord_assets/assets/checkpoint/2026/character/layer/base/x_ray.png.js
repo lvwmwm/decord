@@ -1,8 +1,8 @@
-// Module ID: 5127
-// Function ID: 5128
+// Module ID: 5106
+// Function ID: 5107
 // Dependencies: [2]
 
-// Module 5127
+// Module 5106
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/base/x_ray.png.js");

@@ -1,31 +1,31 @@
-// Module ID: 12877
-// Function ID: 12878
+// Module ID: 12885
+// Function ID: 12886
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 4855, 8435, 8436, 1372, 7230, 7823, 6768, 21, 4866, 576, 4596, 4867, 504, 1613, 6779, 6799, 12760, 12875, 12859, 8441, 7831, 10816, 1115, 6241, 6195, 6817, 6690, 10702, 7558, 4820, 2]
+// Dependencies: [32, 19, 17, 4834, 8427, 8428, 1372, 7208, 7810, 6758, 21, 4845, 576, 4595, 4846, 504, 1613, 6769, 6789, 12769, 12883, 12867, 8433, 7818, 10813, 1115, 6231, 6185, 6807, 6680, 10698, 7536, 4799, 2]
 // Exports: default
 
-// Module 12877 (EditWishlistActionSheet)
+// Module 12885 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4867 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7831 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8441 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 12875 */;
+import timing from "timing" /* 4846 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7818 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8433 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 12883 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
-import WishlistStore from "WishlistStore" /* 8435 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+import WishlistStore from "WishlistStore" /* 8427 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7230 */;
+import UserProfileStore from "UserProfileStore" /* 7208 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const getWishlistProductLines = fn(8436).getWishlistProductLines;
-let closure_12 = fn(7823).TrackUserProfileWishlistActions;
-const ACTION_SHEET_MAX_WIDTH = fn(6768).ACTION_SHEET_MAX_WIDTH;
+const getWishlistProductLines = fn(8428).getWishlistProductLines;
+let closure_12 = fn(7810).TrackUserProfileWishlistActions;
+const ACTION_SHEET_MAX_WIDTH = fn(6758).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 }, loadingContainer: null, toggleRow: null, itemsContainer: null, itemWrapper: null, deleteButton: null };
 let obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.loadingContainer = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: nativeDefault.space.PX_48 };
@@ -36,7 +36,7 @@ obj2.itemWrapper = { position: "relative" };
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, zIndex: 1 };
 obj2.deleteButton = rect;
 let closure_16 = createStyles.createStyles(obj2);
-const LinearTransition = fn(4596).LinearTransition;
+const LinearTransition = fn(4595).LinearTransition;
 let obj5 = { marginBottom: nativeDefault.space.PX_16 };
 const springifyResult = LinearTransition.springify();
 const massResult = LinearTransition.springify().mass(0.8);
@@ -56,7 +56,7 @@ function exitingAnimation() {
   return obj;
 }
 const dampingResult = LinearTransition.springify().mass(0.8).damping(100);
-exitingAnimation.__closure = { withTiming: fn(4867).withTiming };
+exitingAnimation.__closure = { withTiming: fn(4846).withTiming };
 exitingAnimation.__workletHash = 17293915965800;
 exitingAnimation.__initData = { code: "function exitingAnimation_EditWishlistActionSheetTsx1(_values){const{withTiming}=this.__closure;return{animations:{opacity:withTiming(0,{duration:150}),transform:[{scale:withTiming(0.8,{duration:150})}]},initialValues:{opacity:1,transform:[{scale:1}]}};}" };
 const size = fn(2);
@@ -81,15 +81,15 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = analyticsContext(6779)(analyticsLocations1, tmp4(6799).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(6769)(analyticsLocations1, tmp4(6789).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   const obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(6779);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12760)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
+  let tmp5 = analyticsContext(6769);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12769)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     let tmp7 = obj3;
   }
-  let tmp6 = analyticsContext(12760)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
+  let tmp6 = analyticsContext(12769)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
   const items1 = [value];
   stateFromStores = wishlistId(504).useStateFromStores(items1, () => WishlistStore.getWishlist(wishlistId));
   const tmp2Result = wishlistId(504);
@@ -169,8 +169,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj10.subLabel = intl3.string(wishlistId(1115).t.dw58pE);
   obj10.value = value;
   obj10.onValueChange = callback;
-  obj9.children = closure_14(wishlistId(6817).TableSwitchRow, obj10);
-  obj8.children = closure_14(wishlistId(6195).TableRowGroup, obj9);
+  obj9.children = closure_14(wishlistId(6807).TableSwitchRow, obj10);
+  obj8.children = closure_14(wishlistId(6185).TableRowGroup, obj9);
   const items8 = [closure_14(stateFromStores, obj8), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -180,7 +180,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp16Result;
     obj6.children = items8;
     obj5.children = closure_15(tmp19, obj6);
-    obj4.children = tmp16(tmp2(6241).BottomSheetScrollView, obj5);
+    obj4.children = tmp16(tmp2(6231).BottomSheetScrollView, obj5);
     return tmp16(tmp4Result, obj4);
   }
   tmp16Result = null;

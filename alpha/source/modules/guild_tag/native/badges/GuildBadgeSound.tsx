@@ -1,12 +1,12 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13685
+// Function ID: 13686
 // Name: GuildBadgeSound
-// Dependencies: [19, 21, 13658, 8106, 2]
+// Dependencies: [19, 21, 13666, 8095, 2]
 // Exports: GuildBadgeSound
 
-// Module 13677 (GuildBadgeSound)
-import inlineStyles from "inlineStyles" /* 8106 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13658 */;
+// Module 13685 (GuildBadgeSound)
+import inlineStyles from "inlineStyles" /* 8095 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13666 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

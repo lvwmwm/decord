@@ -1,12 +1,12 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10964
+// Function ID: 10965
 // Name: applyOrientationLock
-// Dependencies: [9033, 7975, 2]
+// Dependencies: [9027, 7962, 2]
 // Exports: applyOrientationLock, releaseOrientationLock, restoreDefaultOrientationLock
 
-// Module 10962 (applyOrientationLock)
-import DeviceOrientation from "DeviceOrientation" /* 7975 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9033 */;
+// Module 10964 (applyOrientationLock)
+import DeviceOrientation from "DeviceOrientation" /* 7962 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9027 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/device/native/applyOrientationLock.tsx");

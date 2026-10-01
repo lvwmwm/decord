@@ -1,18 +1,18 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16494
+// Function ID: 16495
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 17, 12842, 21, 504, 5475, 576, 16453, 4862, 1115, 3715, 6814, 6766, 2]
+// Dependencies: [19, 17, 12851, 21, 504, 5463, 576, 16474, 4841, 1115, 3714, 6804, 6756, 2]
 // Exports: default
 
-// Module 16473 (VibegrationsModelSettingsSheet)
+// Module 16494 (VibegrationsModelSettingsSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6766 */;
-import ActionSheet from "ActionSheet" /* 6814 */;
-import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16453 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6756 */;
+import ActionSheet from "ActionSheet" /* 6804 */;
+import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16474 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12842 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12851 */;
 
 require = fn;
 class VibegrationsModelSettingsContent {
@@ -84,7 +84,7 @@ class VibegrationsModelSettingsContent {
   }
 }
 const View = fn(17).View;
-const sendModelSettings = fn(12842).sendModelSettings;
+const sendModelSettings = fn(12851).sendModelSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const size = fn(2);
@@ -94,7 +94,7 @@ export default function VibegrationsModelSettingsSheet(projectId) {
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
-  obj2.title = intl.string(_modDef3715["2NWMqY"]);
+  obj2.title = intl.string(_modDef3714["2NWMqY"]);
   obj.header = React5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
   obj.children = React5(View, { children: React5(VibegrationsModelSettingsContent, { projectId: projectId.projectId }) });
   return React5(ActionSheet.ActionSheet, obj);

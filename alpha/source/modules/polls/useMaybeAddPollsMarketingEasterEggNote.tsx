@@ -1,12 +1,12 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 9989
+// Function ID: 9990
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2112, 504, 1115, 2]
+// Dependencies: [2111, 504, 1115, 2]
 // Exports: default
 
-// Module 9997 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 9989 (useMaybeAddPollsMarketingEasterEggNote)
 import initialize from "initialize" /* 504 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
 require = fn;
 const size = fn(2);

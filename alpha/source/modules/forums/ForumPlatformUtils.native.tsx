@@ -1,9 +1,9 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8034
+// Function ID: 8035
 // Name: ForumPlatformUtils
 // Dependencies: [1115, 2]
 
-// Module 8045 (ForumPlatformUtils)
+// Module 8034 (ForumPlatformUtils)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

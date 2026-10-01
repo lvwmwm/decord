@@ -1,12 +1,12 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14506
+// Function ID: 14507
 // Name: AgeGroupConfirmAccountStatusSetting
-// Dependencies: [7612, 11211, 14495, 2]
+// Dependencies: [7590, 11215, 14501, 2]
 
-// Module 14500 (AgeGroupConfirmAccountStatusSetting)
-import SettingsConstants from "SettingsConstants" /* 7612 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14495 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+// Module 14506 (AgeGroupConfirmAccountStatusSetting)
+import SettingsConstants from "SettingsConstants" /* 7590 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14501 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

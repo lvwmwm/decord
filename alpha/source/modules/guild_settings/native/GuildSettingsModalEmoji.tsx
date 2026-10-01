@@ -1,22 +1,22 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17621
+// Function ID: 17622
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 2067, 17587, 21, 12, 9998, 4866, 576, 1115, 5973, 4758, 504, 9151, 4862, 17589, 17593, 1177, 17594, 6085, 6657, 1485, 6132, 2]
+// Dependencies: [32, 19, 17, 2066, 17622, 21, 12, 9990, 4845, 576, 1115, 5962, 7622, 504, 9145, 4841, 17624, 17628, 1177, 17629, 6075, 6647, 1485, 6122, 2]
 // Exports: computeSectionItem, default
 
-// Module 17586 (GuildSettingsModalEmoji)
+// Module 17621 (GuildSettingsModalEmoji)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5973 */;
-import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17589 */;
-import HeaderRow from "HeaderRow" /* 17593 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17594 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5962 */;
+import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17624 */;
+import HeaderRow from "HeaderRow" /* 17628 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17629 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17587 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17622 */;
 import apply_mod from "module_12" /* 12 */;
 
 const require = globalThis.__r;
@@ -184,8 +184,8 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let apply = apply_mod;
-let closure_12 = apply.throttle(fn(9998).fetchEmoji, 1000);
-const createStyles = fn(4866);
+let closure_12 = apply.throttle(fn(9990).fetchEmoji, 1000);
+const createStyles = fn(4845);
 let obj = { loadingContainer: { flex: 1, paddingTop: 40 }, emptyState: { paddingTop: 30 }, list: { paddingHorizontal: nativeDefault.space.PX_12 }, section: null, titleContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12 };
 obj.section = { paddingVertical: nativeDefault.space.PX_16 };

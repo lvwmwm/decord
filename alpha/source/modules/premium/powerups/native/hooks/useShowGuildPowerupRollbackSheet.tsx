@@ -1,16 +1,16 @@
-// Module ID: 12210
-// Function ID: 12211
+// Module ID: 12218
+// Function ID: 12219
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 2042, 12211, 7002, 12213, 4830, 2]
+// Dependencies: [32, 19, 2041, 12219, 6993, 12221, 4809, 2]
 // Exports: default
 
-// Module 12210 (useShowGuildPowerupRollbackSheet)
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12213 */;
+// Module 12218 (useShowGuildPowerupRollbackSheet)
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12221 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useShowGuildPowerupRollbackSheet.tsx");
 
@@ -23,7 +23,7 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   let first;
   dependencyMap = undefined;
   _slicedToArray = undefined;
-  ({ shouldShow, modalConfig } = first(12211)(arg0, arg1));
+  ({ shouldShow, modalConfig } = first(12219)(arg0, arg1));
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }
@@ -34,8 +34,8 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   if (shouldShow) {
     items.push(modalConfig.dismissibleContent);
   }
-  const tmp2 = first(12211)(arg0, arg1);
-  const tmp5 = _slicedToArray(modalConfig(7002).useSelectedDismissibleContent(items), 2);
+  const tmp2 = first(12219)(arg0, arg1);
+  const tmp5 = _slicedToArray(modalConfig(6993).useSelectedDismissibleContent(items), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
   _slicedToArray = noop.useRef(false);
@@ -58,7 +58,7 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
       if (null != modalConfig.primaryButtonText) {
         fn = () => {
           dependencyMap(constants.TAKE_ACTION);
-          first(4830).hideActionSheet(modalConfig(12213).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
+          first(4809).hideActionSheet(modalConfig(12221).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
         };
       }
       obj.onCtaPress = fn;

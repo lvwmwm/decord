@@ -1,30 +1,30 @@
-// Module ID: 8277
-// Function ID: 8278
+// Module ID: 8267
+// Function ID: 8268
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4882, 2045, 4499, 2050, 5923, 1074, 21, 4866, 576, 4830, 504, 2053, 5931, 6814, 8249, 1115, 1177, 8278, 8037, 8279, 6996, 8280, 8281, 8283, 8284, 8285, 2]
+// Dependencies: [19, 17, 4861, 2044, 4498, 2049, 5912, 1074, 21, 4845, 576, 4809, 504, 2052, 5920, 6804, 8239, 1115, 1177, 8268, 8026, 8269, 6987, 8270, 8271, 8273, 8274, 8275, 2]
 // Exports: default
 
-// Module 8277 (StageSettingsActionSheet)
+// Module 8267 (StageSettingsActionSheet)
 import nativeDefault from "native" /* 576 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2053 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8037 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8281 */;
-import ReportModals from "ReportModals" /* 8285 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2052 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8026 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8271 */;
+import ReportModals from "ReportModals" /* 8275 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4882 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import StageInstanceStore from "StageInstanceStore" /* 2050 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import StageInstanceStore from "StageInstanceStore" /* 2049 */;
 
 require = fn;
 const View = fn(17).View;
-const STAGE_SETTINGS_SHEET_KEY = fn(5923).STAGE_SETTINGS_SHEET_KEY;
+const STAGE_SETTINGS_SHEET_KEY = fn(5912).STAGE_SETTINGS_SHEET_KEY;
 const Constants = fn(1074);
 ({ ChannelSettingsSections: c10, UserSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { marginTop: 8 }, icon: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, warning: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj2.warning = { color: nativeDefault.unsafe_rawColors.RED_400 };

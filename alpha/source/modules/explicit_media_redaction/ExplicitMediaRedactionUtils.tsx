@@ -1,30 +1,30 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7206
+// Function ID: 7207
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [4865, 2045, 6907, 7216, 1074, 1186, 1115, 1241, 6905, 5375, 5380, 7217, 5932, 5933, 5078, 6910, 2]
+// Dependencies: [4844, 2044, 6898, 7207, 1074, 1186, 1115, 1241, 6896, 5363, 5368, 6897, 5921, 5922, 5057, 6901, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 7215 (ExplicitMediaRedactionUtils)
+// Module 7206 (ExplicitMediaRedactionUtils)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5375 */;
-import MetricEvents from "MetricEvents" /* 5380 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5932 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5933 */;
-import SelfModUtils from "SelfModUtils" /* 6905 */;
-import ExplicitMediaManager from "ExplicitMediaManager" /* 7217 */;
-import DevSettingsStore from "DevSettingsStore" /* 4865 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6907 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5363 */;
+import MetricEvents from "MetricEvents" /* 5368 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5922 */;
+import SelfModUtils from "SelfModUtils" /* 6896 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6897 */;
+import DevSettingsStore from "DevSettingsStore" /* 4844 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6898 */;
 
-const ObscureMediaModels = tmp(6910);
+const ObscureMediaModels = tmp(6901);
 require = fn;
-const ExplicitMediaRedactionConstants = fn(7216);
-({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: closure_7 } = ExplicitMediaRedactionConstants);
+const ExplicitMediaRedactionConstants = fn(7207);
+({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: closure_7, MESSAGE_SCAN_TIMEOUT: closure_8 } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
+let result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
 
 export const redactionSettingToRenderedString = function redactionSettingToRenderedString(prop) {
   if (preloaded_user_settings.ExplicitContentRedaction.SHOW === prop) {
@@ -116,7 +116,7 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
         obj2.embed_ids = embedIds;
         const obj = AnalyticsUtilsDefault;
         obj2.user_is_underage = SelfModUtils.isCurrentUserTeen();
-        obj2.scan_timeout_duration = ExplicitMediaManager.MESSAGE_SCAN_TIMEOUT;
+        obj2.scan_timeout_duration = scan_timeout_duration;
         obj2.attachment_ids_v2 = attachmentIds;
         obj.track(AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, obj2);
         const obj4 = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, tags: ["metricVersion:1"] };
@@ -169,8 +169,8 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj2 = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      tmp10(5375).distribution(obj2, sum);
-      const tmp10Result = tmp10(5375);
+      tmp10(5363).distribution(obj2, sum);
+      const tmp10Result = tmp10(5363);
     }
     tmp10 = importDefault;
   }
@@ -240,12 +240,19 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
     item.content_scan_version = -1;
     return item;
   });
+  let components = message.components;
+  const embeds1 = embeds.map((components) => {
+    components.contentScanVersion = -1;
+    components = components.components;
+    if (components == null) {
+      components = [];
+    }
+    const result = closure_1_0(closure_1_2[11]).failOverComponentMedia(components);
+    return components;
+  });
+  let result = ObscuredMediaUtils.failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
-  const embeds1 = embeds.map((item) => {
-    item.contentScanVersion = -1;
-    return item;
-  });
   if (null != messageSnapshots) {
     messageSnapshots1 = messageSnapshots;
     if (0 !== messageSnapshots.length) {
@@ -257,26 +264,22 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
           item.content_scan_version = -1;
           return item;
         });
-        const obj = {
-          attachments: mapped,
-          embeds: embeds.map((item) => {
-            item.contentScanVersion = -1;
-            return item;
-          })
-        };
-        return message.merge({
-          message: message.merge({
-            attachments: mapped,
-            embeds: embeds.map((item) => {
-              item.contentScanVersion = -1;
-              return item;
-            })
-          })
+        let components = message.components;
+        const mapped1 = embeds.map((components) => {
+          components.contentScanVersion = -1;
+          components = components.components;
+          if (components == null) {
+            components = [];
+          }
+          const result = closure_1_0(closure_1_2[11]).failOverComponentMedia(components);
+          return components;
         });
+        let result = ObscuredMediaUtils.failOverComponentMedia(components);
+        return message.merge({ message: message.merge({ attachments: mapped, embeds: mapped1, components }) });
       });
     }
   }
-  return message.merge({ attachments: attachments1, embeds: embeds1, messageSnapshots: messageSnapshots1 });
+  return message.merge({ attachments: attachments1, embeds: embeds1, components, messageSnapshots: messageSnapshots1 });
 };
 export const isObscuredMediaBelowConstraints = function isObscuredMediaBelowConstraints(arg0, arg1) {
   let tmp = null != arg0 && null != arg1;

@@ -1,15 +1,15 @@
-// Module ID: 4731
-// Function ID: 4732
+// Module ID: 4730
+// Function ID: 4731
 // Name: ChatInputUtils
-// Dependencies: [4732, 1876, 4733, 1611, 1483, 4734, 2]
+// Dependencies: [4731, 1876, 4732, 1611, 1483, 4733, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4731 (ChatInputUtils)
+// Module 4730 (ChatInputUtils)
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4732 */;
-import useKeyboardType from "useKeyboardType" /* 4733 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4734 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4731 */;
+import useKeyboardType from "useKeyboardType" /* 4732 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4733 */;
 import size from "module_2" /* 2 */;
 
 function getBestActiveInput() {

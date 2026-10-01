@@ -1,9 +1,9 @@
-// Module ID: 8909
-// Function ID: 8910
+// Module ID: 8902
+// Function ID: 8903
 // Name: AgeRestrictedApplicationCommandsExperiment
 // Dependencies: [1436, 2]
 
-// Module 8909 (AgeRestrictedApplicationCommandsExperiment)
+// Module 8902 (AgeRestrictedApplicationCommandsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const obj = { kind: "user", name: "2026-05-age-restricted-application-commands", defaultConfig: { enabled: false }, variations: null };

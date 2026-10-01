@@ -1,15 +1,15 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 9953
+// Function ID: 9954
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4866, 9962, 2]
+// Dependencies: [19, 21, 4845, 9954, 2]
 // Exports: CreatorRevenueButton
 
-// Module 9961 (CreatorRevenueButton)
-import ShinyButtonDefault from "ShinyButton" /* 9962 */;
+// Module 9953 (CreatorRevenueButton)
+import ShinyButtonDefault from "ShinyButton" /* 9954 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_3 = createStyles.createStyles({ container: { borderRadius: 3 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/CreatorRevenueButton.tsx");

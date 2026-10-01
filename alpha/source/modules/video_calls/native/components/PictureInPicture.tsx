@@ -1,10 +1,10 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9039
+// Function ID: 9040
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 9028, 1074, 21, 4866, 1177, 9046, 1479, 6598, 9049, 4596, 5476, 9050, 9051, 6269, 1364, 2]
+// Dependencies: [32, 19, 17, 9022, 1074, 21, 4845, 1177, 9040, 1479, 6588, 9043, 4595, 5464, 9044, 9045, 6259, 1364, 2]
 
-// Module 9045 (PictureInPicture)
-import spring from "spring" /* 5476 */;
+// Module 9039 (PictureInPicture)
+import spring from "spring" /* 5464 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,10 +13,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
-const toggleFocus = fn(9028).toggleFocus;
+const toggleFocus = fn(9022).toggleFocus;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { pipOuterContainer: null, pipInnerContainer: null, elevationShadow: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

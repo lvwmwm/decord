@@ -1,8 +1,8 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4652
+// Function ID: 4653
 // Dependencies: [2]
 
-// Module 4653
+// Module 4652
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/Camera.riv.js");

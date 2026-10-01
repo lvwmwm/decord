@@ -1,21 +1,21 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13485
+// Function ID: 13486
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2045, 1372, 13478, 1074, 21, 4866, 576, 4862, 5018, 1115, 504, 1370, 1177, 11508, 10574, 4822, 4817, 1241, 6814, 11121, 6195, 6113, 5477, 4830, 13479, 4879, 2]
+// Dependencies: [19, 17, 2044, 1372, 13486, 1074, 21, 4845, 576, 4841, 4997, 1115, 504, 1370, 1177, 11516, 10566, 4801, 4796, 1241, 6804, 11125, 6185, 6103, 5465, 4809, 13487, 4858, 2]
 // Exports: default
 
-// Module 13477 (BlockedUserInGdmActionSheet)
+// Module 13485 (BlockedUserInGdmActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
-import TableRow from "TableRow" /* 6113 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13479 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
+import TableRow from "TableRow" /* 6103 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13487 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -92,11 +92,11 @@ function UserCalloutAvatars(userIds) {
       obj3.size = REFRESH_MEDIUM_32;
       let tmp6 = closure_11(tmp(1177).Avatar, obj3);
     } else {
-      tmp6 = closure_11(tmp(11508).UserIcon, {});
+      tmp6 = closure_11(tmp(11516).UserIcon, {});
     }
   } else {
     const obj4 = { users: found, size: tmp(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-    return closure_11(tmp(10574).FacepileGroupDMAvatar, obj4);
+    return closure_11(tmp(10566).FacepileGroupDMAvatar, obj4);
   }
 }
 function BlockedUserInGDMDescription(arg0) {
@@ -138,12 +138,12 @@ function BlockedUserInGDMDescription(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SharedSpaceWarningConstants = fn(13478);
+const SharedSpaceWarningConstants = fn(13486);
 ({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = SharedSpaceWarningConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" }, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: null, buttons: null, icon: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
 obj2.tableGroup = { paddingVertical: nativeDefault.space.PX_24 };

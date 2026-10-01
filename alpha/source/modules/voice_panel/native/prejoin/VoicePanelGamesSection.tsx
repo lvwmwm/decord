@@ -1,19 +1,19 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17229
+// Function ID: 17230
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 6923, 8324, 8335, 1115, 9403, 6113, 9389, 17208, 9330, 2]
+// Dependencies: [19, 21, 6914, 8315, 8326, 1115, 9397, 6103, 9383, 17230, 9324, 2]
 
-// Module 17207 (VoicePanelGamesSection)
+// Module 17229 (VoicePanelGamesSection)
 import util from "util" /* 1115 */;
-import useGame from "useGame" /* 6923 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8324 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8335 */;
-import FormComponents from "FormComponents" /* 9330 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9389 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17208 */;
+import useGame from "useGame" /* 6914 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8315 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8326 */;
+import FormComponents from "FormComponents" /* 9324 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9383 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17230 */;
 import noop from "module_19" /* 19 */;
 
-const GameActivityIconDefault = tmp3(9403);
+const GameActivityIconDefault = tmp3(9397);
 require = fn;
 function GameRow(gameId) {
   gameId = gameId.gameId;
@@ -51,7 +51,7 @@ function GameRow(gameId) {
       const obj6 = { gameName: name };
       obj5.accessibilityLabel = intl2.formatToPlainString(tmp(1115).t["9sZWVp"], obj6);
     }
-    return jsx(tmp(6113).TableRow, obj5);
+    return jsx(tmp(6103).TableRow, obj5);
   }
 }
 const jsx = fn(21).jsx;

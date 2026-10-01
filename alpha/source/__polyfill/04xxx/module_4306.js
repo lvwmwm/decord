@@ -1,11 +1,11 @@
 // Module ID: 4306
 // Function ID: 4307
-// Dependencies: [4298, 3949]
+// Dependencies: [4298, 3948]
 // Exports: default
 
 // Module 4306
 import module_4298_mod from "module_4298" /* 4298 */;
-import requiredArgs_mod from "requiredArgs" /* 3949 */;
+import requiredArgs_mod from "requiredArgs" /* 3948 */;
 
 let module_4298 = module_4298_mod;
 if (!module_4298) {
@@ -24,7 +24,7 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThisMinute(arg0) {
+export default function isThisMonth(arg0) {
   requiredArgs.default(1, arguments);
   return module_4298.default(Date.now(), arg0);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9427
+// Function ID: 9428
 // Name: TinyBroncoExperiment
 // Dependencies: [1435, 2]
 // Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled
 
-// Module 9433 (TinyBroncoExperiment)
+// Module 9427 (TinyBroncoExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

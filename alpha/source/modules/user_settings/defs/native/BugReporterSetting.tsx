@@ -1,32 +1,32 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15553
+// Function ID: 15554
 // Name: BugReporterSetting
-// Dependencies: [9845, 5069, 9846, 1981, 9877, 11211, 1115, 15549, 2]
+// Dependencies: [9837, 5048, 9838, 1981, 9869, 11215, 1115, 15554, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 15548 (BugReporterSetting)
+// Module 15553 (BugReporterSetting)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 9877 */;
-import BugReportStore from "BugReportStore" /* 9845 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 9869 */;
+import BugReportStore from "BugReportStore" /* 9837 */;
 
 require = fn;
 function useBugReporterExperimentSettingPredicate() {
   return BugReporterExperimentDefault.useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["/tZh0A"]);
   },
   parent: null,
-  IconComponent: fn(15549).BugIcon,
+  IconComponent: fn(15554).BugIcon,
   onPress: function handleBugReporterSettingPress() {
     if (!BugReportStore.getField("isReportOpen")) {
       BugReportStore.setState({ isReportOpen: true });
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9846, dependencyMap.paths));
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9838, dependencyMap.paths));
     }
   },
   withArrow: true,

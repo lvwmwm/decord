@@ -1,13 +1,13 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17606
+// Function ID: 17607
 // Name: AuditLogActionCreators
-// Dependencies: [17566, 1074, 1271, 573, 2]
+// Dependencies: [17601, 1074, 1271, 573, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17571 (AuditLogActionCreators)
+// Module 17606 (AuditLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17566 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17601 */;
 
 require = fn;
 function makeRequest(arg0, arg1) {

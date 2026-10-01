@@ -1,13 +1,13 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15364
+// Function ID: 15365
 // Name: CarIcon
-// Dependencies: [19, 21, 576, 4560, 15360, 2]
+// Dependencies: [19, 21, 576, 4559, 15365, 2]
 // Exports: CarIcon
 
-// Module 15359 (CarIcon)
+// Module 15364 (CarIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod15360 from "module_15360" /* 15360 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod15365 from "module_15365" /* 15365 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CarIcon = function CarIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15360, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15365, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

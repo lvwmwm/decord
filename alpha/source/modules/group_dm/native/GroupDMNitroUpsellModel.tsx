@@ -1,10 +1,10 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 11299
+// Function ID: 11300
 // Name: GroupDMNitroUpsellModel
 // Dependencies: [1372, 1074, 1374, 1970, 504, 1115, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI, useGroupDMNitroAudience
 
-// Module 11291 (GroupDMNitroUpsellModel)
+// Module 11299 (GroupDMNitroUpsellModel)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;

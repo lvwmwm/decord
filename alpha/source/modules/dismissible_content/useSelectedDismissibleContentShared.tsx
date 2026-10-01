@@ -1,17 +1,17 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 6996
+// Function ID: 6997
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 2033, 2042, 2034, 2030, 2]
+// Dependencies: [19, 2033, 2041, 2034, 2030, 2]
 // Exports: useSelectedDismissibleContentShared
 
-// Module 7005 (useSelectedDismissibleContentShared)
+// Module 6996 (useSelectedDismissibleContentShared)
 import noop from "module_19" /* 19 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2033 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/dismissible_content/useSelectedDismissibleContentShared.tsx");
 

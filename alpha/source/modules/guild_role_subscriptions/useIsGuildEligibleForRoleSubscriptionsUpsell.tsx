@@ -1,13 +1,13 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16102
+// Function ID: 16103
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [2063, 2067, 1372, 1074, 504, 6875, 2]
+// Dependencies: [2062, 2066, 1372, 1074, 504, 6866, 2]
 // Exports: default
 
-// Module 16084 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 16102 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import Constants from "Constants" /* 1074 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildRecord from "GuildRecord" /* 2062 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 

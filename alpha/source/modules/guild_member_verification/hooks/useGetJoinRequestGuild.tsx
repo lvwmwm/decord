@@ -1,13 +1,13 @@
-// Module ID: 9438
-// Function ID: 9439
+// Module ID: 9432
+// Function ID: 9433
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4686, 504, 6049, 2]
+// Dependencies: [19, 4685, 504, 6038, 2]
 // Exports: default
 
-// Module 9438 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6049 */;
+// Module 9432 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6038 */;
 import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4686 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4685 */;
 
 const require = globalThis.__r;
 

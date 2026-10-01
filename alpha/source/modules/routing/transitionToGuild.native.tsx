@@ -1,24 +1,25 @@
-// Module ID: 6956
-// Function ID: 6957
+// Module ID: 6947
+// Function ID: 6948
 // Name: transitionToGuild
-// Dependencies: [1074, 6834, 6089, 1101, 2]
+// Dependencies: [32, 1074, 6824, 6079, 1101, 2]
 // Exports: transitionToGuild
 
-// Module 6956 (transitionToGuild)
-import Constants from "Constants" /* 1074 */;
+// Module 6947 (transitionToGuild)
 import router_utils from "router_utils" /* 1101 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6089 */;
-import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 6834 */;
-import size from "module_2" /* 2 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6079 */;
+import getGuildTransitionRoute from "getGuildTransitionRoute" /* 6824 */;
+import _slicedToArray from "module_32" /* 32 */;
 
-const Routes = Constants.Routes;
+require = fn;
+const Routes = fn(1074).Routes;
+const size = fn(2);
 let result = size.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
 
 export const transitionToGuild = function transitionToGuild(guildId, arg1) {
-  const channelIdForGuildTransition = getChannelIdForGuildTransition.getChannelIdForGuildTransition(guildId);
-  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "paddingHorizontal", delete: "add" });
+  const obj = getGuildTransitionRoute;
+  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "channelId", delete: "result" });
   const obj3 = router_utils;
   const obj4 = { navigationReplace: true };
   const merged = Object.assign(arg1);
-  obj3.transitionTo(Routes.CHANNEL(guildId, channelIdForGuildTransition), obj4);
+  obj3.transitionTo(Routes.CHANNEL(guildId, _slicedToArray(obj.getGuildTransitionRoute(guildId), 1)[0]), obj4);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 11481
+// Function ID: 11482
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 11474, 1271, 1361, 2]
+// Dependencies: [5, 502, 11482, 1271, 1361, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11473 (ApplyBuildOverrideUtils)
+// Module 11481 (ApplyBuildOverrideUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -248,7 +248,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   }
 });
-const f93703 = function() {
+const f93888 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {

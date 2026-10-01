@@ -1,13 +1,13 @@
-// Module ID: 16609
-// Function ID: 16610
+// Module ID: 16630
+// Function ID: 16631
 // Name: useVibegrationsDraftHasText
-// Dependencies: [32, 19, 16610, 2]
+// Dependencies: [32, 19, 16631, 2]
 // Exports: default
 
-// Module 16609 (useVibegrationsDraftHasText)
+// Module 16630 (useVibegrationsDraftHasText)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 16610 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 16631 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsDraftHasText.tsx");

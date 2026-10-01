@@ -1,9 +1,9 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 9702
+// Function ID: 9703
 // Name: StageTileTypes
 // Dependencies: [2]
 
-// Module 9708 (StageTileTypes)
+// Module 9702 (StageTileTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/StageTileTypes.tsx");

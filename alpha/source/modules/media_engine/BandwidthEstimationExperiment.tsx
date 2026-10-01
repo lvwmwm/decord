@@ -1,10 +1,10 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13572
+// Function ID: 13573
 // Name: BandwidthEstimationExperiment
-// Dependencies: [4778, 2]
+// Dependencies: [4759, 2]
 
-// Module 13564 (BandwidthEstimationExperiment)
-import createExperiment from "module_4778" /* 4778 */;
+// Module 13572 (BandwidthEstimationExperiment)
+import createExperiment from "module_4759" /* 4759 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", id: "2024-06_rtc_pacer__simulcast", label: "RTC Pacer & Golive Simulcast", defaultConfig: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: false }, treatments: null };

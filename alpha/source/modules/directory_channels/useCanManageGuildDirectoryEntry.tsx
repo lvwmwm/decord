@@ -1,13 +1,13 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12000
+// Function ID: 12001
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [2045, 2067, 4499, 1074, 504, 2]
+// Dependencies: [2044, 2066, 4498, 1074, 504, 2]
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
-// Module 11993 (useCanManageGuildDirectoryEntry)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+// Module 12000 (useCanManageGuildDirectoryEntry)
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = globalThis.__r;
 

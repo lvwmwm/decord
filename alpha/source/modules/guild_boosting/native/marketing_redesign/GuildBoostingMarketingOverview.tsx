@@ -1,15 +1,15 @@
-// Module ID: 6998
-// Function ID: 6999
+// Module ID: 6989
+// Function ID: 6990
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2067, 1372, 1074, 21, 4866, 6999, 504, 1485, 6779, 6106, 7009, 1380, 1241, 573, 6871, 5370, 7017, 13312, 13319, 13324, 13334, 13339, 13343, 2]
+// Dependencies: [32, 19, 17, 2066, 1372, 1074, 21, 4845, 6990, 504, 1485, 6769, 6096, 7000, 1380, 1241, 573, 6862, 5358, 7008, 13320, 13327, 13332, 13342, 13347, 13351, 2]
 // Exports: default
 
-// Module 6998 (GuildBoostingMarketingOverview)
+// Module 6989 (GuildBoostingMarketingOverview)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7017 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7008 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsPages: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_13 = createStyles.createStyles({ wrapper: { paddingBottom: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingOverview.tsx");
@@ -84,9 +84,9 @@ export default function GuildBoostingMarketingOverview(guildId) {
   }, items3);
   const effect1 = obj4.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = guildId(6871).fetchPremiumSubscriptionPlans();
-      const obj = guildId(6871);
-      const paymentSources = guildId(5370).fetchPaymentSources();
+      const premiumSubscriptionPlans = guildId(6862).fetchPremiumSubscriptionPlans();
+      const obj = guildId(6862);
+      const paymentSources = guildId(5358).fetchPaymentSources();
     });
   }, []);
   let tmp18 = null;

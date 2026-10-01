@@ -1,24 +1,24 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 7926
+// Function ID: 7927
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 7940, 7915, 7904, 7905, 7906, 2]
+// Dependencies: [32, 19, 21, 7927, 7902, 7891, 7892, 7893, 2]
 // Exports: createTiktokVideoControls
 
-// Module 7939 (MediaModalTiktok)
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7904 */;
-import useVideoControls from "useVideoControls" /* 7905 */;
-import MediaModalWebView from "MediaModalWebView" /* 7940 */;
+// Module 7926 (MediaModalTiktok)
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7891 */;
+import useVideoControls from "useVideoControls" /* 7892 */;
+import MediaModalWebView from "MediaModalWebView" /* 7927 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let jsx = fn(21).jsx;
 let closure_6 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
-let obj = { "-1": fn(7940).PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
-obj[0] = fn(7940).PlayerState.ENDED;
-obj[1] = fn(7940).PlayerState.PLAYING;
-obj[2] = fn(7940).PlayerState.PAUSED;
-obj[3] = fn(7940).PlayerState.BUFFERING;
+let obj = { "-1": fn(7927).PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
+obj[0] = fn(7927).PlayerState.ENDED;
+obj[1] = fn(7927).PlayerState.PLAYING;
+obj[2] = fn(7927).PlayerState.PAUSED;
+obj[3] = fn(7927).PlayerState.BUFFERING;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");
 

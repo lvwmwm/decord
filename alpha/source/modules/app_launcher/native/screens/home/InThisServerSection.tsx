@@ -1,16 +1,16 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11803
+// Function ID: 11804
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 4866, 576, 11773, 1370, 4862, 1115, 5632, 11736, 8569, 8911, 11741, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 11781, 1370, 4841, 1115, 5621, 11744, 8561, 8904, 11749, 2]
 // Exports: default
 
-// Module 11795 (InThisServerSection)
+// Module 11803 (InThisServerSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8911 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11773 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8904 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11781 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   const tmp = closure_7();
   const application = onAppSelected.appItem.application;
-  const appLauncherIconSource = onAppSelected(11736).getAppLauncherIconSource(application);
+  const appLauncherIconSource = onAppSelected(11744).getAppLauncherIconSource(application);
   const obj2 = {
     accessible: true,
     accessibilityLabel: application.name,
@@ -39,17 +39,17 @@ function AppInThisServer(onAppSelected) {
   let tmp6 = null;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(11741), obj3);
+    tmp6 = closure_5(application(11749), obj3);
   }
-  const items = [tmp6, closure_5(onAppSelected(4862).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
+  const items = [tmp6, closure_5(onAppSelected(4841).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj2.children = items;
-  return closure_6(onAppSelected(8569).PressableScale, obj2, application.id);
+  return closure_6(onAppSelected(8561).PressableScale, obj2, application.id);
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { position: "absolute", right: 0 }, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: { gap: 8 }, appCardContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, paddingLeft: 12, paddingRight: 12, paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" }, iconContainer: { marginEnd: 12, justifyContent: "space-around" } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -103,8 +103,8 @@ export default function InThisServerSection(arg0) {
       const obj5 = { variant: "text-sm/medium", color: "text-brand", children: null };
       const intl2 = tmp11(1115).intl;
       obj5.children = intl2.string(tmp11(1115).t["/qG8v7"]);
-      obj4.children = tmp5(tmp11(4862).Text, obj5);
-      tmp5Result = tmp5(tmp11(5632).PressableOpacity, obj4);
+      obj4.children = tmp5(tmp11(4841).Text, obj5);
+      tmp5Result = tmp5(tmp11(5621).PressableOpacity, obj4);
     }
     items2[1] = tmp5Result;
     obj2.children = items2;

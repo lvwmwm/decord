@@ -1,10 +1,10 @@
-// Module ID: 7364
-// Function ID: 7365
+// Module ID: 7342
+// Function ID: 7343
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1427, 7365, 2]
+// Dependencies: [5, 3, 1427, 7343, 2]
 // Exports: getDeviceState
 
-// Module 7364 (device/DeviceState)
+// Module 7342 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -44,7 +44,7 @@ let closure_5 = async function _getDeviceState(arg0, value) {
           fallback = obj5.fallback;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

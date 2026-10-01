@@ -1,19 +1,19 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 18008
+// Function ID: 18009
 // Name: DispatcherBridge
-// Dependencies: [4865, 5970, 6012, 12827, 502, 2102, 2067, 1074, 3, 2073, 2071, 1241, 573, 1980, 1231, 2]
+// Dependencies: [4844, 5959, 6001, 12836, 502, 2101, 2066, 1074, 3, 2072, 2070, 1241, 573, 1980, 1231, 2]
 
-// Module 17972 (DispatcherBridge)
+// Module 18008 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
-import DevSettingsStore from "DevSettingsStore" /* 4865 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5970 */;
-import GuildStickersStore from "GuildStickersStore" /* 6012 */;
-import NoteStore from "NoteStore" /* 12827 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2070 */;
+import DevSettingsStore from "DevSettingsStore" /* 4844 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5959 */;
+import GuildStickersStore from "GuildStickersStore" /* 6001 */;
+import NoteStore from "NoteStore" /* 12836 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

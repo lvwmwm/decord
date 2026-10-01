@@ -1,21 +1,21 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8032
+// Function ID: 8033
 // Name: StageChannelUtils
-// Dependencies: [4889, 2050, 5923, 1074, 8044, 12, 5018, 1115, 4504, 2]
+// Dependencies: [4868, 2049, 5912, 1074, 8033, 12, 4997, 1115, 4503, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 8043 (StageChannelUtils)
+// Module 8032 (StageChannelUtils)
 import _mod12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
-import StageInstanceStore from "StageInstanceStore" /* 2050 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+import StageInstanceStore from "StageInstanceStore" /* 2049 */;
 
 require = fn;
-const constants = fn(5923).RequestToSpeakPermissionStates;
+const constants = fn(5912).RequestToSpeakPermissionStates;
 const Permissions = fn(1074).Permissions;
-const RowType = fn(8044).RowType;
+const RowType = fn(8033).RowType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
 

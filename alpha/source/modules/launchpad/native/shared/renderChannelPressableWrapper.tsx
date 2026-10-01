@@ -1,11 +1,11 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17051
+// Function ID: 17052
 // Name: renderChannelPressableWrapper
-// Dependencies: [19, 17, 21, 16702, 2]
+// Dependencies: [19, 17, 21, 16725, 2]
 // Exports: default
 
-// Module 17029 (renderChannelPressableWrapper)
-import getLayoutStylesDefault from "getLayoutStyles" /* 16702 */;
+// Module 17051 (renderChannelPressableWrapper)
+import getLayoutStylesDefault from "getLayoutStyles" /* 16725 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

@@ -1,21 +1,21 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8351
+// Function ID: 8352
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4866, 576, 8361, 5591, 4862, 1115, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 8352, 5579, 4841, 1115, 2]
 // Exports: default
 
-// Module 8360 (ObscuredSurface)
+// Module 8351 (ObscuredSurface)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5591 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8361 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5579 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8352 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { position: "relative", overflow: "hidden" }, content: { pointerEvents: "none", userSelect: "none" }, cover: { position: "absolute", inset: 0, zIndex: 1, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND }, warning: null };
 let obj3 = { position: "absolute", inset: 0, zIndex: 1, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND };
 obj2.warning = { position: "absolute", insetInlineStart: "50%", top: "50%", transform: "translate(-50%, -50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_8, textAlign: "center", userSelect: "none", zIndex: 2 };

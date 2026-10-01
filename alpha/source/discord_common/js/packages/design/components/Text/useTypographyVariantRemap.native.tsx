@@ -1,12 +1,12 @@
-// Module ID: 4872
-// Function ID: 4873
+// Module ID: 4851
+// Function ID: 4852
 // Name: useTypographyVariantRemap
-// Dependencies: [4577, 4873, 2]
+// Dependencies: [4576, 4852, 2]
 // Exports: useTypographyVariantRemap
 
-// Module 4872 (useTypographyVariantRemap)
-import ThemeContext from "ThemeContext" /* 4577 */;
-import typographyVariantRemap from "typographyVariantRemap" /* 4873 */;
+// Module 4851 (useTypographyVariantRemap)
+import ThemeContext from "ThemeContext" /* 4576 */;
+import typographyVariantRemap from "typographyVariantRemap" /* 4852 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/useTypographyVariantRemap.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16605
+// Function ID: 16606
 // Name: BotIllocon
-// Dependencies: [21, 6095, 16584, 2]
+// Dependencies: [21, 6085, 16606, 2]
 // Exports: BotIllocon
 
-// Module 16583 (BotIllocon)
+// Module 16605 (BotIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 6095 */;
-import _modDef16584 from "module_16584" /* 16584 */;
+import FastImageDefault from "FastImage" /* 6085 */;
+import _modDef16606 from "module_16606" /* 16606 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const BotIllocon = function BotIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef16584 };
+  const obj2 = { uri: _modDef16606 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

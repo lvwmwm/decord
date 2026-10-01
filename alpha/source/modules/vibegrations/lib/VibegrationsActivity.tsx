@@ -1,10 +1,10 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 12308
+// Function ID: 12309
 // Name: VibegrationsActivity
 // Dependencies: [2]
 // Exports: sortVibegrationsProjects, vibegrationsActivity, vibegrationsProjectGuildId
 
-// Module 16831 (VibegrationsActivity)
+// Module 12308 (VibegrationsActivity)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { building: 0, done: 1, idle: 2 };

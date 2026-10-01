@@ -1,12 +1,12 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6869
+// Function ID: 6870
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2067, 4499, 1074, 504, 5561, 2]
+// Dependencies: [2066, 4498, 1074, 504, 5549, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 6878 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+// Module 6869 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 
 const require = globalThis.__r;
 

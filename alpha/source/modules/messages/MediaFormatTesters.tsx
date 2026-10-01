@@ -1,11 +1,11 @@
-// Module ID: 5016
-// Function ID: 5017
+// Module ID: 4995
+// Function ID: 4996
 // Name: MediaFormatTesters
-// Dependencies: [32, 1364, 5017, 2]
+// Dependencies: [32, 1364, 4996, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 5016 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 5017 */;
+// Module 4995 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4996 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

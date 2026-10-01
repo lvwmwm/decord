@@ -1,17 +1,17 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17663
+// Function ID: 17664
 // Name: GuildSettingsModalRolesStore
-// Dependencies: [2102, 2067, 1074, 12114, 4715, 1115, 1086, 504, 573, 2]
+// Dependencies: [2101, 2066, 1074, 10661, 4714, 1115, 1086, 504, 573, 2]
 
-// Module 17628 (GuildSettingsModalRolesStore)
+// Module 17663 (GuildSettingsModalRolesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4715 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12114 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import shared from "shared" /* 4714 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 10661 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 function handleGuildRoleCreateOrUpdate(arg0) {

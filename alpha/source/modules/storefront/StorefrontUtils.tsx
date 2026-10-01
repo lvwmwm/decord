@@ -1,20 +1,20 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 6839
+// Function ID: 6840
 // Name: StorefrontUtils
-// Dependencies: [19, 2112, 1372, 6849, 1074, 1374, 12, 6850, 1365, 1385, 504, 6843, 6851, 4518, 6858, 2]
+// Dependencies: [19, 2111, 1372, 6840, 1074, 1374, 12, 6841, 1365, 1385, 504, 6834, 6842, 4517, 6849, 2]
 // Exports: getPromoCodeFromClaimResponse, isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6848 (StorefrontUtils)
+// Module 6839 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4518 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6843 */;
-import StorefrontTypes from "StorefrontTypes" /* 6850 */;
-import PriceUtils from "PriceUtils" /* 6851 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6858 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4517 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6834 */;
+import StorefrontTypes from "StorefrontTypes" /* 6841 */;
+import PriceUtils from "PriceUtils" /* 6842 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6849 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 import UserStore from "UserStore" /* 1372 */;
-import SKUPricesStore from "SKUPricesStore" /* 6849 */;
+import SKUPricesStore from "SKUPricesStore" /* 6840 */;
 
 const require = globalThis.__r;
 
@@ -62,7 +62,7 @@ function useSKUPrice(sku) {
       if (null != stateFromStores1) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 6850).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 6841).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {
@@ -340,7 +340,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
       if (null != stateFromStores1) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 6850).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 6841).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {

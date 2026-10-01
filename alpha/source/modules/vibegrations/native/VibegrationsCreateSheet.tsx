@@ -1,16 +1,16 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16471
+// Function ID: 16472
 // Name: VibegrationsCreateSheet
-// Dependencies: [5, 32, 19, 17, 12842, 21, 4866, 576, 5567, 8695, 4830, 12652, 16451, 1115, 3715, 6812, 16452, 16453, 16456, 16457, 6814, 6766, 6702, 6195, 6113, 4862, 6112, 16454, 5477, 2]
+// Dependencies: [5, 32, 19, 17, 12851, 21, 4845, 576, 5555, 8687, 4809, 12663, 16472, 1115, 3714, 6802, 16473, 16474, 16477, 16478, 6804, 6756, 6692, 6185, 6103, 4841, 6102, 16475, 5465, 2]
 // Exports: default
 
-// Module 16450 (VibegrationsCreateSheet)
+// Module 16471 (VibegrationsCreateSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4830 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5567 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6812 */;
-import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16453 */;
-import VibegrationsTemplateWizardSheet from "VibegrationsTemplateWizardSheet" /* 16457 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4809 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6802 */;
+import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16474 */;
+import VibegrationsTemplateWizardSheet from "VibegrationsTemplateWizardSheet" /* 16478 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,12 +21,12 @@ const VibegrationsTemplateWizardSheetDefault = VibegrationsTemplateWizardSheet;
 
 require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(12842);
+const VibegrationsConnectionStore = fn(12851);
 ({ ensureConnection: closure_7, sendUserMessage: closure_8, stageModelSettings: closure_9 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsCreateSheet = "VibegrationsCreateSheet";
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 }, form: null, section: null, sectionHeading: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.form = { gap: nativeDefault.space.PX_8 };

@@ -1,19 +1,19 @@
-// Module ID: 8522
-// Function ID: 8523
+// Module ID: 8514
+// Function ID: 8515
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4845, 4540, 4533, 6860, 8523, 1115, 2]
+// Dependencies: [5, 32, 19, 4824, 4539, 4532, 6851, 8515, 1115, 2]
 // Exports: useOrderSigning
 
-// Module 8522 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4533 */;
-import BillingErrorDefault from "BillingError" /* 4540 */;
+// Module 8514 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4532 */;
+import BillingErrorDefault from "BillingError" /* 4539 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const noop = fn(19);
 ({ useCallback: hasOwnProperty, useState: metroRequire } = noop);
-const PaymentConstants = fn(4845);
+const PaymentConstants = fn(4824);
 ({ OrderClientErrorCode: closure_7, OrderStatus: closure_8 } = PaymentConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/payments/hooks/useOrderSigning.tsx");
@@ -40,7 +40,7 @@ export const useOrderSigning = function useOrderSigning(order) {
   let tmp3 = closure_5((error, extra, arg2) => {
     let tmp3 = error;
     if (!(error instanceof BillingErrorDefault)) {
-      tmp3 = new tmp(4540)(error);
+      tmp3 = new tmp(4539)(error);
     }
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
@@ -56,7 +56,7 @@ export const useOrderSigning = function useOrderSigning(order) {
       const tmp7Result = BillingUtils;
     }
     if (null != arg2) {
-      tmp3 = new tmp(4540)(arg2);
+      tmp3 = new tmp(4539)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -103,7 +103,7 @@ export const useOrderSigning = function useOrderSigning(order) {
               let billing_facet;
               c5 = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "flex", done: null };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {

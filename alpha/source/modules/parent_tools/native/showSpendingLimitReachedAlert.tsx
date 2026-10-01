@@ -1,14 +1,14 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 10362
+// Function ID: 10363
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [4765, 4540, 8301, 5400, 1115, 7201, 4879, 2]
+// Dependencies: [5266, 4539, 8291, 5388, 1115, 7193, 4858, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10370 (showSpendingLimitReachedAlert)
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4765 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import LayerActionCreators from "LayerActionCreators" /* 7201 */;
+// Module 10362 (showSpendingLimitReachedAlert)
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5266 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
+import LayerActionCreators from "LayerActionCreators" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -16,17 +16,17 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/showSpend
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
   let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    let tmp4 = billingError.code === tmp(4540).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
+    let tmp4 = billingError.code === tmp(4539).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
     if (!tmp4) {
-      tmp4 = billingError.code === tmp(4540).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+      tmp4 = billingError.code === tmp(4539).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
     }
     tmp3 = tmp4;
   }
   return tmp3;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  activeLinkUserIds = activeLinkUserIds(8301).getActiveLinkUserIds();
-  let obj = activeLinkUserIds(8301);
+  activeLinkUserIds = activeLinkUserIds(8291).getActiveLinkUserIds();
+  let obj = activeLinkUserIds(8291);
   const obj3 = { title: null, body: null, isDismissable: true };
   const intl = activeLinkUserIds(1115).intl;
   obj3.title = intl.string(activeLinkUserIds(1115).t.QJKKrT);

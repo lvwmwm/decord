@@ -1,12 +1,12 @@
-// Module ID: 8712
-// Function ID: 8713
+// Module ID: 8704
+// Function ID: 8705
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4866, 576, 8713, 1613, 4596, 5476, 5632, 1115, 8942, 6188, 4862, 6740, 8944, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 8705, 1613, 4595, 5464, 5621, 1115, 8935, 6178, 4841, 6730, 8937, 2]
 // Exports: default
 
-// Module 8712 (OAuth2AuthorizeModal)
+// Module 8704 (OAuth2AuthorizeModal)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5476 */;
+import spring from "spring" /* 5464 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let closure_7 = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, contentContainer: { flex: 1 }, titleContainer: { padding: 16, flexDirection: "row", gap: 16 }, titleContainerBorder: null, title: null };
 const rect = { position: "absolute", left: 0, right: 0, bottom: 0, height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.titleContainerBorder = rect;
@@ -29,7 +29,7 @@ let result = size.fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeMo
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = closure_8();
-  const tmp4 = sharedValue(8713)(arg0);
+  const tmp4 = sharedValue(8705)(arg0);
   _require = tmp4;
   sharedValue = require("ReanimatedRexport").useSharedValue(0);
   const obj = require("ReanimatedRexport");
@@ -80,10 +80,10 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(576).colors.INTERACTIVE_TEXT_DEFAULT };
-    let tmp11Result = tmp11(tmp5(8942).ArrowSmallLeftIcon, obj7);
+    let tmp11Result = tmp11(tmp5(8935).ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(576).colors.INTERACTIVE_TEXT_DEFAULT };
-    tmp11Result = tmp11(tmp5(6188).XSmallIcon, obj8);
+    tmp11Result = tmp11(tmp5(6178).XSmallIcon, obj8);
   }
   obj6.children = tmp11Result;
   const items2 = [closure_5(require("Pressables").PressableOpacity, obj6), , ];
@@ -96,7 +96,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const obj11 = { style: null };
   const items3 = [tmp.titleContainerBorder, animatedStyle];
   obj11.style = items3;
-  items2[2] = closure_5(sharedValue(4596).View, obj11);
+  items2[2] = closure_5(sharedValue(4595).View, obj11);
   obj4.children = items2;
   const items4 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: null };
@@ -105,7 +105,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp4);
   obj13.onScroll = callback;
   obj13.centerContent = true;
-  obj12.children = closure_5(sharedValue(8944), obj13);
+  obj12.children = closure_5(sharedValue(8937), obj13);
   items4[1] = closure_5(require("common/SafeAreaView").SafeAreaPaddingView, obj12);
   obj3.children = items4;
   return closure_6(View, obj3);

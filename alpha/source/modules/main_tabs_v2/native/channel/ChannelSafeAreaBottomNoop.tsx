@@ -1,9 +1,9 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12353
+// Function ID: 12354
 // Name: ChannelSafeAreaBottomNoop
 // Dependencies: [19, 17, 21, 2]
 
-// Module 12341 (ChannelSafeAreaBottomNoop)
+// Module 12353 (ChannelSafeAreaBottomNoop)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

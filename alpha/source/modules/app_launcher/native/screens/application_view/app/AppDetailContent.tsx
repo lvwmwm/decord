@@ -1,22 +1,22 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11822
+// Function ID: 11823
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 8790, 1484, 1074, 5501, 21, 4866, 11815, 576, 11739, 6113, 10990, 11790, 7137, 8990, 1115, 1613, 8918, 1979, 11819, 8789, 7139, 11736, 1364, 11821, 4862, 11823, 11787, 11825, 8788, 1177, 11832, 11834, 4830, 5046, 8705, 2]
+// Dependencies: [5, 19, 17, 8782, 1484, 1074, 5489, 21, 4845, 11823, 576, 11747, 6103, 10994, 11798, 7129, 8983, 1115, 1613, 8911, 1979, 11827, 8781, 7131, 11744, 1364, 11829, 4841, 11831, 11795, 11833, 8780, 1177, 11840, 11842, 4809, 5025, 8697, 2]
 // Exports: default
 
-// Module 11814 (AppDetailContent)
+// Module 11822 (AppDetailContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5046 */;
-import TableRow from "TableRow" /* 6113 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7137 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7139 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8789 */;
-import AppLauncherContext from "AppLauncherContext" /* 10990 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11736 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11739 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 11790 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
+import TableRow from "TableRow" /* 6103 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7129 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7131 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8781 */;
+import AppLauncherContext from "AppLauncherContext" /* 10994 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11747 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 11798 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -199,18 +199,18 @@ class CommandRow {
   }
 }
 const View = fn(17).View;
-const ApplicationCommandIndexStore = fn(8790);
+const ApplicationCommandIndexStore = fn(8782);
 ({ useContextIndexState: closure_7, useUserIndexState: closure_8 } = ApplicationCommandIndexStore);
 const AppLauncherNativeConstants = fn(1484);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const useAppLauncherNavigation = AppLauncherNativeConstants.useAppLauncherNavigation;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_12 = fn(5501).DISCOVERY_COMMANDS_QUERY_LIMIT;
+let closure_12 = fn(5489).DISCOVERY_COMMANDS_QUERY_LIMIT;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4866);
-let obj2 = { headerSpacer: { height: fn(11815).EXPANDED_HEADER_HEIGHT - fn(11815).SHEET_HANDLE_CONTAINER_HEIGHT }, list: { paddingHorizontal: DEFAULT_CONTENT_PADDING }, commandsHeaderContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }, commandsHeaderTextContainer: { alignItems: "center", flexDirection: "row", gap: 8 }, viewContainerStyle: null, mainContainerStyle: null, monetizationDisclosureTextStyle: null, monetizationDisclosureContainerStyle: null, monetizationDisclosureStyle: null, loadingTextPlaceholder: null, loadingTextPlaceholderSmall: null, noCommandsTextContainer: null };
-let obj3 = { height: fn(11815).EXPANDED_HEADER_HEIGHT - fn(11815).SHEET_HANDLE_CONTAINER_HEIGHT };
+const createStyles = fn(4845);
+let obj2 = { headerSpacer: { height: fn(11823).EXPANDED_HEADER_HEIGHT - fn(11823).SHEET_HANDLE_CONTAINER_HEIGHT }, list: { paddingHorizontal: DEFAULT_CONTENT_PADDING }, commandsHeaderContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }, commandsHeaderTextContainer: { alignItems: "center", flexDirection: "row", gap: 8 }, viewContainerStyle: null, mainContainerStyle: null, monetizationDisclosureTextStyle: null, monetizationDisclosureContainerStyle: null, monetizationDisclosureStyle: null, loadingTextPlaceholder: null, loadingTextPlaceholderSmall: null, noCommandsTextContainer: null };
+let obj3 = { height: fn(11823).EXPANDED_HEADER_HEIGHT - fn(11823).SHEET_HANDLE_CONTAINER_HEIGHT };
 obj2.viewContainerStyle = { borderRadius: nativeDefault.radii.lg };
 let obj4 = { borderRadius: nativeDefault.radii.lg };
 obj2.mainContainerStyle = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, paddingHorizontal: 12, paddingVertical: 16 };
@@ -342,29 +342,29 @@ export default function AppDetailContent(context) {
   const memo1 = onCommandExecuted.useMemo(() => {
     let isAndroidResult = PlatformUtils.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = tmp(8789).isApplicationMonetizedWithIAP(application);
-      const tmpResult = tmp(8789);
+      isAndroidResult = tmp(8781).isApplicationMonetizedWithIAP(application);
+      const tmpResult = tmp(8781);
     }
     const result = AppLauncherUtils.isApplicationAdSupported(application);
     let tmp6 = null;
     if (result) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: null };
-      const items = [map1(tmp(11821).BillIcon, { size: "sm", color: "icon-muted" }), ];
+      const items = [map1(tmp(11829).BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: null };
       const intl = tmp(1115).intl;
       obj3.children = intl.string(tmp(1115).t["5khEk8"]);
-      items[1] = map1(tmp(4862).Text, obj3);
+      items[1] = map1(tmp(4841).Text, obj3);
       obj2.children = items;
       tmp6 = closure_2_14(View, obj2);
     }
     let tmp11 = null;
     if (isAndroidResult) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: null };
-      const items1 = [map1(tmp(11823).ShopIcon, { size: "sm", color: "icon-muted" }), ];
+      const items1 = [map1(tmp(11831).ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: null };
       const intl2 = tmp(1115).intl;
       obj5.children = intl2.string(tmp(1115).t["8z5B2U"]);
-      items1[1] = map1(tmp(4862).Text, obj5);
+      items1[1] = map1(tmp(4841).Text, obj5);
       obj4.children = items1;
       tmp11 = closure_2_14(View, obj4);
     }

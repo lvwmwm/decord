@@ -1,10 +1,10 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15779
+// Function ID: 15780
 // Name: RiveAppStatePlaybackExperiment
 // Dependencies: [1435, 2]
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 15763 (RiveAppStatePlaybackExperiment)
+// Module 15779 (RiveAppStatePlaybackExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17076
+// Function ID: 17077
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 5093, 7933, 9138, 2045, 2044, 2005, 8701, 21, 2019, 17054, 4596, 7975, 17055, 1613, 1479, 17056, 17059, 9033, 9113, 9162, 17060, 6138, 9115, 4731, 504, 4488, 9002, 5920, 4877, 17061, 8981, 2]
+// Dependencies: [32, 19, 5072, 7920, 9132, 2044, 2043, 2005, 8693, 21, 2019, 17075, 4595, 7962, 17077, 1613, 1479, 17078, 17081, 9027, 9107, 9156, 17082, 6128, 9109, 4730, 504, 4487, 8995, 5909, 4856, 17083, 8974, 2]
 // Exports: default
 
-// Module 17053 (ActivityPanelController)
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import ChatInputUtils from "ChatInputUtils" /* 4731 */;
-import transitionToChannel from "transitionToChannel" /* 4877 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5920 */;
-import DeviceOrientation from "DeviceOrientation" /* 7975 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 8981 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9115 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17055 */;
+// Module 17076 (ActivityPanelController)
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import ChatInputUtils from "ChatInputUtils" /* 4730 */;
+import transitionToChannel from "transitionToChannel" /* 4856 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5909 */;
+import DeviceOrientation from "DeviceOrientation" /* 7962 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 8974 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9109 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17077 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5093 */;
-import AppFreezeStore from "AppFreezeStore" /* 7933 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9138 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ApplicationStore from "ApplicationStore" /* 5072 */;
+import AppFreezeStore from "AppFreezeStore" /* 7920 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9132 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 
 require = fn;
 class BaseActivityPanelController {
@@ -241,7 +241,7 @@ class BaseActivityPanelController {
 }
 const Constants = fn(2005);
 ({ OrientationLockState: closure_11, ACTIVITY_LOCKED_ASPECT_RATIO: closure_12 } = Constants);
-const ActivityPanelModes = fn(8701).ActivityPanelModes;
+const ActivityPanelModes = fn(8693).ActivityPanelModes;
 const jsx = fn(21).jsx;
 let closure_15 = { x: 0, y: 0, gestureActive: false };
 const FunctionUtils = fn(2019);
@@ -341,6 +341,6 @@ export default function ActivityPanelController(children) {
     }
   }, items1);
   let obj = mode(504);
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(17061)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(17083)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

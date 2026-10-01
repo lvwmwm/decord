@@ -1,11 +1,11 @@
-// Module ID: 7756
-// Function ID: 7757
+// Module ID: 7743
+// Function ID: 7744
 // Name: ChannelLinkUrls
-// Dependencies: [32, 5020, 2]
+// Dependencies: [32, 4999, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 7756 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 5020 */;
+// Module 7743 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 4999 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

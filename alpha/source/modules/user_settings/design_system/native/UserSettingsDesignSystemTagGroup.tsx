@@ -1,16 +1,16 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15616
+// Function ID: 15617
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 4866, 576, 4561, 5475, 4862, 6115, 14174, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4560, 5463, 4841, 6105, 14182, 2]
 // Exports: default
 
-// Module 15611 (UserSettingsDesignSystemTagGroup)
+// Module 15616 (UserSettingsDesignSystemTagGroup)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4561 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import Stack_Stack from "Stack/Stack" /* 5475 */;
-import Card from "Card" /* 6115 */;
-import TagGroup from "TagGroup" /* 14174 */;
+import useToken from "useToken" /* 4560 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import Stack_Stack from "Stack/Stack" /* 5463 */;
+import Card from "Card" /* 6105 */;
+import TagGroup from "TagGroup" /* 14182 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { padding: nativeDefault.space.PX_16 }, narrow: { width: "60%" } };
 let closure_7 = createStyles.createStyles(obj2);
 let items = [{ id: "art", label: "Art" }, { id: "music", label: "Music" }];

@@ -1,12 +1,12 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16760
+// Function ID: 16761
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 576, 4866, 16736, 10818, 13310, 1115, 3911, 2]
+// Dependencies: [19, 17, 21, 576, 4845, 16759, 10815, 13318, 1115, 3910, 2]
 
-// Module 16737 (SmartSearchExpandButton)
+// Module 16760 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 576 */;
-import _modDef3911 from "module_3911" /* 3911 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 16736 */;
+import _modDef3910 from "module_3910" /* 3910 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 16759 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const rect = { top: nativeDefault.space.PX_8, bottom: nativeDefault.space.PX_8 };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_9 = createStyles.createStyles((backgroundColor) => {
   const obj = { block: { position: "absolute", left: 0, right: 0, bottom: 0, alignItems: "center" }, pill: { height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" }, surface: null };
   const obj3 = {};
@@ -32,14 +32,14 @@ export default noop.memo((isCollapsed) => {
   isCollapsed = isCollapsed.isCollapsed;
   const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    let ChevronSmallUpIcon = tmp(10818).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp(10815).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(13310).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(13318).ChevronSmallUpIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: null };
   const obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
   const intl = tmp(1115).intl;
-  const tmp9 = _modDef3911;
+  const tmp9 = _modDef3910;
   if (isCollapsed) {
     let FKLBbW = tmp9.NuTbB9;
     let tmp10 = tmp8;

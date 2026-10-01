@@ -1,22 +1,22 @@
-// Module ID: 11703
-// Function ID: 11704
+// Module ID: 11711
+// Function ID: 11712
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4866, 576, 1364, 7506, 1115, 5581, 4862, 11063, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 1364, 7484, 1115, 5569, 4841, 11067, 2]
 // Exports: default
 
-// Module 11703 (ForumPostMessageCount)
+// Module 11711 (ForumPostMessageCount)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ChatIcon from "ChatIcon" /* 5581 */;
-import ForumHooks from "ForumHooks" /* 7506 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11063 */;
+import ChatIcon from "ChatIcon" /* 5569 */;
+import ForumHooks from "ForumHooks" /* 7484 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11067 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { tintColor: nativeDefault.colors.ICON_MUTED, marginEnd: 4, marginTop: null };
 let PlatformUtils = fn(1364);
 let num = 0;
@@ -64,7 +64,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   const items1 = [React4(ChatIcon.ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    let tmp7Result = tmp7(tmp2(4862).Text, obj4);
+    let tmp7Result = tmp7(tmp2(4841).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -77,7 +77,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     const obj7 = { count: unreadCount };
     const items2 = ["(", intl2.format(tmp2(1115).t.z3PEth, obj7), ")"];
     obj6.children = items2;
-    tmp5Result = tmp5(tmp2(4862).Text, obj6);
+    tmp5Result = tmp5(tmp2(4841).Text, obj6);
   }
   items1[2] = tmp5Result;
   obj2.children = items1;

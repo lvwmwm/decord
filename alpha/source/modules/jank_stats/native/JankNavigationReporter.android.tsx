@@ -1,20 +1,20 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17425
+// Function ID: 17426
 // Name: JankNavigationReporter
-// Dependencies: [4723, 15842, 15838, 15843, 4725, 2]
+// Dependencies: [4722, 15858, 15854, 15859, 4724, 2]
 
-// Module 17401 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4723 */;
-import getJankScreenName from "getJankScreenName" /* 15838 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 15842 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15843 */;
+// Module 17425 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4722 */;
+import getJankScreenName from "getJankScreenName" /* 15854 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 15858 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15859 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4725).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4725);
+      isChatLockedOpen = tmp4(4724).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4724);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });

@@ -1,12 +1,12 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 8800
+// Function ID: 8801
 // Name: imagePreConvert
-// Dependencies: [32, 5, 5637, 5681, 5776, 1981, 5682, 5683, 5666, 2]
+// Dependencies: [32, 5, 5626, 5670, 5765, 1981, 5671, 5672, 5655, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 8808 (imagePreConvert)
+// Module 8800 (imagePreConvert)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import Upload from "Upload" /* 5637 */;
+import Upload from "Upload" /* 5626 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -25,10 +25,10 @@ function preConversionFormat(platform) {
             str2 = "jxr";
           }
           str = str2;
-          tmpResult2 = tmp(5681);
+          tmpResult2 = tmp(5670);
         }
         tmp3 = str;
-        tmpResult = tmp(5681);
+        tmpResult = tmp(5670);
       }
     }
   }
@@ -253,10 +253,10 @@ export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(
             str2 = "jxr";
           }
           str = str2;
-          tmpResult2 = tmp(5681);
+          tmpResult2 = tmp(5670);
         }
         tmp3 = str;
-        tmpResult = tmp(5681);
+        tmpResult = tmp(5670);
       }
     }
   }

@@ -1,21 +1,21 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14185
+// Function ID: 14186
 // Name: Tag
-// Dependencies: [19, 17, 21, 4866, 14175, 576, 14178, 4862, 2]
+// Dependencies: [19, 17, 21, 4845, 14183, 576, 14186, 4841, 2]
 // Exports: Tag
 
-// Module 14177 (Tag)
+// Module 14185 (Tag)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import TagGroupTypes from "TagGroupTypes" /* 14175 */;
-import TagGraphic from "TagGraphic" /* 14178 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import TagGroupTypes from "TagGroupTypes" /* 14183 */;
+import TagGraphic from "TagGraphic" /* 14186 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_6 = createStyles.createStyles((arg0, arg1) => {
   const obj = { tag: null, inline: null, label: null };
   const obj2 = { flexDirection: "row", alignItems: "center", gap: TagGroupTypes.getTagGap(arg0), minHeight: null, paddingVertical: null, paddingHorizontal: null, borderWidth: null, borderRadius: null, borderColor: null, backgroundColor: null };

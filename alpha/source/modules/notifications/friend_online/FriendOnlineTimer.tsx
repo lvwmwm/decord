@@ -1,16 +1,16 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17895
+// Function ID: 17896
 // Name: FriendOnlineTimer
-// Dependencies: [5, 5788, 17861, 1074, 1085, 1091, 1271, 1231, 573, 6735, 2021, 2]
+// Dependencies: [5, 5777, 17896, 1074, 1085, 1091, 1271, 1231, 573, 6725, 2021, 2]
 
-// Module 17860 (FriendOnlineTimer)
+// Module 17895 (FriendOnlineTimer)
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5788 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17861 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5777 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17896 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 require = fn;
 let closure_9 = async function _reportSessionMeaningfullyOnline() {

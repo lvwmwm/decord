@@ -1,9 +1,9 @@
-// Module ID: 7522
-// Function ID: 7523
+// Module ID: 7500
+// Function ID: 7501
 // Name: AnalyticsFeedItemSeenManager
 // Dependencies: [5, 38, 573, 2]
 
-// Module 7522 (AnalyticsFeedItemSeenManager)
+// Module 7500 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

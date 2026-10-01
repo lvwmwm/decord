@@ -1,17 +1,17 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16474
+// Function ID: 16475
 // Name: VibegrationsEffortPicker
-// Dependencies: [32, 19, 17, 21, 1115, 3715, 16454, 5475, 576, 6193, 5567, 6196, 6195, 6113, 16455, 6817, 6814, 6766, 2]
+// Dependencies: [32, 19, 17, 21, 1115, 3714, 16475, 5463, 576, 6183, 5555, 6186, 6185, 6103, 16476, 6807, 6804, 6756, 2]
 // Exports: VibegrationsEffortPickerSheet
 
-// Module 16453 (VibegrationsEffortPicker)
+// Module 16474 (VibegrationsEffortPicker)
 import util from "util" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import TableRadioRow from "TableRadioRow" /* 6196 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6766 */;
-import ActionSheet from "ActionSheet" /* 6814 */;
-import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 16454 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16455 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import TableRadioRow from "TableRadioRow" /* 6186 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6756 */;
+import ActionSheet from "ActionSheet" /* 6804 */;
+import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 16475 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16476 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -184,7 +184,7 @@ export const VibegrationsEffortPickerSheet = function VibegrationsEffortPickerSh
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
-  obj2.title = intl.string(_modDef3715.GDs9Vq);
+  obj2.title = intl.string(_modDef3714.GDs9Vq);
   obj.header = timestampProducer(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
   obj.children = timestampProducer(View, { children: timestampProducer(VibegrationsEffortPicker, { settings: tmp[0], tiers, choices, disabled: false, onChange: callback, hideTitle: true }) });
   return timestampProducer(ActionSheet.ActionSheet, obj);

@@ -1,21 +1,21 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11404
+// Function ID: 11405
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4866, 576, 4797, 7778, 7569, 8308, 11397, 5111, 12, 11398, 1115, 11400, 8372, 5597, 9772, 6095, 1478, 8472, 4862, 11402, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4776, 7765, 7547, 8299, 11405, 5090, 12, 11406, 1115, 11408, 8364, 5585, 9764, 6085, 1478, 8464, 4841, 11410, 2]
 // Exports: ForwardPreview
 
-// Module 11396 (ForwardPreview)
+// Module 11404 (ForwardPreview)
 import nativeDefault from "native" /* 576 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1478 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5111 */;
-import FastImageDefault from "FastImage" /* 6095 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7778 */;
-import ChatItemDefault from "ChatItem" /* 8308 */;
-import ClipViewDefault from "ClipView" /* 8472 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11397 */;
-import MosaicMediaType from "MosaicMediaType" /* 11398 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11402 */;
+import useThemeDefault from "useTheme" /* 4776 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5090 */;
+import FastImageDefault from "FastImage" /* 6085 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7765 */;
+import ChatItemDefault from "ChatItem" /* 8299 */;
+import ClipViewDefault from "ClipView" /* 8464 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11405 */;
+import MosaicMediaType from "MosaicMediaType" /* 11406 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11410 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ function MessagePreview(content) {
     TEXT_SUBTLE = tmp(576).colors.TEXT_SUBTLE;
   }
   const tmp3 = useThemeDefault();
-  const tmp4 = attachmentCount(4866).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
+  const tmp4 = attachmentCount(4845).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
   const callback = noop.useCallback((message) => {
@@ -46,7 +46,7 @@ function MessagePreview(content) {
     return obj;
   }, []);
   const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback, message: null, rowGenerator: null };
-  let obj = attachmentCount(4866);
+  let obj = attachmentCount(4845);
   const obj3 = { messageSnapshots: [], content: content.contentMessage.content };
   obj2.message = message.merge(obj3);
   obj2.rowGenerator = memo;
@@ -56,7 +56,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = 56;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { forwardPreview: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, quote: null, contentWrapper: null, attachmentPreview: null, attachmentPreviewVideo: null, videoThumbnail: null, playIcon: null, attachmentPreviewOverflow: null, overflowCount: null, attachmentRow: null, largeIcon: null };
 let size = { width: 4, height: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: 2 };
 obj2.quote = size;
@@ -98,7 +98,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         const intl4 = tmp2(1115).intl;
         const obj3 = { image_count: num, video_count: num2 };
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1115).t.Lr0Top, obj3);
-        let AttachmentIcon = tmp2(11400).ImagesIcon;
+        let AttachmentIcon = tmp2(11408).ImagesIcon;
       }
       if (num2 > 0) {
         if (length === num2) {
@@ -115,7 +115,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           size.height = v56;
           const items1 = [hasOwnProperty(FastImageDefault, size), ];
           const obj6 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = hasOwnProperty(tmp2(8372).CirclePlayIcon, obj6);
+          items1[1] = hasOwnProperty(tmp2(8364).CirclePlayIcon, obj6);
           obj4.children = items1;
           let tmp6 = timestampProducer(View, obj4);
           let tmp7 = AttachmentIcon;
@@ -167,14 +167,14 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl3 = tmp2(1115).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(8372).CirclePlayIcon;
+      AttachmentIcon = tmp2(8364).CirclePlayIcon;
     } else if (num > 0) {
       const intl2 = tmp2(1115).intl;
       const obj13 = { count: num };
       if (1 === num) {
-        let ImagesIcon = tmp2(5597).ImageIcon;
+        let ImagesIcon = tmp2(5585).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11400).ImagesIcon;
+        ImagesIcon = tmp2(11408).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.h4pFfU, obj13);
@@ -183,7 +183,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl = tmp2(1115).intl;
       const obj14 = { count: length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(9772).AttachmentIcon;
+      AttachmentIcon = tmp2(9764).AttachmentIcon;
     }
     const tmp2Result = tmp2(12);
   } else {
@@ -195,7 +195,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   if (attachments.length > 1) {
     tmp33 = tmp6;
     if (null != tmp6) {
-      const size3 = { shape: tmp2(8472).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      const size3 = { shape: tmp2(8464).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
       const obj16 = { style: tmp.attachmentPreviewOverflow, children: null };
       const obj17 = { cutouts: null, children: null };
       const items2 = [size3];
@@ -205,7 +205,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj18 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default", children: null };
       const items4 = ["+", length - 1];
       obj18.children = items4;
-      items3[1] = timestampProducer(tmp2(4862).Text, obj18);
+      items3[1] = timestampProducer(tmp2(4841).Text, obj18);
       obj16.children = items3;
       tmp33 = timestampProducer(View, obj16);
     }
@@ -215,9 +215,9 @@ export const ForwardPreview = function ForwardPreview(message) {
   const obj22 = { style: tmp.contentWrapper, children: null };
   let tmp36Result = null != checkpointDataFromMessage;
   if (tmp36Result) {
-    const obj23 = { variant: "text-md/medium", children: tmp2(5111).getCheckpointLabel(checkpointDataFromMessage) };
-    tmp36Result = tmp36(tmp2(4862).Text, obj23);
-    const tmp2Result2 = tmp2(5111);
+    const obj23 = { variant: "text-md/medium", children: tmp2(5090).getCheckpointLabel(checkpointDataFromMessage) };
+    tmp36Result = tmp36(tmp2(4841).Text, obj23);
+    const tmp2Result2 = tmp2(5090);
   }
   const items6 = [tmp36Result, , ];
   let tmp36Result5 = hasContent;
@@ -251,7 +251,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         str3 = "text-sm/medium";
       }
       const obj27 = { variant: str3, color: "text-muted", children: tmp8 };
-      tmp36Result7 = tmp36(tmp2(4862).Text, obj27);
+      tmp36Result7 = tmp36(tmp2(4841).Text, obj27);
     }
     items7[1] = tmp36Result7;
     obj25.children = items7;

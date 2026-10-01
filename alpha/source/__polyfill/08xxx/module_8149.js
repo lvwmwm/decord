@@ -1,10 +1,11 @@
 // Module ID: 8149
 // Function ID: 8150
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8150, 8144, 8145]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8150, 8133, 8134]
 
 // Module 8149
 import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8145 from "module_8145" /* 8145 */;
+import _modDef8133 from "module_8133" /* 8133 */;
+import _modDef8134 from "module_8134" /* 8134 */;
 import _modDef8150 from "module_8150" /* 8150 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -12,7 +13,7 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const FeComposite = fn;
+const FeFlood = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -34,12 +35,12 @@ function _isNativeReflectConstruct() {
 }
 _possibleConstructorReturnDefault;
 const jsx = fn(21).jsx;
-class FeComposite {
+class FeFlood {
   constructor() {
     self = this;
-    tmp = closure_3(this, FeComposite);
+    tmp = closure_3(this, FeFlood);
     tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(FeComposite);
+    obj = hasOwnProperty(FeFlood);
     tmp3 = closure_4;
     if (closure_7()) {
       tmp7 = globalThis;
@@ -54,7 +55,7 @@ class FeComposite {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeComposite, _modDef8145);
+_inherits(FeFlood, _modDef8134);
 const entry = {
   key: "render",
   value: function render() {
@@ -64,23 +65,20 @@ const entry = {
         return self.refMethod(arg0);
       }
     };
-    const merged = Object.assign(FeComposite(8144).extractFilter(this.props));
-    const obj2 = FeComposite(8144);
-    const merged1 = Object.assign(FeComposite(8144).extractFeComposite(this.props));
+    const merged = Object.assign(FeFlood(8133).extractFilter(this.props));
+    const merged1 = Object.assign(_modDef8133(this.props));
     return <tmp ref={function ref(arg0) {
       return self.refMethod(arg0);
     }} />;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeComposite, items);
-importDefaultResultResult.displayName = "FeComposite";
+const importDefaultResultResult = _createClass(FeFlood, items);
+importDefaultResultResult.displayName = "FeFlood";
 let obj = {};
 let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.k1 = 0;
-obj.k2 = 0;
-obj.k3 = 0;
-obj.k4 = 0;
+obj.floodColor = "black";
+obj.floodOpacity = 1;
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

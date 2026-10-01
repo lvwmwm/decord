@@ -1,11 +1,11 @@
-// Module ID: 5389
-// Function ID: 5390
+// Module ID: 5377
+// Function ID: 5378
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1074, 1085, 5371, 5385, 1271, 2]
+// Dependencies: [5, 1074, 1085, 5359, 5373, 1271, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 5389 (HandleConfirmPaymentRegistry)
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5371 */;
+// Module 5377 (HandleConfirmPaymentRegistry)
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5359 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -101,7 +101,7 @@ prototype["getStripe"] = function getStripe() {
             _self = self;
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp4(5385).getStripe(), done: false };
+            const obj6 = { value: tmp4(5373).getStripe(), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -115,7 +115,7 @@ prototype["getStripe"] = function getStripe() {
           _self.stripe = value;
         }
         if (null == closure_129_0.stripe) {
-          throw _self(5371).dispatchConfirmationError("Stripe cannot be null on a redirect.");
+          throw _self(5359).dispatchConfirmationError("Stripe cannot be null on a redirect.");
         } else {
           c3 = 3;
           const obj7 = { value: closure_129_0.stripe, done: true };
@@ -159,10 +159,10 @@ prototype["getStripeRedirect"] = function getStripeRedirect(arg0) {
     const paymentIntent = closure_129_4.paymentIntent;
     const error = closure_129_4.error;
     if (null != error) {
-      throw _var(5371).dispatchConfirmationError(error);
+      throw _var(5359).dispatchConfirmationError(error);
     }
     if (null == paymentIntent) {
-      throw _var(5371).dispatchConfirmationError("paymentIntent not available with successful api call");
+      throw _var(5359).dispatchConfirmationError("paymentIntent not available with successful api call");
     }
     const next_action = paymentIntent.next_action;
     if (next_action != null) {
@@ -172,7 +172,7 @@ prototype["getStripeRedirect"] = function getStripeRedirect(arg0) {
       }
     }
     if (null == url) {
-      throw _var(5371).dispatchConfirmationError("confirm payment did not return a redirect url");
+      throw _var(5359).dispatchConfirmationError("confirm payment did not return a redirect url");
     }
     return paymentIntent.next_action.redirect_to_url.url;
   })();
@@ -263,10 +263,10 @@ prototype["confirmDirectPaymentSource"] = function confirmDirectPaymentSource(ar
     const paymentIntent = closure_128_5.paymentIntent;
     const error = closure_128_5.error;
     if (null != error) {
-      throw tmp2(5371).dispatchConfirmationError(error);
+      throw tmp2(5359).dispatchConfirmationError(error);
     }
     if (null == paymentIntent) {
-      throw tmp2(5371).dispatchConfirmationError("paymentIntent not available with successful stripe call");
+      throw tmp2(5359).dispatchConfirmationError("paymentIntent not available with successful stripe call");
     }
     value = { pendingCustomerAction: closure_128_4, customerActionCancelled: "requires_action" === paymentIntent.status };
     return value;

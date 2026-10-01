@@ -1,15 +1,15 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15728
+// Function ID: 15729
 // Name: ConnectedGamesRouteSetting
-// Dependencies: [7612, 1074, 11211, 1115, 4559, 15692, 2]
+// Dependencies: [7590, 1074, 11215, 1115, 4558, 15709, 2]
 
-// Module 15711 (ConnectedGamesRouteSetting)
+// Module 15728 (ConnectedGamesRouteSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import FriendsIcon from "FriendsIcon" /* 4559 */;
-import SettingsConstants from "SettingsConstants" /* 7612 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 15692 */;
-import SettingBuilders from "SettingBuilders" /* 11211 */;
+import FriendsIcon from "FriendsIcon" /* 4558 */;
+import SettingsConstants from "SettingsConstants" /* 7590 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 15709 */;
+import SettingBuilders from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const route = SettingBuilders.createRoute({

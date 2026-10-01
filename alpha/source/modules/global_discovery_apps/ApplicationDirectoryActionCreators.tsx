@@ -1,25 +1,25 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11764
+// Function ID: 11765
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 4865, 2112, 1346, 6781, 11757, 11758, 11753, 11759, 11760, 1074, 573, 559, 1271, 11754, 1364, 11761, 11762, 11763, 2]
+// Dependencies: [5, 4844, 2111, 1346, 6771, 11765, 11766, 11761, 11767, 11768, 1074, 573, 559, 1271, 11762, 1364, 11769, 11770, 11771, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11756 (ApplicationDirectoryActionCreators)
+// Module 11764 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11762 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11763 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11770 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11771 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4865 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import DevSettingsStore from "DevSettingsStore" /* 4844 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6781 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11757 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11758 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11753 */;
-import ApplicationDirectorySimilarApplicationsStore from "ApplicationDirectorySimilarApplicationsStore" /* 11759 */;
-import MyGuildApplicationsStore from "MyGuildApplicationsStore" /* 11760 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6771 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11765 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11766 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11761 */;
+import ApplicationDirectorySimilarApplicationsStore from "ApplicationDirectorySimilarApplicationsStore" /* 11767 */;
+import MyGuildApplicationsStore from "MyGuildApplicationsStore" /* 11768 */;
 
 require = fn;
 let closure_20 = async function _getEmbedApplication(arg0, value) {
@@ -173,7 +173,7 @@ let closure_21 = async function _getApplication(arg0, value) {
           closure_131_7 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {
@@ -347,7 +347,7 @@ let closure_23 = async function _getSimilarApplications(arg0, value) {
           closure_131_7 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {
@@ -472,7 +472,7 @@ let closure_24 = async function _search(arg0, value) {
           closure_131_18 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {
@@ -624,7 +624,7 @@ let closure_25 = async function _fetchCollections(arg0, value) {
           closure_129_7 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {
@@ -813,11 +813,11 @@ let closure_26 = async function _fetchIntegrationApplicationIdsForMyGuilds(arg0,
     }
   }
 };
-fn(6781).FetchState;
-fn(11758).FetchState;
-fn(11753).FetchState;
-fn(11759).FetchState;
-const FetchState = fn(11760).FetchState;
+fn(6771).FetchState;
+fn(11766).FetchState;
+fn(11761).FetchState;
+fn(11767).FetchState;
+const FetchState = fn(11768).FetchState;
 const Endpoints = fn(1074).Endpoints;
 let c18 = 600000;
 const map = new Map();

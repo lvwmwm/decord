@@ -1,15 +1,15 @@
-// Module ID: 13626
-// Function ID: 13627
+// Module ID: 13634
+// Function ID: 13635
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4866, 8757, 13624, 4862, 1115, 5477, 2]
+// Dependencies: [19, 17, 21, 4845, 8749, 13632, 4841, 1115, 5465, 2]
 // Exports: ActivateDeviceError
 
-// Module 13626 (ActivateDeviceError)
+// Module 13634 (ActivateDeviceError)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
-import _modDef8757 from "module_8757" /* 8757 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13624 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
+import _modDef8749 from "module_8749" /* 8749 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,14 +17,14 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_8 = createStyles.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   const obj = { children: null };
-  const obj2 = { source: _modDef8757, style: closure_8().image };
+  const obj2 = { source: _modDef8749, style: closure_8().image };
   const items = [hasOwnProperty(React3, obj2), , ];
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: null };
   const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: null };

@@ -1,12 +1,12 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12806
+// Function ID: 12807
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1091, 7787, 2040, 2]
+// Dependencies: [32, 19, 1091, 7774, 2039, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 12797 (useActivityTimer)
+// Module 12806 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1091 */;
-import utils from "utils" /* 7787 */;
+import utils from "utils" /* 7774 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -18,7 +18,7 @@ let result = size.fileFinishedImporting("modules/user_profile/hooks/useActivityT
 export default function useActivityTimer(start) {
   start = start.start;
   let first;
-  const interval = new first(2040).Interval();
+  const interval = new first(2039).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   const tmp3 = _slicedToArray(closure_5(() => Date.now()), 2);
   importDefault = tmp3[1];

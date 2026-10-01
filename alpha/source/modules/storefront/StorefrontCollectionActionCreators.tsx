@@ -1,17 +1,17 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8533
+// Function ID: 8534
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2112, 8539, 7176, 1074, 7860, 573, 5288, 4766, 2]
+// Dependencies: [5, 2111, 8531, 7168, 1074, 7847, 573, 5276, 5267, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 8541 (StorefrontCollectionActionCreators)
+// Module 8533 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import StoreUtils from "StoreUtils" /* 5288 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7860 */;
+import StoreUtils from "StoreUtils" /* 5276 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7847 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8539 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7176 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8531 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7168 */;
 
 require = fn;
 let closure_8 = async function _maybeFetchCollectionsWithProducts(arg0, value) {
@@ -70,7 +70,7 @@ let closure_8 = async function _maybeFetchCollectionsWithProducts(arg0, value) {
           closure_129_6 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {
@@ -501,7 +501,7 @@ let closure_14 = async function _maybeFetchCollectionsForApplication(arg0, value
           closure_129_10 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp7) {

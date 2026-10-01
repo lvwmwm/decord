@@ -1,10 +1,10 @@
-// Module ID: 6674
-// Function ID: 6675
+// Module ID: 6664
+// Function ID: 6665
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 6674 (useFastestListComputedStyles)
+// Module 6664 (useFastestListComputedStyles)
 import noop from "module_19" /* 19 */;
 
 const StyleSheet = fn(17).StyleSheet;

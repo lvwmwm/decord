@@ -1,10 +1,10 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 7018
+// Function ID: 7019
 // Name: MobileBoostingExperiment
 // Dependencies: [1435, 2]
 // Exports: getMobileBoostingEnabled, getRecommendedBoostCount, getShouldRemoveYearlyUpsell
 
-// Module 7026 (MobileBoostingExperiment)
+// Module 7018 (MobileBoostingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

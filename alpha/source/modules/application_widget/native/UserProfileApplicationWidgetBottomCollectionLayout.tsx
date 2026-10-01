@@ -1,12 +1,12 @@
-// Module ID: 8683
-// Function ID: 8684
+// Module ID: 8675
+// Function ID: 8676
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 4866, 576, 8589, 8677, 4862, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 8581, 8669, 4841, 2]
 // Exports: default
 
-// Module 8683 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 8675 (UserProfileApplicationWidgetBottomCollectionLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8589 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,23 +31,23 @@ function CollectionItem(arg0) {
     let tmp12 = React4;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React4(tmp3(8677).ImageSkeleton, obj6);
+    tmp11 = React4(tmp3(8669).ImageSkeleton, obj6);
     tmp12 = React4;
   }
   const items1 = [tmp11, ];
   const obj7 = { style: tmp.itemContent, children: null };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp12Result = tmp12(tmp3(4862).Text, obj8);
+    let tmp12Result = tmp12(tmp3(4841).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(8677).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(8669).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   const items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp12Result2 = tmp12(tmp3(4862).Text, obj9);
+    let tmp12Result2 = tmp12(tmp3(4841).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(8677).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(8669).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   obj7.children = items2;
@@ -59,7 +59,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { grid: { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_16 }, item: null, itemImage: null, itemContent: null };
 let obj3 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_16 };
 obj2.item = { width: "47%", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };

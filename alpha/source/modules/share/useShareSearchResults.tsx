@@ -1,20 +1,20 @@
-// Module ID: 10651
-// Function ID: 10652
+// Module ID: 10643
+// Function ID: 10644
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 5786, 502, 6018, 10648, 10652, 504, 10658, 10033, 10647, 2]
+// Dependencies: [32, 19, 5775, 502, 6007, 10640, 10644, 504, 10650, 10025, 10639, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 10651 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 10647 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 10652 */;
+// Module 10643 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 10639 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 10644 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FrecencyStore from "FrecencyStore" /* 6018 */;
+import FrecencyStore from "FrecencyStore" /* 6007 */;
 
 require = fn;
-const ALLOWED_TYPES = fn(10648).ALLOWED_TYPES;
+const ALLOWED_TYPES = fn(10640).ALLOWED_TYPES;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/share/useShareSearchResults.tsx");
 

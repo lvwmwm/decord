@@ -1,10 +1,10 @@
-// Module ID: 2040
-// Function ID: 2041
+// Module ID: 2039
+// Function ID: 2040
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2040 (Timers)
+// Module 2039 (Timers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 class Timeout {

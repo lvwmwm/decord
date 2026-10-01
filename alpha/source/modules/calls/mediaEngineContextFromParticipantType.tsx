@@ -1,12 +1,12 @@
-// Module ID: 9108
-// Function ID: 9109
+// Module ID: 9102
+// Function ID: 9103
 // Name: mediaEngineContextFromParticipantType
-// Dependencies: [4887, 4891, 2]
+// Dependencies: [4866, 4870, 2]
 // Exports: default
 
-// Module 9108 (mediaEngineContextFromParticipantType)
-import CallConstants from "CallConstants" /* 4887 */;
-import Constants from "Constants" /* 4891 */;
+// Module 9102 (mediaEngineContextFromParticipantType)
+import CallConstants from "CallConstants" /* 4866 */;
+import Constants from "Constants" /* 4870 */;
 import size from "module_2" /* 2 */;
 
 const ParticipantTypes = CallConstants.ParticipantTypes;

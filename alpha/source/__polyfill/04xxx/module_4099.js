@@ -1,11 +1,11 @@
 // Module ID: 4099
 // Function ID: 4100
-// Dependencies: [3948, 3949]
+// Dependencies: [3947, 3948]
 // Exports: default
 
 // Module 4099
-import _typeof_mod from "module_3948" /* 3948 */;
-import requiredArgs_mod from "requiredArgs" /* 3949 */;
+import _typeof_mod from "module_3947" /* 3947 */;
+import requiredArgs_mod from "requiredArgs" /* 3948 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,13 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isWeekend(arg0) {
+export default function isSunday(arg0) {
   requiredArgs.default(1, arguments);
-  const day = _typeof.default(arg0).getDay();
-  let tmp3 = 0 === day;
-  if (!tmp3) {
-    tmp3 = 6 === day;
-  }
-  return tmp3;
+  return 0 === _typeof.default(arg0).getDay();
 };
 export default exports.default;

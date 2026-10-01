@@ -1,11 +1,11 @@
-// Module ID: 17830
-// Function ID: 17831
+// Module ID: 17865
+// Function ID: 17866
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 16390, 1115, 2]
+// Dependencies: [19, 21, 16412, 1115, 2]
 
-// Module 17830 (GuildSettingsRoleSubscriptionsPayments)
+// Module 17865 (GuildSettingsRoleSubscriptionsPayments)
 import util from "util" /* 1115 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16390 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16412 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,20 +1,20 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11134
+// Function ID: 11135
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 4509, 10579, 11110, 1074, 11131, 21, 4866, 576, 504, 11117, 11118, 5069, 4830, 11132, 1981, 1249, 11119, 1115, 11122, 4862, 11134, 2]
+// Dependencies: [19, 4508, 10571, 11114, 1074, 11135, 21, 4845, 576, 504, 11121, 11122, 5048, 4809, 11136, 1981, 1249, 11123, 1115, 11126, 4841, 11138, 2]
 
-// Module 11130 (StrangerDangerWarningBanner)
+// Module 11134 (StrangerDangerWarningBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5069 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11117 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11118 */;
-import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 11134 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11121 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11122 */;
+import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 11138 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4508 */;
 
 require = fn;
 class StrangerDangerWarningBanner {
@@ -78,11 +78,11 @@ class StrangerDangerWarningBanner {
         };
         obj2.onIgnore = function onIgnore() {
           closure_1_4();
-          const obj = channelId(11117);
-          obj.trackCtaEvent({ channelId, warningId, senderId, warningType: constants.STRANGER_DANGER, cta: channelId(11117).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM });
+          const obj = channelId(11121);
+          obj.trackCtaEvent({ channelId, warningId, senderId, warningType: constants.STRANGER_DANGER, cta: channelId(11121).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM });
         };
         obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION;
-        obj.openLazy(asyncRequireImpl(11132, dependencyMap.paths), closure_9, obj2);
+        obj.openLazy(asyncRequireImpl(11136, dependencyMap.paths), closure_9, obj2);
       };
     }, items5);
     closure_6 = callback2;
@@ -102,7 +102,7 @@ class StrangerDangerWarningBanner {
       const obj = ModalActionCreatorsDefault;
       const intl = util.intl;
       obj2.description = intl.string(util.t.DJMZX6);
-      const tmp = asyncRequireImpl(11122, dependencyMap.paths);
+      const tmp = asyncRequireImpl(11126, dependencyMap.paths);
       obj2.safetyTips = React5().map((children, index) => closure_1_10(channelId(senderId[20]).Text, { variant: "text-sm/medium", children }, index));
       const obj3 = { channelId, warningId, senderId, onBlockPressed: null };
       const arr = React5();
@@ -129,13 +129,13 @@ class StrangerDangerWarningBanner {
     return tmp8(tmp9, obj1);
   }
 }
-const SafetyWarningTypes = fn(10579).SafetyWarningTypes;
-const Constants = fn(11110);
+const SafetyWarningTypes = fn(10571).SafetyWarningTypes;
+const Constants = fn(11114);
 ({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: metroRequire, getStrangerDangerSafetyTips: closure_7 } = Constants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_9 = fn(11131).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
+let closure_9 = fn(11135).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { moreTipsHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,24 +1,24 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 16705
+// Function ID: 16706
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7214, 2045, 12025, 7499, 16683, 7498, 1074, 2052, 12024, 12047, 1366, 4557, 1115, 8013, 4555, 1485, 16655, 16684, 12052, 7528, 7546, 1110, 6943, 7902, 4879, 4877, 5073, 1981, 5076, 12688, 5510, 5560, 6077, 1101, 12044, 2]
+// Dependencies: [5, 19, 7205, 2044, 12032, 7477, 16706, 7476, 1074, 2051, 12031, 12055, 1366, 4556, 1115, 8002, 4554, 1485, 16678, 16707, 12060, 7506, 7524, 1110, 6934, 7889, 4858, 4856, 5052, 1981, 5055, 12699, 5498, 5548, 6067, 1101, 12052, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 16682 (useOnPressSearchItem)
+// Module 16705 (useOnPressSearchItem)
 import util from "util" /* 1115 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
-import LinkingDefault from "Linking" /* 4555 */;
-import ToastUtils from "ToastUtils" /* 4557 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8013 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12024 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12044 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12047 */;
+import LinkingDefault from "Linking" /* 4554 */;
+import ToastUtils from "ToastUtils" /* 4556 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8002 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12031 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12052 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12055 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7214 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchQueryStore from "SearchQueryStore" /* 12025 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7205 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SearchQueryStore from "SearchQueryStore" /* 12032 */;
 
 const require = globalThis.__r;
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
@@ -97,13 +97,13 @@ let closure_20 = async function _handleVoiceOrStageChannelConnectPress(arg0, val
     }
   }
 };
-const SearchConstants = fn(7499);
+const SearchConstants = fn(7477);
 ({ SearchMediaTypes: closure_8, SearchHistoryItemTypes: closure_9, SearchQueryTagTypes: c10 } = SearchConstants);
-const SearchNavigatorScreens = fn(16683).SearchNavigatorScreens;
-const SearchFilterAddLocations = fn(7498).SearchFilterAddLocations;
+const SearchNavigatorScreens = fn(16706).SearchNavigatorScreens;
+const SearchFilterAddLocations = fn(7476).SearchFilterAddLocations;
 const Constants = fn(1074);
 ({ Routes: map1, ComponentActions: closure_14, ME: closure_15, SearchTypes: closure_16 } = Constants);
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
+const StaticChannelRoute = fn(2051).StaticChannelRoute;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/hooks/useOnPressSearchItem.tsx");
 
@@ -556,11 +556,11 @@ export const useOnPressSearchHistoryText = function useOnPressSearchHistoryText(
     let obj = { type: constants.TEXT, text, tags };
     const type = searchContext.type;
     if (constants4.DMS === type) {
-      const result = searchContext(12024).delayUntilNavigationComplete(() => {
+      const result = searchContext(12031).delayUntilNavigationComplete(() => {
         obj = SearchPlatformActionCreatorsDefault;
         return obj.addSearchHistoryItem(closure_0, obj);
       });
-      let obj2 = searchContext(12024);
+      let obj2 = searchContext(12031);
     }
     SearchPlatformActionCreatorsDefault.updateSearchQuery(searchContext, (setTags) => {
       if (null != obj) {

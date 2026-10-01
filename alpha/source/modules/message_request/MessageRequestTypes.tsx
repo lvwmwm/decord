@@ -1,9 +1,9 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10618
+// Function ID: 10619
 // Name: MessageRequestTypes
 // Dependencies: [2]
 
-// Module 10626 (MessageRequestTypes)
+// Module 10618 (MessageRequestTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestTypes.tsx");

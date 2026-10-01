@@ -1,13 +1,13 @@
-// Module ID: 6093
-// Function ID: 6094
+// Module ID: 6083
+// Function ID: 6084
 // Name: ExpressionSourceRecord
-// Dependencies: [5, 1387, 1074, 1271, 1397, 2062, 2059, 2]
+// Dependencies: [5, 1387, 1074, 1271, 1397, 2061, 2058, 2]
 
-// Module 6093 (ExpressionSourceRecord)
+// Module 6083 (ExpressionSourceRecord)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import SetUtils from "SetUtils" /* 2062 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
+import SetUtils from "SetUtils" /* 2061 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import Record from "Record" /* 1387 */;
 

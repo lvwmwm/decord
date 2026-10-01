@@ -1,18 +1,18 @@
-// Module ID: 17869
-// Function ID: 17870
+// Module ID: 17904
+// Function ID: 17905
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2112, 502, 1364, 17870, 5784, 17871, 1241, 17872, 1271, 6735, 2]
+// Dependencies: [17, 2111, 502, 1364, 17905, 5773, 17906, 1241, 17907, 1271, 6725, 2]
 
-// Module 17869 (NativeExperimentBridgeManager)
+// Module 17904 (NativeExperimentBridgeManager)
 import _mod17 from "module_17" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import YYTextReplacementExperiment from "YYTextReplacementExperiment" /* 17870 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 17872 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import YYTextReplacementExperiment from "YYTextReplacementExperiment" /* 17905 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 17907 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 import size from "module_2" /* 2 */;
 
 function syncYYTextReplacementExperiment() {
@@ -33,8 +33,8 @@ function updateIOSExperiments() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        const result = setShouldEnableYYTextReplacement(tmp(17870).shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
-        const tmpResult = tmp(17870);
+        const result = setShouldEnableYYTextReplacement(tmp(17905).shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
+        const tmpResult = tmp(17905);
       }
     }
   }
@@ -42,8 +42,8 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      const result1 = setShouldFixPushNotificationRawPayload(tmp(5784).isIOSPushNotificationRawPayloadFixExperimentEnabled());
-      const tmpResult2 = tmp(5784);
+      const result1 = setShouldFixPushNotificationRawPayload(tmp(5773).isIOSPushNotificationRawPayloadFixExperimentEnabled());
+      const tmpResult2 = tmp(5773);
     }
   }
   obj = PlatformUtils;

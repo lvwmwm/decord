@@ -1,15 +1,15 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15468
+// Function ID: 15469
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 21, 4866, 576, 4862, 2]
+// Dependencies: [17, 21, 4845, 576, 4841, 2]
 // Exports: default
 
-// Module 15463 (CheckpointCharacterStage)
+// Module 15468 (CheckpointCharacterStage)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
+import Text_Text from "Text/Text" /* 4841 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4866 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

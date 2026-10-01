@@ -1,19 +1,19 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17357
+// Function ID: 17358
 // Name: ChannelCallManager
-// Dependencies: [9559, 5787, 9742, 4709, 4885, 4890, 9558, 6735, 2]
+// Dependencies: [9553, 5776, 9736, 4708, 4864, 4869, 9552, 6725, 2]
 
-// Module 17336 (ChannelCallManager)
-import SoundpackStore from "SoundpackStore" /* 9559 */;
-import CallStore from "CallStore" /* 5787 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 9742 */;
-import StreamerModeStore from "StreamerModeStore" /* 4709 */;
-import VoiceStateStore from "VoiceStateStore" /* 4885 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4890 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+// Module 17357 (ChannelCallManager)
+import SoundpackStore from "SoundpackStore" /* 9553 */;
+import CallStore from "CallStore" /* 5776 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 9736 */;
+import StreamerModeStore from "StreamerModeStore" /* 4708 */;
+import VoiceStateStore from "VoiceStateStore" /* 4864 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4869 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 let require = fn;
-const SoundUtils = fn(9558);
+const SoundUtils = fn(9552);
 let closure_8 = SoundUtils.createSoundForPack("call_calling", SoundpackStore.getSoundpack());
 class ChannelCallManager extends tmp2 {
   constructor() {

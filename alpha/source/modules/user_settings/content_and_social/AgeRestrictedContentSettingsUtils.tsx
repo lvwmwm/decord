@@ -1,15 +1,15 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8788
+// Function ID: 8789
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1372, 2021, 5078, 8797, 5932, 5933, 2]
+// Dependencies: [1372, 2021, 5057, 8789, 5921, 5922, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 8796 (AgeRestrictedContentSettingsUtils)
+// Module 8788 (AgeRestrictedContentSettingsUtils)
 import UserSettings from "UserSettings" /* 2021 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5078 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5932 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5933 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 8797 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5057 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5922 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 8789 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

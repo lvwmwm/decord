@@ -1,15 +1,15 @@
-// Module ID: 10863
-// Function ID: 10864
+// Module ID: 10859
+// Function ID: 10860
 // Name: BadgeUtils
-// Dependencies: [7823, 7824, 1115, 7833, 2011, 2]
+// Dependencies: [7810, 7811, 1115, 7820, 2011, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 10863 (BadgeUtils)
+// Module 10859 (BadgeUtils)
 import util from "util" /* 1115 */;
 import StringUtils from "StringUtils" /* 2011 */;
-import Constants from "Constants" /* 7823 */;
-import BadgeId from "BadgeId" /* 7824 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7833 */;
+import Constants from "Constants" /* 7810 */;
+import BadgeId from "BadgeId" /* 7811 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7820 */;
 import size from "module_2" /* 2 */;
 
 function isPinnedBadge(badge_id) {

@@ -1,15 +1,15 @@
-// Module ID: 10645
-// Function ID: 10646
+// Module ID: 10637
+// Function ID: 10638
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 2045, 4499, 2048, 1074, 504, 9491, 2070, 1370, 2]
+// Dependencies: [19, 2044, 4498, 2047, 1074, 504, 9485, 2069, 1370, 2]
 // Exports: default
 
-// Module 10645 (useFavoritesGuildChannelFilter)
-import sortByMatchScore from "sortByMatchScore" /* 9491 */;
+// Module 10637 (useFavoritesGuildChannelFilter)
+import sortByMatchScore from "sortByMatchScore" /* 9485 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
-import FavoriteStore from "FavoriteStore" /* 2048 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;
@@ -37,18 +37,18 @@ export default function useFavoritesGuildChannelFilter() {
         tmp15 = tmp17;
       }
       return tmp15;
-    } else if (tmp(9491).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp(9485).AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (tmp(9491).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp(9491).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp(9485).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp(9485).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp(1370).assertNever(type);
         }
       }
       let canResult = PermissionStore.can(Permissions.VIEW_CHANNEL, type.record);
       if (canResult) {
-        canResult = tmp(2070).isFavoritableChannel(type.record);
-        const tmpResult2 = tmp(2070);
+        canResult = tmp(2069).isFavoritableChannel(type.record);
+        const tmpResult2 = tmp(2069);
       }
       if (canResult) {
         canResult = null == stateFromStores[type.record.id];

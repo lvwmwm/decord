@@ -1,17 +1,17 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 11948
+// Function ID: 11949
 // Name: VoiceMessageUtils
-// Dependencies: [5, 1993, 11645, 11646, 1074, 3, 11942, 206, 12, 4921, 1241, 4831, 1364, 2]
+// Dependencies: [5, 1993, 11653, 11654, 1074, 3, 11949, 206, 12, 4900, 1241, 4810, 1364, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11941 (VoiceMessageUtils)
+// Module 11948 (VoiceMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import HapticUtils from "HapticUtils" /* 4831 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4921 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 11942 */;
+import HapticUtils from "HapticUtils" /* 4810 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4900 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 11949 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import apply from "module_12" /* 12 */;
@@ -267,9 +267,9 @@ let closure_28 = async function _stopAndCacheAudioRecording(arg0, value) {
     }
   }
 };
-const VoiceMessagesUIStore = fn(11645);
+const VoiceMessagesUIStore = fn(11653);
 ({ addVoiceMessageWave: hasOwnProperty, resetVoiceMessageState: metroRequire, setSavedVoiceMessageUploadData: closure_7, setVoiceMessageRecordingId: closure_8, setVoiceMessageRecordingState: closure_9, setVoiceMessageStartTimeMillis: c10, useVoiceMessagesUIStore: closure_11, VoiceMessageRecordingStatus: closure_12 } = VoiceMessagesUIStore);
-const VoiceMessageConstants = fn(11646);
+const VoiceMessageConstants = fn(11654);
 ({ WAVEFORM_WAVE_MAX_VALUE: map1, VOICE_RECORDING_MIN_DB: closure_14, VOICE_RECORDING_MAX_DB: closure_15, WAVEFORM_MAX_SAMPLES: closure_16, VOICE_RECORDING_MAX_DURATION_MILLIS: closure_17 } = VoiceMessageConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let c19 = null;

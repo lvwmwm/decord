@@ -1,19 +1,19 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16838
+// Function ID: 16839
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4866, 576, 5634, 16816, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 5623, 16839, 2]
 // Exports: default
 
-// Module 16815 (FriendRequestsSettingsScreen)
+// Module 16838 (FriendRequestsSettingsScreen)
 import nativeDefault from "native" /* 576 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5634 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 16816 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5623 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 16839 */;
 import noop from "module_19" /* 19 */;
 
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

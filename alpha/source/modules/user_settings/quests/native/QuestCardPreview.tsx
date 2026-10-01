@@ -1,16 +1,16 @@
-// Module ID: 14907
-// Function ID: 14908
+// Module ID: 14913
+// Function ID: 14914
 // Name: QuestCardPreview
-// Dependencies: [21, 10957, 5956, 14908, 1115, 14825, 576, 2]
+// Dependencies: [21, 10958, 5945, 14914, 1115, 14831, 576, 2]
 // Exports: QuestCardPreview
 
-// Module 14907 (QuestCardPreview)
+// Module 14913 (QuestCardPreview)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import QuestTypes from "QuestTypes" /* 5956 */;
-import QuestCard from "QuestCard" /* 14825 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14908 */;
+import QuestTypes from "QuestTypes" /* 5945 */;
+import QuestCard from "QuestCard" /* 14831 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14914 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -18,10 +18,10 @@ const result = size.fileFinishedImporting("modules/user_settings/quests/native/Q
 
 export const QuestCardPreview = function QuestCardPreview(quest) {
   quest = quest.quest;
-  return jsx(quest(10957).QuestContentImpressionTrackerNative, {
+  return jsx(quest(10958).QuestContentImpressionTrackerNative, {
     questOrQuests: quest,
-    questContent: quest(5956).QuestContent.INTERNAL_PREVIEW_TOOL,
-    sourceQuestContent: quest(5956).QuestContent.INTERNAL_PREVIEW_TOOL,
+    questContent: quest(5945).QuestContent.INTERNAL_PREVIEW_TOOL,
+    sourceQuestContent: quest(5945).QuestContent.INTERNAL_PREVIEW_TOOL,
     trackGuildAndChannelMetadata: false,
     children() {
       const obj = { title: null, children: null };

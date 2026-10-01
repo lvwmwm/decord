@@ -1,9 +1,9 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7265
+// Function ID: 7266
 // Name: PoggermodeConstants
 // Dependencies: [2]
 
-// Module 7287 (PoggermodeConstants)
+// Module 7265 (PoggermodeConstants)
 import size from "module_2" /* 2 */;
 
 let obj = { LEVEL_1: 0, [0]: "LEVEL_1", LEVEL_2: 1, [1]: "LEVEL_2", LEVEL_3: 2, [2]: "LEVEL_3", LEVEL_4: 3, [3]: "LEVEL_4", LEVEL_5: 4, [4]: "LEVEL_5" };

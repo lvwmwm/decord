@@ -1,18 +1,17 @@
-// Module ID: 9759
-// Function ID: 9760
+// Module ID: 9753
+// Function ID: 9754
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4499, 9741, 1074, 504, 7653, 9760, 2]
-// Exports: canEnableRaidAlerts, canReportRaid, useCanEnableRaidAlerts, useCanReportRaid, useShowMentionRaidLimitUpsell
+// Dependencies: [4498, 9735, 1074, 504, 7641, 2]
+// Exports: canEnableRaidAlerts, canReportRaid, useCanEnableRaidAlerts, useCanReportRaid
 
-// Module 9759 (GuildAntiRaidPermissionsUtils)
-import PermissionStore from "PermissionStore" /* 4499 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 9741 */;
+// Module 9753 (GuildAntiRaidPermissionsUtils)
+import PermissionStore from "PermissionStore" /* 4498 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 9735 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(1074);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, Permissions: hasOwnProperty } = Constants);
+const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidPermissionsUtils.tsx");
 
@@ -21,7 +20,7 @@ export const canReportRaid = function canReportRaid(guild, PermissionStore) {
   if (PermissionStore === undefined) {
     obj = PermissionStore;
   }
-  let canResult = obj.can(constants.BAN_MEMBERS, guild);
+  let canResult = obj.can(Permissions.BAN_MEMBERS, guild);
   if (!canResult) {
     canResult = obj.can(tmp.KICK_MEMBERS, guild);
   }
@@ -39,7 +38,7 @@ export const useCanReportRaid = function useCanReportRaid(guild) {
   const items1 = [guild];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
     if (PermissionStore !== undefined) {
-      return obj.can(constants.BAN_MEMBERS, tmp) || obj.can(constants.KICK_MEMBERS, tmp) || obj.can(constants.MODERATE_MEMBERS, tmp) || obj.can(constants.MANAGE_GUILD, tmp);
+      return obj.can(Permissions.BAN_MEMBERS, tmp) || obj.can(Permissions.KICK_MEMBERS, tmp) || obj.can(Permissions.MODERATE_MEMBERS, tmp) || obj.can(Permissions.MANAGE_GUILD, tmp);
     }
   }, items1);
   const obj = require("initialize");
@@ -55,8 +54,8 @@ export const useCanReportRaid = function useCanReportRaid(guild) {
   }, items3);
   let hasDetectedActivityResult = null != stateFromStores1;
   if (hasDetectedActivityResult) {
-    hasDetectedActivityResult = tmp(7653).hasDetectedActivity(stateFromStores1);
-    const tmpResult = tmp(7653);
+    hasDetectedActivityResult = tmp(7641).hasDetectedActivity(stateFromStores1);
+    const tmpResult = tmp(7641);
   }
   let tmp6 = !hasDetectedActivityResult;
   if (!hasDetectedActivityResult) {
@@ -69,7 +68,7 @@ export const canEnableRaidAlerts = function canEnableRaidAlerts(arg0) {
   if (arg1 === undefined) {
     obj = PermissionStore;
   }
-  return obj.can(constants.MANAGE_GUILD, arg0);
+  return obj.can(Permissions.MANAGE_GUILD, arg0);
 };
 export const useCanEnableRaidAlerts = function useCanEnableRaidAlerts(arg0) {
   _require = arg0;
@@ -77,27 +76,7 @@ export const useCanEnableRaidAlerts = function useCanEnableRaidAlerts(arg0) {
   const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
     if (PermissionStore !== undefined) {
-      return PermissionStore.can(constants.MANAGE_GUILD, tmp);
+      return PermissionStore.can(Permissions.MANAGE_GUILD, tmp);
     }
   }, items1);
-};
-export const useShowMentionRaidLimitUpsell = function useShowMentionRaidLimitUpsell(id) {
-  _require = id;
-  const items = [PermissionStore];
-  const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    if (PermissionStore !== undefined) {
-      return PermissionStore.can(constants.MANAGE_GUILD, tmp);
-    }
-  }, items1);
-  const obj = require("initialize");
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = closure_4;
-  }
-  const obj2 = require("guild_automod/ExperimentUtils");
-  return require("guild_automod/ExperimentUtils").useIsMentionRaidExperimentEnabled(id, false) && stateFromStores;
 };

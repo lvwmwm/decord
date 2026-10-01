@@ -1,13 +1,14 @@
-// Module ID: 4857
-// Function ID: 4858
+// Module ID: 4836
+// Function ID: 4837
 // Name: GameModeConstants
 // Dependencies: [2]
 
-// Module 4857 (GameModeConstants)
+// Module 4836 (GameModeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_mode/GameModeConstants.tsx");
 
 export const DefaultGameModeSettings = { enabled: false, promptSuppressedGameIds: [] };
 export const GAME_MODE_FRAME_RATE_CAP = 10;
+export const GAME_MODE_OVERLAY_FRAME_RATE_CAP = 30;
 export const GAME_MODE_FOCUS_DEBOUNCE_MS = 2000;

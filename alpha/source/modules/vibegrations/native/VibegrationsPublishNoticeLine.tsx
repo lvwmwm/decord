@@ -1,13 +1,13 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16610
+// Function ID: 16611
 // Name: VibegrationsPublishNoticeLine
-// Dependencies: [19, 21, 16510, 16589, 4862, 1115, 16590, 3715, 2]
+// Dependencies: [19, 21, 16531, 16611, 4841, 1115, 16612, 3714, 2]
 // Exports: default
 
-// Module 16588 (VibegrationsPublishNoticeLine)
-import _modDef3715 from "module_3715" /* 3715 */;
-import useVibegrationsPublishAction from "useVibegrationsPublishAction" /* 16510 */;
-import vibegrationsPublishCard from "vibegrationsPublishCard" /* 16590 */;
+// Module 16610 (VibegrationsPublishNoticeLine)
+import _modDef3714 from "module_3714" /* 3714 */;
+import useVibegrationsPublishAction from "useVibegrationsPublishAction" /* 16531 */;
+import vibegrationsPublishCard from "vibegrationsPublishCard" /* 16612 */;
 import noop from "module_19" /* 19 */;
 
 const useVibegrationsPublishActionDefault = useVibegrationsPublishAction;
@@ -15,7 +15,7 @@ const useVibegrationsPublishActionDefault = useVibegrationsPublishAction;
 require = fn;
 function PublishedNoticeLine(projectId) {
   projectId = projectId.projectId;
-  const context = noop.useContext(projectId(16510).VibegrationsPublishActionContext);
+  const context = noop.useContext(projectId(16531).VibegrationsPublishActionContext);
   const items = [context, projectId];
   const callback = noop.useCallback(() => {
     if (null != context) {
@@ -24,9 +24,9 @@ function PublishedNoticeLine(projectId) {
   }, items);
   let obj = { variant: "text-md/normal", color: "text-default", children: null };
   const intl = projectId(1115).intl;
-  const tmp2 = context(16589)(projectId);
-  obj.children = intl.format(projectId(16590).publishNoticeMessage(projectId.notice), { name: tmp2, onOpen: callback });
-  return jsx(projectId(4862).Text, { variant: "text-md/normal", color: "text-default", children: null });
+  const tmp2 = context(16611)(projectId);
+  obj.children = intl.format(projectId(16612).publishNoticeMessage(projectId.notice), { name: tmp2, onOpen: callback });
+  return jsx(projectId(4841).Text, { variant: "text-md/normal", color: "text-default", children: null });
 }
 function OutdatedNoticeLine(projectId) {
   const tmp3 = useVibegrationsPublishActionDefault(projectId.projectId);
@@ -43,8 +43,8 @@ function OutdatedNoticeLine(projectId) {
               return closure_0.run("outdated_notice");
             }
       };
-      obj2.children = intl.format(_modDef3715.AcWS6c, obj3);
-      tmp4 = jsx(tmp5(4862).Text, { variant: "text-xs/normal", color: "text-muted", children: null });
+      obj2.children = intl.format(_modDef3714.AcWS6c, obj3);
+      tmp4 = jsx(tmp5(4841).Text, { variant: "text-xs/normal", color: "text-muted", children: null });
     }
     obj = vibegrationsPublishCard;
   }

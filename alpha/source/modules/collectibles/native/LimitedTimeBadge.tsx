@@ -1,22 +1,22 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8485
+// Function ID: 8486
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2112, 1182, 21, 4866, 576, 1115, 504, 4715, 7055, 4862, 2]
+// Dependencies: [19, 17, 2111, 1182, 21, 4845, 576, 1115, 504, 4714, 7047, 4841, 2]
 // Exports: default
 
-// Module 8493 (LimitedTimeBadge)
+// Module 8485 (LimitedTimeBadge)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4715 */;
-import useCountdownDefault from "useCountdown" /* 7055 */;
+import shared from "shared" /* 4714 */;
+import useCountdownDefault from "useCountdown" /* 7047 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { root: { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 }, backgroundDarkMode: null, backgroundLightMode: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 };
 obj2.backgroundDarkMode = { backgroundColor: nativeDefault.colors.WHITE };
@@ -76,7 +76,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
     const obj7 = { daysLeft: days };
     obj6.accessibilityLabel = intl7.formatToPlainString(tmp2(1115).t.TlZULM, obj7);
     obj6.children = sum;
-    obj5.children = jsx(tmp2(4862).Text, { color: str2, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
+    obj5.children = jsx(tmp2(4841).Text, { color: str2, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
     return <View style={null}>{null}</View>;
   }
 };

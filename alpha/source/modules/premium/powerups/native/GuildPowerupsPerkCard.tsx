@@ -1,25 +1,25 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12278
+// Function ID: 12279
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4866, 576, 4797, 4715, 6597, 12267, 12222, 5489, 4862, 12223, 1177, 1115, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4776, 4714, 6587, 12275, 12230, 5477, 4841, 12231, 1177, 1115, 2]
 // Exports: default
 
-// Module 12270 (GuildPowerupsPerkCard)
+// Module 12278 (GuildPowerupsPerkCard)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4715 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import LinearGradientDefault from "LinearGradient" /* 5489 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6597 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12223 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12267 */;
+import shared from "shared" /* 4714 */;
+import useThemeDefault from "useTheme" /* 4776 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import LinearGradientDefault from "LinearGradient" /* 5477 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6587 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12231 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12275 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_16 }, card: { padding: 0, overflow: "hidden" }, contentContainer: null, imageContainer: null, gradient: null, headerContainer: null, badge: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.contentContainer = { gap: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_16 };
@@ -56,8 +56,8 @@ export default function GuildPowerupsPerkCard(arg0) {
       imageUrl = "";
     }
     const obj5 = { imageUrl, isAnimated: isImageAnimated };
-    riveComponent = React4(tmp3(12222), obj5);
-    const tmp3Result2 = tmp3(12222);
+    riveComponent = React4(tmp3(12230), obj5);
+    const tmp3Result2 = tmp3(12230);
   }
   const items1 = [riveComponent, React4(LinearGradientDefault, { colors: tmp9, style: tmp2.gradient })];
   obj4.children = items1;

@@ -1,25 +1,25 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15864
+// Function ID: 15865
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 15849, 1074, 15839, 21, 15851, 6094, 4866, 576, 4725, 1613, 15852, 15853, 15854, 15935, 16122, 4596, 15855, 15836, 15841, 15838, 16204, 4728, 11232, 2]
+// Dependencies: [32, 19, 17, 15865, 1074, 15855, 21, 15867, 6084, 4845, 576, 4724, 1613, 15868, 15869, 15870, 15951, 16142, 4595, 15871, 15852, 15857, 15854, 16224, 4727, 11236, 2]
 
-// Module 15848 (MainChannels)
+// Module 15864 (MainChannels)
 import nativeDefault from "native" /* 576 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4728 */;
-import useRefValueDefault from "useRefValue" /* 6094 */;
-import StartupProfiler from "StartupProfiler" /* 11232 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 15836 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 15841 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 15851 */;
-import NativeFreezeScreens from "NativeFreezeScreens" /* 15853 */;
-import messages_MessagesDefault from "messages/Messages" /* 15854 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15855 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 15935 */;
-import HomePanelContent from "HomePanelContent" /* 16122 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16204 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4727 */;
+import useRefValueDefault from "useRefValue" /* 6084 */;
+import StartupProfiler from "StartupProfiler" /* 11236 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 15852 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 15857 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 15867 */;
+import NativeFreezeScreens from "NativeFreezeScreens" /* 15869 */;
+import messages_MessagesDefault from "messages/Messages" /* 15870 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15871 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 15951 */;
+import HomePanelContent from "HomePanelContent" /* 16142 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16224 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 15849 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 15865 */;
 
 const StartupProfilerDefault = StartupProfiler;
 
@@ -44,7 +44,7 @@ function LeftPanelContent(panelStyles) {
   if (tmp8) {
     tmp11 = current;
   }
-  isChatBesideChannelList = tmp10(4725)().isChatBesideChannelList;
+  isChatBesideChannelList = tmp10(4724)().isChatBesideChannelList;
   top = tmp10(1613)().top;
   const items1 = [tmp, top];
   const memo = obj2.useMemo(() => {
@@ -61,7 +61,7 @@ function LeftPanelContent(panelStyles) {
     items[1] = sideTablet;
     return items;
   }, items2);
-  const sum = DM_WIDTH + tmp10(15852)();
+  const sum = DM_WIDTH + tmp10(15868)();
   let num = 0;
   if (tmp8) {
     num = 1;
@@ -86,7 +86,7 @@ function LeftPanelContent(panelStyles) {
     const items6 = [memo, panelStyles];
     obj6.style = items6;
     obj6.children = tmp15Result;
-    tmp16Result = tmp16(tmp10(4596).View, obj6);
+    tmp16Result = tmp16(tmp10(4595).View, obj6);
   }
   items5[1] = tmp16Result;
   obj4.children = items5;
@@ -109,7 +109,7 @@ function LeftPanelHomeDrawerContainer() {
     if (homeDrawerContext.enableHome) {
       tmp7 = null;
       if (tmp5 > 0) {
-        const obj4 = { position: tmp4, openAt: tmp5, closedAt: 0, resolveOpenName: resolveHomeDrawerName, resolveClosedName: tmp(15838).getBaseScreenName };
+        const obj4 = { position: tmp4, openAt: tmp5, closedAt: 0, resolveOpenName: resolveHomeDrawerName, resolveClosedName: tmp(15854).getBaseScreenName };
         tmp7 = closure_1_11(JankSlidingSurfaceReporterDefault, obj4);
       }
     }
@@ -125,10 +125,10 @@ get_ActivityIndicator = fn(17);
 const Constants = fn(1074);
 const DM_WIDTH = Constants.DM_WIDTH;
 const ME = Constants.ME;
-const HOME_DRAWER_SCREEN = fn(15839).HOME_DRAWER_SCREEN;
+const HOME_DRAWER_SCREEN = fn(15855).HOME_DRAWER_SCREEN;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { fill: { flex: 1 }, sideContainer: null, side: null, sideTablet: null };
 const rect = { position: "absolute", top: 0, left: DM_WIDTH, bottom: 0, right: 0, flexDirection: "row", borderLeftWidth: 1, borderTopWidth: 1, borderColor: nativeDefault.colors.APP_FRAME_BORDER, borderTopLeftRadius: nativeDefault.radii.xl };
 obj.sideContainer = rect;

@@ -1,16 +1,16 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 9681
+// Function ID: 9682
 // Name: SingleVideoCall
-// Dependencies: [19, 9028, 21, 1613, 6779, 9099, 1177, 9079, 5067, 7819, 2]
+// Dependencies: [19, 9022, 21, 1613, 6769, 9093, 1177, 9073, 5046, 7806, 2]
 // Exports: default
 
-// Module 9687 (SingleVideoCall)
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5067 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7819 */;
+// Module 9681 (SingleVideoCall)
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5046 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7806 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const ChannelCallStore = fn(9028);
+const ChannelCallStore = fn(9022);
 ({ resetFocus: closure_4, toggleFocus: hasOwnProperty } = ChannelCallStore);
 const jsx = fn(21).jsx;
 const size = fn(2);

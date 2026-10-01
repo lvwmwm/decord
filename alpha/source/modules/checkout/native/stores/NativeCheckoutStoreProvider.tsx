@@ -1,14 +1,14 @@
-// Module ID: 10472
-// Function ID: 10473
+// Module ID: 10464
+// Function ID: 10465
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7040, 1074, 4845, 1085, 21, 4866, 6106, 8866, 573, 7045, 7046, 6085, 1255, 1231, 5494, 10473, 1241, 10475, 2]
+// Dependencies: [5, 32, 19, 17, 7032, 1074, 4824, 1085, 21, 4845, 6096, 8858, 573, 7037, 7038, 6075, 1255, 1231, 5482, 10465, 1241, 10467, 2]
 // Exports: default
 
-// Module 10472 (NativeCheckoutStoreProvider)
+// Module 10464 (NativeCheckoutStoreProvider)
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10473 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10465 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ require = fn;
 function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: asyncGeneratorStep, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
-  const contextMetadata = order(6106)(() => {
+  const contextMetadata = order(6096)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -32,7 +32,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj3 = { message: "Checkout session ID: " + id };
     return { loadId: id, startTime: Date.now() };
   });
-  redux = order(6106)(() => {
+  redux = order(6096)(() => {
     const obj = {};
     const merged = Object.assign(View);
     obj.load_id = contextMetadata.loadId;
@@ -40,7 +40,7 @@ function NativeCheckoutStoreProvider(children) {
     return obj;
   });
   value = _slicedToArray(noop.useState(() => React5({ order, checkoutInitParameters, contextMetadata, analyticsFields, paymentGateway: dependencyMap, orderRequired, onOrderRetryCancellation, initialSubscriptionFacet })), 1)[0];
-  order(5494)(() => {
+  order(5482)(() => {
     if (null != View) {
       const result = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
       const obj3 = {};
@@ -84,21 +84,21 @@ function NativeCheckoutStoreProvider(children) {
       const obj2 = { checkoutSucceeded: tmp2, order: null };
       ({ id: obj3.id, status: obj3.status } = orderRecord);
       obj2.order = { id: null, status: null };
-      checkoutInitParameters(10475).discardDraftOrder(obj2);
-      const obj = checkoutInitParameters(10475);
+      checkoutInitParameters(10467).discardDraftOrder(obj2);
+      const obj = checkoutInitParameters(10467);
       const obj5 = { id: null, status: null };
     }
   }, items1);
   return <contextMetadata value={value}><redux.Provider value={value}>{arg0.children}</redux.Provider></contextMetadata>;
 }
 const View = fn(17).View;
-const NativeCheckoutStore = fn(7040);
+const NativeCheckoutStore = fn(7032);
 ({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ItemPurchaseType = fn(4845).ItemPurchaseType;
+const ItemPurchaseType = fn(4824).ItemPurchaseType;
 const PaymentGateways = fn(1085).PaymentGateways;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_14 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx");
@@ -107,7 +107,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   orderRequired = orderRequired.orderRequired;
   _require = orderRequired;
   ({ skuIds, paymentGateway } = orderRequired);
-  const isGift = orderRequired.isGift;
+  let isGift = orderRequired.isGift;
   const onOrderCreated = orderRequired.onOrderCreated;
   const activeSubscription = orderRequired.activeSubscription;
   const defaultPlans = orderRequired.defaultPlans;
@@ -153,22 +153,83 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
       paymentGateway(isGift[12]).dispatch({ type: "IAP_CHECKOUT_END" });
     };
   }, []);
-  onOrderCreated(function*(arg0) {
-    const obj5 = { orderLineItems: closure_129_0, paymentGateway, isGift, subscriptionFacet: closure_129_1, externalGatewayFacet, countryCode: null };
-    if (country != null) {
-      country = country.country;
+  onOrderCreated(function*(arg0, value) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v2) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            isGift = tmp5;
+            paymentGateway = tmp2;
+            closure_129_0 = undefined;
+            closure_129_1 = undefined;
+            ({ orderLineItems: closure_129_0, subscriptionFacet: closure_129_1 } = closure_0);
+            closure_129_2 = undefined;
+            v2 = 1;
+            c4 = 1;
+            return { value: "flex", done: null };
+          }
+        } else if (1 === tmp5) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let country;
+            const obj5 = { orderLineItems: closure_129_0, paymentGateway, isGift, subscriptionFacet: closure_129_1, externalGatewayFacet, countryCode: null };
+            if (country != null) {
+              country = country.country;
+            }
+            obj5.countryCode = country;
+            v2 = 2;
+            c4 = 1;
+            const obj7 = { value: closure_0(isGift[13]).createOrder(obj5), done: false };
+            return obj7;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          closure_129_2 = value;
+          _undefined(closure_129_2);
+          if (null != v2) {
+            v2(closure_129_2);
+          }
+          closure_1_10(false);
+          c4 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp23) {
+        c4 = tmp;
+        throw tmp23;
+      }
     }
-    obj5.countryCode = country;
-    closure_129_2 = yield closure_0(isGift[13]).createOrder(obj5);
-    _undefined(closure_129_2);
-    if (null != v2) {
-      v2(closure_129_2);
-    }
-    closure_1_10(false);
-    yield "HermesInternal";
-    paymentGateway = tmp2;
-    ({ orderLineItems: closure_129_0, subscriptionFacet: closure_129_1 } = closure_0);
-    return "flex";
   });
   let items = [paymentGateway, onOrderCreated, isGift, mobileStoreFront, initialExternalGatewayFacet];
   callback = obj.useCallback(function() {
@@ -261,7 +322,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     let tmp17 = tmp18;
   } else {
     let obj3 = { checkoutInitParameters: null, order: null, paymentGateway: null, onOrderRetryCancellation: null, orderRequired: null, initialSubscriptionFacet: null, checkoutAnalyticsFields: null, analyticsInitialStep: null, children: null };
-    const obj4 = { skuIds, isGift, activeSubscription, referralTrialOfferId: null };
+    let obj4 = { skuIds, isGift, activeSubscription, referralTrialOfferId: null };
     obj3.checkoutInitParameters = obj4;
     obj3.order = tmp3;
     obj3.paymentGateway = paymentGateway;

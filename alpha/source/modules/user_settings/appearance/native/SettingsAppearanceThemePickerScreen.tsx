@@ -1,27 +1,27 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15025
+// Function ID: 15026
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [32, 19, 17, 4683, 1227, 1183, 1182, 1184, 1185, 1085, 21, 4866, 576, 1364, 1115, 15020, 11067, 15022, 1479, 563, 4794, 1186, 1230, 4568, 6106, 14912, 1486, 6779, 6799, 6139, 9282, 4596, 4713, 4682, 4867, 4870, 4570, 7491, 4862, 5632, 6138, 14913, 15024, 9283, 15030, 15042, 15051, 6740, 9038, 2]
+// Dependencies: [32, 19, 17, 4682, 1227, 1183, 1182, 1184, 1185, 1085, 21, 4845, 576, 1364, 1115, 15026, 11071, 15028, 1479, 563, 4773, 1186, 1230, 4567, 6096, 14918, 1486, 6769, 6789, 6129, 9276, 4595, 4712, 4681, 4846, 4849, 4569, 7469, 4841, 5621, 6128, 14919, 15030, 9277, 15036, 15048, 15057, 6730, 9032, 2]
 // Exports: default
 
-// Module 15019 (SettingsAppearanceThemePickerScreen)
+// Module 15025 (SettingsAppearanceThemePickerScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4596 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import timing from "timing" /* 4867 */;
-import timingPresets from "timingPresets" /* 4870 */;
-import Pressables from "Pressables" /* 5632 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 11067 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14912 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14913 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 15020 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15022 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import timing from "timing" /* 4846 */;
+import timingPresets from "timingPresets" /* 4849 */;
+import Pressables from "Pressables" /* 5621 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 11071 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14918 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14919 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 15026 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15028 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4683 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4682 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
@@ -36,7 +36,7 @@ const ThemeConstants = fn(1185);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-let createStyles = fn(4866);
+let createStyles = fn(4845);
 let obj2 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_24, marginBottom: null };
 const PlatformUtils = fn(1364);
 let num = 0;
@@ -56,52 +56,52 @@ let closure_19 = items.map((item) => {
   return internal.resolveSemanticColor(item, nativeDefault.colors.CARD_SECONDARY_BG);
 });
 let closure_20 = items.map((item, index) => index);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj6 = { width: "100%", gap: nativeDefault.space.PX_16, alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
 let closure_21 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_22 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj10 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 let closure_23 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj12 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_24 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj14 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST };
 let closure_25 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj16 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_26 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_DEFAULT }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 let obj18 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_27 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj20 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_28 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_SUBTLE }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj22 = { color: nativeDefault.colors.TEXT_SUBTLE };
 let closure_29 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_MUTED }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj24 = { color: nativeDefault.colors.TEXT_MUTED };
 let closure_30 = createStyles.createAnimatedThemedStyles({ borderColor: nativeDefault.colors.BORDER_MUTED }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj26 = { borderColor: nativeDefault.colors.BORDER_MUTED };
 let closure_31 = createStyles.createAnimatedThemedStyles({ borderColor: nativeDefault.colors.BORDER_STRONG }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj28 = { borderColor: nativeDefault.colors.BORDER_STRONG };
 let closure_32 = createStyles.createAnimatedThemedStyles({ borderColor: nativeDefault.colors.BORDER_NORMAL }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj30 = { borderColor: nativeDefault.colors.BORDER_NORMAL };
 let closure_33 = createStyles.createAnimatedThemedStyles({ tintColor: nativeDefault.colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj32 = { tintColor: nativeDefault.colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON };
 let closure_34 = createStyles.createAnimatedThemedStyles({ tintColor: nativeDefault.colors.TEXT_SUBTLE }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj34 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
 let closure_35 = createStyles.createAnimatedThemedStyles({ tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, items);
-createStyles = fn(4866);
+createStyles = fn(4845);
 const obj36 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_36 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_BRAND }, items);
 function getSegmentedControlItems() {

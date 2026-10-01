@@ -1,15 +1,15 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14345
+// Function ID: 14346
 // Name: ThemedStatusBar
-// Dependencies: [19, 1182, 502, 21, 504, 4722, 4715, 9159, 9038, 2]
+// Dependencies: [19, 1182, 502, 21, 504, 4721, 4714, 9153, 9032, 2]
 // Exports: default
 
-// Module 14337 (ThemedStatusBar)
+// Module 14345 (ThemedStatusBar)
 import initialize from "initialize" /* 504 */;
-import shared from "shared" /* 4715 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4722 */;
-import StatusBarDefault from "StatusBar" /* 9038 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9159 */;
+import shared from "shared" /* 4714 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4721 */;
+import StatusBarDefault from "StatusBar" /* 9032 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9153 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

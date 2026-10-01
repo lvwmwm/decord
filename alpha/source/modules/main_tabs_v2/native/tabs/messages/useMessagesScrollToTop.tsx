@@ -1,12 +1,12 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 15897
+// Function ID: 15898
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 4855, 4722, 10993, 1486, 2]
+// Dependencies: [19, 4834, 4721, 10997, 1486, 2]
 // Exports: default
 
-// Module 15881 (useMessagesScrollToTop)
+// Module 15897 (useMessagesScrollToTop)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 const require = fn;
 const size = fn(2);
@@ -19,7 +19,7 @@ export default function useMessagesScrollToTop(listRef) {
   const ref = noop.useRef(noop.useMemo(() => ({
     scrollToTopTimeout: -1,
     scrollToTop() {
-      if (null != obj.coerceGuildsRoute(listRefHappeningNow(10993)())) {
+      if (null != obj.coerceGuildsRoute(listRefHappeningNow(10997)())) {
         const self = this;
         if (-1 === this.scrollToTopTimeout) {
           const _setTimeout = setTimeout;

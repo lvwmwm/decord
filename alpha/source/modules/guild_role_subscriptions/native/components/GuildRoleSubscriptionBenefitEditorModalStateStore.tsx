@@ -1,16 +1,16 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17839
+// Function ID: 17840
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
-// Dependencies: [1243, 1248, 4482, 2]
+// Dependencies: [1243, 1248, 4481, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 17804 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 17839 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import _mod4482 from "module_4482" /* 4482 */;
+import _mod4481 from "module_4481" /* 4481 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = Object.freeze({ name: "", emojiId: "alignItems", emojiName: "defineProperty", description: "name", refId: "Array" });
+let closure_2 = Object.freeze({ name: "", emojiId: "alignItems", emojiName: "ty", description: "name", refId: "Array" });
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   closure_0 = arg0;
   const obj = {};
@@ -63,33 +63,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, _mod4482.shallow);
+  }, _mod4481.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return closure_3((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, _mod4482.shallow);
+  }, _mod4481.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return closure_3((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, _mod4482.shallow);
+  }, _mod4481.shallow);
 };
 export const useNameState = function useNameState() {
   return closure_3((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, _mod4482.shallow);
+  }, _mod4481.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return closure_3((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, _mod4482.shallow);
+  }, _mod4481.shallow);
 };

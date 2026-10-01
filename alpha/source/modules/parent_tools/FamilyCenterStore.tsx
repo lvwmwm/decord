@@ -1,11 +1,11 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7145
+// Function ID: 7146
 // Name: FamilyCenterStore
-// Dependencies: [32, 5081, 1073, 1372, 7154, 2059, 11, 7155, 7207, 2]
+// Dependencies: [32, 5060, 1073, 1372, 7146, 2058, 11, 7147, 2]
 
-// Module 7153 (FamilyCenterStore)
+// Module 7145 (FamilyCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7155 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7147 */;
 import _slicedToArray from "module_32" /* 32 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -53,7 +53,7 @@ function handleInitialLoad(arg0) {
     const obj = {};
     const merged = Object.assign(acc);
     const obj2 = {};
-    const merged1 = Object.assign(closure_0(2059).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(closure_0(dependencyMap[5]).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -175,7 +175,7 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       const obj = {};
       const merged = Object.assign(acc);
       const obj2 = {};
-      const merged1 = Object.assign(closure_0(2059).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(closure_0(dependencyMap[5]).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -236,7 +236,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
     const obj = {};
     const merged = Object.assign(acc);
     const obj2 = {};
-    const merged1 = Object.assign(closure_0(2059).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(closure_0(dependencyMap[5]).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -394,8 +394,8 @@ function reset() {
   c31 = null;
   c19 = false;
 }
-const getCountryCodeByAlpha2 = fn(5081).getCountryCodeByAlpha2;
-const FamilyCenterConstants = fn(7154);
+const getCountryCodeByAlpha2 = fn(5060).getCountryCodeByAlpha2;
+const FamilyCenterConstants = fn(7146);
 ({ FAMILY_CENTER_REFETCH_COOLDOWN: metroRequire, FAMILY_CENTER_SUB_ROUTES } = FamilyCenterConstants);
 const FamilyCenterSubPages = FamilyCenterConstants.FamilyCenterSubPages;
 const TeenActionDisplayType = FamilyCenterConstants.TeenActionDisplayType;
@@ -499,7 +499,7 @@ prototype["loadCache"] = function loadCache() {
       const obj = {};
       const merged = Object.assign(acc);
       const obj2 = {};
-      const merged1 = Object.assign(closure_0(2059).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(closure_0(dependencyMap[5]).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -529,18 +529,25 @@ prototype["loadCache"] = function loadCache() {
     obj[TeenActionDisplayType.PURCHASES] = 0;
     obj[TeenActionDisplayType.GIFTS] = 0;
     snapshot = teenActivityTotals.reduce((acc, item) => {
-      [tmp2, tmp3] = item.split(":");
       const tmp = _slicedToArray(item.split(":"), 2);
-      const result = closure_0(7207).displayTypeFromString(tmp2);
-      let tmp5 = acc;
-      if (undefined !== result) {
-        const obj2 = {};
+      let tmp2 = (function displayTypeFromString(arg0) {
+        const values = Object.values(closure_1_9);
+        for (const item10011 of values) {
+          if (item10011.toString() === arg0) {
+            obj.return();
+            return item10011;
+          }
+        }
+      })(tmp[0]);
+      let tmp3 = acc;
+      if (undefined !== tmp2) {
+        const obj = {};
         const merged = Object.assign(acc);
         const _parseInt = parseInt;
-        obj2[result] = parseInt(tmp3, 10);
-        tmp5 = obj2;
+        obj[tmp2] = parseInt(tmp[1], 10);
+        tmp3 = obj;
       }
-      return tmp5;
+      return tmp3;
     }, obj);
   }
 };

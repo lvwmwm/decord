@@ -1,12 +1,12 @@
-// Module ID: 14317
-// Function ID: 14318
+// Module ID: 14325
+// Function ID: 14326
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 14318, 6269, 2]
+// Dependencies: [19, 17, 21, 14326, 6259, 2]
 // Exports: default
 
-// Module 14317 (DiscordGestureHandlerRootView)
-import LegacyBaseButton from "LegacyBaseButton" /* 6269 */;
-import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14318 */;
+// Module 14325 (DiscordGestureHandlerRootView)
+import LegacyBaseButton from "LegacyBaseButton" /* 6259 */;
+import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14326 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

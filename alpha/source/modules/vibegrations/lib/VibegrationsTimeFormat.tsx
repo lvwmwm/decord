@@ -1,10 +1,10 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16663
+// Function ID: 16664
 // Name: VibegrationsTimeFormat
 // Dependencies: [2]
 // Exports: formatClockTime
 
-// Module 16640 (VibegrationsTimeFormat)
+// Module 16663 (VibegrationsTimeFormat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTimeFormat.tsx");

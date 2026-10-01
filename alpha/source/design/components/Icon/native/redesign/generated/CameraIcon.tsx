@@ -1,13 +1,13 @@
-// Module ID: 10317
-// Function ID: 10318
+// Module ID: 10309
+// Function ID: 10310
 // Name: CameraIcon
-// Dependencies: [19, 21, 576, 4560, 10318, 2]
+// Dependencies: [19, 21, 576, 4559, 10310, 2]
 // Exports: CameraIcon
 
-// Module 10317 (CameraIcon)
+// Module 10309 (CameraIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod10318 from "module_10318" /* 10318 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod10310 from "module_10310" /* 10310 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CameraIcon = function CameraIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10318, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10310, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

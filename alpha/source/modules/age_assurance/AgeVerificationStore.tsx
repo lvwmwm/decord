@@ -1,9 +1,9 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 8090
+// Function ID: 8091
 // Name: AgeVerificationStore
 // Dependencies: [1372, 510, 504, 573, 2]
 
-// Module 8101 (AgeVerificationStore)
+// Module 8090 (AgeVerificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

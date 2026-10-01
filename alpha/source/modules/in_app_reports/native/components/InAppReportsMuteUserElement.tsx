@@ -1,17 +1,17 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12683
+// Function ID: 12684
 // Name: InAppReportsMuteUserElement
-// Dependencies: [32, 19, 2045, 1074, 1084, 21, 504, 5018, 9802, 5046, 8047, 12668, 1115, 9814, 2]
+// Dependencies: [32, 19, 2044, 1074, 1084, 21, 504, 4997, 9794, 5025, 8036, 12679, 1115, 9806, 2]
 // Exports: default
 
-// Module 12672 (InAppReportsMuteUserElement)
-import NicknameUtilsDefault from "NicknameUtils" /* 5018 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5046 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8047 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9802 */;
+// Module 12683 (InAppReportsMuteUserElement)
+import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5025 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8036 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9794 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

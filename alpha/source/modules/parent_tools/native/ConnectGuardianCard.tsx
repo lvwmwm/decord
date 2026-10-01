@@ -1,23 +1,23 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14629
+// Function ID: 14630
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1372, 7154, 21, 4866, 576, 563, 7055, 14619, 14620, 6806, 4557, 1115, 2487, 5475, 9520, 4862, 5678, 5477, 12670, 5942, 2]
+// Dependencies: [19, 17, 1372, 7146, 21, 4845, 576, 563, 7047, 14625, 14626, 6796, 4556, 1115, 2486, 5463, 9514, 4841, 5667, 5465, 12681, 5931, 2]
 // Exports: ConnectGuardianCard
 
-// Module 14623 (ConnectGuardianCard)
+// Module 14629 (ConnectGuardianCard)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4557 */;
-import ClipboardUtils from "ClipboardUtils" /* 6806 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14620 */;
+import ToastUtils from "ToastUtils" /* 4556 */;
+import ClipboardUtils from "ClipboardUtils" /* 6796 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14626 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7154).FAMILY_CENTER_REQUEST_QR_CODE_URL;
+let closure_6 = fn(7146).FAMILY_CENTER_REQUEST_QR_CODE_URL;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, compactContainer: null, card: null, countdown: null, divider: null, compactDividerFlush: null, dividerLine: null, dividerText: null, buttonGroup: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.compactContainer = { alignSelf: "center", gap: nativeDefault.space.PX_16 };

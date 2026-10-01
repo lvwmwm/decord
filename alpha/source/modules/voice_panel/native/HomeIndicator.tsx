@@ -1,9 +1,9 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 9034
+// Function ID: 9035
 // Name: HomeIndicator
 // Dependencies: [19, 17, 560, 1248, 1364, 1625, 2]
 
-// Module 9040 (HomeIndicator)
+// Module 9034 (HomeIndicator)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

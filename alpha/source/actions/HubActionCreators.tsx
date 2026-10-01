@@ -1,13 +1,13 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12459
+// Function ID: 12460
 // Name: HubActionCreators
-// Dependencies: [5, 1074, 5059, 1249, 2057, 1271, 573, 2]
+// Dependencies: [5, 1074, 5038, 1249, 2056, 1271, 573, 2]
 
-// Module 12447 (HubActionCreators)
+// Module 12459 (HubActionCreators)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TypeUtils from "TypeUtils" /* 2057 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5059 */;
+import TypeUtils from "TypeUtils" /* 2056 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5038 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

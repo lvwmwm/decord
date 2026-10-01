@@ -1,10 +1,10 @@
-// Module ID: 13749
-// Function ID: 13750
+// Module ID: 13757
+// Function ID: 13758
 // Name: GlobalFramePoolLockExperiment
 // Dependencies: [1436, 2]
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 13749 (GlobalFramePoolLockExperiment)
+// Module 13757 (GlobalFramePoolLockExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const obj = { kind: "user", name: "2025-11-global-frame-pool-lock", defaultConfig: { enabled: false }, variations: null };

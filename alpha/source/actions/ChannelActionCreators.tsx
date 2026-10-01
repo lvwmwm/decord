@@ -1,28 +1,28 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4858
+// Function ID: 4859
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 4880, 2049, 2045, 4881, 1074, 9393, 1271, 6031, 4723, 4877, 5920, 573, 8017, 1241, 1101, 4715, 1115, 6937, 5288, 2]
+// Dependencies: [32, 5, 4859, 2048, 2044, 4860, 1074, 9387, 1271, 6020, 4722, 4856, 5909, 573, 8006, 1241, 1101, 4714, 1115, 6928, 5276, 2]
 
-// Module 4879 (ChannelActionCreators)
+// Module 4858 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import shared from "shared" /* 4715 */;
-import RootNavigationRef from "RootNavigationRef" /* 4723 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5920 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 8017 */;
+import shared from "shared" /* 4714 */;
+import RootNavigationRef from "RootNavigationRef" /* 4722 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5909 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 8006 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4880 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4881 */;
+import ChangelogStore from "ChangelogStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import ReadStateStore from "ReadStateStore" /* 4860 */;
 
 const require = globalThis.__r;
 
-const transitionToChannel = tmp5(4877);
+const transitionToChannel = tmp5(4856);
 require = fn;
-let closure_6 = fn(2049).createChannelRecordFromServer;
+let closure_6 = fn(2048).createChannelRecordFromServer;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AbortCodes: c10, Endpoints: closure_11, Routes: closure_12, ME: map1, CURRENT_APP_CONTEXT: closure_14, ChannelTypes: closure_15 } = Constants);
 const size = fn(2);
@@ -266,9 +266,9 @@ export default {
           fn();
         }
         if (null != obj2.getRootNavigationRef()) {
-          tmp6(4877).transitionToChannel(channel.id, { navigationReplace: true });
+          tmp6(4856).transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
-          const tmp6Result = tmp6(4877);
+          const tmp6Result = tmp6(4856);
         } else {
           const privateChannel = SelectedChannelActionCreatorsDefault.selectPrivateChannel(channel.id);
           tmp3 = channel;
@@ -518,8 +518,8 @@ export default {
         obj = channel2;
       }
       if (!tmp10) {
-        const result = name(6937).checkGuildTemplateDirty(closure_128_2);
-        name(6937);
+        const result = name(6928).checkGuildTemplateDirty(closure_128_2);
+        name(6928);
       }
       return closure_128_1;
     })();

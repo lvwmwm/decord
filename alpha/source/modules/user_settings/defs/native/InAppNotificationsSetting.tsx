@@ -1,19 +1,19 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 15250
+// Function ID: 15251
 // Name: InAppNotificationsSetting
-// Dependencies: [7612, 1074, 2021, 9751, 1115, 2813, 1241, 11211, 14212, 15246, 2]
+// Dependencies: [7590, 1074, 2021, 9745, 1115, 2812, 1241, 11215, 14220, 15251, 2]
 
-// Module 15245 (InAppNotificationsSetting)
+// Module 15250 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import _modDef2813 from "module_2813" /* 2813 */;
-import SettingsConstants from "SettingsConstants" /* 7612 */;
-import FocusModeUtils from "FocusModeUtils" /* 9751 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14212 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15246 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11211 */;
+import _modDef2812 from "module_2812" /* 2812 */;
+import SettingsConstants from "SettingsConstants" /* 7590 */;
+import FocusModeUtils from "FocusModeUtils" /* 9745 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14220 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15251 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11215 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -60,7 +60,7 @@ const obj3 = {};
 const merged1 = Object.assign(obj);
 obj3.useTitle = function useTitle() {
   const intl = util.intl;
-  return intl.string(_modDef2813.sH5mu9);
+  return intl.string(_modDef2812.sH5mu9);
 };
 obj3.useDescription = function useRedesignInAppNotificationsDescription() {
   const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
@@ -69,7 +69,7 @@ obj3.useDescription = function useRedesignInAppNotificationsDescription() {
   if (focusModeEnabled) {
     let stringResult = string(util.t.cIRG0s);
   } else {
-    stringResult = string(_modDef2813["T/zMdV"]);
+    stringResult = string(_modDef2812["T/zMdV"]);
   }
   return stringResult;
 };

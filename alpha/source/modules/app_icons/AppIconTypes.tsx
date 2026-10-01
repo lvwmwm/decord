@@ -1,9 +1,9 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8816
+// Function ID: 8817
 // Name: AppIconTypes
 // Dependencies: [2]
 
-// Module 8824 (AppIconTypes)
+// Module 8816 (AppIconTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { DEFAULT: "AppIcon" };

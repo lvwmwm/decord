@@ -1,19 +1,19 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 12119
+// Function ID: 12120
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12111, 502, 1074, 12112, 6209, 3, 1100, 1271, 1231, 12115, 510, 5059, 1364, 1249, 1370, 573, 2]
+// Dependencies: [5, 12120, 502, 1074, 12121, 6199, 3, 1100, 1271, 1231, 12123, 510, 5038, 1364, 1249, 1370, 573, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12110 (PushNotificationActionCreators)
+// Module 12119 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5059 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5038 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12111 */;
+import MultiAccountStore from "MultiAccountStore" /* 12120 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -119,8 +119,8 @@ let closure_17 = async function _getOrRefreshPushSyncToken(arg0) {
 };
 const Constants = fn(1074);
 ({ DEVICE_TOKEN: closure_7, DEVICE_VOIP_TOKEN: closure_8, Endpoints: closure_9 } = Constants);
-const MAX_PUSH_SYNC_ACCOUNTS = fn(12112).MAX_PUSH_SYNC_ACCOUNTS;
-const PushNotificationConstants = fn(6209);
+const MAX_PUSH_SYNC_ACCOUNTS = fn(12121).MAX_PUSH_SYNC_ACCOUNTS;
+const PushNotificationConstants = fn(6199);
 ({ BUNDLE_ID: closure_11, DEVICE_PUSH_VOIP_PROVIDER: closure_12, getDevicePushProvider: map1, IS_QUEST_RELEASE: closure_14 } = PushNotificationConstants);
 const logger = new LoggerDefault("PushNotificationActionCreators");
 const size = fn(2);
@@ -221,8 +221,8 @@ export default {
       } else if (arg0 !== 2) {
         closure_128_2 = value;
         if (closure_128_2.body.invalid_push_sync_tokens.length > 0) {
-          const result = v2(12115).invalidatePushSyncTokens(closure_128_2.body.invalid_push_sync_tokens);
-          v2(12115);
+          const result = v2(12123).invalidatePushSyncTokens(closure_128_2.body.invalid_push_sync_tokens);
+          v2(12123);
         }
       }
       return value;

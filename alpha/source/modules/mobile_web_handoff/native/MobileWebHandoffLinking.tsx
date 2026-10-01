@@ -1,12 +1,12 @@
-// Module ID: 6931
-// Function ID: 6932
+// Module ID: 6922
+// Function ID: 6923
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1074, 5069, 6932, 6934, 1241, 1254, 6935, 1366, 4555, 2]
+// Dependencies: [5, 502, 1074, 5048, 6923, 6925, 1241, 1254, 6926, 1366, 4554, 2]
 
-// Module 6931 (MobileWebHandoffLinking)
+// Module 6922 (MobileWebHandoffLinking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 6934 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 6925 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -89,7 +89,7 @@ let closure_10 = async function _redirectWithHandoffToken(arg0, value) {
           closure_131_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

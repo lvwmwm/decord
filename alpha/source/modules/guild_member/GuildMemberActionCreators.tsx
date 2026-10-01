@@ -1,14 +1,14 @@
-// Module ID: 6737
-// Function ID: 6738
+// Module ID: 6727
+// Function ID: 6728
 // Name: GuildMemberActionCreators
-// Dependencies: [2101, 1074, 6060, 573, 1271, 2]
+// Dependencies: [2100, 1074, 6049, 573, 1271, 2]
 // Exports: updateGuildSelfMember
 
-// Module 6737 (GuildMemberActionCreators)
+// Module 6727 (GuildMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6060 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6049 */;
+import ImpersonateStore from "ImpersonateStore" /* 2100 */;
 
 require = fn;
 const Endpoints = fn(1074).Endpoints;

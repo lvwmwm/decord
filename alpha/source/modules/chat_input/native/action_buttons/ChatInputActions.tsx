@@ -1,37 +1,37 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11927
+// Function ID: 11928
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11647, 1074, 21, 4866, 576, 5482, 7493, 4561, 6239, 4733, 1611, 11921, 7461, 5471, 5660, 1115, 10317, 5597, 10302, 11922, 5570, 9772, 11894, 11896, 7463, 1241, 4596, 7553, 11924, 4566, 11925, 11926, 11930, 2]
+// Dependencies: [32, 19, 11655, 1074, 21, 4845, 576, 5470, 7471, 4560, 6229, 4732, 1611, 11928, 7439, 5459, 5649, 1115, 10309, 5585, 10294, 11929, 5558, 9764, 11901, 11903, 7441, 1241, 4595, 7531, 11931, 4565, 11932, 11933, 11937, 2]
 
-// Module 11920 (ChatInputActions)
+// Module 11927 (ChatInputActions)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import mergeProps from "mergeProps" /* 4566 */;
-import AppsIcon from "AppsIcon" /* 5570 */;
-import ImageIcon from "ImageIcon" /* 5597 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5660 */;
-import AttachmentIcon from "AttachmentIcon" /* 9772 */;
-import PollsIcon from "PollsIcon" /* 10302 */;
-import CameraIcon from "CameraIcon" /* 10317 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11894 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 11922 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11924 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11925 */;
+import mergeProps from "mergeProps" /* 4565 */;
+import AppsIcon from "AppsIcon" /* 5558 */;
+import ImageIcon from "ImageIcon" /* 5585 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5649 */;
+import AttachmentIcon from "AttachmentIcon" /* 9764 */;
+import PollsIcon from "PollsIcon" /* 10294 */;
+import CameraIcon from "CameraIcon" /* 10309 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11901 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 11929 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11931 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11932 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ChatInputConstants = fn(11647);
+const ChatInputConstants = fn(11655);
 ({ ChatInputActionType: hasOwnProperty, ChatInputOmniButtonActionType: metroRequire } = ChatInputConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { actions: { flexDirection: "row", alignItems: "center" }, themedChatInput: { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG }, buttonWrapper: null, activeBrand: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG };
-obj.buttonWrapper = { maxHeight: fn(5482).SMALL_BUTTON_HEIGHT + fn(5482).SMALL_BUTTON_PADDING };
-let obj4 = { maxHeight: fn(5482).SMALL_BUTTON_HEIGHT + fn(5482).SMALL_BUTTON_PADDING };
+obj.buttonWrapper = { maxHeight: fn(5470).SMALL_BUTTON_HEIGHT + fn(5470).SMALL_BUTTON_PADDING };
+let obj4 = { maxHeight: fn(5470).SMALL_BUTTON_HEIGHT + fn(5470).SMALL_BUTTON_PADDING };
 obj.activeBrand = { tintColor: nativeDefault.colors.CHAT_INPUT_ACTION_ICON_ACTIVE_TINT };
 let closure_10 = createStyles.createStyles(obj);
 let __initData = { code: "function ChatInputActionsTsx1(){return{opacity:1};}" };

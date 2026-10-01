@@ -1,27 +1,27 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16255
+// Function ID: 16256
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11360, 14833, 21, 4866, 576, 16236, 4596, 5476, 7471, 504, 4831, 7480, 7481, 1115, 9266, 16234, 7558, 1177, 4723, 2]
+// Dependencies: [19, 17, 11368, 14839, 21, 4845, 576, 16256, 4595, 5464, 7449, 504, 4810, 7458, 7459, 1115, 9260, 16254, 7536, 1177, 4722, 2]
 
-// Module 16235 (YouBarNotificationsButton)
+// Module 16255 (YouBarNotificationsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HapticUtils from "HapticUtils" /* 4831 */;
-import spring from "spring" /* 5476 */;
-import showForLaterModal from "showForLaterModal" /* 7480 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7481 */;
+import HapticUtils from "HapticUtils" /* 4810 */;
+import spring from "spring" /* 5464 */;
+import showForLaterModal from "showForLaterModal" /* 7458 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7459 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11360 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11368 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(14833);
+const YouBarConstants = fn(14839);
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: closure_7, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, overdueReminderDot: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION } };
 let closure_10 = createStyles.createStyles(obj);
 const __initData = { code: "function YouBarNotificationsButtonTsx1(){const{withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens}=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};}" };

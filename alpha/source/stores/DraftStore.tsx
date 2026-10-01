@@ -1,19 +1,19 @@
-// Module ID: 5396
-// Function ID: 5397
+// Module ID: 5384
+// Function ID: 5385
 // Name: DraftStore
-// Dependencies: [32, 502, 2045, 5397, 1074, 5398, 12, 11, 504, 1370, 573, 2]
+// Dependencies: [32, 502, 2044, 5385, 1074, 5386, 12, 11, 504, 1370, 573, 2]
 
-// Module 5396 (DraftStore)
+// Module 5384 (DraftStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import DraftCommand from "DraftCommand" /* 5398 */;
+import DraftCommand from "DraftCommand" /* 5386 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5397 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5385 */;
 
 require = fn;
 function handleChanged(type) {

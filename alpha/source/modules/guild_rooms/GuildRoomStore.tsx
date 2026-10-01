@@ -1,16 +1,16 @@
-// Module ID: 5024
-// Function ID: 5025
+// Module ID: 5003
+// Function ID: 5004
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 4889, 2099, 5025, 504, 573, 2]
+// Dependencies: [109, 502, 4868, 2098, 5004, 504, 573, 2]
 
-// Module 5024 (GuildRoomStore)
+// Module 5003 (GuildRoomStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 5025 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 5004 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4889 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 require = fn;
 function resolveCreatingNotes(roomId, objects) {

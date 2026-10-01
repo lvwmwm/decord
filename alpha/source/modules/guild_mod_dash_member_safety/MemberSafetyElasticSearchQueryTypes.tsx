@@ -1,10 +1,10 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7105
+// Function ID: 7106
 // Name: MemberSafetyElasticSearchQueryTypes
 // Dependencies: [1091, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7113 (MemberSafetyElasticSearchQueryTypes)
+// Module 7105 (MemberSafetyElasticSearchQueryTypes)
 import DurationsDefault from "Durations" /* 1091 */;
 
 const result = 2 * DurationsDefault.Millis.DAY;

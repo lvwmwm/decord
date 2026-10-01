@@ -1,13 +1,13 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 7975
+// Function ID: 7976
 // Name: GuildAffinitiesStore
-// Dependencies: [2067, 7989, 504, 573, 2]
+// Dependencies: [2066, 7976, 504, 573, 2]
 
-// Module 7988 (GuildAffinitiesStore)
+// Module 7975 (GuildAffinitiesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 7989 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 7976 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 let closure_3 = { guildAffinitiesByGuildId: {}, guildAffinities: [], lastFetched: 0 };

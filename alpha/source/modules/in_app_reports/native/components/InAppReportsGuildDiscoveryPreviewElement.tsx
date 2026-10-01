@@ -1,26 +1,26 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12675
+// Function ID: 12676
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4855, 21, 4866, 576, 6596, 504, 4713, 4862, 1115, 6092, 2059, 2]
+// Dependencies: [19, 17, 4834, 21, 4845, 576, 6586, 504, 4712, 4841, 1115, 6082, 2058, 2]
 // Exports: default
 
-// Module 12664 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 12675 (InAppReportsGuildDiscoveryPreviewElement)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import ColorUtils from "ColorUtils" /* 4713 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import GuildIconDefault from "GuildIcon" /* 6092 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6596 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
+import ColorUtils from "ColorUtils" /* 4712 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import GuildIconDefault from "GuildIcon" /* 6082 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6586 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { textTransform: "uppercase", lineHeight: 16, marginBottom: 8 }, itemContainer: null, guildInfo: null, guildName: null, guildIcon: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.itemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };

@@ -1,10 +1,10 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16492
+// Function ID: 16493
 // Name: VibegrationsRoleIds
 // Dependencies: [2]
 // Exports: haveSameRoleIds
 
-// Module 16471 (VibegrationsRoleIds)
+// Module 16492 (VibegrationsRoleIds)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsRoleIds.tsx");

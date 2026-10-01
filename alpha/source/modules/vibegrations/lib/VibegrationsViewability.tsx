@@ -1,9 +1,9 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16634
+// Function ID: 16635
 // Name: VibegrationsViewability
 // Dependencies: [2]
 
-// Module 16611 (VibegrationsViewability)
+// Module 16634 (VibegrationsViewability)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsViewability.tsx");

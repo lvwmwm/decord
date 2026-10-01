@@ -1,13 +1,13 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17269
+// Function ID: 17270
 // Name: MobilePhoneShareIcon
-// Dependencies: [19, 21, 576, 4560, 17248, 2]
+// Dependencies: [19, 21, 576, 4559, 17270, 2]
 // Exports: MobilePhoneShareIcon
 
-// Module 17247 (MobilePhoneShareIcon)
+// Module 17269 (MobilePhoneShareIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod17248 from "module_17248" /* 17248 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod17270 from "module_17270" /* 17270 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MobilePhoneShareIcon = function MobilePhoneShareIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17248, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17270, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,16 +1,16 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15777
+// Function ID: 15778
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5466, 21, 4866, 576, 15758, 4713, 8249, 6818, 15760, 14353, 1092, 2]
+// Dependencies: [32, 19, 17, 5454, 21, 4845, 576, 15774, 4712, 8239, 6808, 15776, 14363, 1092, 2]
 
-// Module 15761 (VEVOOPropTintColor)
+// Module 15777 (VEVOOPropTintColor)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import ColorUtils from "ColorUtils" /* 4713 */;
-import FormSwitch from "FormSwitch" /* 6818 */;
-import Form from "Form" /* 8249 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14353 */;
-import VEVOO from "VEVOO" /* 15758 */;
+import ColorUtils from "ColorUtils" /* 4712 */;
+import FormSwitch from "FormSwitch" /* 6808 */;
+import Form from "Form" /* 8239 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14363 */;
+import VEVOO from "VEVOO" /* 15774 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,11 +18,11 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VEVOOStore = fn(5466);
+const VEVOOStore = fn(5454);
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: closure_7 } = VEVOOStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { tintColor: null };
 let size = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, borderRadius: nativeDefault.radii.sm };
 obj.tintColor = size;
@@ -127,7 +127,7 @@ export default noop.memo(function VEVOOPropTintColor() {
   const ref = noop.useRef(first1);
   const tmp14 = closure_10;
   const tmp15 = closure_9;
-  obj7.subLabel = closure_8(backgroundColor(15760), {
+  obj7.subLabel = closure_8(backgroundColor(15776), {
     disabled: !tmp7,
     initialValue: noop.useRef(first1),
     onValueChange(arg0) {

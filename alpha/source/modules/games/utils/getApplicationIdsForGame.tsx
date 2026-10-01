@@ -1,11 +1,11 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9015
+// Function ID: 9016
 // Name: getApplicationIdsForGame
-// Dependencies: [5093, 2001, 504, 2]
+// Dependencies: [5072, 2001, 504, 2]
 // Exports: default, useApplicationIdsForGame
 
-// Module 9021 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 5093 */;
+// Module 9015 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 5072 */;
 import GameStore from "GameStore" /* 2001 */;
 
 const require = globalThis.__r;

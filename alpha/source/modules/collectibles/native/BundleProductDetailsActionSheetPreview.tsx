@@ -1,17 +1,17 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12912
+// Function ID: 12913
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1076, 21, 4866, 576, 12905, 6269, 1115, 7811, 7170, 12906, 4862, 2]
+// Dependencies: [32, 19, 17, 1076, 21, 4845, 576, 12913, 6259, 1115, 7798, 7162, 12914, 4841, 2]
 // Exports: default
 
-// Module 12904 (BundleProductDetailsActionSheetPreview)
+// Module 12912 (BundleProductDetailsActionSheetPreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6269 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7170 */;
-import useShopProductItems from "useShopProductItems" /* 7811 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 12906 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6259 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7162 */;
+import useShopProductItems from "useShopProductItems" /* 7798 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 12914 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const ShopCtaEnum = fn(1076).ShopCtaEnum;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { previewContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, bundleThumbnail: null, selectedRing: null, bundleThumbnailRow: null, bundleContainer: null, bundleInfoContainer: null };
 let size = { width: 56, height: 56, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, overflow: "hidden" };
 obj2.bundleThumbnail = size;
@@ -181,7 +181,7 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const _HermesInternal = HermesInternal;
     obj9.children = " - " + collectibleTypeLabel;
-    tmp20Result = closure_1_12(tmp7(4862).Text, obj9);
+    tmp20Result = closure_1_12(tmp7(4841).Text, obj9);
   }
   items7[1] = tmp20Result;
   items6[1] = map1(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: items7 });

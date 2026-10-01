@@ -1,27 +1,27 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 16975
+// Function ID: 16976
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 8076, 8063, 21, 4866, 576, 504, 6740, 7558, 1115, 6206, 6609, 4862, 4555, 14506, 2]
+// Dependencies: [19, 17, 8065, 8052, 21, 4845, 576, 504, 6730, 7536, 1115, 6196, 6599, 4841, 4554, 14512, 2]
 // Exports: default
 
-// Module 16953 (SuspendedUserPage)
+// Module 16975 (SuspendedUserPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4555 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6206 */;
-import _modDef6609 from "module_6609" /* 6609 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6740 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 14506 */;
+import LinkingDefault from "Linking" /* 4554 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6196 */;
+import _modDef6599 from "module_6599" /* 6599 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6730 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 14512 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8076 */;
+import SafetyHubStore from "SafetyHubStore" /* 8065 */;
 
 require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(8063);
+const SafetyHubConstants = fn(8052);
 ({ AgeCheckStatus: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", height: "100%" }, header: null, text: null, link: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", height: "100%" };
 obj2.header = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: nativeDefault.space.PX_8, alignItems: "center" };
@@ -45,8 +45,8 @@ export default function SuspendedUserSafetyHubPage() {
     obj4.onPress = function onPress() {
       AuthenticationActionCreatorsDefault.closeSuspendedUser();
     };
-    obj4.icon = _modDef6609;
-    const items1 = [tmp5(tmp2(7558).IconButton, obj4), ];
+    obj4.icon = _modDef6599;
+    const items1 = [tmp5(tmp2(7536).IconButton, obj4), ];
     const obj5 = {
       style: tmp.text,
       onPress() {
@@ -61,9 +61,9 @@ export default function SuspendedUserSafetyHubPage() {
     const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: null };
     const intl3 = tmp2(1115).intl;
     obj6.children = intl3.string(tmp2(1115).t["9JceHN"]);
-    items2[2] = tmp5(tmp2(4862).Text, obj6);
+    items2[2] = tmp5(tmp2(4841).Text, obj6);
     obj5.children = items2;
-    items1[1] = tmp6(tmp2(4862).Text, obj5);
+    items1[1] = tmp6(tmp2(4841).Text, obj5);
     obj3.children = items1;
     tmp6Result = tmp6(tmp7, obj3);
   }

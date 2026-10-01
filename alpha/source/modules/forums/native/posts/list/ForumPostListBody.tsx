@@ -1,23 +1,23 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 11715
+// Function ID: 11716
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 6887, 21, 4866, 6886, 11700, 11690, 11699, 11701, 11708, 11694, 2]
+// Dependencies: [19, 17, 6878, 21, 4845, 6877, 11708, 11698, 11707, 11709, 11716, 11702, 2]
 // Exports: default
 
-// Module 11707 (ForumPostListBody)
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6886 */;
-import ForumPostUsername from "ForumPostUsername" /* 11690 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11699 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 11700 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 11708 */;
+// Module 11715 (ForumPostListBody)
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6877 */;
+import ForumPostUsername from "ForumPostUsername" /* 11698 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11707 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 11708 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 11716 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const ForumTimestampFormats = fn(6887).ForumTimestampFormats;
+const ForumTimestampFormats = fn(6878).ForumTimestampFormats;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_7 = createStyles.createStyles({ body: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 6 }, newTagContainer: { marginEnd: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/list/ForumPostListBody.tsx");
@@ -42,7 +42,7 @@ export default function ForumPostListBody(arg0) {
   let tmp9Result = !isGameInvitesPost;
   if (!isGameInvitesPost) {
     const obj7 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-    tmp9Result = tmp9(tmp10(11701), obj7);
+    tmp9Result = tmp9(tmp10(11709), obj7);
   }
   items2[1] = tmp9Result;
   items2[2] = hasOwnProperty(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -63,7 +63,7 @@ export default function ForumPostListBody(arg0) {
       }
       obj8.firstMessageId = id;
       obj8.containerStyle = tmp.thumbnailContainer;
-      tmp9Result2 = tmp9(tmp2(11694).ForumPostMediaThumbnail, obj8);
+      tmp9Result2 = tmp9(tmp2(11702).ForumPostMediaThumbnail, obj8);
     }
   }
   items3[1] = tmp9Result2;

@@ -1,23 +1,23 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9878
+// Function ID: 9879
 // Name: FavoritesHooks
-// Dependencies: [4685, 1372, 2048, 2058, 1374, 9887, 9888, 504, 1970, 11, 1186, 2070, 2]
+// Dependencies: [4684, 1372, 2047, 2057, 1374, 9879, 9880, 504, 1970, 11, 1186, 2069, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 9886 (FavoritesHooks)
+// Module 9878 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1970 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9888 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4685 */;
+import FavoritesUtils from "FavoritesUtils" /* 2069 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9880 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
 import UserStore from "UserStore" /* 1372 */;
-import FavoriteStore from "FavoriteStore" /* 2048 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 const require = globalThis.__r;
 
-const FavoritesLimits = tmp(9887);
+const FavoritesLimits = tmp(9879);
 require = fn;
 function useFavoritesAccess(FavoritesGuildActionSheet) {
   let str = FavoritesGuildActionSheet;
@@ -50,7 +50,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   } else if (isPremiumExactlyResult) {
   }
 }
-const MAX_FAVORITE_CHANNELS = fn(2058).MAX_FAVORITE_CHANNELS;
+const MAX_FAVORITE_CHANNELS = fn(2057).MAX_FAVORITE_CHANNELS;
 const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
@@ -95,8 +95,8 @@ export const useFavorites = function useFavorites() {
   const items = [FavoriteStore];
   return initialize.useStateFromStoresObject(items, () => favoriteChannels.getFavoriteChannels());
 };
-export const useFavorite = function useFavorite(id) {
-  _require = id;
+export const useFavorite = function useFavorite(arg0) {
+  _require = arg0;
   const items = [FavoriteStore];
   return require("initialize").useStateFromStores(items, () => FavoriteStore.getFavorite(closure_0));
 };

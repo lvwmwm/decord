@@ -1,19 +1,19 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17886
+// Function ID: 17887
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 4866, 10530, 6666, 4830, 12, 8249, 11521, 5632, 4862, 1115, 6766, 6814, 6672, 2]
+// Dependencies: [32, 19, 21, 4845, 10522, 6656, 4809, 12, 8239, 11529, 5621, 4841, 1115, 6756, 6804, 6662, 2]
 // Exports: default
 
-// Module 17851 (SelectInviteRolesActionSheet)
+// Module 17886 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4830 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_8 = createStyles.createStyles({ list: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx");

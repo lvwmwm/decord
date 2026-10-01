@@ -1,9 +1,9 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7640
+// Function ID: 7641
 // Name: AutomodRaidAlertTypes
 // Dependencies: [2]
 
-// Module 7652 (AutomodRaidAlertTypes)
+// Module 7640 (AutomodRaidAlertTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodRaidAlertTypes.tsx");

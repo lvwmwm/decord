@@ -1,12 +1,12 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 10469
+// Function ID: 10470
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 1074, 8867, 10478, 2]
+// Dependencies: [19, 1074, 8859, 10470, 2]
 // Exports: default
 
-// Module 10477 (useMobileSocialLayerPurchaseSKU)
-import GPlayActionCreators from "GPlayActionCreators" /* 8867 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10478 */;
+// Module 10469 (useMobileSocialLayerPurchaseSKU)
+import GPlayActionCreators from "GPlayActionCreators" /* 8859 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10470 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

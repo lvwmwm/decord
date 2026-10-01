@@ -1,7 +1,9 @@
 // Module ID: 14021
 // Function ID: 14022
-// Dependencies: []
+// Dependencies: [13999]
 
 // Module 14021
+import _mod13999 from "module_13999" /* 13999 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+
+export default _mod13999({}.isPrototypeOf);

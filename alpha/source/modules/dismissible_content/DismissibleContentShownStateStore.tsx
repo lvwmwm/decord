@@ -1,14 +1,14 @@
 // Module ID: 2035
 // Function ID: 2036
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 2036, 2037, 2038, 1074, 559, 1243, 2034, 2039, 1271, 2040, 1248, 504, 2041, 573, 2]
+// Dependencies: [5, 2036, 2037, 2038, 1074, 559, 1243, 2034, 1271, 2039, 1248, 504, 2040, 573, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
 // Module 2035 (DismissibleContentShownStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import isActionRequiredDefault from "isActionRequired" /* 2041 */;
+import isActionRequiredDefault from "isActionRequired" /* 2040 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
@@ -54,10 +54,7 @@ function withContent(currentlyShown, content) {
     return currentlyShown;
   }
 }
-function addWeightsToClientCandidates(arr) {
-  return arr.map((content) => ({ content, weight: 1 }));
-}
-let closure_16 = async function _arbitrateCandidates(arg0, value) {
+let closure_15 = async function _arbitrateCandidates(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -82,62 +79,54 @@ let closure_16 = async function _arbitrateCandidates(arg0, value) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          closure_2 = tmp17;
+          closure_2 = tmp14;
           closure_130_0 = closure_1;
           closure_130_1 = undefined;
           closure_130_2 = undefined;
           closure_130_3 = undefined;
           closure_130_4 = undefined;
-          if ((function isServerArbitrationEnabled() {
-            const DismissibleContentServerArbitrationExperiment = closure_1_0(closure_1_2[8]).DismissibleContentServerArbitrationExperiment;
-            return DismissibleContentServerArbitrationExperiment.getConfig({ location: "DismissibleContentShownStateStore" }).enabled;
-          })()) {
-            let found = arr3.filter((item) => set.has(item));
-            closure_130_1 = found;
-            const tmp12 = addWeightsToClientCandidates(arr3.filter((item) => !set.has(item)));
-            closure_130_2 = tmp12;
-            if (0 === found.length) {
-              const obj4 = { context: tmp32, candidates: tmp12, outcome: "client-only" };
-              c5 = 3;
-              const obj5 = { value: obj4, done: true };
-              return obj5;
-            } else if (pending.pending) {
-              const obj6 = { context: tmp32, candidates: tmp12, outcome: "server-backoff" };
-              c5 = 3;
-              const obj7 = { value: obj6, done: true };
-              return obj7;
-            } else {
-              c4 = 1;
-              const HTTP = React(dependencyMap[9]).HTTP;
-              const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: null, oldFormErrors: true, rejectWithError: true };
-              const obj8 = { candidates: found.map((content) => ({ content })) };
-              request.body = obj8;
-              c3 = 2;
-              c5 = 1;
-              const obj9 = { value: HTTP.post(request), done: false };
-              return obj9;
-            }
-          } else {
-            const obj10 = { context: tmp32, candidates: addWeightsToClientCandidates(arr3), outcome: "client-only" };
+          let found = closure_0.filter((item) => set.has(item));
+          closure_130_1 = found;
+          const tmp31 = (function addWeightsToClientCandidates(arr) {
+            return arr.map((content) => ({ content, weight: 1 }));
+          })(closure_0.filter((item) => !set.has(item)));
+          closure_130_2 = tmp31;
+          if (0 === found.length) {
+            const obj4 = { context: tmp30, candidates: tmp31, outcome: "client-only" };
             c5 = 3;
-            const obj11 = { value: obj10, done: true };
-            return obj11;
+            const obj5 = { value: obj4, done: true };
+            return obj5;
+          } else if (pending.pending) {
+            const obj6 = { context: tmp30, candidates: tmp31, outcome: "server-backoff" };
+            c5 = 3;
+            const obj7 = { value: obj6, done: true };
+            return obj7;
+          } else {
+            c4 = 1;
+            const HTTP = React(dependencyMap[8]).HTTP;
+            const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: null, oldFormErrors: true, rejectWithError: true };
+            const obj8 = { candidates: found.map((content) => ({ content })) };
+            request.body = obj8;
+            c3 = 2;
+            c5 = 1;
+            const obj9 = { value: HTTP.post(request), done: false };
+            return obj9;
           }
         }
       } else if (1 === tmp6) {
         c4 = 0;
-        const obj12 = { context: closure_130_0, candidates: closure_130_2, outcome: "server-failure" };
+        const obj10 = { context: closure_130_0, candidates: closure_130_2, outcome: "server-failure" };
         c5 = 3;
-        const obj13 = { value: obj12, done: true };
-        return obj13;
+        const obj11 = { value: obj10, done: true };
+        return obj11;
       } else if (arg0 === 1) {
         c5 = 3;
         throw value;
       } else if (arg0 === 2) {
         c4 = 0;
         c5 = 3;
-        const obj14 = { value, done: true };
-        return obj14;
+        const obj12 = { value, done: true };
+        return obj12;
       } else {
         closure_130_3 = value;
         const candidates = closure_130_3.body.candidates;
@@ -163,23 +152,23 @@ let closure_16 = async function _arbitrateCandidates(arg0, value) {
           }
         })(closure_130_1, candidates);
         closure_130_4 = candidates;
-        const obj15 = { context: closure_130_0, candidates: null, outcome: "server-success" };
+        const obj13 = { context: closure_130_0, candidates: null, outcome: "server-success" };
         const items = [];
         HermesBuiltin.arraySpread(closure_130_4, HermesBuiltin.arraySpread(closure_130_2, 0));
-        obj15.candidates = items;
+        obj13.candidates = items;
         c4 = 0;
         c5 = 3;
-        const obj = { value: obj15, done: true };
+        const obj = { value: obj13, done: true };
         return obj;
       }
-    } catch (tmp16) {
+    } catch (tmp13) {
       if (tmp3 === c4) {
         c5 = tmp2;
-        throw tmp16;
+        throw tmp13;
       } else {
         c3 = tmp;
       }
-      tmp17 = c4;
+      tmp14 = c4;
     }
   }
 };
@@ -398,7 +387,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
               const obj4 = {
                 value: (function arbitrateCandidates() {
                               const self = this;
-                              const apply = closure_1_16.apply;
+                              const apply = closure_1_15.apply;
                               if (typeof apply === "unknown") {
                                 let applyArgumentsResult = HermesBuiltin.applyArguments(self);
                               } else {
@@ -463,7 +452,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
               }
             })(closure_129_0);
             closure_129_1 = false;
-            closure_0(tmp5[11]).batchUpdates(() => {
+            closure_0(tmp5[10]).batchUpdates(() => {
               state.setState((candidates) => {
                 const obj = {};
                 const merged = Object.assign(candidates);
@@ -558,7 +547,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
             if (closure_129_1) {
               invalidateArbitration();
             }
-            let obj = closure_0(tmp5[11]);
+            let obj = closure_0(tmp5[10]);
           }
           closure_1_9.succeed();
         }
@@ -570,7 +559,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   }
 });
-const batchInvocationManager = new fn(2040).BatchInvocationManager(function() {
+const batchInvocationManager = new fn(2039).BatchInvocationManager(function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {

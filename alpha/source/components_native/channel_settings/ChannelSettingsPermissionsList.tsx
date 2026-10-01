@@ -1,17 +1,17 @@
-// Module ID: 16873
-// Function ID: 16874
+// Module ID: 16894
+// Function ID: 16895
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 2045, 2108, 2102, 1372, 1074, 21, 4866, 576, 504, 6026, 1485, 1613, 6666, 4879, 4504, 6113, 9934, 1979, 10607, 6667, 1115, 6672, 1177, 7873, 2]
+// Dependencies: [32, 19, 17, 2044, 2107, 2101, 1372, 1074, 21, 4845, 576, 504, 6015, 1485, 1613, 6656, 4858, 4503, 6103, 9926, 1979, 10599, 6657, 1115, 6662, 1177, 7860, 2]
 
-// Module 16873 (ChannelSettingsPermissionsList)
+// Module 16894 (ChannelSettingsPermissionsList)
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1979 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6026 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6015 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -21,7 +21,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = { rows: [], sections: [] };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, containerSearchBar: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj.containerSearchBar = { paddingVertical: nativeDefault.space.PX_8 };

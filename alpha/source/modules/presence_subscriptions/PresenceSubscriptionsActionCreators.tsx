@@ -1,10 +1,10 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11220
+// Function ID: 11221
 // Name: PresenceSubscriptionsActionCreators
 // Dependencies: [573, 2]
 // Exports: subscribe
 
-// Module 11216 (PresenceSubscriptionsActionCreators)
+// Module 11220 (PresenceSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

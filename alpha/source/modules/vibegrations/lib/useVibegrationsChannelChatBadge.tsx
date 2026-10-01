@@ -1,11 +1,11 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13033
+// Function ID: 13034
 // Name: useVibegrationsChannelChatBadge
-// Dependencies: [4881, 504, 2]
+// Dependencies: [4860, 504, 2]
 // Exports: default
 
-// Module 13025 (useVibegrationsChannelChatBadge)
-import ReadStateStore from "ReadStateStore" /* 4881 */;
+// Module 13033 (useVibegrationsChannelChatBadge)
+import ReadStateStore from "ReadStateStore" /* 4860 */;
 
 const require = globalThis.__r;
 

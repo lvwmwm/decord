@@ -1,22 +1,22 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14422
+// Function ID: 14423
 // Name: UserProfileFloatingUpsell
-// Dependencies: [32, 19, 6825, 21, 4866, 14367, 1613, 2]
+// Dependencies: [32, 19, 6815, 21, 4845, 14411, 1613, 2]
 // Exports: default, useFloatingUpsellHeight
 
-// Module 14366 (UserProfileFloatingUpsell)
+// Module 14422 (UserProfileFloatingUpsell)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14367 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14411 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const UserProfileUpsellCardV2Default = UserProfileUpsellCardV2;
 
 require = fn;
-const Constants = fn(6825);
+const Constants = fn(6815);
 ({ FLOATING_UPSELL_HEIGHT: hasOwnProperty, PROFILE_SIDE_PADDING: metroRequire } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_8 = createStyles.createStyles((bottom) => {
   const obj = { container: { position: "absolute", bottom, start: 0, end: 0, marginHorizontal: timestampProducer - UserProfileUpsellCardV2.GRADIENT_BORDER_WIDTH } };
   return obj;

@@ -1,12 +1,12 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16472
+// Function ID: 16473
 // Name: VibegrationsArchivePicker
-// Dependencies: [5, 12842, 10998, 5567, 1115, 3715, 2]
+// Dependencies: [5, 12851, 11002, 5555, 1115, 3714, 2]
 // Exports: describeVibegrationsArchiveRejection, pickVibegrationsArchive, sendVibegrationsArchiveImport
 
-// Module 16451 (VibegrationsArchivePicker)
-import _modDef3715 from "module_3715" /* 3715 */;
-import FilePickerUtils from "FilePickerUtils" /* 10998 */;
+// Module 16472 (VibegrationsArchivePicker)
+import _modDef3714 from "module_3714" /* 3714 */;
+import FilePickerUtils from "FilePickerUtils" /* 11002 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -95,9 +95,9 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
     }
   }
 };
-const VibegrationsConnectionStore = fn(12842);
+const VibegrationsConnectionStore = fn(12851);
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty, uploadAttachmentBytes: metroRequire } = VibegrationsConnectionStore);
-let closure_7 = ["zip", "tar", "gz", "tgz", "rar"];
+let closure_7 = ["zip", "tar", "gz", "tgz", "bz2", "xz"];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsArchivePicker.tsx");
 
@@ -116,10 +116,10 @@ export const describeVibegrationsArchiveRejection = function describeVibegration
   if (!obj.isVibegrationsAttachmentWithinLimit(bytes.bytes.size, bytes.contentType)) {
     const intl = tmp(1115).intl;
     const obj2 = { size: null };
-    const tmpResult = tmp(5567);
-    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5567).vibegrationsAttachmentLimit(bytes.contentType));
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3715.AzziHF, obj2);
-    const tmpResult2 = tmp(5567);
+    const tmpResult = tmp(5555);
+    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5555).vibegrationsAttachmentLimit(bytes.contentType));
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3714.AzziHF, obj2);
+    const tmpResult2 = tmp(5555);
   }
   return formatToPlainStringResult;
 };

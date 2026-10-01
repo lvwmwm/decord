@@ -1,22 +1,22 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15078
+// Function ID: 15079
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5786, 2049, 502, 2045, 13459, 1074, 3, 6735, 12, 2074, 573, 1271, 15073, 2]
+// Dependencies: [32, 5, 5775, 2048, 502, 2044, 13467, 1074, 3, 6725, 12, 2073, 573, 1271, 15079, 2]
 
-// Module 15072 (MessagePreviewManager)
+// Module 15078 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import RemoteFetchData from "RemoteFetchData" /* 15073 */;
+import RemoteFetchData from "RemoteFetchData" /* 15079 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5786 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13459 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13467 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 require = fn;
-const isThread = fn(2049).isThread;
+const isThread = fn(2048).isThread;
 const Endpoints = fn(1074).Endpoints;
 let closure_11 = new LoggerDefault("MessagePreviewManager");
 class MessagePreviewManager extends tmp3 {
@@ -106,7 +106,7 @@ class MessagePreviewManager extends tmp3 {
               closure_131_4 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "flex", done: null };
             }
           } else {
             if (1 === tmp4) {

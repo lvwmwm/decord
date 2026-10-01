@@ -1,11 +1,11 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9218
+// Function ID: 9219
 // Name: getAppChannelApplicationUnsupportedText
-// Dependencies: [9225, 1115, 2]
+// Dependencies: [9219, 1115, 2]
 // Exports: default
 
-// Module 9224 (getAppChannelApplicationUnsupportedText)
-import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 9225 */;
+// Module 9218 (getAppChannelApplicationUnsupportedText)
+import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 9219 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_channels/getAppChannelApplicationUnsupportedText.tsx");
@@ -16,7 +16,7 @@ export default function getAppChannelApplicationUnsupportedText(supported) {
     if (GuildEmbeddedApplicationUnsupportedReason.GuildEmbeddedApplicationUnsupportedReason.REQUIRES_BOT === reason) {
       const intl3 = tmp(1115).intl;
       return intl3.string(tmp(1115).t.V4y5nG);
-    } else if (tmp(9225).GuildEmbeddedApplicationUnsupportedReason.SURFACE_NOT_SUPPORTED === reason) {
+    } else if (tmp(9219).GuildEmbeddedApplicationUnsupportedReason.SURFACE_NOT_SUPPORTED === reason) {
       const intl2 = tmp(1115).intl;
       return intl2.string(tmp(1115).t["iUWcU/"]);
     } else {

@@ -1,13 +1,13 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7707
+// Function ID: 7708
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 2045, 4859, 4879, 38, 5285, 7072, 7290, 2]
+// Dependencies: [5, 2044, 4838, 4858, 38, 5264, 7064, 7268, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 7720 (PremiumGiftingUtils)
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4879 */;
+// Module 7707 (PremiumGiftingUtils)
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = fn;
 let closure_6 = async function _sendGiftMessage() {
@@ -41,7 +41,7 @@ let closure_6 = async function _sendGiftMessage() {
   closure_131_0(closure_131_2[5]);
   return closure_131_1(closure_131_2[6]).sendMessage(id, closure_131_1(closure_131_2[7]).parse(closure_130_1, giftCodeURL), undefined, { isGiftLinkSentOnBehalfOfUser: true, location: closure_131_5.GIFTING });
 };
-const MessageSendLocation = fn(4859).MessageSendLocation;
+const MessageSendLocation = fn(4838).MessageSendLocation;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
 

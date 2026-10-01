@@ -1,17 +1,17 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11175
+// Function ID: 11176
 // Name: useShowChannelOptInNotice
-// Dependencies: [5047, 1074, 2052, 7151, 504, 6839, 2]
+// Dependencies: [5026, 1074, 2051, 7143, 504, 6830, 2]
 // Exports: default
 
-// Module 11171 (useShowChannelOptInNotice)
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5047 */;
+// Module 11175 (useShowChannelOptInNotice)
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const NULL_STRING_GUILD_ID = fn(1074).NULL_STRING_GUILD_ID;
-const ChannelFlags = fn(2052).ChannelFlags;
+const ChannelFlags = fn(2051).ChannelFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/opt_in_channels/useShowChannelOptInNotice.tsx");
 

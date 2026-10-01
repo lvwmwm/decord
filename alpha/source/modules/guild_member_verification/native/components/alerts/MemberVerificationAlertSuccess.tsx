@@ -1,19 +1,19 @@
-// Module ID: 6036
-// Function ID: 6037
+// Module ID: 6025
+// Function ID: 6026
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4855, 2067, 21, 4866, 504, 5496, 1115, 6037, 6043, 4862, 2]
+// Dependencies: [19, 17, 4834, 2066, 21, 4845, 504, 5484, 1115, 6026, 6032, 4841, 2]
 // Exports: default
 
-// Module 6036 (MemberVerificationAlertSuccess)
+// Module 6025 (MemberVerificationAlertSuccess)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let closure_8 = createStyles.createStyles({ alert: { marginTop: 120 }, header: { marginTop: 40, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" }, illustrationContainer: { position: "absolute", display: "flex", flexDirection: "column", alignItems: "center", left: 0, right: 0, top: -220 }, illustration: { height: 246, width: 240 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertSuccess.tsx");

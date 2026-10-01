@@ -1,11 +1,11 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12070
+// Function ID: 12071
 // Name: SmartSearchExperiments
-// Dependencies: [2067, 1074, 1435, 504, 2]
+// Dependencies: [2066, 1074, 1435, 504, 2]
 // Exports: isNlpSearchEnabled, useIsNlpSearchEnabled
 
-// Module 12062 (SmartSearchExperiments)
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 12070 (SmartSearchExperiments)
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 

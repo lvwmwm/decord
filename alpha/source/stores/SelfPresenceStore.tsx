@@ -1,24 +1,24 @@
-// Module ID: 5788
-// Function ID: 5789
+// Module ID: 5777
+// Function ID: 5778
 // Name: SelfPresenceStore
-// Dependencies: [5789, 1220, 2017, 5919, 7013, 9013, 4906, 4884, 1074, 7015, 2021, 1385, 10553, 1331, 12, 504, 573, 2]
+// Dependencies: [5778, 1220, 2017, 5908, 7004, 9007, 4885, 4863, 1074, 7006, 2021, 1385, 10545, 1331, 12, 504, 573, 2]
 
-// Module 5788 (SelfPresenceStore)
+// Module 5777 (SelfPresenceStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10553 */;
-import SpotifyStore from "SpotifyStore" /* 5789 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10545 */;
+import SpotifyStore from "SpotifyStore" /* 5778 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import DetectableGameStore from "DetectableGameStore" /* 2017 */;
-import IdleStore from "IdleStore" /* 5919 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7013 */;
-import LocalActivityStore from "LocalActivityStore" /* 9013 */;
-import PresenceStore from "PresenceStore" /* 4906 */;
-import SessionsStore from "SessionsStore" /* 4884 */;
+import IdleStore from "IdleStore" /* 5908 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7004 */;
+import LocalActivityStore from "LocalActivityStore" /* 9007 */;
+import PresenceStore from "PresenceStore" /* 4885 */;
+import SessionsStore from "SessionsStore" /* 4863 */;
 
 require = fn;
 function filterPlayingActivities(arg0) {
@@ -66,20 +66,20 @@ function shouldShowActivity(flags) {
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          shouldShowActivityResult = tmp(7015).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-          const tmpResult = tmp(7015);
+          shouldShowActivityResult = tmp(7006).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+          const tmpResult = tmp(7006);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        let result = tmp(7015).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult4 = tmp(7015);
+        let result = tmp(7006).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult4 = tmp(7006);
       } else {
         const searchGamesByNameResult = DetectableGameStore.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(7015).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
-          const tmpResult5 = tmp(7015);
+          result = tmp(7006).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
+          const tmpResult5 = tmp(7006);
         } else {
           const ShowCurrentGame = tmp(2021).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
@@ -92,8 +92,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(7015).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult6 = tmp(7015);
+        result1 = tmp(7006).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult6 = tmp(7006);
       }
       return result1;
     }
@@ -162,7 +162,7 @@ function handleConnectionOpen() {
   handleUpdate();
   const result = PresenceStore.setCurrentUserOnConnectionOpen(IDLE, valueResult);
 }
-const sortActivity = fn(4906).sortActivity;
+const sortActivity = fn(4885).sortActivity;
 const Constants = fn(1074);
 const StatusTypes = Constants.StatusTypes;
 ({ ActivityFlags: map1, ActivityTypes: closure_14, AppStates: closure_15 } = Constants);

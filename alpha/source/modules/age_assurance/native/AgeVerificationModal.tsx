@@ -1,12 +1,12 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8063
+// Function ID: 8064
 // Name: AgeVerificationModal
-// Dependencies: [19, 8055, 21, 4722, 5078, 4555, 7941, 4866, 576, 5069, 6991, 1115, 6617, 2]
+// Dependencies: [19, 8044, 21, 4721, 5057, 4554, 7928, 4845, 576, 5048, 6982, 1115, 6607, 2]
 // Exports: default
 
-// Module 8074 (AgeVerificationModal)
+// Module 8063 (AgeVerificationModal)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4555 */;
+import LinkingDefault from "Linking" /* 4554 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -105,10 +105,10 @@ function AgeVerifyScreen(uri) {
   }, []);
   return jsx(onClose(isExpressiveModalV2[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true, source: { uri: uri.webviewUrl }, onMessage: callback2, onShouldStartLoadWithRequest: callback3, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n", injectedJavaScriptBeforeContentLoaded: "\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" });
 }
-let closure_4 = fn(8055).AGE_VERIFICATION_MODAL_KEY;
+let closure_4 = fn(8044).AGE_VERIFICATION_MODAL_KEY;
 let jsx = fn(21).jsx;
 const constants = { VERIFY_AGE: "VERIFY_AGE" };
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);

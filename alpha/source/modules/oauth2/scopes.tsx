@@ -1,12 +1,12 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8708
+// Function ID: 8709
 // Name: scopes
-// Dependencies: [1115, 7982, 2]
+// Dependencies: [1115, 7969, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 8716 (scopes)
+// Module 8708 (scopes)
 import util from "util" /* 1115 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7982 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7969 */;
 import size from "module_2" /* 2 */;
 
 let items = [
@@ -313,7 +313,7 @@ export const isSocialLayerUmbrellaScope = function isSocialLayerUmbrellaScope(it
 };
 export const getSecurityMessage = function getSecurityMessage(scopes) {
   if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE)) {
-    if (!scopes.includes(tmp(7982).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+    if (!scopes.includes(tmp(7969).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
       const intl = tmp(1115).intl;
       const format = intl.format;
       const t = tmp(1115).t;

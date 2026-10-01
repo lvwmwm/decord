@@ -1,11 +1,11 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16303
+// Function ID: 16304
 // Name: ChannelWrapper
-// Dependencies: [19, 17, 21, 9781, 2]
+// Dependencies: [19, 17, 21, 9773, 2]
 // Exports: renderChannelWrapper
 
-// Module 16283 (ChannelWrapper)
-import ChannelListLayout from "ChannelListLayout" /* 9781 */;
+// Module 16303 (ChannelWrapper)
+import ChannelListLayout from "ChannelListLayout" /* 9773 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

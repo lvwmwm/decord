@@ -1,11 +1,11 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14153
+// Function ID: 14154
 // Name: YouTabLottie
-// Dependencies: [19, 21, 9606, 14146, 2]
+// Dependencies: [19, 21, 9600, 14154, 2]
 
-// Module 14145 (YouTabLottie)
-import LottieIcon from "LottieIcon" /* 9606 */;
-import _mod14146 from "module_14146" /* 14146 */;
+// Module 14153 (YouTabLottie)
+import LottieIcon from "LottieIcon" /* 9600 */;
+import _mod14154 from "module_14154" /* 14154 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 
 export const YouTabLottie = noop.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14146, animation: "all", ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14154, animation: "all", ref, layers, markers: items });
 });

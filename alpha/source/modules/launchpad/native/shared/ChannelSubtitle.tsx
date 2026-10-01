@@ -1,13 +1,13 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17057
+// Function ID: 17058
 // Name: ChannelSubtitle
-// Dependencies: [19, 9778, 21, 16702, 4862, 16058, 9776, 2]
+// Dependencies: [19, 9770, 21, 16725, 4841, 16078, 9768, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17035 (ChannelSubtitle)
-import Text_Text from "Text/Text" /* 4862 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16058 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16702 */;
+// Module 17057 (ChannelSubtitle)
+import Text_Text from "Text/Text" /* 4841 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16078 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16725 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,11 +34,11 @@ function ChannelSubtitle(arg0) {
       str = "text-muted";
     }
     obj3.color = str;
-    obj2.children = tmp(9776).renderMessagePreviewMarkup(obj3);
-    return jsx(tmp(4862).Text, {});
+    obj2.children = tmp(9768).renderMessagePreviewMarkup(obj3);
+    return jsx(tmp(4841).Text, {});
   }
 }
-const SUBTITLE_OPACITY_NORMAL = fn(9778).SUBTITLE_OPACITY_NORMAL;
+const SUBTITLE_OPACITY_NORMAL = fn(9770).SUBTITLE_OPACITY_NORMAL;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/ChannelSubtitle.tsx");

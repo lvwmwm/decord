@@ -1,22 +1,22 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15748
+// Function ID: 15749
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [7153, 7612, 8303, 14560, 11211, 1115, 2]
+// Dependencies: [7145, 7590, 8293, 14566, 11215, 1115, 2]
 
-// Module 15731 (ParentalControlsUseDataForQuests3PSetting)
+// Module 15748 (ParentalControlsUseDataForQuests3PSetting)
 import util from "util" /* 1115 */;
-import useSelectedTeen from "useSelectedTeen" /* 8303 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14560 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7153 */;
+import useSelectedTeen from "useSelectedTeen" /* 8293 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14566 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
 
 require = fn;
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.CyLYKZ);
   },
-  parent: fn(7612).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: fn(7590).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuests3PSettingValue() {
     const selectedTeenId = useSelectedTeen.useSelectedTeenId();
     const ParentalControlledQuests3PDataOptedOut = ParentalControlledUserSettings.ParentalControlledQuests3PDataOptedOut;

@@ -1,14 +1,14 @@
-// Module ID: 16313
-// Function ID: 16314
+// Module ID: 16333
+// Function ID: 16334
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2112, 16314, 1074, 1271, 573, 2]
+// Dependencies: [5, 2111, 16334, 1074, 1271, 573, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 16313 (GuildDiscoveryCategoryActionCreators)
+// Module 16333 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16314 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16334 */;
 
 const require = globalThis.__r;
 
@@ -160,7 +160,7 @@ let closure_10 = async function _saveGuildMetadata(arg0, value) {
           let about;
           c5 = 1;
           c6 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

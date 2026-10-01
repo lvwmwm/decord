@@ -1,10 +1,10 @@
-// Module ID: 6193
-// Function ID: 6194
+// Module ID: 6183
+// Function ID: 6184
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1074, 21, 6194, 6195, 6196, 2]
+// Dependencies: [32, 19, 1074, 21, 6184, 6185, 6186, 2]
 // Exports: TableRadioGroup
 
-// Module 6193 (TableRadioGroup)
+// Module 6183 (TableRadioGroup)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -52,7 +52,7 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(6194).RedesignCompatContext);
+  jsx = obj.useContext(onChange(6184).RedesignCompatContext);
   const items1 = [undefined !== value, onChange];
   onSelect = obj.useCallback((arg0) => {
     if (!closure_1) {
@@ -73,6 +73,6 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
     }
     tmp4 = type;
   });
-  obj2.children = jsx(onChange(6195).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
+  obj2.children = jsx(onChange(6185).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
   return <onSelect.Provider value={noop.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</onSelect.Provider>;
 };

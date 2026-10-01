@@ -1,23 +1,23 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9238
+// Function ID: 9239
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 2108, 2102, 1372, 8044, 1085, 21, 4866, 576, 4504, 6598, 504, 4850, 9215, 1177, 1115, 9231, 4571, 6241, 9235, 6028, 4862, 9240, 2]
+// Dependencies: [109, 32, 19, 17, 2107, 2101, 1372, 8033, 1085, 21, 4845, 576, 4503, 6588, 504, 4829, 9209, 1177, 1115, 9225, 4570, 6231, 9229, 6017, 4841, 9234, 2]
 // Exports: default
 
-// Module 9244 (AddMembersBody)
+// Module 9238 (AddMembersBody)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4504 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4571 */;
-import RegexUtilsDefault from "RegexUtils" /* 4850 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import GuildUtilsDefault from "GuildUtils" /* 6028 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9215 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4570 */;
+import RegexUtilsDefault from "RegexUtils" /* 4829 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import GuildUtilsDefault from "GuildUtils" /* 6017 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9209 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -54,12 +54,12 @@ function _toPropertyKey(obj) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8, SectionList: closure_9 } = get_ActivityIndicator);
-const ChannelPermissionsConstants = fn(8044);
+const ChannelPermissionsConstants = fn(8033);
 ({ RowType: map1, MEMBER_REQUEST_COUNT: closure_14 } = ChannelPermissionsConstants);
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { inputContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 }, inputDescContainer: null, inputDescText: null, tagRoleColor: null, tagAvatar: null, emptyState: null, emptyStateText: null, sectionRowWrapper: null, adminWarning: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
 obj2.inputDescContainer = { flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
@@ -115,7 +115,7 @@ export default function AddMembersBody(pendingAdditions) {
   if (first) {
     let items2 = [];
   } else {
-    const tmp10Result = tmp10(9215);
+    const tmp10Result = tmp10(9209);
     const rolesRowsWithPermissionDisabled = tmp10Result.getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery);
     let tmp19 = 0 === rolesRowsWithPermissionDisabled.length && "" === str.trim();
     if (tmp19) {
@@ -123,8 +123,8 @@ export default function AddMembersBody(pendingAdditions) {
     }
     items2 = rolesRowsWithPermissionDisabled;
     if (tmp19) {
-      items2 = tmp10(9215).getNoRolesRow();
-      const tmp10Result3 = tmp10(9215);
+      items2 = tmp10(9209).getNoRolesRow();
+      const tmp10Result3 = tmp10(9209);
     }
   }
   let obj5 = guild(504);
@@ -159,12 +159,12 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp6(6241).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp6(6231).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    let BottomSheetSectionList = tmp6(6241).BottomSheetSectionList;
+    let BottomSheetSectionList = tmp6(6231).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = closure_9;
   }
@@ -195,13 +195,13 @@ export default function AddMembersBody(pendingAdditions) {
       return first(dependencyMap, items.map(_toPropertyKey));
     });
   };
-  obj9.children = closure_16(pendingAdditions(9235), obj10);
+  obj9.children = closure_16(pendingAdditions(9229), obj10);
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
   if (null != inputDesc) {
     const obj11 = { style: tmp3.inputDescContainer, children: null };
     const obj12 = { style: tmp3.inputDescText, variant: "text-xs/medium", color: "text-default", children: inputDesc };
-    obj11.children = tmp27(tmp6(4862).Text, obj12);
+    obj11.children = tmp27(tmp6(4841).Text, obj12);
     tmp27Result = tmp27(tmp28, obj11);
   }
   items5[1] = tmp27Result;
@@ -218,7 +218,7 @@ export default function AddMembersBody(pendingAdditions) {
     if (0 === items2.length) {
       if (0 === membersRows.length) {
         const obj15 = { children: null };
-        const obj16 = { Illustration: tmp6(9240).NoResultsAlt, style: null, bodyStyle: null, body: null };
+        const obj16 = { Illustration: tmp6(9234).NoResultsAlt, style: null, bodyStyle: null, body: null };
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         const intl5 = tmp6(1115).intl;
         const obj17 = { query: str };
@@ -233,8 +233,8 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }
   const obj19 = { contentContainerStyle: null, renderItem: null, renderSectionHeader: null, sections: null, keyboardShouldPersistTaps: "always" };
-  const tmp4Result = pendingAdditions(9235);
-  obj19.contentContainerStyle = { paddingHorizontal: pendingAdditions(576).space.PX_16, paddingBottom: pendingAdditions(576).space.PX_16 + pendingAdditions(6598)(obj).insets.bottom };
+  const tmp4Result = pendingAdditions(9229);
+  obj19.contentContainerStyle = { paddingHorizontal: pendingAdditions(576).space.PX_16, paddingBottom: pendingAdditions(576).space.PX_16 + pendingAdditions(6588)(obj).insets.bottom };
   obj19.renderItem = function renderItem(item) {
     item = item.item;
     ({ index, section } = item);

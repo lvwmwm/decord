@@ -1,20 +1,20 @@
-// Module ID: 6073
-// Function ID: 6074
+// Module ID: 6062
+// Function ID: 6063
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1074, 38, 4793, 1364, 510, 6074, 2020, 4, 6075, 6076, 1366, 1271, 4892, 2]
+// Dependencies: [32, 5, 1074, 38, 4772, 1364, 510, 6063, 6064, 4, 6065, 6066, 1366, 1271, 4871, 2]
 
-// Module 6073 (DesktopNativeUtils)
+// Module 6062 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
-import Client from "Client" /* 4793 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4892 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6074 */;
-import IPCEvents from "IPCEvents" /* 6075 */;
+import Client from "Client" /* 4772 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4871 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6063 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6064 */;
+import IPCEvents from "IPCEvents" /* 6065 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const FileExtensionUtils = tmp2(6076);
+const FileExtensionUtils = tmp2(6066);
 require = fn;
 function sanitizeFilename(arg0) {
   try {
@@ -497,7 +497,7 @@ obj2.setObserverDebugCallback = function setObserverDebugCallback(arg0, NONE, ar
 };
 obj2.clearObserverDebugCallback = function clearObserverDebugCallback() {
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback(null, GameDetectionTypes.GameDetectionDebugLevel.NONE, 0);
+  const result = discordUtils.setObserverDebugCallback(null, GameDetectionDebugLevel.GameDetectionDebugLevel.NONE, 0);
 };
 obj2.shouldDisplayNotifications = function shouldDisplayNotifications() {
   const discordUtils = this.getDiscordUtils();
@@ -582,7 +582,7 @@ obj2.setBadge = function setBadge(arg0) {
   } else {
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(6075).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(6065).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === tmpResult2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -795,7 +795,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             return obj5;
           } else {
             closure_129_0 = value;
-            closure_129_1 = closure_0(6076).decideFileExtension(closure_130_0, closure_130_1);
+            closure_129_1 = closure_0(6066).decideFileExtension(closure_130_0, closure_130_1);
             if (null != closure_129_1) {
               if (set2.has(closure_129_1)) {
                 closure_0 = closure_130_1;
@@ -831,7 +831,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             }
             const _HermesInternal = HermesInternal;
             combined = "image." + closure_129_1;
-            const obj8 = closure_0(6076);
+            const obj8 = closure_0(6066);
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -916,7 +916,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj2.canSaveImage = function canSaveImage(uri, contentType) {
   if (null != uri) {
     if (require("PlatformUtils").isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(6076).decideFileExtension(uri, contentType);
+      const decideFileExtensionResult = tmp(6066).decideFileExtension(uri, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set2.has(decideFileExtensionResult);
@@ -991,7 +991,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const str3 = str2.replace(closure_1_21, "");
               } else if (!str.includes(".")) {
-                const decideFileExtensionResult = unknown(6076).decideFileExtension(tmp54, closure_1);
+                const decideFileExtensionResult = unknown(6066).decideFileExtension(tmp54, closure_1);
                 dependencyMap = decideFileExtensionResult;
                 png = dependencyMap;
                 if (dependencyMap == null) {
@@ -999,7 +999,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const _HermesInternal = HermesInternal;
                 closure_133_0 = "" + str + "." + png;
-                const obj9 = unknown(6076);
+                const obj9 = unknown(6066);
               }
               tmp54 = getImageData(tmp54);
               c9 = 1;
@@ -1656,7 +1656,7 @@ obj2.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(6075).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(6065).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
@@ -1668,7 +1668,7 @@ obj2.setTrafficLightAppearance = function setTrafficLightAppearance(arg0, arg1) 
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(6075).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
+        this.sendIPC(tmp(6065).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
       } catch (err) {
       }
     }

@@ -1,26 +1,50 @@
 // Module ID: 14012
 // Function ID: 14013
-// Dependencies: [14010, 13984]
+// Dependencies: [13992, 14013]
 
 // Module 14012
-import _mod13984 from "module_13984" /* 13984 */;
-import _mod14010 from "module_14010" /* 14010 */;
+import _mod13992 from "module_13992" /* 13992 */;
+import _mod14013 from "module_14013" /* 14013 */;
 
-
-export default (arg0, arg1) => {
-  if (arguments.length < 2) {
-    const tmp7 = _mod13984[arg0];
-    let tmp8;
-    if (_mod14010(tmp7)) {
-      tmp8 = tmp7;
-    }
-    let tmp3 = tmp8;
+let tmp = _mod13992.process && _mod13992.process.versions;
+if (!tmp) {
+  tmp = _mod13992.Deno && _mod13992.Deno.version;
+  const tmp2 = _mod13992.Deno && _mod13992.Deno.version;
+}
+let str = tmp;
+if (tmp) {
+  str = tmp.v8;
+}
+let tmp3;
+if (str) {
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    let num3 = +parts[0] + parts[1];
   } else {
-    tmp3 = _mod13984[arg0];
-    if (tmp3) {
-      tmp3 = tmp(13984)[arg0][arg1];
-    }
-    tmp = require;
+    num3 = 1;
   }
-  return tmp3;
-};
+  tmp3 = num3;
+  let tmp4 = parts;
+}
+let _module = !tmp3;
+if (!tmp3) {
+  _module = _mod14013;
+}
+if (_module) {
+  const match = _mod14013.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  _module = tmp8;
+  tmp4 = match;
+}
+if (_module) {
+  _module = _mod14013.match(/Chrome\/(\d+)/);
+  tmp4 = _module;
+}
+if (_module) {
+  tmp3 = +tmp4[1];
+}
+
+export default tmp3;

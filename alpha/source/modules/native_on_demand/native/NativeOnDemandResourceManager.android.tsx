@@ -1,14 +1,14 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17455
+// Function ID: 17456
 // Name: NativeOnDemandResourceManager
-// Dependencies: [1993, 1980, 1074, 6735, 17424, 9303, 2]
+// Dependencies: [1993, 1980, 1074, 6725, 17456, 9297, 2]
 
-// Module 17423 (NativeOnDemandResourceManager)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9303 */;
-import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17424 */;
+// Module 17455 (NativeOnDemandResourceManager)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9297 */;
+import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17456 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 const AppStates = fn(1074).AppStates;
 const prototype = function NativeOnDemandResourceManager() {

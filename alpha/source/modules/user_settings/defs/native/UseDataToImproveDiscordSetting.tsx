@@ -1,27 +1,27 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14602
+// Function ID: 14603
 // Name: UseDataToImproveDiscordSetting
-// Dependencies: [6208, 7612, 1074, 14559, 5399, 1115, 5496, 14597, 14598, 504, 11211, 2]
+// Dependencies: [6198, 7590, 1074, 14565, 5387, 1115, 5484, 14603, 14604, 504, 11215, 2]
 
-// Module 14596 (UseDataToImproveDiscordSetting)
+// Module 14602 (UseDataToImproveDiscordSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import common_AlertDefault from "common/Alert" /* 5496 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14559 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 14597 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14598 */;
-import ConsentStore from "ConsentStore" /* 6208 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
+import common_AlertDefault from "common/Alert" /* 5484 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 14603 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14604 */;
+import ConsentStore from "ConsentStore" /* 6198 */;
 
 require = fn;
 const Consents = fn(1074).Consents;
-const SettingBuilders = fn(11211);
+const SettingBuilders = fn(11215);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.XuADY2);
   },
-  parent: fn(7612).MobileUserSettings.DATA_AND_PRIVACY,
+  parent: fn(7590).MobileUserSettings.DATA_AND_PRIVACY,
   useValue: function useDataToImproveDiscordSettingValue() {
     const items = [ConsentStore];
     return initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.USAGE_STATISTICS));

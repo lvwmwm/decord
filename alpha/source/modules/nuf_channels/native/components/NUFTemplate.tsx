@@ -1,13 +1,13 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13526
+// Function ID: 13527
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 4866, 576, 4862, 5477, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 4841, 5465, 2]
 // Exports: default
 
-// Module 13518 (NUFTemplate)
+// Module 13526 (NUFTemplate)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, Image: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 const obj2 = { container: { padding: 16, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", lineHeight: 18, marginBottom: 24 }, image: { marginBottom: 24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

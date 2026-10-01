@@ -1,15 +1,15 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11749
+// Function ID: 11750
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 576, 4866, 6095, 2]
+// Dependencies: [17, 21, 576, 4845, 6085, 2]
 // Exports: default
 
-// Module 11741 (EntityBorderAppIcon)
+// Module 11749 (EntityBorderAppIcon)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 6095 */;
-import createStyles from "createStyles" /* 4866 */;
+import FastImageDefault from "FastImage" /* 6085 */;
+import createStyles from "createStyles" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

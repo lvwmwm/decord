@@ -1,9 +1,9 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11737
+// Function ID: 11738
 // Name: AppLauncherOnboardingPersistedStore
 // Dependencies: [504, 573, 2]
 
-// Module 11729 (AppLauncherOnboardingPersistedStore)
+// Module 11737 (AppLauncherOnboardingPersistedStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

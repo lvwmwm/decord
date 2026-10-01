@@ -1,0 +1,35 @@
+// Module ID: 17427
+// Function ID: 17428
+// Name: FramePanelUtils
+// Dependencies: [8690, 8691, 8693, 504, 2]
+// Exports: isFramePanelFullscreen, useIsActivityPanelFullscreen
+
+// Module 17427 (FramePanelUtils)
+import initialize from "initialize" /* 504 */;
+import FramesStore from "FramesStore" /* 8690 */;
+
+require = fn;
+const asLaunched = fn(8691).asLaunched;
+const ActivityPanelModes = fn(8693).ActivityPanelModes;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/frames/panel/native/utils/FramePanelUtils.tsx");
+
+export const isFramePanelFullscreen = function isFramePanelFullscreen() {
+  const tmp = asLaunched(FramesStore.getMainFrame());
+  let tmp2 = null != tmp;
+  if (tmp2) {
+    tmp2 = tmp.data.activityPanelMode === ActivityPanelModes.PANEL;
+  }
+  return tmp2;
+};
+export const useIsActivityPanelFullscreen = function useIsActivityPanelFullscreen() {
+  const items = [FramesStore];
+  return initialize.useStateFromStores(items, () => {
+    const tmp = asLaunched(mainFrame.getMainFrame());
+    let tmp2 = null != tmp;
+    if (tmp2) {
+      tmp2 = tmp.data.activityPanelMode === constants.PANEL;
+    }
+    return tmp2;
+  });
+};

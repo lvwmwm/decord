@@ -1,14 +1,14 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17521
+// Function ID: 17522
 // Name: ThreadManager
-// Dependencies: [502, 2045, 6735, 504, 573, 7519, 2]
+// Dependencies: [502, 2044, 6725, 504, 573, 7497, 2]
 
-// Module 17489 (ThreadManager)
+// Module 17521 (ThreadManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7519 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7497 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 class ThreadManager extends tmp2 {
   constructor() {

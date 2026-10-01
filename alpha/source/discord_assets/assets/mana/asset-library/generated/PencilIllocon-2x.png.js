@@ -1,8 +1,8 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12297
+// Function ID: 12298
 // Dependencies: [2]
 
-// Module 12289
+// Module 12297
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PencilIllocon-2x.png.js");

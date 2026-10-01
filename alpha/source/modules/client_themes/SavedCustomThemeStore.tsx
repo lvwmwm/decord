@@ -1,9 +1,9 @@
-// Module ID: 4795
-// Function ID: 4796
+// Module ID: 4774
+// Function ID: 4775
 // Name: SavedCustomThemeStore
 // Dependencies: [1185, 1231, 504, 573, 2]
 
-// Module 4795 (SavedCustomThemeStore)
+// Module 4774 (SavedCustomThemeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;

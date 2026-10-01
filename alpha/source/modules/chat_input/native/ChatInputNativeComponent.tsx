@@ -1,22 +1,22 @@
-// Module ID: 11936
-// Function ID: 11937
+// Module ID: 11943
+// Function ID: 11944
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4683, 21, 4866, 576, 1115, 4797, 4715, 4713, 1364, 11716, 11674, 2]
+// Dependencies: [19, 4682, 21, 4845, 576, 1115, 4776, 4714, 4712, 1364, 11724, 11682, 2]
 
-// Module 11936 (chat_input/ChatInputNativeComponent)
+// Module 11943 (chat_input/ChatInputNativeComponent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ColorUtils from "ColorUtils" /* 4713 */;
-import shared from "shared" /* 4715 */;
-import useTheme from "useTheme" /* 4797 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11674 */;
+import ColorUtils from "ColorUtils" /* 4712 */;
+import shared from "shared" /* 4714 */;
+import useTheme from "useTheme" /* 4776 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11682 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4683 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4682 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj = { style: { flex: 1 }, textColor: { color: nativeDefault.colors.TEXT_DEFAULT }, placeholderColor: null };
 let obj3 = { color: nativeDefault.colors.TEXT_DEFAULT };
 obj.placeholderColor = { color: nativeDefault.colors.TEXT_MUTED };

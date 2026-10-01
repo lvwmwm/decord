@@ -1,24 +1,24 @@
-// Module ID: 11563
-// Function ID: 11564
+// Module ID: 11571
+// Function ID: 11572
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2112, 8076, 8063, 1074, 21, 4866, 576, 4862, 8064, 1115, 504, 3103, 9402, 4555, 8904, 6113, 5477, 11564, 11566, 8075, 8056, 1241, 11567, 5375, 5380, 11569, 6740, 11574, 8062, 2]
+// Dependencies: [19, 17, 2111, 8065, 8052, 1074, 21, 4845, 576, 4841, 8053, 1115, 504, 3102, 9396, 4554, 8896, 6103, 5465, 11572, 11574, 8064, 8045, 1241, 11575, 5363, 5368, 11577, 6730, 11582, 8051, 2]
 // Exports: default
 
-// Module 11563 (ClassificationDetail)
+// Module 11571 (ClassificationDetail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3103 from "module_3103" /* 3103 */;
-import LinkingDefault from "Linking" /* 4555 */;
-import Text_Text from "Text/Text" /* 4862 */;
-import MetricEvents from "MetricEvents" /* 5380 */;
-import components_Button_Button from "components/Button/Button" /* 5477 */;
-import TableRow from "TableRow" /* 6113 */;
-import SafetyHubModels from "SafetyHubModels" /* 8064 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9402 */;
+import _modDef3102 from "module_3102" /* 3102 */;
+import LinkingDefault from "Linking" /* 4554 */;
+import Text_Text from "Text/Text" /* 4841 */;
+import MetricEvents from "MetricEvents" /* 5368 */;
+import components_Button_Button from "components/Button/Button" /* 5465 */;
+import TableRow from "TableRow" /* 6103 */;
+import SafetyHubModels from "SafetyHubModels" /* 8053 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9396 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import SafetyHubStore from "SafetyHubStore" /* 8076 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
+import SafetyHubStore from "SafetyHubStore" /* 8065 */;
 
 require = fn;
 function ClassificationHeader(classificationTypeText) {
@@ -70,7 +70,7 @@ function ClassificationHeader(classificationTypeText) {
       return intl.format(util.t["39jfOz"], obj2);
     }
   }, items);
-  obj.children = closure_13(classificationTypeText(4862).Text, { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo });
+  obj.children = closure_13(classificationTypeText(4841).Text, { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo });
   return closure_13(closure_4, obj);
 }
 function SectionHeader(arg0) {
@@ -148,7 +148,7 @@ function ManualReviewDecidedUnderageActionsTaken() {
   obj3.style = items1;
   const obj4 = { large: true, children: null };
   const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3103.rn3Gto);
+  obj4.children = intl2.string(_modDef3102.rn3Gto);
   obj3.children = map1(BulletRow, obj4);
   items[1] = map1(React4, obj3);
   obj.children = items;
@@ -173,7 +173,7 @@ function ManualReviewDecidedUnderageGuidance() {
   obj3.style = items1;
   const obj4 = { large: true, children: null };
   const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3103["yV/t/V"]);
+  obj4.children = intl2.string(_modDef3102["yV/t/V"]);
   obj3.children = map1(BulletRow, obj4);
   items[1] = map1(React4, obj3);
   obj.children = items;
@@ -210,13 +210,13 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2.style = items;
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: null };
   const tmp2 = TouchableHitBoxDefault;
-  obj3.children = closure_13(policyExplainerLink(8904).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
+  obj3.children = closure_13(policyExplainerLink(8896).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
   const items1 = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = policyExplainerLink(1115).intl;
   obj6.children = intl.format(policyExplainerLink(1115).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
-  obj5.children = closure_13(policyExplainerLink(4862).Text, obj6);
+  obj5.children = closure_13(policyExplainerLink(4841).Text, obj6);
   items1[1] = closure_13(closure_4, obj5);
   obj2.children = items1;
   obj.children = closure_14(tmp2, obj2);
@@ -274,7 +274,7 @@ function ManualReviewDecidedUnderageFooter(arg0) {
   ({ tosLink, communityGuidelinesLink } = arg0);
   const obj = { variant: "text-sm/normal", color: "text-muted", children: null };
   const intl = util.intl;
-  obj.children = intl.format(_modDef3103.vPOpia, { tosLink, communityGuidelinesLink });
+  obj.children = intl.format(_modDef3102.vPOpia, { tosLink, communityGuidelinesLink });
   return map1(Text_Text.Text, obj);
 }
 function ManualReviewDecidedUnderageView() {
@@ -294,12 +294,12 @@ function ClassificationDetailFooter(onClose) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8063);
+const SafetyHubConstants = fn(8052);
 ({ SafetyHubAnalyticsActionSource: closure_9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: closure_11 } = SafetyHubConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { root: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, container: null, header: null, headerText: null, sectionContainer: null, actionsTaken: null, classificationDetailContainer: null, letUsKnowContainer: null, confirmMinimumAgeSection: null, guidelinesFooter: null, classificationPolicyCard: null, classificationPolicyCardIcon: null, classificationPolicyCardContent: null, classificationActionDescription: null, bulletText: null, redirectButtonWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.container = { display: "flex", flexDirection: "column", height: "100%", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32 };
@@ -448,24 +448,24 @@ export default function ConnectedClassificationDetail(classificationId) {
         ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
         AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
         if (hasItem1) {
-          tmp(11567).openV2(tmp3, onClose);
-          const tmpResult = tmp(11567);
+          tmp(11575).openV2(tmp3, onClose);
+          const tmpResult = tmp(11575);
         } else if (hasItem) {
-          tmp(11567).open(tmp3, onClose);
-          const tmpResult5 = tmp(11567);
+          tmp(11575).open(tmp3, onClose);
+          const tmpResult5 = tmp(11575);
         } else if (isAppealEligible) {
           const obj4 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
-          tmp(5375).increment(obj4);
-          const tmpResult6 = tmp(5375);
+          tmp(5363).increment(obj4);
+          const tmpResult6 = tmp(5363);
           const obj5 = { classificationId: tmp3 };
-          tmp(11569).open(obj5);
-          const tmpResult7 = tmp(11569);
+          tmp(11577).open(obj5);
+          const tmpResult7 = tmp(11577);
         } else {
-          tmp(4555).openURL(constants.APPEALS_LINK);
-          const tmpResult8 = tmp(4555);
+          tmp(4554).openURL(constants.APPEALS_LINK);
+          const tmpResult8 = tmp(4554);
         }
       }
-      const obj9 = { actions: classification.actions, classificationExpiration: tmp(tmp2[30]).getClassificationExpiration(classification), redesigned: hasItem1 };
+      const obj9 = { actions: classification.actions, classificationExpiration: tmp(tmp2[30]).getClassificationAccountStatusExpiration(classification), redesigned: hasItem1 };
       const items5 = [tmp19(ClassificationActionsTaken, obj9), ];
       if (hasItem1) {
         const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow: null };

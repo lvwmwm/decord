@@ -1,16 +1,16 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6909
+// Function ID: 6910
 // Name: ForumPostDataLoader
-// Dependencies: [5, 2045, 6919, 6891, 6922, 1074, 12, 11, 504, 1271, 573, 2]
+// Dependencies: [5, 2044, 6910, 6882, 6913, 1074, 12, 11, 504, 1271, 573, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 6918 (ForumPostDataLoader)
+// Module 6909 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6891 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 6922 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6882 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 6913 */;
 
 const require = globalThis.__r;
 
@@ -199,7 +199,7 @@ let closure_15 = async function _loadForumPostDataForChannelId(arg0, value) {
     }
   }
 };
-const computeThreadIdsSnapshot = fn(6919).computeThreadIdsSnapshot;
+const computeThreadIdsSnapshot = fn(6910).computeThreadIdsSnapshot;
 const Endpoints = fn(1074).Endpoints;
 class DefaultDict {
   constructor(arg0) {

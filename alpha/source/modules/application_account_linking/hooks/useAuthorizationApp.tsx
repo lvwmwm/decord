@@ -1,12 +1,12 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6774
+// Function ID: 6775
 // Name: useAuthorizationApp
-// Dependencies: [19, 5093, 2003, 1349, 1979, 6785, 2]
+// Dependencies: [19, 5072, 2003, 1349, 1979, 6775, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 6784 (useAuthorizationApp)
+// Module 6774 (useAuthorizationApp)
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5093 */;
+import ApplicationStore from "ApplicationStore" /* 5072 */;
 import ApplicationRecord from "ApplicationRecord" /* 2003 */;
 
 const require = globalThis.__r;

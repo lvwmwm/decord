@@ -1,10 +1,10 @@
-// Module ID: 15542
-// Function ID: 15543
+// Module ID: 15547
+// Function ID: 15548
 // Name: useMountTimer
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 15542 (useMountTimer)
+// Module 15547 (useMountTimer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

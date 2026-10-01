@@ -1,11 +1,11 @@
 // Module ID: 4308
 // Function ID: 4309
-// Dependencies: [4300, 3949]
+// Dependencies: [4300, 3948]
 // Exports: default
 
 // Module 4308
 import module_4300_mod from "module_4300" /* 4300 */;
-import requiredArgs_mod from "requiredArgs" /* 3949 */;
+import requiredArgs_mod from "requiredArgs" /* 3948 */;
 
 let module_4300 = module_4300_mod;
 if (!module_4300) {
@@ -24,7 +24,7 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThisQuarter(arg0) {
+export default function isThisSecond(arg0) {
   requiredArgs.default(1, arguments);
   return module_4300.default(Date.now(), arg0);
 };

@@ -1,14 +1,14 @@
-// Module ID: 17934
-// Function ID: 17935
+// Module ID: 17969
+// Function ID: 17970
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1372, 21, 4866, 576, 1177, 504, 17932, 17935, 1397, 4862, 1115, 2781, 5632, 2487, 8454, 14665, 14619, 4558, 5475, 17936, 12670, 14624, 2]
+// Dependencies: [19, 17, 1372, 21, 4845, 576, 1177, 504, 17967, 17970, 1397, 4841, 1115, 2780, 5621, 2486, 8446, 14671, 14625, 4557, 5463, 17971, 12681, 14630, 2]
 // Exports: default
 
-// Module 17934 (PendingRequestList)
+// Module 17969 (PendingRequestList)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _modDef2781 from "module_2781" /* 2781 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 14619 */;
+import _modDef2780 from "module_2780" /* 2780 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 14625 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -161,7 +161,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { card: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" }, row: null, divider: null, avatar: null, details: null, actions: null, actionButton: null, acceptButton: null, declineButton: null, acceptIcon: null, declineIcon: null, inviteIconContainer: null, inviteQrButton: null, inviteShareButton: null, dividerRow: null, dividerLine: null, dividerLabel: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj2.row = { flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -261,7 +261,7 @@ export default function PendingRequestList(arg0) {
   const items1 = [c7(c5, { style: tmp.dividerLine }), , ];
   const obj7 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted", children: null };
   let intl = tmp5(1115).intl;
-  obj7.children = intl.string(_modDef2781["/SbB94"]);
+  obj7.children = intl.string(_modDef2780["/SbB94"]);
   items1[1] = c7(require("Text/Text").Text, obj7);
   items1[2] = c7(c5, { style: tmp.dividerLine });
   obj5.children = items1;
@@ -287,11 +287,11 @@ export default function PendingRequestList(arg0) {
   const obj11 = { style: tmp.details, children: null };
   const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp5(1115).intl;
-  obj12.children = intl2.string(_modDef2781.z9gkwZ);
+  obj12.children = intl2.string(_modDef2780.z9gkwZ);
   const items4 = [c7(require("Text/Text").Text, obj12), ];
   const obj13 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl3 = tmp5(1115).intl;
-  obj13.children = intl3.string(_modDef2781["9t4+vC"]);
+  obj13.children = intl3.string(_modDef2780["9t4+vC"]);
   items4[1] = c7(require("Text/Text").Text, obj13);
   obj11.children = items4;
   items3[1] = closure_8(c5, obj11);
@@ -307,7 +307,7 @@ export default function PendingRequestList(arg0) {
   const items6 = [c7(require("Pressables").PressableOpacity, obj15), ];
   const obj17 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
   const intl5 = tmp5(1115).intl;
-  obj17.accessibilityLabel = intl5.string(_modDef2781.z9gkwZ);
+  obj17.accessibilityLabel = intl5.string(_modDef2780.z9gkwZ);
   obj17.onPress = onInviteAnotherGuardian;
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);

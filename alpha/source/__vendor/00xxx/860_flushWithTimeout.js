@@ -77,7 +77,7 @@ let closure_5 = async function _flushIfServerless(arg0, value) {
           closure_129_2 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else {
         if (1 === tmp5) {

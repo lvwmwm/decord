@@ -1,15 +1,17 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17423
+// Function ID: 17424
 // Name: JankSessionManager
-// Dependencies: [7076, 1074, 3, 6735, 17400, 1339, 15836, 17401, 7091, 2]
+// Dependencies: [7068, 1074, 3, 6725, 17424, 1339, 15852, 17425, 15859, 17426, 7083, 2]
 
-// Module 17399 (JankSessionManager)
+// Module 17423 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 1339 */;
-import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17400 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 17401 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7076 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6735 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15859 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17424 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 17425 */;
+import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 17426 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7068 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -47,12 +49,15 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
 prototype["attachScreenReporters"] = function attachScreenReporters() {
   if (obj.isJankScreenReportingEnabled()) {
     JankNavigationReporterDefault.attach();
+    const result = getJankSurfaceName.attachJankActionSheetReporter();
+    attachJankPanelReportersDefault();
+    const tmpResult = getJankSurfaceName;
   }
 };
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(17400);
+    let obj = self(17424);
     tmp._isDelivering = true;
     const pendingReports = obj.getPendingReports();
     const nextPromise = pendingReports.then((arr) => {
@@ -60,21 +65,22 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7091).getDeviceMetadata());
+          let merged = Object.assign(screens(7083).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
-          const items = [
-            obj,
-            ...screens.map((item) => {
-              obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7091).getDeviceMetadata());
-              ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
-              ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
-              obj.properties = {};
-              return obj;
-            })
-          ];
+          const items = [obj];
           screens = screens.screens;
+          if (screens == null) {
+            screens = [];
+          }
+          HermesBuiltin.arraySpread(screens.map((item) => {
+            obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
+            const merged = Object.assign(screens(7083).getDeviceMetadata());
+            ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
+            ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
+            obj.properties = {};
+            return obj;
+          }), 1);
           return items;
         }));
         return result.then(() => {
@@ -87,21 +93,22 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7091).getDeviceMetadata());
+          let merged = Object.assign(screens(7083).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
-          const items = [
-            obj,
-            ...screens.map((item) => {
-              obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7091).getDeviceMetadata());
-              ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
-              ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
-              obj.properties = {};
-              return obj;
-            })
-          ];
+          const items = [obj];
           screens = screens.screens;
+          if (screens == null) {
+            screens = [];
+          }
+          HermesBuiltin.arraySpread(screens.map((item) => {
+            obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
+            const merged = Object.assign(screens(7083).getDeviceMetadata());
+            ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
+            ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
+            obj.properties = {};
+            return obj;
+          }), 1);
           return items;
         }));
         return result.then(() => {
@@ -118,21 +125,22 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7091).getDeviceMetadata());
+          let merged = Object.assign(screens(7083).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
-          const items = [
-            obj,
-            ...screens.map((item) => {
-              obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7091).getDeviceMetadata());
-              ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
-              ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
-              obj.properties = {};
-              return obj;
-            })
-          ];
+          const items = [obj];
           screens = screens.screens;
+          if (screens == null) {
+            screens = [];
+          }
+          HermesBuiltin.arraySpread(screens.map((item) => {
+            obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
+            const merged = Object.assign(screens(7083).getDeviceMetadata());
+            ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
+            ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
+            obj.properties = {};
+            return obj;
+          }), 1);
           return items;
         }));
         return result.then(() => {

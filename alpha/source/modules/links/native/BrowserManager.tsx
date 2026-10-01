@@ -1,15 +1,15 @@
-// Module ID: 4827
-// Function ID: 4828
+// Module ID: 4806
+// Function ID: 4807
 // Name: BrowserManager
-// Dependencies: [5, 17, 1364, 4828, 4829, 560, 1094, 4555, 1370, 2]
+// Dependencies: [5, 17, 1364, 4807, 4808, 560, 1094, 4554, 1370, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 4827 (BrowserManager)
+// Module 4806 (BrowserManager)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import LinkingDefault from "Linking" /* 4555 */;
-import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4828 */;
-import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4829 */;
+import LinkingDefault from "Linking" /* 4554 */;
+import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4807 */;
+import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4808 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -168,11 +168,11 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
         });
       } else if (tmp2(1094).WebBrowserType.CHROME === selectedBrowser) {
         if (tmp2Result3.isAndroid()) {
-          let openInChromeURLResult = tmp6(4828).openInChromeURL(href);
-          const tmp6Result = tmp6(4828);
+          let openInChromeURLResult = tmp6(4807).openInChromeURL(href);
+          const tmp6Result = tmp6(4807);
         } else {
-          openInChromeURLResult = tmp6(4829).openInChromeURL(href, true);
-          const tmp6Result2 = tmp6(4829);
+          openInChromeURLResult = tmp6(4808).openInChromeURL(href, true);
+          const tmp6Result2 = tmp6(4808);
         }
         return openInChromeURLResult;
       } else {
@@ -186,9 +186,9 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
 export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {
   if (obj.isAndroid()) {
     const obj3 = {};
-    obj3[tmp(1094).WebBrowserType.SAFARI] = tmp(4828).BrowserType.SAFARI;
-    obj3[tmp(1094).WebBrowserType.IN_APP] = tmp(4828).BrowserType.IN_APP;
-    obj3[tmp(1094).WebBrowserType.CHROME] = tmp(4828).BrowserType.CHROME;
+    obj3[tmp(1094).WebBrowserType.SAFARI] = tmp(4807).BrowserType.SAFARI;
+    obj3[tmp(1094).WebBrowserType.IN_APP] = tmp(4807).BrowserType.IN_APP;
+    obj3[tmp(1094).WebBrowserType.CHROME] = tmp(4807).BrowserType.CHROME;
     if (null != obj3[selectedBrowser]) {
       const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp5);
     }

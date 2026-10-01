@@ -1,10 +1,10 @@
-// Module ID: 7460
-// Function ID: 7461
+// Module ID: 7438
+// Function ID: 7439
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1074, 2042, 573, 1271, 7461, 4684, 2029, 1385, 2]
+// Dependencies: [32, 5, 1074, 2041, 573, 1271, 7439, 4683, 2029, 1385, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 7460 (ScheduledMessageActionCreators)
+// Module 7438 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -46,7 +46,7 @@ let closure_8 = async function _createScheduledMessage(arg0, value) {
           closure_131_4 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -164,7 +164,7 @@ let closure_9 = async function _updateScheduledMessage(arg0, value) {
           closure_131_9 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "flex", done: true };
+          return { value: "flex", done: null };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -474,7 +474,7 @@ let closure_13 = async function _fetchScheduledMessages() {
 };
 const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, MessageFlags: metroRequire } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageActionCreators.tsx");
 

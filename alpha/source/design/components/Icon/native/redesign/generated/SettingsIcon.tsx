@@ -1,13 +1,13 @@
-// Module ID: 6994
-// Function ID: 6995
+// Module ID: 6985
+// Function ID: 6986
 // Name: SettingsIcon
-// Dependencies: [19, 21, 576, 4560, 6995, 2]
+// Dependencies: [19, 21, 576, 4559, 6986, 2]
 // Exports: SettingsIcon
 
-// Module 6994 (SettingsIcon)
+// Module 6985 (SettingsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4560 */;
-import _mod6995 from "module_6995" /* 6995 */;
+import BaseIconImage from "BaseIconImage" /* 4559 */;
+import _mod6986 from "module_6986" /* 6986 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SettingsIcon = function SettingsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod6995, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod6986, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

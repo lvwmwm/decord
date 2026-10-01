@@ -1,15 +1,15 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11526
+// Function ID: 11527
 // Name: GuildMemberUtils
-// Dependencies: [2108, 2067, 4499, 1372, 4485, 1074, 504, 11, 1385, 2]
+// Dependencies: [2107, 2066, 4498, 1372, 4484, 1074, 504, 11, 1385, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 11518 (GuildMemberUtils)
+// Module 11526 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4499 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4498 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -107,7 +107,7 @@ function canBanMember(user, guild) {
   }
   return tmp4;
 }
-const GuildMemberFlags = fn(4485).GuildMemberFlags;
+const GuildMemberFlags = fn(4484).GuildMemberFlags;
 const Permissions = fn(1074).Permissions;
 let c9 = 86400000;
 const size = fn(2);

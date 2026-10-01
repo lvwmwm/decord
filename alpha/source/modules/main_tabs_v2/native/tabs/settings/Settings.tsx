@@ -1,23 +1,23 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 16969
+// Function ID: 16970
 // Name: Settings
-// Dependencies: [19, 17, 21, 4866, 576, 16824, 1613, 6560, 4842, 4596, 16949, 2]
+// Dependencies: [19, 17, 21, 4845, 576, 16847, 1613, 6550, 4821, 4595, 16970, 2]
 // Exports: default
 
-// Module 16948 (Settings)
+// Module 16969 (Settings)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4596 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6560 */;
-import profileModalTransition from "profileModalTransition" /* 16824 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 16949 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4595 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6550 */;
+import profileModalTransition from "profileModalTransition" /* 16847 */;
+import SettingsNavigatorDefault from "SettingsNavigator" /* 16970 */;
 import noop from "module_19" /* 19 */;
 
-const DeviceUtils = tmp(4842);
+const DeviceUtils = tmp(4821);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4866);
+const createStyles = fn(4845);
 let obj2 = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 }, container: { flex: 1 }, containerTablet: null };
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
 obj2.containerTablet = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
